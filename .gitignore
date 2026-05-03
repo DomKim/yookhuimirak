@@ -41,3 +41,8 @@ psd/*.psd
 _con19_test.js
 _beacon_test.js
 findings.md
+
+# Claude/Codex hooks (로컬 워크플로우 검증용 — 레포에 push 안 함)
+.claude/hooks/
+.codex/hooks/
+.codex/hooks.json
