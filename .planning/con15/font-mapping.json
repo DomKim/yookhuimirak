@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "mapping": {
+    "Pretendard-Light": {
+      "cssFamily": "var(--mf), sans-serif",
+      "cssWeight": 300,
+      "fallback": "Pretendard Variable Light"
+    },
+    "Pretendard-Bold": {
+      "cssFamily": "var(--mf), sans-serif",
+      "cssWeight": 700,
+      "fallback": "Pretendard Variable Bold"
+    },
+    "Eulyoo1945-SemiBold": {
+      "cssFamily": "(이미지 baked: con15_03/04/05.png)",
+      "cssWeight": 600,
+      "fallback": "이미지로 export됨, CSS 텍스트 미사용"
+    }
+  },
+  "spec": ".planning/con15/spec.json"
+}

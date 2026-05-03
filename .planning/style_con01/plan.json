@@ -1,0 +1,1479 @@
+{
+  "generatedBy": "spec-to-plan v3 (flat) + AI structure correction",
+  "_advisorySummary": {
+    "⚠️ 무시하지 말 것": "element 안 _hint를 element별로 확인하고 plan 작성",
+    "검사 항목": [
+      "1) elements 중 _hint.psdGroup이 있는 것들 → wrapper 만들기 검토 (그룹화)",
+      "2) elements 중 _hint.centerSuspect:true → marginLeft 대신 alignSelf:center",
+      "3) elements 중 _hint.heightChainCandidate:true → heightChain에 포함",
+      "4) elements 중 _hint.containmentParent → 형제 배치 금지, 자식으로 중첩",
+      "5) elements 중 _hint.suggestedParentWidth → parentWidth:1905 대신 그룹 너비 사용",
+      "6) elements 중 _hint.aspectRatioSuggest → wrapper에 aspectRatio 적용"
+    ],
+    "flatAntiPattern": {
+      "sectionDirectChildren": 18,
+      "note": "AI 결정 후 parent != \"section\"인 element가 0개면 flat 안티패턴 의심"
+    },
+    "groupCandidates": [],
+    "centerAxisCount": 4,
+    "verticalStackCount": 6
+  },
+  "strictStructure": true,
+  "section": "con01",
+  "sectionClass": "con1",
+  "page": "main",
+  "specFile": ".planning/con01/spec_main_con01.json",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 960,
+    "bottom": 2066,
+    "height": 1106
+  },
+  "bg": "#ffffff",
+  "bgRect": {
+    "top": 960,
+    "bottom": 1850
+  },
+  "effectiveEnd": 1850,
+  "prevSectionBottom": 960,
+  "ptSuggestions": {
+    "bgRect": "6.719160vw",
+    "bgRectTop": 960,
+    "shape": "6.719160vw",
+    "prevBottom": 960
+  },
+  "pbSuggestions": {
+    "fromLastContent": "17.900262vw",
+    "fromLastContentToEffectiveEnd": "6.561680vw",
+    "lastContent": {
+      "name": "사각형 2",
+      "bottom": 1725
+    },
+    "secBottom": 2066,
+    "effectiveEnd": 1850,
+    "effectiveEndWarning": "sectionY.bottom과 effectiveEnd 차이가 큼 — smoke/background/overhang이 섹션 높이를 늘렸을 수 있으므로 pb는 effectiveEnd 기준 우선 검토"
+  },
+  "pt": "6.719160vw",
+  "pb": "6.561680vw",
+  "heightChain": [
+    "pt",
+    "con1_title",
+    "con1_cards",
+    "pb"
+  ],
+  "availableImages": [
+    {
+      "file": "con01_01.png",
+      "width": 284,
+      "height": 210,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con01_02.png",
+      "width": 284,
+      "height": 222,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con01_03.png",
+      "width": 284,
+      "height": 230,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con01_bg_2.png",
+      "width": 977,
+      "height": 747,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con01_bg.jpg",
+      "width": 1920,
+      "height": 890,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    }
+  ],
+  "requiredTextHints": [
+    {
+      "name": "결과로 증명했습니다",
+      "content": "결과로 증명했습니다",
+      "x": 712,
+      "y": 1135,
+      "w": 503,
+      "h": 59,
+      "fontSizePx": 60,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "왜 미락육회막국수인가요?",
+      "content": "왜 미락육회막국수인가요?",
+      "x": 798,
+      "y": 1088,
+      "w": 327,
+      "h": 28,
+      "fontSizePx": 30,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "맛, 매출, 운영까지 창업에서 가장 중요한 기준을 모두 갖춘 브랜드입니다",
+      "content": "맛, 매출, 운영까지 창업에서 가장 중요한 기준을 모두 갖춘 브랜드입니다",
+      "x": 678,
+      "y": 1226,
+      "w": 566,
+      "h": 23,
+      "fontSizePx": 22,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "검증된 수익 구조",
+      "content": "검증된 수익 구조",
+      "x": 798,
+      "y": 1499,
+      "w": 109,
+      "h": 17,
+      "fontSizePx": 18,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "3가지 매출 구조",
+      "content": "3가지 매출 구조",
+      "x": 800,
+      "y": 1535,
+      "w": 151,
+      "h": 24,
+      "fontSizePx": 26,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "홀 · 포장 · 배달 3WAY 운영으로 매출을 극대화 불황에도 흔들리지 않는 구조",
+      "content": "홀 · 포장 · 배달\n3WAY 운영으로 매출을 극대화\n불황에도 흔들리지 않는 구조",
+      "x": 799,
+      "y": 1599,
+      "w": 201,
+      "h": 73,
+      "fontSizePx": 18,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "다시 찾게 되는 이유",
+      "content": "다시 찾게 되는 이유",
+      "x": 380,
+      "y": 1535,
+      "w": 183,
+      "h": 24,
+      "fontSizePx": 26,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "과일 베이스 특제 양념과 1주일 숙성으로 완성된 깊은 맛 한 번 방문으로 끝나지 않습니다",
+      "content": "과일 베이스 특제 양념과\n1주일 숙성으로 완성된 깊은 맛\n한 번 방문으로 끝나지 않습니다",
+      "x": 379,
+      "y": 1599,
+      "w": 205,
+      "h": 73,
+      "fontSizePx": 18,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "쉬운 운영 시스템",
+      "content": "쉬운 운영 시스템",
+      "x": 1218,
+      "y": 1499,
+      "w": 108,
+      "h": 17,
+      "fontSizePx": 18,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "누구나 가능한 창업",
+      "content": "누구나 가능한 창업",
+      "x": 1219,
+      "y": 1535,
+      "w": 178,
+      "h": 24,
+      "fontSizePx": 26,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "전문 주방장 없이도 운영 가능 완제품 물류 시스템으로 인건비 부담을 최소화합니다",
+      "content": "전문 주방장 없이도 운영 가능\n완제품 물류 시스템으로\n인건비 부담을 최소화합니다",
+      "x": 1219,
+      "y": 1599,
+      "w": 190,
+      "h": 73,
+      "fontSizePx": 18,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    }
+  ],
+  "ignoredShapes": [],
+  "ignoredTexts": [],
+  "centeredFlow": [
+    "왜 미락육회막국수인가요?",
+    "결과로 증명했습니다",
+    "맛, 매출, 운영까지 창업에서 가장 중요한 기준을 모두 갖춘 브랜드입니다",
+    "검증된 수익 구조",
+    "3가지 매출 구조",
+    "홀 · 포장 · 배달 3WAY 운영으로 매출을 극대화 불황에도 흔들리지 않는 구조"
+  ],
+  "centerAxisHints": [
+    {
+      "axisX": 476.5,
+      "axisPct": "25.013123%",
+      "elements": [
+        "다시 찾게 되는 이유",
+        "과일 베이스 특제 양념과 1주일 숙성으로 완성된 깊은 맛 한 번 방문으로 끝나지 않습니다"
+      ],
+      "bbox": {
+        "x": 379,
+        "y": 1535,
+        "w": 205,
+        "h": 137
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 2",
+          "centerDelta": -63.5,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 864,
+      "axisPct": "45.354331%",
+      "elements": [
+        "검증된 수익 구조",
+        "3가지 매출 구조"
+      ],
+      "bbox": {
+        "x": 798,
+        "y": 1499,
+        "w": 153,
+        "h": 60
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 2 복사",
+          "centerDelta": -96,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 962,
+      "axisPct": "50.498688%",
+      "elements": [
+        "왜 미락육회막국수인가요?",
+        "결과로 증명했습니다",
+        "맛, 매출, 운영까지 창업에서 가장 중요한 기준을 모두 갖춘 브랜드입니다"
+      ],
+      "bbox": {
+        "x": 678,
+        "y": 1088,
+        "w": 566,
+        "h": 161
+      },
+      "parentCandidates": [],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 1311,
+      "axisPct": "68.818898%",
+      "elements": [
+        "누구나 가능한 창업",
+        "전문 주방장 없이도 운영 가능 완제품 물류 시스템으로 인건비 부담을 최소화합니다"
+      ],
+      "bbox": {
+        "x": 1219,
+        "y": 1535,
+        "w": 190,
+        "h": 137
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 2 복사 2",
+          "centerDelta": -69,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    }
+  ],
+  "yGaps": [
+    {
+      "from": "왜 미락육회막국수인가요?",
+      "to": "결과로 증명했습니다",
+      "gap": 19,
+      "gapVw": "0.997375vw"
+    },
+    {
+      "from": "결과로 증명했습니다",
+      "to": "맛, 매출, 운영까지 창업에서 가장 중요한 기준을 모두 갖춘 브랜드입니다",
+      "gap": 32,
+      "gapVw": "1.679790vw"
+    },
+    {
+      "from": "맛, 매출, 운영까지 창업에서 가장 중요한 기준을 모두 갖춘 브랜드입니다",
+      "to": "con01_bg_2",
+      "gap": 70,
+      "gapVw": "3.674541vw"
+    },
+    {
+      "from": "con01_bg_2",
+      "to": "con01_01",
+      "gap": -700,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "con01_01",
+      "to": "검증된 수익 구조",
+      "gap": -77,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "검증된 수익 구조",
+      "to": "차별화된 맛",
+      "gap": -17,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "차별화된 맛",
+      "to": "쉬운 운영 시스템",
+      "gap": -17,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "쉬운 운영 시스템",
+      "to": "3가지 매출 구조",
+      "gap": 19,
+      "gapVw": "0.997375vw"
+    },
+    {
+      "from": "3가지 매출 구조",
+      "to": "다시 찾게 되는 이유",
+      "gap": -24,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "다시 찾게 되는 이유",
+      "to": "누구나 가능한 창업",
+      "gap": -24,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "누구나 가능한 창업",
+      "to": "홀 · 포장 · 배달 3WAY 운영으로 매출을 극대화 불황에도 흔들리지 않는 구조",
+      "gap": 40,
+      "gapVw": "2.099738vw"
+    },
+    {
+      "from": "홀 · 포장 · 배달 3WAY 운영으로 매출을 극대화 불황에도 흔들리지 않는 구조",
+      "to": "과일 베이스 특제 양념과 1주일 숙성으로 완성된 깊은 맛 한 번 방문으로 끝나지 않습니다",
+      "gap": -73,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "과일 베이스 특제 양념과 1주일 숙성으로 완성된 깊은 맛 한 번 방문으로 끝나지 않습니다",
+      "to": "전문 주방장 없이도 운영 가능 완제품 물류 시스템으로 인건비 부담을 최소화합니다",
+      "gap": -73,
+      "gapVw": "0.000000vw"
+    }
+  ],
+  "overlaps": [
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "왜 미락육회막국수인가요?",
+      "bType": "text",
+      "bSize": "327×28",
+      "overlapArea": 9156
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "결과로 증명했습니다",
+      "bType": "text",
+      "bSize": "503×59",
+      "overlapArea": 29677
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "맛, 매출, 운영까지 창업에서 가장 중요한 기준을 모두 갖춘 브랜드입니다",
+      "bType": "text",
+      "bSize": "566×23",
+      "overlapArea": 13018
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "con01_bg_2",
+      "bType": "image",
+      "bSize": "1210×747",
+      "overlapArea": 518787
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "사각형 2",
+      "bType": "rect",
+      "bSize": "424×404",
+      "overlapArea": 171296
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "사각형 2 복사",
+      "bType": "rect",
+      "bSize": "424×404",
+      "overlapArea": 171296
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "사각형 2 복사 2",
+      "bType": "rect",
+      "bSize": "424×404",
+      "overlapArea": 171296
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "con01_01",
+      "bType": "image",
+      "bSize": "284×210",
+      "overlapArea": 59640
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "검증된 수익 구조",
+      "bType": "text",
+      "bSize": "109×17",
+      "overlapArea": 1853
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "차별화된 맛",
+      "bType": "text",
+      "bSize": "78×17",
+      "overlapArea": 1326
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "쉬운 운영 시스템",
+      "bType": "text",
+      "bSize": "108×17",
+      "overlapArea": 1836
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "3가지 매출 구조",
+      "bType": "text",
+      "bSize": "151×24",
+      "overlapArea": 3624
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "다시 찾게 되는 이유",
+      "bType": "text",
+      "bSize": "183×24",
+      "overlapArea": 4392
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "누구나 가능한 창업",
+      "bType": "text",
+      "bSize": "178×24",
+      "overlapArea": 4272
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "홀 · 포장 · 배달 3WAY 운영으로 매출을 극대화 불황에도 흔들리지 않는 구조",
+      "bType": "text",
+      "bSize": "201×73",
+      "overlapArea": 14673
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "과일 베이스 특제 양념과 1주일 숙성으로 완성된 깊은 맛 한 번 방문으로 끝나지 않습니다",
+      "bType": "text",
+      "bSize": "205×73",
+      "overlapArea": 14965
+    },
+    {
+      "a": "사각형 1",
+      "aType": "image",
+      "aSize": "1920×890",
+      "b": "전문 주방장 없이도 운영 가능 완제품 물류 시스템으로 인건비 부담을 최소화합니다",
+      "bType": "text",
+      "bSize": "190×73",
+      "overlapArea": 13870
+    },
+    {
+      "a": "con01_bg_2",
+      "aType": "image",
+      "aSize": "1210×747",
+      "b": "사각형 2",
+      "bType": "rect",
+      "bSize": "424×404",
+      "overlapArea": 171296
+    },
+    {
+      "a": "con01_bg_2",
+      "aType": "image",
+      "aSize": "1210×747",
+      "b": "사각형 2 복사",
+      "bType": "rect",
+      "bSize": "424×404",
+      "overlapArea": 92516
+    },
+    {
+      "a": "con01_bg_2",
+      "aType": "image",
+      "aSize": "1210×747",
+      "b": "con01_01",
+      "bType": "image",
+      "bSize": "284×210",
+      "overlapArea": 59640
+    },
+    {
+      "a": "con01_bg_2",
+      "aType": "image",
+      "aSize": "1210×747",
+      "b": "검증된 수익 구조",
+      "bType": "text",
+      "bSize": "109×17",
+      "overlapArea": 1853
+    },
+    {
+      "a": "con01_bg_2",
+      "aType": "image",
+      "aSize": "1210×747",
+      "b": "차별화된 맛",
+      "bType": "text",
+      "bSize": "78×17",
+      "overlapArea": 1326
+    },
+    {
+      "a": "con01_bg_2",
+      "aType": "image",
+      "aSize": "1210×747",
+      "b": "3가지 매출 구조",
+      "bType": "text",
+      "bSize": "151×24",
+      "overlapArea": 3624
+    },
+    {
+      "a": "con01_bg_2",
+      "aType": "image",
+      "aSize": "1210×747",
+      "b": "다시 찾게 되는 이유",
+      "bType": "text",
+      "bSize": "183×24",
+      "overlapArea": 4392
+    },
+    {
+      "a": "con01_bg_2",
+      "aType": "image",
+      "aSize": "1210×747",
+      "b": "홀 · 포장 · 배달 3WAY 운영으로 매출을 극대화 불황에도 흔들리지 않는 구조",
+      "bType": "text",
+      "bSize": "201×73",
+      "overlapArea": 12994
+    },
+    {
+      "a": "con01_bg_2",
+      "aType": "image",
+      "aSize": "1210×747",
+      "b": "과일 베이스 특제 양념과 1주일 숙성으로 완성된 깊은 맛 한 번 방문으로 끝나지 않습니다",
+      "bType": "text",
+      "bSize": "205×73",
+      "overlapArea": 14965
+    },
+    {
+      "a": "사각형 2",
+      "aType": "rect",
+      "aSize": "424×404",
+      "b": "con01_01",
+      "bType": "image",
+      "bSize": "284×210",
+      "overlapArea": 38010
+    },
+    {
+      "a": "사각형 2",
+      "aType": "rect",
+      "aSize": "424×404",
+      "b": "차별화된 맛",
+      "bType": "text",
+      "bSize": "78×17",
+      "overlapArea": 1326
+    },
+    {
+      "a": "사각형 2",
+      "aType": "rect",
+      "aSize": "424×404",
+      "b": "다시 찾게 되는 이유",
+      "bType": "text",
+      "bSize": "183×24",
+      "overlapArea": 4392
+    },
+    {
+      "a": "사각형 2",
+      "aType": "rect",
+      "aSize": "424×404",
+      "b": "과일 베이스 특제 양념과 1주일 숙성으로 완성된 깊은 맛 한 번 방문으로 끝나지 않습니다",
+      "bType": "text",
+      "bSize": "205×73",
+      "overlapArea": 14965
+    },
+    {
+      "a": "사각형 2 복사",
+      "aType": "rect",
+      "aSize": "424×404",
+      "b": "con01_01",
+      "bType": "image",
+      "bSize": "284×210",
+      "overlapArea": 22470
+    },
+    {
+      "a": "사각형 2 복사",
+      "aType": "rect",
+      "aSize": "424×404",
+      "b": "검증된 수익 구조",
+      "bType": "text",
+      "bSize": "109×17",
+      "overlapArea": 1853
+    },
+    {
+      "a": "사각형 2 복사",
+      "aType": "rect",
+      "aSize": "424×404",
+      "b": "3가지 매출 구조",
+      "bType": "text",
+      "bSize": "151×24",
+      "overlapArea": 3624
+    },
+    {
+      "a": "사각형 2 복사",
+      "aType": "rect",
+      "aSize": "424×404",
+      "b": "홀 · 포장 · 배달 3WAY 운영으로 매출을 극대화 불황에도 흔들리지 않는 구조",
+      "bType": "text",
+      "bSize": "201×73",
+      "overlapArea": 14673
+    },
+    {
+      "a": "사각형 2 복사 2",
+      "aType": "rect",
+      "aSize": "424×404",
+      "b": "쉬운 운영 시스템",
+      "bType": "text",
+      "bSize": "108×17",
+      "overlapArea": 1836
+    },
+    {
+      "a": "사각형 2 복사 2",
+      "aType": "rect",
+      "aSize": "424×404",
+      "b": "누구나 가능한 창업",
+      "bType": "text",
+      "bSize": "178×24",
+      "overlapArea": 4272
+    },
+    {
+      "a": "사각형 2 복사 2",
+      "aType": "rect",
+      "aSize": "424×404",
+      "b": "전문 주방장 없이도 운영 가능 완제품 물류 시스템으로 인건비 부담을 최소화합니다",
+      "bType": "text",
+      "bSize": "190×73",
+      "overlapArea": 13870
+    },
+    {
+      "a": "con01_01",
+      "aType": "image",
+      "aSize": "284×210",
+      "b": "검증된 수익 구조",
+      "bType": "text",
+      "bSize": "109×17",
+      "overlapArea": 969
+    },
+    {
+      "a": "con01_01",
+      "aType": "image",
+      "aSize": "284×210",
+      "b": "3가지 매출 구조",
+      "bType": "text",
+      "bSize": "151×24",
+      "overlapArea": 1320
+    }
+  ],
+  "elements": [
+    {
+      "name": "con1_bg_texture",
+      "type": "image",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "0.000000vw",
+      "left": "0.000000%",
+      "width": "100.787402%",
+      "naturalWidth": 1920,
+      "naturalHeight": 890,
+      "sourceType": "complete texture background",
+      "isBackground": true,
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 960,
+      "background": "/images/con01_bg.jpg",
+      "clippingRectIgnoredReason": "Full-section texture background; PSD clippingRect belongs to active-card mask/clip metadata and is not the visible origin for the background layer."
+    },
+    {
+      "name": "con1_food_foreground",
+      "type": "image",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "18.845144vw",
+      "left": "-12.230971%",
+      "width": "51.286089%",
+      "src": "/images/con01_bg_2.png",
+      "naturalWidth": 977,
+      "naturalHeight": 747,
+      "sourceType": "source foreground food/table image",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 1319,
+      "role": "decorative foreground, not heightChain"
+    },
+    {
+      "name": "con1_title",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0.000000vw",
+      "marginLeft": "0.000000%",
+      "alignSelf": "center",
+      "centerChildren": true,
+      "width": "29.711286%",
+      "display": "flex-column",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 1088,
+      "children": [
+        {
+          "name": "con1_kicker",
+          "type": "text",
+          "position": "rltv",
+          "parent": "con1_title",
+          "parentWidth": 566,
+          "marginTop": "0.000000vw",
+          "marginLeft": "0.000000%",
+          "alignSelf": "center",
+          "width": "57.773852%",
+          "whiteSpace": "nowrap",
+          "effects": null,
+          "content": "왜 미락육회막국수인가요?",
+          "segments": [
+            {
+              "text": "왜 미락육회막국수인가요?",
+              "fontWeight": 400,
+              "color": "#070707",
+              "fontSize": "1.574803vw (30px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 2.167,
+              "fontFamily": "TTOmniGothicM"
+            }
+          ],
+          "psdY": 1088
+        },
+        {
+          "name": "con1_headline",
+          "type": "text",
+          "position": "rltv",
+          "parent": "con1_title",
+          "parentWidth": 566,
+          "marginTop": "0.997375vw",
+          "marginLeft": "0.000000%",
+          "alignSelf": "center",
+          "width": "88.869258%",
+          "whiteSpace": "nowrap",
+          "effects": null,
+          "content": "결과로 증명했습니다",
+          "segments": [
+            {
+              "text": "결과로 ",
+              "fontWeight": 600,
+              "color": "#070707",
+              "fontSize": "3.149606vw (60px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.083,
+              "fontFamily": "Eulyoo1945-SemiBold"
+            },
+            {
+              "text": "증명",
+              "fontWeight": 600,
+              "color": "#5d2b0d",
+              "fontSize": "3.149606vw (60px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.083,
+              "fontFamily": "Eulyoo1945-SemiBold"
+            },
+            {
+              "text": "했습니다",
+              "fontWeight": 600,
+              "color": "#070707",
+              "fontSize": "3.149606vw (60px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.083,
+              "fontFamily": "Eulyoo1945-SemiBold"
+            }
+          ],
+          "psdY": 1135
+        },
+        {
+          "name": "con1_desc",
+          "type": "text",
+          "position": "rltv",
+          "parent": "con1_title",
+          "parentWidth": 566,
+          "marginTop": "1.679790vw",
+          "marginLeft": "0.000000%",
+          "alignSelf": "center",
+          "width": "100.000000%",
+          "whiteSpace": "nowrap",
+          "effects": null,
+          "content": "맛, 매출, 운영까지 창업에서 가장 중요한 기준을 모두 갖춘 브랜드입니다",
+          "segments": [
+            {
+              "text": "맛, 매출, 운영",
+              "fontWeight": 700,
+              "color": "#000000",
+              "fontSize": "1.154856vw (22px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.364,
+              "fontFamily": "Pretendard-Bold"
+            },
+            {
+              "text": "까지 창업에서 가장 중요한 기준을 모두 갖춘 브랜드입니다",
+              "fontWeight": 300,
+              "color": "#000000",
+              "fontSize": "1.154856vw (22px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.364,
+              "fontFamily": "Pretendard-Light"
+            }
+          ],
+          "psdY": 1226
+        }
+      ]
+    },
+    {
+      "name": "con1_cards",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "3.779528vw",
+      "marginLeft": "0.000000%",
+      "alignSelf": "center",
+      "width": "66.351706%",
+      "display": "flex-row",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 1321,
+      "children": [
+        {
+          "name": "con1_card_taste",
+          "type": "cssShape",
+          "position": "rltv",
+          "parent": "con1_cards",
+          "parentWidth": 1264,
+          "marginTop": "0.000000vw",
+          "marginLeft": "0.000000%",
+          "width": "33.544304%",
+          "aspectRatio": "424/404",
+          "heightSource": "PSD card rectangle 424x404",
+          "heightSourceReason": "Each card is a visible interactive panel; the card rectangle provides the card height while inner text/images are owned by this card.",
+          "background": "#231916",
+          "fill": "#231916",
+          "border": null,
+          "overflow": "hidden",
+          "clipsChildren": true,
+          "effects": null,
+          "borderRadius": null,
+          "psdX": 328,
+          "psdY": 1321,
+          "state": "active-default",
+          "children": [
+            {
+              "name": "con1_taste_active_image",
+              "type": "image",
+              "position": "absol",
+              "parent": "con1_card_taste",
+              "parentWidth": 424,
+              "top": "2.362205vw",
+              "left": "57.311321%",
+              "width": "66.981132%",
+              "src": "/images/con01_01.png",
+              "naturalWidth": 284,
+              "naturalHeight": 210,
+              "sourceType": "source",
+              "effects": null,
+              "borderRadius": null,
+              "reveal": "from-right-on-active",
+              "state": "visible-default"
+            },
+            {
+              "name": "con1_taste_marker_1",
+              "type": "cssShape",
+              "position": "absol",
+              "parent": "con1_card_taste",
+              "parentWidth": 424,
+              "top": "0.052493vw",
+              "left": "94.339623%",
+              "width": "0.943396%",
+              "aspectRatio": "4/41",
+              "heightSource": "PSD top marker 4x41",
+              "heightSourceReason": "Visible top marker line from PSD card state.",
+              "background": "#231916",
+              "fill": "#231916",
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con1_card_taste_textStack",
+              "type": "group",
+              "position": "absol",
+              "parent": "con1_card_taste",
+              "parentWidth": 424,
+              "top": "9.343832vw",
+              "left": "11.792453%",
+              "width": "48.584906%",
+              "display": "flex-column",
+              "effects": null,
+              "borderRadius": null,
+              "children": [
+                {
+                  "name": "con1_taste_label",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con1_card_taste_textStack",
+                  "parentWidth": 206.00000144,
+                  "width": "37.864077%",
+                  "whiteSpace": "nowrap",
+                  "effects": null,
+                  "content": "차별화된 맛",
+                  "segments": [
+                    {
+                      "text": "차별화된 맛",
+                      "fontWeight": 300,
+                      "color": "#ffffff",
+                      "fontSize": "0.944882vw (18px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 1.556,
+                      "fontFamily": "Pretendard-Light"
+                    }
+                  ],
+                  "initialColor": "#ffffff",
+                  "marginTop": "0.000000vw",
+                  "marginLeft": "0.000000%",
+                  "alignSelf": "flex-start"
+                },
+                {
+                  "name": "con1_taste_title",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con1_card_taste_textStack",
+                  "parentWidth": 206.00000144,
+                  "width": "88.834950%",
+                  "whiteSpace": "nowrap",
+                  "effects": null,
+                  "content": "다시 찾게 되는 이유",
+                  "segments": [
+                    {
+                      "text": "다시 찾게 되는 이유",
+                      "fontWeight": 700,
+                      "color": "#ffffff",
+                      "fontSize": "1.364829vw (26px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 2.5,
+                      "fontFamily": "Pretendard-Bold"
+                    }
+                  ],
+                  "initialColor": "#ffffff",
+                  "marginTop": "0.997376vw",
+                  "marginLeft": "0.000000%",
+                  "alignSelf": "flex-start"
+                },
+                {
+                  "name": "con1_taste_body",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con1_card_taste_textStack",
+                  "parentWidth": 206.00000144,
+                  "width": "99.514563%",
+                  "whiteSpace": "nowrap",
+                  "effects": null,
+                  "content": "과일 베이스 특제 양념과\n1주일 숙성으로 완성된 깊은 맛\n한 번 방문으로 끝나지 않습니다",
+                  "segments": [
+                    {
+                      "text": "과일 베이스 특제 양념과\n1주일 숙성으로 완성된 깊은 맛\n한 번 방문으로 끝나지 않습니다",
+                      "fontWeight": 300,
+                      "color": "#ffffff",
+                      "fontSize": "0.944882vw (18px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 1.556,
+                      "fontFamily": "Pretendard-Light"
+                    }
+                  ],
+                  "initialColor": "#ffffff",
+                  "marginTop": "2.099737vw",
+                  "marginLeft": "0.000000%",
+                  "alignSelf": "flex-start"
+                }
+              ],
+              "centerChildren": false
+            }
+          ]
+        },
+        {
+          "name": "con1_card_sales",
+          "type": "cssShape",
+          "position": "rltv",
+          "parent": "con1_cards",
+          "parentWidth": 1264,
+          "marginTop": "0.000000vw",
+          "marginLeft": "-0.316456%",
+          "width": "33.544304%",
+          "aspectRatio": "424/404",
+          "heightSource": "PSD card rectangle 424x404",
+          "heightSourceReason": "Each card is a visible interactive panel; the card rectangle provides the card height while inner text/images are owned by this card.",
+          "background": "#ffffff",
+          "fill": "#ffffff",
+          "border": "1px solid #231916",
+          "overflow": "hidden",
+          "clipsChildren": true,
+          "effects": null,
+          "borderRadius": null,
+          "psdX": 748,
+          "psdY": 1321,
+          "state": "default",
+          "children": [
+            {
+              "name": "con1_sales_active_image",
+              "type": "image",
+              "position": "absol",
+              "parent": "con1_card_sales",
+              "parentWidth": 424,
+              "top": "2.362205vw",
+              "left": "57.311321%",
+              "width": "66.981132%",
+              "src": "/images/con01_02.png",
+              "naturalWidth": 284,
+              "naturalHeight": 222,
+              "sourceType": "source",
+              "effects": null,
+              "borderRadius": null,
+              "reveal": "from-right-on-active",
+              "state": "hidden-default"
+            },
+            {
+              "name": "con1_sales_marker_1",
+              "type": "cssShape",
+              "position": "absol",
+              "parent": "con1_card_sales",
+              "parentWidth": 424,
+              "top": "0.052493vw",
+              "left": "91.745283%",
+              "width": "0.943396%",
+              "aspectRatio": "4/41",
+              "heightSource": "PSD top marker 4x41",
+              "heightSourceReason": "Visible top marker line from PSD card state.",
+              "background": "#231916",
+              "fill": "#231916",
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con1_sales_marker_2",
+              "type": "cssShape",
+              "position": "absol",
+              "parent": "con1_card_sales",
+              "parentWidth": 424,
+              "top": "0.052493vw",
+              "left": "94.103774%",
+              "width": "0.943396%",
+              "aspectRatio": "4/41",
+              "heightSource": "PSD top marker 4x41",
+              "heightSourceReason": "Visible top marker line from PSD card state.",
+              "background": "#231916",
+              "fill": "#231916",
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con1_card_sales_textStack",
+              "type": "group",
+              "position": "absol",
+              "parent": "con1_card_sales",
+              "parentWidth": 424,
+              "top": "9.343832vw",
+              "left": "11.792453%",
+              "width": "47.641509%",
+              "display": "flex-column",
+              "effects": null,
+              "borderRadius": null,
+              "children": [
+                {
+                  "name": "con1_sales_label",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con1_card_sales_textStack",
+                  "parentWidth": 201.99999816000002,
+                  "width": "53.960396%",
+                  "whiteSpace": "nowrap",
+                  "effects": null,
+                  "content": "검증된 수익 구조",
+                  "segments": [
+                    {
+                      "text": "검증된 수익 구조",
+                      "fontWeight": 300,
+                      "color": "#000000",
+                      "fontSize": "0.944882vw (18px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 1.556,
+                      "fontFamily": "Pretendard-Light"
+                    }
+                  ],
+                  "initialColor": "#000000",
+                  "marginTop": "0.000000vw",
+                  "marginLeft": "0.000000%",
+                  "alignSelf": "flex-start"
+                },
+                {
+                  "name": "con1_sales_title",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con1_card_sales_textStack",
+                  "parentWidth": 201.99999816000002,
+                  "width": "74.752477%",
+                  "whiteSpace": "nowrap",
+                  "effects": null,
+                  "content": "3가지 매출 구조",
+                  "segments": [
+                    {
+                      "text": "3가지 매출 구조",
+                      "fontWeight": 700,
+                      "color": "#000000",
+                      "fontSize": "1.364829vw (26px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 2.5,
+                      "fontFamily": "Pretendard-Bold"
+                    }
+                  ],
+                  "initialColor": "#000000",
+                  "marginTop": "0.997376vw",
+                  "marginLeft": "0.000000%",
+                  "alignSelf": "flex-start"
+                },
+                {
+                  "name": "con1_sales_body",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con1_card_sales_textStack",
+                  "parentWidth": 201.99999816000002,
+                  "width": "99.504951%",
+                  "whiteSpace": "nowrap",
+                  "effects": null,
+                  "content": "홀 · 포장 · 배달\n3WAY 운영으로 매출을 극대화\n불황에도 흔들리지 않는 구조",
+                  "segments": [
+                    {
+                      "text": "홀 · 포장 · 배달\n3WAY 운영으로 매출을 극대화\n불황에도 흔들리지 않는 구조",
+                      "fontWeight": 300,
+                      "color": "#000000",
+                      "fontSize": "0.944882vw (18px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 1.556,
+                      "fontFamily": "Pretendard-Light"
+                    }
+                  ],
+                  "initialColor": "#000000",
+                  "marginTop": "2.467192vw",
+                  "marginLeft": "0.000000%",
+                  "alignSelf": "flex-start"
+                }
+              ],
+              "centerChildren": false
+            }
+          ]
+        },
+        {
+          "name": "con1_card_easy",
+          "type": "cssShape",
+          "position": "rltv",
+          "parent": "con1_cards",
+          "parentWidth": 1264,
+          "marginTop": "0.000000vw",
+          "marginLeft": "-0.316456%",
+          "width": "33.544304%",
+          "aspectRatio": "424/404",
+          "heightSource": "PSD card rectangle 424x404",
+          "heightSourceReason": "Each card is a visible interactive panel; the card rectangle provides the card height while inner text/images are owned by this card.",
+          "background": "#ffffff",
+          "fill": "#ffffff",
+          "border": "1px solid #231916",
+          "overflow": "hidden",
+          "clipsChildren": true,
+          "effects": null,
+          "borderRadius": null,
+          "psdX": 1168,
+          "psdY": 1321,
+          "state": "default",
+          "children": [
+            {
+              "name": "con1_easy_active_image",
+              "type": "image",
+              "position": "absol",
+              "parent": "con1_card_easy",
+              "parentWidth": 424,
+              "top": "2.362205vw",
+              "left": "57.311321%",
+              "width": "66.981132%",
+              "src": "/images/con01_03.png",
+              "naturalWidth": 284,
+              "naturalHeight": 230,
+              "sourceType": "source",
+              "effects": null,
+              "borderRadius": null,
+              "reveal": "from-right-on-active",
+              "state": "hidden-default"
+            },
+            {
+              "name": "con1_easy_marker_1",
+              "type": "cssShape",
+              "position": "absol",
+              "parent": "con1_card_easy",
+              "parentWidth": 424,
+              "top": "0.052493vw",
+              "left": "89.622642%",
+              "width": "0.707547%",
+              "aspectRatio": "3/41",
+              "heightSource": "PSD top marker 3x41",
+              "heightSourceReason": "Visible top marker line from PSD card state.",
+              "background": "#231916",
+              "fill": "#231916",
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con1_easy_marker_2",
+              "type": "cssShape",
+              "position": "absol",
+              "parent": "con1_card_easy",
+              "parentWidth": 424,
+              "top": "0.052493vw",
+              "left": "91.981132%",
+              "width": "0.707547%",
+              "aspectRatio": "3/41",
+              "heightSource": "PSD top marker 3x41",
+              "heightSourceReason": "Visible top marker line from PSD card state.",
+              "background": "#231916",
+              "fill": "#231916",
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con1_easy_marker_3",
+              "type": "cssShape",
+              "position": "absol",
+              "parent": "con1_card_easy",
+              "parentWidth": 424,
+              "top": "0.052493vw",
+              "left": "94.339623%",
+              "width": "0.707547%",
+              "aspectRatio": "3/41",
+              "heightSource": "PSD top marker 3x41",
+              "heightSourceReason": "Visible top marker line from PSD card state.",
+              "background": "#231916",
+              "fill": "#231916",
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con1_card_easy_textStack",
+              "type": "group",
+              "position": "absol",
+              "parent": "con1_card_easy",
+              "parentWidth": 424,
+              "top": "9.343832vw",
+              "left": "11.792453%",
+              "width": "45.047170%",
+              "display": "flex-column",
+              "effects": null,
+              "borderRadius": null,
+              "children": [
+                {
+                  "name": "con1_easy_label",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con1_card_easy_textStack",
+                  "parentWidth": 191.0000008,
+                  "width": "56.544502%",
+                  "whiteSpace": "nowrap",
+                  "effects": null,
+                  "content": "쉬운 운영 시스템",
+                  "segments": [
+                    {
+                      "text": "쉬운 운영 시스템",
+                      "fontWeight": 300,
+                      "color": "#000000",
+                      "fontSize": "0.944882vw (18px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 1.556,
+                      "fontFamily": "Pretendard-Light"
+                    }
+                  ],
+                  "initialColor": "#000000",
+                  "marginTop": "0.000000vw",
+                  "marginLeft": "0.000000%",
+                  "alignSelf": "flex-start"
+                },
+                {
+                  "name": "con1_easy_title",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con1_card_easy_textStack",
+                  "parentWidth": 191.0000008,
+                  "width": "93.193717%",
+                  "whiteSpace": "nowrap",
+                  "effects": null,
+                  "content": "누구나 가능한 창업",
+                  "segments": [
+                    {
+                      "text": "누구나 가능한 창업",
+                      "fontWeight": 700,
+                      "color": "#000000",
+                      "fontSize": "1.364829vw (26px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 2.5,
+                      "fontFamily": "Pretendard-Bold"
+                    }
+                  ],
+                  "initialColor": "#000000",
+                  "marginTop": "0.997376vw",
+                  "marginLeft": "0.000000%",
+                  "alignSelf": "flex-start"
+                },
+                {
+                  "name": "con1_easy_body",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con1_card_easy_textStack",
+                  "parentWidth": 191.0000008,
+                  "width": "99.476440%",
+                  "whiteSpace": "nowrap",
+                  "effects": null,
+                  "content": "전문 주방장 없이도 운영 가능\n완제품 물류 시스템으로\n인건비 부담을 최소화합니다",
+                  "segments": [
+                    {
+                      "text": "전문 주방장 없이도 운영 가능\n완제품 물류 시스템으로\n인건비 부담을 최소화합니다",
+                      "fontWeight": 300,
+                      "color": "#000000",
+                      "fontSize": "0.944882vw (18px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 1.556,
+                      "fontFamily": "Pretendard-Light"
+                    }
+                  ],
+                  "initialColor": "#000000",
+                  "marginTop": "2.099737vw",
+                  "marginLeft": "0.000000%",
+                  "alignSelf": "flex-start"
+                }
+              ],
+              "centerChildren": false
+            }
+          ]
+        }
+      ],
+      "centeredBy": "section flex align-items:center"
+    }
+  ],
+  "firstRltvY": 1088,
+  "sectionBottomReason": "con01_bg_2 foreground image extends to raw section bottom 2066, but it is a decorative overflow layer. Section height follows bgRect/effectiveEnd 1850 and clips the overflow.",
+  "roundNumberOverride": [
+    "0.000000vw",
+    "0.000000%",
+    "100.000000%"
+  ],
+  "ignoredAssets": [
+    {
+      "file": "con01_bg.jpg",
+      "reason": "Used as CSS background on con1_bg_texture instead of img src because the PSD image entry has card clippingRect metadata that is not the visible origin of the full-section texture."
+    }
+  ],
+  "doNot": [
+    "Do not code before user approves ASCII after plan-checker passes.",
+    "Do not use section height/aspect-ratio; con1 height comes from pt + title + cards + pb.",
+    "Do not flatten card children into section-level siblings; each card owns its text, markers, and active image.",
+    "Do not use object-fit or max-width on images.",
+    "Do not make con01_bg_2 part of the rltv heightChain; it is an absol foreground/deco layer.",
+    "Do not hide PSD text line breaks; multiline body copy must use br."
+  ],
+  "interaction": {
+    "type": "hover-active-cards",
+    "defaultActive": "con1_card_taste",
+    "transition": "natural card background/text/image reveal; active image enters from right",
+    "cards": [
+      "con1_card_taste",
+      "con1_card_sales",
+      "con1_card_easy"
+    ]
+  },
+  "ascii": "section.con1 (rltv, bg:#ffffff + /images/con01_bg.jpg texture)\nheightChain: pt 6.719160vw -> con1_title -> con1_cards -> pb 6.561680vw\nsectionBottomReason: con01_bg_2 is decorative foreground overflow; effectiveEnd 1850 is used.\n\n[absol layers]\n- con1_bg_texture: parent=section, top 0.000000vw, left 0.000000%, width 100.787402%, bg=/images/con01_bg.jpg, natural 1920x890\n- con1_food_foreground: parent=section, top 18.845144vw, left -12.230971%, width 51.286089%, img=/images/con01_bg_2.png, natural 977x747, not heightChain\n\n[rltv flow]\n- con1_title: parent=section, rltv, alignSelf center, width 29.711286%, mt 0.000000vw\n  - con1_kicker: rltv, mt 0.000000vw, font SUIT fallback 1.574803vw(30px), lh 2.167, color #070707, nowrap\n  - con1_headline: rltv, mt 0.997375vw, font Eulyoo1945 3.149606vw(60px), lh 1.083, color split #070707/#5d2b0d/#070707, nowrap\n  - con1_desc: rltv, mt 1.679790vw, font Pretendard 1.154856vw(22px), lh 1.364, styleRun bold/light, nowrap\n- con1_cards: parent=section, rltv, alignSelf center, width 66.351706%, mt 3.779528vw, display flex-row\n  - con1_card_taste: rltv card, width 33.544304%, mt 0, ml 0, aspect 424/404, ov hid, ACTIVE default\n    - active image con01_01.png: absol, top 2.362205vw, left 57.311321%, width 66.981132%, natural 284x210, reveal from right\n    - top marker: 1 line, absol, top 0.052493vw, right-side PSD pattern\n    - textStack: absol, top 9.343832vw, left 11.792453%, width 48.349057%, white text, br body preserved\n  - con1_card_sales: rltv card, width 33.544304%, mt 0, ml -0.316456%, aspect 424/404, ov hid, DEFAULT\n    - active image con01_02.png: absol, top 2.362205vw, left 57.311321%, width 66.981132%, natural 284x222, hidden until active\n    - top markers: 2 lines from PSD x1137/x1147, top 0.052493vw\n    - textStack: absol, top 9.343832vw, left 11.792453%, width 47.405660%, black text, br body preserved\n  - con1_card_easy: rltv card, width 33.544304%, mt 0, ml -0.316456%, aspect 424/404, ov hid, DEFAULT\n    - active image con01_03.png: absol, top 2.362205vw, left 57.311321%, width 66.981132%, natural 284x230, hidden until active\n    - top markers: 3 lines from PSD x1548/x1558/x1568, top 0.052493vw\n    - textStack: absol, top 9.343832vw, left 11.792453%, width 44.811321%, black text, br body preserved\n\nDo not:\n- Do not code before user approves this ASCII.\n- Do not flatten card children into section siblings.\n- Do not make con01_bg_2 part of heightChain.\n- Do not use section height/aspect-ratio, object-fit, max-width, or automatic text wrapping.\n- Do not hide multiline body <br> on mobile."
+}

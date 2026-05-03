@@ -1,0 +1,209 @@
+{
+  "section": "con00",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 0,
+    "bottom": 112,
+    "height": 112
+  },
+  "background": {
+    "type": "color",
+    "fill": "rgba(0,0,0,0.45)",
+    "src": null
+  },
+  "groups": [],
+  "texts": [
+    {
+      "name": "h_nav_competitiveness",
+      "content": "",
+      "x": 455,
+      "y": 43,
+      "w": 43,
+      "h": 0,
+      "segments": [
+        {
+          "text": "경쟁력",
+          "fontWeight": 300,
+          "color": "#ffffff",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.06em",
+          "lineHeight": 0.944,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    },
+    {
+      "name": "h_nav_sales",
+      "content": "",
+      "x": 578,
+      "y": 43,
+      "w": 57,
+      "h": 0,
+      "segments": [
+        {
+          "text": "매출안내",
+          "fontWeight": 300,
+          "color": "#ffffff",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.06em",
+          "lineHeight": 0.944,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    },
+    {
+      "name": "h_nav_difference",
+      "content": "",
+      "x": 716,
+      "y": 43,
+      "w": 45,
+      "h": 0,
+      "segments": [
+        {
+          "text": "차별화",
+          "fontWeight": 300,
+          "color": "#ffffff",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.06em",
+          "lineHeight": 0.944,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    },
+    {
+      "name": "h_nav_menu",
+      "content": "",
+      "x": 840,
+      "y": 43,
+      "w": 57,
+      "h": 0,
+      "segments": [
+        {
+          "text": "메뉴안내",
+          "fontWeight": 300,
+          "color": "#ffffff",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.06em",
+          "lineHeight": 0.944,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    },
+    {
+      "name": "h_nav_system",
+      "content": "",
+      "x": 976,
+      "y": 43,
+      "w": 75,
+      "h": 0,
+      "segments": [
+        {
+          "text": "본사 시스템",
+          "fontWeight": 300,
+          "color": "#ffffff",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.06em",
+          "lineHeight": 0.944,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    },
+    {
+      "name": "h_nav_franchise",
+      "content": "",
+      "x": 1130,
+      "y": 43,
+      "w": 58,
+      "h": 0,
+      "segments": [
+        {
+          "text": "창업안내",
+          "fontWeight": 300,
+          "color": "#ffffff",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.06em",
+          "lineHeight": 0.944,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    },
+    {
+      "name": "h_nav_shop",
+      "content": "",
+      "x": 1269,
+      "y": 43,
+      "w": 57,
+      "h": 0,
+      "segments": [
+        {
+          "text": "매장안내",
+          "fontWeight": 300,
+          "color": "#ffffff",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.06em",
+          "lineHeight": 0.944,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    },
+    {
+      "name": "h_nav_contact",
+      "content": "",
+      "x": 1406,
+      "y": 43,
+      "w": 57,
+      "h": 0,
+      "segments": [
+        {
+          "text": "창업문의",
+          "fontWeight": 300,
+          "color": "#ffffff",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.06em",
+          "lineHeight": 0.944,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "h_navbar",
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 112,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "h_logo",
+      "x": 61,
+      "y": 39,
+      "w": 180,
+      "h": 26,
+      "clippingRect": null,
+      "possibleFile": "h_logo.png",
+      "effects": null
+    },
+    {
+      "name": "h_call_img",
+      "x": 1687,
+      "y": 41,
+      "w": 173,
+      "h": 22,
+      "clippingRect": null,
+      "possibleFile": "h_call.png",
+      "effects": null
+    }
+  ],
+  "comments": [
+    "generated from plan.json for replay validation",
+    "raw PSD origin shifted to visual section origin"
+  ]
+}

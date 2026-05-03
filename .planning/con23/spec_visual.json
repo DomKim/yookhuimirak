@@ -1,0 +1,90 @@
+{
+  "section": "con23",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 0,
+    "bottom": 510,
+    "height": 510
+  },
+  "background": {
+    "type": "color",
+    "fill": "#070707",
+    "src": null
+  },
+  "groups": [],
+  "texts": [
+    {
+      "name": "footer_info",
+      "content": "",
+      "x": 687,
+      "y": 250,
+      "w": 531,
+      "h": 0,
+      "segments": [
+        {
+          "text": "회사명 : (주)선미락 | 대표자 : 최철우\n주소 : 인천광역시 남동구 앵고개로 941번길 11-9 1층 | 대표번호 : 032-433-7049\n사업자번호 : 581-88-03391 | 이메일 : ccw9103@naver.com",
+          "fontWeight": 300,
+          "color": "#999999",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.667,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    },
+    {
+      "name": "footer_copy",
+      "content": "",
+      "x": 774,
+      "y": 306,
+      "w": 357,
+      "h": 0,
+      "segments": [
+        {
+          "text": "Copyright ",
+          "fontWeight": 300,
+          "color": "#999999",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.667,
+          "fontFamily": "Pretendard-Light"
+        },
+        {
+          "text": "ⓒ",
+          "fontWeight": 400,
+          "color": "#999999",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.667,
+          "fontFamily": "Gulim"
+        },
+        {
+          "text": "(주)미락육회막국수. all Rights Reserved",
+          "fontWeight": 300,
+          "color": "#999999",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.667,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    }
+  ],
+  "rects": [],
+  "images": [
+    {
+      "name": "f_logo",
+      "x": 788.5,
+      "y": 114,
+      "w": 328,
+      "h": 47,
+      "clippingRect": null,
+      "possibleFile": "f_logo.png",
+      "effects": null
+    }
+  ],
+  "comments": [
+    "generated from plan.json for replay validation",
+    "raw PSD origin shifted to visual section origin"
+  ]
+}

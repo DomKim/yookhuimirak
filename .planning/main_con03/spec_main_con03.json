@@ -1,0 +1,812 @@
+{
+  "section": "con03",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 2580,
+    "bottom": 3880
+  },
+  "background": {
+    "type": "color",
+    "fill": "#f8edd7",
+    "src": null
+  },
+  "groups": [
+    {
+      "name": "그룹 3",
+      "parentGroup": "con03",
+      "childCount": 13,
+      "children": [
+        {
+          "name": "사각형 1046 복사 4",
+          "type": "layer",
+          "x": 1147,
+          "y": 3137,
+          "w": 534,
+          "h": 451
+        },
+        {
+          "name": "사각형 1046 복사 4",
+          "type": "layer",
+          "x": 1166,
+          "y": 3490,
+          "w": 499,
+          "h": 78
+        },
+        {
+          "name": "사각형 1046 복사 5",
+          "type": "layer",
+          "x": 1504,
+          "y": 3490,
+          "w": 162,
+          "h": 78
+        },
+        {
+          "name": "총매출 식자재 인건비 임대료 기타 ",
+          "type": "text",
+          "x": 1222,
+          "y": 3243,
+          "w": 50,
+          "h": 218
+        },
+        {
+          "name": "60,000,000원 20,000,000원 15,000,000원 5,800,000원 5,600,000원 ",
+          "type": "text",
+          "x": 1369,
+          "y": 3243,
+          "w": 107,
+          "h": 220
+        },
+        {
+          "name": "100% 33.4% 24.4% 9.5% 9.1%",
+          "type": "text",
+          "x": 1558,
+          "y": 3244,
+          "w": 52,
+          "h": 216
+        },
+        {
+          "name": "구분",
+          "type": "text",
+          "x": 1230,
+          "y": 3171,
+          "w": 33,
+          "h": 18
+        },
+        {
+          "name": "금액",
+          "type": "text",
+          "x": 1406,
+          "y": 3171,
+          "w": 32,
+          "h": 18
+        },
+        {
+          "name": "비율",
+          "type": "text",
+          "x": 1567,
+          "y": 3171,
+          "w": 32,
+          "h": 18
+        },
+        {
+          "name": "순수익",
+          "type": "text",
+          "x": 1212,
+          "y": 3517,
+          "w": 69,
+          "h": 26
+        },
+        {
+          "name": "14,000,000원",
+          "type": "text",
+          "x": 1329,
+          "y": 3517,
+          "w": 146,
+          "h": 27
+        },
+        {
+          "name": "23.6%",
+          "type": "text",
+          "x": 1551,
+          "y": 3520,
+          "w": 65,
+          "h": 20
+        },
+        {
+          "name": "모양 3 복사 3",
+          "type": "layer",
+          "x": 1190,
+          "y": 3212,
+          "w": 449,
+          "h": 4
+        }
+      ],
+      "bbox": {
+        "x": 1147,
+        "y": 3137,
+        "w": 534,
+        "h": 451
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    }
+  ],
+  "texts": [
+    {
+      "name": "남는 구조가 다릅니다",
+      "content": "남는 구조가 다릅니다",
+      "lineBreaks": 0,
+      "x": 704,
+      "y": 2918,
+      "w": 512,
+      "h": 60,
+      "segments": [
+        {
+          "text": "남는 구조",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#5d2b0d",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "가 다릅니다",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#070707",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "매출보다 중요한 것",
+      "content": "매출보다 중요한 것",
+      "lineBreaks": 0,
+      "x": 842,
+      "y": 2870,
+      "w": 237,
+      "h": 29,
+      "segments": [
+        {
+          "text": "매출보다 중요한 것",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#070707",
+          "lineHeight": 2.167,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "불필요한 비용을 줄이고 효율적으로 남기는 구조로 안정적인 수익을 만들어갑니다",
+      "content": "불필요한 비용을 줄이고 효율적으로 남기는 구조로\n안정적인 수익을 만들어갑니다",
+      "lineBreaks": 1,
+      "x": 760,
+      "y": 3009,
+      "w": 399,
+      "h": 50,
+      "segments": [
+        {
+          "text": "불필요한 비용을 줄이고 효율적으로 남기는 구조로\n",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "안정적인 수익",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "을 만들어갑니다",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "※ 가맹점 매출 및 수익은 상권, 운영, 시장 상황 등에 따라 달라질 수 있습니다 ",
+      "content": "※ 가맹점 매출 및 수익은 상권, 운영, 시장 상황 등에 따라 달라질 수 있습니다 ",
+      "lineBreaks": 0,
+      "x": 1148,
+      "y": 3594,
+      "w": 433,
+      "h": 17,
+      "segments": [
+        {
+          "text": "※ 가맹점 매출 및 수익은 상권, 운영, 시장 상황 등에 따라 달라질 수 있습니다 ",
+          "fontSize_px": 15.99,
+          "fontSize_vw": "0.8394",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 3.462,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "[본점 기준]",
+      "content": "[본점 기준]",
+      "lineBreaks": 0,
+      "x": 1617,
+      "y": 3115,
+      "w": 63,
+      "h": 17,
+      "segments": [
+        {
+          "text": "[본점 기준]",
+          "fontSize_px": 15.99,
+          "fontSize_vw": "0.8394",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 3.462,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "총매출 식자재 인건비 임대료 기타 ",
+      "content": "총매출\n식자재\n인건비\n임대료\n기타",
+      "lineBreaks": 4,
+      "x": 1222,
+      "y": 3243,
+      "w": 50,
+      "h": 218,
+      "segments": [
+        {
+          "text": "총매출\n식자재\n인건비\n임대료\n기타",
+          "fontSize_px": 19.99,
+          "fontSize_vw": "1.0493",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 2.5,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "60,000,000원 20,000,000원 15,000,000원 5,800,000원 5,600,000원 ",
+      "content": "60,000,000원\n20,000,000원\n15,000,000원\n5,800,000원\n5,600,000원",
+      "lineBreaks": 4,
+      "x": 1369,
+      "y": 3243,
+      "w": 107,
+      "h": 220,
+      "segments": [
+        {
+          "text": "60,000,000원\n20,000,000원\n15,000,000원\n5,800,000원\n5,600,000원",
+          "fontSize_px": 19.99,
+          "fontSize_vw": "1.0493",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 2.5,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "100% 33.4% 24.4% 9.5% 9.1%",
+      "content": "100%\n33.4%\n24.4%\n9.5%\n9.1%",
+      "lineBreaks": 4,
+      "x": 1558,
+      "y": 3244,
+      "w": 52,
+      "h": 216,
+      "segments": [
+        {
+          "text": "100%\n33.4%\n24.4%\n9.5%\n9.1%",
+          "fontSize_px": 19.99,
+          "fontSize_vw": "1.0493",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 2.5,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "구분",
+      "content": "구분",
+      "lineBreaks": 0,
+      "x": 1230,
+      "y": 3171,
+      "w": 33,
+      "h": 18,
+      "segments": [
+        {
+          "text": "구분",
+          "fontSize_px": 19.99,
+          "fontSize_vw": "1.0493",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 2.77,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "금액",
+      "content": "금액",
+      "lineBreaks": 0,
+      "x": 1406,
+      "y": 3171,
+      "w": 32,
+      "h": 18,
+      "segments": [
+        {
+          "text": "금액",
+          "fontSize_px": 19.99,
+          "fontSize_vw": "1.0493",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 2.77,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "비율",
+      "content": "비율",
+      "lineBreaks": 0,
+      "x": 1567,
+      "y": 3171,
+      "w": 32,
+      "h": 18,
+      "segments": [
+        {
+          "text": "비율",
+          "fontSize_px": 19.99,
+          "fontSize_vw": "1.0493",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 2.77,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "순수익",
+      "content": "순수익",
+      "lineBreaks": 0,
+      "x": 1212,
+      "y": 3517,
+      "w": 69,
+      "h": 26,
+      "segments": [
+        {
+          "text": "순수익",
+          "fontSize_px": 25.98,
+          "fontSize_vw": "1.3638",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 2.131,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "14,000,000원",
+      "content": "14,000,000원",
+      "lineBreaks": 0,
+      "x": 1329,
+      "y": 3517,
+      "w": 146,
+      "h": 27,
+      "segments": [
+        {
+          "text": "14,000,000원",
+          "fontSize_px": 25.98,
+          "fontSize_vw": "1.3638",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 2.131,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "23.6%",
+      "content": "23.6%",
+      "lineBreaks": 0,
+      "x": 1551,
+      "y": 3520,
+      "w": 65,
+      "h": 20,
+      "segments": [
+        {
+          "text": "23.6%",
+          "fontSize_px": 25.98,
+          "fontSize_vw": "1.3638",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 2.131,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "월매출",
+      "content": "월매출",
+      "lineBreaks": 0,
+      "x": 356,
+      "y": 3231,
+      "w": 55,
+      "h": 20,
+      "segments": [
+        {
+          "text": "월매출",
+          "fontSize_px": 21.99,
+          "fontSize_vw": "1.1543",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 3.642,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "con03_07",
+      "content": "6,000만 원",
+      "lineBreaks": 0,
+      "x": 358,
+      "y": 3274,
+      "w": 203,
+      "h": 45,
+      "segments": [
+        {
+          "text": "6,000",
+          "fontSize_px": 49.98,
+          "fontSize_vw": "2.6236",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#5d2b0d",
+          "lineHeight": 1.603,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "만 원",
+          "fontSize_px": 39.98,
+          "fontSize_vw": "2.0987",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#000000",
+          "lineHeight": 2.003,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ],
+      "possibleFile": "con03_07.png"
+    },
+    {
+      "name": "순수익",
+      "content": "순수익",
+      "lineBreaks": 0,
+      "x": 356,
+      "y": 3421,
+      "w": 53,
+      "h": 20,
+      "segments": [
+        {
+          "text": "순수익",
+          "fontSize_px": 21.99,
+          "fontSize_vw": "1.1543",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 3.642,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "con03_08",
+      "content": "1,400만 원",
+      "lineBreaks": 0,
+      "x": 359,
+      "y": 3464,
+      "w": 195,
+      "h": 45,
+      "segments": [
+        {
+          "text": "1,400",
+          "fontSize_px": 49.98,
+          "fontSize_vw": "2.6236",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#5d2b0d",
+          "lineHeight": 1.603,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "만 원",
+          "fontSize_px": 39.98,
+          "fontSize_vw": "2.0987",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#000000",
+          "lineHeight": 2.003,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ],
+      "possibleFile": "con03_08.png"
+    },
+    {
+      "name": "23.6%",
+      "content": "23.6%",
+      "lineBreaks": 0,
+      "x": 661,
+      "y": 3216,
+      "w": 135,
+      "h": 37,
+      "segments": [
+        {
+          "text": "23.6%",
+          "fontSize_px": 49.98,
+          "fontSize_vw": "2.6236",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#f8edd7",
+          "lineHeight": 1.874,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        }
+      ]
+    },
+    {
+      "name": "수익률",
+      "content": "수익률",
+      "lineBreaks": 0,
+      "x": 703,
+      "y": 3181,
+      "w": 50,
+      "h": 18,
+      "segments": [
+        {
+          "text": "수익률",
+          "fontSize_px": 19.99,
+          "fontSize_vw": "1.0493",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#f8edd7",
+          "lineHeight": 4.007,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 5",
+      "x": -1,
+      "y": 2738,
+      "w": 1922,
+      "h": 943,
+      "fill": "#f8edd7",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 1046 복사 4",
+      "x": 1147,
+      "y": 3137,
+      "w": 534,
+      "h": 451,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 1046 복사 4",
+      "x": 1166,
+      "y": 3490,
+      "w": 499,
+      "h": 78,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 1046 복사 5",
+      "x": 1504,
+      "y": 3490,
+      "w": 162,
+      "h": 78,
+      "fill": "#bfa78a",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 3 복사 3",
+      "x": 1190,
+      "y": 3212,
+      "w": 449,
+      "h": 4,
+      "fill": "#d33418",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "타원 4 복사",
+      "x": 627,
+      "y": 3114,
+      "w": 502,
+      "h": 502,
+      "fill": "#e3cfaf",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "타원 4 복사 5",
+      "x": 636,
+      "y": 3123,
+      "w": 483,
+      "h": 483,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 5",
+      "x": -4,
+      "y": 3363,
+      "w": 643,
+      "h": 4,
+      "fill": "#d33418",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "타원 3",
+      "x": 631,
+      "y": 3124,
+      "w": 195,
+      "h": 193,
+      "fill": "#a4202c",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "x": -15,
+      "y": 2580,
+      "w": 1951,
+      "h": 1300,
+      "clippingRect": {
+        "x": -1,
+        "y": 2738,
+        "w": 1922,
+        "h": 943,
+        "borderRadius": 0
+      },
+      "possibleFile": "con03_bg.jpg",
+      "effects": null
+    },
+    {
+      "name": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "x": 429,
+      "y": 3070,
+      "w": 923,
+      "h": 615,
+      "clippingRect": {
+        "x": 627,
+        "y": 3114,
+        "w": 502,
+        "h": 502,
+        "borderRadius": 0
+      },
+      "possibleFile": "con03_01.png",
+      "effects": null
+    },
+    {
+      "name": "벡터 스마트 오브젝트",
+      "x": 621,
+      "y": 3106,
+      "w": 258,
+      "h": 258,
+      "clippingRect": {
+        "x": 631,
+        "y": 3124,
+        "w": 195,
+        "h": 193,
+        "borderRadius": 0
+      },
+      "possibleFile": "con03_03.png",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#000000",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    }
+  ],
+  "comments": [],
+  "bgRect": {
+    "y": 2580,
+    "h": 1300,
+    "bottom": 3880,
+    "name": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig"
+  }
+}

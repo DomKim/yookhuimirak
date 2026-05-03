@@ -1,0 +1,221 @@
+{
+  "timestamp": "2026-05-03T08:16:18.221Z",
+  "images": [
+    {
+      "file": "con14_01.jpg",
+      "width": 738,
+      "height": 429,
+      "hasAlpha": false,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con14_02.jpg",
+      "width": 738,
+      "height": 429,
+      "hasAlpha": false,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con14_03.jpg",
+      "width": 738,
+      "height": 429,
+      "hasAlpha": false,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con14_04.jpg",
+      "width": 738,
+      "height": 429,
+      "hasAlpha": false,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con14_05.jpg",
+      "width": 738,
+      "height": 429,
+      "hasAlpha": false,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con14_06.jpg",
+      "width": 738,
+      "height": 429,
+      "hasAlpha": false,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con14_07.jpg",
+      "width": 738,
+      "height": 429,
+      "hasAlpha": false,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con14_08.jpg",
+      "width": 738,
+      "height": 429,
+      "hasAlpha": false,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con14_09.jpg",
+      "width": 738,
+      "height": 429,
+      "hasAlpha": false,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "timestamp": "2026-05-03T05:28:49.921Z",
+  "images": [
+    {
+      "file": "con08_01_1.png",
+      "width": 731,
+      "height": 156,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 30
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con08_01_2.png",
+      "width": 845,
+      "height": 620,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 30
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con08_02_1.png",
+      "width": 735,
+      "height": 158,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 30
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con08_02_2.png",
+      "width": 855,
+      "height": 638,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 30
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con08_03_1.png",
+      "width": 287,
+      "height": 155,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 30
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con08_03_2.png",
+      "width": 866,
+      "height": 621,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 30
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con08_04_1.png",
+      "width": 586,
+      "height": 154,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 30
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con08_04_2.png",
+      "width": 867,
+      "height": 692,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 30
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con08_bg.png",
+      "width": 1348,
+      "height": 248,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": true,
+        "padding": 30
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 0
+      },
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con08_bg_2.jpg",
+      "width": 960,
+      "height": 900,
+      "hasAlpha": false,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con08_bg_3.jpg",
+      "width": 960,
+      "height": 900,
+      "hasAlpha": false,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    }
+  ]
+}

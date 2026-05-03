@@ -1,0 +1,103 @@
+<?php
+add_stylesheet("<link rel='stylesheet' href='".G5_THEME_URL."/template/footer/style.css'>", 0);
+?>
+<!-- 내용시작 -->
+<link rel="stylesheet" href="/css/footer.css" />
+
+<div class="contact_service rltv" id="contact_service">
+    <div class="contact_serviceright absol"></div>
+
+    <div class="quick_food rltv">
+        <img src="/images/q_img.png" alt="미락육회막국수">
+    </div>
+    <div class="quick_call_absol absol" onclick="location.href='tel:032-433-7049'">
+        <img src="/images/q_call.png" alt="q_call">
+    </div>
+    <div class="contact_mid">
+        <form class="footer-form">
+            <div class="footer_input_form">
+                <input class="footer_input" ontouchend="$(this).focus()" id="name_quick" name="name" type="text" placeholder="성함">
+                <input class="footer_input" ontouchend="$(this).focus()" id="tel1_quick" name="tel1" type="tel" placeholder="연락처" maxlength="13" oninput="autoHyphen2(this)" pattern="010-[0-9]{3,4}-[0-9]{4}">
+                <input class="footer_input" ontouchend="$(this).focus()" id="area_quick" name="area" type="text" placeholder="희망지역">
+            </div>
+        </form>
+    </div>
+    <div class="quick_agree absol">
+        <input type="checkbox" class="quickAgree_checkbox">
+        <span class="quickAgree_fornt per_Infor_policy"><a href="#none">개인정보 수집 및 이용 동의</a></span>
+    </div>
+    <div class="quick_submit_div absol">
+        <img src="/images/q_btn.png" alt="q_btn">
+    </div>
+    <div class="tothetop absol">
+        <a href="#"><img src="/images/q_tt.png" title=""></a>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer_top flexrow rltv">
+        <div class="footer_logo" onclick="location.href='/'">
+            <img src="/images/f_logo.png" alt="footer_logo">
+        </div>
+    </div>
+    <div class="footer_top_line"></div>
+    <div class="footer_mid per_Infor_policy absol">
+        <p>개인정보 처리 방침</p>
+    </div>
+    <div class="footer_bottom">
+        <p class="footer_info">
+            회사명 : (주)선미락 | 대표자 : 최철우<br>
+            주소 : 인천광역시 남동구 앵고개로 941번길 11-9 1층 | 대표번호 : 032-433-7049<br>
+            사업자번호 : 581-88-03391 | 이메일 : ccw9103@naver.com
+        </p>
+        <div class="tablet">
+            <br>
+            <p><span class="footer_title">회사명 : </span>(주)선미락 | <span class="footer_title">대표자 : </span>최철우</p>
+            <p><span class="footer_title">사업자번호 : </span>581-88-03391</p>
+            <p><span class="footer_title">주소 : </span>인천광역시 남동구 앵고개로 941번길 11-9 1층</p>
+            <p><span class="footer_title">이메일 : </span>ccw9103@naver.com</p>
+            <p><span class="footer_title">대표번호 : </span>032-433-7049</p>
+        </div>
+        <p class="copy">Copyright ⓒ(주)미락육회막국수. all Rights Reserved</p>
+        <div class="footer_vweb" onclick="window.open('https://xn--ov3b86nsk.com/bbs/content.php?co_id=project','_blank')">
+            <p class="vweb">created By VWEB</p>
+        </div>
+    </div>
+</footer>
+
+<!-- 개인정보처리방침 모달 -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="policy">
+            <div class="policy_title"><h2>개인정보처리방침</h2></div>
+            <div class="policy_con">
+                <p class="policy_text">
+                    주식회사 미락육회막국수(이하 '회사'라 함)은(는) 개인정보보호법에 따라 이용자의 개인정보 보호 및 권익을 보호하고
+                    개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 개인정보처리방침 end-->
+
+<!-- AI 챗봇 — 관리자가 '사용함'으로 설정하고 만료되지 않은 경우에만 로드 -->
+<?php
+$_cb_enabled_row = sql_fetch("SELECT config_value FROM g5_chatbot_config WHERE config_key='enabled'");
+$_cb_expires_row = sql_fetch("SELECT config_value FROM g5_chatbot_config WHERE config_key='expires_at'");
+$_cb_enabled = isset($_cb_enabled_row['config_value']) ? $_cb_enabled_row['config_value'] : '0';
+$_cb_expires = isset($_cb_expires_row['config_value']) ? $_cb_expires_row['config_value'] : '';
+$_cb_not_expired = (!$_cb_expires || strtotime($_cb_expires) > time());
+if ($_cb_enabled === '1' && $_cb_not_expired):
+?>
+<link rel="stylesheet" href="/chatbot/chatbot_widget.css?v=<?php echo filemtime(G5_PATH.'/chatbot/chatbot_widget.css'); ?>">
+<div id="cbContainer"></div>
+<script src="/chatbot/chatbot_widget.js?v=<?php echo filemtime(G5_PATH.'/chatbot/chatbot_widget.js'); ?>"></script>
+<script>ChatbotWidget.init();</script>
+<?php endif; ?>
+
+<script src="/js/footer.js"></script>
+<!-- 내용끝 -->
+
+<script src="<?=G5_THEME_URL?>/template/footer/script.js"></script>

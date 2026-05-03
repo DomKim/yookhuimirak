@@ -1,0 +1,317 @@
+{
+  "generatedBy": "spec-to-plan v3 (flat) + inline hints",
+  "aiCorrections": "con07 video Swiper — heightChain pt+title+video_wrap+pb, .con7_swiper overflow:hidden + .con7_video_wrap overflow:visible so prev/next render outside iframe clip; arrows as inline SVG.",
+  "strictStructure": true,
+  "section": "con07",
+  "sectionClass": "con7",
+  "page": "main",
+  "specFile": ".planning/con07/spec.json",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 7675,
+    "bottom": 8738,
+    "height": 1063
+  },
+  "firstRltvY": 7910,
+  "roundNumberOverride": [
+    "100.000000% is exact full parent width where the PSD element spans the entire parent wrapper (con7_bg fills section, con7_desc fills con7_title 582px, con7_swiper fills con7_video_wrap 892px)."
+  ],
+  "bg": "#fffdf5",
+  "bgRect": {
+    "top": 7774,
+    "bottom": 8738
+  },
+  "effectiveEnd": 8738,
+  "prevSectionBottom": 7777,
+  "pt": "12.335958vw",
+  "pb": "5.354331vw",
+  "heightChain": [
+    "pt",
+    "con7_title",
+    "con7_video_wrap",
+    "pb"
+  ],
+  "swiperConfig": {
+    "mode": "video-carousel",
+    "selector": ".con7_swiper",
+    "slidesPerView": 1,
+    "loop": true,
+    "navigation": {
+      "prev": ".con7_prev",
+      "next": ".con7_next"
+    },
+    "slides": [
+      {
+        "title": "SBS 생방송 투데이",
+        "youtubeId": "Bol_HGdUN2g",
+        "src": "https://www.youtube.com/embed/Bol_HGdUN2g"
+      },
+      {
+        "title": "윤곤치의 맛만 볼까?",
+        "youtubeId": "dzo8c-cdQ0A",
+        "src": "https://www.youtube.com/embed/dzo8c-cdQ0A"
+      },
+      {
+        "title": "먹킹",
+        "youtubeId": "Af-0E-Y8SdU",
+        "src": "https://www.youtube.com/embed/Af-0E-Y8SdU"
+      }
+    ]
+  },
+  "ignoredShapes": [
+    { "name": "사각형 13", "reason": "Full-section background plate (1922x964) — already covered by section bg #fffdf5 + con7_bg interior photo." },
+    { "name": "사각형 12 복사 4", "reason": "Video panel black backdrop (892x497) — implemented as .con7_swiper background:#000 behind iframe slides." },
+    { "name": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig 복사", "reason": "Cross-section vertical paper texture (986x1486) spanning con07-con08 boundary — decorative overlay handled at global section, ignored for con07 plan." }
+  ],
+  "ignoredAssets": [
+    { "name": "003", "reason": "PSD raster '003' (1920x1357) is the original photo composite for the panel — the actual asset used is the exported con07_bg.jpg (1920x960) via .con7_bg." },
+    { "name": "레이어 21", "reason": "Static SBS broadcast still (897x500) baked into PSD — replaced by 3 YouTube iframe slides inside the Swiper." },
+    { "file": "con07_01.png", "reason": "Single shared arrow raster (93x45) — replaced by inline <svg> arrows inside .con7_prev / .con7_next so left/right glyph orientation can be rendered without scale/transform on a shared raster." },
+    { "name": "벡터 스마트 오브젝트", "reason": "Left arrow vector smart object (38x16, white colorOverlay) — implemented as inline <svg> inside .con7_prev." },
+    { "name": "벡터 스마트 오브젝트 복사", "reason": "Right arrow vector smart object (38x16, white colorOverlay) — implemented as inline <svg> inside .con7_next." }
+  ],
+  "ignoredTexts": [],
+  "ascii": "┌── section.con7 (rltv, bg:#fffdf5, parent=main) ─────────────────────────────────────────┐\n│  ◇ con7_bg (absol, parent=section, top:0, left:0, w:100%, AR:1920/960)                  │\n│      └ src=/images/con07_bg.jpg  ← 흐릿 인테리어 배경 (z:0)                              │\n│                                                                                          │\n│  pt: 12.335958vw (=235px)                                                               │\n│                                                                                          │\n│  ▣ con7_title (rltv group, alignSelf:center, centerChildren, w:30.55%, mt:0)            │\n│      ├ con7_top    (rltv text, alignSelf:center, mt:0,        w:50.34%)                 │\n│      │   \"이미 주목받고 있습니다\" — 30px / TTOmniGothicM 400 / #070707                    │\n│      ├ con7_headline (rltv text, alignSelf:center, mt:0.892vw, w:99.31%)                │\n│      │   \"미디어\"=#5d2b0d + \"가 먼저 알아본 맛\"=#070707  — 60px / Eulyoo1945-SB 600       │\n│      └ con7_desc   (rltv text, alignSelf:center, mt:1.785vw, w:100%, lineBreaks:1)      │\n│          \"SBS '생방송 투데이' …<br>광고가 아닌 \" + <b>실제 경험</b>(700) + \"…브랜드입니다\" │\n│                                                                                          │\n│  ▣ con7_video_wrap (rltv group, alignSelf:center, mt:2.152vw, w:46.82%, ov:visible)     │\n│      ├ con7_swiper (rltv .swiper, mt:0, w:100%, AR:892/497, ov:HIDDEN, bg:#000)         │\n│      │   ⤷ swiper-wrapper > 3 × swiper-slide > iframe(youtube embed)                    │\n│      │     · Bol_HGdUN2g (SBS 생방송 투데이)                                              │\n│      │     · dzo8c-cdQ0A (윤곤치의 맛만 볼까?)                                            │\n│      │     · Af-0E-Y8SdU (먹킹)                                                          │\n│      ├ con7_prev (absol, parent=video_wrap, top:11.7585vw, left:-14.350%, w:10.65%, AR:95/48, bg:#231916) │\n│      │   ⤷ inline svg ← 화살표 (fill:#fff, 38x16)  ★ swiper 클립 외부에 위치 → 보임      │\n│      └ con7_next (absol, parent=video_wrap, top:11.7585vw, left:103.700%, w:10.87%, AR:97/48, bg:#231916) │\n│          ⤷ inline svg → 화살표 (fill:#fff, 38x16)  ★ swiper 클립 외부에 위치 → 보임      │\n│                                                                                          │\n│  pb: 5.354331vw (=102px)                                                                │\n└──────────────────────────────────────────────────────────────────────────────────────────┘\n\n[heightChain] pt(12.336) + con7_title(1.522+0.892+3.045+1.785+2.625) + mt(2.152) + con7_swiper(26.089) + pb(5.354) = 55.797vw = 1063px ✅\n[overflow]    .con7_swiper = hidden (iframe 클립). .con7_video_wrap = visible (nav 외부 노출).\n[swiper]      slidesPerView:1, loop:true, navigation:{prevEl:.con7_prev, nextEl:.con7_next}",
+  "doNot": [
+    "Do not code before user approves ASCII after plan-checker passes.",
+    "Do not put height/aspect-ratio on section.con7; height = pt + con7_title + con7_video_wrap + pb only.",
+    "Do not put .con7_swiper inside an overflow:hidden parent that also clips the nav buttons — overflow:hidden is on .con7_swiper itself, while .con7_video_wrap stays overflow:visible so prev/next render outside the iframe area.",
+    "Do not flatten title texts to section-level siblings; con7_top, con7_headline, con7_desc live inside con7_title group with centerChildren.",
+    "Do not center child texts via individual margin-left; use parent centerChildren / alignSelf:center.",
+    "Do not use object-fit or max-width on images.",
+    "Do not hide PSD line breaks in con7_desc; the <br> after the first sentence must remain on PC and mobile.",
+    "Do not replace YouTube iframes with the PSD '레이어 21' raster — slides must load as live iframes pointing to youtube.com/embed/<id>.",
+    "Do not give .con7_video_wrap a fixed height; its height comes from .con7_swiper aspect-ratio (892/497, declared via heightSource on the swiper itself)."
+  ],
+  "elements": [
+    {
+      "name": "con7_bg",
+      "type": "image",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "0.000000vw",
+      "left": "0.000000%",
+      "width": "100.000000%",
+      "src": "/images/con07_bg.jpg",
+      "naturalWidth": 1920,
+      "naturalHeight": 960,
+      "aspectRatio": "1920/960",
+      "heightSource": "interior photo bg con07_bg.jpg (1920x960)",
+      "heightSourceReason": "PSD '003' composite spans the section as an interior photo background; the exported asset is 1920x960 and the visible plate (사각형 13) is 1922x964 — ratio matches.",
+      "sourceType": "source full-section interior photo",
+      "isBackground": true,
+      "effects": null,
+      "borderRadius": null,
+      "role": "absolute decorative photo background, not part of heightChain",
+      "psdY": 7774
+    },
+    {
+      "name": "con7_title",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0.000000vw",
+      "marginLeft": "0.000000%",
+      "alignSelf": "center",
+      "centerChildren": true,
+      "display": "flex-column",
+      "width": "30.551181%",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 7910,
+      "children": [
+        {
+          "name": "con7_top",
+          "type": "text",
+          "position": "rltv",
+          "parent": "con7_title",
+          "parentWidth": 582,
+          "marginTop": "0.000000vw",
+          "marginLeft": "0.000000%",
+          "alignSelf": "center",
+          "width": "50.343643%",
+          "whiteSpace": "nowrap",
+          "effects": null,
+          "content": "이미 주목받고 있습니다",
+          "segments": [
+            {
+              "text": "이미 주목받고 있습니다",
+              "fontWeight": 400,
+              "color": "#070707",
+              "fontSize": "1.574803vw (30px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 2.167,
+              "fontFamily": "TTOmniGothicM"
+            }
+          ],
+          "psdY": 7910
+        },
+        {
+          "name": "con7_headline",
+          "type": "text",
+          "position": "rltv",
+          "parent": "con7_title",
+          "parentWidth": 582,
+          "marginTop": "0.892388vw",
+          "marginLeft": "0.000000%",
+          "alignSelf": "center",
+          "width": "99.312715%",
+          "whiteSpace": "nowrap",
+          "effects": null,
+          "content": "미디어가 먼저 알아본 맛",
+          "segments": [
+            {
+              "text": "미디어",
+              "fontWeight": 600,
+              "color": "#5d2b0d",
+              "fontSize": "3.149606vw (60px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.083,
+              "fontFamily": "Eulyoo1945-SemiBold"
+            },
+            {
+              "text": "가 먼저 알아본 맛",
+              "fontWeight": 600,
+              "color": "#070707",
+              "fontSize": "3.149606vw (60px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.083,
+              "fontFamily": "Eulyoo1945-SemiBold"
+            }
+          ],
+          "psdY": 7956
+        },
+        {
+          "name": "con7_desc",
+          "type": "text",
+          "position": "rltv",
+          "parent": "con7_title",
+          "parentWidth": 582,
+          "marginTop": "1.784777vw",
+          "marginLeft": "0.000000%",
+          "alignSelf": "center",
+          "width": "100.000000%",
+          "whiteSpace": "nowrap",
+          "effects": null,
+          "lineBreaks": 1,
+          "content": "SBS '생방송 투데이' 등 다양한 방송과 매체를 통해 소개된 미락육회막국수\n광고가 아닌 실제 경험을 통해 자연스럽게 알려진 브랜드입니다",
+          "segments": [
+            {
+              "text": "SBS '생방송 투데이' 등 다양한 방송과 매체를 통해 소개된 미락육회막국수\n",
+              "fontWeight": 300,
+              "color": "#000000",
+              "fontSize": "1.154856vw (22px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.364,
+              "fontFamily": "Pretendard-Light"
+            },
+            {
+              "text": "광고가 아닌 실제 경험",
+              "fontWeight": 700,
+              "color": "#000000",
+              "fontSize": "1.154856vw (22px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.364,
+              "fontFamily": "Pretendard-Bold"
+            },
+            {
+              "text": "을 통해 자연스럽게 알려진 브랜드입니다",
+              "fontWeight": 300,
+              "color": "#000000",
+              "fontSize": "1.154856vw (22px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.364,
+              "fontFamily": "Pretendard-Light"
+            }
+          ],
+          "psdY": 8048
+        }
+      ]
+    },
+    {
+      "name": "con7_video_wrap",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "2.152231vw",
+      "marginLeft": "0.000000%",
+      "alignSelf": "center",
+      "width": "46.824147%",
+      "display": "flex-column",
+      "overflow": "visible",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 8139,
+      "role": "swiper container — child .con7_swiper sets height via aspect-ratio; nav buttons are absol siblings rendered outside the iframe clip area",
+      "children": [
+        {
+          "name": "con7_swiper",
+          "type": "swiper",
+          "position": "rltv",
+          "parent": "con7_video_wrap",
+          "parentWidth": 892,
+          "marginTop": "0.000000vw",
+          "marginLeft": "0.000000%",
+          "width": "100.000000%",
+          "aspectRatio": "892/497",
+          "heightSource": "video iframe carousel (892x497 PSD panel)",
+          "heightSourceReason": "Swiper.media exception — video carousel needs a fixed slide height for iframe sizing; PSD video panel is 892x497, ratio frozen on the .con7_swiper element only.",
+          "overflow": "hidden",
+          "background": "#000000",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 8139,
+          "slidesPerView": 1,
+          "spaceBetween": 0,
+          "visibleCount": 1,
+          "swiperOptions": {
+            "slidesPerView": 1,
+            "spaceBetween": 0,
+            "loop": true,
+            "navigation": { "prevEl": ".con7_prev", "nextEl": ".con7_next" }
+          },
+          "slides": [
+            { "iframe": "https://www.youtube.com/embed/Bol_HGdUN2g", "title": "SBS 생방송 투데이" },
+            { "iframe": "https://www.youtube.com/embed/dzo8c-cdQ0A", "title": "윤곤치의 맛만 볼까?" },
+            { "iframe": "https://www.youtube.com/embed/Af-0E-Y8SdU", "title": "먹킹" }
+          ]
+        },
+        {
+          "name": "con7_prev",
+          "type": "button",
+          "position": "absol",
+          "parent": "con7_video_wrap",
+          "parentWidth": 892,
+          "top": "11.758530vw",
+          "left": "-14.349776%",
+          "width": "10.650224%",
+          "aspectRatio": "95/48",
+          "background": "#231916",
+          "effects": null,
+          "borderRadius": null,
+          "role": "previous slide button — sits outside .con7_swiper clip; arrow rendered via inline SVG fill:#ffffff",
+          "psdY": 8363
+        },
+        {
+          "name": "con7_next",
+          "type": "button",
+          "position": "absol",
+          "parent": "con7_video_wrap",
+          "parentWidth": 892,
+          "top": "11.758530vw",
+          "left": "103.699552%",
+          "width": "10.874439%",
+          "aspectRatio": "97/48",
+          "background": "#231916",
+          "effects": null,
+          "borderRadius": null,
+          "role": "next slide button — sits outside .con7_swiper clip on the right side; arrow inline SVG fill:#ffffff",
+          "psdY": 8363
+        }
+      ]
+    }
+  ]
+}

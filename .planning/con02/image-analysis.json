@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-05-03T04:22:56.189Z",
+  "images": [
+    {
+      "file": "con02_01.png",
+      "width": 270,
+      "height": 53,
+      "hasAlpha": true,
+      "border": {
+        "detected": true,
+        "color": "#a4202c",
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 8
+      },
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con02_02.png",
+      "width": 934,
+      "height": 985,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 30
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    }
+  ]
+}

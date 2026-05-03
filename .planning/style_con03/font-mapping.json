@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "mapping": {
+    "Eulyoo1945-SemiBold": "var(--sf)",
+    "Pretendard-Light": "var(--mf)",
+    "Pretendard-Bold": "var(--mf)",
+    "TTOmniGothicM": "var(--tf)"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "verified": true,
+  "source": ".planning/mirak/parsed.json",
+  "psdFonts": {
+    "Pretendard-Light": 93,
+    "Eulyoo1945-SemiBold": 74,
+    "Pretendard-Bold": 40,
+    "TTOmniGothicEB": 32,
+    "Pretendard-Medium": 24,
+    "TTOmniGothicM": 22,
+    "TTOmniGothicH": 14,
+    "TTOmniGothicB": 12,
+    "SUIT-Regular": 10,
+    "SUIT-Bold": 8,
+    "Eulyoo1945-Regular": 5,
+    "SUIT-Thin": 4,
+    "HanWangZonYi": 2,
+    "TTOmniGothicR": 1,
+    "Gulim": 1,
+    "NotoSerifCJKkr-Bold": 1,
+    "Hahmlet-SemiBold": 1
+  },
+  "mapping": {
+    "Pretendard-Light": "Pretendard Variable",
+    "Pretendard-Bold": "Pretendard Variable",
+    "Pretendard-Medium": "Pretendard Variable",
+    "Eulyoo1945-SemiBold": "Eulyoo 1945",
+    "Eulyoo1945-Regular": "Eulyoo 1945",
+    "TTOmniGothicEB": "OmniGothic",
+    "TTOmniGothicM": "OmniGothic",
+    "TTOmniGothicH": "OmniGothic",
+    "TTOmniGothicB": "OmniGothic",
+    "TTOmniGothicR": "OmniGothic",
+    "SUIT-Regular": "SUIT",
+    "SUIT-Bold": "SUIT",
+    "SUIT-Thin": "SUIT",
+    "NotoSerifCJKkr-Bold": "Noto Serif KR",
+    "Hahmlet-SemiBold": "Hahmlet",
+    "HanWangZonYi": "Noto Serif KR",
+    "Gulim": "Pretendard Variable"
+  },
+  "cdn": {
+    "Pretendard Variable": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css",
+    "Eulyoo 1945": "https://cdn.jsdelivr.net/gh/sweetherofonts/fontshero_pack2/eulyoo1945/",
+    "SUIT": "https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/",
+    "Noto Serif KR": "https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap",
+    "Hahmlet": "https://fonts.googleapis.com/css2?family=Hahmlet:wght@300..900&display=swap",
+    "OmniGothic": "Adobe Fonts 210 OmniGothic requires a project kit CSS URL from Adobe Fonts (use.typekit.net/*.css); no public kit id is present in the provided assets."
+  }
+}

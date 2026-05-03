@@ -1,0 +1,667 @@
+{
+  "section": "con09",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 9475,
+    "bottom": 10547
+  },
+  "background": {
+    "type": "color",
+    "fill": "#ffffff",
+    "src": null
+  },
+  "groups": [
+    {
+      "name": "그룹 4",
+      "parentGroup": "con09",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 13 복사 2",
+          "type": "layer",
+          "x": -1,
+          "y": 9633,
+          "w": 203,
+          "h": 803
+        },
+        {
+          "name": "Gemini_Generated_Image_j5aizuj5aizuj5ai",
+          "type": "layer",
+          "x": -73,
+          "y": 9475,
+          "w": 598,
+          "h": 1072
+        }
+      ],
+      "bbox": null,
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "그룹 5",
+      "parentGroup": "con09",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 13",
+          "type": "layer",
+          "x": 1719,
+          "y": 9633,
+          "w": 203,
+          "h": 803
+        },
+        {
+          "name": "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+          "type": "layer",
+          "x": 1382,
+          "y": 9475,
+          "w": 598,
+          "h": 1072
+        }
+      ],
+      "bbox": {
+        "x": 1382,
+        "y": 9475,
+        "w": 598,
+        "h": 1072
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con09_02",
+      "parentGroup": "con09",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 14 복사 3",
+          "type": "layer",
+          "x": 866,
+          "y": 10388,
+          "w": 95,
+          "h": 48
+        },
+        {
+          "name": "벡터 스마트 오브젝트 복사 3",
+          "type": "layer",
+          "x": 895,
+          "y": 10404,
+          "w": 38,
+          "h": 16
+        }
+      ],
+      "bbox": {
+        "x": 866,
+        "y": 10388,
+        "w": 95,
+        "h": 48
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con09_03",
+      "parentGroup": "con09",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 14 복사 3",
+          "type": "layer",
+          "x": 959,
+          "y": 10388,
+          "w": 95,
+          "h": 48
+        },
+        {
+          "name": "벡터 스마트 오브젝트 복사 3",
+          "type": "layer",
+          "x": 987,
+          "y": 10403,
+          "w": 38,
+          "h": 16
+        }
+      ],
+      "bbox": {
+        "x": 959,
+        "y": 10388,
+        "w": 95,
+        "h": 48
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con09_01",
+      "parentGroup": "con09",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "타원 5",
+          "type": "layer",
+          "x": 913,
+          "y": 9711,
+          "w": 95,
+          "h": 43
+        },
+        {
+          "name": "MENU",
+          "type": "text",
+          "x": 930,
+          "y": 9728,
+          "w": 59,
+          "h": 12
+        }
+      ],
+      "bbox": {
+        "x": 913,
+        "y": 9711,
+        "w": 95,
+        "h": 43
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    }
+  ],
+  "texts": [
+    {
+      "name": "메뉴명",
+      "content": "메뉴명",
+      "lineBreaks": 0,
+      "x": 432,
+      "y": 10294,
+      "w": 47,
+      "h": 18,
+      "segments": [
+        {
+          "text": "메뉴명",
+          "fontSize_px": 20.01,
+          "fontSize_vw": "1.0504",
+          "fontWeight": 400,
+          "fontFamily": "SUIT-Regular",
+          "color": "#000000",
+          "lineHeight": 1.45,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.07em"
+        }
+      ]
+    },
+    {
+      "name": "메뉴명",
+      "content": "메뉴명",
+      "lineBreaks": 0,
+      "x": 1441,
+      "y": 10294,
+      "w": 47,
+      "h": 18,
+      "segments": [
+        {
+          "text": "메뉴명",
+          "fontSize_px": 20.01,
+          "fontSize_vw": "1.0504",
+          "fontWeight": 400,
+          "fontFamily": "SUIT-Regular",
+          "color": "#000000",
+          "lineHeight": 1.45,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.07em"
+        }
+      ]
+    },
+    {
+      "name": "메뉴명",
+      "content": "메뉴명",
+      "lineBreaks": 0,
+      "x": 768,
+      "y": 10294,
+      "w": 47,
+      "h": 18,
+      "segments": [
+        {
+          "text": "메뉴명",
+          "fontSize_px": 20.01,
+          "fontSize_vw": "1.0504",
+          "fontWeight": 400,
+          "fontFamily": "SUIT-Regular",
+          "color": "#000000",
+          "lineHeight": 1.45,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.07em"
+        }
+      ]
+    },
+    {
+      "name": "메뉴명",
+      "content": "메뉴명",
+      "lineBreaks": 0,
+      "x": 1105,
+      "y": 10294,
+      "w": 47,
+      "h": 18,
+      "segments": [
+        {
+          "text": "메뉴명",
+          "fontSize_px": 20.01,
+          "fontSize_vw": "1.0504",
+          "fontWeight": 400,
+          "fontFamily": "SUIT-Regular",
+          "color": "#000000",
+          "lineHeight": 1.45,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.07em"
+        }
+      ]
+    },
+    {
+      "name": "메인 메뉴",
+      "content": "메인 메뉴",
+      "lineBreaks": 0,
+      "x": 751,
+      "y": 9904,
+      "w": 77,
+      "h": 20,
+      "segments": [
+        {
+          "text": "메인 메뉴",
+          "fontSize_px": 19.95,
+          "fontSize_vw": "1.0472",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 1.455,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "사이드 메뉴",
+      "content": "사이드 메뉴",
+      "lineBreaks": 0,
+      "x": 911,
+      "y": 9904,
+      "w": 96,
+      "h": 20,
+      "segments": [
+        {
+          "text": "사이드 메뉴",
+          "fontSize_px": 19.95,
+          "fontSize_vw": "1.0472",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 1.455,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "추가 메뉴",
+      "content": "추가 메뉴",
+      "lineBreaks": 0,
+      "x": 1090,
+      "y": 9904,
+      "w": 77,
+      "h": 21,
+      "segments": [
+        {
+          "text": "추가 메뉴",
+          "fontSize_px": 19.95,
+          "fontSize_vw": "1.0472",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 1.455,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "미락육회막국수 차림표",
+      "content": "미락육회막국수 차림표",
+      "lineBreaks": 0,
+      "x": 704,
+      "y": 9807,
+      "w": 510,
+      "h": 54,
+      "segments": [
+        {
+          "text": "미락육회막국수",
+          "fontSize_px": 55,
+          "fontSize_vw": "2.8871",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#5d2b0d",
+          "lineHeight": 1.182,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": " 차림표",
+          "fontSize_px": 55,
+          "fontSize_vw": "2.8871",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#070707",
+          "lineHeight": 1.182,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "MENU",
+      "content": "MENU",
+      "lineBreaks": 0,
+      "x": 930,
+      "y": 9728,
+      "w": 59,
+      "h": 12,
+      "segments": [
+        {
+          "text": "MENU",
+          "fontSize_px": 16,
+          "fontSize_vw": "0.8399",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#f8edd7",
+          "lineHeight": 4.063,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0.2em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 13 복사 2",
+      "x": -1,
+      "y": 9633,
+      "w": 203,
+      "h": 803,
+      "fill": "#f8edd7",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 13",
+      "x": 1719,
+      "y": 9633,
+      "w": 203,
+      "h": 803,
+      "fill": "#f8edd7",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 13 복사",
+      "x": 199,
+      "y": 9632,
+      "w": 1522,
+      "h": 804,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#231916"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 840 복사 3",
+      "x": 299,
+      "y": 9990,
+      "w": 313,
+      "h": 284,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#dddddd"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 840 복사 4",
+      "x": 1308,
+      "y": 9990,
+      "w": 313,
+      "h": 284,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#dddddd"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 840 복사 5",
+      "x": 635,
+      "y": 9990,
+      "w": 313,
+      "h": 284,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#dddddd"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 840 복사 6",
+      "x": 972,
+      "y": 9990,
+      "w": 313,
+      "h": 284,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#dddddd"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 842",
+      "x": 713,
+      "y": 9888,
+      "w": 154,
+      "h": 53,
+      "fill": "#231916",
+      "borderRadius": 25,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 842 복사 2",
+      "x": 883,
+      "y": 9888,
+      "w": 154,
+      "h": 53,
+      "fill": "#ffffff",
+      "borderRadius": 25,
+      "stroke": {
+        "width": 1,
+        "color": "#dddddd"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 842 복사 3",
+      "x": 1053,
+      "y": 9888,
+      "w": 154,
+      "h": 53,
+      "fill": "#ffffff",
+      "borderRadius": 25,
+      "stroke": {
+        "width": 1,
+        "color": "#dddddd"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 14 복사 3",
+      "x": 866,
+      "y": 10388,
+      "w": 95,
+      "h": 48,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 14 복사 3",
+      "x": 959,
+      "y": 10388,
+      "w": 95,
+      "h": 48,
+      "fill": "#bfa78a",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "타원 5",
+      "x": 913,
+      "y": 9711,
+      "w": 95,
+      "h": 43,
+      "fill": "#a4202c",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "벡터 스마트 오브젝트 복사 2",
+      "x": 1468,
+      "y": 10376,
+      "w": 38,
+      "h": 16,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#ffffff",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    },
+    {
+      "name": "Gemini_Generated_Image_j5aizuj5aizuj5ai",
+      "x": -73,
+      "y": 9475,
+      "w": 598,
+      "h": 1072,
+      "clippingRect": {
+        "x": -1,
+        "y": 9633,
+        "w": 203,
+        "h": 803,
+        "borderRadius": 0
+      },
+      "possibleFile": "con09_bg_1.jpg",
+      "effects": null
+    },
+    {
+      "name": "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+      "x": 1382,
+      "y": 9475,
+      "w": 598,
+      "h": 1072,
+      "clippingRect": {
+        "x": 1719,
+        "y": 9633,
+        "w": 203,
+        "h": 803,
+        "borderRadius": 0
+      },
+      "possibleFile": "con09_bg_2.jpg",
+      "effects": null
+    },
+    {
+      "name": "갈비탕",
+      "x": 231,
+      "y": 9979,
+      "w": 440,
+      "h": 293,
+      "clippingRect": {
+        "x": 299,
+        "y": 9990,
+        "w": 313,
+        "h": 284,
+        "borderRadius": 0
+      },
+      "possibleFile": "TODO",
+      "effects": null
+    },
+    {
+      "name": "벡터 스마트 오브젝트 복사 3",
+      "x": 895,
+      "y": 10404,
+      "w": 38,
+      "h": 16,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#ffffff",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    },
+    {
+      "name": "벡터 스마트 오브젝트 복사 3",
+      "x": 987,
+      "y": 10403,
+      "w": 38,
+      "h": 16,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#ffffff",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    }
+  ],
+  "comments": []
+}

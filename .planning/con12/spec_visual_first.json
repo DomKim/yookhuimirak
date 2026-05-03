@@ -1,0 +1,426 @@
+{
+  "section": "con12_visual_first",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 12147,
+    "bottom": 13279,
+    "height": 1132
+  },
+  "background": {
+    "type": "image",
+    "fill": null,
+    "src": "사각형 848 복사"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "name": "맛을 만드는 세 가지 고집",
+      "content": "맛을 만드는 세 가지 고집",
+      "lineBreaks": 0,
+      "x": 669,
+      "y": 12528,
+      "w": 583,
+      "h": 59,
+      "segments": [
+        {
+          "text": "맛을 만드는 ",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#070707",
+          "lineHeight": 1.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "세 가지 ",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#5d2b0d",
+          "lineHeight": 1.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "고집",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#070707",
+          "lineHeight": 1.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "오랜 시간의 결과",
+      "content": "오랜 시간의 결과",
+      "lineBreaks": 0,
+      "x": 855,
+      "y": 12478,
+      "w": 211,
+      "h": 28,
+      "segments": [
+        {
+          "text": "오랜 시간의 결과",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#070707",
+          "lineHeight": 2.167,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다. 자가제면 방식을 고집해 쫄깃하면서도 살아있는 ",
+      "content": "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다.\n자가제면 방식을 고집해 쫄깃하면서도 살아있는 식감을 완성하며\n한 그릇의 완성도를 높입니다.",
+      "lineBreaks": 2,
+      "x": 401,
+      "y": 12980,
+      "w": 453,
+      "h": 73,
+      "segments": [
+        {
+          "text": "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다.\n자가제면 방식을 고집해 쫄깃하면서도 살아있는 식감을 완성하며\n한 그릇의 완성도를 높입니다.",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "자가제면 메밀면",
+      "content": "자가제면 메밀면",
+      "lineBreaks": 0,
+      "x": 401,
+      "y": 12768,
+      "w": 235,
+      "h": 35,
+      "segments": [
+        {
+          "text": "자가제면",
+          "fontSize_px": 36,
+          "fontSize_vw": "1.8898",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#5d2b0d",
+          "lineHeight": 1.056,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": " 메밀면",
+          "fontSize_px": 36,
+          "fontSize_vw": "1.8898",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#000000",
+          "lineHeight": 1.056,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "최고급 육회",
+      "content": "최고급 육회",
+      "lineBreaks": 0,
+      "x": 1391,
+      "y": 12920,
+      "w": 35,
+      "h": 168,
+      "segments": [
+        {
+          "text": "최고급 육회",
+          "fontSize_px": 36,
+          "fontSize_vw": "1.8898",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#f8f4e6",
+          "lineHeight": 1.056,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "특제 양념",
+      "content": "특제 양념",
+      "lineBreaks": 0,
+      "x": 1531,
+      "y": 12954,
+      "w": 35,
+      "h": 135,
+      "segments": [
+        {
+          "text": "특제 양념",
+          "fontSize_px": 36,
+          "fontSize_vw": "1.8898",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#f8f4e6",
+          "lineHeight": 1.056,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "면까지 직접 만듭니다",
+      "content": "면까지 직접 만듭니다",
+      "lineBreaks": 0,
+      "x": 400,
+      "y": 12934,
+      "w": 213,
+      "h": 23,
+      "segments": [
+        {
+          "text": "면까지 직접 만듭니다",
+          "fontSize_px": 24,
+          "fontSize_vw": "1.2598",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#000000",
+          "lineHeight": 1.583,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "01",
+      "content": "01",
+      "lineBreaks": 0,
+      "x": 415,
+      "y": 12655,
+      "w": 21,
+      "h": 21,
+      "segments": [
+        {
+          "text": "01",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#ffffff",
+          "lineHeight": 0.955,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "02",
+      "content": "02",
+      "lineBreaks": 0,
+      "x": 1396,
+      "y": 12655,
+      "w": 27,
+      "h": 21,
+      "segments": [
+        {
+          "text": "02",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#231916",
+          "lineHeight": 0.955,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "03",
+      "content": "03",
+      "lineBreaks": 0,
+      "x": 1537,
+      "y": 12655,
+      "w": 27,
+      "h": 21,
+      "segments": [
+        {
+          "text": "03",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#231916",
+          "lineHeight": 0.955,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 1014",
+      "x": 299,
+      "y": 12642,
+      "w": 1044,
+      "h": 504,
+      "fill": "#ffffff",
+      "borderRadius": {
+        "topLeft": 30,
+        "topRight": 0,
+        "bottomLeft": 30,
+        "bottomRight": 0
+      },
+      "stroke": {
+        "width": 1,
+        "color": "#dddddd"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 24",
+      "x": 401,
+      "y": 12832,
+      "w": 694,
+      "h": 4,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 1014 복사 3",
+      "x": 1337,
+      "y": 12642,
+      "w": 144,
+      "h": 504,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#dddddd"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 1014 복사 4",
+      "x": 1477,
+      "y": 12642,
+      "w": 144,
+      "h": 504,
+      "fill": "#231916",
+      "borderRadius": {
+        "topLeft": 0,
+        "topRight": 30,
+        "bottomLeft": 0,
+        "bottomRight": 30
+      },
+      "stroke": {
+        "width": 1,
+        "color": "#dddddd"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 590 복사 4",
+      "x": 397,
+      "y": 12642,
+      "w": 56,
+      "h": 47,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 590 복사 9",
+      "x": 1380,
+      "y": 12642,
+      "w": 56,
+      "h": 47,
+      "fill": "#f8f4e6",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 590 복사 10",
+      "x": 1521,
+      "y": 12642,
+      "w": 56,
+      "h": 47,
+      "fill": "#f8f4e6",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "사각형 848 복사",
+      "x": -2,
+      "y": 12339,
+      "w": 1920,
+      "h": 940,
+      "clippingRect": {
+        "x": 299,
+        "y": 12642,
+        "w": 1044,
+        "h": 504,
+        "borderRadius": {
+          "topLeft": 30,
+          "topRight": 0,
+          "bottomLeft": 30,
+          "bottomRight": 0
+        }
+      },
+      "possibleFile": "con12_bg.jpg",
+      "effects": null
+    },
+    {
+      "name": "con12_01",
+      "x": 862,
+      "y": 12509,
+      "w": 529,
+      "h": 685,
+      "clippingRect": {
+        "x": 401,
+        "y": 12832,
+        "w": 694,
+        "h": 4,
+        "borderRadius": 0
+      },
+      "possibleFile": "con12_01.png",
+      "effects": null
+    }
+  ],
+  "comments": [
+    {
+      "name": "visual-spec-note",
+      "content": "First target con12 screen only. Card 2/3 lower active PSD states are interaction references, not static render targets."
+    }
+  ],
+  "bgRect": {
+    "y": 12147,
+    "h": 1358,
+    "bottom": 13505,
+    "name": "001"
+  }
+}

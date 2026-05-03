@@ -1,0 +1,347 @@
+{
+  "section": "con08",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 7957,
+    "bottom": 9848
+  },
+  "background": {
+    "type": "color",
+    "fill": "#ffffff",
+    "src": null
+  },
+  "groups": [],
+  "texts": [
+    {
+      "name": "con08_01_1",
+      "content": "육회막국수",
+      "lineBreaks": 0,
+      "x": 1075,
+      "y": 8933,
+      "w": 729,
+      "h": 154,
+      "segments": [
+        {
+          "text": "육회막국수",
+          "fontSize_px": 160,
+          "fontSize_vw": "8.3990",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 0.406,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ],
+      "possibleFile": "con08_01_1.png"
+    },
+    {
+      "name": "시그니처부터 다양한 한 끼까지",
+      "content": "시그니처부터\n다양한 한 끼까지",
+      "lineBreaks": 1,
+      "x": 283,
+      "y": 9014,
+      "w": 395,
+      "h": 133,
+      "segments": [
+        {
+          "text": "시그니처부터\n",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 1.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "다양한 한 끼",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#f8edd7",
+          "lineHeight": 1.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "까지",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 1.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "육회막국수를 중심으로 다양한 식사와 사이드 메뉴를 구성하여 남녀노소 만족할 수 있는 메뉴 라인업을 완성했습니다",
+      "content": "육회막국수를 중심으로 다양한 식사와 사이드 메뉴를 구성하여\n남녀노소 만족할 수 있는 메뉴 라인업을 완성했습니다",
+      "lineBreaks": 1,
+      "x": 234,
+      "y": 9185,
+      "w": 490,
+      "h": 50,
+      "segments": [
+        {
+          "text": "육회막국수를 중심으로 다양한 식사와 사이드 메뉴를 구성하여\n",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "남녀노소 만족할 수 있는 메뉴 라인업을 완성",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#ffffff",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "했습니다",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "육회막국수",
+      "content": "육회막국수",
+      "lineBreaks": 0,
+      "x": 195,
+      "y": 9314,
+      "w": 92,
+      "h": 20,
+      "segments": [
+        {
+          "text": "육회막국수",
+          "fontSize_px": 20,
+          "fontSize_vw": "1.0499",
+          "fontWeight": 400,
+          "fontFamily": "Eulyoo1945-Regular",
+          "color": "#231916",
+          "lineHeight": 1.5,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "육회비빔밥",
+      "content": "육회비빔밥",
+      "lineBreaks": 0,
+      "x": 356,
+      "y": 9314,
+      "w": 92,
+      "h": 20,
+      "segments": [
+        {
+          "text": "육회비빔밥",
+          "fontSize_px": 20,
+          "fontSize_vw": "1.0499",
+          "fontWeight": 400,
+          "fontFamily": "Eulyoo1945-Regular",
+          "color": "#f8edd7",
+          "lineHeight": 1.5,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "육전",
+      "content": "육전",
+      "lineBreaks": 0,
+      "x": 544,
+      "y": 9314,
+      "w": 36,
+      "h": 20,
+      "segments": [
+        {
+          "text": "육전",
+          "fontSize_px": 20,
+          "fontSize_vw": "1.0499",
+          "fontWeight": 400,
+          "fontFamily": "Eulyoo1945-Regular",
+          "color": "#f8edd7",
+          "lineHeight": 1.5,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "수육국수",
+      "content": "수육국수",
+      "lineBreaks": 0,
+      "x": 687,
+      "y": 9314,
+      "w": 73,
+      "h": 20,
+      "segments": [
+        {
+          "text": "수육국수",
+          "fontSize_px": 20,
+          "fontSize_vw": "1.0499",
+          "fontWeight": 400,
+          "fontFamily": "Eulyoo1945-Regular",
+          "color": "#f8edd7",
+          "lineHeight": 1.5,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 15",
+      "x": 959,
+      "y": 8735,
+      "w": 962,
+      "h": 903,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 15 복사",
+      "x": -1,
+      "y": 8735,
+      "w": 962,
+      "h": 903,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 16",
+      "x": 163,
+      "y": 9297,
+      "w": 156,
+      "h": 54,
+      "fill": "#f8edd7",
+      "borderRadius": 24.5,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 16 복사",
+      "x": 324,
+      "y": 9297,
+      "w": 156,
+      "h": 54,
+      "fill": "#231916",
+      "borderRadius": 24.5,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 16 복사 2",
+      "x": 485,
+      "y": 9297,
+      "w": 156,
+      "h": 54,
+      "fill": "#231916",
+      "borderRadius": 24.5,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 16 복사 3",
+      "x": 646,
+      "y": 9297,
+      "w": 156,
+      "h": 54,
+      "fill": "#231916",
+      "borderRadius": 24.5,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "20695665",
+      "x": 673,
+      "y": 7957,
+      "w": 1261,
+      "h": 1891,
+      "clippingRect": {
+        "x": 959,
+        "y": 8735,
+        "w": 962,
+        "h": 903,
+        "borderRadius": 0
+      },
+      "possibleFile": "con08_bg_2.jpg",
+      "effects": null
+    },
+    {
+      "name": "con08_01_2",
+      "x": 1014,
+      "y": 9072,
+      "w": 845,
+      "h": 620,
+      "clippingRect": {
+        "x": 163,
+        "y": 9297,
+        "w": 156,
+        "h": 54,
+        "borderRadius": 24.5
+      },
+      "possibleFile": "con08_01_2.png",
+      "effects": null
+    },
+    {
+      "name": "벡터 스마트 오브젝트 복사",
+      "x": -169,
+      "y": 9479,
+      "w": 1348,
+      "h": 248,
+      "clippingRect": {
+        "x": 163,
+        "y": 9297,
+        "w": 156,
+        "h": 54,
+        "borderRadius": 24.5
+      },
+      "possibleFile": "con08_bg.png",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#f4edd9",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    }
+  ],
+  "comments": []
+}

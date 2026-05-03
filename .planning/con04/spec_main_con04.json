@@ -1,0 +1,392 @@
+{
+  "section": "con04",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 3428,
+    "bottom": 4828
+  },
+  "background": {
+    "type": "color",
+    "fill": "#ffffff",
+    "src": null
+  },
+  "groups": [
+    {
+      "name": "con04_03",
+      "parentGroup": "con04",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 7",
+          "type": "layer",
+          "x": 1378,
+          "y": 3855,
+          "w": 336,
+          "h": 92
+        },
+        {
+          "name": "육회랑 막국수를 같이 먹을 수 있어서 너무 좋아요",
+          "type": "text",
+          "x": 1426,
+          "y": 3877,
+          "w": 240,
+          "h": 46
+        }
+      ],
+      "bbox": {
+        "x": 1378,
+        "y": 3855,
+        "w": 336,
+        "h": 92
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con04_04",
+      "parentGroup": "con04",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 7 복사 2",
+          "type": "layer",
+          "x": 1229,
+          "y": 4012,
+          "w": 232,
+          "h": 92
+        },
+        {
+          "name": "여러 사이드도 다양해서 좋네요",
+          "type": "text",
+          "x": 1285,
+          "y": 4035,
+          "w": 121,
+          "h": 46
+        }
+      ],
+      "bbox": {
+        "x": 1229,
+        "y": 4012,
+        "w": 232,
+        "h": 92
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con04_05",
+      "parentGroup": "con04",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 7 복사",
+          "type": "layer",
+          "x": 1414,
+          "y": 4349,
+          "w": 356,
+          "h": 92
+        },
+        {
+          "name": "면이 쫄깃하고 새콤달콤한 양념이 입맛을 살려줘 육회와 잘 어울려요",
+          "type": "text",
+          "x": 1465,
+          "y": 4371,
+          "w": 252,
+          "h": 45
+        }
+      ],
+      "bbox": {
+        "x": 1414,
+        "y": 4349,
+        "w": 356,
+        "h": 92
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    }
+  ],
+  "texts": [
+    {
+      "name": "흔하지 않아서 더 강합니다",
+      "content": "흔하지 않아서\n더 강합니다",
+      "lineBreaks": 1,
+      "x": 239,
+      "y": 3996,
+      "w": 333,
+      "h": 134,
+      "segments": [
+        {
+          "text": "흔하지 않아서\n",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 1.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "더 강합니다",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#f8edd7",
+          "lineHeight": 1.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "익숙하지만 새로운 메뉴",
+      "content": "익숙하지만 새로운 메뉴",
+      "lineBreaks": 0,
+      "x": 240,
+      "y": 3948,
+      "w": 293,
+      "h": 28,
+      "segments": [
+        {
+          "text": "익숙하지만 새로운 메뉴",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#ffffff",
+          "lineHeight": 2.167,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "누구나 좋아하는 육회와 막국수 하지만 쉽게 볼 수 없는 조합  익숙한 메뉴에 새로운 경험을 더해 상권 내 확실한 ",
+      "content": "누구나 좋아하는 육회와 막국수\n하지만 쉽게 볼 수 없는 조합\n\n익숙한 메뉴에 새로운 경험을 더해\n상권 내 확실한 차별화를 만듭니다",
+      "lineBreaks": 4,
+      "x": 239,
+      "y": 4165,
+      "w": 268,
+      "h": 140,
+      "segments": [
+        {
+          "text": "누구나 좋아하는 육회와 막국수\n하지만 쉽게 볼 수 없는 조합\n\n익숙한 메뉴에 새로운 경험을 더해\n",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "상권 내 확실한 차별화",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#ffffff",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "를 만듭니다",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "육회랑 막국수를 같이 먹을 수 있어서 너무 좋아요",
+      "content": "육회랑 막국수를\n같이 먹을 수 있어서 너무 좋아요",
+      "lineBreaks": 1,
+      "x": 1426,
+      "y": 3877,
+      "w": 240,
+      "h": 46,
+      "segments": [
+        {
+          "text": "육회랑 막국수를\n같이 먹을 수 있어서 너무 좋아요",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicB",
+          "color": "#231916",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "여러 사이드도 다양해서 좋네요",
+      "content": "여러 사이드도\n다양해서 좋네요",
+      "lineBreaks": 1,
+      "x": 1285,
+      "y": 4035,
+      "w": 121,
+      "h": 46,
+      "segments": [
+        {
+          "text": "여러 사이드도\n다양해서 좋네요",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicB",
+          "color": "#231916",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "면이 쫄깃하고 새콤달콤한 양념이 입맛을 살려줘 육회와 잘 어울려요",
+      "content": "면이 쫄깃하고 새콤달콤한 양념이\n입맛을 살려줘 육회와 잘 어울려요",
+      "lineBreaks": 1,
+      "x": 1465,
+      "y": 4371,
+      "w": 252,
+      "h": 45,
+      "segments": [
+        {
+          "text": "면이 쫄깃하고 새콤달콤한 양념이\n입맛을 살려줘 육회와 잘 어울려요",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicB",
+          "color": "#231916",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 6",
+      "x": -1,
+      "y": 3677,
+      "w": 962,
+      "h": 894,
+      "fill": "#a4202c",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 6 복사",
+      "x": 959,
+      "y": 3677,
+      "w": 962,
+      "h": 894,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 7",
+      "x": 1378,
+      "y": 3855,
+      "w": 336,
+      "h": 92,
+      "fill": "#bfa78a",
+      "borderRadius": 44.5,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 7 복사 2",
+      "x": 1229,
+      "y": 4012,
+      "w": 232,
+      "h": 92,
+      "fill": "#bfa78a",
+      "borderRadius": 44.5,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 7 복사",
+      "x": 1414,
+      "y": 4349,
+      "w": 356,
+      "h": 92,
+      "fill": "#bfa78a",
+      "borderRadius": 44.5,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "벡터 스마트 오브젝트",
+      "x": 0,
+      "y": 3441,
+      "w": 943,
+      "h": 1379,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": null
+    },
+    {
+      "name": "KakaoTalk_20260306_104453973_05",
+      "x": 894,
+      "y": 3428,
+      "w": 1050,
+      "h": 1400,
+      "clippingRect": {
+        "x": -1,
+        "y": 3677,
+        "w": 962,
+        "h": 894,
+        "borderRadius": 0
+      },
+      "possibleFile": "con04_01.png",
+      "effects": null
+    },
+    {
+      "name": "레이어 11",
+      "x": 1403,
+      "y": 3729,
+      "w": 791,
+      "h": 791,
+      "clippingRect": null,
+      "possibleFile": "con04_02.png",
+      "effects": null
+    },
+    {
+      "name": "con04_01",
+      "x": 505,
+      "y": 3679,
+      "w": 909,
+      "h": 890,
+      "clippingRect": null,
+      "possibleFile": "con04_bg_1.jpg",
+      "effects": null
+    }
+  ],
+  "comments": []
+}

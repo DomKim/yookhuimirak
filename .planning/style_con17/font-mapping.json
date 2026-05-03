@@ -1,0 +1,11 @@
+{
+  "verified": true,
+  "mapping": {
+    "Eulyoo1945-SemiBold": "var(--sf), serif",
+    "Pretendard-Light": "var(--mf), 'Pretendard', sans-serif",
+    "Pretendard-Bold": "var(--mf), 'Pretendard', sans-serif",
+    "TTOmniGothicM": "var(--tf), 'Pretendard', sans-serif",
+    "TTOmniGothicH": "var(--tf), 'Pretendard', sans-serif"
+  },
+  "notes": "Same as con04 mapping. TTOmniGothic은 SUIT(--tf)로 폴백. 카운트: Eulyoo1945-SemiBold 21x, Pretendard-Light 10x, Pretendard-Bold 7x, TTOmniGothicH 4x, TTOmniGothicM 1x."
+}

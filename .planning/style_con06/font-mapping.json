@@ -1,0 +1,25 @@
+{
+  "verified": true,
+  "mapping": {
+    "TTOmniGothicM": {
+      "cssFamily": "var(--tf), sans-serif",
+      "cssWeight": 500,
+      "fallback": "SUIT Medium"
+    },
+    "TTOmniGothicH": {
+      "cssFamily": "var(--tf), sans-serif",
+      "cssWeight": 800,
+      "fallback": "SUIT ExtraBold"
+    },
+    "Eulyoo1945-SemiBold": {
+      "cssFamily": "var(--sf), serif",
+      "cssWeight": 600,
+      "fallback": "Eulyoo1945 SemiBold"
+    },
+    "HanWangZonYi": {
+      "cssFamily": null,
+      "fallback": "이미지(con06_01.png)로 대체"
+    }
+  },
+  "spec": ".planning/style_con06/spec.json"
+}

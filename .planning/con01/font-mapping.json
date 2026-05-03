@@ -1,0 +1,23 @@
+{
+  "verified": true,
+  "mapping": {
+    "Pretendard-Light": "Pretendard Variable",
+    "Pretendard-Bold": "Pretendard Variable",
+    "Eulyoo1945-SemiBold": "Eulyoo1945",
+    "TTOmniGothicM": "TTOmniGothicM, fallback SUIT"
+  },
+  "weights": {
+    "Pretendard-Light": 300,
+    "Pretendard-Bold": 700,
+    "Eulyoo1945-SemiBold": 600,
+    "TTOmniGothicM": 400
+  },
+  "tokens": {
+    "Pretendard Variable": "var(--mf)",
+    "Eulyoo1945": "var(--sf)",
+    "SUIT": "var(--tf)"
+  },
+  "notes": {
+    "TTOmniGothicM": "PSD exact font is TTOmniGothicM. No local/web @font-face file is present, so CSS should list TTOmniGothicM first and fall back to SUIT only if the client cannot load the PSD font."
+  }
+}

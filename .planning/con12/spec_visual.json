@@ -1,0 +1,486 @@
+{
+  "section": "con12",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 0,
+    "bottom": 1132,
+    "height": 1132
+  },
+  "background": {
+    "type": "color",
+    "fill": "#f8f4e6",
+    "src": null
+  },
+  "groups": [],
+  "texts": [
+    {
+      "name": "con12_kicker",
+      "content": "오랜 시간의 결과",
+      "x": 855,
+      "y": 331,
+      "w": 211,
+      "h": 28,
+      "segments": [
+        {
+          "text": "오랜 시간의 결과",
+          "fontFamily": "'omnigothic', sans-serif",
+          "fontWeight": 400,
+          "color": "#070707",
+          "fontSize": "1.574803vw (30px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.469816vw"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "con12_headline",
+      "content": "맛을 만드는 세 가지 고집",
+      "x": 669,
+      "y": 381,
+      "w": 583,
+      "h": 59,
+      "segments": [
+        {
+          "text": "맛을 만드는 ",
+          "fontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "color": "#070707",
+          "fontSize": "3.149606vw (60px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "3.097113vw"
+        },
+        {
+          "text": "세 가지 ",
+          "fontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "color": "#5d2b0d",
+          "fontSize": "3.149606vw (60px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "3.097113vw"
+        },
+        {
+          "text": "고집",
+          "fontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "color": "#070707",
+          "fontSize": "3.149606vw (60px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "3.097113vw"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "con12_card_noodle_badge_text",
+      "content": "01",
+      "x": 415,
+      "y": 508,
+      "w": 21,
+      "h": 21,
+      "segments": [
+        {
+          "text": "01",
+          "fontFamily": "'omnigothic', sans-serif",
+          "fontWeight": 600,
+          "color": "state-color",
+          "fontSize": "1.154856vw (22px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.102362vw"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "con12_card_noodle_title",
+      "content": "자가제면 메밀면",
+      "x": 401,
+      "y": 621,
+      "w": 235,
+      "h": 35,
+      "segments": [
+        {
+          "text": "자가제면",
+          "fontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "color": "#5d2b0d",
+          "fontSize": "1.889764vw (36px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.837270vw"
+        },
+        {
+          "text": " 메밀면",
+          "fontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "color": "#000000",
+          "fontSize": "1.889764vw (36px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.837270vw"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "con12_card_noodle_sub",
+      "content": "면까지 직접 만듭니다",
+      "x": 400,
+      "y": 787,
+      "w": 213,
+      "h": 23,
+      "segments": [
+        {
+          "text": "면까지 직접 만듭니다",
+          "fontFamily": "'omnigothic', sans-serif",
+          "fontWeight": 600,
+          "color": "#000000",
+          "fontSize": "1.259843vw (24px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.207349vw"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "con12_card_noodle_body",
+      "content": "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다.\n자가제면 방식을 고집해 쫄깃하면서도 살아있는 식감을 완성하며\n한 그릇의 완성도를 높입니다.",
+      "x": 401,
+      "y": 833,
+      "w": 453,
+      "h": 84.024,
+      "segments": [
+        {
+          "text": "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다.\n자가제면 방식을 고집해 쫄깃하면서도 살아있는 식감을 완성하며\n한 그릇의 완성도를 높입니다.",
+          "fontFamily": "var(--mf)",
+          "fontWeight": 300,
+          "color": "#000000",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.469816vw"
+        }
+      ],
+      "lineBreaks": 2
+    },
+    {
+      "name": "con12_card_noodle_vertical_label",
+      "content": "자가제면 메밀면",
+      "x": 401,
+      "y": 621,
+      "w": 235,
+      "h": 35,
+      "segments": [
+        {
+          "text": "자가제면 메밀면",
+          "fontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "color": "#f8f4e6",
+          "fontSize": "1.889764vw (36px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "12.388451vw"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "con12_card_beef_badge_text",
+      "content": "02",
+      "x": 1396,
+      "y": 508,
+      "w": 27,
+      "h": 21,
+      "segments": [
+        {
+          "text": "02",
+          "fontFamily": "'omnigothic', sans-serif",
+          "fontWeight": 600,
+          "color": "state-color",
+          "fontSize": "1.154856vw (22px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.102362vw"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "con12_card_beef_title",
+      "content": "최고급 육회",
+      "x": 1391,
+      "y": 773,
+      "w": 35,
+      "h": 168,
+      "segments": [
+        {
+          "text": "최고급",
+          "fontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "color": "#5d2b0d",
+          "fontSize": "1.889764vw (36px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.837270vw"
+        },
+        {
+          "text": " 육회",
+          "fontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "color": "#000000",
+          "fontSize": "1.889764vw (36px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.837270vw"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "con12_card_beef_sub",
+      "content": "고기를 아는 기준",
+      "x": 538,
+      "y": 1476,
+      "w": 169,
+      "h": 23,
+      "segments": [
+        {
+          "text": "고기를 아는 기준",
+          "fontFamily": "'omnigothic', sans-serif",
+          "fontWeight": 600,
+          "color": "#000000",
+          "fontSize": "1.259843vw (24px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.207349vw"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "con12_card_beef_body",
+      "content": "정육식당에서 시작된 경험을 바탕으로 좋은 고기를 고르는 기준부터 다릅니다.\n당일 도축한 우둔살과 홍두께살만을 사용해 신선도와 식감을\n최우선으로 생각하며 육회 본연의 맛을 가장 잘 살려냅니다.",
+      "x": 540,
+      "y": 1522,
+      "w": 500,
+      "h": 84.024,
+      "segments": [
+        {
+          "text": "정육식당에서 시작된 경험을 바탕으로 좋은 고기를 고르는 기준부터 다릅니다.\n당일 도축한 우둔살과 홍두께살만을 사용해 신선도와 식감을\n최우선으로 생각하며 육회 본연의 맛을 가장 잘 살려냅니다.",
+          "fontFamily": "var(--mf)",
+          "fontWeight": 300,
+          "color": "#000000",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.469816vw"
+        }
+      ],
+      "lineBreaks": 2
+    },
+    {
+      "name": "con12_card_beef_vertical_label",
+      "content": "최고급 육회",
+      "x": 1391,
+      "y": 773,
+      "w": 35,
+      "h": 168,
+      "segments": [
+        {
+          "text": "최고급 육회",
+          "fontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "color": "#f8f4e6",
+          "fontSize": "1.889764vw (36px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "8.818898vw"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "con12_card_sauce_badge_text",
+      "content": "03",
+      "x": 1537,
+      "y": 508,
+      "w": 27,
+      "h": 21,
+      "segments": [
+        {
+          "text": "03",
+          "fontFamily": "'omnigothic', sans-serif",
+          "fontWeight": 600,
+          "color": "state-color",
+          "fontSize": "1.154856vw (22px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.102362vw"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "con12_card_sauce_title",
+      "content": "특제 양념",
+      "x": 1531,
+      "y": 807,
+      "w": 35,
+      "h": 135,
+      "segments": [
+        {
+          "text": "특제",
+          "fontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "color": "#5d2b0d",
+          "fontSize": "1.889764vw (36px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.837270vw"
+        },
+        {
+          "text": " 양념",
+          "fontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "color": "#000000",
+          "fontSize": "1.889764vw (36px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.837270vw"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "con12_card_sauce_sub",
+      "content": "시간이 만든 깊은 맛",
+      "x": 678,
+      "y": 2012,
+      "w": 198,
+      "h": 24,
+      "segments": [
+        {
+          "text": "시간이 만든 깊은 맛",
+          "fontFamily": "'omnigothic', sans-serif",
+          "fontWeight": 600,
+          "color": "#000000",
+          "fontSize": "1.259843vw (24px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.207349vw"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "con12_card_sauce_body",
+      "content": "과일을 베이스로 한 특제 양념은 다른 첨가물 없이 깊은 단맛을 만들어냅니다.\n조미료 사용을 최소화하고 과일과 채소, 고품질 고춧가루를 사용해 최상의 맛을 유지하고,\n일주일간의 숙성을 거쳐 달지도 짜지도 않은 깊은 어우러짐을 만들어냅니다.",
+      "x": 680,
+      "y": 2058,
+      "w": 568,
+      "h": 84.024,
+      "segments": [
+        {
+          "text": "과일을 베이스로 한 특제 양념은 다른 첨가물 없이 깊은 단맛을 만들어냅니다.\n조미료 사용을 최소화하고 과일과 채소, 고품질 고춧가루를 사용해 최상의 맛을 유지하고,\n일주일간의 숙성을 거쳐 달지도 짜지도 않은 깊은 어우러짐을 만들어냅니다.",
+          "fontFamily": "var(--mf)",
+          "fontWeight": 300,
+          "color": "#000000",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1.469816vw"
+        }
+      ],
+      "lineBreaks": 2
+    },
+    {
+      "name": "con12_card_sauce_vertical_label",
+      "content": "특제 양념",
+      "x": 1531,
+      "y": 807,
+      "w": 35,
+      "h": 135,
+      "segments": [
+        {
+          "text": "특제 양념",
+          "fontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "color": "#f8f4e6",
+          "fontSize": "1.889764vw (36px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "7.086614vw"
+        }
+      ],
+      "lineBreaks": 0
+    }
+  ],
+  "rects": [
+    {
+      "name": "con12_card_noodle_rule",
+      "x": 102,
+      "y": 685,
+      "w": 301.132,
+      "h": 0.434,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "con12_card_beef_rule",
+      "x": 1052.069,
+      "y": 970,
+      "w": 53.574,
+      "h": 0.077,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "con12_card_sauce_rule",
+      "x": 1192.069,
+      "y": 971,
+      "w": 52.08,
+      "h": 0.075,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "con12_bg",
+      "x": -2,
+      "y": 0,
+      "w": 1920,
+      "h": 940,
+      "clippingRect": null,
+      "possibleFile": "",
+      "effects": null
+    },
+    {
+      "name": "con12_card_noodle_image",
+      "x": 563,
+      "y": 362,
+      "w": 529,
+      "h": 685,
+      "clippingRect": null,
+      "possibleFile": "con12_01.png",
+      "effects": null
+    },
+    {
+      "name": "con12_card_beef_image",
+      "x": 1116.345,
+      "y": 261,
+      "w": 87.31,
+      "h": 115.586,
+      "clippingRect": null,
+      "possibleFile": "con12_02.png",
+      "effects": null
+    },
+    {
+      "name": "con12_card_sauce_image",
+      "x": 1253.448,
+      "y": 404,
+      "w": 106.759,
+      "h": 90.759,
+      "clippingRect": null,
+      "possibleFile": "con12_03.png",
+      "effects": null
+    }
+  ],
+  "comments": [
+    "generated from plan.json for replay validation",
+    "raw PSD origin shifted to visual section origin"
+  ]
+}

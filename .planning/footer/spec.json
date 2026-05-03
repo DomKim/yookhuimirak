@@ -1,0 +1,127 @@
+{
+  "section": "footer",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 22439,
+    "bottom": 22949
+  },
+  "background": {
+    "type": "color",
+    "fill": "#070707",
+    "src": null
+  },
+  "groups": [],
+  "texts": [
+    {
+      "name": "회사명 : (주)선미락 | 대표자 : 최철우 주소 : 인천광역시 남동구 앵고개로 941번길 11-9 1층 | 대표",
+      "content": "회사명 : (주)선미락 | 대표자 : 최철우\n주소 : 인천광역시 남동구 앵고개로 941번길 11-9 1층 | 대표번호 : 032-433-7049\n사업자번호 : 581-88-03391 | 이메일 : ccw9103@naver.com",
+      "lineBreaks": 2,
+      "x": 694,
+      "y": 22689,
+      "w": 531,
+      "h": 77,
+      "segments": [
+        {
+          "text": "회사명 : (주)선미락 | 대표자 : 최철우\n주소 : 인천광역시 남동구 앵고개로 941번길 11-9 1층 | 대표번호 : 032-433-7049\n사업자번호 : 581-88-03391 | 이메일 : ccw9103@naver.com",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#999999",
+          "lineHeight": 1.667,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "Copyright ⓒ(주)미락육회막국수. all Rights Reserved",
+      "content": "Copyright ⓒ(주)미락육회막국수. all Rights Reserved",
+      "lineBreaks": 0,
+      "x": 781,
+      "y": 22822,
+      "w": 357,
+      "h": 19,
+      "segments": [
+        {
+          "text": "Copyright ",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#999999",
+          "lineHeight": 1.667,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "ⓒ",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 400,
+          "fontFamily": "Gulim",
+          "color": "#999999",
+          "lineHeight": 1.667,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "(주)미락육회막국수. all Rights Reserved",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#999999",
+          "lineHeight": 1.667,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 586",
+      "x": -1,
+      "y": 22439,
+      "w": 1922,
+      "h": 510,
+      "fill": "#070707",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 20",
+      "x": 119,
+      "y": 22638,
+      "w": 1682,
+      "h": 3,
+      "fill": "#070707",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 0.2,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "f_logo",
+      "x": 796,
+      "y": 22553,
+      "w": 328,
+      "h": 47,
+      "clippingRect": null,
+      "possibleFile": "footer_1.png",
+      "effects": null
+    }
+  ],
+  "comments": [],
+  "bgRect": {
+    "y": 22439,
+    "h": 510,
+    "bottom": 22949,
+    "name": "사각형 586"
+  }
+}

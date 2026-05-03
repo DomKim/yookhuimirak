@@ -1,0 +1,716 @@
+{
+  "section": "con10",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 10433,
+    "bottom": 11399
+  },
+  "background": {
+    "type": "color",
+    "fill": "#816a4e",
+    "src": null
+  },
+  "groups": [
+    {
+      "name": "con10_03_01",
+      "parentGroup": "con10",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 843",
+          "type": "layer",
+          "x": -133,
+          "y": 10852,
+          "w": 285,
+          "h": 384
+        },
+        {
+          "name": "KakaoTalk_20260127_130318620_01",
+          "type": "layer",
+          "x": -131,
+          "y": 10816,
+          "w": 279,
+          "h": 355
+        }
+      ],
+      "bbox": null,
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con10_03_02",
+      "parentGroup": "con10",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 843 복사",
+          "type": "layer",
+          "x": 184,
+          "y": 10852,
+          "w": 285,
+          "h": 384
+        },
+        {
+          "name": "KakaoTalk_20260127_130318620_02",
+          "type": "layer",
+          "x": 186,
+          "y": 10816,
+          "w": 281,
+          "h": 322
+        }
+      ],
+      "bbox": {
+        "x": 184,
+        "y": 10816,
+        "w": 285,
+        "h": 420
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con10_03_03",
+      "parentGroup": "con10",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 843 복사 2",
+          "type": "layer",
+          "x": 500,
+          "y": 10852,
+          "w": 285,
+          "h": 384
+        },
+        {
+          "name": "KakaoTalk_20260127_130318620_03",
+          "type": "layer",
+          "x": 502,
+          "y": 10836,
+          "w": 281,
+          "h": 358
+        }
+      ],
+      "bbox": {
+        "x": 500,
+        "y": 10836,
+        "w": 285,
+        "h": 400
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con10_03_04",
+      "parentGroup": "con10",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 843 복사 3",
+          "type": "layer",
+          "x": 817,
+          "y": 10852,
+          "w": 285,
+          "h": 384
+        },
+        {
+          "name": "KakaoTalk_20260127_130318620_04",
+          "type": "layer",
+          "x": 820,
+          "y": 10824,
+          "w": 280,
+          "h": 336
+        }
+      ],
+      "bbox": {
+        "x": 817,
+        "y": 10824,
+        "w": 285,
+        "h": 412
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con10_03_05",
+      "parentGroup": "con10",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 843 복사 4",
+          "type": "layer",
+          "x": 1134,
+          "y": 10852,
+          "w": 285,
+          "h": 384
+        },
+        {
+          "name": "KakaoTalk_20260127_130318620_05",
+          "type": "layer",
+          "x": 1136,
+          "y": 10824,
+          "w": 281,
+          "h": 315
+        }
+      ],
+      "bbox": {
+        "x": 1134,
+        "y": 10824,
+        "w": 285,
+        "h": 412
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con10_03_06",
+      "parentGroup": "con10",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 843 복사 5",
+          "type": "layer",
+          "x": 1450,
+          "y": 10852,
+          "w": 285,
+          "h": 384
+        },
+        {
+          "name": "KakaoTalk_20260305_130557127",
+          "type": "layer",
+          "x": 1452,
+          "y": 10824,
+          "w": 281,
+          "h": 368
+        }
+      ],
+      "bbox": {
+        "x": 1450,
+        "y": 10824,
+        "w": 285,
+        "h": 412
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con10_03_07",
+      "parentGroup": "con10",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 843 복사 6",
+          "type": "layer",
+          "x": 1767,
+          "y": 10852,
+          "w": 285,
+          "h": 384
+        },
+        {
+          "name": "KakaoTalk_20260305_130557127_01",
+          "type": "layer",
+          "x": 1769,
+          "y": 10828,
+          "w": 284,
+          "h": 363
+        }
+      ],
+      "bbox": {
+        "x": 1767,
+        "y": 10828,
+        "w": 286,
+        "h": 408
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    }
+  ],
+  "texts": [
+    {
+      "name": "리뷰로 남습니다",
+      "content": "리뷰로 남습니다",
+      "lineBreaks": 0,
+      "x": 765,
+      "y": 10656,
+      "w": 391,
+      "h": 59,
+      "segments": [
+        {
+          "text": "리뷰",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#5d2b0d",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "로 남습니다",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#070707",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "한 그릇의 기억,",
+      "content": "한 그릇의 기억,",
+      "lineBreaks": 0,
+      "x": 865,
+      "y": 10610,
+      "w": 187,
+      "h": 32,
+      "segments": [
+        {
+          "text": "한 그릇의 기억,",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#070707",
+          "lineHeight": 2.167,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "광고가 아닌 실제 방문 고객들의 후기, 직접 경험한 이야기들이 브랜드의 신뢰를 만들어갑니다",
+      "content": "광고가 아닌 실제 방문 고객들의 후기,\n직접 경험한 이야기들이 브랜드의 신뢰를 만들어갑니다",
+      "lineBreaks": 1,
+      "x": 743,
+      "y": 10748,
+      "w": 433,
+      "h": 50,
+      "segments": [
+        {
+          "text": "광고가 아닌 ",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "실제 방문 고객들의 후기",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": ",\n직접 경험한 이야기들이 브랜드의 신뢰를 만들어갑니다",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "먹어본 사람의 60%가 다시 찾는 ㅡ 미락육회막국수",
+      "content": "먹어본 사람의 60%가 다시 찾는 ㅡ 미락육회막국수",
+      "lineBreaks": 0,
+      "x": -47,
+      "y": 11347,
+      "w": 465,
+      "h": 21,
+      "segments": [
+        {
+          "text": "먹어본 사람의 60%가 다시 찾는 ㅡ ",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#ffffff",
+          "lineHeight": 2.955,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "미락육회막국수",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#ffffff",
+          "lineHeight": 2.955,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "막국수도, 육회도 한 그릇에 먹는 ㅡ 미락육회막국수",
+      "content": "막국수도, 육회도 한 그릇에 먹는 ㅡ 미락육회막국수",
+      "lineBreaks": 0,
+      "x": 509,
+      "y": 11347,
+      "w": 467,
+      "h": 23,
+      "segments": [
+        {
+          "text": "막국수도, 육회도 한 그릇에 먹는 ㅡ ",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#ffffff",
+          "lineHeight": 2.955,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "미락육회막국수",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#ffffff",
+          "lineHeight": 2.955,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "먹어본 사람의 60%가 다시 찾는 ㅡ 미락육회막국수 복사",
+      "content": "먹어본 사람의 60%가 다시 찾는 ㅡ 미락육회막국수",
+      "lineBreaks": 0,
+      "x": 1067,
+      "y": 11347,
+      "w": 465,
+      "h": 21,
+      "segments": [
+        {
+          "text": "먹어본 사람의 60%가 다시 찾는 ㅡ ",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#ffffff",
+          "lineHeight": 2.955,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "미락육회막국수",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#ffffff",
+          "lineHeight": 2.955,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "막국수도, 육회도 한 그릇에 먹는 ㅡ 미락육회막국수 복사",
+      "content": "막국수도, 육회도 한 그릇에 먹는 ㅡ 미락육회막국수",
+      "lineBreaks": 0,
+      "x": 1623,
+      "y": 11347,
+      "w": 467,
+      "h": 23,
+      "segments": [
+        {
+          "text": "막국수도, 육회도 한 그릇에 먹는 ㅡ ",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#ffffff",
+          "lineHeight": 2.955,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "미락육회막국수",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#ffffff",
+          "lineHeight": 2.955,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 844",
+      "x": -1,
+      "y": 10433,
+      "w": 1922,
+      "h": 257,
+      "fill": "#816a4e",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "타원 4",
+      "x": -109,
+      "y": 10509,
+      "w": 2140,
+      "h": 576,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 843",
+      "x": -133,
+      "y": 10852,
+      "w": 285,
+      "h": 384,
+      "fill": "#ffffff",
+      "borderRadius": 20,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 843 복사",
+      "x": 184,
+      "y": 10852,
+      "w": 285,
+      "h": 384,
+      "fill": "#ffffff",
+      "borderRadius": 20,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 843 복사 2",
+      "x": 500,
+      "y": 10852,
+      "w": 285,
+      "h": 384,
+      "fill": "#ffffff",
+      "borderRadius": 20,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 843 복사 3",
+      "x": 817,
+      "y": 10852,
+      "w": 285,
+      "h": 384,
+      "fill": "#ffffff",
+      "borderRadius": 20,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 843 복사 4",
+      "x": 1134,
+      "y": 10852,
+      "w": 285,
+      "h": 384,
+      "fill": "#ffffff",
+      "borderRadius": 20,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 843 복사 5",
+      "x": 1450,
+      "y": 10852,
+      "w": 285,
+      "h": 384,
+      "fill": "#ffffff",
+      "borderRadius": 20,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 843 복사 6",
+      "x": 1767,
+      "y": 10852,
+      "w": 285,
+      "h": 384,
+      "fill": "#ffffff",
+      "borderRadius": 20,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 847",
+      "x": -1,
+      "y": 11316,
+      "w": 1922,
+      "h": 83,
+      "fill": "#816a4e",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "con10_01",
+      "x": -51,
+      "y": 10543,
+      "w": 572,
+      "h": 562,
+      "clippingRect": null,
+      "possibleFile": "con10_01.png",
+      "effects": null
+    },
+    {
+      "name": "KakaoTalk_20260127_130318620_01",
+      "x": -131,
+      "y": 10816,
+      "w": 279,
+      "h": 355,
+      "clippingRect": null,
+      "possibleFile": "con10_03_01.jpg",
+      "effects": null
+    },
+    {
+      "name": "KakaoTalk_20260127_130318620_02",
+      "x": 186,
+      "y": 10816,
+      "w": 281,
+      "h": 322,
+      "clippingRect": null,
+      "possibleFile": "con10_03_02.jpg",
+      "effects": null
+    },
+    {
+      "name": "KakaoTalk_20260127_130318620_03",
+      "x": 502,
+      "y": 10836,
+      "w": 281,
+      "h": 358,
+      "clippingRect": null,
+      "possibleFile": "con10_03_03.jpg",
+      "effects": null
+    },
+    {
+      "name": "KakaoTalk_20260127_130318620_04",
+      "x": 820,
+      "y": 10824,
+      "w": 280,
+      "h": 336,
+      "clippingRect": null,
+      "possibleFile": "con10_03_04.jpg",
+      "effects": null
+    },
+    {
+      "name": "KakaoTalk_20260127_130318620_05",
+      "x": 1136,
+      "y": 10824,
+      "w": 281,
+      "h": 315,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": null
+    },
+    {
+      "name": "KakaoTalk_20260305_130557127",
+      "x": 1452,
+      "y": 10824,
+      "w": 281,
+      "h": 368,
+      "clippingRect": null,
+      "possibleFile": "con10_03_05.jpg",
+      "effects": null
+    },
+    {
+      "name": "KakaoTalk_20260305_130557127_01",
+      "x": 1769,
+      "y": 10828,
+      "w": 284,
+      "h": 363,
+      "clippingRect": null,
+      "possibleFile": "con10_03_06.jpg",
+      "effects": null
+    },
+    {
+      "name": "con10_02",
+      "x": 1408,
+      "y": 10476,
+      "w": 610,
+      "h": 421,
+      "clippingRect": null,
+      "possibleFile": "con10_02.png",
+      "effects": null
+    }
+  ],
+  "comments": [],
+  "bgRect": {
+    "y": 10433,
+    "h": 257,
+    "bottom": 10690,
+    "name": "사각형 844"
+  }
+}

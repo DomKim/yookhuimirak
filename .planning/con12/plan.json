@@ -1,0 +1,2339 @@
+{
+  "generatedBy": "spec-to-plan v3 (flat) + AI con12 accordion structure correction",
+  "_advisorySummary": {
+    "⚠️ 무시하지 말 것": "element 안 _hint를 element별로 확인하고 plan 작성",
+    "검사 항목": [
+      "1) elements 중 _hint.psdGroup이 있는 것들 → wrapper 만들기 검토 (그룹화)",
+      "2) elements 중 _hint.centerSuspect:true → marginLeft 대신 alignSelf:center",
+      "3) elements 중 _hint.heightChainCandidate:true → heightChain에 포함",
+      "4) elements 중 _hint.containmentParent → 형제 배치 금지, 자식으로 중첩",
+      "5) elements 중 _hint.suggestedParentWidth → parentWidth:1905 대신 그룹 너비 사용",
+      "6) elements 중 _hint.aspectRatioSuggest → wrapper에 aspectRatio 적용"
+    ],
+    "flatAntiPattern": {
+      "sectionDirectChildren": 49,
+      "note": "AI 결정 후 parent != \"section\"인 element가 0개면 flat 안티패턴 의심"
+    },
+    "groupCandidates": [],
+    "centerAxisCount": 7,
+    "verticalStackCount": 3
+  },
+  "strictStructure": true,
+  "section": "con12",
+  "sectionClass": "con12",
+  "page": "main",
+  "specFile": ".planning/con12/spec_main_con12.json",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 12147,
+    "bottom": 14434,
+    "height": 2287
+  },
+  "bg": "#f8f4e6",
+  "bgRect": {
+    "top": 12147,
+    "bottom": 13505
+  },
+  "effectiveEnd": 13279,
+  "prevSectionBottom": 12339,
+  "ptSuggestions": {
+    "bgRect": "17.375328vw",
+    "bgRectTop": 12147,
+    "shape": "7.296588vw",
+    "prevBottom": 12339,
+    "selected": "7.296588vw",
+    "selectedReason": "12478 kicker Y - con12_bg visual top 12339"
+  },
+  "pbSuggestions": {
+    "fromLastContent": "0.000000vw",
+    "fromLastContentToEffectiveEnd": "-3.307087vw",
+    "lastContent": {
+      "name": "con12_03",
+      "bottom": 14434
+    },
+    "secBottom": 14434,
+    "effectiveEnd": 14371,
+    "selected": "6.981627vw",
+    "selectedReason": "con12_bg bottom 13279 - first active card bottom 13146"
+  },
+  "pt": "7.296588vw",
+  "pb": "6.981627vw",
+  "heightChain": [
+    "pt",
+    "con12_title",
+    "con12_accordion",
+    "pb"
+  ],
+  "availableImages": [
+    {
+      "file": "con12_01.png",
+      "width": 529,
+      "height": 685,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con12_02.png",
+      "width": 633,
+      "height": 838,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con12_03.png",
+      "width": 774,
+      "height": 658,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con12_bg.jpg",
+      "width": 1920,
+      "height": 940,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    }
+  ],
+  "requiredTextHints": [
+    {
+      "name": "맛을 만드는 세 가지 고집",
+      "content": "맛을 만드는 세 가지 고집",
+      "x": 669,
+      "y": 12528,
+      "w": 583,
+      "h": 59,
+      "fontSizePx": 60,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "오랜 시간의 결과",
+      "content": "오랜 시간의 결과",
+      "x": 855,
+      "y": 12478,
+      "w": 211,
+      "h": 28,
+      "fontSizePx": 30,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다. 자가제면 방식을 고집해 쫄깃하면서도 살아있는 ",
+      "content": "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다.\n자가제면 방식을 고집해 쫄깃하면서도 살아있는 식감을 완성하며\n한 그릇의 완성도를 높입니다.",
+      "x": 401,
+      "y": 12980,
+      "w": 453,
+      "h": 73,
+      "fontSizePx": 18,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "자가제면 메밀면",
+      "content": "자가제면 메밀면",
+      "x": 401,
+      "y": 12768,
+      "w": 235,
+      "h": 35,
+      "fontSizePx": 36,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "면까지 직접 만듭니다",
+      "content": "면까지 직접 만듭니다",
+      "x": 400,
+      "y": 12934,
+      "w": 213,
+      "h": 23,
+      "fontSizePx": 24,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "정육식당에서 시작된 경험을 바탕으로 좋은 고기를 고르는 기준부터 다릅니다. 당일 도축한 우둔살과 홍두께살만을 사용",
+      "content": "정육식당에서 시작된 경험을 바탕으로 좋은 고기를 고르는 기준부터 다릅니다.\n당일 도축한 우둔살과 홍두께살만을 사용해 신선도와 식감을\n최우선으로 생각하며 육회 본연의 맛을 가장 잘 살려냅니다.",
+      "x": 540,
+      "y": 13669,
+      "w": 500,
+      "h": 73,
+      "fontSizePx": 18,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "최고급 육회",
+      "content": "최고급 육회",
+      "x": 541,
+      "y": 13457,
+      "w": 168,
+      "h": 35,
+      "fontSizePx": 36,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "고기를 아는 기준",
+      "content": "고기를 아는 기준",
+      "x": 538,
+      "y": 13623,
+      "w": 169,
+      "h": 23,
+      "fontSizePx": 24,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "과일을 베이스로 한 특제 양념은 다른 첨가물 없이 깊은 단맛을 만들어냅니다. 조미료 사용을 최소화하고 과일과 채소",
+      "content": "과일을 베이스로 한 특제 양념은 다른 첨가물 없이 깊은 단맛을 만들어냅니다.\n조미료 사용을 최소화하고 과일과 채소, 고품질 고춧가루를 사용해 최상의 맛을 유지하고,\n일주일간의 숙성을 거쳐 달지도 짜지도 않은 깊은 어우러짐을 만들어냅니다.",
+      "x": 680,
+      "y": 14205,
+      "w": 568,
+      "h": 73,
+      "fontSizePx": 18,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "특제 양념",
+      "content": "특제 양념",
+      "x": 680,
+      "y": 13993,
+      "w": 135,
+      "h": 35,
+      "fontSizePx": 36,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "시간이 만든 깊은 맛",
+      "content": "시간이 만든 깊은 맛",
+      "x": 678,
+      "y": 14159,
+      "w": 198,
+      "h": 24,
+      "fontSizePx": 24,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    }
+  ],
+  "ignoredShapes": [
+    {
+      "name": "lower active-state rectangles at y13331/y13867",
+      "reason": "Reference states for clicking cards 2 and 3. Implemented as the same accordion cards changing active state, not as stacked static panels."
+    }
+  ],
+  "ignoredTexts": [
+    {
+      "name": "duplicated state text snapshots",
+      "reason": "Card 2 and card 3 active-state copy is implemented inside each card group and revealed on click; duplicate PSD positions below the first target are not rendered as stacked content."
+    }
+  ],
+  "centeredFlow": [
+    "오랜 시간의 결과",
+    "맛을 만드는 세 가지 고집",
+    "과일을 베이스로 한 특제 양념은 다른 첨가물 없이 깊은 단맛을 만들어냅니다. 조미료 사용을 최소화하고 과일과 채소"
+  ],
+  "centerAxisHints": [
+    {
+      "axisX": 368.5,
+      "axisPct": "19.343832%",
+      "elements": [
+        "01",
+        "자가제면 메밀면",
+        "01 복사",
+        "자가제면 메밀면 복사"
+      ],
+      "bbox": {
+        "x": 351,
+        "y": 13344,
+        "w": 35,
+        "h": 970
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 1014 복사 5",
+          "centerDelta": -0.5,
+          "contains": 2
+        },
+        {
+          "type": "rect",
+          "name": "사각형 1014 복사 6",
+          "centerDelta": -0.5,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 511,
+      "axisPct": "26.824147%",
+      "elements": [
+        "자가제면 메밀면",
+        "면까지 직접 만듭니다",
+        "02",
+        "최고급 육회"
+      ],
+      "bbox": {
+        "x": 400,
+        "y": 12768,
+        "w": 236,
+        "h": 1545
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 1014 복사 6",
+          "centerDelta": 2,
+          "contains": 2
+        },
+        {
+          "type": "rect",
+          "name": "사각형 1014",
+          "centerDelta": -310,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 625,
+      "axisPct": "32.808399%",
+      "elements": [
+        "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다. 자가제면 방식을 고집해 쫄깃하면서도 살아있는 ",
+        "최고급 육회",
+        "고기를 아는 기준"
+      ],
+      "bbox": {
+        "x": 401,
+        "y": 12980,
+        "w": 453,
+        "h": 666
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 1014 복사 5",
+          "centerDelta": -335,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 771.5,
+      "axisPct": "40.498688%",
+      "elements": [
+        "정육식당에서 시작된 경험을 바탕으로 좋은 고기를 고르는 기준부터 다릅니다. 당일 도축한 우둔살과 홍두께살만을 사용",
+        "특제 양념",
+        "시간이 만든 깊은 맛"
+      ],
+      "bbox": {
+        "x": 540,
+        "y": 13669,
+        "w": 500,
+        "h": 514
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 1014 복사 6",
+          "centerDelta": -328.5,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 961.7,
+      "axisPct": "50.481190%",
+      "elements": [
+        "오랜 시간의 결과",
+        "맛을 만드는 세 가지 고집",
+        "과일을 베이스로 한 특제 양념은 다른 첨가물 없이 깊은 단맛을 만들어냅니다. 조미료 사용을 최소화하고 과일과 채소"
+      ],
+      "bbox": {
+        "x": 669,
+        "y": 12478,
+        "w": 583,
+        "h": 1800
+      },
+      "parentCandidates": [],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 1409,
+      "axisPct": "73.963255%",
+      "elements": [
+        "02",
+        "최고급 육회"
+      ],
+      "bbox": {
+        "x": 1391,
+        "y": 12655,
+        "w": 35,
+        "h": 433
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 1014 복사 3",
+          "centerDelta": 0,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 1549.5,
+      "axisPct": "81.338583%",
+      "elements": [
+        "03",
+        "특제 양념",
+        "03 복사",
+        "특제 양념 복사"
+      ],
+      "bbox": {
+        "x": 1531,
+        "y": 12655,
+        "w": 35,
+        "h": 1123
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 1014 복사 4",
+          "centerDelta": 0.5,
+          "contains": 2
+        },
+        {
+          "type": "rect",
+          "name": "사각형 1014 복사 5",
+          "centerDelta": 0.5,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    }
+  ],
+  "yGaps": [
+    {
+      "from": "오랜 시간의 결과",
+      "to": "con12_01",
+      "gap": 3,
+      "gapVw": "0.157480vw"
+    },
+    {
+      "from": "con12_01",
+      "to": "맛을 만드는 세 가지 고집",
+      "gap": -666,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "맛을 만드는 세 가지 고집",
+      "to": "01",
+      "gap": 68,
+      "gapVw": "3.569554vw"
+    },
+    {
+      "from": "01",
+      "to": "02",
+      "gap": -21,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "02",
+      "to": "03",
+      "gap": -21,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "03",
+      "to": "자가제면 메밀면",
+      "gap": 92,
+      "gapVw": "4.829396vw"
+    },
+    {
+      "from": "자가제면 메밀면",
+      "to": "최고급 육회",
+      "gap": 117,
+      "gapVw": "6.141732vw"
+    },
+    {
+      "from": "최고급 육회",
+      "to": "면까지 직접 만듭니다",
+      "gap": -154,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "면까지 직접 만듭니다",
+      "to": "특제 양념",
+      "gap": -3,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "특제 양념",
+      "to": "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다. 자가제면 방식을 고집해 쫄깃하면서도 살아있는 ",
+      "gap": -109,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다. 자가제면 방식을 고집해 쫄깃하면서도 살아있는 ",
+      "to": "con12_02",
+      "gap": 44,
+      "gapVw": "2.309711vw"
+    },
+    {
+      "from": "con12_02",
+      "to": "02",
+      "gap": -591,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "02",
+      "to": "01",
+      "gap": -21,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "01",
+      "to": "03 복사",
+      "gap": -21,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "03 복사",
+      "to": "최고급 육회",
+      "gap": 92,
+      "gapVw": "4.829396vw"
+    },
+    {
+      "from": "최고급 육회",
+      "to": "자가제면 메밀면",
+      "gap": 50,
+      "gapVw": "2.624672vw"
+    },
+    {
+      "from": "자가제면 메밀면",
+      "to": "고기를 아는 기준",
+      "gap": -155,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "고기를 아는 기준",
+      "to": "특제 양념 복사",
+      "gap": -3,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "특제 양념 복사",
+      "to": "정육식당에서 시작된 경험을 바탕으로 좋은 고기를 고르는 기준부터 다릅니다. 당일 도축한 우둔살과 홍두께살만을 사용",
+      "gap": -109,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "정육식당에서 시작된 경험을 바탕으로 좋은 고기를 고르는 기준부터 다릅니다. 당일 도축한 우둔살과 홍두께살만을 사용",
+      "to": "con12_03",
+      "gap": 34,
+      "gapVw": "1.784777vw"
+    },
+    {
+      "from": "con12_03",
+      "to": "03",
+      "gap": -554,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "03",
+      "to": "01 복사",
+      "gap": -21,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "01 복사",
+      "to": "02",
+      "gap": -21,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "02",
+      "to": "특제 양념",
+      "gap": 92,
+      "gapVw": "4.829396vw"
+    },
+    {
+      "from": "특제 양념",
+      "to": "자가제면 메밀면 복사",
+      "gap": 50,
+      "gapVw": "2.624672vw"
+    },
+    {
+      "from": "자가제면 메밀면 복사",
+      "to": "최고급 육회",
+      "gap": -169,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "최고급 육회",
+      "to": "시간이 만든 깊은 맛",
+      "gap": -154,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "시간이 만든 깊은 맛",
+      "to": "과일을 베이스로 한 특제 양념은 다른 첨가물 없이 깊은 단맛을 만들어냅니다. 조미료 사용을 최소화하고 과일과 채소",
+      "gap": 22,
+      "gapVw": "1.154856vw"
+    }
+  ],
+  "overlaps": [
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "사각형 848 복사",
+      "bType": "image",
+      "bSize": "1920×940",
+      "overlapArea": 1802920
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "오랜 시간의 결과",
+      "bType": "text",
+      "bSize": "211×28",
+      "overlapArea": 5908
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "con12_01",
+      "bType": "image",
+      "bSize": "529×685",
+      "overlapArea": 362365
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "맛을 만드는 세 가지 고집",
+      "bType": "text",
+      "bSize": "583×59",
+      "overlapArea": 34397
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "사각형 1014",
+      "bType": "rect",
+      "bSize": "1044×504",
+      "overlapArea": 526176
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "사각형 1014 복사 3",
+      "bType": "rect",
+      "bSize": "144×504",
+      "overlapArea": 72576
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "사각형 1014 복사 4",
+      "bType": "rect",
+      "bSize": "144×504",
+      "overlapArea": 72576
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "사각형 590 복사 4",
+      "bType": "rect",
+      "bSize": "56×47",
+      "overlapArea": 2632
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "사각형 590 복사 9",
+      "bType": "rect",
+      "bSize": "56×47",
+      "overlapArea": 2632
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "사각형 590 복사 10",
+      "bType": "rect",
+      "bSize": "56×47",
+      "overlapArea": 2632
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "01",
+      "bType": "text",
+      "bSize": "21×21",
+      "overlapArea": 441
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "02",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "03",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "자가제면 메밀면",
+      "bType": "text",
+      "bSize": "235×35",
+      "overlapArea": 8225
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "최고급 육회",
+      "bType": "text",
+      "bSize": "35×168",
+      "overlapArea": 5880
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "면까지 직접 만듭니다",
+      "bType": "text",
+      "bSize": "213×23",
+      "overlapArea": 4899
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "특제 양념",
+      "bType": "text",
+      "bSize": "35×135",
+      "overlapArea": 4725
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다. 자가제면 방식을 고집해 쫄깃하면서도 살아있는 ",
+      "bType": "text",
+      "bSize": "453×73",
+      "overlapArea": 33069
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "con12_02",
+      "bType": "image",
+      "bSize": "633×838",
+      "overlapArea": 258264
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "사각형 1014 복사 5",
+      "bType": "rect",
+      "bSize": "1044×504",
+      "overlapArea": 181656
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "사각형 1014 복사 5",
+      "bType": "rect",
+      "bSize": "1044×504",
+      "overlapArea": 25056
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "사각형 1014 복사 5",
+      "bType": "rect",
+      "bSize": "1044×504",
+      "overlapArea": 25056
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "사각형 590 복사 11",
+      "bType": "rect",
+      "bSize": "55×46",
+      "overlapArea": 2530
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "사각형 590 복사 11",
+      "bType": "rect",
+      "bSize": "55×46",
+      "overlapArea": 2530
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "사각형 590 복사 11",
+      "bType": "rect",
+      "bSize": "55×46",
+      "overlapArea": 2576
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "02",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "01",
+      "bType": "text",
+      "bSize": "21×21",
+      "overlapArea": 441
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "03 복사",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "001",
+      "aType": "image",
+      "aSize": "1920×1358",
+      "b": "최고급 육회",
+      "bType": "text",
+      "bSize": "35×168",
+      "overlapArea": 5880
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "오랜 시간의 결과",
+      "bType": "text",
+      "bSize": "211×28",
+      "overlapArea": 5908
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "con12_01",
+      "bType": "image",
+      "bSize": "529×685",
+      "overlapArea": 362365
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "맛을 만드는 세 가지 고집",
+      "bType": "text",
+      "bSize": "583×59",
+      "overlapArea": 34397
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "사각형 1014",
+      "bType": "rect",
+      "bSize": "1044×504",
+      "overlapArea": 526176
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "사각형 1014 복사 3",
+      "bType": "rect",
+      "bSize": "144×504",
+      "overlapArea": 72576
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "사각형 1014 복사 4",
+      "bType": "rect",
+      "bSize": "144×504",
+      "overlapArea": 72576
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "사각형 590 복사 4",
+      "bType": "rect",
+      "bSize": "56×47",
+      "overlapArea": 2632
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "사각형 590 복사 9",
+      "bType": "rect",
+      "bSize": "56×47",
+      "overlapArea": 2632
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "사각형 590 복사 10",
+      "bType": "rect",
+      "bSize": "56×47",
+      "overlapArea": 2632
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "01",
+      "bType": "text",
+      "bSize": "21×21",
+      "overlapArea": 441
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "02",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "03",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "자가제면 메밀면",
+      "bType": "text",
+      "bSize": "235×35",
+      "overlapArea": 8225
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "최고급 육회",
+      "bType": "text",
+      "bSize": "35×168",
+      "overlapArea": 5880
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "면까지 직접 만듭니다",
+      "bType": "text",
+      "bSize": "213×23",
+      "overlapArea": 4899
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "특제 양념",
+      "bType": "text",
+      "bSize": "35×135",
+      "overlapArea": 4725
+    },
+    {
+      "a": "사각형 848 복사",
+      "aType": "image",
+      "aSize": "1920×940",
+      "b": "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다. 자가제면 방식을 고집해 쫄깃하면서도 살아있는 ",
+      "bType": "text",
+      "bSize": "453×73",
+      "overlapArea": 33069
+    },
+    {
+      "a": "con12_01",
+      "aType": "image",
+      "aSize": "529×685",
+      "b": "맛을 만드는 세 가지 고집",
+      "bType": "text",
+      "bSize": "583×59",
+      "overlapArea": 23010
+    },
+    {
+      "a": "con12_01",
+      "aType": "image",
+      "aSize": "529×685",
+      "b": "사각형 1014",
+      "bType": "rect",
+      "bSize": "1044×504",
+      "overlapArea": 242424
+    },
+    {
+      "a": "con12_01",
+      "aType": "image",
+      "aSize": "529×685",
+      "b": "사각형 1014 복사 3",
+      "bType": "rect",
+      "bSize": "144×504",
+      "overlapArea": 27216
+    },
+    {
+      "a": "사각형 1014",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "사각형 590 복사 4",
+      "bType": "rect",
+      "bSize": "56×47",
+      "overlapArea": 2632
+    },
+    {
+      "a": "사각형 1014",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "01",
+      "bType": "text",
+      "bSize": "21×21",
+      "overlapArea": 441
+    },
+    {
+      "a": "사각형 1014",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "자가제면 메밀면",
+      "bType": "text",
+      "bSize": "235×35",
+      "overlapArea": 8225
+    },
+    {
+      "a": "사각형 1014",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "면까지 직접 만듭니다",
+      "bType": "text",
+      "bSize": "213×23",
+      "overlapArea": 4899
+    },
+    {
+      "a": "사각형 1014",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다. 자가제면 방식을 고집해 쫄깃하면서도 살아있는 ",
+      "bType": "text",
+      "bSize": "453×73",
+      "overlapArea": 33069
+    },
+    {
+      "a": "사각형 1014 복사 3",
+      "aType": "rect",
+      "aSize": "144×504",
+      "b": "사각형 590 복사 9",
+      "bType": "rect",
+      "bSize": "56×47",
+      "overlapArea": 2632
+    },
+    {
+      "a": "사각형 1014 복사 3",
+      "aType": "rect",
+      "aSize": "144×504",
+      "b": "02",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "사각형 1014 복사 3",
+      "aType": "rect",
+      "aSize": "144×504",
+      "b": "최고급 육회",
+      "bType": "text",
+      "bSize": "35×168",
+      "overlapArea": 5880
+    },
+    {
+      "a": "사각형 1014 복사 4",
+      "aType": "rect",
+      "aSize": "144×504",
+      "b": "사각형 590 복사 10",
+      "bType": "rect",
+      "bSize": "56×47",
+      "overlapArea": 2632
+    },
+    {
+      "a": "사각형 1014 복사 4",
+      "aType": "rect",
+      "aSize": "144×504",
+      "b": "03",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "사각형 1014 복사 4",
+      "aType": "rect",
+      "aSize": "144×504",
+      "b": "특제 양념",
+      "bType": "text",
+      "bSize": "35×135",
+      "overlapArea": 4725
+    },
+    {
+      "a": "사각형 590 복사 4",
+      "aType": "rect",
+      "aSize": "56×47",
+      "b": "01",
+      "bType": "text",
+      "bSize": "21×21",
+      "overlapArea": 441
+    },
+    {
+      "a": "사각형 590 복사 9",
+      "aType": "rect",
+      "aSize": "56×47",
+      "b": "02",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "사각형 590 복사 10",
+      "aType": "rect",
+      "aSize": "56×47",
+      "b": "03",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "con12_02",
+      "aType": "image",
+      "aSize": "633×838",
+      "b": "사각형 1014 복사 5",
+      "bType": "rect",
+      "bSize": "1044×504",
+      "overlapArea": 239904
+    },
+    {
+      "a": "con12_02",
+      "aType": "image",
+      "aSize": "633×838",
+      "b": "사각형 1014 복사 5",
+      "bType": "rect",
+      "bSize": "1044×504",
+      "overlapArea": 72576
+    },
+    {
+      "a": "con12_02",
+      "aType": "image",
+      "aSize": "633×838",
+      "b": "사각형 590 복사 11",
+      "bType": "rect",
+      "bSize": "55×46",
+      "overlapArea": 2576
+    },
+    {
+      "a": "con12_02",
+      "aType": "image",
+      "aSize": "633×838",
+      "b": "03 복사",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "con12_02",
+      "aType": "image",
+      "aSize": "633×838",
+      "b": "특제 양념 복사",
+      "bType": "text",
+      "bSize": "35×135",
+      "overlapArea": 4725
+    },
+    {
+      "a": "사각형 1014 복사 5",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "사각형 590 복사 11",
+      "bType": "rect",
+      "bSize": "55×46",
+      "overlapArea": 2530
+    },
+    {
+      "a": "사각형 1014 복사 5",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "02",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "사각형 1014 복사 5",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "최고급 육회",
+      "bType": "text",
+      "bSize": "35×168",
+      "overlapArea": 5880
+    },
+    {
+      "a": "사각형 1014 복사 5",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "고기를 아는 기준",
+      "bType": "text",
+      "bSize": "169×23",
+      "overlapArea": 3887
+    },
+    {
+      "a": "사각형 1014 복사 5",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "정육식당에서 시작된 경험을 바탕으로 좋은 고기를 고르는 기준부터 다릅니다. 당일 도축한 우둔살과 홍두께살만을 사용",
+      "bType": "text",
+      "bSize": "500×73",
+      "overlapArea": 36500
+    },
+    {
+      "a": "사각형 1014 복사 5",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "사각형 590 복사 11",
+      "bType": "rect",
+      "bSize": "55×46",
+      "overlapArea": 2530
+    },
+    {
+      "a": "사각형 1014 복사 5",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "01",
+      "bType": "text",
+      "bSize": "21×21",
+      "overlapArea": 441
+    },
+    {
+      "a": "사각형 1014 복사 5",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "자가제면 메밀면",
+      "bType": "text",
+      "bSize": "235×35",
+      "overlapArea": 8260
+    },
+    {
+      "a": "사각형 1014 복사 5",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "사각형 590 복사 11",
+      "bType": "rect",
+      "bSize": "55×46",
+      "overlapArea": 2576
+    },
+    {
+      "a": "사각형 1014 복사 5",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "03 복사",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "사각형 1014 복사 5",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "특제 양념 복사",
+      "bType": "text",
+      "bSize": "35×135",
+      "overlapArea": 4725
+    },
+    {
+      "a": "사각형 590 복사 11",
+      "aType": "rect",
+      "aSize": "55×46",
+      "b": "02",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "사각형 590 복사 11",
+      "aType": "rect",
+      "aSize": "55×46",
+      "b": "01",
+      "bType": "text",
+      "bSize": "21×21",
+      "overlapArea": 441
+    },
+    {
+      "a": "사각형 590 복사 11",
+      "aType": "rect",
+      "aSize": "55×46",
+      "b": "03 복사",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "con12_03",
+      "aType": "image",
+      "aSize": "774×658",
+      "b": "사각형 1014 복사 6",
+      "bType": "rect",
+      "bSize": "1044×504",
+      "overlapArea": 250488
+    },
+    {
+      "a": "사각형 1014 복사 6",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "사각형 590 복사 12",
+      "bType": "rect",
+      "bSize": "56×47",
+      "overlapArea": 2632
+    },
+    {
+      "a": "사각형 1014 복사 6",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "03",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "사각형 1014 복사 6",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "특제 양념",
+      "bType": "text",
+      "bSize": "35×135",
+      "overlapArea": 4725
+    },
+    {
+      "a": "사각형 1014 복사 6",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "시간이 만든 깊은 맛",
+      "bType": "text",
+      "bSize": "198×24",
+      "overlapArea": 4752
+    },
+    {
+      "a": "사각형 1014 복사 6",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "과일을 베이스로 한 특제 양념은 다른 첨가물 없이 깊은 단맛을 만들어냅니다. 조미료 사용을 최소화하고 과일과 채소",
+      "bType": "text",
+      "bSize": "568×73",
+      "overlapArea": 41464
+    },
+    {
+      "a": "사각형 1014 복사 6",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "사각형 590 복사 12",
+      "bType": "rect",
+      "bSize": "56×47",
+      "overlapArea": 2585
+    },
+    {
+      "a": "사각형 1014 복사 6",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "01 복사",
+      "bType": "text",
+      "bSize": "21×21",
+      "overlapArea": 441
+    },
+    {
+      "a": "사각형 1014 복사 6",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "자가제면 메밀면 복사",
+      "bType": "text",
+      "bSize": "35×236",
+      "overlapArea": 8260
+    },
+    {
+      "a": "사각형 1014 복사 6",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "사각형 590 복사 12",
+      "bType": "rect",
+      "bSize": "56×47",
+      "overlapArea": 2632
+    },
+    {
+      "a": "사각형 1014 복사 6",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "02",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "사각형 1014 복사 6",
+      "aType": "rect",
+      "aSize": "1044×504",
+      "b": "최고급 육회",
+      "bType": "text",
+      "bSize": "35×168",
+      "overlapArea": 5880
+    },
+    {
+      "a": "사각형 590 복사 12",
+      "aType": "rect",
+      "aSize": "56×47",
+      "b": "03",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    },
+    {
+      "a": "사각형 590 복사 12",
+      "aType": "rect",
+      "aSize": "56×47",
+      "b": "01 복사",
+      "bType": "text",
+      "bSize": "21×21",
+      "overlapArea": 441
+    },
+    {
+      "a": "사각형 590 복사 12",
+      "aType": "rect",
+      "aSize": "56×47",
+      "b": "02",
+      "bType": "text",
+      "bSize": "27×21",
+      "overlapArea": 567
+    }
+  ],
+  "elements": [
+    {
+      "name": "con12_bg",
+      "type": "image",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "0.000000vw",
+      "left": "-0.104987%",
+      "width": "100.787402%",
+      "naturalWidth": 1920,
+      "naturalHeight": 940,
+      "sourceType": "full section background texture/photo",
+      "role": "background",
+      "notHeightChain": true,
+      "background": "/images/con12_bg.jpg",
+      "isBackground": true,
+      "psdY": 12339,
+      "effects": null,
+      "borderRadius": null,
+      "clippingRectIgnoredReason": "Full-section con12 background; PSD clippingRect metadata points to the first card mask and is not the visible origin of con12_bg.jpg."
+    },
+    {
+      "name": "con12_title",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0.000000vw",
+      "marginLeft": "0.000000%",
+      "alignSelf": "center",
+      "width": "30.603675%",
+      "display": "flex-column",
+      "centerChildren": true,
+      "children": [
+        {
+          "name": "con12_kicker",
+          "type": "text",
+          "position": "rltv",
+          "parent": "con12_title",
+          "parentWidth": 583,
+          "marginTop": "0.000000vw",
+          "marginLeft": "0.000000%",
+          "alignSelf": "center",
+          "width": "36.192110%",
+          "whiteSpace": "nowrap",
+          "content": "오랜 시간의 결과",
+          "segments": [
+            {
+              "text": "오랜 시간의 결과",
+              "fontFamily": "'omnigothic', sans-serif",
+              "fontWeight": 400,
+              "color": "#070707",
+              "fontSize": "1.574803vw (30px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": "1.469816vw"
+            }
+          ],
+          "effects": null
+        },
+        {
+          "name": "con12_headline",
+          "type": "text",
+          "position": "rltv",
+          "parent": "con12_title",
+          "parentWidth": 583,
+          "marginTop": "1.154856vw",
+          "marginLeft": "0.000000%",
+          "alignSelf": "center",
+          "width": "100.000000%",
+          "whiteSpace": "nowrap",
+          "content": "맛을 만드는 세 가지 고집",
+          "segments": [
+            {
+              "text": "맛을 만드는 ",
+              "fontFamily": "var(--sf)",
+              "fontWeight": 600,
+              "color": "#070707",
+              "fontSize": "3.149606vw (60px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": "3.097113vw"
+            },
+            {
+              "text": "세 가지 ",
+              "fontFamily": "var(--sf)",
+              "fontWeight": 600,
+              "color": "#5d2b0d",
+              "fontSize": "3.149606vw (60px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": "3.097113vw"
+            },
+            {
+              "text": "고집",
+              "fontFamily": "var(--sf)",
+              "fontWeight": 600,
+              "color": "#070707",
+              "fontSize": "3.149606vw (60px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": "3.097113vw"
+            }
+          ],
+          "effects": null
+        }
+      ],
+      "effects": null,
+      "borderRadius": null
+    },
+    {
+      "name": "con12_accordion",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "2.887139vw",
+      "marginLeft": "0.000000%",
+      "alignSelf": "center",
+      "width": "69.396325%",
+      "aspectRatio": "1322/504",
+      "heightSource": "PSD first target accordion row 1322x504",
+      "heightSourceReason": "The accordion row is the visible card system; cards are absolutely positioned inside it so width/left can transition while row height remains 504px without using height.",
+      "overflow": "visible",
+      "activeDefault": "01",
+      "dataActive": "1",
+      "interaction": "click-to-active accordion",
+      "cssVars": {
+        "open": "78.971256%",
+        "closed": "10.892587%",
+        "overlapFirst": "0.453858%",
+        "overlapSecond": "0.302572%"
+      },
+      "children": [
+        {
+          "name": "con12_card_noodle",
+          "type": "group",
+          "position": "absol",
+          "parent": "con12_accordion",
+          "parentWidth": 1322,
+          "top": "0.000000vw",
+          "bottom": "0.000000vw",
+          "widthActive": "78.971256%",
+          "widthCollapsed": "10.892587%",
+          "state": "active-default",
+          "overflow": "hidden",
+          "clipsChildren": true,
+          "backgroundActive": "#ffffff",
+          "backgroundCollapsed": "#231916",
+          "border": "1px solid #dddddd",
+          "borderRadius": "1.574803vw 0 0 1.574803vw",
+          "transition": "width/left/background/color 0.68s ease; children opacity/transform 0.48s ease",
+          "children": [
+            {
+              "name": "con12_card_noodle_badge",
+              "type": "group",
+              "position": "absol",
+              "parent": "con12_card_noodle",
+              "parentWidth": "state-dependent",
+              "top": "0.000000vw",
+              "leftActive": "9.386973%",
+              "leftCollapsed": "29.861111%",
+              "widthActive": "5.363985%",
+              "widthCollapsed": "38.194444%",
+              "aspectRatio": "56/47",
+              "heightSource": "PSD card number badge 56x47",
+              "heightSourceReason": "Visible number badge inside each card; active badge is dark, collapsed badge is light.",
+              "backgroundActive": "#231916",
+              "backgroundCollapsed": "#f8f4e6",
+              "children": [
+                {
+                  "name": "con12_card_noodle_badge_text",
+                  "type": "text",
+                  "position": "absol",
+                  "parent": "con12_card_noodle_badge",
+                  "parentWidth": 56,
+                  "top": "0.682415vw",
+                  "left": "32.142857%",
+                  "width": "37.500000%",
+                  "whiteSpace": "nowrap",
+                  "content": "01",
+                  "segments": [
+                    {
+                      "text": "01",
+                      "fontFamily": "'omnigothic', sans-serif",
+                      "fontWeight": 600,
+                      "color": "state-color",
+                      "fontSize": "1.154856vw (22px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.102362vw"
+                    }
+                  ],
+                  "effects": null
+                }
+              ],
+              "left": "9.386973%",
+              "width": "5.363985%",
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con12_card_noodle_image",
+              "type": "image",
+              "position": "absol",
+              "parent": "con12_card_noodle",
+              "parentWidth": 1044,
+              "top": "-6.981627vw",
+              "left": "53.927203%",
+              "width": "50.670498%",
+              "src": "/images/con12_01.png",
+              "naturalWidth": 529,
+              "naturalHeight": 685,
+              "sourceType": "source image, clipped by active card overflow",
+              "reveal": "from-right-on-active",
+              "state": "visible-active-default",
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con12_card_noodle_active_text",
+              "type": "group",
+              "position": "absol",
+              "parent": "con12_card_noodle",
+              "parentWidth": 1044,
+              "top": "6.614173vw",
+              "left": "9.770115%",
+              "width": "43.390805%",
+              "display": "flex-column",
+              "state": "visible-active-default",
+              "children": [
+                {
+                  "name": "con12_card_noodle_title",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con12_card_noodle_active_text",
+                  "parentWidth": 453,
+                  "marginTop": "0.000000vw",
+                  "marginLeft": "0.000000%",
+                  "width": "51.876380%",
+                  "whiteSpace": "nowrap",
+                  "content": "자가제면 메밀면",
+                  "segments": [
+                    {
+                      "text": "자가제면",
+                      "fontFamily": "var(--sf)",
+                      "fontWeight": 600,
+                      "color": "#5d2b0d",
+                      "fontSize": "1.889764vw (36px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.837270vw"
+                    },
+                    {
+                      "text": " 메밀면",
+                      "fontFamily": "var(--sf)",
+                      "fontWeight": 600,
+                      "color": "#000000",
+                      "fontSize": "1.889764vw (36px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.837270vw"
+                    }
+                  ],
+                  "effects": null
+                },
+                {
+                  "name": "con12_card_noodle_rule",
+                  "type": "cssShape",
+                  "position": "rltv",
+                  "parent": "con12_card_noodle_active_text",
+                  "parentWidth": 1044,
+                  "marginTop": "1.522310vw",
+                  "marginLeft": "0.000000%",
+                  "width": "66.475096%",
+                  "aspectRatio": "694/1",
+                  "heightSource": "PSD divider rule 1px visual line, rendered with 1px border-top",
+                  "heightSourceReason": "Visible horizontal divider between active title and subcopy.",
+                  "borderTop": "1px solid #e5dfd9",
+                  "effects": null,
+                  "borderRadius": null
+                },
+                {
+                  "name": "con12_card_noodle_sub",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con12_card_noodle_active_text",
+                  "parentWidth": 453,
+                  "marginTop": "5.354331vw",
+                  "marginLeft": "0.000000%",
+                  "width": "47.019868%",
+                  "whiteSpace": "nowrap",
+                  "content": "면까지 직접 만듭니다",
+                  "segments": [
+                    {
+                      "text": "면까지 직접 만듭니다",
+                      "fontFamily": "'omnigothic', sans-serif",
+                      "fontWeight": 600,
+                      "color": "#000000",
+                      "fontSize": "1.259843vw (24px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.207349vw"
+                    }
+                  ],
+                  "effects": null
+                },
+                {
+                  "name": "con12_card_noodle_body",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con12_card_noodle_active_text",
+                  "parentWidth": 453,
+                  "marginTop": "1.207349vw",
+                  "marginLeft": "0.000000%",
+                  "width": "100.000000%",
+                  "whiteSpace": "nowrap",
+                  "content": "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다.\n자가제면 방식을 고집해 쫄깃하면서도 살아있는 식감을 완성하며\n한 그릇의 완성도를 높입니다.",
+                  "segments": [
+                    {
+                      "text": "국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다.\n자가제면 방식을 고집해 쫄깃하면서도 살아있는 식감을 완성하며\n한 그릇의 완성도를 높입니다.",
+                      "fontFamily": "var(--mf)",
+                      "fontWeight": 300,
+                      "color": "#000000",
+                      "fontSize": "0.944882vw (18px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.469816vw"
+                    }
+                  ],
+                  "effects": null
+                }
+              ],
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con12_card_noodle_vertical_label",
+              "type": "text",
+              "position": "absol",
+              "parent": "con12_card_noodle",
+              "parentWidth": 144,
+              "top": "11.076115vw",
+              "left": "37.500000%",
+              "width": "24.305556%",
+              "writingMode": "vertical-rl",
+              "whiteSpace": "nowrap",
+              "state": "hidden-while-active-default",
+              "content": "자가제면 메밀면",
+              "segments": [
+                {
+                  "text": "자가제면 메밀면",
+                  "fontFamily": "var(--sf)",
+                  "fontWeight": 600,
+                  "color": "#f8f4e6",
+                  "fontSize": "1.889764vw (36px)",
+                  "letterSpacing": "-0.05em",
+                  "lineHeight": "12.388451vw"
+                }
+              ],
+              "effects": null
+            }
+          ],
+          "left": "0.000000%",
+          "width": "78.971256%",
+          "effects": null
+        },
+        {
+          "name": "con12_card_beef",
+          "type": "group",
+          "position": "absol",
+          "parent": "con12_accordion",
+          "parentWidth": 1322,
+          "top": "0.000000vw",
+          "bottom": "0.000000vw",
+          "widthActive": "78.971256%",
+          "widthCollapsed": "10.892587%",
+          "state": "default-collapsed",
+          "overflow": "hidden",
+          "clipsChildren": true,
+          "backgroundActive": "#ffffff",
+          "backgroundCollapsed": "#231916",
+          "border": "1px solid #dddddd",
+          "borderRadius": "0",
+          "transition": "width/left/background/color 0.68s ease; children opacity/transform 0.48s ease",
+          "children": [
+            {
+              "name": "con12_card_beef_badge",
+              "type": "group",
+              "position": "absol",
+              "parent": "con12_card_beef",
+              "parentWidth": "state-dependent",
+              "top": "0.000000vw",
+              "leftActive": "9.386973%",
+              "leftCollapsed": "29.861111%",
+              "widthActive": "5.363985%",
+              "widthCollapsed": "38.888889%",
+              "aspectRatio": "56/47",
+              "heightSource": "PSD card number badge 56x47",
+              "heightSourceReason": "Visible number badge inside each card; active badge is dark, collapsed badge is light.",
+              "backgroundActive": "#231916",
+              "backgroundCollapsed": "#f8f4e6",
+              "children": [
+                {
+                  "name": "con12_card_beef_badge_text",
+                  "type": "text",
+                  "position": "absol",
+                  "parent": "con12_card_beef_badge",
+                  "parentWidth": 56,
+                  "top": "0.682415vw",
+                  "left": "32.142857%",
+                  "width": "48.214286%",
+                  "whiteSpace": "nowrap",
+                  "content": "02",
+                  "segments": [
+                    {
+                      "text": "02",
+                      "fontFamily": "'omnigothic', sans-serif",
+                      "fontWeight": 600,
+                      "color": "state-color",
+                      "fontSize": "1.154856vw (22px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.102362vw"
+                    }
+                  ],
+                  "effects": null
+                }
+              ],
+              "left": "29.861111%",
+              "width": "38.888889%",
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con12_card_beef_image",
+              "type": "image",
+              "position": "absol",
+              "parent": "con12_card_beef",
+              "parentWidth": 1044,
+              "top": "-12.283465vw",
+              "left": "54.406130%",
+              "width": "60.632184%",
+              "src": "/images/con12_02.png",
+              "naturalWidth": 633,
+              "naturalHeight": 838,
+              "sourceType": "source image, clipped by active card overflow",
+              "reveal": "from-right-on-active",
+              "state": "hidden-until-active",
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con12_card_beef_active_text",
+              "type": "group",
+              "position": "absol",
+              "parent": "con12_card_beef",
+              "parentWidth": 1044,
+              "top": "6.614173vw",
+              "left": "9.770115%",
+              "width": "47.892720%",
+              "display": "flex-column",
+              "state": "hidden-until-active",
+              "children": [
+                {
+                  "name": "con12_card_beef_title",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con12_card_beef_active_text",
+                  "parentWidth": 500,
+                  "marginTop": "0.000000vw",
+                  "marginLeft": "0.000000%",
+                  "width": "33.600000%",
+                  "whiteSpace": "nowrap",
+                  "content": "최고급 육회",
+                  "segments": [
+                    {
+                      "text": "최고급",
+                      "fontFamily": "var(--sf)",
+                      "fontWeight": 600,
+                      "color": "#5d2b0d",
+                      "fontSize": "1.889764vw (36px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.837270vw"
+                    },
+                    {
+                      "text": " 육회",
+                      "fontFamily": "var(--sf)",
+                      "fontWeight": 600,
+                      "color": "#000000",
+                      "fontSize": "1.889764vw (36px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.837270vw"
+                    }
+                  ],
+                  "effects": null
+                },
+                {
+                  "name": "con12_card_beef_rule",
+                  "type": "cssShape",
+                  "position": "rltv",
+                  "parent": "con12_card_beef_active_text",
+                  "parentWidth": 1044,
+                  "marginTop": "1.522310vw",
+                  "marginLeft": "0.000000%",
+                  "width": "77.681992%",
+                  "aspectRatio": "694/1",
+                  "heightSource": "PSD divider rule 1px visual line, rendered with 1px border-top",
+                  "heightSourceReason": "Visible horizontal divider between active title and subcopy.",
+                  "borderTop": "1px solid #e5dfd9",
+                  "effects": null,
+                  "borderRadius": null
+                },
+                {
+                  "name": "con12_card_beef_sub",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con12_card_beef_active_text",
+                  "parentWidth": 500,
+                  "marginTop": "5.354331vw",
+                  "marginLeft": "0.000000%",
+                  "width": "33.800000%",
+                  "whiteSpace": "nowrap",
+                  "content": "고기를 아는 기준",
+                  "segments": [
+                    {
+                      "text": "고기를 아는 기준",
+                      "fontFamily": "'omnigothic', sans-serif",
+                      "fontWeight": 600,
+                      "color": "#000000",
+                      "fontSize": "1.259843vw (24px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.207349vw"
+                    }
+                  ],
+                  "effects": null
+                },
+                {
+                  "name": "con12_card_beef_body",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con12_card_beef_active_text",
+                  "parentWidth": 500,
+                  "marginTop": "1.207349vw",
+                  "marginLeft": "0.000000%",
+                  "width": "100.000000%",
+                  "whiteSpace": "nowrap",
+                  "content": "정육식당에서 시작된 경험을 바탕으로 좋은 고기를 고르는 기준부터 다릅니다.\n당일 도축한 우둔살과 홍두께살만을 사용해 신선도와 식감을\n최우선으로 생각하며 육회 본연의 맛을 가장 잘 살려냅니다.",
+                  "segments": [
+                    {
+                      "text": "정육식당에서 시작된 경험을 바탕으로 좋은 고기를 고르는 기준부터 다릅니다.\n당일 도축한 우둔살과 홍두께살만을 사용해 신선도와 식감을\n최우선으로 생각하며 육회 본연의 맛을 가장 잘 살려냅니다.",
+                      "fontFamily": "var(--mf)",
+                      "fontWeight": 300,
+                      "color": "#000000",
+                      "fontSize": "0.944882vw (18px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.469816vw"
+                    }
+                  ],
+                  "effects": null
+                }
+              ],
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con12_card_beef_vertical_label",
+              "type": "text",
+              "position": "absol",
+              "parent": "con12_card_beef",
+              "parentWidth": 144,
+              "top": "14.593176vw",
+              "left": "37.500000%",
+              "width": "24.305556%",
+              "writingMode": "vertical-rl",
+              "whiteSpace": "nowrap",
+              "state": "visible-collapsed-default",
+              "content": "최고급 육회",
+              "segments": [
+                {
+                  "text": "최고급 육회",
+                  "fontFamily": "var(--sf)",
+                  "fontWeight": 600,
+                  "color": "#f8f4e6",
+                  "fontSize": "1.889764vw (36px)",
+                  "letterSpacing": "-0.05em",
+                  "lineHeight": "8.818898vw"
+                }
+              ],
+              "effects": null
+            }
+          ],
+          "left": "78.517398%",
+          "width": "10.892587%",
+          "effects": null
+        },
+        {
+          "name": "con12_card_sauce",
+          "type": "group",
+          "position": "absol",
+          "parent": "con12_accordion",
+          "parentWidth": 1322,
+          "top": "0.000000vw",
+          "bottom": "0.000000vw",
+          "widthActive": "78.971256%",
+          "widthCollapsed": "10.892587%",
+          "state": "default-collapsed",
+          "overflow": "hidden",
+          "clipsChildren": true,
+          "backgroundActive": "#ffffff",
+          "backgroundCollapsed": "#231916",
+          "border": "1px solid #dddddd",
+          "borderRadius": "0 1.574803vw 1.574803vw 0",
+          "transition": "width/left/background/color 0.68s ease; children opacity/transform 0.48s ease",
+          "children": [
+            {
+              "name": "con12_card_sauce_badge",
+              "type": "group",
+              "position": "absol",
+              "parent": "con12_card_sauce",
+              "parentWidth": "state-dependent",
+              "top": "0.000000vw",
+              "leftActive": "9.386973%",
+              "leftCollapsed": "30.555556%",
+              "widthActive": "5.363985%",
+              "widthCollapsed": "38.888889%",
+              "aspectRatio": "56/47",
+              "heightSource": "PSD card number badge 56x47",
+              "heightSourceReason": "Visible number badge inside each card; active badge is dark, collapsed badge is light.",
+              "backgroundActive": "#231916",
+              "backgroundCollapsed": "#f8f4e6",
+              "children": [
+                {
+                  "name": "con12_card_sauce_badge_text",
+                  "type": "text",
+                  "position": "absol",
+                  "parent": "con12_card_sauce_badge",
+                  "parentWidth": 56,
+                  "top": "0.682415vw",
+                  "left": "32.142857%",
+                  "width": "48.214286%",
+                  "whiteSpace": "nowrap",
+                  "content": "03",
+                  "segments": [
+                    {
+                      "text": "03",
+                      "fontFamily": "'omnigothic', sans-serif",
+                      "fontWeight": 600,
+                      "color": "state-color",
+                      "fontSize": "1.154856vw (22px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.102362vw"
+                    }
+                  ],
+                  "effects": null
+                }
+              ],
+              "left": "30.555556%",
+              "width": "38.888889%",
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con12_card_sauce_image",
+              "type": "image",
+              "position": "absol",
+              "parent": "con12_card_sauce",
+              "parentWidth": 1044,
+              "top": "-4.776903vw",
+              "left": "52.394636%",
+              "width": "74.137931%",
+              "src": "/images/con12_03.png",
+              "naturalWidth": 774,
+              "naturalHeight": 658,
+              "sourceType": "source image, clipped by active card overflow",
+              "reveal": "from-right-on-active",
+              "state": "hidden-until-active",
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con12_card_sauce_active_text",
+              "type": "group",
+              "position": "absol",
+              "parent": "con12_card_sauce",
+              "parentWidth": 1044,
+              "top": "6.614173vw",
+              "left": "9.770115%",
+              "width": "54.406130%",
+              "display": "flex-column",
+              "state": "hidden-until-active",
+              "children": [
+                {
+                  "name": "con12_card_sauce_title",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con12_card_sauce_active_text",
+                  "parentWidth": 568,
+                  "marginTop": "0.000000vw",
+                  "marginLeft": "0.000000%",
+                  "width": "23.767606%",
+                  "whiteSpace": "nowrap",
+                  "content": "특제 양념",
+                  "segments": [
+                    {
+                      "text": "특제",
+                      "fontFamily": "var(--sf)",
+                      "fontWeight": 600,
+                      "color": "#5d2b0d",
+                      "fontSize": "1.889764vw (36px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.837270vw"
+                    },
+                    {
+                      "text": " 양념",
+                      "fontFamily": "var(--sf)",
+                      "fontWeight": 600,
+                      "color": "#000000",
+                      "fontSize": "1.889764vw (36px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.837270vw"
+                    }
+                  ],
+                  "effects": null
+                },
+                {
+                  "name": "con12_card_sauce_rule",
+                  "type": "cssShape",
+                  "position": "rltv",
+                  "parent": "con12_card_sauce_active_text",
+                  "parentWidth": 1044,
+                  "marginTop": "1.522310vw",
+                  "marginLeft": "0.000000%",
+                  "width": "66.475096%",
+                  "aspectRatio": "694/1",
+                  "heightSource": "PSD divider rule 1px visual line, rendered with 1px border-top",
+                  "heightSourceReason": "Visible horizontal divider between active title and subcopy.",
+                  "borderTop": "1px solid #e5dfd9",
+                  "effects": null,
+                  "borderRadius": null
+                },
+                {
+                  "name": "con12_card_sauce_sub",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con12_card_sauce_active_text",
+                  "parentWidth": 568,
+                  "marginTop": "5.354331vw",
+                  "marginLeft": "0.000000%",
+                  "width": "34.859155%",
+                  "whiteSpace": "nowrap",
+                  "content": "시간이 만든 깊은 맛",
+                  "segments": [
+                    {
+                      "text": "시간이 만든 깊은 맛",
+                      "fontFamily": "'omnigothic', sans-serif",
+                      "fontWeight": 600,
+                      "color": "#000000",
+                      "fontSize": "1.259843vw (24px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.207349vw"
+                    }
+                  ],
+                  "effects": null
+                },
+                {
+                  "name": "con12_card_sauce_body",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "con12_card_sauce_active_text",
+                  "parentWidth": 568,
+                  "marginTop": "1.207349vw",
+                  "marginLeft": "0.000000%",
+                  "width": "100.000000%",
+                  "whiteSpace": "nowrap",
+                  "content": "과일을 베이스로 한 특제 양념은 다른 첨가물 없이 깊은 단맛을 만들어냅니다.\n조미료 사용을 최소화하고 과일과 채소, 고품질 고춧가루를 사용해 최상의 맛을 유지하고,\n일주일간의 숙성을 거쳐 달지도 짜지도 않은 깊은 어우러짐을 만들어냅니다.",
+                  "segments": [
+                    {
+                      "text": "과일을 베이스로 한 특제 양념은 다른 첨가물 없이 깊은 단맛을 만들어냅니다.\n조미료 사용을 최소화하고 과일과 채소, 고품질 고춧가루를 사용해 최상의 맛을 유지하고,\n일주일간의 숙성을 거쳐 달지도 짜지도 않은 깊은 어우러짐을 만들어냅니다.",
+                      "fontFamily": "var(--mf)",
+                      "fontWeight": 300,
+                      "color": "#000000",
+                      "fontSize": "0.944882vw (18px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": "1.469816vw"
+                    }
+                  ],
+                  "effects": null
+                }
+              ],
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "con12_card_sauce_vertical_label",
+              "type": "text",
+              "position": "absol",
+              "parent": "con12_card_sauce",
+              "parentWidth": 144,
+              "top": "16.377953vw",
+              "left": "37.500000%",
+              "width": "24.305556%",
+              "writingMode": "vertical-rl",
+              "whiteSpace": "nowrap",
+              "state": "visible-collapsed-default",
+              "content": "특제 양념",
+              "segments": [
+                {
+                  "text": "특제 양념",
+                  "fontFamily": "var(--sf)",
+                  "fontWeight": 600,
+                  "color": "#f8f4e6",
+                  "fontSize": "1.889764vw (36px)",
+                  "letterSpacing": "-0.05em",
+                  "lineHeight": "7.086614vw"
+                }
+              ],
+              "effects": null
+            }
+          ],
+          "left": "89.107413%",
+          "width": "10.892587%",
+          "effects": null
+        }
+      ],
+      "allowSingleSceneOverlayReason": "Accordion cards must animate left/width for click states, so cards are absolutely positioned inside a real row box. The row itself has explicit heightSource 1322x504 and every card still owns its badge/text/image group.",
+      "effects": null,
+      "borderRadius": null
+    }
+  ],
+  "visualOrigin": {
+    "top": 12339,
+    "reason": "raw con12 contains stacked active-state examples; requested implementation starts at con12_bg visual top"
+  },
+  "firstRltvY": 12478,
+  "sectionBottomReason": "Only the first supplied screen is the rendered section. The lower PSD blocks are interaction-state references for cards 2 and 3, so section height follows con12_bg 1920x940: pt + title + mt + accordion + pb.",
+  "interaction": {
+    "type": "click-active-accordion",
+    "defaultActive": "01",
+    "transition": "active card expands; non-active cards collapse; image and text reveal with opacity/translate from the right/bottom",
+    "cards": [
+      {
+        "no": "01",
+        "key": "noodle",
+        "image": "/images/con12_01.png"
+      },
+      {
+        "no": "02",
+        "key": "beef",
+        "image": "/images/con12_02.png"
+      },
+      {
+        "no": "03",
+        "key": "sauce",
+        "image": "/images/con12_03.png"
+      }
+    ]
+  },
+  "ignoredAssets": [
+    {
+      "name": "001",
+      "file": "TODO",
+      "reason": "PSD contains a tall composite/state-sheet layer spanning con12. User requested only the first screen; implementation uses con12_bg plus con12_01~03 source images."
+    },
+    {
+      "file": "con12_bg.jpg",
+      "reason": "Used as CSS background on con12_bg instead of img src because PSD image entry carries card clippingRect metadata; visible origin is full-section background y12339."
+    }
+  ],
+  "doNot": [
+    "Do not code before user approves ASCII after plan-checker passes.",
+    "Do not render the second supplied image / lower PSD states as stacked sections; use them only as card active-state data.",
+    "Do not flatten card internals into section siblings; each card owns badge, vertical label, active text, and image.",
+    "Do not remove overflow:hidden from the cards; images must reveal inside clipped cards.",
+    "Do not use section height/aspect-ratio; con12 height comes from pt + title + accordion heightSource + pb.",
+    "Do not use object-fit, max-width, automatic body wrapping, or hidden br tags."
+  ],
+  "roundNumberOverride": [
+    "0.000000vw",
+    "0.000000%",
+    "100.000000%",
+    "37.500000%",
+    "33.600000%",
+    "33.800000%"
+  ],
+  "ascii": "section.con12 (rltv, bg:#f8f4e6 + /images/con12_bg.jpg, visual target = first screenshot only)\nheightChain: pt 7.296588vw -> con12_title -> con12_accordion -> pb 6.981627vw\nsectionBottomReason: lower PSD states are click-state references; actual visual height follows con12_bg 1920x940.\n\n[absol background]\n- con12_bg: parent=section, top 0.000000vw, left -0.104987%, width 100.787402%, img=/images/con12_bg.jpg, natural 1920x940, not heightChain\n\n[rltv flow]\n- con12_title: parent=section, rltv, alignSelf center, width 30.603675%, mt 0.000000vw (section pt handles top spacing)\n  - con12_kicker: rltv, center, width 36.192110%, mt 0.000000vw, font omnigothic 400, fs 1.574803vw(30px), lh 1.469816vw, color #070707, nowrap\n  - con12_headline: rltv, center, width 100.000000%, mt 1.154856vw, font Eulyoo1945 600, fs 3.149606vw(60px), lh 3.097113vw, color split #070707/#5d2b0d/#070707, nowrap\n- con12_accordion: parent=section, rltv, alignSelf center, width 69.396325%, mt 2.887139vw, aspect 1322/504, heightSource row 1322x504\n  - card 01 group: parent=con12_accordion, absol, top/bottom 0, ACTIVE default, width 78.971256%, ov hid, border 1px #dddddd, radius left 1.574803vw\n    - badge: absol, top 0, active left 9.386973%, active width 5.363985%, collapsed left 29.861111%, bg switches #231916/#f8f4e6\n    - active image: con12_01.png natural 529x685, top -6.981627vw, left 53.927203%, width 50.670498%, reveal from right under ov hidden\n    - active text group: absol top 6.614173vw, left 9.770115%, title/rule/sub/body with br preserved\n    - collapsed vertical label: owned by card, hidden while active\n  - card 02 group: parent=con12_accordion, absol, DEFAULT collapsed, width 10.892587%, ov hid, border 1px #dddddd\n    - vertical label 최고급 육회 visible; on click card expands to 78.971256% and shows con12_02.png natural 633x838 from right\n  - card 03 group: parent=con12_accordion, absol, DEFAULT collapsed, width 10.892587%, ov hid, border 1px #dddddd, radius right 1.574803vw\n    - vertical label 특제 양념 visible; on click card expands to 78.971256% and shows con12_03.png natural 774x658 from right\n\nDo not:\n- Do not implement the second image as another static section.\n- Do not flatten cards; every card owns badge/label/text/image.\n- Do not use section height/aspect-ratio, object-fit, max-width, or automatic wrapping.\n- Do not remove card overflow:hidden or the 1px borders."
+}

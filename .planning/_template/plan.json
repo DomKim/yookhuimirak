@@ -1,0 +1,145 @@
+{
+  "_comment": "plan.json 템플릿 — 새 섹션 작성 시 이 형식을 따를 것",
+  "_rule1": "반복 요소(bar1~6, point1~6)는 반드시 wrapper로 그룹핑 (flat 나열 금지)",
+  "_rule2": "한 덩어리(dot+year+count)는 개별 wrapper → children으로",
+  "_rule3": "PSD 정확값이 둥근 수이면 roundNumberOverride에 추가",
+  "section": "conXX",
+  "page": "페이지명",
+  "specFile": "psd/spec_페이지_conXX.json",
+  "canvas": 1905,
+  "bg": "#ffffff 또는 url(...) center/cover",
+  "prevSectionBottom": 0,
+  "firstRltvY": 0,
+  "pt": "X.XXXXvw",
+  "pb": "X.XXXXvw",
+  "heightChain": ["pt", "요소1", "요소2", "pb"],
+  "roundNumberOverride": ["50%"],
+  "doNot": [
+    "하지 마라 항목 1"
+  ],
+  "ascii": "ASCII 다이어그램 (plan-checker 🟢 통과 후 작성)",
+  "elements": [
+    {
+      "name": "cXX_bg",
+      "type": "bgImage",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "0vw",
+      "left": "0%",
+      "width": "100.7874%",
+      "src": "/images/폴더/파일.jpg",
+      "naturalWidth": 1920,
+      "naturalHeight": 800,
+      "sourceType": "완성형",
+      "psdY": 0,
+      "effects": null,
+      "borderRadius": null
+    },
+    {
+      "name": "cXX_title",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0",
+      "marginLeft": "12.5459%",
+      "width": "28.1365%",
+      "effects": null,
+      "segments": [
+        {
+          "text": "타이틀 텍스트",
+          "fontWeight": 700,
+          "color": "#2d2a26",
+          "fontSize": "2.3633vw (45.02px)",
+          "letterSpacing": "-0.025em",
+          "lineHeight": 1.2
+        }
+      ],
+      "_comment_children": "타이틀 내부 장식 등은 children으로",
+      "children": [
+        {
+          "name": "cXX_dots",
+          "position": "absol",
+          "parent": "cXX_title",
+          "parentWidth": 536,
+          "type": "cssShape",
+          "top": "1.9948vw",
+          "left": "61.5672%",
+          "width": "19.2164%",
+          "effects": null
+        }
+      ]
+    },
+    {
+      "_comment": "★ 반복 요소는 wrapper로 그룹핑 — flat 나열 금지",
+      "name": "cXX_graph",
+      "type": "cssShape",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "8.7664vw",
+      "left": "10.7087%",
+      "width": "78.6877%",
+      "effects": null,
+      "psdY": 0,
+      "children": [
+        {
+          "_comment": "★ 바 6개 → bars wrapper",
+          "name": "cXX_bars",
+          "position": "absol",
+          "parent": "cXX_graph",
+          "parentWidth": 1499,
+          "type": "cssShape",
+          "top": "6.0892vw",
+          "left": "3.3356%",
+          "width": "96.0640%",
+          "effects": null,
+          "psdY": 0,
+          "children": [
+            {"name": "cXX_bar1", "position": "absol", "parent": "cXX_bars", "parentWidth": 1440, "type": "cssShape", "top": "21.8898vw", "left": "0%", "width": "0.2100vw", "effects": null, "psdY": 0}
+          ]
+        },
+        {
+          "_comment": "★ 포인트 6개 → points wrapper → 각 포인트도 개별 wrapper",
+          "name": "cXX_points",
+          "position": "absol",
+          "parent": "cXX_graph",
+          "parentWidth": 1499,
+          "type": "cssShape",
+          "top": "0vw",
+          "left": "0%",
+          "width": "99.9334%",
+          "effects": null,
+          "psdY": 0,
+          "children": [
+            {
+              "_comment": "★ 각 포인트 = wrapper (yr + ct + dot를 children으로)",
+              "name": "cXX_p1",
+              "position": "absol",
+              "parent": "cXX_points",
+              "parentWidth": 1499,
+              "type": "cssShape",
+              "top": "22.0472vw",
+              "left": "0%",
+              "width": "6.0707%",
+              "effects": null,
+              "psdY": 0,
+              "children": [
+                {"name": "cXX_p1_yr", "position": "absol", "parent": "cXX_p1", "parentWidth": 91, "type": "text-only", "top": "0vw", "left": "18.6813%", "psdY": 0,
+                  "segments": [{"text": "2022년", "fontWeight": 400, "color": "#2d2a26", "fontSize": "1.0441vw (19.89px)", "letterSpacing": 0, "lineHeight": 1.0}]},
+                {"name": "cXX_p1_ct", "position": "absol", "parent": "cXX_p1", "parentWidth": 91, "type": "text-only", "top": "1.6798vw", "left": "0%", "psdY": 0,
+                  "segments": [
+                    {"text": "점포수 ", "fontWeight": 400, "color": "#2d2a26", "fontSize": "1.2010vw", "letterSpacing": 0, "lineHeight": 1.0},
+                    {"text": "2개", "fontWeight": 400, "color": "#043915", "fontSize": "1.2010vw", "letterSpacing": 0, "lineHeight": 1.0}
+                  ]},
+                {"name": "cXX_p1_dot", "position": "absol", "parent": "cXX_p1", "parentWidth": 91, "type": "image", "top": "5.8268vw", "left": "48.3516%", "width": "0.9449vw",
+                  "naturalWidth": 18, "naturalHeight": 18, "src": "/images/폴더/dot.png", "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 0}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,474 @@
+{
+  "section": "con01",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 960,
+    "bottom": 2066
+  },
+  "background": {
+    "type": "image",
+    "fill": null,
+    "src": "사각형 1"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "name": "결과로 증명했습니다",
+      "content": "결과로 증명했습니다",
+      "lineBreaks": 0,
+      "x": 712,
+      "y": 1135,
+      "w": 503,
+      "h": 59,
+      "segments": [
+        {
+          "text": "결과로 ",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#070707",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "증명",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#5d2b0d",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "했습니다",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#070707",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "왜 미락육회막국수인가요?",
+      "content": "왜 미락육회막국수인가요?",
+      "lineBreaks": 0,
+      "x": 798,
+      "y": 1088,
+      "w": 327,
+      "h": 28,
+      "segments": [
+        {
+          "text": "왜 미락육회막국수인가요?",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#070707",
+          "lineHeight": 2.167,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "맛, 매출, 운영까지 창업에서 가장 중요한 기준을 모두 갖춘 브랜드입니다",
+      "content": "맛, 매출, 운영까지 창업에서 가장 중요한 기준을 모두 갖춘 브랜드입니다",
+      "lineBreaks": 0,
+      "x": 678,
+      "y": 1226,
+      "w": 566,
+      "h": 23,
+      "segments": [
+        {
+          "text": "맛, 매출, 운영",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "까지 창업에서 가장 중요한 기준을 모두 갖춘 브랜드입니다",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "검증된 수익 구조",
+      "content": "검증된 수익 구조",
+      "lineBreaks": 0,
+      "x": 798,
+      "y": 1499,
+      "w": 109,
+      "h": 17,
+      "segments": [
+        {
+          "text": "검증된 수익 구조",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "3가지 매출 구조",
+      "content": "3가지 매출 구조",
+      "lineBreaks": 0,
+      "x": 800,
+      "y": 1535,
+      "w": 151,
+      "h": 24,
+      "segments": [
+        {
+          "text": "3가지 매출 구조",
+          "fontSize_px": 26,
+          "fontSize_vw": "1.3648",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 2.5,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "홀 · 포장 · 배달 3WAY 운영으로 매출을 극대화 불황에도 흔들리지 않는 구조",
+      "content": "홀 · 포장 · 배달\n3WAY 운영으로 매출을 극대화\n불황에도 흔들리지 않는 구조",
+      "lineBreaks": 2,
+      "x": 799,
+      "y": 1599,
+      "w": 201,
+      "h": 73,
+      "segments": [
+        {
+          "text": "홀 · 포장 · 배달\n3WAY 운영으로 매출을 극대화\n불황에도 흔들리지 않는 구조",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "차별화된 맛",
+      "content": "차별화된 맛",
+      "lineBreaks": 0,
+      "x": 378,
+      "y": 1499,
+      "w": 78,
+      "h": 17,
+      "segments": [
+        {
+          "text": "차별화된 맛",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "다시 찾게 되는 이유",
+      "content": "다시 찾게 되는 이유",
+      "lineBreaks": 0,
+      "x": 380,
+      "y": 1535,
+      "w": 183,
+      "h": 24,
+      "segments": [
+        {
+          "text": "다시 찾게 되는 이유",
+          "fontSize_px": 26,
+          "fontSize_vw": "1.3648",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#ffffff",
+          "lineHeight": 2.5,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "과일 베이스 특제 양념과 1주일 숙성으로 완성된 깊은 맛 한 번 방문으로 끝나지 않습니다",
+      "content": "과일 베이스 특제 양념과\n1주일 숙성으로 완성된 깊은 맛\n한 번 방문으로 끝나지 않습니다",
+      "lineBreaks": 2,
+      "x": 379,
+      "y": 1599,
+      "w": 205,
+      "h": 73,
+      "segments": [
+        {
+          "text": "과일 베이스 특제 양념과\n1주일 숙성으로 완성된 깊은 맛\n한 번 방문으로 끝나지 않습니다",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "쉬운 운영 시스템",
+      "content": "쉬운 운영 시스템",
+      "lineBreaks": 0,
+      "x": 1218,
+      "y": 1499,
+      "w": 108,
+      "h": 17,
+      "segments": [
+        {
+          "text": "쉬운 운영 시스템",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "누구나 가능한 창업",
+      "content": "누구나 가능한 창업",
+      "lineBreaks": 0,
+      "x": 1219,
+      "y": 1535,
+      "w": 178,
+      "h": 24,
+      "segments": [
+        {
+          "text": "누구나 가능한 창업",
+          "fontSize_px": 26,
+          "fontSize_vw": "1.3648",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 2.5,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "전문 주방장 없이도 운영 가능 완제품 물류 시스템으로 인건비 부담을 최소화합니다",
+      "content": "전문 주방장 없이도 운영 가능\n완제품 물류 시스템으로\n인건비 부담을 최소화합니다",
+      "lineBreaks": 2,
+      "x": 1219,
+      "y": 1599,
+      "w": 190,
+      "h": 73,
+      "segments": [
+        {
+          "text": "전문 주방장 없이도 운영 가능\n완제품 물류 시스템으로\n인건비 부담을 최소화합니다",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 2",
+      "x": 328,
+      "y": 1321,
+      "w": 424,
+      "h": 404,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 2 복사",
+      "x": 748,
+      "y": 1321,
+      "w": 424,
+      "h": 404,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#231916"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 2 복사 2",
+      "x": 1168,
+      "y": 1321,
+      "w": 424,
+      "h": 404,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#231916"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 3",
+      "x": 1147,
+      "y": 1322,
+      "w": 4,
+      "h": 41,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 3 복사",
+      "x": 1137,
+      "y": 1322,
+      "w": 4,
+      "h": 41,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 3 복사 2",
+      "x": 1568,
+      "y": 1322,
+      "w": 3,
+      "h": 41,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 3 복사 2",
+      "x": 1558,
+      "y": 1322,
+      "w": 3,
+      "h": 41,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 3 복사 3",
+      "x": 1548,
+      "y": 1322,
+      "w": 3,
+      "h": 41,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "사각형 1",
+      "x": 0,
+      "y": 960,
+      "w": 1920,
+      "h": 890,
+      "clippingRect": {
+        "x": 328,
+        "y": 1321,
+        "w": 424,
+        "h": 404,
+        "borderRadius": 0
+      },
+      "possibleFile": "con01_bg.jpg",
+      "effects": null
+    },
+    {
+      "name": "con01_bg_2",
+      "x": -233,
+      "y": 1319,
+      "w": 1210,
+      "h": 747,
+      "clippingRect": {
+        "x": 328,
+        "y": 1321,
+        "w": 424,
+        "h": 404,
+        "borderRadius": 0
+      },
+      "possibleFile": "con01_bg_2.png",
+      "effects": null
+    },
+    {
+      "name": "con01_01",
+      "x": 571,
+      "y": 1366,
+      "w": 284,
+      "h": 210,
+      "clippingRect": {
+        "x": 1147,
+        "y": 1322,
+        "w": 4,
+        "h": 41,
+        "borderRadius": 0
+      },
+      "possibleFile": "con01_01.png",
+      "effects": null
+    }
+  ],
+  "comments": [],
+  "bgRect": {
+    "y": 960,
+    "h": 890,
+    "bottom": 1850,
+    "name": "사각형 1"
+  }
+}

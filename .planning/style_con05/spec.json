@@ -1,0 +1,1489 @@
+{
+  "section": "con05",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 4568,
+    "bottom": 7017
+  },
+  "background": {
+    "type": "color",
+    "fill": "#bfa78a",
+    "src": null
+  },
+  "groups": [
+    {
+      "name": "con05_04_3",
+      "parentGroup": "con05",
+      "childCount": 3,
+      "children": [
+        {
+          "name": "타원 4 복사 2",
+          "type": "layer",
+          "x": 924,
+          "y": 6510,
+          "w": 193,
+          "h": 193
+        },
+        {
+          "name": "홀",
+          "type": "text",
+          "x": 1000,
+          "y": 6596,
+          "w": 41,
+          "h": 44
+        },
+        {
+          "name": "HALL",
+          "type": "text",
+          "x": 997,
+          "y": 6567,
+          "w": 47,
+          "h": 14
+        }
+      ],
+      "bbox": {
+        "x": 924,
+        "y": 6510,
+        "w": 193,
+        "h": 193
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con05_04_4",
+      "parentGroup": "con05",
+      "childCount": 3,
+      "children": [
+        {
+          "name": "타원 4 복사 3",
+          "type": "layer",
+          "x": 1159,
+          "y": 6510,
+          "w": 193,
+          "h": 193
+        },
+        {
+          "name": "포장",
+          "type": "text",
+          "x": 1214,
+          "y": 6596,
+          "w": 84,
+          "h": 43
+        },
+        {
+          "name": "PICK UP",
+          "type": "text",
+          "x": 1222,
+          "y": 6567,
+          "w": 67,
+          "h": 14
+        }
+      ],
+      "bbox": {
+        "x": 1159,
+        "y": 6510,
+        "w": 193,
+        "h": 193
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con05_04_5",
+      "parentGroup": "con05",
+      "childCount": 3,
+      "children": [
+        {
+          "name": "타원 4 복사 4",
+          "type": "layer",
+          "x": 1391,
+          "y": 6510,
+          "w": 193,
+          "h": 193
+        },
+        {
+          "name": "배달",
+          "type": "text",
+          "x": 1447,
+          "y": 6596,
+          "w": 83,
+          "h": 44
+        },
+        {
+          "name": "DELIVERY",
+          "type": "text",
+          "x": 1445,
+          "y": 6567,
+          "w": 86,
+          "h": 14
+        }
+      ],
+      "bbox": {
+        "x": 1391,
+        "y": 6510,
+        "w": 193,
+        "h": 193
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con05_01_1",
+      "parentGroup": "con05",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 10",
+          "type": "layer",
+          "x": 239,
+          "y": 4963,
+          "w": 83,
+          "h": 48
+        },
+        {
+          "name": "01",
+          "type": "text",
+          "x": 268,
+          "y": 4975,
+          "w": 24,
+          "h": 22
+        }
+      ],
+      "bbox": {
+        "x": 239,
+        "y": 4963,
+        "w": 83,
+        "h": 48
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con05_02_1",
+      "parentGroup": "con05",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 10 복사",
+          "type": "layer",
+          "x": 239,
+          "y": 5436,
+          "w": 83,
+          "h": 48
+        },
+        {
+          "name": "02",
+          "type": "text",
+          "x": 265,
+          "y": 5449,
+          "w": 30,
+          "h": 22
+        }
+      ],
+      "bbox": {
+        "x": 239,
+        "y": 5436,
+        "w": 83,
+        "h": 48
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con05_03_1",
+      "parentGroup": "con05",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 10 복사 2",
+          "type": "layer",
+          "x": 239,
+          "y": 5909,
+          "w": 83,
+          "h": 48
+        },
+        {
+          "name": "03",
+          "type": "text",
+          "x": 265,
+          "y": 5922,
+          "w": 30,
+          "h": 22
+        }
+      ],
+      "bbox": {
+        "x": 239,
+        "y": 5909,
+        "w": 83,
+        "h": 48
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con05_04_1",
+      "parentGroup": "con05",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 10 복사 3",
+          "type": "layer",
+          "x": 239,
+          "y": 6384,
+          "w": 83,
+          "h": 48
+        },
+        {
+          "name": "04",
+          "type": "text",
+          "x": 265,
+          "y": 6396,
+          "w": 31,
+          "h": 22
+        }
+      ],
+      "bbox": {
+        "x": 239,
+        "y": 6384,
+        "w": 83,
+        "h": 48
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con05_04_7",
+      "parentGroup": "con05",
+      "childCount": 3,
+      "children": [
+        {
+          "name": "사각형 11",
+          "type": "layer",
+          "x": 1493,
+          "y": 6473,
+          "w": 158,
+          "h": 107
+        },
+        {
+          "name": "재구매율",
+          "type": "text",
+          "x": 1541,
+          "y": 6489,
+          "w": 62,
+          "h": 17
+        },
+        {
+          "name": "60%",
+          "type": "text",
+          "x": 1537,
+          "y": 6515,
+          "w": 72,
+          "h": 27
+        }
+      ],
+      "bbox": {
+        "x": 1493,
+        "y": 6473,
+        "w": 158,
+        "h": 107
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con05_04_6",
+      "parentGroup": "con05",
+      "childCount": 3,
+      "children": [
+        {
+          "name": "사각형 11 복사",
+          "type": "layer",
+          "x": 869,
+          "y": 6637,
+          "w": 159,
+          "h": 107
+        },
+        {
+          "name": "재방문율",
+          "type": "text",
+          "x": 917,
+          "y": 6674,
+          "w": 62,
+          "h": 17
+        },
+        {
+          "name": "80%",
+          "type": "text",
+          "x": 912,
+          "y": 6700,
+          "w": 73,
+          "h": 27
+        }
+      ],
+      "bbox": {
+        "x": 869,
+        "y": 6637,
+        "w": 159,
+        "h": 107
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    }
+  ],
+  "texts": [
+    {
+      "name": "한 그릇에 담은 정성",
+      "content": "한 그릇에 담은 정성",
+      "lineBreaks": 0,
+      "x": 724,
+      "y": 4771,
+      "w": 463,
+      "h": 59,
+      "segments": [
+        {
+          "text": "한 그릇에 담은 ",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#070707",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "정성",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#5d2b0d",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "흔들림 없이 이어온 맛",
+      "content": "흔들림 없이 이어온 맛",
+      "lineBreaks": 0,
+      "x": 823,
+      "y": 4724,
+      "w": 274,
+      "h": 30,
+      "segments": [
+        {
+          "text": "흔들림 없이 이어온 맛",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#070707",
+          "lineHeight": 2.167,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "좋은 재료를 고르고, 불필요한 것을 덜어내고, 시간을 들여 완성하는 과정까지 우리는 그 기본을 지키는 데 집중합니",
+      "content": "좋은 재료를 고르고, 불필요한 것을 덜어내고, 시간을 들여 완성하는 과정까지\n우리는 그 기본을 지키는 데 집중합니다",
+      "lineBreaks": 1,
+      "x": 658,
+      "y": 4863,
+      "w": 601,
+      "h": 50,
+      "segments": [
+        {
+          "text": "좋은 재료를 고르고, 불필요한 것을 덜어내고, 시간을 들여 완성하는 과정까지\n",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "우리는 그 기본을 지키는 데 집중",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "합니다",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "미락육회막국수는 당일 도축한 우둔살과 홍두께살로 만든 신선한 육회, 국내산 메밀을 사용한 자가제면, 과일 베이스의",
+      "content": "미락육회막국수는 당일 도축한 우둔살과 홍두께살로 만든 신선한 육회,\n국내산 메밀을 사용한 자가제면, 과일 베이스의\n특제 양념까지 재료와 방식 모두에서 차별화를 만들어냅니다.\n\n조미료 사용을 최소화하고 일주일 숙성 과정을 거쳐\n달지도 짜지도 않은 깊은 맛의 균형을 완성하며\n이러한 차이는 결국 재방문으로 이어집니다.",
+      "lineBreaks": 6,
+      "x": 1079,
+      "y": 5127,
+      "w": 452,
+      "h": 185,
+      "segments": [
+        {
+          "text": "미락육회막국수는 당일 도축한 우둔살과 홍두께살로 만든 신선한 육회,\n국내산 메밀을 사용한 자가제면, 과일 베이스의\n특제 양념까지 ",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "재료와 방식 모두에서 차별화",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "를 만들어냅니다.\n\n조미료 사용을 최소화하고 일주일 숙성 과정을 거쳐\n달지도 짜지도 않은 깊은 맛의 균형을 완성하며\n이러한 차이는 결국 재방문으로 이어집니다.",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "시간으로 완성한 한 그릇",
+      "content": "시간으로 완성한 한 그릇",
+      "lineBreaks": 0,
+      "x": 1078,
+      "y": 5064,
+      "w": 308,
+      "h": 29,
+      "segments": [
+        {
+          "text": "시간으로 완성",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#5d2b0d",
+          "lineHeight": 0.933,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        },
+        {
+          "text": "한 한 그릇",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#000000",
+          "lineHeight": 0.933,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        }
+      ]
+    },
+    {
+      "name": "미락육회막국수는 단순히 메뉴를 늘리는 방식이 아니라 트렌드와 계절, 고객 반응을 반영한 메뉴 개발을 진행합니다. ",
+      "content": "미락육회막국수는 단순히 메뉴를 늘리는 방식이 아니라\n트렌드와 계절, 고객 반응을 반영한 메뉴 개발을 진행합니다.\n\n모든 메뉴는 본사 개발 후 직영점에서 충분한 테스트를 거쳐\n검증된 메뉴만 출시되며, 지속적인 신메뉴와\n프로모션을 통해 매장의 활력을 유지합니다.",
+      "lineBreaks": 5,
+      "x": 360,
+      "y": 5615,
+      "w": 382,
+      "h": 157,
+      "segments": [
+        {
+          "text": "미락육회막국수는 단순히 메뉴를 늘리는 방식이 아니라\n",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "트렌드와 계절, 고객 반응을 반영한 메뉴 개발을 진행",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#ffffff",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "합니다.\n\n모든 메뉴는 본사 개발 후 직영점에서 충분한 테스트를 거쳐\n검증된 메뉴만 출시되며, 지속적인 신메뉴와\n프로모션을 통해 매장의 활력을 유지합니다.",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "지속되는 이유를 고민합니다",
+      "content": "지속되는 이유를 고민합니다",
+      "lineBreaks": 0,
+      "x": 360,
+      "y": 5552,
+      "w": 358,
+      "h": 30,
+      "segments": [
+        {
+          "text": "지속되는 이유",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#e3cfaf",
+          "lineHeight": 0.933,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        },
+        {
+          "text": "를 고민합니다",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 0.933,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        }
+      ]
+    },
+    {
+      "name": "불필요한 식자재를 최소화하고 대량 물류 시스템을 통해 원가를 효율적으로 관리합니다.  완제품 및 반제품 공급으로 ",
+      "content": "불필요한 식자재를 최소화하고 대량 물류 시스템을 통해\n원가를 효율적으로 관리합니다.\n\n완제품 및 반제품 공급으로 조리 과정을 단순화하여\n전문 주방장 없이도 안정적인 운영이 가능하며,\n상권과 입지에 맞춰 점주가 직접 가격을 설정할 수 있는\n유연한 운영 구조를 갖추고 있습니다.",
+      "lineBreaks": 6,
+      "x": 1079,
+      "y": 6075,
+      "w": 357,
+      "h": 185,
+      "segments": [
+        {
+          "text": "불필요한 식자재를 최소화하고 대량 물류 시스템을 통해\n원가를 효율적으로 관리합니다.\n\n",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "완제품 및 반제품 공급으로 조리 과정을 단순화",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#ffffff",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "하여\n전문 주방장 없이도 안정적인 운영이 가능하며,\n상권과 입지에 맞춰 점주가 직접 가격을 설정할 수 있는\n유연한 운영 구조를 갖추고 있습니다.",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "운영은 더 단순하게",
+      "content": "운영은 더 단순하게",
+      "lineBreaks": 0,
+      "x": 1078,
+      "y": 6012,
+      "w": 241,
+      "h": 29,
+      "segments": [
+        {
+          "text": "운영은 더 ",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 0.933,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        },
+        {
+          "text": "단순",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#e3cfaf",
+          "lineHeight": 0.933,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        },
+        {
+          "text": "하게",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 0.933,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        }
+      ]
+    },
+    {
+      "name": "홀",
+      "content": "홀",
+      "lineBreaks": 0,
+      "x": 1000,
+      "y": 6596,
+      "w": 41,
+      "h": 44,
+      "segments": [
+        {
+          "text": "홀",
+          "fontSize_px": 45,
+          "fontSize_vw": "2.3622",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 1.444,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "HALL",
+      "content": "HALL",
+      "lineBreaks": 0,
+      "x": 997,
+      "y": 6567,
+      "w": 47,
+      "h": 14,
+      "segments": [
+        {
+          "text": "HALL",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 3.611,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "con05_04_8",
+      "content": "+",
+      "lineBreaks": 0,
+      "x": 1131,
+      "y": 6601,
+      "w": 14,
+      "h": 14,
+      "segments": [
+        {
+          "text": "+",
+          "fontSize_px": 25,
+          "fontSize_vw": "1.3123",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 2.6,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ],
+      "possibleFile": "con05_04_8.png"
+    },
+    {
+      "name": "+ 복사",
+      "content": "+",
+      "lineBreaks": 0,
+      "x": 1365,
+      "y": 6601,
+      "w": 14,
+      "h": 14,
+      "segments": [
+        {
+          "text": "+",
+          "fontSize_px": 25,
+          "fontSize_vw": "1.3123",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 2.6,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "포장",
+      "content": "포장",
+      "lineBreaks": 0,
+      "x": 1214,
+      "y": 6596,
+      "w": 84,
+      "h": 43,
+      "segments": [
+        {
+          "text": "포장",
+          "fontSize_px": 45,
+          "fontSize_vw": "2.3622",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 1.444,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "PICK UP",
+      "content": "PICK UP",
+      "lineBreaks": 0,
+      "x": 1222,
+      "y": 6567,
+      "w": 67,
+      "h": 14,
+      "segments": [
+        {
+          "text": "PICK UP",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 3.611,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "배달",
+      "content": "배달",
+      "lineBreaks": 0,
+      "x": 1447,
+      "y": 6596,
+      "w": 83,
+      "h": 44,
+      "segments": [
+        {
+          "text": "배달",
+          "fontSize_px": 45,
+          "fontSize_vw": "2.3622",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 1.444,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "DELIVERY",
+      "content": "DELIVERY",
+      "lineBreaks": 0,
+      "x": 1445,
+      "y": 6567,
+      "w": 86,
+      "h": 14,
+      "segments": [
+        {
+          "text": "DELIVERY",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 3.611,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "미락육회막국수는 홀, 포장, 배달이 가능한 3WAY 운영 구조를 통해 매출을 다각화하고 있습니다.  원가와 인건비",
+      "content": "미락육회막국수는 홀, 포장, 배달이 가능한 3WAY\n운영 구조를 통해 매출을 다각화하고 있습니다.\n\n원가와 인건비 비율을 효율적으로 관리하여\n평균 순수익 약 23% 수준의 안정적인 수익 구조를 유지하며,\n단기적인 매출이 아닌 지속 가능한 수익을 만들어가는 데 집중합니다.",
+      "lineBreaks": 5,
+      "x": 360,
+      "y": 6563,
+      "w": 442,
+      "h": 157,
+      "segments": [
+        {
+          "text": "미락육회막국수는 ",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "홀, 포장, 배달이 가능한 3WAY\n운영 구조",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#ffffff",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "를 통해 매출을 다각화하고 있습니다.\n\n원가와 인건비 비율을 효율적으로 관리하여\n평균 순수익 약 23% 수준의 안정적인 수익 구조를 유지하며,\n단기적인 매출이 아닌 지속 가능한 수익을 만들어가는 데 집중합니다.",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "결과는 자연스럽게 따라옵니다",
+      "content": "결과는 자연스럽게 따라옵니다",
+      "lineBreaks": 0,
+      "x": 360,
+      "y": 6500,
+      "w": 387,
+      "h": 30,
+      "segments": [
+        {
+          "text": "결과",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#e3cfaf",
+          "lineHeight": 0.933,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        },
+        {
+          "text": "는 자연스럽게 따라옵니다",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 0.933,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        }
+      ]
+    },
+    {
+      "name": "01",
+      "content": "01",
+      "lineBreaks": 0,
+      "x": 268,
+      "y": 4975,
+      "w": 24,
+      "h": 22,
+      "segments": [
+        {
+          "text": "01",
+          "fontSize_px": 24,
+          "fontSize_vw": "1.2598",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicH",
+          "color": "#231916",
+          "lineHeight": 1.167,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        }
+      ]
+    },
+    {
+      "name": "02",
+      "content": "02",
+      "lineBreaks": 0,
+      "x": 265,
+      "y": 5449,
+      "w": 30,
+      "h": 22,
+      "segments": [
+        {
+          "text": "02",
+          "fontSize_px": 24,
+          "fontSize_vw": "1.2598",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicH",
+          "color": "#231916",
+          "lineHeight": 1.167,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        }
+      ]
+    },
+    {
+      "name": "03",
+      "content": "03",
+      "lineBreaks": 0,
+      "x": 265,
+      "y": 5922,
+      "w": 30,
+      "h": 22,
+      "segments": [
+        {
+          "text": "03",
+          "fontSize_px": 24,
+          "fontSize_vw": "1.2598",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicH",
+          "color": "#231916",
+          "lineHeight": 1.167,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        }
+      ]
+    },
+    {
+      "name": "04",
+      "content": "04",
+      "lineBreaks": 0,
+      "x": 265,
+      "y": 6396,
+      "w": 31,
+      "h": 22,
+      "segments": [
+        {
+          "text": "04",
+          "fontSize_px": 24,
+          "fontSize_vw": "1.2598",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicH",
+          "color": "#231916",
+          "lineHeight": 1.167,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        }
+      ]
+    },
+    {
+      "name": "재구매율",
+      "content": "재구매율",
+      "lineBreaks": 0,
+      "x": 1541,
+      "y": 6489,
+      "w": 62,
+      "h": 17,
+      "segments": [
+        {
+          "text": "재구매율",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#f8edd7",
+          "lineHeight": 3.611,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        }
+      ]
+    },
+    {
+      "name": "60%",
+      "content": "60%",
+      "lineBreaks": 0,
+      "x": 1537,
+      "y": 6515,
+      "w": 72,
+      "h": 27,
+      "segments": [
+        {
+          "text": "60%",
+          "fontSize_px": 37.07,
+          "fontSize_vw": "1.9459",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#f8edd7",
+          "lineHeight": 3.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        }
+      ]
+    },
+    {
+      "name": "재방문율",
+      "content": "재방문율",
+      "lineBreaks": 0,
+      "x": 917,
+      "y": 6674,
+      "w": 62,
+      "h": 17,
+      "segments": [
+        {
+          "text": "재방문율",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#f8edd7",
+          "lineHeight": 3.611,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        }
+      ]
+    },
+    {
+      "name": "80%",
+      "content": "80%",
+      "lineBreaks": 0,
+      "x": 912,
+      "y": 6700,
+      "w": 73,
+      "h": 27,
+      "segments": [
+        {
+          "text": "80%",
+          "fontSize_px": 37.07,
+          "fontSize_vw": "1.9459",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#f8edd7",
+          "lineHeight": 3.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 8",
+      "x": -1,
+      "y": 4568,
+      "w": 1922,
+      "h": 2403,
+      "fill": "#bfa78a",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 8 복사",
+      "x": 19,
+      "y": 4568,
+      "w": 1882,
+      "h": 2403,
+      "fill": "#f8f4e6",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 9",
+      "x": 238,
+      "y": 4961,
+      "w": 1444,
+      "h": 454,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "con05_01_2",
+      "x": 240,
+      "y": 4963,
+      "w": 892,
+      "h": 450,
+      "fill": null,
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 9 복사",
+      "x": 238,
+      "y": 5435,
+      "w": 1444,
+      "h": 454,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 9 복사 3",
+      "x": 238,
+      "y": 5909,
+      "w": 1444,
+      "h": 454,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 9 복사 2",
+      "x": 238,
+      "y": 6383,
+      "w": 1444,
+      "h": 454,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "타원 4 복사 2",
+      "x": 924,
+      "y": 6510,
+      "w": 193,
+      "h": 193,
+      "fill": "#f8f4e6",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": [
+        {
+          "type": "dropShadow",
+          "offsetX_px": 0,
+          "offsetY_px": -5,
+          "blur_px": 16,
+          "spread_px": 0,
+          "color": "#2a1d0e",
+          "opacity": 0.2196078431372549,
+          "inset": false,
+          "offsetX_vw": "0.0000",
+          "offsetY_vw": "-0.2625",
+          "blur_vw": "0.8399",
+          "spread_vw": "0.0000",
+          "css": "0.0000vw -0.2625vw 0.8399vw 0.0000vw rgba(42, 29, 14, 0.2196078431372549)"
+        }
+      ]
+    },
+    {
+      "name": "타원 4 복사 3",
+      "x": 1159,
+      "y": 6510,
+      "w": 193,
+      "h": 193,
+      "fill": "#f8f4e6",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": [
+        {
+          "type": "dropShadow",
+          "offsetX_px": 0,
+          "offsetY_px": -5,
+          "blur_px": 16,
+          "spread_px": 0,
+          "color": "#2a1d0e",
+          "opacity": 0.2196078431372549,
+          "inset": false,
+          "offsetX_vw": "0.0000",
+          "offsetY_vw": "-0.2625",
+          "blur_vw": "0.8399",
+          "spread_vw": "0.0000",
+          "css": "0.0000vw -0.2625vw 0.8399vw 0.0000vw rgba(42, 29, 14, 0.2196078431372549)"
+        }
+      ]
+    },
+    {
+      "name": "타원 4 복사 4",
+      "x": 1391,
+      "y": 6510,
+      "w": 193,
+      "h": 193,
+      "fill": "#f8f4e6",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": [
+        {
+          "type": "dropShadow",
+          "offsetX_px": 0,
+          "offsetY_px": -5,
+          "blur_px": 16,
+          "spread_px": 0,
+          "color": "#2a1d0e",
+          "opacity": 0.2196078431372549,
+          "inset": false,
+          "offsetX_vw": "0.0000",
+          "offsetY_vw": "-0.2625",
+          "blur_vw": "0.8399",
+          "spread_vw": "0.0000",
+          "css": "0.0000vw -0.2625vw 0.8399vw 0.0000vw rgba(42, 29, 14, 0.2196078431372549)"
+        }
+      ]
+    },
+    {
+      "name": "사각형 10",
+      "x": 239,
+      "y": 4963,
+      "w": 83,
+      "h": 48,
+      "fill": "#bfa78a",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 10 복사",
+      "x": 239,
+      "y": 5436,
+      "w": 83,
+      "h": 48,
+      "fill": "#bfa78a",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 10 복사 2",
+      "x": 239,
+      "y": 5909,
+      "w": 83,
+      "h": 48,
+      "fill": "#bfa78a",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 10 복사 3",
+      "x": 239,
+      "y": 6384,
+      "w": 83,
+      "h": 48,
+      "fill": "#bfa78a",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 11",
+      "x": 1493,
+      "y": 6473,
+      "w": 158,
+      "h": 107,
+      "fill": "#a4202c",
+      "borderRadius": 42,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 11 복사",
+      "x": 869,
+      "y": 6637,
+      "w": 159,
+      "h": 107,
+      "fill": "#a4202c",
+      "borderRadius": 42,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "con05_01_2",
+      "x": 209,
+      "y": 4819,
+      "w": 923,
+      "h": 616,
+      "clippingRect": {
+        "x": 240,
+        "y": 4963,
+        "w": 892,
+        "h": 450,
+        "borderRadius": 0
+      },
+      "possibleFile": "con05_01_2.png",
+      "effects": null
+    },
+    {
+      "name": "con05_02_2",
+      "x": 867,
+      "y": 5335,
+      "w": 438,
+      "h": 327,
+      "clippingRect": null,
+      "possibleFile": "con05_02_2.png",
+      "effects": null
+    },
+    {
+      "name": "con05_02_3",
+      "x": 1261,
+      "y": 5538,
+      "w": 653,
+      "h": 368,
+      "clippingRect": null,
+      "possibleFile": "con05_02_3.png",
+      "effects": null
+    },
+    {
+      "name": "con05_02_4",
+      "x": 665,
+      "y": 5694,
+      "w": 555,
+      "h": 289,
+      "clippingRect": null,
+      "possibleFile": "con05_02_4.png",
+      "effects": null
+    },
+    {
+      "name": "22734023",
+      "x": 209,
+      "y": 5906,
+      "w": 1656,
+      "h": 576,
+      "clippingRect": {
+        "x": 238,
+        "y": 5909,
+        "w": 1444,
+        "h": 454,
+        "borderRadius": 0
+      },
+      "possibleFile": "con05_03_2.jpg",
+      "effects": null
+    },
+    {
+      "name": "레이어 20",
+      "x": 422,
+      "y": 5911,
+      "w": 1258,
+      "h": 450,
+      "clippingRect": {
+        "x": 240,
+        "y": 4963,
+        "w": 892,
+        "h": 450,
+        "borderRadius": 0
+      },
+      "possibleFile": "TODO",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#090403",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    },
+    {
+      "name": "Gemini_Generated_Image_e081lse081lse081",
+      "x": 233,
+      "y": 5926,
+      "w": 1455,
+      "h": 1091,
+      "clippingRect": {
+        "x": 238,
+        "y": 6383,
+        "w": 1444,
+        "h": 454,
+        "borderRadius": 0
+      },
+      "possibleFile": "con05_04_2.jpg",
+      "effects": null
+    }
+  ],
+  "comments": [],
+  "bgRect": {
+    "y": 4568,
+    "h": 2403,
+    "bottom": 6971,
+    "name": "사각형 8"
+  }
+}

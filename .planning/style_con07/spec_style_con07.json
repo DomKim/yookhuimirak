@@ -1,0 +1,292 @@
+{
+  "section": "con07",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 7675,
+    "bottom": 9815
+  },
+  "background": {
+    "type": "color",
+    "fill": "#fffdf5",
+    "src": null
+  },
+  "groups": [
+    {
+      "name": "con07_01",
+      "parentGroup": "con07",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 14",
+          "type": "layer",
+          "x": 386,
+          "y": 8363,
+          "w": 95,
+          "h": 48
+        },
+        {
+          "name": "벡터 스마트 오브젝트",
+          "type": "layer",
+          "x": 415,
+          "y": 8380,
+          "w": 38,
+          "h": 16
+        }
+      ],
+      "bbox": {
+        "x": 386,
+        "y": 8363,
+        "w": 95,
+        "h": 48
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    }
+  ],
+  "texts": [
+    {
+      "name": "미디어가 먼저 알아본 맛",
+      "content": "미디어가 먼저 알아본 맛",
+      "lineBreaks": 0,
+      "x": 671,
+      "y": 7956,
+      "w": 578,
+      "h": 58,
+      "segments": [
+        {
+          "text": "미디어",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#5d2b0d",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "가 먼저 알아본 맛",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#070707",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "이미 주목받고 있습니다",
+      "content": "이미 주목받고 있습니다",
+      "lineBreaks": 0,
+      "x": 814,
+      "y": 7910,
+      "w": 293,
+      "h": 29,
+      "segments": [
+        {
+          "text": "이미 주목받고 있습니다",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#070707",
+          "lineHeight": 2.167,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "SBS ‘생방송 투데이’ 등 다양한 방송과 매체를 통해 소개된 미락육회막국수 광고가 아닌 실제 경험을 통해 자연스",
+      "content": "SBS ‘생방송 투데이’ 등 다양한 방송과 매체를 통해 소개된 미락육회막국수\n광고가 아닌 실제 경험을 통해 자연스럽게 알려진 브랜드입니다",
+      "lineBreaks": 1,
+      "x": 669,
+      "y": 8048,
+      "w": 582,
+      "h": 50,
+      "segments": [
+        {
+          "text": "SBS ‘생방송 투데이’ 등 다양한 방송과 매체를 통해 소개된 미락육회막국수\n",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "광고가 아닌 실제 경험",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "을 통해 자연스럽게 알려진 브랜드입니다",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 13",
+      "x": -1,
+      "y": 7774,
+      "w": 1922,
+      "h": 964,
+      "fill": "#fffdf5",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 12 복사 4",
+      "x": 514,
+      "y": 8139,
+      "w": 892,
+      "h": 497,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 14",
+      "x": 386,
+      "y": 8363,
+      "w": 95,
+      "h": 48,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 14 복사",
+      "x": 1439,
+      "y": 8363,
+      "w": 97,
+      "h": 48,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig 복사",
+      "x": 0,
+      "y": 8329,
+      "w": 986,
+      "h": 1486,
+      "fill": null,
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 0.8,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "003",
+      "x": 2,
+      "y": 7675,
+      "w": 1920,
+      "h": 1357,
+      "clippingRect": {
+        "x": 514,
+        "y": 8139,
+        "w": 892,
+        "h": 497,
+        "borderRadius": 0
+      },
+      "possibleFile": "TODO",
+      "effects": null
+    },
+    {
+      "name": "레이어 21",
+      "x": 512,
+      "y": 8141,
+      "w": 897,
+      "h": 500,
+      "clippingRect": {
+        "x": 514,
+        "y": 8139,
+        "w": 892,
+        "h": 497,
+        "borderRadius": 0
+      },
+      "possibleFile": "TODO",
+      "effects": null
+    },
+    {
+      "name": "벡터 스마트 오브젝트",
+      "x": 415,
+      "y": 8380,
+      "w": 38,
+      "h": 16,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#ffffff",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    },
+    {
+      "name": "벡터 스마트 오브젝트 복사",
+      "x": 1468,
+      "y": 8379,
+      "w": 38,
+      "h": 16,
+      "clippingRect": {
+        "x": 0,
+        "y": 8329,
+        "w": 986,
+        "h": 1486,
+        "borderRadius": 0
+      },
+      "possibleFile": "TODO",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#ffffff",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    }
+  ],
+  "comments": [],
+  "bgRect": {
+    "y": 7675,
+    "h": 1357,
+    "bottom": 9032,
+    "name": "003"
+  }
+}

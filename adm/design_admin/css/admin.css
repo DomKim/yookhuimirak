@@ -1,0 +1,9 @@
+a {text-decoration: none !important;}
+ol, ul {padding-left: 0px;}
+ul {margin-top: 0px;}
+p {margin:0px;}
+textarea:focus, button:focus, a:focus ,input:focus {
+  outline: none !important;
+}
+
+h2 {font-size: 1.083em}

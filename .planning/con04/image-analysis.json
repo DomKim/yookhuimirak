@@ -1,0 +1,173 @@
+{
+  "timestamp": "2026-05-03T04:46:51.915Z",
+  "images": [
+    {
+      "file": "con04_01.png",
+      "width": 909,
+      "height": 890,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 30
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con04_02.png",
+      "width": 791,
+      "height": 791,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 30
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con04_03.png",
+      "width": 334,
+      "height": 89,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 13
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con04_04.png",
+      "width": 228,
+      "height": 89,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 13
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con04_05.png",
+      "width": 353,
+      "height": 89,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 13
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con04_bg_1.jpg",
+      "width": 960,
+      "height": 890,
+      "hasAlpha": false,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con04_bg_2.jpg",
+      "width": 960,
+      "height": 890,
+      "hasAlpha": false,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "mapping": {
+    "Pretendard-Light": "Pretendard Variable",
+    "Gulim": "Pretendard Variable"
+  },
+  "notes": {
+    "Gulim": "Legacy system font in PSD footer text; mapped to project body font for consistent rendering."
+  }
+}

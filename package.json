@@ -1,0 +1,31 @@
+{
+  "name": "vwebmaster",
+  "version": "1.0.0",
+  "description": "Gnuboard 5 + 영카트 기반 프론트엔드 퍼블리싱 마스터 템플릿. 클라이언트 프로젝트 시작 시 이 레포를 클론해서 사용.",
+  "main": "psd_parser.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DomKim/vwebmaster.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DomKim/vwebmaster/issues"
+  },
+  "homepage": "https://github.com/DomKim/vwebmaster#readme",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.97",
+    "ag-psd": "^30.1.0",
+    "playwright": "^1.59.1",
+    "puppeteer": "^24.40.0",
+    "sharp": "^0.34.5"
+  }
+}

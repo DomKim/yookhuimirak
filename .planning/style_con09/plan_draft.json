@@ -1,0 +1,1565 @@
+{
+  "generatedBy": "spec-to-plan v3 (flat) + inline hints",
+  "_advisorySummary": {
+    "⚠️ 무시하지 말 것": "element 안 _hint를 element별로 확인하고 plan 작성",
+    "검사 항목": [
+      "1) elements 중 _hint.psdGroup이 있는 것들 → wrapper 만들기 검토 (그룹화)",
+      "2) elements 중 _hint.centerSuspect:true → marginLeft 대신 alignSelf:center",
+      "3) elements 중 _hint.heightChainCandidate:true → heightChain에 포함",
+      "4) elements 중 _hint.containmentParent → 형제 배치 금지, 자식으로 중첩",
+      "5) elements 중 _hint.suggestedParentWidth → parentWidth:1905 대신 그룹 너비 사용",
+      "6) elements 중 _hint.aspectRatioSuggest → wrapper에 aspectRatio 적용"
+    ],
+    "flatAntiPattern": {
+      "sectionDirectChildren": 28,
+      "note": "AI 결정 후 parent != \"section\"인 element가 0개면 flat 안티패턴 의심"
+    },
+    "groupCandidates": [
+      {
+        "name": "그룹 5",
+        "bbox": "598×1072",
+        "parentWidth": 598,
+        "aspectRatio": "598/1072",
+        "members": [
+          "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+          "사각형 13",
+          "메뉴명",
+          "메뉴명",
+          "메뉴명",
+          "메뉴명",
+          "벡터 스마트 오브젝트 복사 2"
+        ]
+      },
+      {
+        "name": "con09_02",
+        "bbox": "95×48",
+        "parentWidth": 95,
+        "aspectRatio": "95/48",
+        "members": [
+          "사각형 14 복사 3",
+          "사각형 14 복사 3",
+          "벡터 스마트 오브젝트 복사 3",
+          "벡터 스마트 오브젝트 복사 3"
+        ]
+      },
+      {
+        "name": "con09_01",
+        "bbox": "95×43",
+        "parentWidth": 95,
+        "aspectRatio": "95/43",
+        "members": [
+          "타원 5",
+          "MENU"
+        ]
+      }
+    ],
+    "centerAxisCount": 5,
+    "verticalStackCount": 5
+  },
+  "strictStructure": true,
+  "section": "con09",
+  "sectionClass": null,
+  "page": "style",
+  "specFile": "spec.json",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 9475,
+    "bottom": 10547,
+    "height": 1072
+  },
+  "bg": "#ffffff",
+  "bgRect": null,
+  "effectiveEnd": 10436,
+  "prevSectionBottom": 9638,
+  "ptSuggestions": {
+    "shape": "0.000000vw",
+    "prevBottom": 9638
+  },
+  "pbSuggestions": {
+    "fromLastContent": "0.000000vw",
+    "fromLastContentToEffectiveEnd": "-5.826772vw",
+    "lastContent": {
+      "name": "Gemini_Generated_Image_j5aizuj5aizuj5ai",
+      "bottom": 10547
+    },
+    "secBottom": 10547,
+    "effectiveEnd": 10436
+  },
+  "pt": "TODO — AI가 시안 보고 결정",
+  "pb": "TODO — AI가 시안 보고 결정",
+  "heightChain": [
+    "TODO — AI가 구조 결정 후 작성"
+  ],
+  "availableImages": [
+    {
+      "file": "con09_01.png",
+      "width": 103,
+      "height": 49,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con09_02.png",
+      "width": 93,
+      "height": 45,
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con09_03.png",
+      "width": 93,
+      "height": 45,
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con09_bg_1.jpg",
+      "width": 200,
+      "height": 800,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con09_bg_2.jpg",
+      "width": 200,
+      "height": 800,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    }
+  ],
+  "requiredTextHints": [
+    {
+      "name": "사이드 메뉴",
+      "content": "사이드 메뉴",
+      "x": 911,
+      "y": 9904,
+      "w": 96,
+      "h": 20,
+      "fontSizePx": 19.95,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "미락육회막국수 차림표",
+      "content": "미락육회막국수 차림표",
+      "x": 704,
+      "y": 9807,
+      "w": 510,
+      "h": 54,
+      "fontSizePx": 55,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    }
+  ],
+  "ignoredShapes": [],
+  "ignoredTexts": [],
+  "psdGroups": [
+    {
+      "name": "그룹 4",
+      "role": "absol-content",
+      "bbox": null
+    },
+    {
+      "name": "그룹 5",
+      "role": "absol-content",
+      "bbox": {
+        "x": 1382,
+        "y": 9475,
+        "w": 598,
+        "h": 1072
+      }
+    },
+    {
+      "name": "con09_02",
+      "role": "rltv-content",
+      "bbox": {
+        "x": 866,
+        "y": 10388,
+        "w": 95,
+        "h": 48
+      }
+    },
+    {
+      "name": "con09_03",
+      "role": "rltv-content",
+      "bbox": {
+        "x": 959,
+        "y": 10388,
+        "w": 95,
+        "h": 48
+      }
+    },
+    {
+      "name": "con09_01",
+      "role": "rltv-content",
+      "bbox": {
+        "x": 913,
+        "y": 9711,
+        "w": 95,
+        "h": 43
+      }
+    }
+  ],
+  "centeredFlow": [
+    "MENU",
+    "미락육회막국수 차림표",
+    "사이드 메뉴",
+    "벡터 스마트 오브젝트 복사 3",
+    "벡터 스마트 오브젝트 복사 3"
+  ],
+  "centerAxisHints": [
+    {
+      "axisX": 453.3,
+      "axisPct": "23.792651%",
+      "elements": [
+        "갈비탕",
+        "메뉴명"
+      ],
+      "bbox": {
+        "x": 231,
+        "y": 9979,
+        "w": 440,
+        "h": 333
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 13 복사",
+          "centerDelta": -506.7,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 790.5,
+      "axisPct": "41.496063%",
+      "elements": [
+        "메인 메뉴",
+        "메뉴명"
+      ],
+      "bbox": {
+        "x": 751,
+        "y": 9904,
+        "w": 77,
+        "h": 408
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 13 복사",
+          "centerDelta": -169.5,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 959.2,
+      "axisPct": "50.349956%",
+      "elements": [
+        "MENU",
+        "미락육회막국수 차림표",
+        "사이드 메뉴"
+      ],
+      "bbox": {
+        "x": 704,
+        "y": 9728,
+        "w": 510,
+        "h": 196
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 13 복사",
+          "centerDelta": -0.8,
+          "contains": 3
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 1128.5,
+      "axisPct": "59.238845%",
+      "elements": [
+        "추가 메뉴",
+        "메뉴명"
+      ],
+      "bbox": {
+        "x": 1090,
+        "y": 9904,
+        "w": 77,
+        "h": 408
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 13 복사",
+          "centerDelta": 168.5,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 1475.8,
+      "axisPct": "77.467192%",
+      "elements": [
+        "메뉴명",
+        "벡터 스마트 오브젝트 복사 2"
+      ],
+      "bbox": {
+        "x": 1441,
+        "y": 10294,
+        "w": 65,
+        "h": 98
+      },
+      "parentCandidates": [
+        {
+          "type": "group",
+          "name": "그룹 5",
+          "centerDelta": -205.2,
+          "contains": 2
+        },
+        {
+          "type": "rect",
+          "name": "사각형 13 복사",
+          "centerDelta": 515.8,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    }
+  ],
+  "yGaps": [
+    {
+      "from": "Gemini_Generated_Image_j5aizuj5aizuj5ai",
+      "to": "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+      "gap": -1072,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+      "to": "MENU",
+      "gap": -819,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "MENU",
+      "to": "미락육회막국수 차림표",
+      "gap": 67,
+      "gapVw": "3.517060vw"
+    },
+    {
+      "from": "미락육회막국수 차림표",
+      "to": "메인 메뉴",
+      "gap": 43,
+      "gapVw": "2.257218vw"
+    },
+    {
+      "from": "메인 메뉴",
+      "to": "사이드 메뉴",
+      "gap": -20,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "사이드 메뉴",
+      "to": "추가 메뉴",
+      "gap": -20,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "추가 메뉴",
+      "to": "갈비탕",
+      "gap": 54,
+      "gapVw": "2.834646vw"
+    },
+    {
+      "from": "갈비탕",
+      "to": "메뉴명",
+      "gap": 22,
+      "gapVw": "1.154856vw"
+    },
+    {
+      "from": "메뉴명",
+      "to": "메뉴명",
+      "gap": -18,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "메뉴명",
+      "to": "메뉴명",
+      "gap": -18,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "메뉴명",
+      "to": "메뉴명",
+      "gap": -18,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "메뉴명",
+      "to": "벡터 스마트 오브젝트 복사 2",
+      "gap": 64,
+      "gapVw": "3.359580vw"
+    },
+    {
+      "from": "벡터 스마트 오브젝트 복사 2",
+      "to": "벡터 스마트 오브젝트 복사 3",
+      "gap": 11,
+      "gapVw": "0.577428vw"
+    },
+    {
+      "from": "벡터 스마트 오브젝트 복사 3",
+      "to": "벡터 스마트 오브젝트 복사 3",
+      "gap": -15,
+      "gapVw": "0.000000vw"
+    }
+  ],
+  "overlaps": [
+    {
+      "a": "Gemini_Generated_Image_j5aizuj5aizuj5ai",
+      "aType": "image",
+      "aSize": "598×1072",
+      "b": "사각형 13 복사",
+      "bType": "rect",
+      "bSize": "1522×804",
+      "overlapArea": 262104
+    },
+    {
+      "a": "Gemini_Generated_Image_j5aizuj5aizuj5ai",
+      "aType": "image",
+      "aSize": "598×1072",
+      "b": "사각형 13 복사 2",
+      "bType": "rect",
+      "bSize": "203×803",
+      "overlapArea": 163009
+    },
+    {
+      "a": "Gemini_Generated_Image_j5aizuj5aizuj5ai",
+      "aType": "image",
+      "aSize": "598×1072",
+      "b": "갈비탕",
+      "bType": "image",
+      "bSize": "440×293",
+      "overlapArea": 86142
+    },
+    {
+      "a": "Gemini_Generated_Image_j5aizuj5aizuj5ai",
+      "aType": "image",
+      "aSize": "598×1072",
+      "b": "사각형 840 복사 3",
+      "bType": "rect",
+      "bSize": "313×284",
+      "overlapArea": 64184
+    },
+    {
+      "a": "Gemini_Generated_Image_j5aizuj5aizuj5ai",
+      "aType": "image",
+      "aSize": "598×1072",
+      "b": "메뉴명",
+      "bType": "text",
+      "bSize": "47×18",
+      "overlapArea": 846
+    },
+    {
+      "a": "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+      "aType": "image",
+      "aSize": "598×1072",
+      "b": "사각형 13 복사",
+      "bType": "rect",
+      "bSize": "1522×804",
+      "overlapArea": 272556
+    },
+    {
+      "a": "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+      "aType": "image",
+      "aSize": "598×1072",
+      "b": "사각형 13",
+      "bType": "rect",
+      "bSize": "203×803",
+      "overlapArea": 163009
+    },
+    {
+      "a": "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+      "aType": "image",
+      "aSize": "598×1072",
+      "b": "사각형 840 복사 4",
+      "bType": "rect",
+      "bSize": "313×284",
+      "overlapArea": 67876
+    },
+    {
+      "a": "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+      "aType": "image",
+      "aSize": "598×1072",
+      "b": "메뉴명",
+      "bType": "text",
+      "bSize": "47×18",
+      "overlapArea": 846
+    },
+    {
+      "a": "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+      "aType": "image",
+      "aSize": "598×1072",
+      "b": "벡터 스마트 오브젝트 복사 2",
+      "bType": "image",
+      "bSize": "38×16",
+      "overlapArea": 608
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "타원 5",
+      "bType": "rect",
+      "bSize": "95×43",
+      "overlapArea": 4085
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "MENU",
+      "bType": "text",
+      "bSize": "59×12",
+      "overlapArea": 708
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "미락육회막국수 차림표",
+      "bType": "text",
+      "bSize": "510×54",
+      "overlapArea": 27540
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "사각형 842",
+      "bType": "rect",
+      "bSize": "154×53",
+      "overlapArea": 8162
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "사각형 842 복사 2",
+      "bType": "rect",
+      "bSize": "154×53",
+      "overlapArea": 8162
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "사각형 842 복사 3",
+      "bType": "rect",
+      "bSize": "154×53",
+      "overlapArea": 8162
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "메인 메뉴",
+      "bType": "text",
+      "bSize": "77×20",
+      "overlapArea": 1540
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "사이드 메뉴",
+      "bType": "text",
+      "bSize": "96×20",
+      "overlapArea": 1920
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "추가 메뉴",
+      "bType": "text",
+      "bSize": "77×21",
+      "overlapArea": 1617
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "갈비탕",
+      "bType": "image",
+      "bSize": "440×293",
+      "overlapArea": 128920
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "사각형 840 복사 3",
+      "bType": "rect",
+      "bSize": "313×284",
+      "overlapArea": 88892
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "사각형 840 복사 4",
+      "bType": "rect",
+      "bSize": "313×284",
+      "overlapArea": 88892
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "사각형 840 복사 5",
+      "bType": "rect",
+      "bSize": "313×284",
+      "overlapArea": 88892
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "사각형 840 복사 6",
+      "bType": "rect",
+      "bSize": "313×284",
+      "overlapArea": 88892
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "메뉴명",
+      "bType": "text",
+      "bSize": "47×18",
+      "overlapArea": 846
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "메뉴명",
+      "bType": "text",
+      "bSize": "47×18",
+      "overlapArea": 846
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "메뉴명",
+      "bType": "text",
+      "bSize": "47×18",
+      "overlapArea": 846
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "메뉴명",
+      "bType": "text",
+      "bSize": "47×18",
+      "overlapArea": 846
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "벡터 스마트 오브젝트 복사 2",
+      "bType": "image",
+      "bSize": "38×16",
+      "overlapArea": 608
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "사각형 14 복사 3",
+      "bType": "rect",
+      "bSize": "95×48",
+      "overlapArea": 4560
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "사각형 14 복사 3",
+      "bType": "rect",
+      "bSize": "95×48",
+      "overlapArea": 4560
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "벡터 스마트 오브젝트 복사 3",
+      "bType": "image",
+      "bSize": "38×16",
+      "overlapArea": 608
+    },
+    {
+      "a": "사각형 13 복사",
+      "aType": "rect",
+      "aSize": "1522×804",
+      "b": "벡터 스마트 오브젝트 복사 3",
+      "bType": "image",
+      "bSize": "38×16",
+      "overlapArea": 608
+    },
+    {
+      "a": "타원 5",
+      "aType": "rect",
+      "aSize": "95×43",
+      "b": "MENU",
+      "bType": "text",
+      "bSize": "59×12",
+      "overlapArea": 708
+    },
+    {
+      "a": "사각형 842",
+      "aType": "rect",
+      "aSize": "154×53",
+      "b": "메인 메뉴",
+      "bType": "text",
+      "bSize": "77×20",
+      "overlapArea": 1540
+    },
+    {
+      "a": "사각형 842 복사 2",
+      "aType": "rect",
+      "aSize": "154×53",
+      "b": "사이드 메뉴",
+      "bType": "text",
+      "bSize": "96×20",
+      "overlapArea": 1920
+    },
+    {
+      "a": "사각형 842 복사 3",
+      "aType": "rect",
+      "aSize": "154×53",
+      "b": "추가 메뉴",
+      "bType": "text",
+      "bSize": "77×21",
+      "overlapArea": 1617
+    },
+    {
+      "a": "갈비탕",
+      "aType": "image",
+      "aSize": "440×293",
+      "b": "사각형 840 복사 3",
+      "bType": "rect",
+      "bSize": "313×284",
+      "overlapArea": 88266
+    },
+    {
+      "a": "사각형 14 복사 3",
+      "aType": "rect",
+      "aSize": "95×48",
+      "b": "벡터 스마트 오브젝트 복사 3",
+      "bType": "image",
+      "bSize": "38×16",
+      "overlapArea": 608
+    },
+    {
+      "a": "사각형 14 복사 3",
+      "aType": "rect",
+      "aSize": "95×48",
+      "b": "벡터 스마트 오브젝트 복사 3",
+      "bType": "image",
+      "bSize": "38×16",
+      "overlapArea": 608
+    }
+  ],
+  "elements": [
+    {
+      "zIndex": 0,
+      "name": "Gemini_Generated_Image_j5aizuj5aizuj5ai",
+      "type": "image",
+      "x": -73,
+      "y": 9475,
+      "w": 598,
+      "h": 1072,
+      "relTop": "-8.556430vw",
+      "relLeft": "-3.832021%",
+      "relWidth": "31.391076%",
+      "possibleFile": "con09_bg_1.jpg",
+      "naturalWidth": 200,
+      "naturalHeight": 800,
+      "composite": false,
+      "sourceType": "소스",
+      "clippingRect": {
+        "x": -1,
+        "y": 9633,
+        "w": 203,
+        "h": 803,
+        "borderRadius": 0
+      }
+    },
+    {
+      "zIndex": 1,
+      "name": "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+      "type": "image",
+      "x": 1382,
+      "y": 9475,
+      "w": 598,
+      "h": 1072,
+      "relTop": "-8.556430vw",
+      "relLeft": "72.545932%",
+      "relWidth": "31.391076%",
+      "possibleFile": "con09_bg_2.jpg",
+      "naturalWidth": 200,
+      "naturalHeight": 800,
+      "composite": false,
+      "sourceType": "소스",
+      "clippingRect": {
+        "x": 1719,
+        "y": 9633,
+        "w": 203,
+        "h": 803,
+        "borderRadius": 0
+      },
+      "_hint": {
+        "psdGroup": "그룹 5",
+        "psdGroupBbox": "598×1072",
+        "suggestedParentWidth": 598,
+        "aspectRatioSuggest": "598/1072",
+        "siblings": [
+          "사각형 13",
+          "메뉴명",
+          "메뉴명",
+          "메뉴명",
+          "메뉴명",
+          "벡터 스마트 오브젝트 복사 2"
+        ],
+        "parentWidthSuspect": "parentWidth:1905 → 598 검토"
+      }
+    },
+    {
+      "zIndex": 2,
+      "name": "사각형 13 복사",
+      "type": "rect",
+      "x": 199,
+      "y": 9632,
+      "w": 1522,
+      "h": 804,
+      "relTop": "-0.314961vw",
+      "relLeft": "10.446194%",
+      "relWidth": "79.895013%",
+      "fill": "#ffffff",
+      "border": "1px solid #231916",
+      "_hint": {
+        "centerSuspect": true,
+        "axisAdvice": "relLeft + relWidth/2 ≈ 50% → marginLeft 대신 alignSelf:'center'"
+      }
+    },
+    {
+      "zIndex": 3,
+      "name": "사각형 13 복사 2",
+      "type": "rect",
+      "x": -1,
+      "y": 9633,
+      "w": 203,
+      "h": 803,
+      "relTop": "-0.262467vw",
+      "relLeft": "-0.052493%",
+      "relWidth": "10.656168%",
+      "fill": "#f8edd7"
+    },
+    {
+      "zIndex": 4,
+      "name": "사각형 13",
+      "type": "rect",
+      "x": 1719,
+      "y": 9633,
+      "w": 203,
+      "h": 803,
+      "relTop": "-0.262467vw",
+      "relLeft": "90.236220%",
+      "relWidth": "10.656168%",
+      "fill": "#f8edd7",
+      "_hint": {
+        "psdGroup": "그룹 5",
+        "psdGroupBbox": "598×1072",
+        "suggestedParentWidth": 598,
+        "aspectRatioSuggest": "598/1072",
+        "siblings": [
+          "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+          "메뉴명",
+          "메뉴명",
+          "메뉴명",
+          "메뉴명",
+          "벡터 스마트 오브젝트 복사 2"
+        ],
+        "parentWidthSuspect": "parentWidth:1905 → 598 검토"
+      }
+    },
+    {
+      "zIndex": 5,
+      "name": "타원 5",
+      "type": "rect",
+      "x": 913,
+      "y": 9711,
+      "w": 95,
+      "h": 43,
+      "relTop": "3.832021vw",
+      "relLeft": "47.926509%",
+      "relWidth": "4.986877%",
+      "fill": "#a4202c",
+      "_hint": {
+        "psdGroup": "con09_01",
+        "psdGroupBbox": "95×43",
+        "suggestedParentWidth": 95,
+        "aspectRatioSuggest": "95/43",
+        "siblings": [
+          "MENU"
+        ],
+        "parentWidthSuspect": "parentWidth:1905 → 95 검토",
+        "centerSuspect": true,
+        "axisAdvice": "relLeft + relWidth/2 ≈ 50% → marginLeft 대신 alignSelf:'center'"
+      }
+    },
+    {
+      "zIndex": 6,
+      "name": "MENU",
+      "type": "text",
+      "x": 930,
+      "y": 9728,
+      "w": 59,
+      "h": 12,
+      "relTop": "4.724409vw",
+      "relLeft": "48.818898%",
+      "relWidth": "3.097113%",
+      "segments": [
+        {
+          "text": "MENU",
+          "fontWeight": 600,
+          "color": "#f8edd7",
+          "fontSize": "0.839895vw (16px)",
+          "letterSpacing": "0.2em",
+          "lineHeight": 4.063,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        }
+      ],
+      "content": "MENU",
+      "_hint": {
+        "psdGroup": "con09_01",
+        "psdGroupBbox": "95×43",
+        "suggestedParentWidth": 95,
+        "aspectRatioSuggest": "95/43",
+        "siblings": [
+          "타원 5"
+        ],
+        "centerSuspect": true,
+        "axisDelta": 0.3,
+        "axisAdvice": "wrapper centerChildren:true 또는 alignSelf:'center', marginLeft 제거",
+        "verticalStackPos": 0,
+        "heightChainCandidate": true,
+        "rltvCandidate": true,
+        "parentWidthSuspect": "parentWidth:1905 → 95 검토"
+      }
+    },
+    {
+      "zIndex": 7,
+      "name": "미락육회막국수 차림표",
+      "type": "text",
+      "x": 704,
+      "y": 9807,
+      "w": 510,
+      "h": 54,
+      "relTop": "8.871391vw",
+      "relLeft": "36.955381%",
+      "relWidth": "26.771654%",
+      "segments": [
+        {
+          "text": "미락육회막국수",
+          "fontWeight": 600,
+          "color": "#5d2b0d",
+          "fontSize": "2.887139vw (55px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.182,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        },
+        {
+          "text": " 차림표",
+          "fontWeight": 600,
+          "color": "#070707",
+          "fontSize": "2.887139vw (55px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.182,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        }
+      ],
+      "content": "미락육회막국수 차림표",
+      "_hint": {
+        "centerSuspect": true,
+        "axisDelta": -0.2,
+        "axisAdvice": "wrapper centerChildren:true 또는 alignSelf:'center', marginLeft 제거",
+        "verticalStackPos": 1,
+        "heightChainCandidate": true,
+        "rltvCandidate": true
+      }
+    },
+    {
+      "zIndex": 8,
+      "name": "사각형 842",
+      "type": "rect",
+      "x": 713,
+      "y": 9888,
+      "w": 154,
+      "h": 53,
+      "relTop": "13.123360vw",
+      "relLeft": "37.427822%",
+      "relWidth": "8.083990%",
+      "fill": "#231916",
+      "borderRadius": 25
+    },
+    {
+      "zIndex": 9,
+      "name": "사각형 842 복사 2",
+      "type": "rect",
+      "x": 883,
+      "y": 9888,
+      "w": 154,
+      "h": 53,
+      "relTop": "13.123360vw",
+      "relLeft": "46.351706%",
+      "relWidth": "8.083990%",
+      "fill": "#ffffff",
+      "borderRadius": 25,
+      "border": "1px solid #dddddd",
+      "_hint": {
+        "centerSuspect": true,
+        "axisAdvice": "relLeft + relWidth/2 ≈ 50% → marginLeft 대신 alignSelf:'center'"
+      }
+    },
+    {
+      "zIndex": 10,
+      "name": "사각형 842 복사 3",
+      "type": "rect",
+      "x": 1053,
+      "y": 9888,
+      "w": 154,
+      "h": 53,
+      "relTop": "13.123360vw",
+      "relLeft": "55.275591%",
+      "relWidth": "8.083990%",
+      "fill": "#ffffff",
+      "borderRadius": 25,
+      "border": "1px solid #dddddd"
+    },
+    {
+      "zIndex": 11,
+      "name": "메인 메뉴",
+      "type": "text",
+      "x": 751,
+      "y": 9904,
+      "w": 77,
+      "h": 20,
+      "relTop": "13.963255vw",
+      "relLeft": "39.422572%",
+      "relWidth": "4.041995%",
+      "segments": [
+        {
+          "text": "메인 메뉴",
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "fontSize": "1.047244vw (19.95px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.455,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        }
+      ],
+      "content": "메인 메뉴",
+      "_hint": {
+        "centerSuspect": true,
+        "axisDelta": -1,
+        "axisAdvice": "wrapper centerChildren:true 또는 alignSelf:'center', marginLeft 제거"
+      }
+    },
+    {
+      "zIndex": 12,
+      "name": "사이드 메뉴",
+      "type": "text",
+      "x": 911,
+      "y": 9904,
+      "w": 96,
+      "h": 20,
+      "relTop": "13.963255vw",
+      "relLeft": "47.821522%",
+      "relWidth": "5.039370%",
+      "segments": [
+        {
+          "text": "사이드 메뉴",
+          "fontWeight": 600,
+          "color": "#231916",
+          "fontSize": "1.047244vw (19.95px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.455,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        }
+      ],
+      "content": "사이드 메뉴",
+      "_hint": {
+        "centerSuspect": true,
+        "axisDelta": -0.2,
+        "axisAdvice": "wrapper centerChildren:true 또는 alignSelf:'center', marginLeft 제거",
+        "verticalStackPos": 2,
+        "heightChainCandidate": true,
+        "rltvCandidate": true
+      }
+    },
+    {
+      "zIndex": 13,
+      "name": "추가 메뉴",
+      "type": "text",
+      "x": 1090,
+      "y": 9904,
+      "w": 77,
+      "h": 21,
+      "relTop": "13.963255vw",
+      "relLeft": "57.217848%",
+      "relWidth": "4.041995%",
+      "segments": [
+        {
+          "text": "추가 메뉴",
+          "fontWeight": 600,
+          "color": "#231916",
+          "fontSize": "1.047244vw (19.95px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.455,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        }
+      ],
+      "content": "추가 메뉴",
+      "_hint": {
+        "centerSuspect": true,
+        "axisDelta": 0,
+        "axisAdvice": "wrapper centerChildren:true 또는 alignSelf:'center', marginLeft 제거"
+      }
+    },
+    {
+      "zIndex": 14,
+      "name": "갈비탕",
+      "type": "image",
+      "x": 231,
+      "y": 9979,
+      "w": 440,
+      "h": 293,
+      "relTop": "17.900262vw",
+      "relLeft": "12.125984%",
+      "relWidth": "23.097113%",
+      "possibleFile": "TODO",
+      "clippingRect": {
+        "x": 299,
+        "y": 9990,
+        "w": 313,
+        "h": 284,
+        "borderRadius": 0
+      },
+      "_hint": {
+        "centerSuspect": true,
+        "axisDelta": -2.3,
+        "axisAdvice": "wrapper centerChildren:true 또는 alignSelf:'center', marginLeft 제거"
+      }
+    },
+    {
+      "zIndex": 15,
+      "name": "사각형 840 복사 3",
+      "type": "rect",
+      "x": 299,
+      "y": 9990,
+      "w": 313,
+      "h": 284,
+      "relTop": "18.477690vw",
+      "relLeft": "15.695538%",
+      "relWidth": "16.430446%",
+      "fill": "#ffffff",
+      "border": "1px solid #dddddd"
+    },
+    {
+      "zIndex": 16,
+      "name": "사각형 840 복사 4",
+      "type": "rect",
+      "x": 1308,
+      "y": 9990,
+      "w": 313,
+      "h": 284,
+      "relTop": "18.477690vw",
+      "relLeft": "68.661417%",
+      "relWidth": "16.430446%",
+      "fill": "#ffffff",
+      "border": "1px solid #dddddd"
+    },
+    {
+      "zIndex": 17,
+      "name": "사각형 840 복사 5",
+      "type": "rect",
+      "x": 635,
+      "y": 9990,
+      "w": 313,
+      "h": 284,
+      "relTop": "18.477690vw",
+      "relLeft": "33.333333%",
+      "relWidth": "16.430446%",
+      "fill": "#ffffff",
+      "border": "1px solid #dddddd"
+    },
+    {
+      "zIndex": 18,
+      "name": "사각형 840 복사 6",
+      "type": "rect",
+      "x": 972,
+      "y": 9990,
+      "w": 313,
+      "h": 284,
+      "relTop": "18.477690vw",
+      "relLeft": "51.023622%",
+      "relWidth": "16.430446%",
+      "fill": "#ffffff",
+      "border": "1px solid #dddddd"
+    },
+    {
+      "zIndex": 19,
+      "name": "메뉴명",
+      "type": "text",
+      "x": 432,
+      "y": 10294,
+      "w": 47,
+      "h": 18,
+      "relTop": "34.435696vw",
+      "relLeft": "22.677165%",
+      "relWidth": "2.467192%",
+      "segments": [
+        {
+          "text": "메뉴명",
+          "fontWeight": 400,
+          "color": "#000000",
+          "fontSize": "1.050394vw (20.01px)",
+          "letterSpacing": "-0.07em",
+          "lineHeight": 1.45,
+          "fontFamily": "SUIT-Regular"
+        }
+      ],
+      "content": "메뉴명",
+      "_hint": {
+        "psdGroup": "그룹 5",
+        "psdGroupBbox": "598×1072",
+        "suggestedParentWidth": 598,
+        "aspectRatioSuggest": "598/1072",
+        "siblings": [
+          "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+          "사각형 13",
+          "벡터 스마트 오브젝트 복사 2"
+        ],
+        "centerSuspect": true,
+        "axisDelta": -1020.3,
+        "axisAdvice": "wrapper centerChildren:true 또는 alignSelf:'center', marginLeft 제거",
+        "parentWidthSuspect": "parentWidth:1905 → 598 검토"
+      }
+    },
+    {
+      "zIndex": 20,
+      "name": "메뉴명",
+      "type": "text",
+      "x": 1441,
+      "y": 10294,
+      "w": 47,
+      "h": 18,
+      "relTop": "34.435696vw",
+      "relLeft": "75.643045%",
+      "relWidth": "2.467192%",
+      "segments": [
+        {
+          "text": "메뉴명",
+          "fontWeight": 400,
+          "color": "#000000",
+          "fontSize": "1.050394vw (20.01px)",
+          "letterSpacing": "-0.07em",
+          "lineHeight": 1.45,
+          "fontFamily": "SUIT-Regular"
+        }
+      ],
+      "content": "메뉴명",
+      "_hint": {
+        "psdGroup": "그룹 5",
+        "psdGroupBbox": "598×1072",
+        "suggestedParentWidth": 598,
+        "aspectRatioSuggest": "598/1072",
+        "siblings": [
+          "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+          "사각형 13",
+          "벡터 스마트 오브젝트 복사 2"
+        ],
+        "centerSuspect": true,
+        "axisDelta": -11.3,
+        "axisAdvice": "wrapper centerChildren:true 또는 alignSelf:'center', marginLeft 제거",
+        "parentWidthSuspect": "parentWidth:1905 → 598 검토"
+      }
+    },
+    {
+      "zIndex": 21,
+      "name": "메뉴명",
+      "type": "text",
+      "x": 768,
+      "y": 10294,
+      "w": 47,
+      "h": 18,
+      "relTop": "34.435696vw",
+      "relLeft": "40.314961%",
+      "relWidth": "2.467192%",
+      "segments": [
+        {
+          "text": "메뉴명",
+          "fontWeight": 400,
+          "color": "#000000",
+          "fontSize": "1.050394vw (20.01px)",
+          "letterSpacing": "-0.07em",
+          "lineHeight": 1.45,
+          "fontFamily": "SUIT-Regular"
+        }
+      ],
+      "content": "메뉴명",
+      "_hint": {
+        "psdGroup": "그룹 5",
+        "psdGroupBbox": "598×1072",
+        "suggestedParentWidth": 598,
+        "aspectRatioSuggest": "598/1072",
+        "siblings": [
+          "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+          "사각형 13",
+          "벡터 스마트 오브젝트 복사 2"
+        ],
+        "centerSuspect": true,
+        "axisDelta": -684.3,
+        "axisAdvice": "wrapper centerChildren:true 또는 alignSelf:'center', marginLeft 제거",
+        "parentWidthSuspect": "parentWidth:1905 → 598 검토"
+      }
+    },
+    {
+      "zIndex": 22,
+      "name": "메뉴명",
+      "type": "text",
+      "x": 1105,
+      "y": 10294,
+      "w": 47,
+      "h": 18,
+      "relTop": "34.435696vw",
+      "relLeft": "58.005249%",
+      "relWidth": "2.467192%",
+      "segments": [
+        {
+          "text": "메뉴명",
+          "fontWeight": 400,
+          "color": "#000000",
+          "fontSize": "1.050394vw (20.01px)",
+          "letterSpacing": "-0.07em",
+          "lineHeight": 1.45,
+          "fontFamily": "SUIT-Regular"
+        }
+      ],
+      "content": "메뉴명",
+      "_hint": {
+        "psdGroup": "그룹 5",
+        "psdGroupBbox": "598×1072",
+        "suggestedParentWidth": 598,
+        "aspectRatioSuggest": "598/1072",
+        "siblings": [
+          "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+          "사각형 13",
+          "벡터 스마트 오브젝트 복사 2"
+        ],
+        "centerSuspect": true,
+        "axisDelta": -347.3,
+        "axisAdvice": "wrapper centerChildren:true 또는 alignSelf:'center', marginLeft 제거",
+        "parentWidthSuspect": "parentWidth:1905 → 598 검토"
+      }
+    },
+    {
+      "zIndex": 23,
+      "name": "벡터 스마트 오브젝트 복사 2",
+      "type": "image",
+      "x": 1468,
+      "y": 10376,
+      "w": 38,
+      "h": 16,
+      "relTop": "38.740157vw",
+      "relLeft": "77.060367%",
+      "relWidth": "1.994751%",
+      "possibleFile": "TODO",
+      "clippingRect": null,
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#ffffff",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ],
+      "_hint": {
+        "psdGroup": "그룹 5",
+        "psdGroupBbox": "598×1072",
+        "suggestedParentWidth": 598,
+        "aspectRatioSuggest": "598/1072",
+        "siblings": [
+          "Gemini_Generated_Image_j5aizuj5aizuj5ai 복사",
+          "사각형 13",
+          "메뉴명",
+          "메뉴명",
+          "메뉴명",
+          "메뉴명"
+        ],
+        "centerSuspect": true,
+        "axisDelta": 11.2,
+        "axisAdvice": "wrapper centerChildren:true 또는 alignSelf:'center', marginLeft 제거",
+        "parentWidthSuspect": "parentWidth:1905 → 598 검토"
+      }
+    },
+    {
+      "zIndex": 24,
+      "name": "사각형 14 복사 3",
+      "type": "rect",
+      "x": 866,
+      "y": 10388,
+      "w": 95,
+      "h": 48,
+      "relTop": "39.370079vw",
+      "relLeft": "45.459318%",
+      "relWidth": "4.986877%",
+      "fill": "#231916",
+      "_hint": {
+        "psdGroup": "con09_02",
+        "psdGroupBbox": "95×48",
+        "suggestedParentWidth": 95,
+        "aspectRatioSuggest": "95/48",
+        "siblings": [
+          "벡터 스마트 오브젝트 복사 3",
+          "벡터 스마트 오브젝트 복사 3"
+        ],
+        "parentWidthSuspect": "parentWidth:1905 → 95 검토",
+        "centerSuspect": true,
+        "axisAdvice": "relLeft + relWidth/2 ≈ 50% → marginLeft 대신 alignSelf:'center'"
+      }
+    },
+    {
+      "zIndex": 25,
+      "name": "사각형 14 복사 3",
+      "type": "rect",
+      "x": 959,
+      "y": 10388,
+      "w": 95,
+      "h": 48,
+      "relTop": "39.370079vw",
+      "relLeft": "50.341207%",
+      "relWidth": "4.986877%",
+      "fill": "#bfa78a",
+      "_hint": {
+        "psdGroup": "con09_02",
+        "psdGroupBbox": "95×48",
+        "suggestedParentWidth": 95,
+        "aspectRatioSuggest": "95/48",
+        "siblings": [
+          "벡터 스마트 오브젝트 복사 3",
+          "벡터 스마트 오브젝트 복사 3"
+        ],
+        "parentWidthSuspect": "parentWidth:1905 → 95 검토",
+        "centerSuspect": true,
+        "axisAdvice": "relLeft + relWidth/2 ≈ 50% → marginLeft 대신 alignSelf:'center'"
+      }
+    },
+    {
+      "zIndex": 26,
+      "name": "벡터 스마트 오브젝트 복사 3",
+      "type": "image",
+      "x": 987,
+      "y": 10403,
+      "w": 38,
+      "h": 16,
+      "relTop": "40.157480vw",
+      "relLeft": "51.811024%",
+      "relWidth": "1.994751%",
+      "possibleFile": "TODO",
+      "clippingRect": null,
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#ffffff",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ],
+      "_hint": {
+        "psdGroup": "con09_02",
+        "psdGroupBbox": "95×48",
+        "suggestedParentWidth": 95,
+        "aspectRatioSuggest": "95/48",
+        "siblings": [
+          "사각형 14 복사 3",
+          "사각형 14 복사 3"
+        ],
+        "verticalStackPos": 4,
+        "heightChainCandidate": true,
+        "rltvCandidate": true,
+        "parentWidthSuspect": "parentWidth:1905 → 95 검토",
+        "centerSuspect": true,
+        "axisAdvice": "relLeft + relWidth/2 ≈ 50% → marginLeft 대신 alignSelf:'center'"
+      }
+    },
+    {
+      "zIndex": 27,
+      "name": "벡터 스마트 오브젝트 복사 3",
+      "type": "image",
+      "x": 895,
+      "y": 10404,
+      "w": 38,
+      "h": 16,
+      "relTop": "40.209974vw",
+      "relLeft": "46.981627%",
+      "relWidth": "1.994751%",
+      "possibleFile": "TODO",
+      "clippingRect": null,
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#ffffff",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ],
+      "_hint": {
+        "psdGroup": "con09_02",
+        "psdGroupBbox": "95×48",
+        "suggestedParentWidth": 95,
+        "aspectRatioSuggest": "95/48",
+        "siblings": [
+          "사각형 14 복사 3",
+          "사각형 14 복사 3"
+        ],
+        "verticalStackPos": 4,
+        "heightChainCandidate": true,
+        "rltvCandidate": true,
+        "parentWidthSuspect": "parentWidth:1905 → 95 검토",
+        "centerSuspect": true,
+        "axisAdvice": "relLeft + relWidth/2 ≈ 50% → marginLeft 대신 alignSelf:'center'"
+      }
+    }
+  ]
+}

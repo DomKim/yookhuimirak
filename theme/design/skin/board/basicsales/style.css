@@ -1,0 +1,432 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   Modern Card UI Board Skin (vst-style)
+   Design: Clean, Shadow, Interaction
+   ========================================================================== */
+
+/* 1. 기본 설정 및 폰트 */
+.vst-board-wrap {
+    font-family: "Pretendard Variable", "Pretendard", "Malgun Gothic", sans-serif;
+    color: #333;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f8f9fa; /* 전체 배경색을 연한 회색으로 */
+    padding: 40px 20px;
+    border-radius: 16px;
+    /* ★★★ 여기를 수정해주세요! (헤더 높이만큼 띄우기) ★★★ */
+    margin-top: 150px; /* 기존 margin: 0 auto; 에서 변경 */
+}
+.vst-board-wrap * { box-sizing: border-box; }
+.vst-board-wrap a { text-decoration: none; color: inherit; transition: 0.2s; }
+
+/* 2. 상단 타이틀 영역 */
+.vst-header { 
+    margin-bottom: 30px; text-align: center; 
+}
+.vst-title { 
+    font-size: 32px; font-weight: 800; color: #1a1a1a; margin-bottom: 10px; letter-spacing: -1px;
+}
+.vst-desc { 
+    font-size: 15px; color: #666; margin: 0; font-weight: 400;
+}
+
+/* 3. 카테고리 탭 (Pill Style) */
+.vst-cate { margin-bottom: 30px; text-align: center; }
+.vst-cate ul { 
+    display: inline-flex; gap: 8px; padding: 6px; background: #fff; 
+    border-radius: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    list-style: none; margin: 0; flex-wrap: wrap; justify-content: center;
+}
+.vst-cate li a { 
+    display: block; padding: 8px 20px; font-size: 14px; font-weight: 600; 
+    color: #666; border-radius: 30px; 
+}
+.vst-cate li.on a, .vst-cate li a:hover { 
+    background: #3235cd; color: #fff; box-shadow: 0 2px 8px rgba(50, 53, 205, 0.3);
+}
+
+/* 4. 상단 정보 및 검색바 */
+.vst-top-ctrl { 
+    display: flex; justify-content: space-between; align-items: center; 
+    margin-bottom: 20px; flex-wrap: wrap; gap: 15px; 
+}
+.vst-total { font-size: 14px; font-weight: 600; color: #555; }
+.vst-total b { color: #3235cd; }
+
+/* 5. ★★★ 리스트 (카드형 디자인) ★★★ */
+.vst-list-head {
+    display: grid; 
+    /* 체크, 번호, 제목, 글쓴이, 날짜, 조회, 추천 */
+    grid-template-columns: 50px 60px 1fr 120px 100px 70px 70px;
+    background: #fff; padding: 15px 20px; border-radius: 12px;
+    font-weight: 700; color: #888; font-size: 13px; text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03); margin-bottom: 10px;
+    border: 1px solid #eee;
+}
+
+.vst-list-item {
+    display: grid;
+    grid-template-columns: 50px 60px 1fr 120px 100px 70px 70px;
+    background: #fff; padding: 18px 20px; border-radius: 12px;
+    align-items: center; text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    margin-bottom: 8px; border: 1px solid #fff;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.vst-list-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border-color: #e5e7eb;
+    z-index: 10;
+}
+.vst-item-notice { background: #f0f4ff; border-color: #dbe4ff; } /* 공지사항 배경 */
+
+/* 리스트 내부 요소 */
+.vst-col-subject { text-align: left; padding: 0 15px; font-weight: 600; font-size: 16px; color: #333; overflow: hidden; }
+.vst-col-subject a { display: unset; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.vst-col-subject a:hover { color: #3235cd; }
+
+.vst-col-writer { color: #555; font-size: 13px; font-weight: 500; }
+.vst-col-date { color: #999; font-size: 12px; }
+.vst-col-hit, .vst-col-good { color: #888; font-size: 12px; font-family: "Roboto", sans-serif; }
+
+/* 뱃지 디자인 */
+.vst-badge {
+    display: inline-block; padding: 3px 8px; border-radius: 6px; 
+    font-size: 11px; font-weight: 700; margin-right: 6px; vertical-align: middle;
+    line-height: 1;
+}
+.badge-notice { background: #3235cd; color: #fff; }
+.badge-hot { background: #ff6b6b; color: #fff; box-shadow: 0 2px 6px rgba(255, 107, 107, 0.3); }
+.badge-new { background: #20c997; color: #fff; }
+.badge-secret { background: #f1f3f5; color: #868e96; }
+.cnt-cmt { 
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 20px; height: 20px; background: #ffe3e3; color: #e03131;
+    border-radius: 10px; font-size: 11px; font-weight: 700; margin-left: 6px; padding: 0 6px;
+}
+
+/* 6. 모바일 반응형 (카드 뷰로 변환) */
+@media (max-width: 900px) {
+    .vst-board-wrap { padding: 20px 10px; background: #fff; } /* 모바일 배경 흰색 */
+    .vst-list-head { display: none; } /* 헤더 숨김 */
+    
+    .vst-list-item {
+        display: flex; flex-wrap: wrap; position: relative;
+        padding: 20px; margin-bottom: 15px; border: 1px solid #eee;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: left;
+    }
+    
+    .vst-col-chk { position: absolute; top: 20px; left: 15px; }
+    .vst-col-num { display: none; } /* 번호 숨김 */
+    
+    .vst-col-subject { 
+        width: 100%; padding: 0 0 0 35px; margin-bottom: 12px; 
+        font-size: 17px; line-height: 1.4; 
+    }
+    .vst-col-subject a { white-space: normal; } /* 줄바꿈 허용 */
+    
+.vst-info-row {
+    width: 100%;
+    padding-left: 35px;
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    color: #999;
+}
+    .vst-col-writer { color: #333; font-weight: 700; font-size: 13px; }
+    .vst-col-date::before { content: ''; display: inline-block; width: 1px; height: 10px; background: #ddd; margin-right: 10px; }
+}
+
+/* 7. 하단 버튼 및 검색 */
+.vst-bottom { margin-top: 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+
+/* 버튼 스타일 */
+.vst-btn {
+    padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 700;
+    border: 1px solid #ddd; background: #fff; color: #555; transition: 0.2s;
+    display: inline-flex; align-items: center; gap: 6px;
+}
+.vst-btn:hover { border-color: #333; color: #333; transform: translateY(-2px); }
+.vst-btn-write { 
+    background: #3235cd; color: #fff !important; border: none; 
+    box-shadow: 0 4px 12px rgba(50, 53, 205, 0.3); 
+}
+.vst-btn-write:hover { background: #2629a8; color: #fff; }
+
+/* 검색창 */
+.vst-search { display: flex; gap: 8px; }
+.vst-input, .vst-select {
+    height: 42px; padding: 0 15px; border: 1px solid #ddd; border-radius: 8px;
+    font-size: 14px; background: #fff; outline: none; transition: 0.2s;
+}
+.vst-input:focus { border-color: #3235cd; box-shadow: 0 0 0 3px rgba(50, 53, 205, 0.1); }
+.vst-btn-sch {
+    height: 42px; width: 42px; background: #333; color: #fff; border: none;
+    border-radius: 8px; cursor: pointer; font-size: 16px;
+}
+
+/* 8. 페이지네이션 */
+.vst-paging { margin: 50px 0; text-align: center; }
+.pg_page, .pg_current {
+    display: inline-flex; justify-content: center; align-items: center;
+    width: 36px; height: 36px; border-radius: 10px; margin: 0 3px;
+    font-size: 14px; font-weight: 600; text-decoration: none;
+    border: 1px solid transparent; color: #888; transition: 0.2s;
+}
+.pg_current { background: #3235cd; color: #fff; box-shadow: 0 4px 10px rgba(50, 53, 205, 0.3); }
+.pg_page:hover { background: #fff; color: #3235cd; border-color: #eee; }
+
+
+
+@charset "utf-8";
+
+/* ==========================================================================
+   Basic Board Skin - Comment Style Overwrite (vst-style)
+   Target: Existing HTML Structure (.comment_box, #bo_vc, .bo_vc_w)
+   ========================================================================== */
+
+/* 1. 댓글 전체 박스 */
+.comment_box {
+    background: #fff !important;
+    border-top: 2px solid #333 !important;
+    margin-top: 50px !important;
+    padding-top: 30px !important;
+    font-family: "Pretendard Variable", "Pretendard", "Malgun Gothic", sans-serif !important;
+}
+
+/* 2. 댓글 목록 헤더 (COMMENTS 버튼) */
+.cmt_btn {
+    background: none !important;
+    border: none !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+    margin-bottom: 20px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    cursor: default !important; /* 버튼처럼 안 보이게 */
+}
+.cmt_btn i { color: #3235cd !important; font-size: 20px !important; }
+
+/* 3. 댓글 목록 영역 (#bo_vc) */
+#bo_vc {
+    padding: 0 !important;
+}
+#bo_vc h2 { display: none !important; } /* 숨김 */
+
+/* 댓글이 없을 때 */
+#bo_vc_empty {
+    margin: 0 !important;
+    padding: 60px 0 !important;
+    text-align: center !important;
+    color: #999 !important;
+    font-size: 14px !important;
+    background: #f9f9f9 !important;
+    border-radius: 12px !important;
+    border: 1px solid #eee !important;
+}
+
+/* 댓글 아이템 (아티클) */
+#bo_vc article {
+    margin: 0 !important;
+    padding: 20px !important;
+    border-bottom: 1px solid #eee !important;
+    background: #fff !important;
+    position: relative !important;
+}
+#bo_vc article:last-child { border-bottom: none !important; }
+
+/* 대댓글 들여쓰기 (margin-left가 인라인으로 들어간 경우 대응) */
+#bo_vc article[style*="margin-left"] {
+    background: #f9f9fb !important;
+    border-radius: 8px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    border: 1px solid #eee !important;
+}
+
+/* 댓글 헤더 (작성자, 날짜 등) */
+#bo_vc header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 10px !important;
+}
+#bo_vc header .member, 
+#bo_vc header .guest {
+    font-weight: 700 !important;
+    color: #333 !important;
+    font-size: 14px !important;
+}
+#bo_vc .bo_vc_hdinfo {
+    color: #999 !important;
+    font-size: 12px !important;
+}
+
+/* 댓글 본문 */
+#bo_vc .cmt_contents {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    color: #444 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* 댓글 하단 버튼 (답변, 수정, 삭제) */
+.bo_vc_act {
+    margin-top: 10px !important;
+    text-align: right !important;
+}
+.bo_vc_act li { display: inline-block !important; margin-left: 5px !important; }
+.bo_vc_act a {
+    display: inline-block !important;
+    padding: 4px 10px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    font-size: 11px !important;
+    color: #666 !important;
+    text-decoration: none !important;
+    background: #fff !important;
+}
+.bo_vc_act a:hover {
+    border-color: #3235cd !important;
+    color: #3235cd !important;
+}
+
+/* 4. 댓글 쓰기 영역 (.bo_vc_w) */
+.bo_vc_w {
+    background: #f8f9fa !important;
+    padding: 20px !important;
+    border-radius: 12px !important;
+    border: 1px solid #eee !important;
+    margin-top: 40px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03) !important;
+    position: relative !important;
+}
+.bo_vc_w h2 { 
+    font-size: 14px !important; 
+    color: #333 !important; 
+    margin: 0 0 15px 0 !important; 
+    font-weight: 700 !important;
+    border-bottom: none !important;
+    padding: 0 !important;
+}
+
+/* 입력창 (textarea) */
+.bo_vc_w textarea {
+    width: 100% !important;
+    height: 100px !important;
+    padding: 15px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    resize: none !important;
+    background: #fff !important;
+    outline: none !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+}
+.bo_vc_w textarea:focus {
+    border-color: #3235cd !important;
+    box-shadow: 0 0 0 3px rgba(50, 53, 205, 0.1) !important;
+}
+
+/* 하단 버튼 그룹 (.bo_vc_w_wr) */
+.bo_vc_w_wr {
+    margin-top: 15px !important;
+    display: flex !important;
+    justify-content: flex-end !important; /* 오른쪽 정렬 */
+    align-items: center !important;
+}
+
+/* 비밀글 체크박스 & 라벨 */
+.bo_vc_w .btn_confirm {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    float: none !important; /* 기존 float 제거 */
+    margin: 0 !important;
+}
+
+/* 비밀글 체크박스 꾸미기 */
+.bo_vc_w input[type="checkbox"] {
+    width: 16px !important; 
+    height: 16px !important;
+    margin: 0 !important;
+    vertical-align: middle !important;
+}
+.bo_vc_w label {
+    font-size: 13px !important;
+    color: #666 !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+}
+.bo_vc_w label i { font-size: 14px !important; color: #999 !important; }
+
+/* 등록 버튼 (.btn_submit) */
+.bo_vc_w .btn_submit {
+    height: 40px !important;
+    padding: 0 25px !important;
+    background: #3235cd !important; /* 포인트 컬러 */
+    color: #fff !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: 0.2s !important;
+    margin-left: 15px !important;
+}
+.bo_vc_w .btn_submit:hover {
+    background: #2629a8 !important;
+}
+
+/* 비회원 입력창 (이름, 비밀번호) */
+.bo_vc_w_info {
+    float: none !important;
+    margin-bottom: 10px !important;
+    display: flex !important;
+    gap: 10px !important;
+}
+.bo_vc_w_info input {
+    padding: 8px 10px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 6px !important;
+    font-size: 13px !important;
+    outline: none !important;
+}
+.bo_vc_w_info input:focus { border-color: #3235cd !important; }
+
+/* 캡챠 (있을 경우) */
+#captcha {
+    margin-top: 10px !important;
+    border: 1px solid #eee !important;
+    padding: 10px !important;
+    border-radius: 6px !important;
+    background: #fff !important;
+}
+/* 반응형 (모바일) */
+@media (max-width: 768px) {
+    .bo_vc_w_wr {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 10px !important;
+    }
+    .bo_vc_w .btn_confirm {
+        justify-content: space-between !important;
+        width: 100% !important;
+    }
+    .bo_vc_w .btn_submit {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-top: 10px !important;
+    }
+}

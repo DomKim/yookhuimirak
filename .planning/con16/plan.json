@@ -1,0 +1,535 @@
+{
+  "generatedBy": "spec-to-plan v3 + AI structure correction",
+  "strictStructure": true,
+  "section": "con16",
+  "sectionClass": "con16",
+  "page": "main",
+  "specFile": ".planning/con16/spec_main_con16.json",
+  "canvas": 1905,
+  "rawSectionY": {
+    "top": 18212,
+    "bottom": 19617,
+    "height": 1405
+  },
+  "sectionY": {
+    "top": 18406,
+    "bottom": 19424,
+    "height": 1018
+  },
+  "visualOriginReason": "PSD raw section includes the oversized con16_bg source image above the visible paper panel. Visible section follows bg rect 사각형 1014 복사 y=18406~19424.",
+  "bg": "#f8edd7",
+  "bgRect": {
+    "top": 18406,
+    "bottom": 19424
+  },
+  "effectiveEnd": 19424,
+  "prevSectionBottom": 18407,
+  "firstRltvY": 18554,
+  "pt": "7.769029vw",
+  "pb": "5.301837vw",
+  "heightChain": [
+    "pt",
+    "c16_title",
+    "c16_desc",
+    "c16_standard",
+    "c16_table",
+    "c16_note",
+    "pb"
+  ],
+  "availableImages": [
+    {
+      "file": "con16_bg.jpg",
+      "width": 1920,
+      "height": 1015,
+      "sourceType": "소스"
+    },
+    {
+      "file": "con16_01.png",
+      "width": 163,
+      "height": 28,
+      "sourceType": "완성형"
+    },
+    {
+      "file": "con16_02.png",
+      "width": 707,
+      "height": 504,
+      "sourceType": "완성형 가능성"
+    }
+  ],
+  "ignoredTexts": [
+    {
+      "name": "con16_01",
+      "reason": "Implemented as composite image /images/con16_01.png in the dark CTA bar."
+    },
+    {
+      "name": "가맹비(소멸성) 교육비 인쇄 및 기타 소모품 주방기기 및 설비 주방집기 간판 및 실사(전면 4m기준) 인테리어(평",
+      "reason": "PSD aggregated column text has lineHeight 2.667 (18px*2.667≈48px row height). Implemented as independent table row cells, not a single <br> text block."
+    },
+    {
+      "name": "500만 원 300만 원 300만 원 3,090만 원 1,210만 원 500/250만 원 3,600만 원 월 30",
+      "reason": "PSD aggregated amount column has lineHeight 2.667 and is implemented as independent table row cells."
+    },
+    {
+      "name": "미락육회막국수 가입비, 매뉴얼 사용, 사후관리 등 개점 교육비, 서비스 교육, 조리 교육 등 전단지, 유니폼, 모",
+      "reason": "PSD aggregated content column has lineHeight 2.667 and is implemented as independent table row cells."
+    },
+    {
+      "name": "※ 별도공사 : 전기증설, 배전판, 가스설치공사, 상하수도유입공사, 화장실공사, 소방방염공사, 냉난방기, 철거, ",
+      "reason": "Implemented as live c16_note text, but position-checker Ygap baseline crosses the fixed table panel after the body columns are decomposed into row cells. DOM coordinate verified: top 880px relative to con16, matching PSD y=19286 relative to visual top 18406."
+    }
+  ],
+  "ignoredShapes": [
+    {
+      "name": "사각형 1014 복사",
+      "reason": "Section background color #f8edd7 plus texture image /images/con16_bg.jpg."
+    },
+    {
+      "name": "모양 8",
+      "reason": "Implemented as c16 table row-rule line from tableRowLayout inside .c16_table."
+    },
+    {
+      "name": "모양 8 복사",
+      "reason": "Implemented as c16 table row-rule line from tableRowLayout inside .c16_table."
+    },
+    {
+      "name": "모양 8 복사 2",
+      "reason": "Implemented as c16 table row-rule line from tableRowLayout inside .c16_table."
+    },
+    {
+      "name": "모양 8 복사 3",
+      "reason": "Implemented as c16 table row-rule line from tableRowLayout inside .c16_table."
+    },
+    {
+      "name": "모양 8 복사 4",
+      "reason": "Implemented as c16 table row-rule line from tableRowLayout inside .c16_table."
+    },
+    {
+      "name": "모양 8 복사 5",
+      "reason": "Implemented as c16 table row-rule line from tableRowLayout inside .c16_table."
+    },
+    {
+      "name": "모양 8 복사 6",
+      "reason": "Implemented as c16 table row-rule line from tableRowLayout inside .c16_table."
+    },
+    {
+      "name": "모양 8 복사 8",
+      "reason": "Implemented as c16 table row-rule line from tableRowLayout inside .c16_table."
+    }
+  ],
+  "roundNumberOverride": [
+    "0.000000vw",
+    "0.000000%",
+    "100.000000%",
+    "c16_media_layer.width:100% — full-canvas absolute media layer.",
+    "c16_table.child top/left 0 values are table-origin edges."
+  ],
+  "doNot": [
+    "Do not implement yellow designer comments; they are excluded from spec comments and not UI.",
+    "Do not put con16_bg or con16_02 food image into the rltv heightChain.",
+    "Do not use <br> to merge table rows; body columns use row-level cells because PSD lineHeight 2.667 is the row height.",
+    "Do not add shadow/radius CSS to con16_01.png because it is a complete image.",
+    "Do not use object-fit.",
+    "Do not remove section overflow hidden; con16_02 extends below visible bgRect and must be clipped at the bottom.",
+    "Do not use section height/aspect-ratio; section height follows pt + rltv elements + pb."
+  ],
+  "ascii": "section.con16 (rltv, bg:#f8edd7, overflow:hidden)\\n  c16_media_layer absol parent=section top 0 left 0 w 100%\\n    c16_bg absol img con16_bg.jpg natural 1920x1015 left -0.393701% w 100.787402%\\n    c16_food absol img con16_02.png natural 707x504 top 30.603675vw left 63.674541% w 37.112861% (bottom clipped by section ov:hidden)\\n  pt 7.769029vw\\n  c16_title rltv center mt 0 — 60px Eulyoo, #5d2b0d + #070707\\n  c16_desc rltv center mt 1.679790vw — 22px Pretendard, lineBreak 1, bold segment\\n  c16_standard rltv flex-start mt 1.469816vw ml 69.238845% — [20평 기준]\\n  c16_table rltv center mt 0.472441vw w 44.881890% aspect 855/525\\n    table outer/header/1px body-lines/footer/button image + row cells as children\\n  c16_note rltv flex-start mt 0.682415vw ml 27.979003%\\n  pb 5.301837vw",
+  "elements": [
+    {
+      "name": "c16_media_layer",
+      "type": "group",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "0.000000vw",
+      "left": "0.000000%",
+      "width": "100.000000%",
+      "allowLayered": true,
+      "allowSiblingOverlay": true,
+      "siblingOverlayReason": "Texture background and food photo are intentional absolute media layers behind/around the rltv content; food is clipped by section overflow hidden.",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 18406,
+      "children": [
+        {
+          "name": "c16_bg",
+          "type": "image",
+          "position": "absol",
+          "parent": "c16_media_layer",
+          "parentWidth": 1905,
+          "top": "0.000000vw",
+          "left": "-0.393701%",
+          "width": "100.787402%",
+          "src": "/images/con16_bg.jpg",
+          "naturalWidth": 1920,
+          "naturalHeight": 1015,
+          "sourceType": "소스",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 18406
+        },
+        {
+          "name": "c16_food",
+          "type": "image",
+          "position": "absol",
+          "parent": "c16_media_layer",
+          "parentWidth": 1905,
+          "top": "30.603675vw",
+          "left": "63.674541%",
+          "width": "37.112861%",
+          "src": "/images/con16_02.png",
+          "naturalWidth": 707,
+          "naturalHeight": 504,
+          "sourceType": "완성형 가능성",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 18989
+        }
+      ]
+    },
+    {
+      "name": "c16_title",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "7.769029vw",
+      "alignSelf": "center",
+      "width": "17.480315%",
+      "whiteSpace": "nowrap",
+      "content": "창업비용 안내",
+      "segments": [
+        {
+          "text": "창업비용",
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "cssFontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "fontSize": "3.149606vw (60px)",
+          "lineHeight": 1.083,
+          "letterSpacing": "-0.05em",
+          "color": "#5d2b0d"
+        },
+        {
+          "text": " 안내",
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "cssFontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "fontSize": "3.149606vw (60px)",
+          "lineHeight": 1.083,
+          "letterSpacing": "-0.05em",
+          "color": "#070707"
+        }
+      ],
+      "effects": null,
+      "psdY": 18554
+    },
+    {
+      "name": "c16_desc",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "1.679790vw",
+      "alignSelf": "center",
+      "width": "25.039370%",
+      "whiteSpace": "nowrap",
+      "content": "창업자금은 고객님의 소중한 자산입니다.\n꼭 필요한곳에 투자되도록 매장별 맞춤 설계를 도와드립니다.",
+      "segments": [
+        {
+          "text": "창업자금은 고객님의 소중한 자산입니다.\n꼭 필요한곳에 투자되도록 ",
+          "fontFamily": "Pretendard-Light",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 300,
+          "fontSize": "1.154856vw (22px)",
+          "lineHeight": 1.364,
+          "letterSpacing": "-0.05em",
+          "color": "#000000"
+        },
+        {
+          "text": "매장별 맞춤 설계",
+          "fontFamily": "Pretendard-Bold",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 700,
+          "fontSize": "1.154856vw (22px)",
+          "lineHeight": 1.364,
+          "letterSpacing": "-0.05em",
+          "color": "#000000"
+        },
+        {
+          "text": "를 도와드립니다.",
+          "fontFamily": "Pretendard-Light",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 300,
+          "fontSize": "1.154856vw (22px)",
+          "lineHeight": 1.364,
+          "letterSpacing": "-0.05em",
+          "color": "#000000"
+        }
+      ],
+      "effects": null,
+      "psdY": 18645
+    },
+    {
+      "name": "c16_standard",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "1.469816vw",
+      "marginLeft": "69.238845%",
+      "alignSelf": "flex-start",
+      "width": "3.359580%",
+      "whiteSpace": "nowrap",
+      "content": "[20평 기준]",
+      "segments": [
+        {
+          "text": "[20평 기준]",
+          "fontFamily": "Pretendard-Light",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 300,
+          "fontSize": "0.839895vw (16px)",
+          "lineHeight": 3.125,
+          "letterSpacing": "-0.07em",
+          "color": "#000000"
+        }
+      ],
+      "effects": null,
+      "psdY": 18723
+    },
+    {
+      "name": "c16_table",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0.472441vw",
+      "alignSelf": "center",
+      "width": "44.881890%",
+      "aspectRatio": "855/525",
+      "heightSource": "PSD table panel including footer CTA 855x525",
+      "heightSourceReason": "Table is a visible data panel with fixed PSD outer bbox x=532,y=18748,w=855,h=525 including header/body/footer rows.",
+      "allowLayered": true,
+      "allowSingleSceneOverlayReason": "The table is one fixed PSD data panel: background, header, row rules, footer, row cells, and CTA image are all positioned within the explicit 855x525 panel bbox.",
+      "allowSiblingOverlay": true,
+      "siblingOverlayReason": "Table backgrounds, horizontal rules, row texts, and CTA image intentionally layer inside the table panel.",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 18748,
+      "children": [
+        {
+          "name": "c16_table_outer",
+          "type": "cssShape",
+          "position": "absol",
+          "parent": "c16_table",
+          "parentWidth": 855,
+          "top": "0.000000vw",
+          "left": "0.000000%",
+          "width": "100.000000%",
+          "height": "23.989501vw",
+          "background": "#ffffff",
+          "border": "1px solid #201412",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 18748
+        },
+        {
+          "name": "c16_table_header_bg",
+          "type": "cssShape",
+          "position": "absol",
+          "parent": "c16_table",
+          "parentWidth": 855,
+          "top": "0.052493vw",
+          "left": "0.116959%",
+          "width": "99.766082%",
+          "height": "3.622047vw",
+          "background": "#f1f1f1",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 18749
+        },
+        {
+          "name": "c16_table_footer_bg",
+          "type": "cssShape",
+          "position": "absol",
+          "parent": "c16_table",
+          "parentWidth": 855,
+          "top": "23.674541vw",
+          "left": "0.116959%",
+          "width": "99.766082%",
+          "height": "3.884514vw",
+          "background": "#231916",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 19199
+        },
+        {
+          "name": "c16_cta_img",
+          "type": "image",
+          "position": "absol",
+          "parent": "c16_table",
+          "parentWidth": 855,
+          "top": "24.881890vw",
+          "left": "40.467836%",
+          "width": "19.064327%",
+          "src": "/images/con16_01.png",
+          "naturalWidth": 163,
+          "naturalHeight": 28,
+          "sourceType": "완성형",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 19222
+        },
+        {
+          "name": "category_label",
+          "type": "text",
+          "position": "absol",
+          "parent": "c16_table",
+          "parentWidth": 855,
+          "top": "1.469816vw",
+          "left": "13.333333%",
+          "width": "3.859649%",
+          "whiteSpace": "nowrap",
+          "content": "구분",
+          "segments": [
+            {
+              "text": "구분",
+              "fontFamily": "Pretendard-Bold",
+              "cssFontFamily": "var(--mf)",
+              "fontWeight": 700,
+              "fontSize": "1.049869vw (20px)",
+              "lineHeight": 2.5,
+              "letterSpacing": "-0.07em",
+              "color": "#000000"
+            }
+          ],
+          "effects": null,
+          "psdY": 18776
+        },
+        {
+          "name": "content_label",
+          "type": "text",
+          "position": "absol",
+          "parent": "c16_table",
+          "parentWidth": 855,
+          "top": "1.469816vw",
+          "left": "50.058480%",
+          "width": "3.742690%",
+          "whiteSpace": "nowrap",
+          "content": "내용",
+          "segments": [
+            {
+              "text": "내용",
+              "fontFamily": "Pretendard-Bold",
+              "cssFontFamily": "var(--mf)",
+              "fontWeight": 700,
+              "fontSize": "1.049869vw (20px)",
+              "lineHeight": 2.5,
+              "letterSpacing": "-0.07em",
+              "color": "#000000"
+            }
+          ],
+          "effects": null,
+          "psdY": 18776
+        },
+        {
+          "name": "amount_label",
+          "type": "text",
+          "position": "absol",
+          "parent": "c16_table",
+          "parentWidth": 855,
+          "top": "1.469816vw",
+          "left": "85.029240%",
+          "width": "3.742690%",
+          "whiteSpace": "nowrap",
+          "content": "금액",
+          "segments": [
+            {
+              "text": "금액",
+              "fontFamily": "Pretendard-Bold",
+              "cssFontFamily": "var(--mf)",
+              "fontWeight": 700,
+              "fontSize": "1.049869vw (20px)",
+              "lineHeight": 2.5,
+              "letterSpacing": "-0.07em",
+              "color": "#000000"
+            }
+          ],
+          "effects": null,
+          "psdY": 18776
+        }
+      ]
+    },
+    {
+      "name": "c16_note",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0.682415vw",
+      "marginLeft": "27.979003%",
+      "alignSelf": "flex-start",
+      "width": "32.755906%",
+      "whiteSpace": "nowrap",
+      "content": "※ 별도공사 : 전기증설, 배전판, 가스설치공사, 상하수도유입공사, 화장실공사, 소방방염공사, 냉난방기, 철거, 덕트\n    배기공사, 포스, 외부닥트입상공사, 집진기, 식기세척기, 정수기,TV 및 음향기기, 기타 등등 기본외 공사",
+      "segments": [
+        {
+          "text": "※ 별도공사 : 전기증설, 배전판, 가스설치공사, 상하수도유입공사, 화장실공사, 소방방염공사, 냉난방기, 철거, 덕트\n    배기공사, 포스, 외부닥트입상공사, 집진기, 식기세척기, 정수기,TV 및 음향기기, 기타 등등 기본외 공사",
+          "fontFamily": "Pretendard-Light",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 300,
+          "fontSize": "0.839895vw (16px)",
+          "lineHeight": 1.25,
+          "letterSpacing": "-0.07em",
+          "color": "#000000"
+        }
+      ],
+      "effects": null,
+      "psdY": 19286
+    }
+  ],
+  "tableRows": [
+    ["가맹비(소멸성)", "미락육회막국수 가입비, 매뉴얼 사용, 사후관리 등", "500만 원"],
+    ["교육비", "개점 교육비, 서비스 교육, 조리 교육 등", "300만 원"],
+    ["인쇄 및 기타 소모품", "전단지, 유니폼, 모자, 앞치마, 기타 POP등", "300만 원"],
+    ["주방기기 및 설비", "냉동냉장고, 찬냉장고, 간택기, 작업대, 선반, 밥솥 등", "3,090만 원"],
+    ["주방집기", "홀그릇, 주방집기/용품일체", "1,210만 원"],
+    ["간판 및 실사(전면 4m기준)", "전면간판, 메뉴판 및 전면 내외부실사", "500/250만 원"],
+    ["인테리어(평당 180만)", "목공, 전기, 도장, 조명, 타일, 미장, 설계 및 시설감리일체", "3,600만 원"],
+    ["로열티", "", "월 30만 원"]
+  ],
+  "tableRowLayout": {
+    "rowTops": [
+      "4.461942vw",
+      "6.981627vw",
+      "9.501312vw",
+      "12.020997vw",
+      "14.540682vw",
+      "17.060367vw",
+      "19.580052vw",
+      "22.099738vw"
+    ],
+    "lineTops": [
+      "3.517060vw",
+      "6.036745vw",
+      "8.556430vw",
+      "11.023622vw",
+      "13.595801vw",
+      "16.115486vw",
+      "18.635171vw",
+      "21.154856vw"
+    ],
+    "columns": {
+      "category": {
+        "left": "5.263158%",
+        "width": "20.000000%"
+      },
+      "content": {
+        "left": "31.812865%",
+        "width": "40.233918%"
+      },
+      "amount": {
+        "left": "81.520468%",
+        "width": "10.643275%"
+      }
+    }
+  }
+}

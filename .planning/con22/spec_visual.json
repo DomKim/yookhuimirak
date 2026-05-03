@@ -1,0 +1,189 @@
+{
+  "section": "con22",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 0,
+    "bottom": 122,
+    "height": 122
+  },
+  "background": {
+    "type": "color",
+    "fill": "#f8f4e6",
+    "src": null
+  },
+  "groups": [],
+  "texts": [
+    {
+      "name": "q_name_placeholder",
+      "content": "",
+      "x": 680,
+      "y": 53,
+      "w": 33,
+      "h": 0,
+      "segments": [
+        {
+          "text": "성함",
+          "fontWeight": 300,
+          "color": "#999999",
+          "fontSize": "0.839895vw (16px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.5,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    },
+    {
+      "name": "q_tel_placeholder",
+      "content": "",
+      "x": 892,
+      "y": 53,
+      "w": 48,
+      "h": 0,
+      "segments": [
+        {
+          "text": "연락처",
+          "fontWeight": 300,
+          "color": "#999999",
+          "fontSize": "0.839895vw (16px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.5,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    },
+    {
+      "name": "q_area_placeholder",
+      "content": "",
+      "x": 1104,
+      "y": 53,
+      "w": 65,
+      "h": 0,
+      "segments": [
+        {
+          "text": "희망지역",
+          "fontWeight": 300,
+          "color": "#999999",
+          "fontSize": "0.839895vw (16px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.5,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    },
+    {
+      "name": "q_agree_text",
+      "content": "",
+      "x": 1283,
+      "y": 54,
+      "w": 154,
+      "h": 0,
+      "segments": [
+        {
+          "text": "개인정보 수집 및 이용 동의",
+          "fontWeight": 300,
+          "color": "#999999",
+          "fontSize": "0.839895vw (16px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.876,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "q_name_input",
+      "x": 585,
+      "y": 35,
+      "w": 224,
+      "h": 18,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "q_tel_input",
+      "x": 805,
+      "y": 35,
+      "w": 224,
+      "h": 18,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "q_area_input",
+      "x": 1025,
+      "y": 35,
+      "w": 224,
+      "h": 18,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "q_agree_box",
+      "x": 1259,
+      "y": 53,
+      "w": 18,
+      "h": 0,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "q_food",
+      "x": 150,
+      "y": 0,
+      "w": 167,
+      "h": 112,
+      "clippingRect": null,
+      "possibleFile": "q_img.png",
+      "effects": null
+    },
+    {
+      "name": "q_call_img",
+      "x": 339,
+      "y": 47,
+      "w": 222,
+      "h": 29,
+      "clippingRect": null,
+      "possibleFile": "q_call.png",
+      "effects": null
+    },
+    {
+      "name": "q_submit_img",
+      "x": 1506,
+      "y": 35,
+      "w": 202,
+      "h": 51,
+      "clippingRect": null,
+      "possibleFile": "q_btn.png",
+      "effects": null
+    },
+    {
+      "name": "q_top_img",
+      "x": 1717,
+      "y": 35,
+      "w": 51,
+      "h": 51,
+      "clippingRect": null,
+      "possibleFile": "q_tt.png",
+      "effects": null
+    }
+  ],
+  "comments": [
+    "generated from plan.json for replay validation",
+    "raw PSD origin shifted to visual section origin"
+  ]
+}

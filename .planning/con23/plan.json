@@ -1,0 +1,149 @@
+{
+  "generatedBy": "spec-to-plan v3 + AI structure correction",
+  "strictStructure": true,
+  "section": "con23",
+  "sectionClass": "footer",
+  "page": "main",
+  "specFile": ".planning/con23/spec_main_con23.json",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 22439,
+    "bottom": 22949,
+    "height": 510
+  },
+  "bg": "#070707",
+  "prevSectionBottom": 22439,
+  "firstRltvY": 22553,
+  "pt": "5.984252vw",
+  "pb": "5.669291vw",
+  "heightChain": [
+    "pt",
+    "f_logo",
+    "모양 20",
+    "footer_info",
+    "footer_copy",
+    "pb"
+  ],
+  "availableImages": [
+    {
+      "file": "f_logo.png",
+      "width": 328,
+      "height": 47,
+      "composite": true,
+      "sourceType": "완성형"
+    }
+  ],
+  "ignoredShapes": [],
+  "ignoredTexts": [],
+  "doNot": [
+    "Do not use px for layout values except border/shadow.",
+    "Do not use object-fit or max-width:100% on images.",
+    "Do not replace composite h_/f_/q_ assets with CSS effects.",
+    "Do not use child margin-left to fake centered footer alignment.",
+    "Do not hide or reinterpret PSD text line breaks."
+  ],
+  "elements": [
+    {
+      "name": "f_logo",
+      "type": "image",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "5.984252vw",
+      "alignSelf": "center",
+      "width": "17.217848%",
+      "src": "/images/f_logo.png",
+      "naturalWidth": 328,
+      "naturalHeight": 47,
+      "sourceType": "완성형",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 22553
+    },
+    {
+      "name": "모양 20",
+      "type": "cssShapeLine",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "1.994751vw",
+      "alignSelf": "center",
+      "width": "88.293963%",
+      "height": "0.157480vw",
+      "background": "#070707",
+      "opacity": 0.2,
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 22638
+    },
+    {
+      "name": "footer_info",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "2.519685vw",
+      "alignSelf": "center",
+      "width": "27.874016%",
+      "textAlign": "center",
+      "whiteSpace": "nowrap",
+      "effects": null,
+      "segments": [
+        {
+          "text": "회사명 : (주)선미락 | 대표자 : 최철우\n주소 : 인천광역시 남동구 앵고개로 941번길 11-9 1층 | 대표번호 : 032-433-7049\n사업자번호 : 581-88-03391 | 이메일 : ccw9103@naver.com",
+          "fontWeight": 300,
+          "color": "#999999",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.667,
+          "fontFamily": "Pretendard-Light"
+        }
+      ],
+      "psdY": 22689
+    },
+    {
+      "name": "footer_copy",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "2.939633vw",
+      "alignSelf": "center",
+      "width": "18.740157%",
+      "textAlign": "center",
+      "whiteSpace": "nowrap",
+      "effects": null,
+      "segments": [
+        {
+          "text": "Copyright ",
+          "fontWeight": 300,
+          "color": "#999999",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.667,
+          "fontFamily": "Pretendard-Light"
+        },
+        {
+          "text": "ⓒ",
+          "fontWeight": 400,
+          "color": "#999999",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.667,
+          "fontFamily": "Gulim"
+        },
+        {
+          "text": "(주)미락육회막국수. all Rights Reserved",
+          "fontWeight": 300,
+          "color": "#999999",
+          "fontSize": "0.944882vw (18px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.667,
+          "fontFamily": "Pretendard-Light"
+        }
+      ],
+      "psdY": 22822
+    }
+  ],
+  "ascii": "FOOTER con23 (bg:#070707, centered flow)\npt 5.984252vw\n┌─ f_logo rltv center width=17.217848% src=/images/f_logo.png (328x47 complete)\n├─ 모양 20 rltv center mt=1.994751vw width=88.293963% height=0.157480vw opacity .2\n├─ footer_info rltv center mt=2.519685vw width=27.874016%, Pretendard 300 #999 0.944882vw lh 1.667, br x2\n└─ footer_copy rltv center mt=2.939633vw width=18.740157%, Pretendard/Gulim #999 0.944882vw\npb 5.669291vw\ndoNot: centered items stay parent-centered; line/text line breaks stay PSD order."
+}

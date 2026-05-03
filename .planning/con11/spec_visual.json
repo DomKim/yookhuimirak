@@ -1,0 +1,120 @@
+{
+  "section": "con11",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 0,
+    "bottom": 1021,
+    "height": 1021
+  },
+  "background": {
+    "type": "color",
+    "fill": "#231916",
+    "src": null
+  },
+  "groups": [],
+  "texts": [
+    {
+      "name": "c11_kicker",
+      "content": "시간이 만든 맛",
+      "x": 869,
+      "y": 222,
+      "w": 183,
+      "h": 28,
+      "segments": [
+        {
+          "text": "시간이 만든 맛",
+          "fontSize": "1.574803vw (30px)",
+          "fontWeight": 400,
+          "color": "#070707",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 2.167,
+          "fontFamily": "TTOmniGothicM"
+        }
+      ]
+    },
+    {
+      "name": "c11_title",
+      "content": "38년을\n이어왔습니다",
+      "x": 798,
+      "y": 272,
+      "w": 325,
+      "h": 134,
+      "segments": [
+        {
+          "text": "38년",
+          "fontSize": "3.149606vw (60px)",
+          "fontWeight": 600,
+          "color": "#5d2b0d",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.25,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        },
+        {
+          "text": "을\n이어왔습니다",
+          "fontSize": "3.149606vw (60px)",
+          "fontWeight": 600,
+          "color": "#070707",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.25,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        }
+      ]
+    },
+    {
+      "name": "c11_desc",
+      "content": "미락육회막국수는 1988년 따스한 봄날,\n작은 정육식당에서 시작되어 2대에 걸쳐 이어져 왔습니다.\n\n지금은 육회막국수 전문점으로 자리 잡아 현재의 본사 위치에서\n많은 고객분들께 꾸준한 사랑을 받고 있습니다.\n\n육회와 막국수가 어우러진 자연스러운 맛을 찾기까지\n10년 이상의 시간을 쌓아왔습니다.\n그 시간이 모여 지금의 미락육회막국수가 되었습니다.",
+      "x": 711,
+      "y": 458,
+      "w": 495,
+      "h": 260,
+      "segments": [
+        {
+          "text": "미락육회막국수는 1988년 따스한 봄날,\n작은 정육식당에서 시작되어 2대에 걸쳐 이어져 왔습니다.\n\n지금은 육회막국수 전문점으로 자리 잡아 현재의 본사 위치에서\n많은 고객분들께 꾸준한 사랑을 받고 있습니다.\n\n",
+          "fontSize": "1.154856vw (22px)",
+          "fontWeight": 300,
+          "color": "#000000",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.364,
+          "fontFamily": "Pretendard-Light"
+        },
+        {
+          "text": "육회와 막국수가 어우러진 자연스러운 맛을 찾기까지\n10년 이상의 시간을 쌓아왔습니다.\n",
+          "fontSize": "1.154856vw (22px)",
+          "fontWeight": 700,
+          "color": "#000000",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.364,
+          "fontFamily": "Pretendard-Bold"
+        },
+        {
+          "text": "그 시간이 모여 지금의 미락육회막국수가 되었습니다.",
+          "fontSize": "1.154856vw (22px)",
+          "fontWeight": 300,
+          "color": "#000000",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.364,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "c11_paper",
+      "x": 630,
+      "y": 98,
+      "w": 645,
+      "h": 122,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [],
+  "comments": [
+    "generated from plan.json for replay validation",
+    "raw PSD origin shifted to visual section origin"
+  ]
+}

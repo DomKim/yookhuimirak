@@ -1,0 +1,14 @@
+/* ============ 모바일 공통 (max-width: 599px) ============ */
+@media screen and (max-width:599px) {
+    section { font-size: 3.2vw; }
+
+    .pc-mobile { display: none; }
+    .mobile-pc { display: flex; }
+    .pc        { display: none !important; }
+    .pc-inline { display: none !important; }
+    .tablet    { display: none; }
+    .mobile    { display: flex; }
+    .mobile-flex { display: flex; }
+
+    /* 클라이언트별 모바일 스타일은 아래에 추가 */
+}

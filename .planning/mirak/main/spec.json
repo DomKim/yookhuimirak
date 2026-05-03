@@ -1,0 +1,528 @@
+{
+  "section": "main",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 0,
+    "bottom": 1542
+  },
+  "background": {
+    "type": "image",
+    "fill": null,
+    "src": "그룹 1"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "name": "미락육회막국수는 광고가 아닌 맛으로 고객을 만들고 재방문으로 매출을 완성합니다",
+      "content": "미락육회막국수는 광고가 아닌 맛으로 고객을 만들고 재방문으로 매출을 완성합니다",
+      "lineBreaks": 0,
+      "x": 631,
+      "y": 405,
+      "w": 660,
+      "h": 20,
+      "segments": [
+        {
+          "text": "미락육회막국수는 ",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "광고가 아닌 맛",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#ffffff",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "으로 고객을 만들고 ",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "재방문으로 매출",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#ffffff",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "을 완성합니다",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "경쟁력",
+      "content": "경쟁력",
+      "lineBreaks": 0,
+      "x": 455,
+      "y": 43,
+      "w": 43,
+      "h": 17,
+      "segments": [
+        {
+          "text": "경쟁력",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 0.944,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        }
+      ]
+    },
+    {
+      "name": "매출안내",
+      "content": "매출안내",
+      "lineBreaks": 0,
+      "x": 578,
+      "y": 43,
+      "w": 57,
+      "h": 17,
+      "segments": [
+        {
+          "text": "매출안내",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 0.944,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        }
+      ]
+    },
+    {
+      "name": "차별화",
+      "content": "차별화",
+      "lineBreaks": 0,
+      "x": 716,
+      "y": 43,
+      "w": 45,
+      "h": 17,
+      "segments": [
+        {
+          "text": "차별화",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 0.944,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        }
+      ]
+    },
+    {
+      "name": "메뉴안내",
+      "content": "메뉴안내",
+      "lineBreaks": 0,
+      "x": 840,
+      "y": 43,
+      "w": 57,
+      "h": 17,
+      "segments": [
+        {
+          "text": "메뉴안내",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 0.944,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        }
+      ]
+    },
+    {
+      "name": "본사 시스템",
+      "content": "본사 시스템",
+      "lineBreaks": 0,
+      "x": 976,
+      "y": 43,
+      "w": 75,
+      "h": 17,
+      "segments": [
+        {
+          "text": "본사 시스템",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 0.944,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        }
+      ]
+    },
+    {
+      "name": "창업안내",
+      "content": "창업안내",
+      "lineBreaks": 0,
+      "x": 1130,
+      "y": 43,
+      "w": 58,
+      "h": 17,
+      "segments": [
+        {
+          "text": "창업안내",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 0.944,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        }
+      ]
+    },
+    {
+      "name": "매장안내",
+      "content": "매장안내",
+      "lineBreaks": 0,
+      "x": 1269,
+      "y": 43,
+      "w": 57,
+      "h": 17,
+      "segments": [
+        {
+          "text": "매장안내",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 0.944,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        }
+      ]
+    },
+    {
+      "name": "창업문의",
+      "content": "창업문의",
+      "lineBreaks": 0,
+      "x": 1406,
+      "y": 43,
+      "w": 57,
+      "h": 17,
+      "segments": [
+        {
+          "text": "창업문의",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 0.944,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        }
+      ]
+    },
+    {
+      "name": "h_call",
+      "content": "032-433-7049",
+      "lineBreaks": 0,
+      "x": 1687,
+      "y": 41,
+      "w": 173,
+      "h": 22,
+      "segments": [
+        {
+          "text": "032-433-7049",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 0.733,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        }
+      ]
+    },
+    {
+      "name": "유행이 아닌, 오래 남는 맛",
+      "content": "유행이 아닌, 오래 남는 맛",
+      "lineBreaks": 0,
+      "x": 581,
+      "y": 292,
+      "w": 756,
+      "h": 75,
+      "segments": [
+        {
+          "text": "유행이 아닌, ",
+          "fontSize_px": 75,
+          "fontSize_vw": "3.9370",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 1,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "오래 남는 맛",
+          "fontSize_px": 75,
+          "fontSize_vw": "3.9370",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#e3cfaf",
+          "lineHeight": 1,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "SINCE1988",
+      "content": "SINCE1988",
+      "lineBreaks": 0,
+      "x": 121,
+      "y": 753,
+      "w": 150,
+      "h": 16,
+      "segments": [
+        {
+          "text": "SINCE1988",
+          "fontSize_px": 20,
+          "fontSize_vw": "1.0499",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#e3cfaf",
+          "lineHeight": 0.8,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "0.3em"
+        }
+      ]
+    },
+    {
+      "name": "38YEARS",
+      "content": "38YEARS",
+      "lineBreaks": 0,
+      "x": 1675,
+      "y": 753,
+      "w": 124,
+      "h": 16,
+      "segments": [
+        {
+          "text": "38YEARS",
+          "fontSize_px": 20,
+          "fontSize_vw": "1.0499",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#e3cfaf",
+          "lineHeight": 0.8,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "0.3em"
+        }
+      ]
+    },
+    {
+      "name": "맛으로 증명하는 브랜드 미락육회막국수",
+      "content": "맛으로 증명하는 브랜드 미락육회막국수",
+      "lineBreaks": 0,
+      "x": 694,
+      "y": 233,
+      "w": 529,
+      "h": 31,
+      "segments": [
+        {
+          "text": "맛으로 증명하는 브랜드",
+          "fontSize_px": 32,
+          "fontSize_vw": "1.6798",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#ffffff",
+          "lineHeight": 0.969,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": " ",
+          "fontSize_px": 32,
+          "fontSize_vw": "1.6798",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicR",
+          "color": "#ffffff",
+          "lineHeight": 0.969,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "미락육회막국수",
+          "fontSize_px": 32,
+          "fontSize_vw": "1.6798",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicH",
+          "color": "#ffffff",
+          "lineHeight": 0.969,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "모양 1",
+      "x": -34,
+      "y": 784,
+      "w": 2008,
+      "h": 4,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 0.2,
+      "effects": null
+    },
+    {
+      "name": "모양 1 복사",
+      "x": -34,
+      "y": 794,
+      "w": 2008,
+      "h": 4,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 0.2,
+      "effects": null
+    },
+    {
+      "name": "타원 1",
+      "x": 146,
+      "y": 735,
+      "w": 1628,
+      "h": 807,
+      "fill": "#e3cfaf",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "그룹 1",
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 960,
+      "clippingRect": {
+        "x": -34,
+        "y": 784,
+        "w": 2008,
+        "h": 4,
+        "borderRadius": 0
+      },
+      "possibleFile": "main_bg.jpg",
+      "effects": null
+    },
+    {
+      "name": "main_01_1",
+      "x": 570,
+      "y": 505,
+      "w": 780,
+      "h": 515,
+      "clippingRect": {
+        "x": -34,
+        "y": 784,
+        "w": 2008,
+        "h": 4,
+        "borderRadius": 0
+      },
+      "possibleFile": "main_01_1.png",
+      "effects": null
+    },
+    {
+      "name": "main_01_2",
+      "x": 570,
+      "y": 505,
+      "w": 780,
+      "h": 580,
+      "clippingRect": {
+        "x": -34,
+        "y": 784,
+        "w": 2008,
+        "h": 4,
+        "borderRadius": 0
+      },
+      "possibleFile": "main_01_2.png",
+      "effects": null
+    },
+    {
+      "name": "main_01_3",
+      "x": 570,
+      "y": 505,
+      "w": 780,
+      "h": 572,
+      "clippingRect": {
+        "x": -34,
+        "y": 784,
+        "w": 2008,
+        "h": 4,
+        "borderRadius": 0
+      },
+      "possibleFile": "main_01_3.png",
+      "effects": null
+    },
+    {
+      "name": "h_logo",
+      "x": 61,
+      "y": 39,
+      "w": 180,
+      "h": 26,
+      "clippingRect": {
+        "x": -34,
+        "y": 784,
+        "w": 2008,
+        "h": 4,
+        "borderRadius": 0
+      },
+      "possibleFile": "TODO",
+      "effects": null
+    }
+  ],
+  "comments": [],
+  "bgRect": {
+    "y": 0,
+    "h": 960,
+    "bottom": 960,
+    "name": "그룹 1"
+  }
+}

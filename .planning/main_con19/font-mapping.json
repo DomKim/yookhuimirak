@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "mapping": {
+    "TTOmniGothicB": { "css": "var(--tf), 'omnigothic', sans-serif", "weight": 700, "weight_psd": 400, "note": "typekit kit wkl2ctu 210 OmniGothic 070 Bold — PSD weight 400은 typekit weight 단계 한 단계 낮춤(700→600)으로 해석 또는 그대로 700 사용" },
+    "Pretendard-Bold": { "css": "var(--mf)", "weight": 700, "note": "본문 강조 (b 태그)" },
+    "Pretendard-Light": { "css": "var(--mf)", "weight": 300, "note": "본문 일반" },
+    "Eulyoo1945-SemiBold": { "css": "var(--sf)", "weight": 600, "note": "타이틀/버튼" }
+  }
+}

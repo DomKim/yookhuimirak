@@ -1,0 +1,594 @@
+/* ============ AI 챗봇 위젯 ============
+ *
+ * 브랜드 색상 커스터마이징:
+ *   프로젝트 메인 CSS에서 아래 변수만 덮어쓰면 됩니다.
+ *   :root {
+ *       --cb-primary: #6366f1;        // 메인 색 (버튼·유저 말풍선)
+ *       --cb-primary-hover: #4f46e5;  // hover 색
+ *       --cb-primary-soft: #eef2ff;   // 은은한 배경
+ *   }
+ */
+:root {
+    --cb-primary: #a4202c;
+    --cb-primary-hover: #7b1821;
+    --cb-primary-soft: #f8edd7;
+}
+
+.cb-toggle {
+    position: fixed;
+    bottom: 5.6vw;
+    left: 1.4vw;
+    width: 3.7vw;
+    height: 3.7vw;
+    border-radius: 50%;
+    background: #fff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 99999999;
+    box-shadow: 0 0.21vw 0.83vw rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    padding: 0;
+    overflow: hidden;
+}
+
+.cb-toggle .cb-icon-chat {
+    animation: vibration 2s infinite;
+}
+
+@keyframes vibration {
+
+    0%,
+    40% {
+        transform: rotate(3deg);
+    }
+
+    5% {
+        transform: rotate(-3deg);
+    }
+
+    10% {
+        transform: rotate(3deg);
+    }
+
+    15% {
+        transform: rotate(-3deg);
+    }
+
+    20% {
+        transform: rotate(3deg);
+    }
+
+    25% {
+        transform: rotate(-3deg);
+    }
+
+    30% {
+        transform: rotate(0deg);
+    }
+
+    /* 40%~100% 멈춤 */
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* PC */
+@media screen and (min-width:600px) {
+    .cb-toggle:hover {
+        transform: scale(0.9);
+    }
+}
+
+
+
+
+
+.cb-toast {
+    width: 12vw;
+    height: 3.7vw;
+
+    position: fixed;
+    left: 1.4vw;
+    bottom: 5.6vw;
+
+    padding-left: 4.4vw;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background: #000;
+    color: #fff;
+
+    white-space: nowrap;
+    line-height: 1.4;
+    font-size: 0.75vw;
+    font-weight: 600;
+    font-family: 'Pretendard Variable';
+
+    border-radius: 40vw;
+    box-shadow: 0 0.21vw 0.83vw rgba(0, 0, 0, 0.15);
+
+    z-index: 999999;
+
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+    user-select: none;
+}
+
+.cb-toast.show {
+    opacity: 1;
+}
+
+.cb-toggle svg {
+    width: 1.46vw;
+    height: 1.46vw;
+    fill: #333;
+}
+
+.cb-toggle.active .cb-icon-chat {
+    display: none;
+}
+
+.cb-toggle:not(.active) .cb-icon-close {
+    display: none;
+}
+
+.cb-window {
+    position: fixed;
+    bottom: 5.21vw;
+    left: 6vw;
+    width: 19.79vw;
+    height: 27.08vw;
+    background: #fff;
+    border-radius: 0.83vw;
+    box-shadow: 0 0.42vw 1.67vw rgba(0, 0, 0, 0.18);
+    z-index: 2147483646;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Pretendard Variable';
+}
+
+.cb-window.open {
+    display: flex;
+    animation: cbSlideUp 0.25s ease;
+}
+
+@keyframes cbSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(0.83vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cb-header {
+    background: var(--cb-primary);
+    color: #fff;
+    padding: 0.83vw 1.04vw;
+    display: flex;
+    align-items: center;
+    gap: 0.52vw;
+}
+
+.cb-header-icon {
+    width: 1.88vw;
+    height: 1.88vw;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cb-header-title {
+    font-size: 0.78vw;
+    font-weight: 700;
+}
+
+.cb-header-sub {
+    font-size: 0.57vw;
+    opacity: 0.7;
+    margin-top: 0.1vw;
+}
+
+.cb-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0.83vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.63vw;
+    background: #faf5f5;
+}
+
+.cb-messages::-webkit-scrollbar {
+    width: 0.21vw;
+}
+
+.cb-messages::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 0.21vw;
+}
+
+.cb-msg {
+    max-width: 82%;
+    padding: 0.52vw 0.73vw;
+    border-radius: 0.73vw;
+    font-size: 0.7vw;
+    line-height: 1.55;
+    word-break: keep-all;
+    white-space: pre-wrap;
+}
+
+.cb-msg.assistant {
+    background: #fff;
+    color: #222;
+    align-self: flex-start;
+    border: 0.05vw solid #e8e8e8;
+    border-bottom-left-radius: 0.21vw;
+}
+
+.cb-msg.user {
+    background: var(--cb-primary);
+    color: #fff;
+    align-self: flex-end;
+    border-bottom-right-radius: 0.21vw;
+}
+
+.cb-msg a {
+    color: var(--cb-primary-soft);
+    text-decoration: underline;
+}
+
+.cb-msg.assistant a {
+    color: var(--cb-primary);
+}
+
+.cb-quick {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.31vw;
+    padding: 0 0.83vw 0.63vw;
+    background: #faf5f5;
+}
+
+.cb-quick button {
+    background: #fff;
+    border: 0.05vw solid #ddd;
+    border-radius: 1.04vw;
+    padding: 0.31vw 0.73vw;
+    font-size: 0.65vw;
+    color: var(--cb-primary);
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.cb-quick button:hover {
+    background: var(--cb-primary);
+    border-color: var(--cb-primary);
+    color: #fff;
+}
+
+.cb-input-wrap {
+    display: flex;
+    align-items: center;
+    padding: 0.63vw 0.83vw;
+    border-top: 0.05vw solid #eee;
+    background: #fff;
+    gap: 0.42vw;
+}
+
+.cb-input {
+    flex: 1;
+    border: 0.05vw solid #ddd;
+    border-radius: 1.04vw;
+    padding: 0.42vw 0.73vw;
+    font-size: 0.7vw;
+    outline: none;
+    font-family: inherit;
+    transition: border-color 0.15s;
+}
+
+.cb-input:focus {
+    border-color: var(--cb-primary);
+}
+
+.cb-send {
+    width: 1.88vw;
+    height: 1.88vw;
+    border-radius: 50%;
+    background: var(--cb-primary);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+}
+
+.cb-send:hover {
+    background: var(--cb-primary-hover);
+}
+
+.cb-send svg {
+    width: 0.94vw;
+    height: 0.94vw;
+    fill: #fff;
+}
+
+.cb-send:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.cb-typing {
+    display: flex;
+    gap: 0.21vw;
+    padding: 0.52vw 0.73vw;
+    align-self: flex-start;
+}
+
+.cb-typing span {
+    width: 0.31vw;
+    height: 0.31vw;
+    background: #bbb;
+    border-radius: 50%;
+    animation: cbBounce 1.2s infinite;
+}
+
+.cb-typing span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.cb-typing span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes cbBounce {
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0.6);
+        opacity: 0.4;
+    }
+
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.cb-actions {
+    display: flex;
+    gap: 0.31vw;
+    padding: 0 0.83vw 0.42vw;
+    background: #faf5f5;
+}
+
+.cb-action-btn {
+    flex: 1;
+    text-align: center;
+    padding: 0.36vw 0;
+    border-radius: 0.42vw;
+    font-size: 0.63vw;
+    font-family: inherit;
+    text-decoration: none;
+    transition: background 0.15s;
+}
+
+.cb-action-call {
+    background: var(--cb-primary);
+    color: #fff;
+}
+
+.cb-action-call:hover {
+    background: var(--cb-primary-hover);
+}
+
+.cb-lead-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.31vw;
+}
+
+.cb-lead-title {
+    font-size: 0.68vw;
+    font-weight: 700;
+    color: var(--cb-primary);
+    margin: 0 0 0.21vw;
+}
+
+.cb-lead-input {
+    border: 0.05vw solid #ddd;
+    border-radius: 0.42vw;
+    padding: 0.36vw 0.52vw;
+    font-size: 0.65vw;
+    outline: none;
+    font-family: inherit;
+}
+
+.cb-lead-input:focus {
+    border-color: var(--cb-primary);
+}
+
+.cb-lead-submit {
+    background: var(--cb-primary);
+    color: #fff;
+    border: none;
+    border-radius: 0.42vw;
+    padding: 0.42vw;
+    font-size: 0.68vw;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s;
+}
+
+.cb-lead-submit:hover {
+    background: var(--cb-primary-hover);
+}
+
+
+@media (max-width: 599px) {
+    .cb-window {
+        bottom: 46vw;
+        right: auto;
+        left: 2.05vw;
+        width: 95.9vw;
+        height: 126vw;
+        border-radius: 4.1vw;
+    }
+
+    .cb-window .cb-header {
+        padding: 4.1vw 5.13vw;
+        gap: 2.56vw;
+    }
+
+    .cb-window .cb-header-icon {
+        width: 9.23vw;
+        height: 9.23vw;
+    }
+
+    .cb-window .cb-header-title {
+        font-size: 3.85vw;
+    }
+
+    .cb-window .cb-header-sub {
+        font-size: 2.82vw;
+        margin-top: 0.51vw;
+    }
+
+    .cb-window .cb-messages {
+        padding: 4.1vw;
+        gap: 3.08vw;
+    }
+
+    .cb-window .cb-msg {
+        padding: 2.56vw 3.59vw;
+        border-radius: 3.59vw;
+        font-size: 3.46vw;
+    }
+
+    .cb-window .cb-msg.assistant {
+        border-bottom-left-radius: 1.03vw;
+    }
+
+    .cb-window .cb-msg.user {
+        border-bottom-right-radius: 1.03vw;
+    }
+
+    .cb-window .cb-quick {
+        gap: 1.54vw;
+        padding: 0 4.1vw 3.08vw;
+    }
+
+    .cb-window .cb-quick button {
+        border-radius: 5.13vw;
+        padding: 1.54vw 3.59vw;
+        font-size: 3.21vw;
+    }
+
+    .cb-window .cb-input-wrap {
+        padding: 3.08vw 4.1vw;
+        gap: 2.05vw;
+    }
+
+    .cb-window .cb-input {
+        border-radius: 5.13vw;
+        padding: 2.05vw 3.59vw;
+        font-size: 3.46vw;
+    }
+
+    .cb-window .cb-send {
+        width: 9.23vw;
+        height: 9.23vw;
+    }
+
+    .cb-window .cb-send svg {
+        width: 4.62vw;
+        height: 4.62vw;
+    }
+
+    .cb-window .cb-typing {
+        gap: 1.03vw;
+        padding: 2.56vw 3.59vw;
+    }
+
+    .cb-window .cb-typing span {
+        width: 1.54vw;
+        height: 1.54vw;
+    }
+
+    .cb-window .cb-actions {
+        gap: 1.54vw;
+        padding: 0 4.1vw 2.05vw;
+    }
+
+    .cb-window .cb-action-btn {
+        padding: 1.79vw 0;
+        border-radius: 2.05vw;
+        font-size: 3.08vw;
+    }
+
+    .cb-window .cb-lead-form {
+        gap: 1.54vw;
+    }
+
+    .cb-window .cb-lead-title {
+        font-size: 3.33vw;
+        margin: 0 0 1.03vw;
+    }
+
+    .cb-window .cb-lead-input {
+        border-radius: 2.05vw;
+        padding: 1.79vw 2.56vw;
+        font-size: 3.21vw;
+    }
+
+    .cb-window .cb-lead-submit {
+        border-radius: 2.05vw;
+        padding: 2.05vw;
+        font-size: 3.33vw;
+    }
+
+
+    .cb-toggle {
+        bottom: 35vw;
+        right: auto;
+        width: 12vw;
+        height: 12vw;
+        left: 2vw;
+    }
+
+    .cb-toast {
+        width: 43.6vw;
+        height: 12vw;
+
+        font-size: 3.3vw;
+        padding-left: 14.6vw;
+
+        bottom: 35vw;
+        left: 2vw;
+    }
+
+    .cb-toggle svg {
+        width: 8vw;
+        height: 8vw;
+    }
+
+}

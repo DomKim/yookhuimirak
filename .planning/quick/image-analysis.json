@@ -1,0 +1,101 @@
+{
+  "timestamp": "2026-05-03T04:16:11.834Z",
+  "images": [
+    {
+      "file": "q_btn.png",
+      "width": 202,
+      "height": 51,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "q_call.png",
+      "width": 222,
+      "height": 29,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 4
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "q_img.png",
+      "width": 167,
+      "height": 112,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 18
+      },
+      "composite": false,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "q_tt.png",
+      "width": 51,
+      "height": 51,
+      "hasAlpha": true,
+      "border": {
+        "detected": true,
+        "color": "#231916",
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 0
+      },
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    }
+  ]
+}

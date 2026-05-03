@@ -1,0 +1,384 @@
+{
+  "generatedBy": "spec-to-plan v3 + AI structure correction",
+  "strictStructure": true,
+  "section": "con00",
+  "sectionClass": "header",
+  "page": "main",
+  "specFile": ".planning/con00/spec_main_con00.json",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 0,
+    "bottom": 112,
+    "height": 112
+  },
+  "bg": "rgba(0,0,0,0.45)",
+  "prevSectionBottom": 0,
+  "firstRltvY": 0,
+  "pt": "0.000000vw",
+  "pb": "0.000000vw",
+  "heightChain": [
+    "pt",
+    "h_navbar",
+    "pb"
+  ],
+  "roundNumberOverride": [
+    "52.500000%"
+  ],
+  "availableImages": [
+    {
+      "file": "h_call.png",
+      "width": 173,
+      "height": 22,
+      "composite": true,
+      "sourceType": "완성형"
+    },
+    {
+      "file": "h_logo_b.png",
+      "width": 78,
+      "height": 37,
+      "composite": true,
+      "sourceType": "완성형"
+    },
+    {
+      "file": "h_logo_w.png",
+      "width": 78,
+      "height": 37,
+      "composite": true,
+      "sourceType": "완성형"
+    },
+    {
+      "file": "h_logo.png",
+      "width": 180,
+      "height": 26,
+      "composite": true,
+      "sourceType": "완성형"
+    }
+  ],
+  "ignoredAssets": [
+    {
+      "file": "h_logo_b.png",
+      "reason": "Alternate compact logo asset; PSD header in supplied screenshot uses h_logo.png wide white logo."
+    },
+    {
+      "file": "h_logo_w.png",
+      "reason": "Alternate compact logo asset; PSD header in supplied screenshot uses h_logo.png wide white logo."
+    }
+  ],
+  "ignoredTexts": [
+    {
+      "name": "h_call",
+      "reason": "Implemented as composite image /images/h_call.png from h_ asset set."
+    },
+    {
+      "name": "맛으로 증명하는 브랜드 미락육회막국수",
+      "reason": "Hero text belongs to main visual, not header template scope requested by user."
+    },
+    {
+      "name": "유행이 아닌, 오래 남는 맛",
+      "reason": "Hero text belongs to main visual, not header template scope requested by user."
+    },
+    {
+      "name": "미락육회막국수는 광고가 아닌 맛으로 고객을 만들고 재방문으로 매출을 완성합니다",
+      "reason": "Hero text belongs to main visual, not header template scope requested by user."
+    },
+    {
+      "name": "SINCE1988",
+      "reason": "Hero lower ornament text belongs to main visual, not header template scope requested by user."
+    },
+    {
+      "name": "38YEARS",
+      "reason": "Hero lower ornament text belongs to main visual, not header template scope requested by user."
+    }
+  ],
+  "ignoredShapes": [
+    {
+      "name": "모양 1",
+      "reason": "Hero lower deco line outside header template scope."
+    },
+    {
+      "name": "모양 1 복사",
+      "reason": "Hero lower deco line outside header template scope."
+    }
+  ],
+  "doNot": [
+    "Do not use px for layout values except border/shadow.",
+    "Do not use object-fit or max-width:100% on images.",
+    "Do not replace composite h_/f_/q_ assets with CSS effects.",
+    "Do not use child margin-left to fake centered footer alignment.",
+    "Do not hide or reinterpret PSD text line breaks."
+  ],
+  "elements": [
+    {
+      "name": "h_navbar",
+      "type": "cssShape",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0.000000vw",
+      "marginLeft": "0.000000%",
+      "width": "100.787402%",
+      "aspectRatio": "1920/112",
+      "heightSource": "PSD header visual box 1920x112",
+      "heightSourceReason": "Header template is a fixed visual bar; live children are absolutely placed inside it.",
+      "allowSingleSceneOverlayReason": "Header is a fixed navigation bar with one visual hit-area and absolutely positioned live logo/menu/tel controls from PSD.",
+      "background": "rgba(0,0,0,0.45)",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 0,
+      "children": [
+        {
+          "name": "h_logo",
+          "type": "image",
+          "position": "absol",
+          "parent": "h_navbar",
+          "parentWidth": 1920,
+          "top": "2.047244vw",
+          "left": "3.177083%",
+          "width": "9.375000%",
+          "src": "/images/h_logo.png",
+          "naturalWidth": 180,
+          "naturalHeight": 26,
+          "sourceType": "완성형",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 39
+        },
+        {
+          "name": "h_menu",
+          "type": "group",
+          "position": "absol",
+          "parent": "h_navbar",
+          "parentWidth": 1920,
+          "top": "2.257218vw",
+          "left": "23.697917%",
+          "width": "52.500000%",
+          "display": "flex-row",
+          "gap": "PSD absolute children",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 43,
+          "children": [
+            {
+              "name": "h_nav_competitiveness",
+              "type": "text",
+              "position": "absol",
+              "parent": "h_menu",
+              "parentWidth": 1008,
+              "top": "0.000000vw",
+              "left": "0.000000%",
+              "width": "4.265873%",
+              "href": "#move_02",
+              "whiteSpace": "nowrap",
+              "effects": null,
+              "segments": [
+                {
+                  "text": "경쟁력",
+                  "fontWeight": 300,
+                  "color": "#ffffff",
+                  "fontSize": "0.944882vw (18px)",
+                  "letterSpacing": "-0.06em",
+                  "lineHeight": 0.944,
+                  "fontFamily": "Pretendard-Light"
+                }
+              ],
+              "psdY": 43
+            },
+            {
+              "name": "h_nav_sales",
+              "type": "text",
+              "position": "absol",
+              "parent": "h_menu",
+              "parentWidth": 1008,
+              "top": "0.000000vw",
+              "left": "12.202381%",
+              "width": "5.654762%",
+              "href": "#move_03",
+              "whiteSpace": "nowrap",
+              "effects": null,
+              "segments": [
+                {
+                  "text": "매출안내",
+                  "fontWeight": 300,
+                  "color": "#ffffff",
+                  "fontSize": "0.944882vw (18px)",
+                  "letterSpacing": "-0.06em",
+                  "lineHeight": 0.944,
+                  "fontFamily": "Pretendard-Light"
+                }
+              ],
+              "psdY": 43
+            },
+            {
+              "name": "h_nav_difference",
+              "type": "text",
+              "position": "absol",
+              "parent": "h_menu",
+              "parentWidth": 1008,
+              "top": "0.000000vw",
+              "left": "25.892857%",
+              "width": "4.464286%",
+              "href": "#move_04",
+              "whiteSpace": "nowrap",
+              "effects": null,
+              "segments": [
+                {
+                  "text": "차별화",
+                  "fontWeight": 300,
+                  "color": "#ffffff",
+                  "fontSize": "0.944882vw (18px)",
+                  "letterSpacing": "-0.06em",
+                  "lineHeight": 0.944,
+                  "fontFamily": "Pretendard-Light"
+                }
+              ],
+              "psdY": 43
+            },
+            {
+              "name": "h_nav_menu",
+              "type": "text",
+              "position": "absol",
+              "parent": "h_menu",
+              "parentWidth": 1008,
+              "top": "0.000000vw",
+              "left": "38.194444%",
+              "width": "5.654762%",
+              "href": "#move_05",
+              "whiteSpace": "nowrap",
+              "effects": null,
+              "segments": [
+                {
+                  "text": "메뉴안내",
+                  "fontWeight": 300,
+                  "color": "#ffffff",
+                  "fontSize": "0.944882vw (18px)",
+                  "letterSpacing": "-0.06em",
+                  "lineHeight": 0.944,
+                  "fontFamily": "Pretendard-Light"
+                }
+              ],
+              "psdY": 43
+            },
+            {
+              "name": "h_nav_system",
+              "type": "text",
+              "position": "absol",
+              "parent": "h_menu",
+              "parentWidth": 1008,
+              "top": "0.000000vw",
+              "left": "51.686508%",
+              "width": "7.440476%",
+              "href": "#move_06",
+              "whiteSpace": "nowrap",
+              "effects": null,
+              "segments": [
+                {
+                  "text": "본사 시스템",
+                  "fontWeight": 300,
+                  "color": "#ffffff",
+                  "fontSize": "0.944882vw (18px)",
+                  "letterSpacing": "-0.06em",
+                  "lineHeight": 0.944,
+                  "fontFamily": "Pretendard-Light"
+                }
+              ],
+              "psdY": 43
+            },
+            {
+              "name": "h_nav_franchise",
+              "type": "text",
+              "position": "absol",
+              "parent": "h_menu",
+              "parentWidth": 1008,
+              "top": "0.000000vw",
+              "left": "66.964286%",
+              "width": "5.753968%",
+              "href": "#move_07",
+              "whiteSpace": "nowrap",
+              "effects": null,
+              "segments": [
+                {
+                  "text": "창업안내",
+                  "fontWeight": 300,
+                  "color": "#ffffff",
+                  "fontSize": "0.944882vw (18px)",
+                  "letterSpacing": "-0.06em",
+                  "lineHeight": 0.944,
+                  "fontFamily": "Pretendard-Light"
+                }
+              ],
+              "psdY": 43
+            },
+            {
+              "name": "h_nav_shop",
+              "type": "text",
+              "position": "absol",
+              "parent": "h_menu",
+              "parentWidth": 1008,
+              "top": "0.000000vw",
+              "left": "80.753968%",
+              "width": "5.654762%",
+              "href": "#move_08",
+              "whiteSpace": "nowrap",
+              "effects": null,
+              "segments": [
+                {
+                  "text": "매장안내",
+                  "fontWeight": 300,
+                  "color": "#ffffff",
+                  "fontSize": "0.944882vw (18px)",
+                  "letterSpacing": "-0.06em",
+                  "lineHeight": 0.944,
+                  "fontFamily": "Pretendard-Light"
+                }
+              ],
+              "psdY": 43
+            },
+            {
+              "name": "h_nav_contact",
+              "type": "text",
+              "position": "absol",
+              "parent": "h_menu",
+              "parentWidth": 1008,
+              "top": "0.000000vw",
+              "left": "94.345238%",
+              "width": "5.654762%",
+              "href": "#contact_service",
+              "whiteSpace": "nowrap",
+              "effects": null,
+              "segments": [
+                {
+                  "text": "창업문의",
+                  "fontWeight": 300,
+                  "color": "#ffffff",
+                  "fontSize": "0.944882vw (18px)",
+                  "letterSpacing": "-0.06em",
+                  "lineHeight": 0.944,
+                  "fontFamily": "Pretendard-Light"
+                }
+              ],
+              "psdY": 43
+            }
+          ]
+        },
+        {
+          "name": "h_call_img",
+          "type": "image",
+          "position": "absol",
+          "parent": "h_navbar",
+          "parentWidth": 1920,
+          "top": "2.152231vw",
+          "left": "87.864583%",
+          "width": "9.010417%",
+          "src": "/images/h_call.png",
+          "naturalWidth": 173,
+          "naturalHeight": 22,
+          "sourceType": "완성형",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 41
+        }
+      ]
+    }
+  ],
+  "ascii": "HEADER con00 (fixed nav, bg:rgba(0,0,0,.45))\npt 0.000000vw\n┌─ h_navbar rltv parent=section width=100.787402% aspect 1920/112\n│  ├─ h_logo absol parent=h_navbar top=2.047244vw left=3.177083% width=9.375000% src=/images/h_logo.png (180x26 complete)\n│  ├─ h_menu absol parent=h_navbar top=2.257218vw left=23.697917% width=52.500000%\n│  │  ├─ 경쟁력/매출안내/차별화/메뉴안내/본사 시스템/창업안내/매장안내/창업문의 text, Pretendard 300 #fff 0.944882vw, nowrap\n│  └─ h_call_img absol parent=h_navbar top=2.152231vw left=87.864583% width=9.010417% src=/images/h_call.png (173x22 complete)\npb 0.000000vw\ndoNot: no object-fit/max-width; do not use h_logo_b/w; h_call is image composite."
+}

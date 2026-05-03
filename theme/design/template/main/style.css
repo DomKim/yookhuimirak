@@ -1,0 +1,3054 @@
+/* 모든 스타일은 css 충돌방지를 위해 .main을 기준으로 작성 하시면 됩니다. 예) .main .box {} */
+.main{}
+
+/* ===== MAIN VISUAL (mv) ===== */
+.main .mv {
+    background: #e3cfaf url('/images/main_bg.jpg') top center / 100% auto no-repeat;
+    padding-top: 12.230971vw;       /* PSD Y:233 / 1905 */
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+/* mv_curve (absol image) — main_bg_2.png 베이지 곡선 윗면 (parent=section) */
+.main .mv_curve {
+    top: 38.582677vw;               /* PSD Y:735 / 1905 */
+    left: 11.049869%;                /* (1905-1484)/2 / 1905 */
+    width: 77.900262%;               /* 1484 / 1905 */
+    aspect-ratio: 1484 / 234;       /* heightSource: main_bg_2.png 1484x234 baked */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* mv_label "맛으로 증명하는 브랜드 미락육회막국수" (rltv, parent=section)
+   typekit kit wkl2ctu = 210 OmniGothic 010~050 (weight 200~600) */
+.main .mv_label {
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'omnigothic', sans-serif;   /* TTOmniGothicM (PSD) → 210 OmniGothic 030 (한 단계 낮춤) */
+    font-weight: 400;                        /* 030 = Regular (← 기존 500에서 한 단계 낮춤) */
+    font-size: 1.679790vw;                   /* 32px / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 0.969;
+    color: #ffffff;
+}
+.main .mv_label_t2 { font-weight: 300; }     /* TTOmniGothicR → 020 Light (한 단계 낮춤) */
+.main .mv_label_t3 { font-weight: 500; }     /* TTOmniGothicH → 040 Medium (한 단계 낮춤) */
+
+/* mv_title "유행이 아닌, 오래 남는 맛" (rltv, parent=section) */
+.main .mv_title {
+    margin-top: 1.469816vw;          /* gap 28 / 1905 */
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Eulyoo1945', serif;
+    font-weight: 600;
+    font-size: 3.937008vw;           /* 75px / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: #ffffff;
+}
+.main .mv_title_t2 { color: #e3cfaf; }    /* "오래 남는 맛" */
+
+/* mv_desc "미락육회막국수는 광고가 아닌 맛..." (rltv, parent=section) */
+.main .mv_desc {
+    margin-top: 1.994751vw;          /* gap 38 / 1905 */
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Pretendard Variable', sans-serif;
+    font-weight: 300;                /* Pretendard-Light */
+    font-size: 1.154856vw;           /* 22px / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.364;
+    color: #ffffff;
+}
+.main .mv_desc b { font-weight: 700; }    /* Pretendard-Bold (광고가 아닌 맛 / 재방문으로 매출) */
+
+/* mv_visual (rltv wrapper) — 그릇 슬라이더 + SINCE/YEARS 라인 */
+.main .mv_visual {
+    margin-top: 4.199475vw;          /* gap 80 / 1905 */
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: -8vw;
+}
+
+/* mv_since SINCE1988 (absol, parent=mv_visual, parentW:1905) */
+.main .mv_since {
+    top: 12.518373vw;
+    left: 6.351706%;                 /* 121 / 1905 */
+    width: 7.874016%;                /* 150 / 1905 */
+    white-space: nowrap;
+    font-family: 'Eulyoo1945', serif;
+    font-weight: 600;
+    font-size: 1.049869vw;           /* 20px / 1905 */
+    letter-spacing: 0.3em;
+    line-height: 0.8;
+    color: #e3cfaf;
+}
+
+/* mv_years 38YEARS (absol, parent=mv_visual, parentW:1905) */
+.main .mv_years {
+    top: 12.518373vw;
+    left: 87.926509%;                /* 1675 / 1905 */
+    width: 6.509186%;                /* 124 / 1905 */
+    white-space: nowrap;
+    font-family: 'Eulyoo1945', serif;
+    font-weight: 600;
+    font-size: 1.049869vw;
+    letter-spacing: 0.3em;
+    line-height: 0.8;
+    color: #e3cfaf;
+}
+
+/* mv_slider (rltv FIGURE PANEL — fade swiper, parent=mv_visual) */
+.main .mv_slider {
+    align-self: center;
+    width: 40.944882%;               /* 780 / 1905 */
+    aspect-ratio: 780 / 580;         /* heightSource: main_01_2.png 780x580 baked (largest dish) */
+}
+.main .mv_slider_swiper {
+    width: 100%;
+    height: 100%;
+}
+.main .mv_slider .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main .mv_slider .swiper-slide img { width: 100%; }
+
+/* mv_line — 38YEARS / SINCE1988 아래 가로 deco 라인 2개 (PSD 모양1, 모양1복사) */
+.main .mv_line {
+    left: -1.784777%;                /* PSD x:-34 / 1905 */
+    width: 105.406824%;              /* PSD w:2008 / 1905 */
+    height: 0;
+    border-top: 1px solid #e3cfaf;
+}
+.main .mv_line_1 { top: 41.154856vw; }       /* PSD Y:784 / 1905 */
+.main .mv_line_2 { top: 41.679790vw; }       /* PSD Y:794 / 1905 */
+
+/* ===== CON01 ===== */
+.main .con1 {
+    background: #ffffff;
+    padding-top: 6.719160vw;
+    padding-bottom: 6.561680vw;
+    overflow: hidden;
+}
+
+.main .con1_bg_texture {
+    top: 0.000000vw;
+    bottom: 0.000000vw;
+    left: 0.000000%;
+    width: 100.787402%;
+    background: url('/images/con01_bg.jpg') top center / 100% auto no-repeat;
+    z-index: 0;
+}
+
+.main .con1_food_foreground {
+    top: 18.845144vw;
+    left: -12.230971%;
+    width: 51.286089%;
+    z-index: 1;
+    pointer-events: none;
+}
+.main .con1_food_foreground img,
+.main .con1_card_media img {
+    width: 100%;
+}
+
+.main .con1_title {
+    margin-top: 0.000000vw;
+    margin-left: 0.000000%;
+    align-self: center;
+    width: 29.711286%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.main .con1_title p,
+.main .con1_card p {
+    margin-left: 0.000000%;
+    white-space: nowrap;
+}
+
+.main .con1_kicker {
+    margin-top: 0.000000vw;
+    align-self: center;
+    font-family: 'omnigothic', sans-serif;
+    font-weight: 400;
+    font-size: 1.574803vw;
+    letter-spacing: -0.05em;
+    line-height: 1.469816vw;
+    color: #070707;
+    white-space: nowrap;
+}
+
+.main .con1_headline {
+    margin-top: 0.997375vw;
+    align-self: center;
+    font-family: var(--sf);
+    font-weight: 600;
+    font-size: 3.149606vw;
+    letter-spacing: -0.05em;
+    line-height: 3.097113vw;
+    color: #070707;
+    white-space: nowrap;
+}
+.main .con1_headline_point {
+    color: #5d2b0d;
+}
+
+.main .con1_desc {
+    margin-top: 1.679790vw;
+    align-self: center;
+    font-family: var(--mf);
+    font-weight: 300;
+    font-size: 1.154856vw;
+    letter-spacing: -0.05em;
+    line-height: 1.207349vw;
+    color: #000000;
+    white-space: nowrap;
+}
+.main .con1_desc b {
+    font-weight: 700;
+}
+
+.main .con1_cards {
+    margin-top: 3.779528vw;
+    margin-left: 0.000000%;
+    align-self: center;
+    width: 66.351706%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.main .con1_card {
+    --con1-card-bg: #ffffff;
+    --con1-card-text: #000000;
+    margin-top: 0.000000vw;
+    width: 33.544304%;
+    aspect-ratio: 424 / 404; /* heightSource: PSD card rectangle 424x404 */
+    background: var(--con1-card-bg);
+    border: 1px solid #231916;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background 0.42s ease, border-color 0.42s ease;
+}
+.main .con1_card + .con1_card {
+    margin-left: -0.316456%;
+}
+.main .con1_card.is-active,
+.main .con1_card:hover,
+.main .con1_card:focus-visible {
+    --con1-card-bg: #231916;
+    --con1-card-text: #ffffff;
+    border-color: #231916;
+}
+
+.main .con1_card_media {
+    top: 2.362205vw;
+    left: 57.311321%;
+    width: 67.298578%;
+    opacity: 0;
+    transform: translateX(22%);
+    transition: opacity 0.46s ease, transform 0.58s ease;
+    pointer-events: none;
+}
+.main .con1_card.is-active .con1_card_media,
+.main .con1_card:hover .con1_card_media,
+.main .con1_card:focus-visible .con1_card_media {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.main .con1_marker {
+    top: 0.052493vw;
+    width: 0.000000%;
+    height: 2.152231vw;
+    background: transparent;
+    border-left: 1px solid #231916;
+    box-sizing: border-box;
+    transition: border-color 0.42s ease;
+}
+.main .con1_card.is-active .con1_marker,
+.main .con1_card:hover .con1_marker,
+.main .con1_card:focus-visible .con1_marker {
+    border-color: #ffffff;
+}
+.main .con1_marker_taste_1 {
+    left: 94.339623%;
+}
+.main .con1_marker_sales_1 {
+    left: 91.745283%;
+}
+.main .con1_marker_sales_2 {
+    left: 94.103774%;
+}
+.main .con1_marker_easy_1,
+.main .con1_marker_easy_2,
+.main .con1_marker_easy_3 {
+    width: 0.000000%;
+}
+.main .con1_marker_easy_1 {
+    left: 89.622642%;
+}
+.main .con1_marker_easy_2 {
+    left: 91.981132%;
+}
+.main .con1_marker_easy_3 {
+    left: 94.339623%;
+}
+
+.main .con1_card_text {
+    top: 9.343832vw;
+    left: 11.792453%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    color: var(--con1-card-text);
+    transition: color 0.42s ease;
+}
+.main .con1_taste_text {
+    width: 48.584906%;
+}
+.main .con1_sales_text {
+    width: 47.641509%;
+}
+.main .con1_easy_text {
+    width: 45.047170%;
+}
+
+.main .con1_card_label {
+    margin-top: 0.000000vw;
+    align-self: flex-start;
+    font-family: var(--mf);
+    font-weight: 300;
+    font-size: 0.944882vw;
+    letter-spacing: -0.05em;
+    line-height: 0.892388vw;
+    color: currentColor;
+    white-space: nowrap;
+}
+.main .con1_card_title {
+    margin-top: 0.997376vw;
+    align-self: flex-start;
+    font-family: var(--mf);
+    font-weight: 700;
+    font-size: 1.364829vw;
+    letter-spacing: -0.05em;
+    line-height: 1.259843vw;
+    color: currentColor;
+    white-space: nowrap;
+}
+.main .con1_card_body {
+    align-self: flex-start;
+    font-family: var(--mf);
+    font-weight: 300;
+    font-size: 0.944882vw;
+    letter-spacing: -0.05em;
+    line-height: 1.277340vw;
+    color: currentColor;
+    white-space: nowrap;
+}
+.main .con1_taste_text .con1_card_body,
+.main .con1_easy_text .con1_card_body {
+    margin-top: 2.099737vw;
+}
+.main .con1_sales_text .con1_card_body {
+    margin-top: 2.099738vw;
+}
+
+/* ===== CON03 ===== */
+.main .con3 {
+    background: #f8edd7;
+    padding-top: 6.771654vw;
+    padding-bottom: 3.044619vw;
+    overflow: hidden;
+}
+
+.main .con3 p {
+    margin-left: 0.000000%;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+.main .con3 img {
+    width: 100%;
+}
+
+.main .c3_bg_texture {
+    top: -0.157480vw;
+    left: -0.787402%;
+    width: 100.787402%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.main .c3_title_group {
+    margin-top: 0.000000vw;
+    margin-left: 0.000000%;
+    align-self: center;
+    width: 26.876640%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.main .c3_kicker {
+    margin-top: 0.000000vw;
+    align-self: center;
+    width: 46.289063%;
+    text-align: center;
+    font-family: 'omnigothic', var(--tf);
+    font-weight: 400;
+    font-size: 1.574803vw;
+    letter-spacing: -0.05em;
+    line-height: 1.522310vw;
+    color: #070707;
+}
+
+.main .c3_headline {
+    margin-top: 0.997375vw;
+    align-self: center;
+    width: 100.000000%;
+    text-align: center;
+    font-family: var(--sf);
+    font-weight: 600;
+    font-size: 3.149606vw;
+    letter-spacing: -0.05em;
+    line-height: 3.149606vw;
+    color: #070707;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+.main .c3_headline_point {
+    color: #5d2b0d;
+}
+
+.main .c3_desc {
+    margin-top: 1.627297vw;
+    align-self: center;
+    width: 77.929688%;
+    text-align: center;
+    font-family: var(--mf);
+    font-weight: 300;
+    font-size: 1.154856vw;
+    letter-spacing: -0.05em;
+    line-height: 1.312336vw;
+    color: #000000;
+}
+.main .c3_desc b {
+    font-weight: 700;
+}
+
+.main .c3_profit_scene {
+    margin-top: 2.467192vw;
+    margin-left: 0.000000%;
+    align-self: flex-start;
+    width: 100.000000%;
+    display: block;
+    z-index: 1;
+}
+
+/* c3_pie (rltv wrapper, parent=c3_profit_scene, parentW=1905) — 가운데 원형 파이 그룹 */
+.main .c3_pie {
+    margin-top: 0.419948vw;             /* 8/1905 — food photo top */
+    margin-left: 32.913386%;            /* 627/1905 — food photo left */
+    align-self: flex-start;
+    width: 26.614173%;                  /* 507/1905 — food photo natural */
+    aspect-ratio: 507 / 509;            /* heightSource: con03_01.png 507x509 */
+    z-index: 1;
+}
+
+/* c3_pie_photo (rltv, parent=c3_pie, parentW=507) — 식사 사진 */
+.main .c3_pie_photo {
+    margin-top: 0vw;
+    width: 100%;
+    aspect-ratio: 507 / 509;
+    z-index: 1;
+}
+
+/* c3_pie_overlay (absol over photo, parent=c3_pie) */
+.main .c3_pie_overlay {
+    top: 0vw;
+    left: 0%;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* c3_pie_badge / c3_pie_number (absol, sticks out top-left of pie) */
+.main .c3_pie_badge,
+.main .c3_pie_number {
+    top: -0.419948vw;                   /* -8/1905 (badge 8px above pie top per PSD) */
+    left: -1.183432%;                   /* -6/507 (badge 6px left of pie) */
+    width: 40.828402%;                  /* 207/507 — badge natural 207px */
+    aspect-ratio: 207 / 207;
+    pointer-events: none;
+}
+.main .c3_pie_badge {
+    z-index: 3;
+}
+.main .c3_pie_number {
+    z-index: 4;
+}
+
+.main .c3_left_divider {
+    top: 13.490814vw;
+    left: -0.209974%;
+    width: 33.753281%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.main .c3_left_metrics {
+    top: 6.561680vw;
+    left: 18.687664%;
+    width: 10.708661%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 4;
+}
+
+.main .c3_metric_label {
+    align-self: flex-start;
+    font-family: var(--mf);
+    font-weight: 700;
+    font-size: 1.154331vw;
+    letter-spacing: -0.05em;
+    line-height: 1.049869vw;
+    color: #000000;
+}
+
+.main .c3_sales_label {
+    margin-top: 0.000000vw;
+    width: 26.960784%;
+}
+
+.main .c3_sales_value {
+    margin-top: 1.207349vw;
+    align-self: center;
+    width: 99.509804%;
+}
+
+.main .c3_profit_label {
+    margin-top: 5.354331vw;
+    width: 25.980392%;
+}
+
+.main .c3_profit_value {
+    margin-top: 1.207349vw;
+    align-self: center;
+    width: 95.588235%;
+}
+
+/* c3_table (absol wrapper, parent=c3_profit_scene, parentW=1905) — 오른쪽 테이블 그룹 */
+.main .c3_table {
+    top: 1.627297vw;                    /* 31/1905 — table panel top */
+    left: 60.209974%;                   /* 1147/1905 — table panel left */
+    width: 27.874016%;                  /* 531/1905 — table panel natural */
+    aspect-ratio: 531 / 447;            /* heightSource: con03_05.jpg 531x447 */
+    z-index: 2;
+}
+
+/* c3_table_panel (rltv inside table wrapper, parentW=531) — 테이블 이미지 */
+.main .c3_table_panel {
+    margin-top: 0vw;
+    width: 100%;
+    aspect-ratio: 531 / 447;
+    z-index: 1;
+}
+
+/* c3_table_ref '[본점 기준]' (absol, sticks above panel, parent=c3_table) */
+.main .c3_table_ref {
+    top: -1.154856vw;                   /* (9-31)/1905 = -22/1905 (above panel) */
+    left: 88.512242%;                   /* 470/531 */
+    width: 11.864407%;                  /* 63/531 */
+    text-align: left;
+    font-family: var(--mf);
+    font-weight: 300;
+    font-size: 0.839370vw;
+    letter-spacing: -0.05em;
+    line-height: 0.892388vw;
+    color: #000000;
+    white-space: nowrap;
+    word-break: keep-all;
+    z-index: 3;
+}
+
+/* c3_table_rate '23.6%' (absol over panel, parent=c3_table) */
+.main .c3_table_rate {
+    top: 20.104987vw;                   /* (414-31)/1905 = 383/1905 */
+    left: 76.082863%;                   /* 404/531 */
+    width: 12.241055%;                  /* 65/531 */
+    z-index: 3;
+}
+
+/* c3_table_note (absol below panel, parent=c3_table) */
+.main .c3_table_note {
+    top: 23.989501vw;                   /* (488-31)/1905 = 457/1905 */
+    left: 0.188324%;                    /* 1/531 */
+    width: 81.544256%;                  /* 433/531 */
+    text-align: left;
+    font-family: var(--mf);
+    font-weight: 300;
+    font-size: 0.839370vw;
+    letter-spacing: -0.05em;
+    line-height: 0.892388vw;
+    color: #000000;
+    z-index: 3;
+}
+
+/* ===== CON06: 흔들리지 않는 데에는 / 카드 hover ===== */
+.main .con06 {
+    background: #ffffff;
+    padding-top: 5.249344vw;            /* 100 / 1905 — 위쪽 흰색 영역 여백 */
+    padding-bottom: 0vw;
+    overflow: hidden;
+}
+
+/* c6_subtitle (rltv text, parent=section) */
+.main .c6_subtitle {
+    margin-top: 0.157480vw;             /* 3 / 1905 */
+    align-self: center;
+    width: 26.981627%;                  /* 514 / 1905 */
+    text-align: center;
+    white-space: nowrap;
+    font-family: var(--sf), serif;
+    font-weight: 600;
+    font-size: 3.149606vw;              /* 60 / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.25;
+    color: #000000;
+}
+.main .c6_subtitle b { color: #5d2b0d; font-weight: 600; }
+
+/* c6_watermark (absol image, parent=section, parentW:1905) — 善美樂 */
+.main .c6_watermark {
+    top: 7.942257vw;                    /* padding-top 5.249344vw 보정 반영 */
+    left: 68.766404%;                   /* 1310 / 1905 */
+    width: 27.559055%;                  /* 525 / 1905 */
+    aspect-ratio: 525 / 175;            /* heightSource: con06_01.png 525×175 baked */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .c6_watermark img { width: 100%; }
+
+/* c6_card1 (rltv panel, parent=section, parentW:1905) — active default */
+.main .c6_card1 {
+    margin-top: 3.464567vw;             /* (7323-7257) / 1905 */
+    width: 100%;                        /* PSD 풀폭 1970 (좌우 25 캔버스 넘침), section overflow:hidden로 동일 시각 */
+    aspect-ratio: 1905 / 154;           /* heightSource: PSD rect '사각형 12 복사' 1970×154 dark panel baked */
+    background: #231916;
+    color: #f8edd7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* c6_card1_text (rltv, parent=c6_card1) */
+.main .c6_card1_text {
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'omnigothic', sans-serif;   /* TTOmniGothicM */
+    font-weight: 400;
+    font-size: 1.469816vw;              /* 28 / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 2.5;
+    color: inherit;
+}
+.main .c6_card1_text b { font-weight: 500; }   /* TTOmniGothicH (Heavy) */
+
+/* c6_card1_img (absol image, parent=c6_card1, parentW:1905) — 음식이미지 default visible */
+.main .c6_card1_img {
+    top: -10.656168vw;                  /* (7120-7323) / 1905 — 카드 위로 -203 */
+    left: 13.175853%;                   /* 251 / 1905 */
+    width: 16.220472%;                  /* 309 / 1905 */
+    aspect-ratio: 1 / 1;                /* heightSource: con06_02.png 309×309 baked */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.main .c6_card1_img img { width: 100%; }
+
+/* c6_card2 (rltv panel, parent=section, parentW:1905) — beige default → hover시 dark */
+.main .c6_card2 {
+    margin-top: 0vw;
+    width: 100%;
+    aspect-ratio: 1905 / 153;           /* heightSource: PSD rect '사각형 12 복사 2' 1970×153 panel baked */
+    background: #f8edd7;
+    color: #231916;
+    border-top: 1px solid #231916;
+    border-bottom: 1px solid #231916;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.main .c6_card2_text {
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'omnigothic', sans-serif;
+    font-weight: 400;
+    font-size: 1.469816vw;
+    letter-spacing: -0.05em;
+    line-height: 2.5;
+    color: inherit;
+}
+.main .c6_card2_text b { font-weight: 500; }
+
+.main .c6_card2_img {
+    top: -10.656168vw;
+    left: 13.175853%;
+    width: 16.220472%;
+    aspect-ratio: 1 / 1;                /* heightSource: con06_03.png 309×309 baked */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.main .c6_card2_img img { width: 100%; }
+
+/* c6_card3 (rltv panel) — beige default → hover시 dark */
+.main .c6_card3 {
+    margin-top: 0vw;
+    width: 100%;
+    aspect-ratio: 1905 / 153;           /* heightSource: PSD rect '사각형 12 복사 3' 1970×153 panel baked */
+    background: #f8edd7;
+    color: #231916;
+    border-bottom: 1px solid #231916;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.main .c6_card3_text {
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'omnigothic', sans-serif;
+    font-weight: 400;
+    font-size: 1.469816vw;
+    letter-spacing: -0.05em;
+    line-height: 2.5;
+    color: inherit;
+}
+.main .c6_card3_text b { font-weight: 500; }
+
+.main .c6_card3_img {
+    top: -10.656168vw;
+    left: 13.175853%;
+    width: 16.220472%;
+    aspect-ratio: 1 / 1;                /* heightSource: con06_04.png 309×309 baked */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.main .c6_card3_img img { width: 100%; }
+
+/* === CON06 CARD HOVER (카드 2/3 hover시 1번이 default로 전환) === */
+.main .c6_card2:hover {
+    background: #231916;
+    color: #f8edd7;
+}
+.main .c6_card2:hover .c6_card2_img { opacity: 1; }
+
+.main .c6_card3:hover {
+    background: #231916;
+    color: #f8edd7;
+}
+.main .c6_card3:hover .c6_card3_img { opacity: 1; }
+
+/* 카드2/3 중 하나라도 hover 되면 카드1은 default(베이지+다크텍스트+이미지숨김)로 — :has() selector list 호환성 위해 분리 */
+.main .con06:has(.c6_card2:hover) .c6_card1,
+.main .con06:has(.c6_card3:hover) .c6_card1 {
+    background: #f8edd7;
+    color: #231916;
+    border-top: 1px solid #231916;
+    border-bottom: 1px solid #231916;
+    box-sizing: border-box;
+}
+.main .con06:has(.c6_card2:hover) .c6_card1_img,
+.main .con06:has(.c6_card3:hover) .c6_card1_img { opacity: 0; }
+
+/* fallback: :has() 미지원 브라우저용 — 카드 컨테이너 hover시 형제 효과 (간접 sibling) */
+.main .c6_card1:has(~ .c6_card2:hover),
+.main .c6_card1:has(~ .c6_card3:hover) {
+    background: #f8edd7;
+    color: #231916;
+    border-top: 1px solid #231916;
+    border-bottom: 1px solid #231916;
+    box-sizing: border-box;
+}
+.main .c6_card1:has(~ .c6_card2:hover) .c6_card1_img,
+.main .c6_card1:has(~ .c6_card3:hover) .c6_card1_img { opacity: 0; }
+
+/* ===== CON15: 한 그릇에서 시작된 이야기 / 그리고 함께할 시작 ===== */
+.main .con15 {
+    background: #000000;
+    padding-top: 0vw;                     /* 위 264px 빈 영역 완전 제거 */
+    padding-bottom: 7.769029vw;           /* 148 / 1905 — 검정 박스 bottom 18407 기준 */
+    overflow: hidden;
+}
+
+/* c15_stage (absol image+wrapper, parent=section, parentW:1905) — 검정 box + 우드텍스처 stage */
+.main .c15_stage {
+    top: 0vw;                            /* 264 위로 끌어올림 — 내부 모든 absol 함께 이동 (사용자 위여백 보정) */
+    left: -0.052493%;                    /* -1 / 1905 — PSD 사각형 856 정확 좌표 */
+    width: 100.892388%;                  /* 1922 / 1905 — PSD 사각형 856 풀폭 */
+    aspect-ratio: 1922 / 963;            /* heightSource: PSD 사각형 856 1922×963 baked */
+    background: #000000;
+    z-index: 0;
+}
+.main .c15_stage > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+/* c15_line_h (absol deco, parent=c15_stage, parentW:1922) — 흰색 가로 라인 1px */
+.main .c15_line_h {
+    top: 16.587927vw;                    /* (17760-17444) / 1905 */
+    left: 34.443288%;                    /* (661-(-1)) / 1922 */
+    width: 22.893861%;                   /* 440 / 1922 */
+    height: 0;
+    border-top: 1px solid #ffffff;       /* 1px 두께 통일 (사용자 요청) */
+    z-index: 1;
+}
+
+/* c15_img1 (absol image, parent=c15_stage, parentW:1922) — 메밀 이미지 */
+.main .c15_img1 {
+    top: 2.624672vw;                     /* (17494-17444) / 1905 */
+    left: 57.024973%;                    /* (1095-(-1)) / 1922 */
+    width: 14.984391%;                   /* 288 / 1922 (PNG 원본) */
+    aspect-ratio: 288 / 394;             /* heightSource: con15_01.png 288×394 baked */
+    border: 1px solid #ffffff;           /* 사용자 요청 + PSD 사각형 857 mask 효과 (외부 frame) */
+    box-sizing: content-box;             /* PNG content 288 유지 + border 외부 추가 */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.main .c15_img1 img { width: 100%; }
+
+/* c15_img2 (absol image, parent=c15_stage, parentW:1922) — 육회 이미지 */
+.main .c15_img2 {
+    top: 25.931758vw;                    /* (17938-17444) / 1905 */
+    left: 65.608741%;                    /* (1260-(-1)) / 1922 */
+    width: 17.273673%;                   /* 332 / 1922 (PNG 원본) */
+    aspect-ratio: 332 / 394;             /* heightSource: con15_02.png 332×394 baked */
+    border: 1px solid #ffffff;
+    box-sizing: content-box;             /* PNG content 332 유지 + border 외부 추가 */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.main .c15_img2 img { width: 100%; }
+
+/* c15_line_v (absol deco, parent=c15_stage, parentW:1922) — 흰색 세로 라인 1px (우상귀) */
+.main .c15_line_v {
+    top: 0.104987vw;                     /* (17446-17444) / 1905 */
+    left: 88.397502%;                    /* (1697-(-1)) / 1922 — 4px 중심 → 1px 위치 보정 */
+    width: 0.052029%;                    /* 1 / 1922 — 1px 두께 (사용자 요청) */
+    aspect-ratio: 1 / 241;               /* heightSource: deco PSD 모양 21 1×241 (1px 두께) */
+    background: #ffffff;
+    z-index: 1;
+}
+
+/* c15_vtitle (absol image, parent=c15_stage, parentW:1922) — '그리고 함께할 시작' 세로 텍스트 */
+.main .c15_vtitle {
+    top: 14.278215vw;                    /* (17716-17444) / 1905 */
+    left: 86.888658%;                    /* (1669-(-1)) / 1922 */
+    width: 3.069719%;                    /* 59 / 1922 (PNG 원본) */
+    aspect-ratio: 59 / 534;              /* heightSource: con15_05.png 59×534 baked */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.main .c15_vtitle img { width: 100%; }
+
+/* c15_title (rltv group, parent=section, parentW:1905) — 좌측 큰 타이틀 wrapper */
+.main .c15_title {
+    margin-top: 10.708661vw;             /* (17648-17444) / 1905 */
+    align-self: flex-start;
+    margin-left: 11.548556%;             /* 220 / 1905 */
+    width: 21.679790%;                   /* (633-220) / 1905 — t1 left → t2 right */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+/* c15_title_t1 (rltv image, parent=c15_title, parentW:413) — '한 그릇에서' */
+.main .c15_title_t1 {
+    align-self: flex-start;
+    width: 67.070218%;                   /* 277 / 413 */
+    aspect-ratio: 277 / 58;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .c15_title_t1 img { width: 100%; }
+
+/* c15_title_t2 (rltv image, parent=c15_title, parentW:413) — '시작된 이야기' */
+.main .c15_title_t2 {
+    margin-top: 1.469816vw;              /* (17734-(17648+58)) / 1905 = 28 */
+    align-self: flex-start;
+    margin-left: 19.370460%;             /* (300-220)/413 — t1 대비 80px 들여쓰기 */
+    width: 80.629540%;                   /* 333 / 413 */
+    aspect-ratio: 333 / 58;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .c15_title_t2 img { width: 100%; }
+
+/* c15_desc (rltv text, parent=section, parentW:1905) — Pretendard 본문 */
+.main .c15_desc {
+    margin-top: 3.307087vw;              /* (17855-(17734+58)) / 1905 = 63 */
+    align-self: flex-start;
+    margin-left: 22.257218%;             /* 424 / 1905 */
+    width: 32.493438%;                   /* 619 / 1905 */
+    text-align: left;
+    font-family: var(--mf), sans-serif;
+    font-weight: 300;                    /* Pretendard Light */
+    font-size: 1.154856vw;               /* 22 / 1905 */
+    letter-spacing: -0.06em;
+    line-height: 1.455;
+    color: #ffffff;
+    z-index: 2;
+}
+.main .c15_desc b { font-weight: 700; } /* Pretendard Bold — 마지막 줄 강조 */
+
+/* ===== CON08: 시그니처 메뉴 탭 (좌:rltv heightChain / 우:absol image swap) ===== */
+.main .con8 {
+    background: #231916;
+    overflow: hidden;
+}
+
+/* c8_left_bg (absol image, parent=section, 좌측 다크+웨이브 패널) */
+.main .c8_left_bg {
+    top: 0.000000vw;
+    left: 0.000000%;                 /* PSD x:-1 ≈ 0 */
+    width: 50.393701%;               /* naturalWidth 960/1905 */
+    aspect-ratio: 960 / 900;         /* heightSource: con08_bg_2.jpg 960x900 baked */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+/* c8_right_bg (absol image, parent=section, 우측 다크+면추출 패널) */
+.main .c8_right_bg {
+    top: 0.000000vw;
+    left: 50.341207%;                /* 959/1905 */
+    width: 50.393701%;               /* naturalWidth 960/1905 */
+    aspect-ratio: 960 / 900;         /* heightSource: con08_bg_3.jpg 960x900 baked */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+/* c8_wave (absol image, parent=section, 좌측 패널 하단 wave deco) */
+.main .c8_wave {
+    top: 38.897638vw;                /* (9479-8738)/1905 */
+    left: -8.871391%;                /* -169/1905 */
+    width: 70.760630%;               /* 1348/1905 */
+    aspect-ratio: 1348 / 248;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* c8_left_inner (rltv wrapper, height-bearing — section 높이 끌고 가는 흐름) */
+.main .c8_left_inner {
+    align-self: flex-start;
+    width: 50.498688%;               /* 962/1905 */
+    padding-top: 14.488189vw;        /* 276/1905 panel top → first rltv */
+    padding-bottom: 13.066929vw;     /* 287/1905 → 유저 보정 13.07vw (좌측 inner height = 우측 패널 height과 시각 정렬) */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+/* c8_title — 시그니처부터 다양한 한 끼까지 (60px) */
+.main .c8_title {
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Eulyoo1945', serif;
+    font-weight: 600;
+    font-size: 3.149606vw;           /* 60/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.25;
+    color: #ffffff;
+}
+.main .c8_title_point {
+    color: #f8edd7;                  /* PSD #f8edd7 — '다양한 한 끼' 강조 */
+}
+
+/* c8_desc — 본문 설명 (22px) */
+.main .c8_desc {
+    margin-top: 1.994751vw;          /* 38/1905 */
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 300;
+    font-size: 1.154856vw;           /* 22/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.364;
+    color: #ffffff;
+}
+.main .c8_desc b {
+    font-weight: 700;
+}
+
+/* c8_buttons — 4개 탭 버튼 row */
+.main .c8_buttons {
+    margin-top: 3.254593vw;          /* 62/1905 */
+    align-self: center;
+    width: 66.424116%;               /* 639/962 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 0.262467vw;          /* 5/1905 */
+}
+
+/* c8_btn — 탭 버튼 (parent=c8_buttons, parentW=639) */
+.main .c8_btn {
+    width: 24.413146%;               /* 156/639 */
+    aspect-ratio: 156 / 54;
+    background: transparent;
+    border: 1px solid #f8edd7;
+    border-radius: 1.286089vw;       /* 24.5/1905 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.32s ease, color 0.32s ease, border-color 0.32s ease;
+}
+.main .c8_btn_text {
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Eulyoo1945', serif;
+    font-weight: 400;
+    font-size: 1.049869vw;           /* 20/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.5;
+    color: #f8edd7;
+    transition: color 0.32s ease;
+}
+.main .c8_btn.is-active {
+    background: #f8edd7;
+    border-color: #f8edd7;
+}
+.main .c8_btn.is-active .c8_btn_text {
+    color: #231916;
+}
+
+/* c8_right (absol wrapper, parent=section — 라벨/그릇 absol 컨테이너) */
+.main .c8_right {
+    top: 0.000000vw;
+    left: 50.341207%;                /* 959/1905 */
+    width: 50.498688%;               /* 962/1905 */
+    aspect-ratio: 962 / 903;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* c8_label (absol image, parent=c8_right, parentW=962 — JS src+state swap)
+   슬롯 너비/비율은 state별 원본 png 자연 크기 기준
+   가로 중앙정렬: left:50% + translateX(-50%) — 글자 수가 다른 라벨(2자/4자/5자)이
+   c8_right 안에서 항상 가로 중앙에 오도록 자동정렬 */
+.main .c8_label {
+    top: 10.393701vw;                /* (8933-8735)/1905 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75.987526%;               /* default = state01 naturalWidth 731/962 */
+    aspect-ratio: 731 / 156;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: width 0.32s ease;
+}
+.main .c8_label img { width: 100%; }
+.main .c8_label[data-c8-state="01"] { width: 75.987526%; aspect-ratio: 731 / 156; }   /* 육회막국수 731x156 */
+.main .c8_label[data-c8-state="02"] { width: 76.403326%; aspect-ratio: 735 / 158; }   /* 육회비빔밥 735x158 */
+.main .c8_label[data-c8-state="03"] { width: 29.833680%; aspect-ratio: 287 / 155; }   /* 육전 287x155 */
+.main .c8_label[data-c8-state="04"] { width: 60.914761%; aspect-ratio: 586 / 154; }   /* 수육국수 586x154 */
+
+/* c8_bowl (absol image, parent=c8_right, parentW=962 — JS src+state swap)
+   슬롯 너비/비율은 state별 원본 png 자연 크기 기준 */
+.main .c8_bowl {
+    top: 17.690289vw;                /* (9072-8735)/1905 */
+    left: 5.717256%;                 /* 55/962 */
+    width: 87.837838%;               /* default = state01 naturalWidth 845/962 */
+    aspect-ratio: 845 / 620;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: width 0.32s ease;
+}
+.main .c8_bowl img { width: 100%; }
+.main .c8_bowl[data-c8-state="01"] { width: 87.837838%; aspect-ratio: 845 / 620; }   /* 845x620 */
+.main .c8_bowl[data-c8-state="02"] { width: 88.877339%; aspect-ratio: 855 / 638; }   /* 855x638 */
+.main .c8_bowl[data-c8-state="03"] { width: 90.020790%; aspect-ratio: 866 / 621; }   /* 866x621 */
+.main .c8_bowl[data-c8-state="04"] { width: 90.124740%; aspect-ratio: 867 / 692; }   /* 867x692 */
+
+/* ===== CON07: 미디어 영상 Swiper (parent=section, parentW:1905) ===== */
+.main .con7 {
+    background: #fffdf5;
+    padding-top: 6.335958vw;         /* 유저 보정 — 시안 위 여백 톤 다운 */
+    padding-bottom: 5.354331vw;      /* 102/1905 */
+    overflow: hidden;
+}
+
+/* con7_bg (absol image, parent=section) — 흐릿한 인테리어 배경 */
+.main .con7_bg {
+    position: absolute;
+    top: 0;
+    left: -0.393701%;                /* -7.5/1905 — naturalW 정확 매칭용 음수 정렬 */
+    width: 100.787402%;              /* naturalW/1905 — 원본 폭 정확 일치 (뭉개짐 방지) */
+    aspect-ratio: 2 / 1;             /* heightSource: con07_bg.jpg natural 2:1 ratio baked interior photo bg */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    pointer-events: none;
+}
+.main .con7_bg img { width: 100%; }
+
+/* con7_title (rltv group, parent=section, parentW:1905) — 텍스트 묶음 */
+.main .con7_title {
+    position: relative;
+    margin-top: 0vw;
+    align-self: center;
+    width: 30.551181%;               /* 582/1905 */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+/* con7_top (rltv text, parent=con7_title, parentW=582) — kicker (TTOmniGothicM) */
+.main .con7_top {
+    margin-top: 0vw;
+    align-self: center;
+    width: 50.343643%;               /* 293/582 */
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'omnigothic', sans-serif;   /* TTOmniGothicM (PSD) → 210 OmniGothic kit (con1_kicker와 동일) */
+    font-weight: 400;                /* 030 = Regular (한 단계 낮춤 — con1_kicker와 동일 매핑) */
+    font-size: 1.574803vw;           /* 30/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.469816vw;         /* 28/1905 — con1_kicker와 동일 (타이트한 라벨 박스) */
+    color: #070707;
+}
+
+/* con7_headline (rltv text, parent=con7_title, parentW=582) — 60px headline */
+.main .con7_headline {
+    margin-top: 0.892388vw;          /* 17/1905 */
+    align-self: center;
+    width: 99.312715%;               /* 578/582 */
+    text-align: center;
+    white-space: nowrap;
+    font-family: var(--sf), serif;
+    font-weight: 600;
+    font-size: 3.149606vw;           /* 60/1905 */
+    letter-spacing: -0.05em;
+    line-height: 3.412073vw;         /* 65/1905 */
+    color: #070707;
+}
+.main .con7_headline_point { color: #5d2b0d; }
+
+/* con7_desc (rltv text, parent=con7_title, parentW=582) — 22px body, 2줄 br */
+.main .con7_desc {
+    margin-top: 1.784777vw;          /* 34/1905 */
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    font-family: var(--mf), sans-serif;
+    font-weight: 300;
+    font-size: 1.154856vw;           /* 22/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.575328vw;         /* 30/1905 (=22*1.364) */
+    color: #000000;
+}
+.main .con7_desc b { font-weight: 700; }
+
+/* con7_video_wrap (rltv group, parent=section, parentW:1905) — Swiper + 외부 nav */
+.main .con7_video_wrap {
+    position: relative;
+    margin-top: 2.152231vw;          /* 41/1905 */
+    align-self: center;
+    width: 46.824147%;               /* 892/1905 */
+    z-index: 1;
+    overflow: visible;               /* nav 버튼이 swiper 클립 영역 밖에 노출되도록 visible 유지 */
+}
+
+/* con7_swiper (rltv .swiper, parent=con7_video_wrap, parentW=892) — 영상 캐러셀 */
+.main .con7_swiper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 892 / 497;         /* heightSource: video iframe carousel panel 892x497 (PSD 사각형 12 복사 4) */
+    overflow: hidden;
+    background: #000000;
+}
+.main .con7_swiper .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.main .con7_swiper .swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .con7_swiper iframe {
+    width: 100%;
+    aspect-ratio: 892 / 497;         /* heightSource: youtube embed video aspect, fills .con7_swiper panel */
+    border: 0;
+    display: block;
+}
+
+/* con7_prev / con7_next (absol button, parent=con7_video_wrap, parentW=892) — swiper 클립 외부 */
+.main .con7_prev,
+.main .con7_next {
+    position: absolute;
+    top: 11.758530vw;                /* 224/1905 */
+    background: #231916;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.main .con7_prev {
+    left: -14.349776%;               /* (386-514)/892 */
+    width: 10.650224%;               /* 95/892 */
+    aspect-ratio: 95 / 48;           /* heightSource: PSD 사각형 14 95x48 button rect */
+}
+.main .con7_next {
+    left: 103.699552%;               /* (1439-514)/892 */
+    width: 10.874439%;               /* 97/892 */
+    aspect-ratio: 97 / 48;           /* heightSource: PSD 사각형 14 복사 97x48 button rect */
+}
+.main .con7_prev svg,
+.main .con7_next svg {
+    width: 40.000000%;               /* 38/95 = 40% — 버튼 가로 대비 화살표 폭 */
+    aspect-ratio: 38 / 16;
+    fill: #ffffff;
+}
+.main .con7_prev:hover,
+.main .con7_next:hover { background: #3a2a25; }
+
+/* ===== CON09: 차림표 (main_menu 게시판 연동, 3 카테고리 × Swiper) ===== */
+/* PSD 좌표: section 9475~10547이지만 con08과 9475~9638 영역 겹침 (overlap).
+   con09 visible 시작 = panel top 9632. → 섹션 padding-top/bottom 0으로 줄여 시안과 일치 */
+.main .con9 {
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+    padding-top: 0;                   /* visible start = panel top (con08과 9475~9638 겹침 처리) */
+    padding-bottom: 0;                /* panel bottom = section bottom — strip이 섹션 풀 높이 */
+    overflow: hidden;
+}
+
+/* c9_bg_left (absol image, parent=section, parentW=1905 — 좌측 strip 배경) */
+.main .c9_bg_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11.498688%;
+    aspect-ratio: 200 / 800;
+    z-index: 0;
+}
+.main .c9_bg_left img { width: 100%; }
+
+/* c9_bg_right (absol image, parent=section — 우측 strip 미러) */
+.main .c9_bg_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 11.498688%;                /* c9_bg_left와 동일 폭 */
+    aspect-ratio: 200 / 813;
+    z-index: 0;
+}
+.main .c9_bg_right img { width: 100%; }
+
+/* c9_panel (rltv heightChain wrapper, parent=section, parentW=1905 — 흰 메인 패널) */
+.main .c9_panel {
+    position: relative;
+    align-self: center;
+    width: 79.895013%;                /* 1522/1905 */
+    background: #ffffff;
+    border: 1px solid #231916;
+    box-sizing: border-box;
+    padding-top: 4.146982vw;          /* 79/1905 — panel top → badge top */
+    padding-bottom: 0;                /* 마지막 자식 .c9_nav bottom = panel bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+/* c9_badge (rltv image, parent=c9_panel, parentW=1522 — MENU 빨간 타원 완성형) */
+.main .c9_badge {
+    position: relative;
+    align-self: center;
+    width: 6.768725%;                 /* 103/1522 — naturalWidth */
+    aspect-ratio: 103 / 49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .c9_badge img { width: 100%; }
+
+/* c9_title (rltv text, parent=c9_panel — 차림표 제목 55px Eulyoo SemiBold) */
+.main .c9_title {
+    position: relative;
+    align-self: center;
+    margin-top: 2.782152vw;           /* (9807-9754)/1905 — badge bottom → title top */
+    font-family: var(--sf);
+    font-size: 2.887139vw;            /* 55/1905 */
+    font-weight: 600;
+    line-height: 1.182;
+    letter-spacing: -0.05em;
+    color: #5d2b0d;                   /* 미락육회막국수 — 갈색 */
+    text-align: center;
+    white-space: nowrap;
+}
+.main .c9_title .c9_title_right { color: #070707; }
+
+/* c9_tabs (rltv flex row, parent=c9_panel, parentW=1522 — 탭 wrapper 494px = 3*154+2*16) */
+.main .c9_tabs {
+    position: relative;
+    align-self: center;
+    margin-top: 1.417323vw;           /* 27/1905 — title bottom → tabs top */
+    width: 32.457293%;                /* 494/1522 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.839895vw;                  /* 16/1905 */
+}
+
+/* c9_tab — 공통 (parent=c9_tabs, parentW=494) */
+.main .c9_tab {
+    position: relative;
+    width: 31.174089%;                /* 154/494 */
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 50vw;              /* pill */
+    padding-top: 0.892388vw;          /* 17/1905 — vertical padding (53-19.95)/2/1905 */
+    padding-bottom: 0.892388vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.main .c9_tab_text {
+    position: relative;
+    font-family: var(--sf);
+    font-size: 1.047244vw;            /* 19.95/1905 */
+    font-weight: 600;
+    line-height: 1.455;
+    color: #231916;
+    white-space: nowrap;
+}
+/* 활성 탭 — bg #231916, 흰 글자, 보더 없음 (transparent로 두께 유지) */
+.main .c9_tab.is-active {
+    background: #231916;
+    border-color: transparent;
+}
+.main .c9_tab.is-active .c9_tab_text { color: #ffffff; }
+
+/* c9_swipers (rltv wrapper, parent=c9_panel, parentW=1522 — 카드열 1322px = 1621-299) */
+.main .c9_swipers {
+    position: relative;
+    align-self: center;
+    margin-top: 2.572178vw;           /* 49/1905 — tabs bottom → cards top */
+    width: 86.859396%;                /* 1322/1522 */
+    aspect-ratio: 1322 / 322;         /* heightSource: 카드열 1322×322 (PSD thumb 313×284 + name mt 20 + name h 18) */
+    overflow: hidden;
+}
+
+/* c9_swiper (rltv swiper, parent=c9_swipers, parentW=1322) */
+.main .c9_swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;                     /* heightSource: Swiper container = swiper wrapper */
+    display: none;                    /* default: 비활성 */
+}
+.main .c9_swiper.is-active { display: block; }
+
+/* c9_slide (swiper-slide, parent=swiper-wrapper, parentW=313 — 카드 1개) */
+.main .c9_swiper .swiper-slide.c9_slide {
+    position: relative;
+    width: 23.676248%;                /* 313/1322 — Swiper가 spaceBetween 처리 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* c9_slide_thumb (rltv image-wrapper, parent=swiper-slide, parentW=313 — 카드 사진) */
+.main .c9_slide_thumb {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 313 / 284;          /* heightSource: thumb rect 313x284 (PSD 사각형 840 복사 3-6) */
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main .c9_slide_thumb img {
+    width: 100%;                       /* 박스 width 채움. overflow:hidden으로 비율 안 맞을 때 잘림 */
+}
+
+/* c9_slide_name (rltv text, parent=swiper-slide — 메뉴명 라벨 SUIT 20.01px) */
+.main .c9_slide_name {
+    position: relative;
+    align-self: center;
+    margin-top: 1.049869vw;           /* 20/1905 — thumb bottom → name top */
+    font-family: var(--tf);
+    font-size: 1.050394vw;            /* 20.01/1905 */
+    font-weight: 400;
+    line-height: 1.45;
+    letter-spacing: -0.07em;
+    color: #000000;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* c9_nav (rltv flex row, parent=c9_panel, parentW=1522 — 좌/우 화살표 wrapper 188px) */
+.main .c9_nav {
+    position: relative;
+    align-self: center;
+    margin-top: 3.989501vw;           /* 76/1905 — name bottom → nav top */
+    width: 12.352168%;                /* 188/1522 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+/* c9_prev / c9_next (rltv image, parent=c9_nav, parentW=188 — 화살표 완성형) */
+.main .c9_prev,
+.main .c9_next {
+    position: relative;
+    width: 49.468085%;                /* 93/188 — naturalWidth */
+    aspect-ratio: 93 / 45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+.main .c9_prev img,
+.main .c9_next img { width: 100%; }
+.main .c9_prev:hover,
+.main .c9_next:hover { opacity: 0.85; }
+.main .c9_prev.swiper-button-disabled,
+.main .c9_next.swiper-button-disabled { opacity: 0.4; cursor: default; }
+
+/* ===== CON10: 리뷰 슬라이드 + 마퀴 (parent=section, canvas 1905) ===== */
+.main .con10 {
+    background: #ffffff;
+    padding-top: 9.291339vw;          /* PSD Y:10610-10433=177 / 1905 */
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+/* c10_deco wrapper — bg arch + 좌우 음식 데코 (absol layered) */
+.main .c10_deco {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* c10_bg — 갈색 띠 + 흰 곡선 윗면 (PSD Y:10433, full width) */
+.main .c10_bg {
+    top: 0;
+    left: -0.393701%;                 /* asset overflow / canvas 1905 */
+    width: 100.787402%;               /* asset full width / canvas 1905 */
+    aspect-ratio: 7.529412;           /* heightSource: con10_bg.jpg baked (asset W÷H) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* c10_food1 — 좌측 면 사진 (PSD x:-51, y:10543-10433=110) */
+.main .c10_food1 {
+    top: 5.774278vw;                  /* 110 / 1905 */
+    left: -2.677165%;                 /* -51 / 1905 */
+    width: 27.349081%;                /* 521 / 1905 (naturalWidth) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* c10_food2 — 우측 육회 사진 (PSD x:1408, y:10476-10433=43) */
+.main .c10_food2 {
+    top: 2.257218vw;                  /* 43 / 1905 */
+    left: 73.910761%;                 /* 1408 / 1905 */
+    width: 26.876640%;                /* 512 / 1905 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* c10_kicker "한 그릇의 기억," (rltv center, omnigothic 030) */
+.main .c10_kicker {
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'omnigothic', sans-serif;
+    font-weight: 400;                 /* 030 Regular */
+    font-size: 1.574803vw;            /* 30px / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.167;
+    color: #070707;
+    z-index: 1;
+}
+
+/* c10_title "리뷰로 남습니다" (rltv center, Eulyoo SemiBold) */
+.main .c10_title {
+    margin-top: 0.734908vw;           /* gap 14 / 1905 */
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Eulyoo1945', serif;
+    font-weight: 600;
+    font-size: 3.149606vw;            /* 60px / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.083;
+    color: #070707;
+    z-index: 1;
+}
+.main .c10_title_t1 { color: #5d2b0d; }   /* "리뷰" 강조색 */
+
+/* c10_desc (rltv center, Pretendard Light/Bold) */
+.main .c10_desc {
+    margin-top: 1.732283vw;           /* gap 33 / 1905 */
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Pretendard Variable', sans-serif;
+    font-weight: 300;
+    font-size: 1.154856vw;            /* 22px / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.364;
+    color: #000000;
+    z-index: 1;
+}
+.main .c10_desc b { font-weight: 700; }
+
+/* c10_reviews wrapper — Swiper 가로 슬라이드 컨테이너 */
+.main .c10_reviews {
+    margin-top: 0.944882vw;           /* gap 18 / 1905 */
+    align-self: center;
+    width: 100%;
+    z-index: 1;
+}
+.main .c10_reviews_swiper {
+    width: 100%;
+    overflow: visible;                /* 양옆 카드 살짝 보이도록 */
+}
+.main .c10_reviews_swiper .swiper-wrapper {
+    align-items: stretch;
+}
+
+/* c10_review_card — figure panel (사각형 843 285x384, 이미지만 단순 슬라이드) */
+.main .c10_review_card {
+    width: 14.960630% !important;     /* 285 / canvas (Swiper auto width override) */
+    aspect-ratio: 285 / 384;          /* heightSource: 사각형843 baked card panel */
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 1vw;
+}
+.main .c10_review_card img { width: 100%; }
+
+/* c10_marquee — 무한 롤링 갈색 띠 (PSD 사각형 847 1905x83 fill:#816a4e) */
+.main .c10_marquee {
+    margin-top: 6.089239vw;           /* gap 116 / 1905 */
+    align-self: center;
+    width: 100%;
+    aspect-ratio: 1905 / 83;          /* heightSource: 사각형 847 strip */
+    background: #816a4e;              /* PSD 사각형 847 fill */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.main .c10_marquee_track {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: max-content;
+    animation: marquee 25s linear infinite;   /* -50% loop — 4 items 중 첫 set만큼만 이동 → 우측 공백 없음 */
+}
+.main .c10_marquee_item {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0 2.624672vw;            /* 50px / 1905 양옆 여백 */
+    white-space: nowrap;
+    font-family: 'omnigothic', sans-serif;
+    font-weight: 400;
+    font-size: 0.944882vw;            /* 18px / 1905 */
+    letter-spacing: -0.03em;
+    line-height: 1;
+    color: #ffffff;
+}
+.main .c10_marquee_item b {
+    font-weight: 600;                 /* TTOmniGothicEB → omnigothic 050 (kit max) */
+}
+
+/* ===== CON13: 본사 지원 시스템 (left height basis + right scroll track) ===== */
+.main .con13 {
+    background: #f8f4e6 url('/images/con13_bg.jpg') center center / cover no-repeat;
+    padding-top: 9.391076vw;
+    padding-bottom: 46.622047vw;      /* right card travel + 3vw release breathing room */
+    overflow: hidden;
+    --c13-stage-y: 0.000000vw;
+    --c13-track-y: 0.000000vw;
+}
+.main .con13::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 52.808399vw;              /* 1006 / 1905 — visible fixed stage height */
+    flex: 0 0 auto;
+}
+
+.main .c13_scroll_stage {
+    position: absolute;
+    top: 9.391076vw;
+    left: 0.000000%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+    will-change: auto;
+}
+.main .con13.is-c13-pinned .c13_scroll_stage {
+    position: fixed;
+    top: 0.000000vw;
+    left: 0.000000%;
+}
+.main .con13.is-c13-after .c13_scroll_stage {
+    position: absolute;
+    top: 56.013123vw;                 /* padding-top 9.391076 + pin range 46.622047 */
+    left: 0.000000%;
+}
+
+.main .c13_left_stack {
+    margin-top: 3.089239vw;
+    margin-left: -2.467192%;          /* -47 / 1905 */
+    align-self: flex-start;
+    width: 44.304462%;                /* 844 / 1905 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.main .c13_left_copy {
+    margin-top: 0;
+    margin-left: 34.004739%;          /* 287 / 844 */
+    width: 59.597156%;                /* 503 / 844 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main .c13_kicker,
+.main .c13_headline,
+.main .c13_desc,
+.main .c13_card_title,
+.main .c13_card_body {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.main .c13_kicker {
+    margin-top: 0;
+    margin-left: 0.198807%;           /* 1 / 503 */
+    width: 79.324056%;                /* 399 / 503 */
+    height: 1.522310vw;               /* 29 / 1905 */
+    white-space: nowrap;
+    font-family: 'omnigothic', sans-serif;
+    font-weight: 400;
+    font-size: 1.574803vw;            /* 30 / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: #070707;
+}
+
+.main .c13_headline {
+    margin-top: 0.892388vw;           /* 17 / 1905 */
+    margin-left: 0.198807%;           /* 1 / 503 */
+    width: 89.463221%;                /* 450 / 503 */
+    height: 3.097113vw;               /* 59 / 1905 */
+    white-space: nowrap;
+    font-family: 'Eulyoo1945', serif;
+    font-weight: 600;
+    font-size: 3.149606vw;            /* 60 / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.083;
+    color: #070707;
+}
+.main .c13_headline_point { color: #5d2b0d; }
+
+.main .c13_desc {
+    margin-top: 1.732283vw;           /* 33 / 1905 */
+    width: 100%;
+    height: 2.624672vw;               /* 50 / 1905 */
+    white-space: nowrap;
+    font-family: 'Pretendard Variable', sans-serif;
+    font-weight: 300;
+    font-size: 1.154856vw;            /* 22 / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.364;
+    color: #000000;
+}
+.main .c13_desc b { font-weight: 700; }
+
+.main .c13_food_clip {
+    margin-top: 4.934383vw;           /* 94 / 1905 */
+    width: 100%;
+    height: 31.916010vw;              /* 608 / 1905 — crops 11px from 619px asset */
+    overflow: hidden;
+}
+.main .c13_food_img {
+    margin-top: 0;
+    width: 100%;
+}
+.main .c13_food_img img { width: 100%; display: block; }
+
+.main .c13_right_viewport {
+    top: 0;
+    left: 54.488189%;                 /* 1038 / 1905 */
+    width: 40.104987%;                /* 764 / 1905 */
+    height: 52.808399vw;              /* 1006 / 1905 */
+    overflow: hidden;
+    z-index: 2;
+}
+
+.main .c13_card_track {
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate3d(0, var(--c13-track-y), 0);
+    will-change: transform;
+}
+
+.main .c13_card {
+    width: 100%;
+    height: 31.653543vw;              /* 603 / 1905 */
+    background: #ffffff;
+    border: 1px solid #bfa78a;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .c13_card2,
+.main .c13_card3 {
+    margin-top: 0.734908vw;           /* 14 / 1905 */
+}
+
+.main .c13_card_tab {
+    margin-top: 0;
+    align-self: center;
+}
+.main .c13_card1_tab { width: 26.570681%; }   /* 203 / 764 */
+.main .c13_card2_tab { width: 33.115183%; }   /* 253 / 764 */
+.main .c13_card3_tab { width: 32.068063%; }   /* 245 / 764 */
+.main .c13_card_tab img { width: 100%; display: block; }
+
+.main .c13_card_photo {
+    margin-top: 2.104987vw;           /* 유저 보정 — 카드 상단 여백 확보 */
+    align-self: center;
+    width: 70.997375%;                /* 541 / 762 content box after 1px borders */
+    margin-bottom: -2vw;              /* 유저 보정 — 다음 요소와 겹쳐 시각 압축 */
+}
+.main .c13_card_photo img { width: 100%; display: block; }
+
+.main .c13_card_title {
+    margin-top: 4.146982vw;           /* 79 / 1905 */
+    align-self: center;
+    height: 3.412073vw;               /* 65 / 1905 */
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'omnigothic', sans-serif;
+    font-weight: 400;
+    font-size: 1.469816vw;            /* 28 / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.357;
+    color: #000000;
+}
+.main .c13_card_title b { font-weight: 500; }
+.main .c13_card1_title { width: 39.528796%; } /* 302 / 764 */
+.main .c13_card2_title { width: 25.523560%; } /* 195 / 764 */
+.main .c13_card3_title { width: 33.246073%; } /* 254 / 764 */
+
+.main .c13_card_body {
+    margin-top: 1.522310vw;           /* 29 / 1905 */
+    align-self: center;
+    height: 5.301837vw;               /* 101 / 1905 */
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'Pretendard Variable', sans-serif;
+    font-weight: 300;
+    font-size: 0.944882vw;            /* 18 / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.556;
+    color: #000000;
+}
+.main .c13_card_body b { font-weight: 700; }
+.main .c13_card1_body { width: 71.596859%; } /* 547 / 764 */
+.main .c13_card2_body { width: 74.345550%; } /* 568 / 764 */
+.main .c13_card3_body { width: 61.649215%; } /* 471 / 764 */
+
+/* ===== CON12: 맛을 만드는 세 가지 고집 ===== */
+.main .con12 {
+    background: #f8f4e6;
+    padding-top: 7.296588vw;          /* pt: (12478 - 12339) / 1905 */
+    padding-bottom: 6.981627vw;       /* pb: (13279 - 13146) / 1905 */
+    overflow: hidden;
+}
+
+.main .con12_bg {
+    top: 0.000000vw;
+    bottom: 0.000000vw;
+    left: -0.104987%;
+    width: 100.787402%;
+    background: url('/images/con12_bg.jpg') top center / 100% auto no-repeat;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.main .con12_title {
+    margin-top: 0.000000vw;
+    margin-left: 0.000000%;
+    align-self: center;
+    width: 30.603675%;                /* 583 / 1905 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.main .con12_kicker {
+    margin-top: 0.000000vw;
+    margin-left: 0.000000%;
+    align-self: center;
+    font-family: 'omnigothic', sans-serif;
+    font-weight: 400;
+    font-size: 1.574803vw;            /* 30 / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.469816vw;          /* 28 / 1905 */
+    color: #070707;
+    white-space: nowrap;
+}
+
+.main .con12_headline {
+    margin-top: 1.154856vw;           /* 22 / 1905 */
+    margin-left: 0.000000%;
+    align-self: center;
+    font-family: var(--sf);
+    font-weight: 600;
+    font-size: 3.149606vw;            /* 60 / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 3.097113vw;          /* 59 / 1905 */
+    color: #070707;
+    text-align: center;
+    white-space: nowrap;
+}
+.main .con12_headline_point {
+    color: #5d2b0d;
+}
+
+.main .con12_accordion {
+    margin-top: 2.887139vw;           /* 55 / 1905 */
+    margin-left: 0.000000%;
+    align-self: center;
+    width: 69.396325%;                /* 1322 / 1905 */
+    aspect-ratio: 1322 / 504;         /* heightSource: PSD first target accordion row 1322x504 */
+    z-index: 2;
+    overflow: visible;
+}
+
+.main .con12_card {
+    top: 0.000000vw;
+    bottom: 0.000000vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #231916;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    outline: none;
+    transition: left 0.68s cubic-bezier(0.22, 0.61, 0.36, 1),
+                width 0.68s cubic-bezier(0.22, 0.61, 0.36, 1),
+                background 0.48s ease;
+}
+.main .con12_card_noodle {
+    border-radius: 1.574803vw 0 0 1.574803vw;       /* 30 / 1905 */
+    z-index: 1;
+}
+.main .con12_card_beef {
+    border-radius: 0;
+    z-index: 2;
+}
+.main .con12_card_sauce {
+    border-radius: 0 1.574803vw 1.574803vw 0;       /* 30 / 1905 */
+    z-index: 3;
+}
+.main .con12_card.is-active {
+    background: #ffffff;
+}
+.main .con12_card:focus-visible {
+    outline: 2px solid #5d2b0d;
+    outline-offset: -2px;
+}
+
+.main .con12_accordion[data-active="1"] .con12_card_noodle {
+    left: 0.000000%;
+    width: 78.971256%;                /* 1044 / 1322 */
+}
+.main .con12_accordion[data-active="1"] .con12_card_beef {
+    left: 78.517398%;                 /* 1038 / 1322 */
+    width: 10.892587%;                /* 144 / 1322 */
+}
+.main .con12_accordion[data-active="1"] .con12_card_sauce {
+    left: 89.107413%;                 /* 1178 / 1322 */
+    width: 10.892587%;                /* 144 / 1322 */
+}
+.main .con12_accordion[data-active="2"] .con12_card_noodle {
+    left: 0.000000%;
+    width: 10.892587%;                /* 144 / 1322 */
+}
+.main .con12_accordion[data-active="2"] .con12_card_beef {
+    left: 10.665658%;                 /* 141 / 1322 */
+    width: 78.971256%;                /* 1044 / 1322 */
+}
+.main .con12_accordion[data-active="2"] .con12_card_sauce {
+    left: 89.258699%;                 /* 1180 / 1322 */
+    width: 10.892587%;                /* 144 / 1322 */
+}
+.main .con12_accordion[data-active="3"] .con12_card_noodle {
+    left: 0.000000%;
+    width: 10.892587%;                /* 144 / 1322 */
+}
+.main .con12_accordion[data-active="3"] .con12_card_beef {
+    left: 10.590015%;                 /* 140 / 1322 */
+    width: 10.892587%;                /* 144 / 1322 */
+}
+.main .con12_accordion[data-active="3"] .con12_card_sauce {
+    left: 21.028744%;                 /* 278 / 1322 */
+    width: 78.971256%;                /* 1044 / 1322 */
+}
+
+.main .con12_badge {
+    top: 0.000000vw;
+    left: 2.257218vw;                 /* 43/1905 — 캔버스 절대값 (카드 width %와 디커플) */
+    width: 2.939633vw;                /* 56/1905 — 시각 크기 고정 */
+    aspect-ratio: 56 / 47;            /* heightSource: PSD number badge 56x47 */
+    background: #f8f4e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.68s cubic-bezier(0.22, 0.61, 0.36, 1),
+                background 0.42s ease;
+    z-index: 5;
+}
+.main .con12_card_sauce .con12_badge {
+    left: 2.309711vw;                 /* 44/1905 */
+}
+.main .con12_card.is-active .con12_badge {
+    left: 5.144357vw;                 /* 98/1905 */
+    background: #231916;
+}
+
+.main .con12_badge_text {
+    top: 0.682415vw;                  /* 13 / 1905 */
+    left: 26.785714%;                 /* 15 / 56 */
+    font-family: 'omnigothic', sans-serif;
+    font-weight: 600;
+    font-size: 1.154856vw;            /* 22 / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.102362vw;          /* 21 / 1905 */
+    color: #231916;
+    white-space: nowrap;
+    transition: color 0.42s ease;
+}
+.main .con12_card_noodle .con12_badge_text {
+    left: 32.142857%;                 /* 18 / 56 */
+}
+.main .con12_card.is-active .con12_badge_text {
+    color: #ffffff;
+}
+
+.main .con12_card_img {
+    opacity: 0;
+    transform: translateX(4.199475vw);
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.42s ease,
+                transform 0.72s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.main .con12_card.is-active .con12_card_img {
+    opacity: 1;
+    transform: translateX(0.000000vw);
+    transition-delay: 0.10s;
+}
+.main .con12_card_img img {
+    width: 100%;
+}
+.main .con12_card_img_noodle {
+    top: -6.981627vw;                 /* -133 / 1905 */
+    left: 53.927203%;                 /* 563 / 1044 */
+    width: 27.769029vw;               /* 529 / 1905 */
+}
+.main .con12_card_img_beef {
+    top: -12.283465vw;                /* -234 / 1905 */
+    left: 54.406130%;                 /* 568 / 1044 */
+    width: 33.228346vw;               /* 633 / 1905 */
+}
+.main .con12_card_img_sauce {
+    top: -4.776903vw;                 /* -91 / 1905 */
+    left: 52.394636%;                 /* 547 / 1044 */
+    width: 40.629921vw;               /* 774 / 1905 */
+}
+
+.main .con12_card_text {
+    top: 6.614173vw;                  /* 126 / 1905 */
+    left: 9.770115%;                  /* 102 / 1044 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
+    transform: translateY(1.049869vw);
+    z-index: 3;
+    pointer-events: none;
+    transition: opacity 0.44s ease 0s,
+                transform 0.58s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+}
+.main .con12_card.is-active .con12_card_text {
+    opacity: 1;
+    transform: translateY(0.000000vw);
+    transition-delay: 0.16s;
+}
+.main .con12_text_noodle {
+    width: 43.390805%;                /* 453 / 1044 */
+}
+.main .con12_text_beef {
+    width: 47.892720%;                /* 500 / 1044 */
+}
+.main .con12_text_sauce {
+    width: 54.406130%;                /* 568 / 1044 */
+}
+
+.main .con12_card_title {
+    margin-top: 0.000000vw;
+    margin-left: 0.000000%;
+    align-self: flex-start;
+    font-family: var(--sf);
+    font-weight: 600;
+    font-size: 1.889764vw;            /* 36 / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.837270vw;          /* 35 / 1905 */
+    color: #000000;
+    white-space: nowrap;
+}
+.main .con12_card_title .con12_accent {
+    color: #5d2b0d;
+}
+
+.main .con12_card_rule {
+    margin-top: 1.522310vw;           /* 29 / 1905 */
+    margin-left: 0.000000%;
+    align-self: flex-start;
+    height: 0;
+    border-top: 1px solid #e7e2dc;
+}
+.main .con12_rule_noodle,
+.main .con12_rule_sauce {
+    width: 66.475096%;                /* 694 / 1044 */
+}
+.main .con12_rule_beef {
+    width: 77.681992%;                /* 811 / 1044 */
+}
+
+.main .con12_card_sub {
+    margin-top: 5.354331vw;           /* 102 / 1905 */
+    margin-left: 0.000000%;
+    align-self: flex-start;
+    font-family: 'omnigothic', sans-serif;
+    font-weight: 500;                  /* 600 → 500 (한 단계 낮춤) */
+    font-size: 1.259843vw;            /* 24 / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.207349vw;          /* 23 / 1905 */
+    color: #000000;
+    white-space: nowrap;
+}
+
+.main .con12_card_body {
+    margin-top: 1.207349vw;           /* 23 / 1905 */
+    margin-left: 0.000000%;
+    align-self: flex-start;
+    font-family: var(--mf);
+    font-weight: 300;
+    font-size: 0.944882vw;            /* 18 / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.469816vw;          /* 28 / 1905 */
+    color: #000000;
+    white-space: nowrap;
+}
+
+.main .con12_vertical {
+    left: 37.500000%;                 /* 54 / 144 */
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: var(--sf);
+    font-weight: 600;
+    font-size: 1.889764vw;            /* 36 / 1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.837270vw;          /* 35 / 1905 */
+    color: #f8f4e6;
+    white-space: nowrap;
+    opacity: 1;
+    transform: translateY(0.000000vw);
+    z-index: 4;
+    pointer-events: none;
+    transition: opacity 0.34s ease,
+                transform 0.48s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.main .con12_card.is-active .con12_vertical {
+    opacity: 0;
+    transform: translateY(1.049869vw);
+}
+.main .con12_vertical_noodle {
+    top: 11.076115vw;                 /* 211 / 1905 */
+}
+.main .con12_vertical_beef {
+    top: 14.593176vw;                 /* 278 / 1905 */
+}
+.main .con12_vertical_sauce {
+    top: 16.377953vw;                 /* 312 / 1905 */
+}
+
+/* ===== CON14: 공간이 매출을 만듭니다 (인테리어 슬라이드) ===== */
+.main .con14 {
+    background: #ffffff;
+    padding-top: 0vw;
+    padding-bottom: 2.359580vw;       /* 유저 보정 — slider bottom과 베이지 strip 끝 시각 정렬 */
+    overflow: hidden;
+}
+
+/* c14_bottom_strip (absol rect, parent=section) — 하단 베이지 strip */
+.main .c14_bottom_strip {
+    top: 31.968504vw;                 /* (17113-16504)/1905 */
+    left: -0.052493%;                 /* PSD x:-1 */
+    width: 100.892388%;               /* PSD w:1922 */
+    aspect-ratio: 1922 / 334;
+    background: #e2d4c4;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* c14_divider1 (rltv rect, parent=section, 상단 두꺼운 dark line) */
+.main .c14_divider1 {
+    align-self: center;
+    margin-top: 0vw;
+    width: 100.892388%;               /* PSD w:1922 */
+    aspect-ratio: 1922 / 12;
+    background: #231916;
+    z-index: 1;
+}
+
+/* c14_divider2 (rltv rect, parent=section, 상단 얇은 dark line) */
+.main .c14_divider2 {
+    align-self: center;
+    margin-top: 0.157480vw;           /* 3/1905 (16519-16516 gap) */
+    width: 100.892388%;               /* PSD w:1922 */
+    aspect-ratio: 1922 / 4;
+    background: #231916;
+    z-index: 1;
+}
+
+/* c14_title_group (rltv wrapper, parent=section) — kicker+title+desc heightChain 그룹 */
+.main .c14_title_group {
+    margin-top: 5.931759vw;           /* 113/1905 (16636-16523) */
+    align-self: center;
+    width: 30.0000%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.main .c14_kicker {
+    margin-top: 0vw;
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'omnigothic', sans-serif;
+    font-weight: 400;                 /* TTOmniGothicM → omnigothic 030 */
+    font-size: 1.574803vw;            /* 30/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: #070707;
+}
+
+.main .c14_title {
+    margin-top: 0.944882vw;           /* 18/1905 */
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Eulyoo1945', serif;
+    font-weight: 600;
+    font-size: 3.149606vw;            /* 60/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: #070707;
+}
+.main .c14_title_point {
+    color: #5d2b0d;                   /* PSD '공간' #5d2b0d */
+}
+
+.main .c14_desc {
+    margin-top: 1.732283vw;           /* 33/1905 */
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 300;                 /* Pretendard-Light */
+    font-size: 1.154856vw;            /* 22/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.364;
+    color: #000000;
+}
+.main .c14_desc b {
+    font-weight: 700;                 /* Pretendard-Bold */
+}
+
+/* c14_slider (rltv wrapper, parent=section) — Swiper 9 slides centered */
+.main .c14_slider {
+    margin-top: 0.314961vw;           /* 6/1905 (16830-16824) */
+    align-self: center;
+    width: 100%;
+    aspect-ratio: 1905 / 553;         /* heightSource: PSD slide visible 738x553 (frame-clipped) */
+    z-index: 3;
+}
+.main .c14_swiper {
+    width: 100%;
+    height: 100%;
+    overflow: visible;                /* 좌우 부분 노출 — section overflow:hidden로 cropping */
+}
+.main .c14_swiper .swiper-wrapper {
+    align-items: center;
+}
+.main .c14_slide {
+    width: 38.740157%;                /* PSD slide w:738 */
+    aspect-ratio: 738 / 553;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .c14_slide img {
+    width: 100%;
+}
+
+/* ===== CON18: 매장 안내 (main_shop 게시판 연동) ===== */
+.main .con18 {
+    background: #ffffff;
+    padding-top: 5.784777vw;          /* 유저 보정 — 이전 섹션과 시각 간격 확보 */
+    padding-bottom: 0vw;
+    overflow: hidden;
+}
+
+/* c18_watermark (absol, "善美樂" 좌상단 워터마크, parent=section) */
+.main .c18_watermark {
+    position: absolute;
+    top: 0vw;
+    left: -1.364829%;                 /* -26/1905 */
+    width: 27.559055%;                /* 525/1905 */
+    aspect-ratio: 525 / 175;          /* heightSource: PSD 善美樂 watermark 525x175 baked */
+    text-align: left;
+    font-family: var(--ff), 'Noto Serif KR', serif;   /* HanWangZonYi → Noto Serif KR fallback */
+    font-weight: 400;
+    font-size: 9.700787vw;            /* 184.8/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.167;
+    color: #f3eee5;                   /* PSD #231916 → 흰배경에서 워터마크 톤 다운 */
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* c18_title (rltv text, parent=section, parentW:1905) — 매장 안내 60px */
+.main .c18_title {
+    position: relative;
+    margin-top: 0vw;
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: var(--sf), 'Eulyoo1945', serif;
+    font-weight: 600;
+    font-size: 3.149606vw;            /* 60/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1.083;
+    color: #070707;
+    z-index: 1;
+}
+.main .c18_title_point { color: #5d2b0d; }
+
+/* c18_panel (rltv group, parent=section, parentW:1905) — 패널 wrap 1565x654 */
+.main .c18_panel {
+    position: relative;
+    margin-top: 3.517060vw;           /* 67/1905 */
+    align-self: center;
+    width: 82.152231%;                /* 1565/1905 */
+    aspect-ratio: 1565 / 654;         /* heightSource: PSD 사각형 579 복사 1565x654 dark wrap */
+    background: #000000;
+    overflow: visible;                /* search 가 panel top 위로 -35 overflow */
+    z-index: 1;
+}
+
+/* c18_search (absol, parent=c18_panel, parentW:1565) — input + 검색버튼 결합 */
+.main .c18_search {
+    position: absolute;
+    top: -1.837270vw;                 /* -35/1905 (panel top 기준 negative) */
+    left: 24.345048%;                 /* 381/1565 */
+    width: 56.038339%;                /* 877/1565 (입력 804 + 버튼 73) */
+    aspect-ratio: 877 / 74;           /* heightSource: PSD 검색 row 877x74 */
+    background: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 3;
+}
+.main .c18_input {
+    flex: 1;
+    width: auto;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0 1.469816vw;            /* 28/1905 좌우 padding */
+    background: transparent;
+    font-family: var(--sf), 'Eulyoo1945', serif;
+    font-weight: 400;
+    font-size: 0.944882vw;            /* 18/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: #070707;
+    box-sizing: border-box;
+}
+.main .c18_input::placeholder {
+    color: #999999;
+    font-family: var(--sf), 'Eulyoo1945', serif;
+    font-weight: 400;
+}
+.main .c18_search_btn {
+    width: 8.323831%;                 /* 73/877 */
+    aspect-ratio: 1 / 1;              /* heightSource: PSD 검색버튼 73x73 정사각 */
+    background: #231916;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.main .c18_search_btn img {
+    width: 38.356164%;                /* 28/73 */
+    aspect-ratio: 1 / 1;
+    min-width: unset;
+}
+
+/* c18_list (absol, parent=c18_panel, parentW:1565) — 좌측 흰배경 매장 리스트 (커스텀 스크롤바) */
+.main .c18_list {
+    position: absolute;
+    top: 0vw;
+    left: 0%;
+    width: 25.814696%;                /* 404/1565 */
+    aspect-ratio: 404 / 654;          /* heightSource: PSD 사각형 579 white list 404x654 */
+    background: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;            /* Firefox */
+    scrollbar-color: #5d2b0d transparent;
+    z-index: 2;
+}
+/* 커스텀 스크롤바 (PSD 사각형 580 갈색 thumb 8x234 베이스) */
+.main .c18_list::-webkit-scrollbar {
+    width: 0.419948vw;                /* 8/1905 */
+}
+.main .c18_list::-webkit-scrollbar-track {
+    background: transparent;
+}
+.main .c18_list::-webkit-scrollbar-thumb {
+    background: #5d2b0d;
+    border-radius: 0.131234vw;        /* 2.5/1905 */
+}
+.main .c18_list::-webkit-scrollbar-thumb:hover {
+    background: #6f3a18;
+}
+
+/* c18_store (rltv card, parent=c18_list, parentW:404) — 매장 카드 */
+.main .c18_store {
+    position: relative;
+    width: 100%;
+    padding: 2.362205vw 3.149606vw;   /* 45 상하 / 60 좌우 */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.main .c18_store:hover { background: #faf8f3; }
+.main .c18_store.is-active { background: #faf8f3; }
+
+.main .c18_store_info {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.main .c18_name {
+    margin-top: 0vw;
+    align-self: flex-start;
+    text-align: left;
+    white-space: nowrap;
+    font-family: var(--tf), 'SUIT', sans-serif;
+    font-weight: 700;
+    font-size: 0.997375vw;            /* 19/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: #070707;
+}
+.main .c18_addr {
+    margin-top: 0.787402vw;           /* 15/1905 (20643-20628) */
+    align-self: flex-start;
+    text-align: left;
+    white-space: nowrap;
+    font-family: var(--tf), 'SUIT', sans-serif;
+    font-weight: 400;
+    font-size: 0.892388vw;            /* 17/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: #555555;
+}
+.main .c18_tel {
+    margin-top: 0.472441vw;           /* 9/1905 (20669-20660) */
+    align-self: flex-start;
+    text-align: left;
+    white-space: nowrap;
+    font-family: var(--tf), 'SUIT', sans-serif;
+    font-weight: 200;
+    font-size: 0.682415vw;            /* 13/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: #555555;
+}
+
+/* c18_plus (rltv flex item, parent=c18_store) — + 펼치기 버튼 38x38 dark circle */
+.main .c18_plus {
+    position: relative;
+    flex-shrink: 0;
+    align-self: center;
+    width: 9.405941%;                 /* 38/404 */
+    aspect-ratio: 1 / 1;
+    background: #231916;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--tf), 'SUIT', sans-serif;
+    font-weight: 400;
+    font-size: 0.682415vw;            /* 13/1905 */
+    line-height: 1;
+    color: #ffffff;
+}
+
+/* c18_divider (rltv, parent=c18_list) — 회색 hairline (border 패턴) */
+.main .c18_divider {
+    position: relative;
+    align-self: center;
+    width: 81.435644%;                /* 329/404 */
+    height: 0;
+    border-top: 1px solid #e8e2d4;
+    margin: 0;
+}
+
+.main .c18_noshop {
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 5.249344vw;           /* 100/1905 */
+    white-space: nowrap;
+    font-family: var(--tf), 'SUIT', sans-serif;
+    font-weight: 400;
+    font-size: 0.892388vw;            /* 17/1905 */
+    color: #999999;
+}
+.main .c18_noshop.hide { display: none; }
+
+/* c18_map (absol, parent=c18_panel, parentW:1565) — 우측 카카오맵 영역 */
+.main .c18_map {
+    position: absolute;
+    top: 0vw;
+    left: 25.814696%;                 /* 404/1565 */
+    width: 74.185304%;                /* 1161/1565 */
+    aspect-ratio: 1161 / 654;         /* heightSource: kakao map container 1161x654 fills panel right */
+    background: #1a1a1a;
+    z-index: 2;
+}
+
+/* c18_marquee (rltv, parent=section, parentW:1905) — 하단 GRAND OPEN 무한 슬라이드 */
+.main .c18_marquee {
+    position: relative;
+    margin-top: 4.671916vw;           /* 89/1905 */
+    align-self: flex-start;
+    margin-left: -0.052493%;          /* -1/1905 */
+    width: 100.892388%;                /* PSD strip width (1905 + overflow) / 1905 */
+    aspect-ratio: 1905 / 82;          /* heightSource: PSD marquee strip baked (canvas 1905 ratio ≈ PSD 1922x83 strip) */
+    background: #85613e;
+    overflow: hidden;
+    z-index: 1;
+}
+.main .c18_marquee_track {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    animation: c18MarqueeScroll 30s linear infinite;
+    will-change: transform;
+}
+.main .c18_marquee_strip {
+    flex-shrink: 0;
+    padding: 0 1.049869vw;            /* 20/1905 좌우 strip 끝 여백 */
+    text-align: left;
+    white-space: nowrap;
+    font-family: var(--sf), 'Eulyoo1945', serif;
+    font-weight: 600;
+    font-size: 1.154856vw;            /* 22/1905 */
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: #ffffff;
+}
+@keyframes c18MarqueeScroll {
+    from { transform: translate3d(0, 0, 0); }
+    to   { transform: translate3d(-50%, 0, 0); }
+}
+
+/* c18 popup overlay */
+.main .c18_popup_overlay,
+.c18_popup_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.c18_popup_overlay.hide { display: none; }
+.c18_popup {
+    position: relative;
+    width: 41.994751%;                /* 800/1905 */
+    aspect-ratio: 800 / 460;          /* heightSource: popup card 800x460 fixed dialog */
+    background: #ffffff;
+    border-radius: 0.524934vw;        /* 10/1905 */
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+}
+.c18_popup_close {
+    position: absolute;
+    top: 0.787402vw;                  /* 15/1905 */
+    right: 0.787402vw;
+    width: 1.574803vw;                /* 30/1905 */
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    line-height: 1.574803vw;
+    font-size: 1.574803vw;
+    color: #231916;
+    cursor: pointer;
+    z-index: 2;
+}
+.c18_popup_photo {
+    width: 50%;
+    aspect-ratio: 400 / 460;
+    background: #f3eee5;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c18_popup_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.c18_popup_info {
+    position: relative;
+    width: 50%;
+    padding: 2.099738vw 2.099738vw 2.099738vw 2.099738vw;   /* 40/1905 사방 */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.c18_popup_name {
+    text-align: left;
+    white-space: nowrap;
+    font-family: var(--sf), 'Eulyoo1945', serif;
+    font-weight: 600;
+    font-size: 1.679790vw;            /* 32/1905 */
+    color: #5d2b0d;
+}
+.c18_popup_addr {
+    margin-top: 1.049869vw;
+    text-align: left;
+    white-space: nowrap;
+    font-family: var(--tf), 'SUIT', sans-serif;
+    font-weight: 400;
+    font-size: 0.944882vw;            /* 18/1905 */
+    color: #555555;
+}
+.c18_popup_tel {
+    margin-top: 0.524934vw;
+    text-align: left;
+    white-space: nowrap;
+    font-family: var(--tf), 'SUIT', sans-serif;
+    font-weight: 700;
+    font-size: 0.944882vw;
+    color: #070707;
+}
+.c18_popup_naver {
+    margin-top: 1.574803vw;
+    text-align: left;
+    white-space: nowrap;
+    font-family: var(--tf), 'SUIT', sans-serif;
+    font-weight: 600;
+    font-size: 0.892388vw;            /* 17/1905 */
+    color: #5d2b0d;
+    text-decoration: none;
+    cursor: pointer;
+}
+.c18_popup_naver:hover { text-decoration: underline; }
+
+/* c18 kakao map 마커 (kakao CustomOverlay 내부 동적 inject) */
+.c18_marker {
+    position: relative;
+    width: 4.304461vw;                /* 82/1905 */
+    aspect-ratio: 1 / 1;              /* heightSource: con18_04.png 82x82 baked marker pin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+}
+.c18_marker img { width: 100%; }
+
+/* ===== CON19: 창업 문의 폼 (좌 텍스트 + 우 흰 폼 panel) ===== */
+.main .con19 {
+    position: relative;
+    width: 100%;
+    background: #000000;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+/* c19_bg (absol image, parent=section — section visible 풀 cover) */
+.main .c19_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100.787402%;                /* naturalWidth/캔버스 */
+    aspect-ratio: 2 / 1;
+    z-index: 0;
+}
+.main .c19_bg img { width: 100%; }
+
+/* c19_left_inner (rltv heightChain wrapper — section height 962px bearing) */
+.main .c19_left_inner {
+    position: relative;
+    align-self: flex-start;
+    margin-top: 0;
+    width: 100%;
+    padding-top: 17.322835vw;          /* 330/1905 — bg top → text top */
+    padding-bottom: 16.215223vw;       /* 시안 매칭 — 아래 여백 축소 */
+    padding-left: 15.748032%;          /* 300/1905 — 좌측 콘텐츠 x */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+/* c19_title — "미락육회막국수와<br>함께 시작해보세요" (rltv, parent=left_inner) */
+.main .c19_title {
+    position: relative;
+    margin-top: 0;
+    font-family: var(--sf);
+    font-size: 3.149606vw;             /* 60/1905 */
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.05em;
+    color: #f8edd7;
+    text-align: left;
+    white-space: nowrap;
+}
+.main .c19_title_t1 { color: #f8edd7; }
+.main .c19_title_t2 { color: #ffffff; }
+
+/* c19_desc — Pretendard 20px (rltv, parent=left_inner) */
+.main .c19_desc {
+    position: relative;
+    margin-top: 2.204724vw;            /* 42/1905 — title bottom → desc top */
+    font-family: var(--mf);
+    font-size: 1.049869vw;             /* 20/1905 */
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    text-align: left;
+    white-space: nowrap;
+}
+.main .c19_desc b { font-weight: 700; }
+
+/* c19_form (absol panel, parent=section — 흰 폼 박스, 섹션 높이 풀 fit) */
+.main .c19_form {
+    position: absolute;
+    top: 0;                            /* section top과 일치 — 섹션 풀 높이 채움 */
+    bottom: 0;                         /* section bottom과 일치 */
+    left: 50.341207%;                  /* 959/1905 */
+    width: 41.102362%;                 /* 783/1905 */
+    background: #ffffff;
+    box-sizing: border-box;
+    padding-top: 8.286089vw;           /* 시안 매칭 — 위 여백 축소 */
+    padding-bottom: 10.812336vw;       /* 206/1905 */
+    padding-left: 6.500639%;
+    padding-right: 6.500639%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    z-index: 2;
+}
+/* c19_form 내부 좌우 vertical 라인 (PSD 모양 22 4px / 모양 22 복사 3px — 폼 박스 안쪽 deco) */
+.main .c19_form::before,
+.main .c19_form::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #f8edd7;
+    z-index: 0;
+}
+.main .c19_form::before {
+    left: 1.404853%;                   /* 11/783 — 폼 좌단 안쪽 */
+    width: 0.510856%;                  /* 4/783 */
+}
+.main .c19_form::after {
+    right: 1.277139%;                  /* 10/783 */
+    width: 0.383142%;                  /* 3/783 */
+}
+.main .c19_form > * { position: relative; z-index: 1; }
+
+/* c19_field — 공통 (rltv, parent=c19_form, parentW=547) */
+.main .c19_field {
+    position: relative;
+    width: 100%;
+    margin-top: 1.889764vw;            /* 36/1905 — line end → 다음 라벨 (시안 시각 매칭) */
+}
+.main .c19_field:first-child { margin-top: 0; }
+
+/* c19_field_label — "성함", "연락처" 등 (rltv, parent=c19_field — typekit omnigothic) */
+.main .c19_field_label {
+    position: relative;
+    margin-top: 0;
+    font-family: 'omnigothic', sans-serif;   /* PSD: TTOmniGothicB → typekit kit wkl2ctu (한 단계 낮춤) */
+    font-size: 1.049869vw;             /* 20/1905 */
+    font-weight: 500;                  /* TTOmniGothicB → typekit 050 medium */
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #231916;
+    text-align: left;
+    white-space: nowrap;
+}
+.main .c19_req {
+    color: #a4202c;
+    margin-right: 0.524934vw;          /* 10/1905 */
+}
+
+/* c19_field_input — input/select/textarea 공통 (label-line 사이 24px gap에 떠있음) */
+.main .c19_field_input {
+    width: 100%;
+    margin-top: 1.259843vw;            /* 24/1905 — label end → input */
+    padding: 0;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-family: var(--mf);
+    font-size: 1.049869vw;             /* 20/1905 */
+    font-weight: 400;
+    line-height: 1;                    /* 24px label-line gap 안에 fit */
+    letter-spacing: -0.05em;
+    color: #231916;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: text;
+}
+.main .c19_field textarea.c19_field_input {
+    resize: none;
+    overflow: hidden;
+}
+.main .c19_field select.c19_field_input {
+    cursor: pointer;
+    background-image: linear-gradient(45deg, transparent 50%, #231916 50%), linear-gradient(135deg, #231916 50%, transparent 50%);
+    background-position: calc(100% - 0.524934vw) 50%, calc(100% - 0.262467vw) 50%;
+    background-size: 0.262467vw 0.262467vw, 0.262467vw 0.262467vw;
+    background-repeat: no-repeat;
+}
+
+/* c19_field_line — underline 1px shape line (cssShape, rltv, parent=c19_field) */
+.main .c19_field_line {
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    height: 1px;                       /* heightSource: hr-style underline 1px (cssShape exception) */
+    background: #231916;
+}
+
+/* c19_field_radio — 라디오 필드는 라벨+라디오 한 줄 layout */
+.main .c19_field_radio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main .c19_field_radio .c19_field_label {
+    margin-right: 2.099738vw;          /* 40/1905 — 라벨 → 라디오 그룹 */
+}
+/* c19_field_radios — 라디오 group (flex row) */
+.main .c19_field_radios {
+    position: relative;
+    margin-top: 0;                     /* 한 줄 layout이므로 위 여백 없음 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.099738vw;                   /* 40/1905 — 유 ↔ 무 */
+}
+.main .c19_field_radio .c19_field_line {
+    flex-basis: 100%;                  /* 라인은 다음 줄로 */
+    margin-top: 1.259843vw;            /* 24/1905 — 라디오 아래 line gap */
+}
+.main .c19_radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.787402vw;                   /* 15/1905 */
+    cursor: pointer;
+}
+.main .c19_radio input[type="radio"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+.main .c19_radio_dot {
+    width: 1.417323vw;                 /* 27/1905 */
+    aspect-ratio: 1 / 1;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .c19_radio_dot::after {
+    content: '';
+    width: 0.892388vw;                 /* 17/1905 — heightSource: inner dot 17 */
+    aspect-ratio: 1 / 1;
+    background: #231916;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.2s;
+}
+.main .c19_radio input[type="radio"]:checked + .c19_radio_dot::after {
+    transform: scale(1);
+}
+.main .c19_radio_text {
+    font-family: var(--mf);
+    font-size: 1.049869vw;
+    font-weight: 300;
+    line-height: 1.45;
+    letter-spacing: -0.05em;
+    color: #000000;
+    white-space: nowrap;
+}
+
+/* c19_consent — 동의 체크박스 (rltv, parent=c19_form) */
+.main .c19_consent {
+    position: relative;
+    align-self: flex-end;
+    margin-top: 1.049869vw;            /* 20/1905 */
+    display: flex;
+    align-items: center;
+    gap: 0.524934vw;
+    cursor: pointer;
+}
+.main .c19_consent input[type="checkbox"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+.main .c19_consent_box {
+    width: 0.944882vw;                 /* 18/1905 */
+    aspect-ratio: 1 / 1;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .c19_consent_box::after {
+    content: '';
+    width: 0.524934vw;
+    aspect-ratio: 1 / 1;
+    background: #231916;
+    transform: scale(0);
+    transition: transform 0.2s;
+}
+.main .c19_consent input[type="checkbox"]:checked + .c19_consent_box::after {
+    transform: scale(1);
+}
+.main .c19_consent_text {
+    font-family: var(--mf);
+    font-size: 0.839895vw;             /* 16/1905 */
+    font-weight: 300;
+    line-height: 1.45;
+    letter-spacing: -0.05em;
+    color: #000000;
+    white-space: nowrap;
+}
+
+/* c19_submit — 문의하기 버튼 (rltv panel, parent=c19_form) */
+.main .c19_submit {
+    position: relative;
+    margin-top: 0.997375vw;            /* 19/1905 */
+    width: 100%;
+    aspect-ratio: 545 / 73;            /* heightSource: button rect 545x73 (PSD 사각형 585) */
+    background: #231916;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s;
+}
+.main .c19_submit:hover { background: #3a2a25; }
+.main .c19_submit_text {
+    font-family: var(--sf);
+    font-size: 1.259843vw;             /* 24/1905 */
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    white-space: nowrap;
+}

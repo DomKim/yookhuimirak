@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   GNUBoard Board Admin Theme (brd_admin.css)
+   Target: #brd-container
+   Design: Perfect Alignment, No Vertical Text
+   ========================================================================== */
+
+#brd-container {
+    font-family: "Pretendard Variable", "Pretendard", "Malgun Gothic", sans-serif !important;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.04);
+    padding: 30px;
+    margin-top: 20px;
+    color: #333;
+    box-sizing: border-box;
+    font-size: 13px;
+    position: relative;
+}
+#brd-container * { box-sizing: border-box; }
+#brd-container a { text-decoration: none; color: inherit; }
+
+/* --- 상단 검색 영역 --- */
+#brd-container .brd-top-area {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 20px; flex-wrap: wrap; gap: 15px;
+}
+#brd-container .brd-total-count { font-size: 15px; font-weight: 700; color: #333; }
+#brd-container .brd-total-count b { color: #3235cd; }
+
+#brd-container .brd-search-box { display: flex; align-items: center; gap: 6px; }
+
+/* 입력창 & 셀렉트 */
+#brd-container .brd-select, 
+#brd-container .brd-input-text {
+    height: 36px; padding: 0 10px; border: 1px solid #ddd; border-radius: 6px;
+    font-size: 13px; color: #333; background: #fff; vertical-align: middle;
+}
+#brd-container .brd-input-text { width: 200px; }
+
+/* ★★★ [검색] 버튼 (줄바꿈 방지 추가) ★★★ */
+#brd-container .brd-btn-search {
+    height: 36px; padding: 0 16px; background: #333; color: #fff; border: none;
+    border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer;
+    white-space: nowrap; /* 텍스트 수직 방지 */
+}
+
+/* ★★★ [전체목록] 버튼 (줄바꿈 방지 추가) ★★★ */
+#brd-container .brd-btn-list {
+    display: inline-flex; align-items: center; justify-content: center;
+    height: 36px; padding: 0 16px; background: #fff; border: 1px solid #ccc;
+    border-radius: 6px; color: #555; font-weight: 600; margin-left: 4px;
+    white-space: nowrap; /* 텍스트 수직 방지 */
+}
+
+/* --- 그리드 리스트 (테이블 대체) --- */
+#brd-container .brd-list-wrap {
+    width: 100%; overflow-x: auto; margin-bottom: 30px;
+    border: 1px solid #e5e7eb; border-radius: 8px; background: #fff;
+}
+
+#brd-container .brd-grid-row {
+    display: grid;
+    /* 컬럼 너비 */
+    grid-template-columns: 
+        50px 120px 130px 140px 140px 
+        minmax(250px, 1fr) 
+        60px 60px 60px 60px 
+        60px 60px 70px 100px 120px;
+    min-width: 1600px;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+/* 헤더 */
+#brd-container .brd-list-head {
+    background: #f8f9fa; position: sticky; top: 0; z-index: 10;
+    font-weight: 700; color: #555; border-bottom: 1px solid #e5e7eb;
+}
+#brd-container .brd-list-head .brd-col {
+    padding: 12px 5px; text-align: center;
+    display: flex; align-items: center; justify-content: center;
+    border-right: 1px solid #f1f3f5; background: #f8f9fa;
+    white-space: nowrap; /* 헤더 텍스트 줄바꿈 방지 */
+}
+
+/* 바디 */
+#brd-container .brd-list-row { transition: background 0.15s; }
+#brd-container .brd-list-row:hover { background: #f8fbff; }
+#brd-container .brd-list-row .brd-col {
+    padding: 8px 5px; color: #333;
+    display: flex; align-items: center; justify-content: center;
+    border-right: 1px solid transparent;
+    white-space: nowrap; /* 리스트 내용 줄바꿈 방지 */
+}
+
+/* 폼 요소 공통 */
+#brd-container .brd-input-sm,
+#brd-container select {
+    width: 100%; height: 32px; padding: 0 6px; 
+    border: 1px solid #dce1e6; border-radius: 4px; 
+    font-size: 13px; text-align: center; background: #fff;
+    color: #444;
+}
+#brd-container .brd-input-sm:focus,
+#brd-container select:focus {
+    border-color: #3235cd; outline: none; box-shadow: 0 0 0 2px rgba(50, 53, 205, 0.1);
+}
+#brd-container .full_input { text-align: left; padding-left: 8px; }
+
+/* 링크 및 버튼 */
+#brd-container .link-table { color: #3235cd; font-weight: 700; }
+#brd-container .link-table:hover { text-decoration: underline; }
+
+#brd-container .btn-manage-group { display: flex; gap: 4px; width: 100%; justify-content: center; }
+#brd-container .btn-mini {
+    padding: 0 10px; height: 28px; line-height: 26px; border-radius: 4px; 
+    font-size: 12px; display: inline-block; border: 1px solid #ddd; 
+    background: #fff; color: #555; white-space: nowrap; /* 버튼 텍스트 줄바꿈 방지 */
+}
+#brd-container .btn-mini:hover { border-color: #333; color: #333; background: #f8f9fa; }
+#brd-container .btn-mini.copy { color: #1971c2; border-color: #d0ebff; background: #e7f5ff; }
+#brd-container .btn-mini.copy:hover { border-color: #1971c2; background: #1971c2; color: #fff; }
+
+/* --- 하단 고정 액션바 --- */
+#brd-container .brd-bottom-fixed {
+    position: sticky; bottom: 20px; left: 0; right: 0;
+    background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);
+    padding: 15px 25px; border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+    display: flex; justify-content: space-between; align-items: center;
+    margin-top: 20px; border: 1px solid #e5e7eb; z-index: 100;
+}
+#brd-container .btn-action {
+    height: 40px; padding: 0 20px; border-radius: 8px; font-weight: 700; font-size: 14px;
+    cursor: pointer; border: none; transition: 0.2s; white-space: nowrap;
+}
+#brd-container .btn-save { background: #3235cd; color: #fff; }
+#brd-container .btn-save:hover { background: #2629a8; transform: translateY(-1px); }
+#brd-container .btn-del { background: #fff; color: #fa5252; border: 1px solid #fa5252; margin-left: 8px; }
+#brd-container .btn-del:hover { background: #fff5f5; }
+#brd-container .btn-add {
+    background: #333; color: #fff; display: inline-flex; align-items: center; gap: 6px;
+    height: 40px; padding: 0 20px; border-radius: 8px; font-weight: 700; white-space: nowrap;
+}
+#brd-container .btn-add:hover { background: #555; transform: translateY(-1px); }
+
+/* --- 페이지네이션 --- */
+#brd-container .brd-paging-wrap { margin: 40px 0 60px; text-align: center; }
+#brd-container .pg_wrap { display: inline-block; }
+#brd-container .pg_page, #brd-container .pg_current {
+    display: inline-flex; justify-content: center; align-items: center; width: 34px; height: 34px;
+    border-radius: 8px; margin: 0 2px; text-decoration: none; border: 1px solid #eee;
+    color: #666; font-size: 13px; font-weight: 600; background: #fff; transition: 0.2s;
+}
+#brd-container .pg_current { background: #3235cd; color: #fff; border-color: #3235cd; }
+#brd-container .pg_page:hover { background: #f8f9fa; color: #333; border-color: #ccc; }
+
+/* 아이콘 대체 */
+#brd-container .pg_start, #brd-container .pg_prev, 
+#brd-container .pg_next, #brd-container .pg_end { text-indent: -9999px; position: relative; background: #fcfcfc; }
+#brd-container .pg_start::after, #brd-container .pg_prev::after,
+#brd-container .pg_next::after, #brd-container .pg_end::after {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    text-indent: 0; font-size: 16px; font-weight: 400; color: #999;
+}
+#brd-container .pg_start::after { content: '«'; }
+#brd-container .pg_prev::after  { content: '‹'; }
+#brd-container .pg_next::after  { content: '›'; }
+#brd-container .pg_end::after   { content: '»'; }
+
+/* 반응형 */
+@media (max-width: 900px) {
+    #brd-container { padding: 20px 15px; }
+    #brd-container .brd-top-area { flex-direction: column; align-items: flex-start; }
+    #brd-container .brd-search-box { width: 100%; flex-wrap: wrap; }
+    #brd-container .brd-input-text { flex: 1; }
+    
+    #brd-container .brd-bottom-fixed { flex-direction: column-reverse; gap: 10px; position: static; margin-top: 30px; box-shadow: none; background: #f9f9f9; }
+    #brd-container .left-btn, #brd-container .btn-add { width: 100%; text-align: center; }
+    #brd-container .btn-action { width: 100%; justify-content: center; }
+    #brd-container .btn-del { margin: 10px 0 0 0 !important; width: 100%; }
+}

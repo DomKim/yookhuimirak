@@ -1,0 +1,489 @@
+{
+  "generatedBy": "spec-to-plan v3 + AI structural correction",
+  "strictStructure": true,
+  "section": "con05",
+  "sectionClass": "con5",
+  "page": "main",
+  "specFile": ".planning/con05/spec.json",
+  "canvas": 1905,
+  "rawSectionY": { "top": 4568, "bottom": 7017, "height": 2449 },
+  "sectionY": { "top": 4568, "bottom": 7017, "height": 2449 },
+  "bg": "#bfa78a",
+  "bgRect": { "top": 4568, "bottom": 6971 },
+  "effectiveEnd": 6971,
+  "prevSectionBottom": 4571,
+  "firstRltvY": 4724,
+  "pt": "8.188976vw",
+  "pb": "9.448819vw",
+  "heightChain": [
+    "pt",
+    "c5_kicker",
+    "c5_title",
+    "c5_desc",
+    "c5_cards",
+    "pb"
+  ],
+  "availableImages": [
+    { "file": "con05_01_1.png", "width": 79, "height": 45, "sourceType": "완성형 — 01 번호 뱃지" },
+    { "file": "con05_01_2.png", "width": 892, "height": 450, "sourceType": "완성형 — 카드01 좌측 메인 이미지" },
+    { "file": "con05_02_1.png", "width": 79, "height": 45, "sourceType": "완성형 — 02 번호 뱃지" },
+    { "file": "con05_02_2.png", "width": 438, "height": 327, "sourceType": "완성형 — 카드02 음식 이미지 1" },
+    { "file": "con05_02_3.png", "width": 653, "height": 368, "sourceType": "완성형 — 카드02 음식 이미지 2" },
+    { "file": "con05_02_4.png", "width": 555, "height": 289, "sourceType": "완성형 — 카드02 음식 이미지 3" },
+    { "file": "con05_03_1.png", "width": 79, "height": 45, "sourceType": "완성형 — 03 번호 뱃지" },
+    { "file": "con05_03_2.jpg", "width": 1440, "height": 450, "sourceType": "완성형 — 카드03 풀블리드 배경" },
+    { "file": "con05_04_1.png", "width": 79, "height": 45, "sourceType": "완성형 — 04 번호 뱃지" },
+    { "file": "con05_04_2.jpg", "width": 1440, "height": 450, "sourceType": "완성형 — 카드04 풀블리드 배경" },
+    { "file": "con05_04_3.png", "width": 218, "height": 218, "sourceType": "완성형 — HALL/홀 원형" },
+    { "file": "con05_04_4.png", "width": 218, "height": 218, "sourceType": "완성형 — PICK UP/포장 원형" },
+    { "file": "con05_04_5.png", "width": 218, "height": 218, "sourceType": "완성형 — DELIVERY/배달 원형" },
+    { "file": "con05_04_6.png", "width": 155, "height": 104, "sourceType": "완성형 — 재방문율 80% 빨간 말풍선" },
+    { "file": "con05_04_7.png", "width": 155, "height": 104, "sourceType": "완성형 — 재구매율 60% 빨간 말풍선" },
+    { "file": "con05_04_8.png", "width": 14, "height": 14, "sourceType": "빈 PNG — 사용 안 함" }
+  ],
+  "ignoredShapes": [
+    { "name": "사각형 8", "reason": "Section background #bfa78a (1922x2403) — implemented as section.con5 bg color." },
+    { "name": "사각형 8 복사", "reason": "Inner cream panel #f8f4e6 — implemented as c5_panel deco absol layer." },
+    { "name": "사각형 9", "reason": "Card 01 white background — implemented as c5_card1 bg color." },
+    { "name": "사각형 9 복사", "reason": "Card 02 dark background #231916 — implemented as c5_card2 bg color." },
+    { "name": "사각형 9 복사 3", "reason": "Card 03 white background hidden under full-bleed image — c5_card3 bg + c5_c3_bg." },
+    { "name": "사각형 9 복사 2", "reason": "Card 04 black background hidden under full-bleed image — c5_card4 bg + c5_c4_bg." },
+    { "name": "사각형 10", "reason": "Card 01 number badge bg — baked into /images/con05_01_1.png." },
+    { "name": "사각형 10 복사", "reason": "Card 02 number badge bg — baked into /images/con05_02_1.png." },
+    { "name": "사각형 10 복사 2", "reason": "Card 03 number badge bg — baked into /images/con05_03_1.png." },
+    { "name": "사각형 10 복사 3", "reason": "Card 04 number badge bg — baked into /images/con05_04_1.png." },
+    { "name": "타원 4 복사 2", "reason": "Card 04 HALL circle bg — baked into /images/con05_04_3.png." },
+    { "name": "타원 4 복사 3", "reason": "Card 04 PICK UP circle bg — baked into /images/con05_04_4.png." },
+    { "name": "타원 4 복사 4", "reason": "Card 04 DELIVERY circle bg — baked into /images/con05_04_5.png." },
+    { "name": "사각형 11", "reason": "Card 04 red bubble (재구매율 60%) — baked into /images/con05_04_7.png." },
+    { "name": "사각형 11 복사", "reason": "Card 04 red bubble (재방문율 80%) — baked into /images/con05_04_6.png." }
+  ],
+  "ignoredTexts": [
+    { "name": "01", "reason": "Baked into number badge image /images/con05_01_1.png." },
+    { "name": "02", "reason": "Baked into number badge image /images/con05_02_1.png." },
+    { "name": "03", "reason": "Baked into number badge image /images/con05_03_1.png." },
+    { "name": "04", "reason": "Baked into number badge image /images/con05_04_1.png." },
+    { "name": "HALL", "reason": "Baked into circle image /images/con05_04_3.png." },
+    { "name": "홀", "reason": "Baked into circle image /images/con05_04_3.png." },
+    { "name": "PICK UP", "reason": "Baked into circle image /images/con05_04_4.png." },
+    { "name": "포장", "reason": "Baked into circle image /images/con05_04_4.png." },
+    { "name": "DELIVERY", "reason": "Baked into circle image /images/con05_04_5.png." },
+    { "name": "배달", "reason": "Baked into circle image /images/con05_04_5.png." },
+    { "name": "재구매율", "reason": "Baked into red bubble image /images/con05_04_7.png." },
+    { "name": "60%", "reason": "Baked into red bubble image /images/con05_04_7.png." },
+    { "name": "재방문율", "reason": "Baked into red bubble image /images/con05_04_6.png." },
+    { "name": "80%", "reason": "Baked into red bubble image /images/con05_04_6.png." }
+  ],
+  "ignoredAssets": [
+    { "name": "레이어 20", "file": "TODO", "reason": "Smart-object placeholder duplicating con05_03_2.jpg coverage; visible card 03 bg uses /images/con05_03_2.jpg." },
+    { "name": "Gemini_Generated_Image_e081lse081lse081", "file": "/images/con05_04_2.jpg", "reason": "Card 04 full-bleed background — used by c5_c4_bg." },
+    { "name": "22734023", "file": "/images/con05_03_2.jpg", "reason": "Card 03 full-bleed background — used by c5_c3_bg." },
+    { "name": "con05_04_8.png", "file": "/images/con05_04_8.png", "reason": "Empty/transparent placeholder; '+' marks rendered as CSS text." }
+  ],
+  "roundNumberOverride": [
+    "100.000000% — full-bleed card 03/04 background images intentionally span the full card width.",
+    "0.000000% — full-bleed background images anchor at card left edge.",
+    "0.000000vw — full-bleed background images anchor at card top edge.",
+    "0vw — c5_panel decoration starts at section top (no offset)."
+  ],
+  "doNot": [
+    "Do not code before ASCII approval.",
+    "Do not use section height or aspect-ratio on section.con5; visible height comes from rltv heightChain.",
+    "Do not put bg, panel, or badge/circle/bubble PNG decorations into the rltv heightChain.",
+    "Do not rebuild HALL/홀/PICK UP/포장/DELIVERY/배달/재구매율/재방문율/60%/80%/01/02/03/04 in HTML; baked into PNGs.",
+    "Do not use object-fit on images.",
+    "Do not use child margin-left to fake centering for header texts; use section flex align-items:center + alignSelf:center.",
+    "Do not hide or reinterpret <br> structure inside card titles/descriptions.",
+    "Do not add CSS shadow/radius over the complete badge/circle/bubble PNGs.",
+    "Do not omit overflow:hidden on cards; card 02 food images and card 03/04 backgrounds intentionally extend slightly beyond card bounds.",
+    "Do not collapse the inner cream panel into section bg; the 19px beige outer frame is part of the design.",
+    "Do not treat the yellow designer comments ('음식 하나씩 나오는 모션', '동동모션') as visual elements."
+  ],
+  "ascii": "section.con5 (bg:#bfa78a, visible 1905x2449)\\n  c5_panel absol parent=section top:0 left:0.997% width:98.794% bottom:2.414vw bg:#f8f4e6 (deco)\\npt 8.188976vw\\n  c5_kicker rltv alignSelf:center mt 0 nowrap — '흔들림 없이 이어온 맛'\\n  c5_title rltv alignSelf:center mt 0.892vw nowrap — '한 그릇에 담은 ' + '정성' (color split)\\n  c5_desc rltv alignSelf:center mt 1.732vw nowrap — Pretendard mixed Light/Bold\\n  c5_cards rltv alignSelf:center mt 2.520vw width 75.80% (group of 4 card panels stacked, gap 1.050vw)\\n    c5_card1 rltv mt 0 AR 1444/454 bg:#fff overflow:hidden (image L + text R)\\n    c5_card2 rltv mt 1.050vw AR bg:#231916 overflow:hidden (text L + 3 food imgs R)\\n    c5_card3 rltv mt 1.050vw AR overflow:hidden (full-bleed 제면머신 + text R)\\n    c5_card4 rltv mt 1.050vw AR overflow:hidden (full-bleed 매장 + text L + 3way R + red bubbles)\\npb 9.448819vw",
+  "elements": [
+    {
+      "name": "c5_panel",
+      "type": "rect",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "0vw",
+      "left": "0.997375%",
+      "width": "98.793963%",
+      "bottom": "2.414698vw",
+      "fill": "#f8f4e6",
+      "borderRadius": null,
+      "effects": null,
+      "psdY": 4568,
+      "role": "deco",
+      "allowLayered": true,
+      "allowSiblingOverlay": true,
+      "siblingOverlayReason": "Inner cream panel sits behind all rltv content as decorative inset (사각형 8 복사 1882x2403) under the #bfa78a frame."
+    },
+    {
+      "name": "c5_kicker",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0vw",
+      "alignSelf": "center",
+      "whiteSpace": "nowrap",
+      "content": "흔들림 없이 이어온 맛",
+      "segments": [
+        { "text": "흔들림 없이 이어온 맛", "fontFamily": "TTOmniGothicM", "cssFontFamily": "var(--tf)", "fontWeight": 400, "fontSize": "1.574803vw (30px)", "lineHeight": 2.167, "letterSpacing": "-0.05em", "color": "#070707" }
+      ],
+      "effects": null,
+      "psdY": 4724
+    },
+    {
+      "name": "c5_title",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0.892388vw",
+      "alignSelf": "center",
+      "whiteSpace": "nowrap",
+      "content": "한 그릇에 담은 정성",
+      "segments": [
+        { "text": "한 그릇에 담은 ", "fontFamily": "Eulyoo1945-SemiBold", "cssFontFamily": "var(--sf)", "fontWeight": 600, "fontSize": "3.149606vw (60px)", "lineHeight": 1.083, "letterSpacing": "-0.05em", "color": "#070707" },
+        { "text": "정성", "fontFamily": "Eulyoo1945-SemiBold", "cssFontFamily": "var(--sf)", "fontWeight": 600, "fontSize": "3.149606vw (60px)", "lineHeight": 1.083, "letterSpacing": "-0.05em", "color": "#5d2b0d" }
+      ],
+      "effects": null,
+      "psdY": 4771
+    },
+    {
+      "name": "c5_desc",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "1.732283vw",
+      "alignSelf": "center",
+      "whiteSpace": "nowrap",
+      "textAlign": "center",
+      "content": "좋은 재료를 고르고, 불필요한 것을 덜어내고, 시간을 들여 완성하는 과정까지\n우리는 그 기본을 지키는 데 집중합니다",
+      "segments": [
+        { "text": "좋은 재료를 고르고, 불필요한 것을 덜어내고, 시간을 들여 완성하는 과정까지\n", "fontFamily": "Pretendard-Light", "cssFontFamily": "var(--mf)", "fontWeight": 300, "fontSize": "1.154856vw (22px)", "lineHeight": 1.364, "letterSpacing": "-0.05em", "color": "#000000" },
+        { "text": "우리는 그 기본을 지키는 데 집중", "fontFamily": "Pretendard-Bold", "cssFontFamily": "var(--mf)", "fontWeight": 700, "fontSize": "1.154856vw (22px)", "lineHeight": 1.364, "letterSpacing": "-0.05em", "color": "#000000" },
+        { "text": "합니다", "fontFamily": "Pretendard-Light", "cssFontFamily": "var(--mf)", "fontWeight": 300, "fontSize": "1.154856vw (22px)", "lineHeight": 1.364, "letterSpacing": "-0.05em", "color": "#000000" }
+      ],
+      "effects": null,
+      "psdY": 4863
+    },
+    {
+      "name": "c5_cards",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "2.519685vw",
+      "alignSelf": "center",
+      "width": "75.800525%",
+      "psdY": 4961,
+      "effects": null,
+      "heightChain": [
+        "c5_card1",
+        "c5_card2",
+        "c5_card3",
+        "c5_card4"
+      ],
+      "children": [
+        {
+          "name": "c5_card1",
+          "type": "group",
+          "position": "rltv",
+          "parent": "c5_cards",
+          "parentWidth": 1444,
+          "marginTop": "0vw",
+          "width": "100%",
+          "aspectRatio": "1444/454",
+          "heightSource": "card panel rect 1444x454",
+          "heightSourceReason": "PSD 사각형 9 (1444x454, fill #fff) is the explicit visible card panel; aspect-ratio derived directly from PSD rect dimensions to lock card height as a real visible box.",
+          "bg": "#ffffff",
+          "overflow": "hidden",
+          "allowSingleSceneOverlayReason": "Card 01 is a fixed visible panel (1444x454) with a left half-bleed image, a number badge fixed to the top-left corner, and right-side title/desc text positioned at PSD coordinates. The card height is owned by the panel rect aspect-ratio; all visual elements are absolute overlays on top of the white panel by design.",
+          "allowLayered": true,
+          "allowSiblingOverlay": true,
+          "siblingOverlayReason": "Number badge slightly overlaps the image top-left corner inside the card; intentional PSD layout.",
+          "psdY": 4961,
+          "effects": null,
+          "children": [
+            { "name": "c5_c1_img", "type": "image", "position": "absol", "parent": "c5_card1", "parentWidth": 1444, "top": "0.104987vw", "left": "0.138504%", "width": "61.772853%", "aspectRatio": "892/450", "src": "/images/con05_01_2.png", "naturalWidth": 892, "naturalHeight": 450, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 4963 },
+            { "name": "c5_c1_badge", "type": "image", "position": "absol", "parent": "c5_card1", "parentWidth": 1444, "top": "0.183727vw", "left": "0.207756%", "width": "5.470914%", "aspectRatio": "79/45", "src": "/images/con05_01_1.png", "naturalWidth": 79, "naturalHeight": 45, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 4963 },
+            {
+              "name": "c5_c1_title",
+              "type": "text",
+              "position": "absol",
+              "parent": "c5_card1",
+              "parentWidth": 1444,
+              "top": "5.407349vw",
+              "left": "58.171745%",
+              "whiteSpace": "nowrap",
+              "content": "시간으로 완성한 한 그릇",
+              "segments": [
+                { "text": "시간으로 완성", "fontFamily": "Eulyoo1945-SemiBold", "cssFontFamily": "var(--sf)", "fontWeight": 600, "fontSize": "1.574803vw (30px)", "lineHeight": 0.933, "letterSpacing": "0em", "color": "#5d2b0d" },
+                { "text": "한 한 그릇", "fontFamily": "Eulyoo1945-SemiBold", "cssFontFamily": "var(--sf)", "fontWeight": 600, "fontSize": "1.574803vw (30px)", "lineHeight": 0.933, "letterSpacing": "0em", "color": "#000000" }
+              ],
+              "effects": null,
+              "psdY": 5064
+            },
+            {
+              "name": "c5_c1_desc",
+              "type": "text",
+              "position": "absol",
+              "parent": "c5_card1",
+              "parentWidth": 1444,
+              "top": "8.713911vw",
+              "left": "58.241551%",
+              "whiteSpace": "nowrap",
+              "content": "미락육회막국수는 당일 도축한 우둔살과 홍두께살로 만든 신선한 육회,\n국내산 메밀을 사용한 자가제면, 과일 베이스의\n특제 양념까지 재료와 방식 모두에서 차별화를 만들어냅니다.\n\n조미료 사용을 최소화하고 일주일 숙성 과정을 거쳐\n달지도 짜지도 않은 깊은 맛의 균형을 완성하며\n이러한 차이는 결국 재방문으로 이어집니다.",
+              "segments": [
+                { "text": "미락육회막국수는 당일 도축한 우둔살과 홍두께살로 만든 신선한 육회,\n국내산 메밀을 사용한 자가제면, 과일 베이스의\n특제 양념까지 ", "fontFamily": "Pretendard-Light", "cssFontFamily": "var(--mf)", "fontWeight": 300, "fontSize": "0.944882vw (18px)", "lineHeight": 1.556, "letterSpacing": "-0.05em", "color": "#000000" },
+                { "text": "재료와 방식 모두에서 차별화", "fontFamily": "Pretendard-Bold", "cssFontFamily": "var(--mf)", "fontWeight": 700, "fontSize": "0.944882vw (18px)", "lineHeight": 1.556, "letterSpacing": "-0.05em", "color": "#000000" },
+                { "text": "를 만들어냅니다.\n\n조미료 사용을 최소화하고 일주일 숙성 과정을 거쳐\n달지도 짜지도 않은 깊은 맛의 균형을 완성하며\n이러한 차이는 결국 재방문으로 이어집니다.", "fontFamily": "Pretendard-Light", "cssFontFamily": "var(--mf)", "fontWeight": 300, "fontSize": "0.944882vw (18px)", "lineHeight": 1.556, "letterSpacing": "-0.05em", "color": "#000000" }
+              ],
+              "effects": null,
+              "psdY": 5127
+            }
+          ]
+        },
+        {
+          "name": "c5_card2",
+          "type": "group",
+          "position": "rltv",
+          "parent": "c5_cards",
+          "parentWidth": 1444,
+          "marginTop": "1.049869vw",
+          "width": "100%",
+          "aspectRatio": "1444/454",
+          "heightSource": "card panel rect 1444x454",
+          "heightSourceReason": "PSD 사각형 9 복사 (1444x454, fill #231916) defines card 02 visible dark panel; aspect-ratio derived directly from PSD dimensions.",
+          "bg": "#231916",
+          "overflow": "hidden",
+          "allowSingleSceneOverlayReason": "Card 02 is a fixed visible dark panel (1444x454) with left-side title/desc text and three overlapping food photos on the right. All elements are absolute overlays inside the panel; the food images intentionally extend beyond the card top via overflow:hidden, matching the PSD layered composition.",
+          "allowLayered": true,
+          "allowSiblingOverlay": true,
+          "siblingOverlayReason": "Three food photos intentionally overlap each other and extend beyond card bounds; PSD-faithful layout requires sibling overlay.",
+          "psdY": 5435,
+          "effects": null,
+          "children": [
+            { "name": "c5_c2_badge", "type": "image", "position": "absol", "parent": "c5_card2", "parentWidth": 1444, "top": "0.131234vw", "left": "0.207756%", "width": "5.470914%", "aspectRatio": "79/45", "src": "/images/con05_02_1.png", "naturalWidth": 79, "naturalHeight": 45, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 5436 },
+            {
+              "name": "c5_c2_title",
+              "type": "text",
+              "position": "absol",
+              "parent": "c5_card2",
+              "parentWidth": 1444,
+              "top": "6.141732vw",
+              "left": "8.448753%",
+              "whiteSpace": "nowrap",
+              "content": "지속되는 이유를 고민합니다",
+              "segments": [
+                { "text": "지속되는 이유", "fontFamily": "Eulyoo1945-SemiBold", "cssFontFamily": "var(--sf)", "fontWeight": 600, "fontSize": "1.574803vw (30px)", "lineHeight": 0.933, "letterSpacing": "0em", "color": "#e3cfaf" },
+                { "text": "를 고민합니다", "fontFamily": "Eulyoo1945-SemiBold", "cssFontFamily": "var(--sf)", "fontWeight": 600, "fontSize": "1.574803vw (30px)", "lineHeight": 0.933, "letterSpacing": "0em", "color": "#ffffff" }
+              ],
+              "effects": null,
+              "psdY": 5552
+            },
+            {
+              "name": "c5_c2_desc",
+              "type": "text",
+              "position": "absol",
+              "parent": "c5_card2",
+              "parentWidth": 1444,
+              "top": "9.448819vw",
+              "left": "8.448753%",
+              "whiteSpace": "nowrap",
+              "content": "미락육회막국수는 단순히 메뉴를 늘리는 방식이 아니라\n트렌드와 계절, 고객 반응을 반영한 메뉴 개발을 진행합니다.\n\n모든 메뉴는 본사 개발 후 직영점에서 충분한 테스트를 거쳐\n검증된 메뉴만 출시되며, 지속적인 신메뉴와\n프로모션을 통해 매장의 활력을 유지합니다.",
+              "segments": [
+                { "text": "미락육회막국수는 단순히 메뉴를 늘리는 방식이 아니라\n", "fontFamily": "Pretendard-Light", "cssFontFamily": "var(--mf)", "fontWeight": 300, "fontSize": "0.944882vw (18px)", "lineHeight": 1.556, "letterSpacing": "-0.05em", "color": "#ffffff" },
+                { "text": "트렌드와 계절, 고객 반응을 반영한 메뉴 개발을 진행", "fontFamily": "Pretendard-Bold", "cssFontFamily": "var(--mf)", "fontWeight": 700, "fontSize": "0.944882vw (18px)", "lineHeight": 1.556, "letterSpacing": "-0.05em", "color": "#ffffff" },
+                { "text": "합니다.\n\n모든 메뉴는 본사 개발 후 직영점에서 충분한 테스트를 거쳐\n검증된 메뉴만 출시되며, 지속적인 신메뉴와\n프로모션을 통해 매장의 활력을 유지합니다.", "fontFamily": "Pretendard-Light", "cssFontFamily": "var(--mf)", "fontWeight": 300, "fontSize": "0.944882vw (18px)", "lineHeight": 1.556, "letterSpacing": "-0.05em", "color": "#ffffff" }
+              ],
+              "effects": null,
+              "psdY": 5615
+            },
+            { "name": "c5_c2_img1", "type": "image", "position": "absol", "parent": "c5_card2", "parentWidth": 1444, "top": "-5.249344vw", "left": "43.559557%", "width": "30.332410%", "aspectRatio": "438/327", "src": "/images/con05_02_2.png", "naturalWidth": 438, "naturalHeight": 327, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 5335 },
+            { "name": "c5_c2_img2", "type": "image", "position": "absol", "parent": "c5_card2", "parentWidth": 1444, "top": "5.407349vw", "left": "70.844875%", "width": "45.221607%", "aspectRatio": "653/368", "src": "/images/con05_02_3.png", "naturalWidth": 653, "naturalHeight": 368, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 5538 },
+            { "name": "c5_c2_img3", "type": "image", "position": "absol", "parent": "c5_card2", "parentWidth": 1444, "top": "13.595801vw", "left": "29.570637%", "width": "38.434903%", "aspectRatio": "555/289", "src": "/images/con05_02_4.png", "naturalWidth": 555, "naturalHeight": 289, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 5694 }
+          ]
+        },
+        {
+          "name": "c5_card3",
+          "type": "group",
+          "position": "rltv",
+          "parent": "c5_cards",
+          "parentWidth": 1444,
+          "marginTop": "1.049869vw",
+          "width": "100%",
+          "aspectRatio": "1444/454",
+          "heightSource": "card panel rect 1444x454",
+          "heightSourceReason": "PSD 사각형 9 복사 3 (1444x454) defines card 03 visible panel; full-bleed con05_03_2.jpg (1440x450) sits inside via overflow:hidden.",
+          "bg": "#ffffff",
+          "overflow": "hidden",
+          "allowSingleSceneOverlayReason": "Card 03 is a fixed visible panel (1444x454) with a full-bleed background image (제면 머신 사진), a number badge at top-left, and right-side title/desc text positioned at PSD coordinates. The card height is owned by the panel aspect-ratio; the bg image and overlays are absol layers by design.",
+          "allowLayered": true,
+          "allowSiblingOverlay": true,
+          "siblingOverlayReason": "Full-bleed bg image is overlaid by number badge and right-side text; intentional layered scene.",
+          "psdY": 5909,
+          "effects": null,
+          "children": [
+            { "name": "c5_c3_bg", "type": "image", "position": "absol", "parent": "c5_card3", "parentWidth": 1444, "top": "0vw", "left": "0%", "width": "100%", "aspectRatio": "1440/450", "src": "/images/con05_03_2.jpg", "naturalWidth": 1440, "naturalHeight": 450, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 5906 },
+            { "name": "c5_c3_badge", "type": "image", "position": "absol", "parent": "c5_card3", "parentWidth": 1444, "top": "0.078740vw", "left": "0.207756%", "width": "5.470914%", "aspectRatio": "79/45", "src": "/images/con05_03_1.png", "naturalWidth": 79, "naturalHeight": 45, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 5909 },
+            {
+              "name": "c5_c3_title",
+              "type": "text",
+              "position": "absol",
+              "parent": "c5_card3",
+              "parentWidth": 1444,
+              "top": "5.407349vw",
+              "left": "58.171745%",
+              "whiteSpace": "nowrap",
+              "content": "운영은 더 단순하게",
+              "segments": [
+                { "text": "운영은 더 ", "fontFamily": "Eulyoo1945-SemiBold", "cssFontFamily": "var(--sf)", "fontWeight": 600, "fontSize": "1.574803vw (30px)", "lineHeight": 0.933, "letterSpacing": "0em", "color": "#ffffff" },
+                { "text": "단순", "fontFamily": "Eulyoo1945-SemiBold", "cssFontFamily": "var(--sf)", "fontWeight": 600, "fontSize": "1.574803vw (30px)", "lineHeight": 0.933, "letterSpacing": "0em", "color": "#e3cfaf" },
+                { "text": "하게", "fontFamily": "Eulyoo1945-SemiBold", "cssFontFamily": "var(--sf)", "fontWeight": 600, "fontSize": "1.574803vw (30px)", "lineHeight": 0.933, "letterSpacing": "0em", "color": "#ffffff" }
+              ],
+              "effects": null,
+              "psdY": 6012
+            },
+            {
+              "name": "c5_c3_desc",
+              "type": "text",
+              "position": "absol",
+              "parent": "c5_card3",
+              "parentWidth": 1444,
+              "top": "8.713911vw",
+              "left": "58.241551%",
+              "whiteSpace": "nowrap",
+              "content": "불필요한 식자재를 최소화하고 대량 물류 시스템을 통해\n원가를 효율적으로 관리합니다.\n\n완제품 및 반제품 공급으로 조리 과정을 단순화하여\n전문 주방장 없이도 안정적인 운영이 가능하며,\n상권과 입지에 맞춰 점주가 직접 가격을 설정할 수 있는\n유연한 운영 구조를 갖추고 있습니다.",
+              "segments": [
+                { "text": "불필요한 식자재를 최소화하고 대량 물류 시스템을 통해\n원가를 효율적으로 관리합니다.\n\n", "fontFamily": "Pretendard-Light", "cssFontFamily": "var(--mf)", "fontWeight": 300, "fontSize": "0.944882vw (18px)", "lineHeight": 1.556, "letterSpacing": "-0.05em", "color": "#ffffff" },
+                { "text": "완제품 및 반제품 공급으로 조리 과정을 단순화", "fontFamily": "Pretendard-Bold", "cssFontFamily": "var(--mf)", "fontWeight": 700, "fontSize": "0.944882vw (18px)", "lineHeight": 1.556, "letterSpacing": "-0.05em", "color": "#ffffff" },
+                { "text": "하여\n전문 주방장 없이도 안정적인 운영이 가능하며,\n상권과 입지에 맞춰 점주가 직접 가격을 설정할 수 있는\n유연한 운영 구조를 갖추고 있습니다.", "fontFamily": "Pretendard-Light", "cssFontFamily": "var(--mf)", "fontWeight": 300, "fontSize": "0.944882vw (18px)", "lineHeight": 1.556, "letterSpacing": "-0.05em", "color": "#ffffff" }
+              ],
+              "effects": null,
+              "psdY": 6075
+            }
+          ]
+        },
+        {
+          "name": "c5_card4",
+          "type": "group",
+          "position": "rltv",
+          "parent": "c5_cards",
+          "parentWidth": 1444,
+          "marginTop": "1.049869vw",
+          "width": "100%",
+          "aspectRatio": "1444/454",
+          "heightSource": "card panel rect 1444x454",
+          "heightSourceReason": "PSD 사각형 9 복사 2 (1444x454, fill #000) defines card 04 visible panel; full-bleed con05_04_2.jpg sits inside via overflow:hidden, with circle/badge overlays.",
+          "bg": "#000000",
+          "overflow": "hidden",
+          "allowSingleSceneOverlayReason": "Card 04 is a fixed visible panel (1444x454) with a full-bleed restaurant interior bg, left-side text block, three HALL/PICKUP/DELIVERY circles in the right area connected by '+' marks, and two red speech-bubble overlays anchored to specific circles. Card height is owned by the panel aspect-ratio; all visual elements are absolute overlays per the PSD layered composition.",
+          "allowLayered": true,
+          "allowSiblingOverlay": true,
+          "siblingOverlayReason": "Red bubbles anchor on circle corners; bg covers everything; intentional PSD overlay scene.",
+          "psdY": 6383,
+          "effects": null,
+          "children": [
+            { "name": "c5_c4_bg", "type": "image", "position": "absol", "parent": "c5_card4", "parentWidth": 1444, "top": "0vw", "left": "0%", "width": "100%", "aspectRatio": "1440/450", "src": "/images/con05_04_2.jpg", "naturalWidth": 1440, "naturalHeight": 450, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 5926, "role": "deco" },
+            { "name": "c5_c4_badge", "type": "image", "position": "absol", "parent": "c5_card4", "parentWidth": 1444, "top": "0.131234vw", "left": "0.207756%", "width": "5.470914%", "aspectRatio": "79/45", "src": "/images/con05_04_1.png", "naturalWidth": 79, "naturalHeight": 45, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 6384 },
+            {
+              "name": "c5_c4_title",
+              "type": "text",
+              "position": "absol",
+              "parent": "c5_card4",
+              "parentWidth": 1444,
+              "top": "6.141732vw",
+              "left": "8.448753%",
+              "whiteSpace": "nowrap",
+              "content": "결과는 자연스럽게 따라옵니다",
+              "segments": [
+                { "text": "결과", "fontFamily": "Eulyoo1945-SemiBold", "cssFontFamily": "var(--sf)", "fontWeight": 600, "fontSize": "1.574803vw (30px)", "lineHeight": 0.933, "letterSpacing": "0em", "color": "#e3cfaf" },
+                { "text": "는 자연스럽게 따라옵니다", "fontFamily": "Eulyoo1945-SemiBold", "cssFontFamily": "var(--sf)", "fontWeight": 600, "fontSize": "1.574803vw (30px)", "lineHeight": 0.933, "letterSpacing": "0em", "color": "#ffffff" }
+              ],
+              "effects": null,
+              "psdY": 6500
+            },
+            {
+              "name": "c5_c4_desc",
+              "type": "text",
+              "position": "absol",
+              "parent": "c5_card4",
+              "parentWidth": 1444,
+              "top": "9.448819vw",
+              "left": "8.448753%",
+              "whiteSpace": "nowrap",
+              "content": "미락육회막국수는 홀, 포장, 배달이 가능한 3WAY\n운영 구조를 통해 매출을 다각화하고 있습니다.\n\n원가와 인건비 비율을 효율적으로 관리하여\n평균 순수익 약 23% 수준의 안정적인 수익 구조를 유지하며,\n단기적인 매출이 아닌 지속 가능한 수익을 만들어가는 데 집중합니다.",
+              "segments": [
+                { "text": "미락육회막국수는 ", "fontFamily": "Pretendard-Light", "cssFontFamily": "var(--mf)", "fontWeight": 300, "fontSize": "0.944882vw (18px)", "lineHeight": 1.556, "letterSpacing": "-0.05em", "color": "#ffffff" },
+                { "text": "홀, 포장, 배달이 가능한 3WAY\n운영 구조", "fontFamily": "Pretendard-Bold", "cssFontFamily": "var(--mf)", "fontWeight": 700, "fontSize": "0.944882vw (18px)", "lineHeight": 1.556, "letterSpacing": "-0.05em", "color": "#ffffff" },
+                { "text": "를 통해 매출을 다각화하고 있습니다.\n\n원가와 인건비 비율을 효율적으로 관리하여\n평균 순수익 약 23% 수준의 안정적인 수익 구조를 유지하며,\n단기적인 매출이 아닌 지속 가능한 수익을 만들어가는 데 집중합니다.", "fontFamily": "Pretendard-Light", "cssFontFamily": "var(--mf)", "fontWeight": 300, "fontSize": "0.944882vw (18px)", "lineHeight": 1.556, "letterSpacing": "-0.05em", "color": "#ffffff" }
+              ],
+              "effects": null,
+              "psdY": 6563
+            },
+            {
+              "name": "c5_c4_3way",
+              "type": "group",
+              "position": "absol",
+              "parent": "c5_card4",
+              "parentWidth": 1444,
+              "top": "4.803150vw",
+              "left": "43.836565%",
+              "width": "53.912742%",
+              "psdY": 6473,
+              "effects": null,
+              "allowLayered": true,
+              "allowSiblingOverlay": true,
+              "siblingOverlayReason": "3way circles + plus marks + red speech bubbles compose a single overlay group; red bubbles anchor on circle corners by design.",
+              "children": [
+                { "name": "c5_c4_circle1", "type": "image", "position": "absol", "parent": "c5_c4_3way", "parentWidth": 778.5, "top": "1.207349vw", "left": "5.202312%", "width": "28.002569%", "aspectRatio": "218/218", "src": "/images/con05_04_3.png", "naturalWidth": 218, "naturalHeight": 218, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 6510 },
+                { "name": "c5_c4_circle2", "type": "image", "position": "absol", "parent": "c5_c4_3way", "parentWidth": 778.5, "top": "1.207349vw", "left": "35.388568%", "width": "28.002569%", "aspectRatio": "218/218", "src": "/images/con05_04_4.png", "naturalWidth": 218, "naturalHeight": 218, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 6510 },
+                { "name": "c5_c4_circle3", "type": "image", "position": "absol", "parent": "c5_c4_3way", "parentWidth": 778.5, "top": "1.207349vw", "left": "65.189467%", "width": "28.002569%", "aspectRatio": "218/218", "src": "/images/con05_04_5.png", "naturalWidth": 218, "naturalHeight": 218, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 6510 },
+                {
+                  "name": "c5_c4_plus1",
+                  "type": "text",
+                  "position": "absol",
+                  "parent": "c5_c4_3way",
+                  "parentWidth": 778.5,
+                  "top": "6.640420vw",
+                  "left": "33.397559%",
+                  "whiteSpace": "nowrap",
+                  "content": "+",
+                  "segments": [
+                    { "text": "+", "fontFamily": "Eulyoo1945-SemiBold", "cssFontFamily": "var(--sf)", "fontWeight": 600, "fontSize": "1.312336vw (25px)", "lineHeight": 1, "letterSpacing": "-0.05em", "color": "#ffffff" }
+                  ],
+                  "effects": null,
+                  "psdY": 6601
+                },
+                {
+                  "name": "c5_c4_plus2",
+                  "type": "text",
+                  "position": "absol",
+                  "parent": "c5_c4_3way",
+                  "parentWidth": 778.5,
+                  "top": "6.640420vw",
+                  "left": "63.455363%",
+                  "whiteSpace": "nowrap",
+                  "content": "+",
+                  "segments": [
+                    { "text": "+", "fontFamily": "Eulyoo1945-SemiBold", "cssFontFamily": "var(--sf)", "fontWeight": 600, "fontSize": "1.312336vw (25px)", "lineHeight": 1, "letterSpacing": "-0.05em", "color": "#ffffff" }
+                  ],
+                  "effects": null,
+                  "psdY": 6601
+                },
+                { "name": "c5_c4_red_top", "type": "image", "position": "absol", "parent": "c5_c4_3way", "parentWidth": 778.5, "top": "0vw", "left": "80.089917%", "width": "19.910083%", "aspectRatio": "155/104", "src": "/images/con05_04_7.png", "naturalWidth": 155, "naturalHeight": 104, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 6473 },
+                { "name": "c5_c4_red_bot", "type": "image", "position": "absol", "parent": "c5_c4_3way", "parentWidth": 778.5, "top": "8.608924vw", "left": "0%", "width": "19.910083%", "aspectRatio": "155/104", "src": "/images/con05_04_6.png", "naturalWidth": 155, "naturalHeight": 104, "sourceType": "완성형", "effects": null, "borderRadius": null, "psdY": 6637 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

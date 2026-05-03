@@ -1,0 +1,294 @@
+/* ==========================================================================
+   Basic Board Skin - Comment Style Overwrite (vst-style)
+   Target: Existing HTML Structure (.comment_box, #bo_vc, .bo_vc_w)
+   ========================================================================== */
+
+/* 1. 댓글 전체 박스 */
+.comment_box {
+    background: #fff !important;
+    border-top: none !important;
+    margin-top: 50px !important;
+    padding-top: 30px !important;
+    font-family: "Pretendard Variable", "Pretendard", "Malgun Gothic", sans-serif !important;
+}
+
+/* 2. 댓글 목록 헤더 (COMMENTS 버튼) */
+.cmt_btn {
+    background: none !important;
+    border: none !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+    margin-bottom: 20px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    cursor: default !important; /* 버튼처럼 안 보이게 */
+}
+.cmt_btn i { color: #3235cd !important; font-size: 20px !important; }
+
+/* 3. 댓글 목록 영역 (#bo_vc) */
+#bo_vc {
+    padding: 0 !important;
+    border: none !important;
+    border-top: none !important;
+    box-shadow: none !important;
+}
+#bo_vc > h2 { display: none !important; }
+#bo_vc article { border-top: none !important; } /* 숨김 */
+
+/* 댓글이 없을 때 */
+#bo_vc_empty {
+    margin: 0 !important;
+    padding: 60px 0 !important;
+    text-align: center !important;
+    color: #999 !important;
+    font-size: 14px !important;
+    background: #f9f9f9 !important;
+    border-radius: 12px !important;
+    border: 1px solid #eee !important;
+}
+
+/* 댓글 아이템 (아티클) */
+#bo_vc article {
+    margin: 0 0 12px 0 !important;
+    padding: 20px 24px !important;
+    border: none !important;
+    border-bottom: none !important;
+    background: #f8f9fa !important;
+    border-radius: 12px !important;
+    position: relative !important;
+    transition: background 0.2s !important;
+}
+#bo_vc article:hover { background: #f0f1f5 !important; }
+
+/* 대댓글 들여쓰기 */
+#bo_vc article[style*="margin-left"] {
+    background: #f0f1f5 !important;
+    border-radius: 8px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    border-left: 3px solid #3235cd !important;
+}
+
+/* 댓글 헤더 (작성자, 날짜 등) */
+#bo_vc header {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin-bottom: 10px !important;
+    flex-wrap: wrap !important;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+#bo_vc header h2 {
+    display: none !important;
+}
+#bo_vc header .member,
+#bo_vc header .guest {
+    font-weight: 700 !important;
+    color: #333 !important;
+    font-size: 14px !important;
+}
+/* IP 숨기기 */
+#bo_vc header span:not(.bo_vc_hdinfo):not(.sound_only) {
+    font-size: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+}
+/* SNS 아이콘 깨진 이미지 숨기기 */
+#bo_vc header a[href*="facebook"],
+#bo_vc header a[href*="twitter"],
+#bo_vc header img[alt*="등록됨"] {
+    display: none !important;
+}
+#bo_vc .bo_vc_hdinfo {
+    color: #999 !important;
+    font-size: 12px !important;
+    margin-left: auto !important;
+    padding-right: 16px !important;
+}
+
+/* 댓글 본문 */
+#bo_vc .cmt_contents {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    color: #444 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+#bo_vc .cmt_contents p { margin: 0 !important; }
+/* 깨진 이미지 숨기기 */
+#bo_vc .cmt_contents img[src=""] { display: none !important; }
+#bo_vc .cmt_contents img:not([src*="http"]):not([src*="/"]) { display: none !important; }
+
+/* 댓글 하단 버튼 (답변, 수정, 삭제) */
+.bo_vc_act {
+    margin-top: 12px !important;
+    padding-top: 10px !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    gap: 6px !important;
+    list-style: none !important;
+}
+.bo_vc_act li { display: inline-block !important; margin: 0 !important; }
+.bo_vc_act a {
+    display: inline-block !important;
+    padding: 5px 14px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 20px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: #666 !important;
+    text-decoration: none !important;
+    background: #fff !important;
+    transition: all 0.2s !important;
+}
+.bo_vc_act a:hover {
+    border-color: #3235cd !important;
+    color: #3235cd !important;
+    background: #f0f0ff !important;
+}
+
+/* 수정/답변 빈 span 숨기기 */
+span.bo_vc_w {
+    display: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+/* 4. 댓글 쓰기 영역 (aside.bo_vc_w) */
+aside.bo_vc_w {
+    background: #f8f9fa !important;
+    padding: 20px !important;
+    border-radius: 12px !important;
+    border: 1px solid #eee !important;
+    margin-top: 40px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03) !important;
+    position: relative !important;
+    display: block !important;
+}
+aside.bo_vc_w h2 { 
+    font-size: 14px !important; 
+    color: #333 !important; 
+    margin: 0 0 15px 0 !important; 
+    font-weight: 700 !important;
+    border-bottom: none !important;
+    padding: 0 !important;
+}
+
+/* 입력창 (textarea) */
+aside.bo_vc_w textarea {
+    width: 100% !important;
+    height: 100px !important;
+    padding: 15px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    resize: none !important;
+    background: #fff !important;
+    outline: none !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+}
+aside.bo_vc_w textarea:focus {
+    border-color: #3235cd !important;
+    box-shadow: 0 0 0 3px rgba(50, 53, 205, 0.1) !important;
+}
+
+/* 하단 버튼 그룹 (.bo_vc_w_wr) */
+.bo_vc_w_wr {
+    margin-top: 15px !important;
+    display: flex !important;
+    justify-content: flex-end !important; /* 오른쪽 정렬 */
+    align-items: center !important;
+}
+
+/* 비밀글 체크박스 & 라벨 */
+aside.bo_vc_w .btn_confirm {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    float: none !important; /* 기존 float 제거 */
+    margin: 0 !important;
+}
+
+/* 비밀글 체크박스 꾸미기 */
+aside.bo_vc_w input[type="checkbox"] {
+    width: 16px !important; 
+    height: 16px !important;
+    margin: 0 !important;
+    vertical-align: middle !important;
+}
+aside.bo_vc_w label {
+    font-size: 13px !important;
+    color: #666 !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+}
+aside.bo_vc_w label i { font-size: 14px !important; color: #999 !important; }
+
+/* 등록 버튼 (.btn_submit) */
+aside.bo_vc_w .btn_submit {
+    height: 40px !important;
+    padding: 0 25px !important;
+    background: #3235cd !important; /* 포인트 컬러 */
+    color: #fff !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: 0.2s !important;
+    margin-left: 15px !important;
+}
+aside.bo_vc_w .btn_submit:hover {
+    background: #2629a8 !important;
+}
+
+/* 비회원 입력창 (이름, 비밀번호) */
+.bo_vc_w_info {
+    float: none !important;
+    margin-bottom: 10px !important;
+    display: flex !important;
+    gap: 10px !important;
+}
+.bo_vc_w_info input {
+    padding: 8px 10px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 6px !important;
+    font-size: 13px !important;
+    outline: none !important;
+}
+.bo_vc_w_info input:focus { border-color: #3235cd !important; }
+
+/* 캡챠 (있을 경우) */
+#captcha {
+    margin-top: 10px !important;
+    border: 1px solid #eee !important;
+    padding: 10px !important;
+    border-radius: 6px !important;
+    background: #fff !important;
+}
+.header_menu {
+    position: absolute !important;
+}
+/* 반응형 (모바일) */
+@media (max-width: 768px) {
+    .bo_vc_w_wr {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 10px !important;
+    }
+    aside.bo_vc_w .btn_confirm {
+        justify-content: space-between !important;
+        wi

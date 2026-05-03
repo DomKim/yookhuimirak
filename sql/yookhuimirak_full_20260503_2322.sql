@@ -1,0 +1,3103 @@
+Warning: A partial dump from a server that has GTIDs will by default include the GTIDs of all transactions, even those that changed suppressed parts of the database. If you don't want to restore GTIDs, pass --set-gtid-purged=OFF. To make a complete dump, pass --all-databases --triggers --routines --events. 
+-- MySQL dump 10.13  Distrib 9.6.0, for macos14.8 (arm64)
+--
+-- Host: localhost    Database: yookhuimirak
+-- ------------------------------------------------------
+-- Server version	9.6.0
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+SET @MYSQLDUMP_TEMP_LOG_BIN = @@SESSION.SQL_LOG_BIN;
+SET @@SESSION.SQL_LOG_BIN= 0;
+
+--
+-- GTID state at the beginning of the backup 
+--
+
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '63556ce4-1fc5-11f1-9ef9-676dec57eda1:1-14223';
+
+--
+-- Table structure for table `g5_admin_menu`
+--
+
+DROP TABLE IF EXISTS `g5_admin_menu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_admin_menu` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `sub_id` varchar(255) NOT NULL DEFAULT '',
+  `board_id` varchar(255) NOT NULL DEFAULT '',
+  `board_skin` varchar(255) NOT NULL DEFAULT '',
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_admin_menu`
+--
+
+LOCK TABLES `g5_admin_menu` WRITE;
+/*!40000 ALTER TABLE `g5_admin_menu` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_admin_menu` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_auth`
+--
+
+DROP TABLE IF EXISTS `g5_auth`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_auth` (
+  `mb_id` varchar(20) NOT NULL DEFAULT '',
+  `au_menu` varchar(50) NOT NULL DEFAULT '',
+  `au_auth` set('r','w','d') NOT NULL DEFAULT '',
+  PRIMARY KEY (`mb_id`,`au_menu`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_auth`
+--
+
+LOCK TABLES `g5_auth` WRITE;
+/*!40000 ALTER TABLE `g5_auth` DISABLE KEYS */;
+INSERT INTO `g5_auth` VALUES ('admin02','200800','r,w,d'),('admin02','200810','r,w,d'),('admin02','600110','r,w,d');
+/*!40000 ALTER TABLE `g5_auth` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_autosave`
+--
+
+DROP TABLE IF EXISTS `g5_autosave`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_autosave` (
+  `as_id` int NOT NULL AUTO_INCREMENT,
+  `mb_id` varchar(20) NOT NULL,
+  `as_uid` bigint unsigned NOT NULL,
+  `as_subject` varchar(255) NOT NULL,
+  `as_content` text NOT NULL,
+  `as_datetime` datetime NOT NULL,
+  PRIMARY KEY (`as_id`),
+  UNIQUE KEY `as_uid` (`as_uid`),
+  KEY `mb_id` (`mb_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_autosave`
+--
+
+LOCK TABLES `g5_autosave` WRITE;
+/*!40000 ALTER TABLE `g5_autosave` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_autosave` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_block_setup`
+--
+
+DROP TABLE IF EXISTS `g5_block_setup`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_block_setup` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `setup_1` text NOT NULL,
+  `setup_2` text NOT NULL,
+  `setup_3` text NOT NULL,
+  `setup_4` text NOT NULL,
+  `setup_5` text NOT NULL,
+  `setup_6` text NOT NULL,
+  `setup_7` text NOT NULL,
+  `setup_8` text NOT NULL,
+  `setup_9` text NOT NULL,
+  `setup_10` text NOT NULL,
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_block_setup`
+--
+
+LOCK TABLES `g5_block_setup` WRITE;
+/*!40000 ALTER TABLE `g5_block_setup` DISABLE KEYS */;
+INSERT INTO `g5_block_setup` VALUES (1,'default_shop','y','css','','','','','','','',''),(2,'default','y','css','','','','','','','',''),(3,'mobile_shop','y','css','','','','','','','',''),(4,'mobile','y','css','','','','','','','',''),(5,'uikit.min','n','css','','','','','','','',''),(6,'uikit.min','n','js','','','','','','','',''),(7,'uikit-icons.min','n','js','','','','','','','','');
+/*!40000 ALTER TABLE `g5_block_setup` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_block_setup_meta`
+--
+
+DROP TABLE IF EXISTS `g5_block_setup_meta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_block_setup_meta` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `setup_1` text NOT NULL,
+  `setup_2` text NOT NULL,
+  `setup_3` text NOT NULL,
+  `setup_4` text NOT NULL,
+  `setup_5` text NOT NULL,
+  `setup_6` text NOT NULL,
+  `setup_7` text NOT NULL,
+  `setup_8` text NOT NULL,
+  `setup_9` text NOT NULL,
+  `setup_10` text NOT NULL,
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_block_setup_meta`
+--
+
+LOCK TABLES `g5_block_setup_meta` WRITE;
+/*!40000 ALTER TABLE `g5_block_setup_meta` DISABLE KEYS */;
+INSERT INTO `g5_block_setup_meta` VALUES (1,'mainpage','','','','','','','','','','');
+/*!40000 ALTER TABLE `g5_block_setup_meta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_board`
+--
+
+DROP TABLE IF EXISTS `g5_board`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_board` (
+  `bo_table` varchar(20) NOT NULL DEFAULT '',
+  `gr_id` varchar(255) NOT NULL DEFAULT '',
+  `bo_subject` varchar(255) NOT NULL DEFAULT '',
+  `bo_mobile_subject` varchar(255) NOT NULL DEFAULT '',
+  `bo_device` enum('both','pc','mobile') NOT NULL DEFAULT 'both',
+  `bo_admin` varchar(255) NOT NULL DEFAULT '',
+  `bo_list_level` tinyint NOT NULL DEFAULT '0',
+  `bo_read_level` tinyint NOT NULL DEFAULT '0',
+  `bo_write_level` tinyint NOT NULL DEFAULT '0',
+  `bo_reply_level` tinyint NOT NULL DEFAULT '0',
+  `bo_comment_level` tinyint NOT NULL DEFAULT '0',
+  `bo_upload_level` tinyint NOT NULL DEFAULT '0',
+  `bo_download_level` tinyint NOT NULL DEFAULT '0',
+  `bo_html_level` tinyint NOT NULL DEFAULT '0',
+  `bo_link_level` tinyint NOT NULL DEFAULT '0',
+  `bo_count_delete` tinyint NOT NULL DEFAULT '0',
+  `bo_count_modify` tinyint NOT NULL DEFAULT '0',
+  `bo_read_point` int NOT NULL DEFAULT '0',
+  `bo_write_point` int NOT NULL DEFAULT '0',
+  `bo_comment_point` int NOT NULL DEFAULT '0',
+  `bo_download_point` int NOT NULL DEFAULT '0',
+  `bo_use_category` tinyint NOT NULL DEFAULT '0',
+  `bo_category_list` text NOT NULL,
+  `bo_use_sideview` tinyint NOT NULL DEFAULT '0',
+  `bo_use_file_content` tinyint NOT NULL DEFAULT '0',
+  `bo_use_secret` tinyint NOT NULL DEFAULT '0',
+  `bo_use_dhtml_editor` tinyint NOT NULL DEFAULT '0',
+  `bo_select_editor` varchar(50) NOT NULL DEFAULT '',
+  `bo_use_rss_view` tinyint NOT NULL DEFAULT '0',
+  `bo_use_good` tinyint NOT NULL DEFAULT '0',
+  `bo_use_nogood` tinyint NOT NULL DEFAULT '0',
+  `bo_use_name` tinyint NOT NULL DEFAULT '0',
+  `bo_use_signature` tinyint NOT NULL DEFAULT '0',
+  `bo_use_ip_view` tinyint NOT NULL DEFAULT '0',
+  `bo_use_list_view` tinyint NOT NULL DEFAULT '0',
+  `bo_use_list_file` tinyint NOT NULL DEFAULT '0',
+  `bo_use_list_content` tinyint NOT NULL DEFAULT '0',
+  `bo_table_width` int NOT NULL DEFAULT '0',
+  `bo_subject_len` int NOT NULL DEFAULT '0',
+  `bo_mobile_subject_len` int NOT NULL DEFAULT '0',
+  `bo_page_rows` int NOT NULL DEFAULT '0',
+  `bo_mobile_page_rows` int NOT NULL DEFAULT '0',
+  `bo_new` int NOT NULL DEFAULT '0',
+  `bo_hot` int NOT NULL DEFAULT '0',
+  `bo_image_width` int NOT NULL DEFAULT '0',
+  `bo_skin` varchar(255) NOT NULL DEFAULT '',
+  `bo_mobile_skin` varchar(255) NOT NULL DEFAULT '',
+  `bo_include_head` varchar(255) NOT NULL DEFAULT '',
+  `bo_include_tail` varchar(255) NOT NULL DEFAULT '',
+  `bo_content_head` text NOT NULL,
+  `bo_mobile_content_head` text NOT NULL,
+  `bo_content_tail` text NOT NULL,
+  `bo_mobile_content_tail` text NOT NULL,
+  `bo_insert_content` text NOT NULL,
+  `bo_gallery_cols` int NOT NULL DEFAULT '0',
+  `bo_gallery_width` int NOT NULL DEFAULT '0',
+  `bo_gallery_height` int NOT NULL DEFAULT '0',
+  `bo_mobile_gallery_width` int NOT NULL DEFAULT '0',
+  `bo_mobile_gallery_height` int NOT NULL DEFAULT '0',
+  `bo_upload_size` int NOT NULL DEFAULT '0',
+  `bo_reply_order` tinyint NOT NULL DEFAULT '0',
+  `bo_use_search` tinyint NOT NULL DEFAULT '0',
+  `bo_order` int NOT NULL DEFAULT '0',
+  `bo_count_write` int NOT NULL DEFAULT '0',
+  `bo_count_comment` int NOT NULL DEFAULT '0',
+  `bo_write_min` int NOT NULL DEFAULT '0',
+  `bo_write_max` int NOT NULL DEFAULT '0',
+  `bo_comment_min` int NOT NULL DEFAULT '0',
+  `bo_comment_max` int NOT NULL DEFAULT '0',
+  `bo_notice` text NOT NULL,
+  `bo_upload_count` tinyint NOT NULL DEFAULT '0',
+  `bo_use_email` tinyint NOT NULL DEFAULT '0',
+  `bo_use_cert` enum('','cert','adult','hp-cert','hp-adult') NOT NULL DEFAULT '',
+  `bo_use_sns` tinyint NOT NULL DEFAULT '0',
+  `bo_use_captcha` tinyint NOT NULL DEFAULT '0',
+  `bo_sort_field` varchar(255) NOT NULL DEFAULT '',
+  `bo_1_subj` varchar(255) NOT NULL DEFAULT '',
+  `bo_2_subj` varchar(255) NOT NULL DEFAULT '',
+  `bo_3_subj` varchar(255) NOT NULL DEFAULT '',
+  `bo_4_subj` varchar(255) NOT NULL DEFAULT '',
+  `bo_5_subj` varchar(255) NOT NULL DEFAULT '',
+  `bo_6_subj` varchar(255) NOT NULL DEFAULT '',
+  `bo_7_subj` varchar(255) NOT NULL DEFAULT '',
+  `bo_8_subj` varchar(255) NOT NULL DEFAULT '',
+  `bo_9_subj` varchar(255) NOT NULL DEFAULT '',
+  `bo_10_subj` varchar(255) NOT NULL DEFAULT '',
+  `bo_1` varchar(255) NOT NULL DEFAULT '',
+  `bo_2` varchar(255) NOT NULL DEFAULT '',
+  `bo_3` varchar(255) NOT NULL DEFAULT '',
+  `bo_4` varchar(255) NOT NULL DEFAULT '',
+  `bo_5` varchar(255) NOT NULL DEFAULT '',
+  `bo_6` varchar(255) NOT NULL DEFAULT '',
+  `bo_7` varchar(255) NOT NULL DEFAULT '',
+  `bo_8` varchar(255) NOT NULL DEFAULT '',
+  `bo_9` varchar(255) NOT NULL DEFAULT '',
+  `bo_10` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`bo_table`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_board`
+--
+
+LOCK TABLES `g5_board` WRITE;
+/*!40000 ALTER TABLE `g5_board` DISABLE KEYS */;
+INSERT INTO `g5_board` VALUES ('main_menu','community','메뉴 추가','','both','admin02',10,10,10,10,10,10,1,1,10,1,1,0,0,0,0,1,'메인 메뉴|사이드 메뉴|추가 메뉴',0,0,0,0,'',0,0,0,0,0,0,0,0,0,100,60,30,15,15,24,100,600,'theme/main_menu','basic','_head.php','_tail.php','','','','','',4,202,150,125,100,1048576,1,1,0,2,0,0,0,0,0,'',2,0,'',0,0,'','','','','','','','','','','','','','','','','','','','',''),('main_sales','community','매출 게시판','','both','admin02',10,10,10,1,1,1,1,1,1,1,1,0,0,0,0,0,'',0,0,0,0,'',0,0,0,0,0,0,0,0,0,100,60,30,15,15,24,100,600,'theme/main_sales','basic','_head.php','_tail.php','','','','','',4,202,150,125,100,1048576,1,1,0,6,0,0,0,0,0,'',2,0,'',0,0,'','','','','','','','','','','','','','','','','','','','',''),('main_shop','community','매장 추가','','both','admin02',10,10,10,10,10,1,1,1,10,1,1,0,0,0,0,0,'',0,0,0,0,'',0,0,0,0,0,0,0,0,0,100,60,30,15,15,24,100,600,'theme/main_shop','basic','_head.php','_tail.php','','','','','',4,202,150,125,100,1048576,1,1,0,2,0,0,0,0,0,'',2,0,'',0,0,'','','','','','','','','','','','','','','','','','','','','');
+/*!40000 ALTER TABLE `g5_board` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_board_file`
+--
+
+DROP TABLE IF EXISTS `g5_board_file`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_board_file` (
+  `bo_table` varchar(20) NOT NULL DEFAULT '',
+  `wr_id` int NOT NULL DEFAULT '0',
+  `bf_no` int NOT NULL DEFAULT '0',
+  `bf_source` varchar(255) NOT NULL DEFAULT '',
+  `bf_file` varchar(255) NOT NULL DEFAULT '',
+  `bf_download` int NOT NULL,
+  `bf_content` text NOT NULL,
+  `bf_fileurl` varchar(255) NOT NULL DEFAULT '',
+  `bf_thumburl` varchar(255) NOT NULL DEFAULT '',
+  `bf_storage` varchar(50) NOT NULL DEFAULT '',
+  `bf_filesize` int NOT NULL DEFAULT '0',
+  `bf_width` int NOT NULL DEFAULT '0',
+  `bf_height` smallint NOT NULL DEFAULT '0',
+  `bf_type` tinyint NOT NULL DEFAULT '0',
+  `bf_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`bo_table`,`wr_id`,`bf_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_board_file`
+--
+
+LOCK TABLES `g5_board_file` WRITE;
+/*!40000 ALTER TABLE `g5_board_file` DISABLE KEYS */;
+INSERT INTO `g5_board_file` VALUES ('main_menu',1,0,'육회막국수.png','ade40bb1f3efa288a8499be163bbae8b_sz3kzlcw_ae735a521130d5ef19c00626919d1cd3d2f1a810.png',0,'','','','',991818,845,620,1,'2026-05-03 22:41:28'),('main_menu',2,0,'육회비빔밥.png','8ecb1c43362645df00296616280d5f6b_ycb409kl_0bba8b5f25879c7b30e13e8ad202beaca15137bc.png',0,'','','','',1078565,855,638,1,'2026-05-03 22:41:29'),('main_menu',3,0,'갈비탕.png','85afdaf6aebed261dea648b76d2b509c_y80vmn78_2a3efe94a8bef38649f2bd8feb749f4117f47cc5.png',0,'','','','',315164,892,450,1,'2026-05-03 22:41:29'),('main_menu',4,0,'수육국수.png','66f6cf27e3a08af5ef40385bcc70719e_pcp9zi3x_6c68399ab3aac6d4bdb44b25279bf9b5762cdd10.png',0,'','','','',1033033,867,692,1,'2026-05-03 22:41:29'),('main_menu',5,0,'비빔국수.png','2f3c2d52ccd78097ec9979c4c301ddb7_l6q2nxe1_9191a85a2ba08a77a519b27c2ba3ee7135a4808e.png',0,'','','','',315164,892,450,1,'2026-05-03 22:41:29'),('main_menu',6,0,'물냉면.png','7a61f1f3867902b8939430a02be0beae_yvleome6_4e417ec8eaee1917df601dd805e62772081cd62c.png',0,'','','','',315164,892,450,1,'2026-05-03 22:41:29'),('main_menu',7,0,'육전.png','2d094dbf6c11b69cfc2845a102f3855b_a53ihsux_9bd8a60118f7001d2ce5a0ce91679556cf15ebb7.png',0,'','','','',1210566,866,621,1,'2026-05-03 22:41:29'),('main_menu',10,0,'메밀전병.png','70fb2992c6b746aec5a4ed1a08f95b0d_k3xqwuvo_eb92346120108d47fd034fc8f7414a9848a7f50d.png',0,'','','','',319905,438,327,1,'2026-05-03 22:41:30'),('main_menu',11,0,'감자전.png','0f4ec33b4b241f8b70f4ae15b36a6855_9z2hj8rq_8a46cc0621e902ce1f529b235cf4428f27848222.png',0,'','','','',319905,438,327,1,'2026-05-03 22:41:30');
+/*!40000 ALTER TABLE `g5_board_file` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_board_good`
+--
+
+DROP TABLE IF EXISTS `g5_board_good`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_board_good` (
+  `bg_id` int NOT NULL AUTO_INCREMENT,
+  `bo_table` varchar(20) NOT NULL DEFAULT '',
+  `wr_id` int NOT NULL DEFAULT '0',
+  `mb_id` varchar(20) NOT NULL DEFAULT '',
+  `bg_flag` varchar(255) NOT NULL DEFAULT '',
+  `bg_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`bg_id`),
+  UNIQUE KEY `fkey1` (`bo_table`,`wr_id`,`mb_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_board_good`
+--
+
+LOCK TABLES `g5_board_good` WRITE;
+/*!40000 ALTER TABLE `g5_board_good` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_board_good` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_board_new`
+--
+
+DROP TABLE IF EXISTS `g5_board_new`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_board_new` (
+  `bn_id` int NOT NULL AUTO_INCREMENT,
+  `bo_table` varchar(20) NOT NULL DEFAULT '',
+  `wr_id` int NOT NULL DEFAULT '0',
+  `wr_parent` int NOT NULL DEFAULT '0',
+  `bn_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `mb_id` varchar(20) NOT NULL DEFAULT '',
+  PRIMARY KEY (`bn_id`),
+  KEY `mb_id` (`mb_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_board_new`
+--
+
+LOCK TABLES `g5_board_new` WRITE;
+/*!40000 ALTER TABLE `g5_board_new` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_board_new` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_cert_history`
+--
+
+DROP TABLE IF EXISTS `g5_cert_history`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_cert_history` (
+  `cr_id` int NOT NULL AUTO_INCREMENT,
+  `mb_id` varchar(20) NOT NULL DEFAULT '',
+  `cr_company` varchar(255) NOT NULL DEFAULT '',
+  `cr_method` varchar(255) NOT NULL DEFAULT '',
+  `cr_ip` varchar(255) NOT NULL DEFAULT '',
+  `cr_date` date NOT NULL DEFAULT '0000-00-00',
+  `cr_time` time NOT NULL DEFAULT '00:00:00',
+  PRIMARY KEY (`cr_id`),
+  KEY `mb_id` (`mb_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_cert_history`
+--
+
+LOCK TABLES `g5_cert_history` WRITE;
+/*!40000 ALTER TABLE `g5_cert_history` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_cert_history` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_chatbot_config`
+--
+
+DROP TABLE IF EXISTS `g5_chatbot_config`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_chatbot_config` (
+  `config_key` varchar(64) NOT NULL,
+  `config_value` text,
+  PRIMARY KEY (`config_key`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_chatbot_config`
+--
+
+LOCK TABLES `g5_chatbot_config` WRITE;
+/*!40000 ALTER TABLE `g5_chatbot_config` DISABLE KEYS */;
+INSERT INTO `g5_chatbot_config` VALUES ('admin_email',''),('ai_tone','friendly'),('brand_info','미락육회막국수는 육회와 막국수를 중심으로 한 외식 브랜드입니다. 창업 상담 대표번호는 032-433-7049입니다.'),('brand_name','미락육회막국수'),('enabled','0'),('expires_at','2026-05-23 01:39:16'),('expiry_notified','0'),('expiry_notified_at',''),('kakao_channel','https://pf.kakao.com/_xnKxaG'),('phone','032-433-7049'),('plan','1'),('quick_questions','[\\\"창업 비용이 궁금해요\\\",\\\"매장 위치가 궁금해요\\\",\\\"메뉴 구성이 궁금해요\\\",\\\"상담 받고 싶어요\\\"]'),('started_at','2026-04-23 01:39:16'),('welcome_message','안녕하세요. 미락육회막국수 창업 상담입니다. 궁금하신 내용을 편하게 남겨주세요.');
+/*!40000 ALTER TABLE `g5_chatbot_config` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_chatbot_log`
+--
+
+DROP TABLE IF EXISTS `g5_chatbot_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_chatbot_log` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `session_id` varchar(64) DEFAULT NULL,
+  `role` varchar(20) DEFAULT NULL,
+  `message` text,
+  `ip` varchar(45) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `session_id` (`session_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_chatbot_log`
+--
+
+LOCK TABLES `g5_chatbot_log` WRITE;
+/*!40000 ALTER TABLE `g5_chatbot_log` DISABLE KEYS */;
+INSERT INTO `g5_chatbot_log` VALUES (17,'268f683529e940115f3bac85b32666a7','user','카카오톡 링크 머야','127.0.0.1','2026-04-22 17:04:23'),(18,'268f683529e940115f3bac85b32666a7','assistant','아, 카카오톡 채팅 링크를 찾으시는 거네요. 😊\n\n죄송하지만, 현재 저한테는 카카오톡 링크 정보가 없어요. \n관리자분께서 설정해 두셨다면 웹사이트 곳곳(상단, 하단, 또는 문의 섹션)에 있을 텐데, 혹시 못 찾으셨다면 **전화(09~18시)로 연락 주시면 더 빠르게 도와드릴 수 있어요.**\n\n혹은 웹사이트에서 \'문의하기\', \'채팅상담\' 같은 버튼이 있는지 한 번 더 확인해 보셔도 좋습니다!','127.0.0.1','2026-04-22 17:04:23'),(19,'9e4d901a3c7445c64075a5bfd830d36d','user','카톡링크 머야','127.0.0.1','2026-04-22 17:05:28'),(20,'9e4d901a3c7445c64075a5bfd830d36d','assistant','아, 카톡링크가 뭔지 궁금하셨군요. 😊\n\n카톡링크는 카카오톡을 통해 우리와 직접 대화할 수 있는 채널이에요. 웹사이트에서 메시지를 남기는 것처럼 카톡으로 편하게 연락주실 수 있다는 뜻입니다.\n\n정확한 이용 방법이나 운영 시간은 상담원과 통화하셔야 확실한데, 궁금한 점이 더 있으세요?','127.0.0.1','2026-04-22 17:05:28'),(21,'9e4d901a3c7445c64075a5bfd830d36d','user','링크알려줘','127.0.0.1','2026-04-22 17:05:39'),(22,'9e4d901a3c7445c64075a5bfd830d36d','assistant','죄송하지만 저는 카톡링크 주소를 직접 안내할 수 없어요. \n\n정확한 링크는 상담원이 알려드릴 수 있으니, 업무시간(09~18시)에 저희로 전화 주시거나, 지금 궁금하신 내용을 말씀해 주시면 제가 도와드릴 수 있어요. 무엇을 도와드릴까요?','127.0.0.1','2026-04-22 17:05:39'),(23,'9e4d901a3c7445c64075a5bfd830d36d','user','채널링크','127.0.0.1','2026-04-22 17:05:42'),(24,'9e4d901a3c7445c64075a5bfd830d36d','assistant','채널링크도 마찬가지로 저는 정확한 주소를 안내해 드릴 수 없어요.\n\n구체적인 링크는 업무시간(09~18시)에 저희 상담원이 전화로 알려드릴 수 있습니다. 혹시 우리 서비스나 상품에 대해 궁금한 점이 있으신가요? 그럼 제가 먼저 도와드릴 수 있어요.','127.0.0.1','2026-04-22 17:05:42');
+/*!40000 ALTER TABLE `g5_chatbot_log` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_config`
+--
+
+DROP TABLE IF EXISTS `g5_config`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_config` (
+  `cf_id` int NOT NULL AUTO_INCREMENT,
+  `cf_title` varchar(255) NOT NULL DEFAULT '',
+  `cf_theme` varchar(100) NOT NULL DEFAULT '',
+  `cf_admin` varchar(100) NOT NULL DEFAULT '',
+  `cf_admin_email` varchar(100) NOT NULL DEFAULT '',
+  `cf_admin_email_name` varchar(100) NOT NULL DEFAULT '',
+  `cf_add_script` text NOT NULL,
+  `cf_use_point` tinyint NOT NULL DEFAULT '0',
+  `cf_point_term` int NOT NULL DEFAULT '0',
+  `cf_use_copy_log` tinyint NOT NULL DEFAULT '0',
+  `cf_use_email_certify` tinyint NOT NULL DEFAULT '0',
+  `cf_login_point` int NOT NULL DEFAULT '0',
+  `cf_cut_name` tinyint NOT NULL DEFAULT '0',
+  `cf_nick_modify` int NOT NULL DEFAULT '0',
+  `cf_new_skin` varchar(50) NOT NULL DEFAULT '',
+  `cf_new_rows` int NOT NULL DEFAULT '0',
+  `cf_search_skin` varchar(50) NOT NULL DEFAULT '',
+  `cf_connect_skin` varchar(50) NOT NULL DEFAULT '',
+  `cf_faq_skin` varchar(50) NOT NULL DEFAULT '',
+  `cf_read_point` int NOT NULL DEFAULT '0',
+  `cf_write_point` int NOT NULL DEFAULT '0',
+  `cf_comment_point` int NOT NULL DEFAULT '0',
+  `cf_download_point` int NOT NULL DEFAULT '0',
+  `cf_write_pages` int NOT NULL DEFAULT '0',
+  `cf_mobile_pages` int NOT NULL DEFAULT '0',
+  `cf_link_target` varchar(50) NOT NULL DEFAULT '',
+  `cf_bbs_rewrite` tinyint NOT NULL DEFAULT '0',
+  `cf_delay_sec` int NOT NULL DEFAULT '0',
+  `cf_filter` text NOT NULL,
+  `cf_possible_ip` text NOT NULL,
+  `cf_intercept_ip` text NOT NULL,
+  `cf_analytics` text NOT NULL,
+  `cf_add_meta` text NOT NULL,
+  `cf_syndi_token` varchar(255) NOT NULL,
+  `cf_syndi_except` text NOT NULL,
+  `cf_member_skin` varchar(50) NOT NULL DEFAULT '',
+  `cf_use_homepage` tinyint NOT NULL DEFAULT '0',
+  `cf_req_homepage` tinyint NOT NULL DEFAULT '0',
+  `cf_use_tel` tinyint NOT NULL DEFAULT '0',
+  `cf_req_tel` tinyint NOT NULL DEFAULT '0',
+  `cf_use_hp` tinyint NOT NULL DEFAULT '0',
+  `cf_req_hp` tinyint NOT NULL DEFAULT '0',
+  `cf_use_addr` tinyint NOT NULL DEFAULT '0',
+  `cf_req_addr` tinyint NOT NULL DEFAULT '0',
+  `cf_use_signature` tinyint NOT NULL DEFAULT '0',
+  `cf_req_signature` tinyint NOT NULL DEFAULT '0',
+  `cf_use_profile` tinyint NOT NULL DEFAULT '0',
+  `cf_req_profile` tinyint NOT NULL DEFAULT '0',
+  `cf_register_level` tinyint NOT NULL DEFAULT '0',
+  `cf_register_point` int NOT NULL DEFAULT '0',
+  `cf_icon_level` tinyint NOT NULL DEFAULT '0',
+  `cf_use_recommend` tinyint NOT NULL DEFAULT '0',
+  `cf_recommend_point` int NOT NULL DEFAULT '0',
+  `cf_leave_day` int NOT NULL DEFAULT '0',
+  `cf_search_part` int NOT NULL DEFAULT '0',
+  `cf_email_use` tinyint NOT NULL DEFAULT '0',
+  `cf_email_wr_super_admin` tinyint NOT NULL DEFAULT '0',
+  `cf_email_wr_group_admin` tinyint NOT NULL DEFAULT '0',
+  `cf_email_wr_board_admin` tinyint NOT NULL DEFAULT '0',
+  `cf_email_wr_write` tinyint NOT NULL DEFAULT '0',
+  `cf_email_wr_comment_all` tinyint NOT NULL DEFAULT '0',
+  `cf_email_mb_super_admin` tinyint NOT NULL DEFAULT '0',
+  `cf_email_mb_member` tinyint NOT NULL DEFAULT '0',
+  `cf_email_po_super_admin` tinyint NOT NULL DEFAULT '0',
+  `cf_prohibit_id` text NOT NULL,
+  `cf_prohibit_email` text NOT NULL,
+  `cf_new_del` int NOT NULL DEFAULT '0',
+  `cf_memo_del` int NOT NULL DEFAULT '0',
+  `cf_visit_del` int NOT NULL DEFAULT '0',
+  `cf_popular_del` int NOT NULL DEFAULT '0',
+  `cf_optimize_date` date NOT NULL DEFAULT '0000-00-00',
+  `cf_use_member_icon` tinyint NOT NULL DEFAULT '0',
+  `cf_member_icon_size` int NOT NULL DEFAULT '0',
+  `cf_member_icon_width` int NOT NULL DEFAULT '0',
+  `cf_member_icon_height` int NOT NULL DEFAULT '0',
+  `cf_member_img_size` int NOT NULL DEFAULT '0',
+  `cf_member_img_width` int NOT NULL DEFAULT '0',
+  `cf_member_img_height` int NOT NULL DEFAULT '0',
+  `cf_login_minutes` int NOT NULL DEFAULT '0',
+  `cf_image_extension` varchar(255) NOT NULL DEFAULT '',
+  `cf_flash_extension` varchar(255) NOT NULL DEFAULT '',
+  `cf_movie_extension` varchar(255) NOT NULL DEFAULT '',
+  `cf_formmail_is_member` tinyint NOT NULL DEFAULT '0',
+  `cf_page_rows` int NOT NULL DEFAULT '0',
+  `cf_mobile_page_rows` int NOT NULL DEFAULT '0',
+  `cf_visit` varchar(255) NOT NULL DEFAULT '',
+  `cf_max_po_id` int NOT NULL DEFAULT '0',
+  `cf_stipulation` text NOT NULL,
+  `cf_privacy` text NOT NULL,
+  `cf_open_modify` int NOT NULL DEFAULT '0',
+  `cf_memo_send_point` int NOT NULL DEFAULT '0',
+  `cf_mobile_new_skin` varchar(50) NOT NULL DEFAULT '',
+  `cf_mobile_search_skin` varchar(50) NOT NULL DEFAULT '',
+  `cf_mobile_connect_skin` varchar(50) NOT NULL DEFAULT '',
+  `cf_mobile_faq_skin` varchar(50) NOT NULL DEFAULT '',
+  `cf_mobile_member_skin` varchar(50) NOT NULL DEFAULT '',
+  `cf_captcha_mp3` varchar(255) NOT NULL DEFAULT '',
+  `cf_editor` varchar(50) NOT NULL DEFAULT '',
+  `cf_cert_use` tinyint NOT NULL DEFAULT '0',
+  `cf_cert_find` tinyint NOT NULL DEFAULT '0',
+  `cf_cert_ipin` varchar(255) NOT NULL DEFAULT '',
+  `cf_cert_hp` varchar(255) NOT NULL DEFAULT '',
+  `cf_cert_simple` varchar(255) NOT NULL DEFAULT '',
+  `cf_cert_kg_cd` varchar(255) NOT NULL DEFAULT '',
+  `cf_cert_kg_mid` varchar(255) NOT NULL DEFAULT '',
+  `cf_cert_use_seed` tinyint NOT NULL DEFAULT '1',
+  `cf_cert_kcb_cd` varchar(255) NOT NULL DEFAULT '',
+  `cf_cert_kcp_cd` varchar(255) NOT NULL DEFAULT '',
+  `cf_cert_kcp_enckey` varchar(100) NOT NULL DEFAULT '',
+  `cf_lg_mid` varchar(100) NOT NULL DEFAULT '',
+  `cf_lg_mert_key` varchar(100) NOT NULL DEFAULT '',
+  `cf_cert_limit` int NOT NULL DEFAULT '0',
+  `cf_cert_req` tinyint NOT NULL DEFAULT '0',
+  `cf_sms_use` varchar(255) NOT NULL DEFAULT '',
+  `cf_sms_type` varchar(10) NOT NULL DEFAULT '',
+  `cf_icode_id` varchar(255) NOT NULL DEFAULT '',
+  `cf_icode_pw` varchar(255) NOT NULL DEFAULT '',
+  `cf_icode_server_ip` varchar(50) NOT NULL DEFAULT '',
+  `cf_icode_server_port` varchar(50) NOT NULL DEFAULT '',
+  `cf_icode_token_key` varchar(100) NOT NULL DEFAULT '',
+  `cf_googl_shorturl_apikey` varchar(50) NOT NULL DEFAULT '',
+  `cf_social_login_use` tinyint NOT NULL DEFAULT '0',
+  `cf_social_servicelist` varchar(255) NOT NULL DEFAULT '',
+  `cf_payco_clientid` varchar(100) NOT NULL DEFAULT '',
+  `cf_payco_secret` varchar(100) NOT NULL DEFAULT '',
+  `cf_facebook_appid` varchar(100) NOT NULL,
+  `cf_facebook_secret` varchar(100) NOT NULL,
+  `cf_twitter_key` varchar(100) NOT NULL,
+  `cf_twitter_secret` varchar(100) NOT NULL,
+  `cf_google_clientid` varchar(100) NOT NULL DEFAULT '',
+  `cf_google_secret` varchar(100) NOT NULL DEFAULT '',
+  `cf_naver_clientid` varchar(100) NOT NULL DEFAULT '',
+  `cf_naver_secret` varchar(100) NOT NULL DEFAULT '',
+  `cf_kakao_rest_key` varchar(100) NOT NULL DEFAULT '',
+  `cf_kakao_client_secret` varchar(100) NOT NULL DEFAULT '',
+  `cf_kakao_js_apikey` varchar(100) NOT NULL,
+  `cf_captcha` varchar(100) NOT NULL DEFAULT '',
+  `cf_recaptcha_site_key` varchar(100) NOT NULL DEFAULT '',
+  `cf_recaptcha_secret_key` varchar(100) NOT NULL DEFAULT '',
+  `cf_1_subj` varchar(255) NOT NULL DEFAULT '',
+  `cf_2_subj` varchar(255) NOT NULL DEFAULT '',
+  `cf_3_subj` varchar(255) NOT NULL DEFAULT '',
+  `cf_4_subj` varchar(255) NOT NULL DEFAULT '',
+  `cf_5_subj` varchar(255) NOT NULL DEFAULT '',
+  `cf_6_subj` varchar(255) NOT NULL DEFAULT '',
+  `cf_7_subj` varchar(255) NOT NULL DEFAULT '',
+  `cf_8_subj` varchar(255) NOT NULL DEFAULT '',
+  `cf_9_subj` varchar(255) NOT NULL DEFAULT '',
+  `cf_10_subj` varchar(255) NOT NULL DEFAULT '',
+  `cf_1` varchar(255) NOT NULL DEFAULT '',
+  `cf_2` varchar(255) NOT NULL DEFAULT '',
+  `cf_3` varchar(255) NOT NULL DEFAULT '',
+  `cf_4` varchar(255) NOT NULL DEFAULT '',
+  `cf_5` varchar(255) NOT NULL DEFAULT '',
+  `cf_6` varchar(255) NOT NULL DEFAULT '',
+  `cf_7` varchar(255) NOT NULL DEFAULT '',
+  `cf_8` varchar(255) NOT NULL DEFAULT '',
+  `cf_9` varchar(255) NOT NULL DEFAULT '',
+  `cf_10` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`cf_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_config`
+--
+
+LOCK TABLES `g5_config` WRITE;
+/*!40000 ALTER TABLE `g5_config` DISABLE KEYS */;
+INSERT INTO `g5_config` VALUES (1,'미락육회막국수','design','admin','admin@domain.com','미락육회막국수','',1,0,1,0,100,15,60,'basic',15,'basic','basic','basic',0,0,0,0,10,5,'_blank',0,30,'18아,18놈,18새끼,18뇬,18노,18것,18넘,개년,개놈,개뇬,개새,개색끼,개세끼,개세이,개쉐이,개쉑,개쉽,개시키,개자식,개좆,게색기,게색끼,광뇬,뇬,눈깔,뉘미럴,니귀미,니기미,니미,도촬,되질래,뒈져라,뒈진다,디져라,디진다,디질래,병쉰,병신,뻐큐,뻑큐,뽁큐,삐리넷,새꺄,쉬발,쉬밸,쉬팔,쉽알,스패킹,스팽,시벌,시부랄,시부럴,시부리,시불,시브랄,시팍,시팔,시펄,실밸,십8,십쌔,십창,싶알,쌉년,썅놈,쌔끼,쌩쑈,썅,써벌,썩을년,쎄꺄,쎄엑,쓰바,쓰발,쓰벌,쓰팔,씨8,씨댕,씨바,씨발,씨뱅,씨봉알,씨부랄,씨부럴,씨부렁,씨부리,씨불,씨브랄,씨빠,씨빨,씨뽀랄,씨팍,씨팔,씨펄,씹,아가리,아갈이,엄창,접년,잡놈,재랄,저주글,조까,조빠,조쟁이,조지냐,조진다,조질래,존나,존니,좀물,좁년,좃,좆,좇,쥐랄,쥐롤,쥬디,지랄,지럴,지롤,지미랄,쫍빱,凸,퍽큐,뻑큐,빠큐,ㅅㅂㄹㅁ','','','','<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:title\" content=\"미락육회막국수\">\n<meta property=\"og:description\" content=\"맛으로 증명하는 브랜드, 미락육회막국수.\">\n<meta name=\"description\" content=\"맛으로 증명하는 브랜드, 미락육회막국수.\">\n<meta property=\"og:url\" content=\"/\">\n<meta property=\"og:site_name\" content=\"미락육회막국수\">\n<meta property=\"og:image\" content=\"/images/thumbnail.jpg\">\n<link rel=\"shortcut icon\" href=\"/images/favi.ico\" type=\"image/x-icon\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0\">\n','','','basic',0,0,0,0,0,0,0,0,0,0,0,0,2,1000,2,0,0,30,10000,1,0,0,0,0,0,0,0,0,'admin,administrator,관리자,운영자,어드민,주인장,webmaster,웹마스터,sysop,시삽,시샵,manager,매니저,메니저,root,루트,su,guest,방문객','',30,180,180,180,'2026-05-03',2,5000,22,22,50000,60,60,10,'gif|jpg|jpeg|png','swf','asx|asf|wmv|wma|mpg|mpeg|mov|avi|mp3',1,15,15,'오늘:2,어제:0,최대:2,전체:7',0,'해당 홈페이지에 맞는 회원가입약관을 입력합니다.','해당 홈페이지에 맞는 개인정보처리방침을 입력합니다.',0,500,'basic','basic','basic','basic','basic','basic','smarteditor2',0,0,'','','','','',1,'','','','','',2,0,'','','admin','','211.172.232.124','7295','','',0,'','','','','','','','','','','','','','','kcaptcha','','','','','','','','','','','','','','','','','','','','','','');
+/*!40000 ALTER TABLE `g5_config` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_content`
+--
+
+DROP TABLE IF EXISTS `g5_content`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_content` (
+  `co_id` varchar(20) NOT NULL DEFAULT '',
+  `co_html` tinyint NOT NULL DEFAULT '0',
+  `co_subject` varchar(255) NOT NULL DEFAULT '',
+  `co_content` longtext NOT NULL,
+  `co_seo_title` varchar(255) NOT NULL DEFAULT '',
+  `co_mobile_content` longtext NOT NULL,
+  `co_skin` varchar(255) NOT NULL DEFAULT '',
+  `co_mobile_skin` varchar(255) NOT NULL DEFAULT '',
+  `co_tag_filter_use` tinyint NOT NULL DEFAULT '0',
+  `co_hit` int NOT NULL DEFAULT '0',
+  `co_include_head` varchar(255) NOT NULL,
+  `co_include_tail` varchar(255) NOT NULL,
+  PRIMARY KEY (`co_id`),
+  KEY `co_seo_title` (`co_seo_title`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_content`
+--
+
+LOCK TABLES `g5_content` WRITE;
+/*!40000 ALTER TABLE `g5_content` DISABLE KEYS */;
+INSERT INTO `g5_content` VALUES ('company',1,'회사소개','<p align=center><b>회사소개에 대한 내용을 입력하십시오.</b></p>','','','basic','basic',0,0,'',''),('privacy',1,'개인정보 처리방침','<p align=center><b>개인정보 처리방침에 대한 내용을 입력하십시오.</b></p>','','','basic','basic',0,0,'',''),('provision',1,'서비스 이용약관','<p align=center><b>서비스 이용약관에 대한 내용을 입력하십시오.</b></p>','','','basic','basic',0,0,'','');
+/*!40000 ALTER TABLE `g5_content` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_content_block`
+--
+
+DROP TABLE IF EXISTS `g5_content_block`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_content_block` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `block_name` varchar(255) NOT NULL DEFAULT '',
+  `type` varchar(255) DEFAULT NULL,
+  `bo_table` varchar(255) DEFAULT NULL,
+  `skin_name` varchar(255) DEFAULT NULL,
+  `list_count` varchar(255) DEFAULT NULL,
+  `char_count` varchar(255) DEFAULT NULL,
+  `form_board` varchar(255) DEFAULT NULL,
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_content_block`
+--
+
+LOCK TABLES `g5_content_block` WRITE;
+/*!40000 ALTER TABLE `g5_content_block` DISABLE KEYS */;
+INSERT INTO `g5_content_block` VALUES (1,'main',NULL,NULL,NULL,NULL,NULL,NULL),(2,'header',NULL,NULL,NULL,NULL,NULL,NULL),(3,'footer',NULL,NULL,NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `g5_content_block` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_content_block_set`
+--
+
+DROP TABLE IF EXISTS `g5_content_block_set`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_content_block_set` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `pagename` varchar(255) NOT NULL DEFAULT '',
+  `empty_area` varchar(255) NOT NULL DEFAULT '',
+  `head_area` varchar(255) NOT NULL DEFAULT '',
+  `content_area` varchar(255) NOT NULL DEFAULT '',
+  `footer_area` varchar(255) NOT NULL DEFAULT '',
+  `left_sidebar_area` varchar(255) NOT NULL DEFAULT '',
+  `right_sidebar_area` varchar(255) NOT NULL DEFAULT '',
+  `b_left_sidebar_area` varchar(255) NOT NULL DEFAULT '',
+  `b_right_sidebar_area` varchar(255) NOT NULL DEFAULT '',
+  `sidebar_position` varchar(255) NOT NULL DEFAULT '',
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_content_block_set`
+--
+
+LOCK TABLES `g5_content_block_set` WRITE;
+/*!40000 ALTER TABLE `g5_content_block_set` DISABLE KEYS */;
+INSERT INTO `g5_content_block_set` VALUES (1,'mainpage','','','|2','|1','|3','','','','','');
+/*!40000 ALTER TABLE `g5_content_block_set` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_email_data`
+--
+
+DROP TABLE IF EXISTS `g5_email_data`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_email_data` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) DEFAULT NULL,
+  `phone` varchar(100) DEFAULT NULL,
+  `wr_2` varchar(100) DEFAULT NULL,
+  `wr_3` varchar(100) DEFAULT NULL,
+  `wr_4` varchar(100) DEFAULT NULL,
+  `wr_5` varchar(100) DEFAULT NULL,
+  `wr_6` varchar(100) DEFAULT NULL,
+  `location` varchar(100) DEFAULT NULL,
+  `budget` varchar(100) DEFAULT NULL,
+  `content` blob,
+  `regDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_email_data`
+--
+
+LOCK TABLES `g5_email_data` WRITE;
+/*!40000 ALTER TABLE `g5_email_data` DISABLE KEYS */;
+INSERT INTO `g5_email_data` VALUES (1,'테스트유저','010-7777-8888','유',NULL,NULL,'con19',NULL,'서울','1개월 이내',0x73656E64426561636F6E20ED858CEC8AA4ED8AB820EC9E85EB8B88EB8BA42E,'2026-05-03 14:20:59'),(2,'하단테스트','010-9999-8888','',NULL,NULL,'footer_quick',NULL,'경기/인천','','','2026-05-03 14:21:04');
+/*!40000 ALTER TABLE `g5_email_data` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_faq`
+--
+
+DROP TABLE IF EXISTS `g5_faq`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_faq` (
+  `fa_id` int NOT NULL AUTO_INCREMENT,
+  `fm_id` int NOT NULL DEFAULT '0',
+  `fa_subject` text NOT NULL,
+  `fa_content` text NOT NULL,
+  `fa_order` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`fa_id`),
+  KEY `fm_id` (`fm_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_faq`
+--
+
+LOCK TABLES `g5_faq` WRITE;
+/*!40000 ALTER TABLE `g5_faq` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_faq` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_faq_master`
+--
+
+DROP TABLE IF EXISTS `g5_faq_master`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_faq_master` (
+  `fm_id` int NOT NULL AUTO_INCREMENT,
+  `fm_subject` varchar(255) NOT NULL DEFAULT '',
+  `fm_head_html` text NOT NULL,
+  `fm_tail_html` text NOT NULL,
+  `fm_mobile_head_html` text NOT NULL,
+  `fm_mobile_tail_html` text NOT NULL,
+  `fm_order` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`fm_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_faq_master`
+--
+
+LOCK TABLES `g5_faq_master` WRITE;
+/*!40000 ALTER TABLE `g5_faq_master` DISABLE KEYS */;
+INSERT INTO `g5_faq_master` VALUES (1,'자주하시는 질문','','','','',0);
+/*!40000 ALTER TABLE `g5_faq_master` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_group`
+--
+
+DROP TABLE IF EXISTS `g5_group`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_group` (
+  `gr_id` varchar(10) NOT NULL DEFAULT '',
+  `gr_subject` varchar(255) NOT NULL DEFAULT '',
+  `gr_device` enum('both','pc','mobile') NOT NULL DEFAULT 'both',
+  `gr_admin` varchar(255) NOT NULL DEFAULT '',
+  `gr_use_access` tinyint NOT NULL DEFAULT '0',
+  `gr_order` int NOT NULL DEFAULT '0',
+  `gr_1_subj` varchar(255) NOT NULL DEFAULT '',
+  `gr_2_subj` varchar(255) NOT NULL DEFAULT '',
+  `gr_3_subj` varchar(255) NOT NULL DEFAULT '',
+  `gr_4_subj` varchar(255) NOT NULL DEFAULT '',
+  `gr_5_subj` varchar(255) NOT NULL DEFAULT '',
+  `gr_6_subj` varchar(255) NOT NULL DEFAULT '',
+  `gr_7_subj` varchar(255) NOT NULL DEFAULT '',
+  `gr_8_subj` varchar(255) NOT NULL DEFAULT '',
+  `gr_9_subj` varchar(255) NOT NULL DEFAULT '',
+  `gr_10_subj` varchar(255) NOT NULL DEFAULT '',
+  `gr_1` varchar(255) NOT NULL DEFAULT '',
+  `gr_2` varchar(255) NOT NULL DEFAULT '',
+  `gr_3` varchar(255) NOT NULL DEFAULT '',
+  `gr_4` varchar(255) NOT NULL DEFAULT '',
+  `gr_5` varchar(255) NOT NULL DEFAULT '',
+  `gr_6` varchar(255) NOT NULL DEFAULT '',
+  `gr_7` varchar(255) NOT NULL DEFAULT '',
+  `gr_8` varchar(255) NOT NULL DEFAULT '',
+  `gr_9` varchar(255) NOT NULL DEFAULT '',
+  `gr_10` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`gr_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_group`
+--
+
+LOCK TABLES `g5_group` WRITE;
+/*!40000 ALTER TABLE `g5_group` DISABLE KEYS */;
+INSERT INTO `g5_group` VALUES ('community','커뮤니티','both','',0,0,'','','','','','','','','','','','','','','','','','','','');
+/*!40000 ALTER TABLE `g5_group` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_group_member`
+--
+
+DROP TABLE IF EXISTS `g5_group_member`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_group_member` (
+  `gm_id` int NOT NULL AUTO_INCREMENT,
+  `gr_id` varchar(255) NOT NULL DEFAULT '',
+  `mb_id` varchar(20) NOT NULL DEFAULT '',
+  `gm_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`gm_id`),
+  KEY `gr_id` (`gr_id`),
+  KEY `mb_id` (`mb_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_group_member`
+--
+
+LOCK TABLES `g5_group_member` WRITE;
+/*!40000 ALTER TABLE `g5_group_member` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_group_member` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_layout_css_set`
+--
+
+DROP TABLE IF EXISTS `g5_layout_css_set`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_layout_css_set` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `css_1` varchar(255) NOT NULL DEFAULT '',
+  `css_2` varchar(255) NOT NULL DEFAULT '',
+  `css_3` varchar(255) NOT NULL DEFAULT '',
+  `css_4` varchar(255) NOT NULL DEFAULT '',
+  `css_5` varchar(255) NOT NULL DEFAULT '',
+  `css_6` varchar(255) NOT NULL DEFAULT '',
+  `css_7` varchar(255) NOT NULL DEFAULT '',
+  `css_8` varchar(255) NOT NULL DEFAULT '',
+  `css_9` varchar(255) NOT NULL DEFAULT '',
+  `css_10` varchar(255) NOT NULL DEFAULT '',
+  `css_11` varchar(255) NOT NULL DEFAULT '',
+  `css_12` varchar(255) NOT NULL DEFAULT '',
+  `css_13` varchar(255) NOT NULL DEFAULT '',
+  `css_14` varchar(255) NOT NULL DEFAULT '',
+  `css_15` varchar(255) NOT NULL DEFAULT '',
+  `css_16` varchar(255) NOT NULL DEFAULT '',
+  `css_17` varchar(255) NOT NULL DEFAULT '',
+  `css_18` varchar(255) NOT NULL DEFAULT '',
+  `css_19` varchar(255) NOT NULL DEFAULT '',
+  `css_20` varchar(255) NOT NULL DEFAULT '',
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_layout_css_set`
+--
+
+LOCK TABLES `g5_layout_css_set` WRITE;
+/*!40000 ALTER TABLE `g5_layout_css_set` DISABLE KEYS */;
+INSERT INTO `g5_layout_css_set` VALUES (1,'mainpage','1200px','','','','','100%','100%','979','767','','','','','','','','','','','');
+/*!40000 ALTER TABLE `g5_layout_css_set` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_login`
+--
+
+DROP TABLE IF EXISTS `g5_login`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_login` (
+  `lo_id` int NOT NULL AUTO_INCREMENT,
+  `lo_ip` varchar(100) NOT NULL DEFAULT '',
+  `mb_id` varchar(20) NOT NULL DEFAULT '',
+  `lo_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `lo_location` text NOT NULL,
+  `lo_url` text NOT NULL,
+  PRIMARY KEY (`lo_id`),
+  UNIQUE KEY `lo_ip_unique` (`lo_ip`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_login`
+--
+
+LOCK TABLES `g5_login` WRITE;
+/*!40000 ALTER TABLE `g5_login` DISABLE KEYS */;
+INSERT INTO `g5_login` VALUES (3,'127.0.0.1','','2026-05-03 14:30:31','/','/'),(4,'::1','','2026-05-03 23:20:48','/','/');
+/*!40000 ALTER TABLE `g5_login` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_mail`
+--
+
+DROP TABLE IF EXISTS `g5_mail`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_mail` (
+  `ma_id` int NOT NULL AUTO_INCREMENT,
+  `ma_subject` varchar(255) NOT NULL DEFAULT '',
+  `ma_content` mediumtext NOT NULL,
+  `ma_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `ma_ip` varchar(255) NOT NULL DEFAULT '',
+  `ma_last_option` text NOT NULL,
+  PRIMARY KEY (`ma_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_mail`
+--
+
+LOCK TABLES `g5_mail` WRITE;
+/*!40000 ALTER TABLE `g5_mail` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_mail` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_member`
+--
+
+DROP TABLE IF EXISTS `g5_member`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_member` (
+  `mb_no` int NOT NULL AUTO_INCREMENT,
+  `mb_id` varchar(20) NOT NULL DEFAULT '',
+  `mb_password` varchar(255) NOT NULL DEFAULT '',
+  `mb_password2` varchar(255) NOT NULL DEFAULT '',
+  `mb_name` varchar(255) NOT NULL DEFAULT '',
+  `mb_nick` varchar(255) NOT NULL DEFAULT '',
+  `mb_nick_date` date NOT NULL DEFAULT '0000-00-00',
+  `mb_email` varchar(255) NOT NULL DEFAULT '',
+  `mb_homepage` varchar(255) NOT NULL DEFAULT '',
+  `mb_level` tinyint NOT NULL DEFAULT '0',
+  `mb_sex` char(1) NOT NULL DEFAULT '',
+  `mb_birth` varchar(255) NOT NULL DEFAULT '',
+  `mb_tel` varchar(255) NOT NULL DEFAULT '',
+  `mb_hp` varchar(255) NOT NULL DEFAULT '',
+  `mb_certify` varchar(20) NOT NULL DEFAULT '',
+  `mb_adult` tinyint NOT NULL DEFAULT '0',
+  `mb_dupinfo` varchar(255) NOT NULL DEFAULT '',
+  `mb_zip1` char(3) NOT NULL DEFAULT '',
+  `mb_zip2` char(3) NOT NULL DEFAULT '',
+  `mb_addr1` varchar(255) NOT NULL DEFAULT '',
+  `mb_addr2` varchar(255) NOT NULL DEFAULT '',
+  `mb_addr3` varchar(255) NOT NULL DEFAULT '',
+  `mb_addr_jibeon` varchar(255) NOT NULL DEFAULT '',
+  `mb_signature` text NOT NULL,
+  `mb_recommend` varchar(255) NOT NULL DEFAULT '',
+  `mb_point` int NOT NULL DEFAULT '0',
+  `mb_today_login` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `mb_login_ip` varchar(255) NOT NULL DEFAULT '',
+  `mb_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `mb_ip` varchar(255) NOT NULL DEFAULT '',
+  `mb_leave_date` varchar(8) NOT NULL DEFAULT '',
+  `mb_intercept_date` varchar(8) NOT NULL DEFAULT '',
+  `mb_email_certify` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `mb_email_certify2` varchar(255) NOT NULL DEFAULT '',
+  `mb_memo` text NOT NULL,
+  `mb_lost_certify` varchar(255) NOT NULL,
+  `mb_mailling` tinyint NOT NULL DEFAULT '0',
+  `mb_sms` tinyint NOT NULL DEFAULT '0',
+  `mb_open` tinyint NOT NULL DEFAULT '0',
+  `mb_open_date` date NOT NULL DEFAULT '0000-00-00',
+  `mb_profile` text NOT NULL,
+  `mb_memo_call` varchar(255) NOT NULL DEFAULT '',
+  `mb_memo_cnt` int NOT NULL DEFAULT '0',
+  `mb_scrap_cnt` int NOT NULL DEFAULT '0',
+  `mb_1` varchar(255) NOT NULL DEFAULT '',
+  `mb_2` varchar(255) NOT NULL DEFAULT '',
+  `mb_3` varchar(255) NOT NULL DEFAULT '',
+  `mb_4` varchar(255) NOT NULL DEFAULT '',
+  `mb_5` varchar(255) NOT NULL DEFAULT '',
+  `mb_6` varchar(255) NOT NULL DEFAULT '',
+  `mb_7` varchar(255) NOT NULL DEFAULT '',
+  `mb_8` varchar(255) NOT NULL DEFAULT '',
+  `mb_9` varchar(255) NOT NULL DEFAULT '',
+  `mb_10` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`mb_no`),
+  UNIQUE KEY `mb_id` (`mb_id`),
+  KEY `mb_today_login` (`mb_today_login`),
+  KEY `mb_datetime` (`mb_datetime`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_member`
+--
+
+LOCK TABLES `g5_member` WRITE;
+/*!40000 ALTER TABLE `g5_member` DISABLE KEYS */;
+INSERT INTO `g5_member` VALUES (1,'admin','sha256:12000:j1/SAU8nl55m8ICz8TKuzl4BMLrgiSU5:T92UpwekjrBhm51SQpaBMsnC3GHepo1e','*51604410EB0DAAD47EA76761B2CC3EC3EC2E5714','최고관리자','최고관리자','2025-05-18','admin@domain.com','',10,'','','','','',0,'','','','','','','','','',600,'2026-05-03 13:30:13','::1','2025-05-18 09:32:33','','','','2025-05-18 09:32:33','','','',1,0,1,'0000-00-00','','',0,0,'','','','','','','','','',''),(2,'admin02','sha256:12000:3pUTFJAu3E9oJe6pYIToCD0LhP5G1O3T:umEWg2mUDEWuSIvGdPkwpH/RW6yhH1xQfXvolbGlG9w=','','admin02','admin02','0000-00-00','admin02@example.com','',10,'','','','','',0,'','','','','','','','','',0,'2026-03-13 01:18:23','127.0.0.1','2026-03-03 13:47:36','127.0.0.1','','','2026-03-03 13:47:36','','','',1,0,1,'0000-00-00','','',0,0,'','','','','','','','','','');
+/*!40000 ALTER TABLE `g5_member` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_member_cert_history`
+--
+
+DROP TABLE IF EXISTS `g5_member_cert_history`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_member_cert_history` (
+  `ch_id` int NOT NULL AUTO_INCREMENT,
+  `mb_id` varchar(20) NOT NULL DEFAULT '',
+  `ch_name` varchar(255) NOT NULL DEFAULT '',
+  `ch_hp` varchar(255) NOT NULL DEFAULT '',
+  `ch_birth` varchar(255) NOT NULL DEFAULT '',
+  `ch_type` varchar(20) NOT NULL DEFAULT '',
+  `ch_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`ch_id`),
+  KEY `mb_id` (`mb_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_member_cert_history`
+--
+
+LOCK TABLES `g5_member_cert_history` WRITE;
+/*!40000 ALTER TABLE `g5_member_cert_history` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_member_cert_history` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_member_social_profiles`
+--
+
+DROP TABLE IF EXISTS `g5_member_social_profiles`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_member_social_profiles` (
+  `mp_no` int NOT NULL AUTO_INCREMENT,
+  `mb_id` varchar(255) NOT NULL DEFAULT '',
+  `provider` varchar(50) NOT NULL DEFAULT '',
+  `object_sha` varchar(45) NOT NULL DEFAULT '',
+  `identifier` varchar(255) NOT NULL DEFAULT '',
+  `profileurl` varchar(255) NOT NULL DEFAULT '',
+  `photourl` varchar(255) NOT NULL DEFAULT '',
+  `displayname` varchar(150) NOT NULL DEFAULT '',
+  `description` varchar(255) NOT NULL DEFAULT '',
+  `mp_register_day` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `mp_latest_day` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`mp_no`),
+  KEY `mb_id` (`mb_id`),
+  KEY `provider` (`provider`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_member_social_profiles`
+--
+
+LOCK TABLES `g5_member_social_profiles` WRITE;
+/*!40000 ALTER TABLE `g5_member_social_profiles` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_member_social_profiles` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_memo`
+--
+
+DROP TABLE IF EXISTS `g5_memo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_memo` (
+  `me_id` int NOT NULL AUTO_INCREMENT,
+  `me_recv_mb_id` varchar(20) NOT NULL DEFAULT '',
+  `me_send_mb_id` varchar(20) NOT NULL DEFAULT '',
+  `me_send_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `me_read_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `me_memo` text NOT NULL,
+  `me_send_id` int NOT NULL DEFAULT '0',
+  `me_type` enum('send','recv') NOT NULL DEFAULT 'recv',
+  `me_send_ip` varchar(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`me_id`),
+  KEY `me_recv_mb_id` (`me_recv_mb_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_memo`
+--
+
+LOCK TABLES `g5_memo` WRITE;
+/*!40000 ALTER TABLE `g5_memo` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_memo` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_menu`
+--
+
+DROP TABLE IF EXISTS `g5_menu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_menu` (
+  `me_id` int NOT NULL AUTO_INCREMENT,
+  `me_code` varchar(255) NOT NULL DEFAULT '',
+  `me_name` varchar(255) NOT NULL DEFAULT '',
+  `me_link` varchar(255) NOT NULL DEFAULT '',
+  `me_target` varchar(255) NOT NULL DEFAULT '',
+  `me_order` int NOT NULL DEFAULT '0',
+  `me_use` tinyint NOT NULL DEFAULT '0',
+  `me_mobile_use` tinyint NOT NULL DEFAULT '0',
+  PRIMARY KEY (`me_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_menu`
+--
+
+LOCK TABLES `g5_menu` WRITE;
+/*!40000 ALTER TABLE `g5_menu` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_menu` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_new_win`
+--
+
+DROP TABLE IF EXISTS `g5_new_win`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_new_win` (
+  `nw_id` int NOT NULL AUTO_INCREMENT,
+  `nw_division` varchar(10) NOT NULL DEFAULT 'both',
+  `nw_device` varchar(10) NOT NULL DEFAULT 'both',
+  `nw_begin_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `nw_end_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `nw_disable_hours` int NOT NULL DEFAULT '0',
+  `nw_left` int NOT NULL DEFAULT '0',
+  `nw_top` int NOT NULL DEFAULT '0',
+  `nw_height` int NOT NULL DEFAULT '0',
+  `nw_width` int NOT NULL DEFAULT '0',
+  `nw_subject` text NOT NULL,
+  `nw_content` text NOT NULL,
+  `nw_content_html` tinyint NOT NULL DEFAULT '0',
+  `nw_order` varchar(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`nw_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_new_win`
+--
+
+LOCK TABLES `g5_new_win` WRITE;
+/*!40000 ALTER TABLE `g5_new_win` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_new_win` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_point`
+--
+
+DROP TABLE IF EXISTS `g5_point`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_point` (
+  `po_id` int NOT NULL AUTO_INCREMENT,
+  `mb_id` varchar(20) NOT NULL DEFAULT '',
+  `po_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `po_content` varchar(255) NOT NULL DEFAULT '',
+  `po_point` int NOT NULL DEFAULT '0',
+  `po_use_point` int NOT NULL DEFAULT '0',
+  `po_expired` tinyint NOT NULL DEFAULT '0',
+  `po_expire_date` date NOT NULL DEFAULT '0000-00-00',
+  `po_mb_point` int NOT NULL DEFAULT '0',
+  `po_rel_table` varchar(20) NOT NULL DEFAULT '',
+  `po_rel_id` varchar(20) NOT NULL DEFAULT '',
+  `po_rel_action` varchar(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`po_id`),
+  KEY `index1` (`mb_id`,`po_rel_table`,`po_rel_id`,`po_rel_action`),
+  KEY `index2` (`po_expire_date`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_point`
+--
+
+LOCK TABLES `g5_point` WRITE;
+/*!40000 ALTER TABLE `g5_point` DISABLE KEYS */;
+INSERT INTO `g5_point` VALUES (1,'admin','2026-03-21 15:36:00','2026-03-21 첫로그인',100,0,0,'9999-12-31',100,'@login','admin','2026-03-21'),(2,'admin','2026-03-22 00:00:51','2026-03-22 첫로그인',100,0,0,'9999-12-31',200,'@login','admin','2026-03-22'),(3,'admin','2026-03-29 00:24:58','2026-03-29 첫로그인',100,0,0,'9999-12-31',300,'@login','admin','2026-03-29'),(4,'admin','2026-03-30 22:42:42','2026-03-30 첫로그인',100,0,0,'9999-12-31',400,'@login','admin','2026-03-30'),(5,'admin','2026-04-23 01:31:38','2026-04-23 첫로그인',100,0,0,'9999-12-31',500,'@login','admin','2026-04-23'),(6,'admin','2026-05-03 13:30:13','2026-05-03 첫로그인',100,0,0,'9999-12-31',600,'@login','admin','2026-05-03');
+/*!40000 ALTER TABLE `g5_point` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_poll`
+--
+
+DROP TABLE IF EXISTS `g5_poll`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_poll` (
+  `po_id` int NOT NULL AUTO_INCREMENT,
+  `po_subject` varchar(255) NOT NULL DEFAULT '',
+  `po_poll1` varchar(255) NOT NULL DEFAULT '',
+  `po_poll2` varchar(255) NOT NULL DEFAULT '',
+  `po_poll3` varchar(255) NOT NULL DEFAULT '',
+  `po_poll4` varchar(255) NOT NULL DEFAULT '',
+  `po_poll5` varchar(255) NOT NULL DEFAULT '',
+  `po_poll6` varchar(255) NOT NULL DEFAULT '',
+  `po_poll7` varchar(255) NOT NULL DEFAULT '',
+  `po_poll8` varchar(255) NOT NULL DEFAULT '',
+  `po_poll9` varchar(255) NOT NULL DEFAULT '',
+  `po_cnt1` int NOT NULL DEFAULT '0',
+  `po_cnt2` int NOT NULL DEFAULT '0',
+  `po_cnt3` int NOT NULL DEFAULT '0',
+  `po_cnt4` int NOT NULL DEFAULT '0',
+  `po_cnt5` int NOT NULL DEFAULT '0',
+  `po_cnt6` int NOT NULL DEFAULT '0',
+  `po_cnt7` int NOT NULL DEFAULT '0',
+  `po_cnt8` int NOT NULL DEFAULT '0',
+  `po_cnt9` int NOT NULL DEFAULT '0',
+  `po_etc` varchar(255) NOT NULL DEFAULT '',
+  `po_level` tinyint NOT NULL DEFAULT '0',
+  `po_point` int NOT NULL DEFAULT '0',
+  `po_date` date NOT NULL DEFAULT '0000-00-00',
+  `po_ips` mediumtext NOT NULL,
+  `mb_ids` text NOT NULL,
+  `po_use` tinyint NOT NULL DEFAULT '0',
+  PRIMARY KEY (`po_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_poll`
+--
+
+LOCK TABLES `g5_poll` WRITE;
+/*!40000 ALTER TABLE `g5_poll` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_poll` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_poll_etc`
+--
+
+DROP TABLE IF EXISTS `g5_poll_etc`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_poll_etc` (
+  `pc_id` int NOT NULL DEFAULT '0',
+  `po_id` int NOT NULL DEFAULT '0',
+  `mb_id` varchar(20) NOT NULL DEFAULT '',
+  `pc_name` varchar(255) NOT NULL DEFAULT '',
+  `pc_idea` varchar(255) NOT NULL DEFAULT '',
+  `pc_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`pc_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_poll_etc`
+--
+
+LOCK TABLES `g5_poll_etc` WRITE;
+/*!40000 ALTER TABLE `g5_poll_etc` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_poll_etc` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_popular`
+--
+
+DROP TABLE IF EXISTS `g5_popular`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_popular` (
+  `pp_id` int NOT NULL AUTO_INCREMENT,
+  `pp_word` varchar(50) NOT NULL DEFAULT '',
+  `pp_date` date NOT NULL DEFAULT '0000-00-00',
+  `pp_ip` varchar(50) NOT NULL DEFAULT '',
+  PRIMARY KEY (`pp_id`),
+  UNIQUE KEY `index1` (`pp_date`,`pp_word`,`pp_ip`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_popular`
+--
+
+LOCK TABLES `g5_popular` WRITE;
+/*!40000 ALTER TABLE `g5_popular` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_popular` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_qa_config`
+--
+
+DROP TABLE IF EXISTS `g5_qa_config`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_qa_config` (
+  `qa_id` int NOT NULL AUTO_INCREMENT,
+  `qa_title` varchar(255) NOT NULL DEFAULT '',
+  `qa_category` varchar(255) NOT NULL DEFAULT '',
+  `qa_skin` varchar(255) NOT NULL DEFAULT '',
+  `qa_mobile_skin` varchar(255) NOT NULL DEFAULT '',
+  `qa_use_email` tinyint NOT NULL DEFAULT '0',
+  `qa_req_email` tinyint NOT NULL DEFAULT '0',
+  `qa_use_hp` tinyint NOT NULL DEFAULT '0',
+  `qa_req_hp` tinyint NOT NULL DEFAULT '0',
+  `qa_use_sms` tinyint NOT NULL DEFAULT '0',
+  `qa_send_number` varchar(255) NOT NULL DEFAULT '0',
+  `qa_admin_hp` varchar(255) NOT NULL DEFAULT '',
+  `qa_admin_email` varchar(255) NOT NULL DEFAULT '',
+  `qa_use_editor` tinyint NOT NULL DEFAULT '0',
+  `qa_subject_len` int NOT NULL DEFAULT '0',
+  `qa_mobile_subject_len` int NOT NULL DEFAULT '0',
+  `qa_page_rows` int NOT NULL DEFAULT '0',
+  `qa_mobile_page_rows` int NOT NULL DEFAULT '0',
+  `qa_image_width` int NOT NULL DEFAULT '0',
+  `qa_upload_size` int NOT NULL DEFAULT '0',
+  `qa_insert_content` text NOT NULL,
+  `qa_include_head` varchar(255) NOT NULL DEFAULT '',
+  `qa_include_tail` varchar(255) NOT NULL DEFAULT '',
+  `qa_content_head` text NOT NULL,
+  `qa_content_tail` text NOT NULL,
+  `qa_mobile_content_head` text NOT NULL,
+  `qa_mobile_content_tail` text NOT NULL,
+  `qa_1_subj` varchar(255) NOT NULL DEFAULT '',
+  `qa_2_subj` varchar(255) NOT NULL DEFAULT '',
+  `qa_3_subj` varchar(255) NOT NULL DEFAULT '',
+  `qa_4_subj` varchar(255) NOT NULL DEFAULT '',
+  `qa_5_subj` varchar(255) NOT NULL DEFAULT '',
+  `qa_1` varchar(255) NOT NULL DEFAULT '',
+  `qa_2` varchar(255) NOT NULL DEFAULT '',
+  `qa_3` varchar(255) NOT NULL DEFAULT '',
+  `qa_4` varchar(255) NOT NULL DEFAULT '',
+  `qa_5` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`qa_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_qa_config`
+--
+
+LOCK TABLES `g5_qa_config` WRITE;
+/*!40000 ALTER TABLE `g5_qa_config` DISABLE KEYS */;
+INSERT INTO `g5_qa_config` VALUES (1,'1:1문의','회원|포인트','basic','basic',1,0,1,0,0,'0','','',1,60,30,15,15,600,1048576,'','','','','','','','','','','','','','','','','');
+/*!40000 ALTER TABLE `g5_qa_config` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_qa_content`
+--
+
+DROP TABLE IF EXISTS `g5_qa_content`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_qa_content` (
+  `qa_id` int NOT NULL AUTO_INCREMENT,
+  `qa_num` int NOT NULL DEFAULT '0',
+  `qa_parent` int NOT NULL DEFAULT '0',
+  `qa_related` int NOT NULL DEFAULT '0',
+  `mb_id` varchar(20) NOT NULL DEFAULT '',
+  `qa_name` varchar(255) NOT NULL DEFAULT '',
+  `qa_email` varchar(255) NOT NULL DEFAULT '',
+  `qa_hp` varchar(255) NOT NULL DEFAULT '',
+  `qa_type` tinyint NOT NULL DEFAULT '0',
+  `qa_category` varchar(255) NOT NULL DEFAULT '',
+  `qa_email_recv` tinyint NOT NULL DEFAULT '0',
+  `qa_sms_recv` tinyint NOT NULL DEFAULT '0',
+  `qa_html` tinyint NOT NULL DEFAULT '0',
+  `qa_subject` varchar(255) NOT NULL DEFAULT '',
+  `qa_content` text NOT NULL,
+  `qa_status` tinyint NOT NULL DEFAULT '0',
+  `qa_file1` varchar(255) NOT NULL DEFAULT '',
+  `qa_source1` varchar(255) NOT NULL DEFAULT '',
+  `qa_file2` varchar(255) NOT NULL DEFAULT '',
+  `qa_source2` varchar(255) NOT NULL DEFAULT '',
+  `qa_ip` varchar(255) NOT NULL DEFAULT '',
+  `qa_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `qa_1` varchar(255) NOT NULL DEFAULT '',
+  `qa_2` varchar(255) NOT NULL DEFAULT '',
+  `qa_3` varchar(255) NOT NULL DEFAULT '',
+  `qa_4` varchar(255) NOT NULL DEFAULT '',
+  `qa_5` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`qa_id`),
+  KEY `qa_num_parent` (`qa_num`,`qa_parent`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_qa_content`
+--
+
+LOCK TABLES `g5_qa_content` WRITE;
+/*!40000 ALTER TABLE `g5_qa_content` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_qa_content` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_rss_sitemap`
+--
+
+DROP TABLE IF EXISTS `g5_rss_sitemap`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_rss_sitemap` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `rss_descript` varchar(255) NOT NULL DEFAULT '',
+  `rss_count` int NOT NULL,
+  `rss_result` varchar(255) NOT NULL DEFAULT '',
+  `sitemap_count` int NOT NULL,
+  `sitemap_result` varchar(255) NOT NULL DEFAULT '',
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_rss_sitemap`
+--
+
+LOCK TABLES `g5_rss_sitemap` WRITE;
+/*!40000 ALTER TABLE `g5_rss_sitemap` DISABLE KEYS */;
+INSERT INTO `g5_rss_sitemap` VALUES (1,'',0,'',0,'');
+/*!40000 ALTER TABLE `g5_rss_sitemap` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_scrap`
+--
+
+DROP TABLE IF EXISTS `g5_scrap`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_scrap` (
+  `ms_id` int NOT NULL AUTO_INCREMENT,
+  `mb_id` varchar(20) NOT NULL DEFAULT '',
+  `bo_table` varchar(20) NOT NULL DEFAULT '',
+  `wr_id` varchar(15) NOT NULL DEFAULT '',
+  `ms_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`ms_id`),
+  KEY `mb_id` (`mb_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_scrap`
+--
+
+LOCK TABLES `g5_scrap` WRITE;
+/*!40000 ALTER TABLE `g5_scrap` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_scrap` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_uniqid`
+--
+
+DROP TABLE IF EXISTS `g5_uniqid`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_uniqid` (
+  `uq_id` bigint unsigned NOT NULL,
+  `uq_ip` varchar(255) NOT NULL,
+  PRIMARY KEY (`uq_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_uniqid`
+--
+
+LOCK TABLES `g5_uniqid` WRITE;
+/*!40000 ALTER TABLE `g5_uniqid` DISABLE KEYS */;
+INSERT INTO `g5_uniqid` VALUES (2026031313182882,'127.0.0.1'),(2026031313193744,'127.0.0.1'),(2026031313213276,'127.0.0.1'),(2026031313213829,'127.0.0.1'),(2026031313215089,'127.0.0.1'),(2026031313224846,'127.0.0.1'),(2026031313225796,'127.0.0.1'),(2026031313233736,'127.0.0.1'),(2026031313235052,'127.0.0.1'),(2026032123412292,'::1'),(2026032123413528,'::1'),(2026033022435312,'::1'),(2026042301313873,'127.0.0.1'),(2026050313301319,'::1');
+/*!40000 ALTER TABLE `g5_uniqid` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_visit`
+--
+
+DROP TABLE IF EXISTS `g5_visit`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_visit` (
+  `vi_id` int NOT NULL AUTO_INCREMENT,
+  `vi_ip` varchar(100) NOT NULL DEFAULT '',
+  `vi_date` date NOT NULL DEFAULT '0000-00-00',
+  `vi_time` time NOT NULL DEFAULT '00:00:00',
+  `vi_referer` text NOT NULL,
+  `vi_agent` varchar(200) NOT NULL DEFAULT '',
+  `vi_browser` varchar(255) NOT NULL DEFAULT '',
+  `vi_os` varchar(255) NOT NULL DEFAULT '',
+  `vi_device` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`vi_id`),
+  UNIQUE KEY `index1` (`vi_ip`,`vi_date`),
+  KEY `index2` (`vi_date`)
+) ENGINE=InnoDB AUTO_INCREMENT=575 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_visit`
+--
+
+LOCK TABLES `g5_visit` WRITE;
+/*!40000 ALTER TABLE `g5_visit` DISABLE KEYS */;
+INSERT INTO `g5_visit` VALUES (1,'127.0.0.1','2026-03-14','04:47:41','','curl/8.7.1','','',''),(22,'::1','2026-03-21','23:41:17','','curl/8.4.0','','',''),(25,'::1','2026-03-22','01:06:33','','curl/8.4.0','','',''),(37,'::1','2026-03-30','22:42:42','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','','',''),(38,'127.0.0.1','2026-04-23','01:20:18','','curl/8.4.0','','',''),(39,'::1','2026-05-03','13:29:21','','curl/8.4.0','','',''),(83,'127.0.0.1','2026-05-03','13:41:48','','curl/8.4.0','','','');
+/*!40000 ALTER TABLE `g5_visit` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_visit_sum`
+--
+
+DROP TABLE IF EXISTS `g5_visit_sum`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_visit_sum` (
+  `vs_date` date NOT NULL DEFAULT '0000-00-00',
+  `vs_count` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`vs_date`),
+  KEY `index1` (`vs_count`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_visit_sum`
+--
+
+LOCK TABLES `g5_visit_sum` WRITE;
+/*!40000 ALTER TABLE `g5_visit_sum` DISABLE KEYS */;
+INSERT INTO `g5_visit_sum` VALUES ('2026-03-14',1),('2026-03-21',1),('2026-03-22',1),('2026-03-30',1),('2026-04-23',1),('2026-05-03',2);
+/*!40000 ALTER TABLE `g5_visit_sum` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_write_main_interior`
+--
+
+DROP TABLE IF EXISTS `g5_write_main_interior`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_write_main_interior` (
+  `wr_id` int NOT NULL AUTO_INCREMENT,
+  `wr_num` int NOT NULL DEFAULT '0',
+  `wr_reply` varchar(10) NOT NULL,
+  `wr_parent` int NOT NULL DEFAULT '0',
+  `wr_is_comment` tinyint NOT NULL DEFAULT '0',
+  `wr_comment` int NOT NULL DEFAULT '0',
+  `wr_comment_reply` varchar(5) NOT NULL,
+  `ca_name` varchar(255) NOT NULL,
+  `wr_option` set('html1','html2','secret','mail') NOT NULL,
+  `wr_subject` varchar(255) NOT NULL,
+  `wr_content` text NOT NULL,
+  `wr_seo_title` varchar(255) NOT NULL DEFAULT '',
+  `wr_link1` text NOT NULL,
+  `wr_link2` text NOT NULL,
+  `wr_link1_hit` int NOT NULL DEFAULT '0',
+  `wr_link2_hit` int NOT NULL DEFAULT '0',
+  `wr_hit` int NOT NULL DEFAULT '0',
+  `wr_good` int NOT NULL DEFAULT '0',
+  `wr_nogood` int NOT NULL DEFAULT '0',
+  `mb_id` varchar(20) NOT NULL,
+  `wr_password` varchar(255) NOT NULL,
+  `wr_name` varchar(255) NOT NULL,
+  `wr_email` varchar(255) NOT NULL,
+  `wr_homepage` varchar(255) NOT NULL,
+  `wr_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `wr_file` tinyint NOT NULL DEFAULT '0',
+  `wr_last` varchar(19) NOT NULL,
+  `wr_ip` varchar(255) NOT NULL,
+  `wr_facebook_user` varchar(255) NOT NULL,
+  `wr_twitter_user` varchar(255) NOT NULL,
+  `wr_1` varchar(255) NOT NULL,
+  `wr_2` varchar(255) NOT NULL,
+  `wr_3` varchar(255) NOT NULL,
+  `wr_4` varchar(255) NOT NULL,
+  `wr_5` varchar(255) NOT NULL,
+  `wr_6` varchar(255) NOT NULL,
+  `wr_7` varchar(255) NOT NULL,
+  `wr_8` varchar(255) NOT NULL,
+  `wr_9` varchar(255) NOT NULL,
+  `wr_10` varchar(255) NOT NULL,
+  PRIMARY KEY (`wr_id`),
+  KEY `wr_seo_title` (`wr_seo_title`),
+  KEY `wr_num_reply_parent` (`wr_num`,`wr_reply`,`wr_parent`),
+  KEY `wr_is_comment` (`wr_is_comment`,`wr_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_write_main_interior`
+--
+
+LOCK TABLES `g5_write_main_interior` WRITE;
+/*!40000 ALTER TABLE `g5_write_main_interior` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_write_main_interior` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_write_main_menu`
+--
+
+DROP TABLE IF EXISTS `g5_write_main_menu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_write_main_menu` (
+  `wr_id` int NOT NULL AUTO_INCREMENT,
+  `wr_num` int NOT NULL DEFAULT '0',
+  `wr_reply` varchar(10) NOT NULL,
+  `wr_parent` int NOT NULL DEFAULT '0',
+  `wr_is_comment` tinyint NOT NULL DEFAULT '0',
+  `wr_comment` int NOT NULL DEFAULT '0',
+  `wr_comment_reply` varchar(5) NOT NULL,
+  `ca_name` varchar(255) NOT NULL,
+  `wr_option` set('html1','html2','secret','mail') NOT NULL,
+  `wr_subject` varchar(255) NOT NULL,
+  `wr_content` text NOT NULL,
+  `wr_seo_title` varchar(255) NOT NULL DEFAULT '',
+  `wr_link1` text NOT NULL,
+  `wr_link2` text NOT NULL,
+  `wr_link1_hit` int NOT NULL DEFAULT '0',
+  `wr_link2_hit` int NOT NULL DEFAULT '0',
+  `wr_hit` int NOT NULL DEFAULT '0',
+  `wr_good` int NOT NULL DEFAULT '0',
+  `wr_nogood` int NOT NULL DEFAULT '0',
+  `mb_id` varchar(20) NOT NULL,
+  `wr_password` varchar(255) NOT NULL,
+  `wr_name` varchar(255) NOT NULL,
+  `wr_email` varchar(255) NOT NULL,
+  `wr_homepage` varchar(255) NOT NULL,
+  `wr_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `wr_file` tinyint NOT NULL DEFAULT '0',
+  `wr_last` varchar(19) NOT NULL,
+  `wr_ip` varchar(255) NOT NULL,
+  `wr_facebook_user` varchar(255) NOT NULL,
+  `wr_twitter_user` varchar(255) NOT NULL,
+  `wr_1` varchar(255) NOT NULL,
+  `wr_2` varchar(255) NOT NULL,
+  `wr_3` varchar(255) NOT NULL,
+  `wr_4` varchar(255) NOT NULL,
+  `wr_5` varchar(255) NOT NULL,
+  `wr_6` varchar(255) NOT NULL,
+  `wr_7` varchar(255) NOT NULL,
+  `wr_8` varchar(255) NOT NULL,
+  `wr_9` varchar(255) NOT NULL,
+  `wr_10` varchar(255) NOT NULL,
+  PRIMARY KEY (`wr_id`),
+  KEY `wr_seo_title` (`wr_seo_title`),
+  KEY `wr_num_reply_parent` (`wr_num`,`wr_reply`,`wr_parent`),
+  KEY `wr_is_comment` (`wr_is_comment`,`wr_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_write_main_menu`
+--
+
+LOCK TABLES `g5_write_main_menu` WRITE;
+/*!40000 ALTER TABLE `g5_write_main_menu` DISABLE KEYS */;
+INSERT INTO `g5_write_main_menu` VALUES (1,-1,'',1,0,0,'','메인 메뉴','','육회막국수','시그니처 메뉴 — 1주일 숙성 양념 육회 + 막국수','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','',''),(2,-2,'',2,0,0,'','메인 메뉴','','육회비빔밥','특제 양념 육회와 야채를 신선하게 비빈 한 그릇','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','',''),(3,-3,'',3,0,0,'','메인 메뉴','','갈비탕','진한 사골 육수에 푸짐한 갈빗살','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','',''),(4,-4,'',4,0,0,'','메인 메뉴','','수육국수','담백한 수육과 시원한 국수 한 그릇','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','',''),(5,-5,'',5,0,0,'','메인 메뉴','','비빔국수','매콤한 양념에 쫄깃한 면발','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','',''),(6,-6,'',6,0,0,'','메인 메뉴','','물냉면','시원한 동치미 육수 물냉면','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','',''),(7,-7,'',7,0,0,'','사이드 메뉴','','육전','얇게 부친 한우 육전','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','',''),(8,-8,'',8,0,0,'','사이드 메뉴','','왕만두','직접 빚은 김치 왕만두','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','',''),(9,-9,'',9,0,0,'','사이드 메뉴','','계란찜','폭신한 뚝배기 계란찜','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','',''),(10,-10,'',10,0,0,'','사이드 메뉴','','메밀전병','담백한 메밀전병','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','',''),(11,-11,'',11,0,0,'','사이드 메뉴','','감자전','바삭하게 부친 감자전','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','',''),(12,-12,'',12,0,0,'','추가 메뉴','','공기밥','갓 지은 흰쌀밥','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','',''),(13,-13,'',13,0,0,'','추가 메뉴','','면사리','추가 면 사리','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','',''),(14,-14,'',14,0,0,'','추가 메뉴','','음료','콜라/사이다/제로콜라','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','',''),(15,-15,'',15,0,0,'','추가 메뉴','','소주/맥주','주류 (참이슬/카스 외)','','','',0,0,0,0,0,'admin','','관리자','','','2026-05-03 17:23:25',0,'2026-05-03 17:23:25','127.0.0.1','','','','','','','','','','','','');
+/*!40000 ALTER TABLE `g5_write_main_menu` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_write_main_poster`
+--
+
+DROP TABLE IF EXISTS `g5_write_main_poster`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_write_main_poster` (
+  `wr_id` int NOT NULL AUTO_INCREMENT,
+  `wr_num` int NOT NULL DEFAULT '0',
+  `wr_reply` varchar(10) NOT NULL,
+  `wr_parent` int NOT NULL DEFAULT '0',
+  `wr_is_comment` tinyint NOT NULL DEFAULT '0',
+  `wr_comment` int NOT NULL DEFAULT '0',
+  `wr_comment_reply` varchar(5) NOT NULL,
+  `ca_name` varchar(255) NOT NULL,
+  `wr_option` set('html1','html2','secret','mail') NOT NULL,
+  `wr_subject` varchar(255) NOT NULL,
+  `wr_content` text NOT NULL,
+  `wr_seo_title` varchar(255) NOT NULL DEFAULT '',
+  `wr_link1` text NOT NULL,
+  `wr_link2` text NOT NULL,
+  `wr_link1_hit` int NOT NULL DEFAULT '0',
+  `wr_link2_hit` int NOT NULL DEFAULT '0',
+  `wr_hit` int NOT NULL DEFAULT '0',
+  `wr_good` int NOT NULL DEFAULT '0',
+  `wr_nogood` int NOT NULL DEFAULT '0',
+  `mb_id` varchar(20) NOT NULL,
+  `wr_password` varchar(255) NOT NULL,
+  `wr_name` varchar(255) NOT NULL,
+  `wr_email` varchar(255) NOT NULL,
+  `wr_homepage` varchar(255) NOT NULL,
+  `wr_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `wr_file` tinyint NOT NULL DEFAULT '0',
+  `wr_last` varchar(19) NOT NULL,
+  `wr_ip` varchar(255) NOT NULL,
+  `wr_facebook_user` varchar(255) NOT NULL,
+  `wr_twitter_user` varchar(255) NOT NULL,
+  `wr_1` varchar(255) NOT NULL,
+  `wr_2` varchar(255) NOT NULL,
+  `wr_3` varchar(255) NOT NULL,
+  `wr_4` varchar(255) NOT NULL,
+  `wr_5` varchar(255) NOT NULL,
+  `wr_6` varchar(255) NOT NULL,
+  `wr_7` varchar(255) NOT NULL,
+  `wr_8` varchar(255) NOT NULL,
+  `wr_9` varchar(255) NOT NULL,
+  `wr_10` varchar(255) NOT NULL,
+  PRIMARY KEY (`wr_id`),
+  KEY `wr_seo_title` (`wr_seo_title`),
+  KEY `wr_num_reply_parent` (`wr_num`,`wr_reply`,`wr_parent`),
+  KEY `wr_is_comment` (`wr_is_comment`,`wr_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_write_main_poster`
+--
+
+LOCK TABLES `g5_write_main_poster` WRITE;
+/*!40000 ALTER TABLE `g5_write_main_poster` DISABLE KEYS */;
+/*!40000 ALTER TABLE `g5_write_main_poster` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_write_main_sales`
+--
+
+DROP TABLE IF EXISTS `g5_write_main_sales`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_write_main_sales` (
+  `wr_id` int NOT NULL AUTO_INCREMENT,
+  `wr_num` int NOT NULL DEFAULT '0',
+  `wr_reply` varchar(10) NOT NULL,
+  `wr_parent` int NOT NULL DEFAULT '0',
+  `wr_is_comment` tinyint NOT NULL DEFAULT '0',
+  `wr_comment` int NOT NULL DEFAULT '0',
+  `wr_comment_reply` varchar(5) NOT NULL,
+  `ca_name` varchar(255) NOT NULL,
+  `wr_option` set('html1','html2','secret','mail') NOT NULL,
+  `wr_subject` varchar(255) NOT NULL,
+  `wr_content` text NOT NULL,
+  `wr_seo_title` varchar(255) NOT NULL DEFAULT '',
+  `wr_link1` text NOT NULL,
+  `wr_link2` text NOT NULL,
+  `wr_link1_hit` int NOT NULL DEFAULT '0',
+  `wr_link2_hit` int NOT NULL DEFAULT '0',
+  `wr_hit` int NOT NULL DEFAULT '0',
+  `wr_good` int NOT NULL DEFAULT '0',
+  `wr_nogood` int NOT NULL DEFAULT '0',
+  `mb_id` varchar(20) NOT NULL,
+  `wr_password` varchar(255) NOT NULL,
+  `wr_name` varchar(255) NOT NULL,
+  `wr_email` varchar(255) NOT NULL,
+  `wr_homepage` varchar(255) NOT NULL,
+  `wr_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `wr_file` tinyint NOT NULL DEFAULT '0',
+  `wr_last` varchar(19) NOT NULL,
+  `wr_ip` varchar(255) NOT NULL,
+  `wr_facebook_user` varchar(255) NOT NULL,
+  `wr_twitter_user` varchar(255) NOT NULL,
+  `wr_1` varchar(255) NOT NULL,
+  `wr_2` varchar(255) NOT NULL,
+  `wr_3` varchar(255) NOT NULL,
+  `wr_4` varchar(255) NOT NULL,
+  `wr_5` varchar(255) NOT NULL,
+  `wr_6` varchar(255) NOT NULL,
+  `wr_7` varchar(255) NOT NULL,
+  `wr_8` varchar(255) NOT NULL,
+  `wr_9` varchar(255) NOT NULL,
+  `wr_10` varchar(255) NOT NULL,
+  PRIMARY KEY (`wr_id`),
+  KEY `wr_seo_title` (`wr_seo_title`),
+  KEY `wr_num_reply_parent` (`wr_num`,`wr_reply`,`wr_parent`),
+  KEY `wr_is_comment` (`wr_is_comment`,`wr_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_write_main_sales`
+--
+
+LOCK TABLES `g5_write_main_sales` WRITE;
+/*!40000 ALTER TABLE `g5_write_main_sales` DISABLE KEYS */;
+INSERT INTO `g5_write_main_sales` VALUES (1,-1,'',1,0,0,'','','','미락육회막국수 본점','','VWeb Site-신림점','','',0,0,2,0,0,'admin','','최고관리자','admin@domain.com','','2026-03-05 18:27:41',0,'2026-03-05 18:27:41','127.0.0.1','','','6','1','','35260000','','','','','',''),(2,-2,'',2,0,0,'','','','미락육회막국수 강남점','','VWeb Site-신림점-1','','',0,0,2,0,0,'admin','','최고관리자','admin@domain.com','','2026-03-05 18:27:41',0,'2026-03-05 18:27:41','127.0.0.1','','','5','1','','32180000','','','','','',''),(3,-3,'',3,0,0,'','','','미락육회막국수 인천점','','VWeb Site-신림점-2','','',0,0,3,0,0,'admin','','최고관리자','admin@domain.com','','2026-03-05 18:27:41',0,'2026-03-05 18:27:41','127.0.0.1','','','4','1','','28940000','','','','','',''),(4,-4,'',4,0,0,'','','','미락육회막국수 부산점','','VWeb Site-신림점-5','','',0,0,1,0,0,'admin','','최고관리자','admin@domain.com','','2026-03-05 18:27:41',0,'2026-03-05 18:27:41','127.0.0.1','','','3','1','','30720000','','','','','',''),(5,-5,'',5,0,0,'','','','미락육회막국수 대전점','','VWeb Site-신림점-4','','',0,0,2,0,0,'admin','','최고관리자','admin@domain.com','','2026-03-05 18:27:41',0,'2026-03-05 18:27:41','127.0.0.1','','','2','1','','27650000','','','','','',''),(6,-6,'',6,0,0,'','','','미락육회막국수 광주점','','VWeb Site-신림점-3','','',0,0,3,0,0,'admin','','최고관리자','admin@domain.com','','2026-03-05 18:27:41',0,'2026-03-05 18:27:41','127.0.0.1','','','1','1','','26430000','','','','','','');
+/*!40000 ALTER TABLE `g5_write_main_sales` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `g5_write_main_shop`
+--
+
+DROP TABLE IF EXISTS `g5_write_main_shop`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `g5_write_main_shop` (
+  `wr_id` int NOT NULL AUTO_INCREMENT,
+  `wr_num` int NOT NULL DEFAULT '0',
+  `wr_reply` varchar(10) NOT NULL,
+  `wr_parent` int NOT NULL DEFAULT '0',
+  `wr_is_comment` tinyint NOT NULL DEFAULT '0',
+  `wr_comment` int NOT NULL DEFAULT '0',
+  `wr_comment_reply` varchar(5) NOT NULL,
+  `ca_name` varchar(255) NOT NULL,
+  `wr_option` set('html1','html2','secret','mail') NOT NULL,
+  `wr_subject` varchar(255) NOT NULL,
+  `wr_content` text NOT NULL,
+  `wr_seo_title` varchar(255) NOT NULL DEFAULT '',
+  `wr_link1` text NOT NULL,
+  `wr_link2` text NOT NULL,
+  `wr_link1_hit` int NOT NULL DEFAULT '0',
+  `wr_link2_hit` int NOT NULL DEFAULT '0',
+  `wr_hit` int NOT NULL DEFAULT '0',
+  `wr_good` int NOT NULL DEFAULT '0',
+  `wr_nogood` int NOT NULL DEFAULT '0',
+  `mb_id` varchar(20) NOT NULL,
+  `wr_password` varchar(255) NOT NULL,
+  `wr_name` varchar(255) NOT NULL,
+  `wr_email` varchar(255) NOT NULL,
+  `wr_homepage` varchar(255) NOT NULL,
+  `wr_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `wr_file` tinyint NOT NULL DEFAULT '0',
+  `wr_last` varchar(19) NOT NULL,
+  `wr_ip` varchar(255) NOT NULL,
+  `wr_facebook_user` varchar(255) NOT NULL,
+  `wr_twitter_user` varchar(255) NOT NULL,
+  `wr_1` varchar(255) NOT NULL,
+  `wr_2` varchar(255) NOT NULL,
+  `wr_3` varchar(255) NOT NULL,
+  `wr_4` varchar(255) NOT NULL,
+  `wr_5` varchar(255) NOT NULL,
+  `wr_6` varchar(255) NOT NULL,
+  `wr_7` varchar(255) NOT NULL,
+  `wr_8` varchar(255) NOT NULL,
+  `wr_9` varchar(255) NOT NULL,
+  `wr_10` varchar(255) NOT NULL,
+  PRIMARY KEY (`wr_id`),
+  KEY `wr_seo_title` (`wr_seo_title`),
+  KEY `wr_num_reply_parent` (`wr_num`,`wr_reply`,`wr_parent`),
+  KEY `wr_is_comment` (`wr_is_comment`,`wr_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `g5_write_main_shop`
+--
+
+LOCK TABLES `g5_write_main_shop` WRITE;
+/*!40000 ALTER TABLE `g5_write_main_shop` DISABLE KEYS */;
+INSERT INTO `g5_write_main_shop` VALUES (1,-1,'',1,0,0,'','','','VWeb 테스트 1','','vweb-테스트-1','','',0,0,2,0,0,'admin','','최고관리자','admin@domain.com','','2026-03-13 13:17:42',0,'2026-03-13 13:17:42','127.0.0.1','','','','01094914353','','대전 유성구 장대동 305-13','https://map.naver.com/p/search/%EB%B8%8C%EC%9D%B4%EC%9B%8D%EC%8A%A4/place/1453576943?placePath=/home?bk_query=%EB%B8%8C%EC%9D%B4%EC%9B%8D%EC%8A%A4&entry=pll&from=nx&fromNxList=true&fromPanelNum=2&timestamp=202603131320&locale=ko&svcName=map_pcv5&searchTex','','36.3658946698189','127.338148304955','',''),(2,-2,'',2,0,0,'','일반','','VWeb 테스트 2','테스트 매장입니다.','vweb-테스트-2','','',0,0,0,0,0,'admin','','최고관리자','','','2026-03-13 13:17:42',0,'2026-03-13 13:17:42','127.0.0.1','','','','','','','','','','','','');
+/*!40000 ALTER TABLE `g5_write_main_shop` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_banner`
+--
+
+DROP TABLE IF EXISTS `yc5_banner`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_banner` (
+  `bn_id` int NOT NULL AUTO_INCREMENT,
+  `bn_alt` varchar(255) NOT NULL DEFAULT '',
+  `bn_url` varchar(255) NOT NULL DEFAULT '',
+  `bn_device` varchar(10) NOT NULL DEFAULT '',
+  `bn_position` varchar(255) NOT NULL DEFAULT '',
+  `bn_border` tinyint NOT NULL DEFAULT '0',
+  `bn_new_win` tinyint NOT NULL DEFAULT '0',
+  `bn_begin_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `bn_end_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `bn_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `bn_hit` int NOT NULL DEFAULT '0',
+  `bn_order` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`bn_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_banner`
+--
+
+LOCK TABLES `yc5_banner` WRITE;
+/*!40000 ALTER TABLE `yc5_banner` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_banner` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_cart`
+--
+
+DROP TABLE IF EXISTS `yc5_cart`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_cart` (
+  `ct_id` int NOT NULL AUTO_INCREMENT,
+  `od_id` bigint unsigned NOT NULL,
+  `mb_id` varchar(255) NOT NULL DEFAULT '',
+  `it_id` varchar(20) NOT NULL DEFAULT '',
+  `it_name` varchar(255) NOT NULL DEFAULT '',
+  `it_sc_type` tinyint NOT NULL DEFAULT '0',
+  `it_sc_method` tinyint NOT NULL DEFAULT '0',
+  `it_sc_price` int NOT NULL DEFAULT '0',
+  `it_sc_minimum` int NOT NULL DEFAULT '0',
+  `it_sc_qty` int NOT NULL DEFAULT '0',
+  `ct_status` varchar(255) NOT NULL DEFAULT '',
+  `ct_history` text NOT NULL,
+  `ct_price` int NOT NULL DEFAULT '0',
+  `ct_point` int NOT NULL DEFAULT '0',
+  `cp_price` int NOT NULL DEFAULT '0',
+  `ct_point_use` tinyint NOT NULL DEFAULT '0',
+  `ct_stock_use` tinyint NOT NULL DEFAULT '0',
+  `ct_option` varchar(255) NOT NULL DEFAULT '',
+  `ct_qty` int NOT NULL DEFAULT '0',
+  `ct_notax` tinyint NOT NULL DEFAULT '0',
+  `io_id` varchar(255) NOT NULL DEFAULT '',
+  `io_type` tinyint NOT NULL DEFAULT '0',
+  `io_price` int NOT NULL DEFAULT '0',
+  `ct_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `ct_ip` varchar(25) NOT NULL DEFAULT '',
+  `ct_send_cost` tinyint NOT NULL DEFAULT '0',
+  `ct_direct` tinyint NOT NULL DEFAULT '0',
+  `ct_select` tinyint NOT NULL DEFAULT '0',
+  `ct_select_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`ct_id`),
+  KEY `od_id` (`od_id`),
+  KEY `it_id` (`it_id`),
+  KEY `ct_status` (`ct_status`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_cart`
+--
+
+LOCK TABLES `yc5_cart` WRITE;
+/*!40000 ALTER TABLE `yc5_cart` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_cart` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_category`
+--
+
+DROP TABLE IF EXISTS `yc5_category`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_category` (
+  `ca_id` varchar(10) NOT NULL DEFAULT '0',
+  `ca_name` varchar(255) NOT NULL DEFAULT '',
+  `ca_order` int NOT NULL DEFAULT '0',
+  `ca_skin_dir` varchar(255) NOT NULL DEFAULT '',
+  `ca_mobile_skin_dir` varchar(255) NOT NULL DEFAULT '',
+  `ca_skin` varchar(255) NOT NULL DEFAULT '',
+  `ca_mobile_skin` varchar(255) NOT NULL DEFAULT '',
+  `ca_img_width` int NOT NULL DEFAULT '0',
+  `ca_img_height` int NOT NULL DEFAULT '0',
+  `ca_mobile_img_width` int NOT NULL DEFAULT '0',
+  `ca_mobile_img_height` int NOT NULL DEFAULT '0',
+  `ca_sell_email` varchar(255) NOT NULL DEFAULT '',
+  `ca_use` tinyint NOT NULL DEFAULT '0',
+  `ca_stock_qty` int NOT NULL DEFAULT '0',
+  `ca_explan_html` tinyint NOT NULL DEFAULT '0',
+  `ca_head_html` text NOT NULL,
+  `ca_tail_html` text NOT NULL,
+  `ca_mobile_head_html` text NOT NULL,
+  `ca_mobile_tail_html` text NOT NULL,
+  `ca_list_mod` int NOT NULL DEFAULT '0',
+  `ca_list_row` int NOT NULL DEFAULT '0',
+  `ca_mobile_list_mod` int NOT NULL DEFAULT '0',
+  `ca_mobile_list_row` int NOT NULL DEFAULT '0',
+  `ca_include_head` varchar(255) NOT NULL DEFAULT '',
+  `ca_include_tail` varchar(255) NOT NULL DEFAULT '',
+  `ca_mb_id` varchar(255) NOT NULL DEFAULT '',
+  `ca_cert_use` tinyint NOT NULL DEFAULT '0',
+  `ca_adult_use` tinyint NOT NULL DEFAULT '0',
+  `ca_nocoupon` tinyint NOT NULL DEFAULT '0',
+  `ca_1_subj` varchar(255) NOT NULL DEFAULT '',
+  `ca_2_subj` varchar(255) NOT NULL DEFAULT '',
+  `ca_3_subj` varchar(255) NOT NULL DEFAULT '',
+  `ca_4_subj` varchar(255) NOT NULL DEFAULT '',
+  `ca_5_subj` varchar(255) NOT NULL DEFAULT '',
+  `ca_6_subj` varchar(255) NOT NULL DEFAULT '',
+  `ca_7_subj` varchar(255) NOT NULL DEFAULT '',
+  `ca_8_subj` varchar(255) NOT NULL DEFAULT '',
+  `ca_9_subj` varchar(255) NOT NULL DEFAULT '',
+  `ca_10_subj` varchar(255) NOT NULL DEFAULT '',
+  `ca_1` varchar(255) NOT NULL DEFAULT '',
+  `ca_2` varchar(255) NOT NULL DEFAULT '',
+  `ca_3` varchar(255) NOT NULL DEFAULT '',
+  `ca_4` varchar(255) NOT NULL DEFAULT '',
+  `ca_5` varchar(255) NOT NULL DEFAULT '',
+  `ca_6` varchar(255) NOT NULL DEFAULT '',
+  `ca_7` varchar(255) NOT NULL DEFAULT '',
+  `ca_8` varchar(255) NOT NULL DEFAULT '',
+  `ca_9` varchar(255) NOT NULL DEFAULT '',
+  `ca_10` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`ca_id`),
+  KEY `ca_order` (`ca_order`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_category`
+--
+
+LOCK TABLES `yc5_category` WRITE;
+/*!40000 ALTER TABLE `yc5_category` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_category` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_coupon`
+--
+
+DROP TABLE IF EXISTS `yc5_coupon`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_coupon` (
+  `cp_no` int NOT NULL AUTO_INCREMENT,
+  `cp_id` varchar(100) NOT NULL DEFAULT '',
+  `cp_subject` varchar(255) NOT NULL DEFAULT '',
+  `cp_method` tinyint NOT NULL DEFAULT '0',
+  `cp_target` varchar(255) NOT NULL DEFAULT '',
+  `mb_id` varchar(255) NOT NULL DEFAULT '',
+  `cz_id` int NOT NULL DEFAULT '0',
+  `cp_start` date NOT NULL DEFAULT '0000-00-00',
+  `cp_end` date NOT NULL DEFAULT '0000-00-00',
+  `cp_price` int NOT NULL DEFAULT '0',
+  `cp_type` tinyint NOT NULL DEFAULT '0',
+  `cp_trunc` int NOT NULL DEFAULT '0',
+  `cp_minimum` int NOT NULL DEFAULT '0',
+  `cp_maximum` int NOT NULL DEFAULT '0',
+  `od_id` bigint unsigned NOT NULL,
+  `cp_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`cp_no`),
+  UNIQUE KEY `cp_id` (`cp_id`),
+  KEY `mb_id` (`mb_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_coupon`
+--
+
+LOCK TABLES `yc5_coupon` WRITE;
+/*!40000 ALTER TABLE `yc5_coupon` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_coupon` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_coupon_log`
+--
+
+DROP TABLE IF EXISTS `yc5_coupon_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_coupon_log` (
+  `cl_id` int NOT NULL AUTO_INCREMENT,
+  `cp_id` varchar(100) NOT NULL DEFAULT '',
+  `mb_id` varchar(100) NOT NULL DEFAULT '',
+  `od_id` bigint NOT NULL,
+  `cp_price` int NOT NULL DEFAULT '0',
+  `cl_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`cl_id`),
+  KEY `mb_id` (`mb_id`),
+  KEY `od_id` (`od_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_coupon_log`
+--
+
+LOCK TABLES `yc5_coupon_log` WRITE;
+/*!40000 ALTER TABLE `yc5_coupon_log` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_coupon_log` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_coupon_zone`
+--
+
+DROP TABLE IF EXISTS `yc5_coupon_zone`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_coupon_zone` (
+  `cz_id` int NOT NULL AUTO_INCREMENT,
+  `cz_type` tinyint NOT NULL DEFAULT '0',
+  `cz_subject` varchar(255) NOT NULL DEFAULT '',
+  `cz_start` date NOT NULL DEFAULT '0000-00-00',
+  `cz_end` date NOT NULL DEFAULT '0000-00-00',
+  `cz_file` varchar(255) NOT NULL DEFAULT '',
+  `cz_period` int NOT NULL DEFAULT '0',
+  `cz_point` int NOT NULL DEFAULT '0',
+  `cp_method` tinyint NOT NULL DEFAULT '0',
+  `cp_target` varchar(255) NOT NULL DEFAULT '',
+  `cp_price` int NOT NULL DEFAULT '0',
+  `cp_type` tinyint NOT NULL DEFAULT '0',
+  `cp_trunc` int NOT NULL DEFAULT '0',
+  `cp_minimum` int NOT NULL DEFAULT '0',
+  `cp_maximum` int NOT NULL DEFAULT '0',
+  `cz_download` int NOT NULL DEFAULT '0',
+  `cz_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`cz_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_coupon_zone`
+--
+
+LOCK TABLES `yc5_coupon_zone` WRITE;
+/*!40000 ALTER TABLE `yc5_coupon_zone` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_coupon_zone` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_default`
+--
+
+DROP TABLE IF EXISTS `yc5_default`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_default` (
+  `de_id` int NOT NULL AUTO_INCREMENT,
+  `de_admin_company_owner` varchar(255) NOT NULL DEFAULT '',
+  `de_admin_company_name` varchar(255) NOT NULL DEFAULT '',
+  `de_admin_company_saupja_no` varchar(255) NOT NULL DEFAULT '',
+  `de_admin_company_tel` varchar(255) NOT NULL DEFAULT '',
+  `de_admin_company_fax` varchar(255) NOT NULL DEFAULT '',
+  `de_admin_tongsin_no` varchar(255) NOT NULL DEFAULT '',
+  `de_admin_company_zip` varchar(255) NOT NULL DEFAULT '',
+  `de_admin_company_addr` varchar(255) NOT NULL DEFAULT '',
+  `de_admin_info_name` varchar(255) NOT NULL DEFAULT '',
+  `de_admin_info_email` varchar(255) NOT NULL DEFAULT '',
+  `de_shop_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_shop_mobile_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_type1_list_use` tinyint NOT NULL DEFAULT '0',
+  `de_type1_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_type1_list_mod` int NOT NULL DEFAULT '0',
+  `de_type1_list_row` int NOT NULL DEFAULT '0',
+  `de_type1_img_width` int NOT NULL DEFAULT '0',
+  `de_type1_img_height` int NOT NULL DEFAULT '0',
+  `de_type2_list_use` tinyint NOT NULL DEFAULT '0',
+  `de_type2_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_type2_list_mod` int NOT NULL DEFAULT '0',
+  `de_type2_list_row` int NOT NULL DEFAULT '0',
+  `de_type2_img_width` int NOT NULL DEFAULT '0',
+  `de_type2_img_height` int NOT NULL DEFAULT '0',
+  `de_type3_list_use` tinyint NOT NULL DEFAULT '0',
+  `de_type3_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_type3_list_mod` int NOT NULL DEFAULT '0',
+  `de_type3_list_row` int NOT NULL DEFAULT '0',
+  `de_type3_img_width` int NOT NULL DEFAULT '0',
+  `de_type3_img_height` int NOT NULL DEFAULT '0',
+  `de_type4_list_use` tinyint NOT NULL DEFAULT '0',
+  `de_type4_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_type4_list_mod` int NOT NULL DEFAULT '0',
+  `de_type4_list_row` int NOT NULL DEFAULT '0',
+  `de_type4_img_width` int NOT NULL DEFAULT '0',
+  `de_type4_img_height` int NOT NULL DEFAULT '0',
+  `de_type5_list_use` tinyint NOT NULL DEFAULT '0',
+  `de_type5_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_type5_list_mod` int NOT NULL DEFAULT '0',
+  `de_type5_list_row` int NOT NULL DEFAULT '0',
+  `de_type5_img_width` int NOT NULL DEFAULT '0',
+  `de_type5_img_height` int NOT NULL DEFAULT '0',
+  `de_mobile_type1_list_use` tinyint NOT NULL DEFAULT '0',
+  `de_mobile_type1_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_mobile_type1_list_mod` int NOT NULL DEFAULT '0',
+  `de_mobile_type1_list_row` int NOT NULL DEFAULT '0',
+  `de_mobile_type1_img_width` int NOT NULL DEFAULT '0',
+  `de_mobile_type1_img_height` int NOT NULL DEFAULT '0',
+  `de_mobile_type2_list_use` tinyint NOT NULL DEFAULT '0',
+  `de_mobile_type2_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_mobile_type2_list_mod` int NOT NULL DEFAULT '0',
+  `de_mobile_type2_list_row` int NOT NULL DEFAULT '0',
+  `de_mobile_type2_img_width` int NOT NULL DEFAULT '0',
+  `de_mobile_type2_img_height` int NOT NULL DEFAULT '0',
+  `de_mobile_type3_list_use` tinyint NOT NULL DEFAULT '0',
+  `de_mobile_type3_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_mobile_type3_list_mod` int NOT NULL DEFAULT '0',
+  `de_mobile_type3_list_row` int NOT NULL DEFAULT '0',
+  `de_mobile_type3_img_width` int NOT NULL DEFAULT '0',
+  `de_mobile_type3_img_height` int NOT NULL DEFAULT '0',
+  `de_mobile_type4_list_use` tinyint NOT NULL DEFAULT '0',
+  `de_mobile_type4_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_mobile_type4_list_mod` int NOT NULL DEFAULT '0',
+  `de_mobile_type4_list_row` int NOT NULL DEFAULT '0',
+  `de_mobile_type4_img_width` int NOT NULL DEFAULT '0',
+  `de_mobile_type4_img_height` int NOT NULL DEFAULT '0',
+  `de_mobile_type5_list_use` tinyint NOT NULL DEFAULT '0',
+  `de_mobile_type5_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_mobile_type5_list_mod` int NOT NULL DEFAULT '0',
+  `de_mobile_type5_list_row` int NOT NULL DEFAULT '0',
+  `de_mobile_type5_img_width` int NOT NULL DEFAULT '0',
+  `de_mobile_type5_img_height` int NOT NULL DEFAULT '0',
+  `de_rel_list_use` tinyint NOT NULL DEFAULT '0',
+  `de_rel_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_rel_list_mod` int NOT NULL DEFAULT '0',
+  `de_rel_img_width` int NOT NULL DEFAULT '0',
+  `de_rel_img_height` int NOT NULL DEFAULT '0',
+  `de_mobile_rel_list_use` tinyint NOT NULL DEFAULT '0',
+  `de_mobile_rel_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_mobile_rel_list_mod` int NOT NULL DEFAULT '0',
+  `de_mobile_rel_img_width` int NOT NULL DEFAULT '0',
+  `de_mobile_rel_img_height` int NOT NULL DEFAULT '0',
+  `de_search_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_search_list_mod` int NOT NULL DEFAULT '0',
+  `de_search_list_row` int NOT NULL DEFAULT '0',
+  `de_search_img_width` int NOT NULL DEFAULT '0',
+  `de_search_img_height` int NOT NULL DEFAULT '0',
+  `de_mobile_search_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_mobile_search_list_mod` int NOT NULL DEFAULT '0',
+  `de_mobile_search_list_row` int NOT NULL DEFAULT '0',
+  `de_mobile_search_img_width` int NOT NULL DEFAULT '0',
+  `de_mobile_search_img_height` int NOT NULL DEFAULT '0',
+  `de_listtype_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_listtype_list_mod` int NOT NULL DEFAULT '0',
+  `de_listtype_list_row` int NOT NULL DEFAULT '0',
+  `de_listtype_img_width` int NOT NULL DEFAULT '0',
+  `de_listtype_img_height` int NOT NULL DEFAULT '0',
+  `de_mobile_listtype_list_skin` varchar(255) NOT NULL DEFAULT '',
+  `de_mobile_listtype_list_mod` int NOT NULL DEFAULT '0',
+  `de_mobile_listtype_list_row` int NOT NULL DEFAULT '0',
+  `de_mobile_listtype_img_width` int NOT NULL DEFAULT '0',
+  `de_mobile_listtype_img_height` int NOT NULL DEFAULT '0',
+  `de_bank_use` int NOT NULL DEFAULT '0',
+  `de_bank_account` text NOT NULL,
+  `de_card_test` int NOT NULL DEFAULT '0',
+  `de_card_use` int NOT NULL DEFAULT '0',
+  `de_card_noint_use` tinyint NOT NULL DEFAULT '0',
+  `de_card_point` int NOT NULL DEFAULT '0',
+  `de_settle_min_point` int NOT NULL DEFAULT '0',
+  `de_settle_max_point` int NOT NULL DEFAULT '0',
+  `de_settle_point_unit` int NOT NULL DEFAULT '0',
+  `de_level_sell` int NOT NULL DEFAULT '0',
+  `de_delivery_company` varchar(255) NOT NULL DEFAULT '',
+  `de_send_cost_case` varchar(255) NOT NULL DEFAULT '',
+  `de_send_cost_limit` varchar(255) NOT NULL DEFAULT '',
+  `de_send_cost_list` varchar(255) NOT NULL DEFAULT '',
+  `de_hope_date_use` int NOT NULL DEFAULT '0',
+  `de_hope_date_after` int NOT NULL DEFAULT '0',
+  `de_baesong_content` text NOT NULL,
+  `de_change_content` text NOT NULL,
+  `de_point_days` int NOT NULL DEFAULT '0',
+  `de_simg_width` int NOT NULL DEFAULT '0',
+  `de_simg_height` int NOT NULL DEFAULT '0',
+  `de_mimg_width` int NOT NULL DEFAULT '0',
+  `de_mimg_height` int NOT NULL DEFAULT '0',
+  `de_sms_cont1` text NOT NULL,
+  `de_sms_cont2` text NOT NULL,
+  `de_sms_cont3` text NOT NULL,
+  `de_sms_cont4` text NOT NULL,
+  `de_sms_cont5` text NOT NULL,
+  `de_sms_use1` tinyint NOT NULL DEFAULT '0',
+  `de_sms_use2` tinyint NOT NULL DEFAULT '0',
+  `de_sms_use3` tinyint NOT NULL DEFAULT '0',
+  `de_sms_use4` tinyint NOT NULL DEFAULT '0',
+  `de_sms_use5` tinyint NOT NULL DEFAULT '0',
+  `de_sms_hp` varchar(255) NOT NULL DEFAULT '',
+  `de_pg_service` varchar(255) NOT NULL DEFAULT '',
+  `de_kcp_mid` varchar(255) NOT NULL DEFAULT '',
+  `de_kcp_site_key` varchar(255) NOT NULL DEFAULT '',
+  `de_inicis_mid` varchar(255) NOT NULL DEFAULT '',
+  `de_inicis_iniapi_key` varchar(30) NOT NULL DEFAULT '',
+  `de_inicis_iniapi_iv` varchar(30) NOT NULL DEFAULT '',
+  `de_inicis_sign_key` varchar(255) NOT NULL DEFAULT '',
+  `de_iche_use` tinyint NOT NULL DEFAULT '0',
+  `de_easy_pay_use` tinyint NOT NULL DEFAULT '0',
+  `de_easy_pay_services` varchar(255) NOT NULL DEFAULT '',
+  `de_samsung_pay_use` tinyint NOT NULL DEFAULT '0',
+  `de_inicis_lpay_use` tinyint NOT NULL DEFAULT '0',
+  `de_inicis_kakaopay_use` tinyint NOT NULL DEFAULT '0',
+  `de_inicis_cartpoint_use` tinyint NOT NULL DEFAULT '0',
+  `de_nicepay_mid` varchar(30) NOT NULL DEFAULT '',
+  `de_nicepay_key` varchar(255) NOT NULL DEFAULT '',
+  `de_item_use_use` tinyint NOT NULL DEFAULT '0',
+  `de_item_use_write` tinyint NOT NULL DEFAULT '0',
+  `de_code_dup_use` tinyint NOT NULL DEFAULT '0',
+  `de_cart_keep_term` int NOT NULL DEFAULT '0',
+  `de_guest_cart_use` tinyint NOT NULL DEFAULT '0',
+  `de_admin_buga_no` varchar(255) NOT NULL DEFAULT '',
+  `de_vbank_use` varchar(255) NOT NULL DEFAULT '',
+  `de_taxsave_use` tinyint NOT NULL,
+  `de_taxsave_types` set('account','vbank','transfer') NOT NULL DEFAULT 'account',
+  `de_guest_privacy` text NOT NULL,
+  `de_hp_use` tinyint NOT NULL DEFAULT '0',
+  `de_escrow_use` tinyint NOT NULL DEFAULT '0',
+  `de_tax_flag_use` tinyint NOT NULL DEFAULT '0',
+  `de_kakaopay_mid` varchar(255) NOT NULL DEFAULT '',
+  `de_kakaopay_key` varchar(255) NOT NULL DEFAULT '',
+  `de_kakaopay_enckey` varchar(255) NOT NULL DEFAULT '',
+  `de_kakaopay_hashkey` varchar(255) NOT NULL DEFAULT '',
+  `de_kakaopay_cancelpwd` varchar(255) NOT NULL DEFAULT '',
+  `de_naverpay_mid` varchar(255) NOT NULL DEFAULT '',
+  `de_naverpay_cert_key` varchar(255) NOT NULL DEFAULT '',
+  `de_naverpay_button_key` varchar(255) NOT NULL DEFAULT '',
+  `de_naverpay_test` tinyint NOT NULL DEFAULT '0',
+  `de_naverpay_mb_id` varchar(255) NOT NULL DEFAULT '',
+  `de_naverpay_sendcost` varchar(255) NOT NULL DEFAULT '',
+  `de_member_reg_coupon_use` tinyint NOT NULL DEFAULT '0',
+  `de_member_reg_coupon_term` int NOT NULL DEFAULT '0',
+  `de_member_reg_coupon_price` int NOT NULL DEFAULT '0',
+  `de_member_reg_coupon_minimum` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`de_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_default`
+--
+
+LOCK TABLES `yc5_default` WRITE;
+/*!40000 ALTER TABLE `yc5_default` DISABLE KEYS */;
+INSERT INTO `yc5_default` VALUES (1,'대표자명','회사명','123-45-67890','02-123-4567','02-123-4568','제 OO구 - 123호','123-456','OO도 OO시 OO구 OO동 123-45','정보책임자명','정보책임자 E-mail','basic','basic',1,'main.10.skin.php',5,1,160,160,1,'main.20.skin.php',4,1,215,215,1,'main.40.skin.php',4,1,215,215,1,'main.50.skin.php',5,1,215,215,1,'main.30.skin.php',4,1,215,215,1,'main.30.skin.php',2,4,230,230,1,'main.10.skin.php',2,2,230,230,1,'main.10.skin.php',2,4,300,300,1,'main.20.skin.php',2,2,80,80,1,'main.10.skin.php',2,2,230,230,1,'relation.10.skin.php',5,215,215,1,'relation.10.skin.php',3,230,230,'list.10.skin.php',5,5,225,225,'list.10.skin.php',2,5,230,230,'list.10.skin.php',5,5,225,225,'list.10.skin.php',2,5,230,230,1,'OO은행 12345-67-89012 예금주명',1,0,0,0,5000,50000,100,1,'','차등','20000;30000;40000','4000;3000;2000',0,3,'배송 안내 입력전입니다.','교환/반품 안내 입력전입니다.',7,230,230,300,300,'{이름}님의 회원가입을 축하드립니다.\nID:{회원아이디}\n{회사명}','{이름}님 주문해주셔서 고맙습니다.\n{주문번호}\n{주문금액}원\n{회사명}','{이름}님께서 주문하셨습니다.\n{주문번호}\n{주문금액}원\n{회사명}','{이름}님 입금 감사합니다.\n{입금액}원\n주문번호:\n{주문번호}\n{회사명}','{이름}님 배송합니다.\n택배:{택배회사}\n운송장번호:\n{운송장번호}\n{회사명}',0,0,0,0,0,'','kcp','','','','','','',0,0,'',0,0,0,0,'','',1,0,1,15,0,'12345호','0',0,'account','',0,0,0,'','','','','','','','',0,'','',0,0,0,0);
+/*!40000 ALTER TABLE `yc5_default` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_event`
+--
+
+DROP TABLE IF EXISTS `yc5_event`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_event` (
+  `ev_id` int NOT NULL AUTO_INCREMENT,
+  `ev_skin` varchar(255) NOT NULL DEFAULT '',
+  `ev_mobile_skin` varchar(255) NOT NULL DEFAULT '',
+  `ev_img_width` int NOT NULL DEFAULT '0',
+  `ev_img_height` int NOT NULL DEFAULT '0',
+  `ev_list_mod` int NOT NULL DEFAULT '0',
+  `ev_list_row` int NOT NULL DEFAULT '0',
+  `ev_mobile_img_width` int NOT NULL DEFAULT '0',
+  `ev_mobile_img_height` int NOT NULL DEFAULT '0',
+  `ev_mobile_list_mod` int NOT NULL DEFAULT '0',
+  `ev_mobile_list_row` int NOT NULL DEFAULT '0',
+  `ev_subject` varchar(255) NOT NULL DEFAULT '',
+  `ev_subject_strong` tinyint NOT NULL DEFAULT '0',
+  `ev_head_html` text NOT NULL,
+  `ev_tail_html` text NOT NULL,
+  `ev_use` tinyint NOT NULL DEFAULT '0',
+  PRIMARY KEY (`ev_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_event`
+--
+
+LOCK TABLES `yc5_event` WRITE;
+/*!40000 ALTER TABLE `yc5_event` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_event` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_event_item`
+--
+
+DROP TABLE IF EXISTS `yc5_event_item`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_event_item` (
+  `ev_id` int NOT NULL DEFAULT '0',
+  `it_id` varchar(20) NOT NULL DEFAULT '',
+  PRIMARY KEY (`ev_id`,`it_id`),
+  KEY `it_id` (`it_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_event_item`
+--
+
+LOCK TABLES `yc5_event_item` WRITE;
+/*!40000 ALTER TABLE `yc5_event_item` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_event_item` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_inicis_log`
+--
+
+DROP TABLE IF EXISTS `yc5_inicis_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_inicis_log` (
+  `oid` bigint unsigned NOT NULL,
+  `P_TID` varchar(255) NOT NULL DEFAULT '',
+  `P_MID` varchar(255) NOT NULL DEFAULT '',
+  `P_AUTH_DT` varchar(255) NOT NULL DEFAULT '',
+  `P_STATUS` varchar(255) NOT NULL DEFAULT '',
+  `P_TYPE` varchar(255) NOT NULL DEFAULT '',
+  `P_OID` varchar(255) NOT NULL DEFAULT '',
+  `P_FN_NM` varchar(255) NOT NULL DEFAULT '',
+  `P_AUTH_NO` varchar(255) NOT NULL DEFAULT '',
+  `P_AMT` int NOT NULL DEFAULT '0',
+  `P_RMESG1` varchar(255) NOT NULL DEFAULT '',
+  `post_data` text NOT NULL,
+  `is_mail_send` tinyint NOT NULL DEFAULT '1',
+  PRIMARY KEY (`oid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_inicis_log`
+--
+
+LOCK TABLES `yc5_inicis_log` WRITE;
+/*!40000 ALTER TABLE `yc5_inicis_log` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_inicis_log` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_item`
+--
+
+DROP TABLE IF EXISTS `yc5_item`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_item` (
+  `it_id` varchar(20) NOT NULL DEFAULT '',
+  `ca_id` varchar(10) NOT NULL DEFAULT '0',
+  `ca_id2` varchar(255) NOT NULL DEFAULT '',
+  `ca_id3` varchar(255) NOT NULL DEFAULT '',
+  `it_skin` varchar(255) NOT NULL DEFAULT '',
+  `it_mobile_skin` varchar(255) NOT NULL DEFAULT '',
+  `it_name` varchar(255) NOT NULL DEFAULT '',
+  `it_seo_title` varchar(200) NOT NULL DEFAULT '',
+  `it_maker` varchar(255) NOT NULL DEFAULT '',
+  `it_origin` varchar(255) NOT NULL DEFAULT '',
+  `it_brand` varchar(255) NOT NULL DEFAULT '',
+  `it_model` varchar(255) NOT NULL DEFAULT '',
+  `it_option_subject` varchar(255) NOT NULL DEFAULT '',
+  `it_supply_subject` varchar(255) NOT NULL DEFAULT '',
+  `it_type1` tinyint NOT NULL DEFAULT '0',
+  `it_type2` tinyint NOT NULL DEFAULT '0',
+  `it_type3` tinyint NOT NULL DEFAULT '0',
+  `it_type4` tinyint NOT NULL DEFAULT '0',
+  `it_type5` tinyint NOT NULL DEFAULT '0',
+  `it_basic` text NOT NULL,
+  `it_explan` mediumtext NOT NULL,
+  `it_explan2` mediumtext NOT NULL,
+  `it_mobile_explan` mediumtext NOT NULL,
+  `it_cust_price` int NOT NULL DEFAULT '0',
+  `it_price` int NOT NULL DEFAULT '0',
+  `it_point` int NOT NULL DEFAULT '0',
+  `it_point_type` tinyint NOT NULL DEFAULT '0',
+  `it_supply_point` int NOT NULL DEFAULT '0',
+  `it_notax` tinyint NOT NULL DEFAULT '0',
+  `it_sell_email` varchar(255) NOT NULL DEFAULT '',
+  `it_use` tinyint NOT NULL DEFAULT '0',
+  `it_nocoupon` tinyint NOT NULL DEFAULT '0',
+  `it_soldout` tinyint NOT NULL DEFAULT '0',
+  `it_stock_qty` int NOT NULL DEFAULT '0',
+  `it_stock_sms` tinyint NOT NULL DEFAULT '0',
+  `it_noti_qty` int NOT NULL DEFAULT '0',
+  `it_sc_type` tinyint NOT NULL DEFAULT '0',
+  `it_sc_method` tinyint NOT NULL DEFAULT '0',
+  `it_sc_price` int NOT NULL DEFAULT '0',
+  `it_sc_minimum` int NOT NULL DEFAULT '0',
+  `it_sc_qty` int NOT NULL DEFAULT '0',
+  `it_buy_min_qty` int NOT NULL DEFAULT '0',
+  `it_buy_max_qty` int NOT NULL DEFAULT '0',
+  `it_head_html` text NOT NULL,
+  `it_tail_html` text NOT NULL,
+  `it_mobile_head_html` text NOT NULL,
+  `it_mobile_tail_html` text NOT NULL,
+  `it_hit` int NOT NULL DEFAULT '0',
+  `it_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `it_update_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `it_ip` varchar(25) NOT NULL DEFAULT '',
+  `it_order` int NOT NULL DEFAULT '0',
+  `it_tel_inq` tinyint NOT NULL DEFAULT '0',
+  `it_info_gubun` varchar(50) NOT NULL DEFAULT '',
+  `it_info_value` text NOT NULL,
+  `it_sum_qty` int NOT NULL DEFAULT '0',
+  `it_use_cnt` int NOT NULL DEFAULT '0',
+  `it_use_avg` decimal(2,1) NOT NULL,
+  `it_shop_memo` text NOT NULL,
+  `ec_mall_pid` varchar(255) NOT NULL DEFAULT '',
+  `it_img1` varchar(255) NOT NULL DEFAULT '',
+  `it_img2` varchar(255) NOT NULL DEFAULT '',
+  `it_img3` varchar(255) NOT NULL DEFAULT '',
+  `it_img4` varchar(255) NOT NULL DEFAULT '',
+  `it_img5` varchar(255) NOT NULL DEFAULT '',
+  `it_img6` varchar(255) NOT NULL DEFAULT '',
+  `it_img7` varchar(255) NOT NULL DEFAULT '',
+  `it_img8` varchar(255) NOT NULL DEFAULT '',
+  `it_img9` varchar(255) NOT NULL DEFAULT '',
+  `it_img10` varchar(255) NOT NULL DEFAULT '',
+  `it_1_subj` varchar(255) NOT NULL DEFAULT '',
+  `it_2_subj` varchar(255) NOT NULL DEFAULT '',
+  `it_3_subj` varchar(255) NOT NULL DEFAULT '',
+  `it_4_subj` varchar(255) NOT NULL DEFAULT '',
+  `it_5_subj` varchar(255) NOT NULL DEFAULT '',
+  `it_6_subj` varchar(255) NOT NULL DEFAULT '',
+  `it_7_subj` varchar(255) NOT NULL DEFAULT '',
+  `it_8_subj` varchar(255) NOT NULL DEFAULT '',
+  `it_9_subj` varchar(255) NOT NULL DEFAULT '',
+  `it_10_subj` varchar(255) NOT NULL DEFAULT '',
+  `it_1` varchar(255) NOT NULL DEFAULT '',
+  `it_2` varchar(255) NOT NULL DEFAULT '',
+  `it_3` varchar(255) NOT NULL DEFAULT '',
+  `it_4` varchar(255) NOT NULL DEFAULT '',
+  `it_5` varchar(255) NOT NULL DEFAULT '',
+  `it_6` varchar(255) NOT NULL DEFAULT '',
+  `it_7` varchar(255) NOT NULL DEFAULT '',
+  `it_8` varchar(255) NOT NULL DEFAULT '',
+  `it_9` varchar(255) NOT NULL DEFAULT '',
+  `it_10` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`it_id`),
+  KEY `ca_id` (`ca_id`),
+  KEY `it_name` (`it_name`),
+  KEY `it_seo_title` (`it_seo_title`),
+  KEY `it_order` (`it_order`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_item`
+--
+
+LOCK TABLES `yc5_item` WRITE;
+/*!40000 ALTER TABLE `yc5_item` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_item` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_item_option`
+--
+
+DROP TABLE IF EXISTS `yc5_item_option`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_item_option` (
+  `io_no` int NOT NULL AUTO_INCREMENT,
+  `io_id` varchar(255) NOT NULL DEFAULT '0',
+  `io_type` tinyint NOT NULL DEFAULT '0',
+  `it_id` varchar(20) NOT NULL DEFAULT '',
+  `io_price` int NOT NULL DEFAULT '0',
+  `io_stock_qty` int NOT NULL DEFAULT '0',
+  `io_noti_qty` int NOT NULL DEFAULT '0',
+  `io_use` tinyint NOT NULL DEFAULT '0',
+  PRIMARY KEY (`io_no`),
+  KEY `io_id` (`io_id`),
+  KEY `it_id` (`it_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_item_option`
+--
+
+LOCK TABLES `yc5_item_option` WRITE;
+/*!40000 ALTER TABLE `yc5_item_option` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_item_option` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_item_qa`
+--
+
+DROP TABLE IF EXISTS `yc5_item_qa`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_item_qa` (
+  `iq_id` int NOT NULL AUTO_INCREMENT,
+  `it_id` varchar(20) NOT NULL DEFAULT '',
+  `mb_id` varchar(255) NOT NULL DEFAULT '',
+  `iq_secret` tinyint NOT NULL DEFAULT '0',
+  `iq_name` varchar(255) NOT NULL DEFAULT '',
+  `iq_email` varchar(255) NOT NULL DEFAULT '',
+  `iq_hp` varchar(255) NOT NULL DEFAULT '',
+  `iq_password` varchar(255) NOT NULL DEFAULT '',
+  `iq_subject` varchar(255) NOT NULL DEFAULT '',
+  `iq_question` text NOT NULL,
+  `iq_answer` text NOT NULL,
+  `iq_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `iq_ip` varchar(25) NOT NULL DEFAULT '',
+  PRIMARY KEY (`iq_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_item_qa`
+--
+
+LOCK TABLES `yc5_item_qa` WRITE;
+/*!40000 ALTER TABLE `yc5_item_qa` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_item_qa` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_item_relation`
+--
+
+DROP TABLE IF EXISTS `yc5_item_relation`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_item_relation` (
+  `it_id` varchar(20) NOT NULL DEFAULT '',
+  `it_id2` varchar(20) NOT NULL DEFAULT '',
+  `ir_no` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`it_id`,`it_id2`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_item_relation`
+--
+
+LOCK TABLES `yc5_item_relation` WRITE;
+/*!40000 ALTER TABLE `yc5_item_relation` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_item_relation` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_item_stocksms`
+--
+
+DROP TABLE IF EXISTS `yc5_item_stocksms`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_item_stocksms` (
+  `ss_id` int NOT NULL AUTO_INCREMENT,
+  `it_id` varchar(20) NOT NULL DEFAULT '',
+  `ss_hp` varchar(255) NOT NULL DEFAULT '',
+  `ss_send` tinyint NOT NULL DEFAULT '0',
+  `ss_send_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `ss_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `ss_ip` varchar(25) NOT NULL DEFAULT '',
+  PRIMARY KEY (`ss_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_item_stocksms`
+--
+
+LOCK TABLES `yc5_item_stocksms` WRITE;
+/*!40000 ALTER TABLE `yc5_item_stocksms` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_item_stocksms` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_item_use`
+--
+
+DROP TABLE IF EXISTS `yc5_item_use`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_item_use` (
+  `is_id` int NOT NULL AUTO_INCREMENT,
+  `it_id` varchar(20) NOT NULL DEFAULT '0',
+  `mb_id` varchar(255) NOT NULL DEFAULT '',
+  `is_name` varchar(255) NOT NULL DEFAULT '',
+  `is_password` varchar(255) NOT NULL DEFAULT '',
+  `is_score` tinyint NOT NULL DEFAULT '0',
+  `is_subject` varchar(255) NOT NULL DEFAULT '',
+  `is_content` text NOT NULL,
+  `is_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `is_ip` varchar(25) NOT NULL DEFAULT '',
+  `is_confirm` tinyint NOT NULL DEFAULT '0',
+  PRIMARY KEY (`is_id`),
+  KEY `index1` (`it_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_item_use`
+--
+
+LOCK TABLES `yc5_item_use` WRITE;
+/*!40000 ALTER TABLE `yc5_item_use` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_item_use` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_order`
+--
+
+DROP TABLE IF EXISTS `yc5_order`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_order` (
+  `od_id` bigint unsigned NOT NULL,
+  `mb_id` varchar(255) NOT NULL DEFAULT '',
+  `od_name` varchar(20) NOT NULL DEFAULT '',
+  `od_email` varchar(100) NOT NULL DEFAULT '',
+  `od_tel` varchar(20) NOT NULL DEFAULT '',
+  `od_hp` varchar(20) NOT NULL DEFAULT '',
+  `od_zip1` char(3) NOT NULL DEFAULT '',
+  `od_zip2` char(3) NOT NULL DEFAULT '',
+  `od_addr1` varchar(100) NOT NULL DEFAULT '',
+  `od_addr2` varchar(100) NOT NULL DEFAULT '',
+  `od_addr3` varchar(255) NOT NULL DEFAULT '',
+  `od_addr_jibeon` varchar(255) NOT NULL DEFAULT '',
+  `od_deposit_name` varchar(20) NOT NULL DEFAULT '',
+  `od_b_name` varchar(20) NOT NULL DEFAULT '',
+  `od_b_tel` varchar(20) NOT NULL DEFAULT '',
+  `od_b_hp` varchar(20) NOT NULL DEFAULT '',
+  `od_b_zip1` char(3) NOT NULL DEFAULT '',
+  `od_b_zip2` char(3) NOT NULL DEFAULT '',
+  `od_b_addr1` varchar(100) NOT NULL DEFAULT '',
+  `od_b_addr2` varchar(100) NOT NULL DEFAULT '',
+  `od_b_addr3` varchar(255) NOT NULL DEFAULT '',
+  `od_b_addr_jibeon` varchar(255) NOT NULL DEFAULT '',
+  `od_memo` text NOT NULL,
+  `od_cart_count` int NOT NULL DEFAULT '0',
+  `od_cart_price` int NOT NULL DEFAULT '0',
+  `od_cart_coupon` int NOT NULL DEFAULT '0',
+  `od_send_cost` int NOT NULL DEFAULT '0',
+  `od_send_cost2` int NOT NULL DEFAULT '0',
+  `od_send_coupon` int NOT NULL DEFAULT '0',
+  `od_receipt_price` int NOT NULL DEFAULT '0',
+  `od_cancel_price` int NOT NULL DEFAULT '0',
+  `od_receipt_point` int NOT NULL DEFAULT '0',
+  `od_refund_price` int NOT NULL DEFAULT '0',
+  `od_bank_account` varchar(255) NOT NULL DEFAULT '',
+  `od_receipt_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `od_coupon` int NOT NULL DEFAULT '0',
+  `od_misu` int NOT NULL DEFAULT '0',
+  `od_shop_memo` text NOT NULL,
+  `od_mod_history` text NOT NULL,
+  `od_status` varchar(255) NOT NULL DEFAULT '',
+  `od_hope_date` date NOT NULL DEFAULT '0000-00-00',
+  `od_settle_case` varchar(255) NOT NULL DEFAULT '',
+  `od_other_pay_type` varchar(100) NOT NULL DEFAULT '',
+  `od_test` tinyint NOT NULL DEFAULT '0',
+  `od_mobile` tinyint NOT NULL DEFAULT '0',
+  `od_pg` varchar(255) NOT NULL DEFAULT '',
+  `od_tno` varchar(255) NOT NULL DEFAULT '',
+  `od_app_no` varchar(20) NOT NULL DEFAULT '',
+  `od_escrow` tinyint NOT NULL DEFAULT '0',
+  `od_casseqno` varchar(255) NOT NULL DEFAULT '',
+  `od_tax_flag` tinyint NOT NULL DEFAULT '0',
+  `od_tax_mny` int NOT NULL DEFAULT '0',
+  `od_vat_mny` int NOT NULL DEFAULT '0',
+  `od_free_mny` int NOT NULL DEFAULT '0',
+  `od_delivery_company` varchar(255) NOT NULL DEFAULT '0',
+  `od_invoice` varchar(255) NOT NULL DEFAULT '',
+  `od_invoice_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `od_cash` tinyint NOT NULL,
+  `od_cash_no` varchar(255) NOT NULL,
+  `od_cash_info` text NOT NULL,
+  `od_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `od_pwd` varchar(255) NOT NULL DEFAULT '',
+  `od_ip` varchar(25) NOT NULL DEFAULT '',
+  PRIMARY KEY (`od_id`),
+  KEY `index2` (`mb_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_order`
+--
+
+LOCK TABLES `yc5_order` WRITE;
+/*!40000 ALTER TABLE `yc5_order` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_order` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_order_address`
+--
+
+DROP TABLE IF EXISTS `yc5_order_address`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_order_address` (
+  `ad_id` int NOT NULL AUTO_INCREMENT,
+  `mb_id` varchar(255) NOT NULL DEFAULT '',
+  `ad_subject` varchar(255) NOT NULL DEFAULT '',
+  `ad_default` tinyint NOT NULL DEFAULT '0',
+  `ad_name` varchar(255) NOT NULL DEFAULT '',
+  `ad_tel` varchar(255) NOT NULL DEFAULT '',
+  `ad_hp` varchar(255) NOT NULL DEFAULT '',
+  `ad_zip1` char(3) NOT NULL DEFAULT '',
+  `ad_zip2` char(3) NOT NULL DEFAULT '',
+  `ad_addr1` varchar(255) NOT NULL DEFAULT '',
+  `ad_addr2` varchar(255) NOT NULL DEFAULT '',
+  `ad_addr3` varchar(255) NOT NULL DEFAULT '',
+  `ad_jibeon` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`ad_id`),
+  KEY `mb_id` (`mb_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_order_address`
+--
+
+LOCK TABLES `yc5_order_address` WRITE;
+/*!40000 ALTER TABLE `yc5_order_address` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_order_address` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_order_data`
+--
+
+DROP TABLE IF EXISTS `yc5_order_data`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_order_data` (
+  `od_id` bigint unsigned NOT NULL,
+  `cart_id` bigint unsigned NOT NULL,
+  `mb_id` varchar(20) NOT NULL DEFAULT '',
+  `dt_pg` varchar(255) NOT NULL DEFAULT '',
+  `dt_data` text NOT NULL,
+  `dt_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  KEY `od_id` (`od_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_order_data`
+--
+
+LOCK TABLES `yc5_order_data` WRITE;
+/*!40000 ALTER TABLE `yc5_order_data` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_order_data` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_order_delete`
+--
+
+DROP TABLE IF EXISTS `yc5_order_delete`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_order_delete` (
+  `de_id` int NOT NULL AUTO_INCREMENT,
+  `de_key` varchar(255) NOT NULL DEFAULT '',
+  `de_data` longtext NOT NULL,
+  `mb_id` varchar(20) NOT NULL DEFAULT '',
+  `de_ip` varchar(255) NOT NULL DEFAULT '',
+  `de_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`de_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_order_delete`
+--
+
+LOCK TABLES `yc5_order_delete` WRITE;
+/*!40000 ALTER TABLE `yc5_order_delete` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_order_delete` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_order_post_log`
+--
+
+DROP TABLE IF EXISTS `yc5_order_post_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_order_post_log` (
+  `log_id` int NOT NULL AUTO_INCREMENT,
+  `oid` bigint unsigned NOT NULL,
+  `mb_id` varchar(255) NOT NULL DEFAULT '',
+  `post_data` text NOT NULL,
+  `ol_code` varchar(255) NOT NULL DEFAULT '',
+  `ol_msg` text NOT NULL,
+  `ol_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `ol_ip` varchar(25) NOT NULL DEFAULT '',
+  PRIMARY KEY (`log_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_order_post_log`
+--
+
+LOCK TABLES `yc5_order_post_log` WRITE;
+/*!40000 ALTER TABLE `yc5_order_post_log` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_order_post_log` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_personalpay`
+--
+
+DROP TABLE IF EXISTS `yc5_personalpay`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_personalpay` (
+  `pp_id` bigint unsigned NOT NULL,
+  `od_id` bigint unsigned NOT NULL,
+  `pp_name` varchar(255) NOT NULL DEFAULT '',
+  `pp_email` varchar(255) NOT NULL DEFAULT '',
+  `pp_hp` varchar(255) NOT NULL DEFAULT '',
+  `pp_content` text NOT NULL,
+  `pp_use` tinyint NOT NULL DEFAULT '0',
+  `pp_price` int NOT NULL DEFAULT '0',
+  `pp_pg` varchar(255) NOT NULL DEFAULT '',
+  `pp_tno` varchar(255) NOT NULL DEFAULT '',
+  `pp_app_no` varchar(20) NOT NULL DEFAULT '',
+  `pp_casseqno` varchar(255) NOT NULL DEFAULT '',
+  `pp_receipt_price` int NOT NULL DEFAULT '0',
+  `pp_settle_case` varchar(255) NOT NULL DEFAULT '',
+  `pp_bank_account` varchar(255) NOT NULL DEFAULT '',
+  `pp_deposit_name` varchar(255) NOT NULL DEFAULT '',
+  `pp_receipt_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `pp_receipt_ip` varchar(255) NOT NULL DEFAULT '',
+  `pp_shop_memo` text NOT NULL,
+  `pp_cash` tinyint NOT NULL DEFAULT '0',
+  `pp_cash_no` varchar(255) NOT NULL DEFAULT '',
+  `pp_cash_info` text NOT NULL,
+  `pp_ip` varchar(255) NOT NULL DEFAULT '',
+  `pp_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`pp_id`),
+  KEY `od_id` (`od_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_personalpay`
+--
+
+LOCK TABLES `yc5_personalpay` WRITE;
+/*!40000 ALTER TABLE `yc5_personalpay` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_personalpay` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_sendcost`
+--
+
+DROP TABLE IF EXISTS `yc5_sendcost`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_sendcost` (
+  `sc_id` int NOT NULL AUTO_INCREMENT,
+  `sc_name` varchar(255) NOT NULL DEFAULT '',
+  `sc_zip1` varchar(10) NOT NULL DEFAULT '',
+  `sc_zip2` varchar(10) NOT NULL DEFAULT '',
+  `sc_price` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`sc_id`),
+  KEY `sc_zip1` (`sc_zip1`),
+  KEY `sc_zip2` (`sc_zip2`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_sendcost`
+--
+
+LOCK TABLES `yc5_sendcost` WRITE;
+/*!40000 ALTER TABLE `yc5_sendcost` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_sendcost` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `yc5_wish`
+--
+
+DROP TABLE IF EXISTS `yc5_wish`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `yc5_wish` (
+  `wi_id` int NOT NULL AUTO_INCREMENT,
+  `mb_id` varchar(255) NOT NULL DEFAULT '',
+  `it_id` varchar(20) NOT NULL DEFAULT '0',
+  `wi_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `wi_ip` varchar(25) NOT NULL DEFAULT '',
+  PRIMARY KEY (`wi_id`),
+  KEY `index1` (`mb_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yc5_wish`
+--
+
+LOCK TABLES `yc5_wish` WRITE;
+/*!40000 ALTER TABLE `yc5_wish` DISABLE KEYS */;
+/*!40000 ALTER TABLE `yc5_wish` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping events for database 'yookhuimirak'
+--
+
+--
+-- Dumping routines for database 'yookhuimirak'
+--
+SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2026-05-03 23:22:19

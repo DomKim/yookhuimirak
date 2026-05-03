@@ -1,0 +1,79 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Read(*)",
+      "Edit(*)",
+      "Write(*)",
+      "Glob(*)",
+      "Grep(*)",
+      "WebFetch(*)",
+      "WebSearch(*)",
+      "Agent(*)",
+      "NotebookEdit(*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/session-briefing.js",
+            "timeout": 15,
+            "statusMessage": "환경 검증 + 인수인계 브리핑..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/tool-read-gate.js",
+            "timeout": 5,
+            "statusMessage": "도구 소스코드 읽기 방지..."
+          },
+          {
+            "type": "command",
+            "command": "node .claude/hooks/font-mapping-gate.js",
+            "timeout": 5,
+            "statusMessage": "fontFamily 매핑 확인..."
+          },
+          {
+            "type": "command",
+            "command": "node .claude/hooks/workflow-gate.js",
+            "timeout": 5,
+            "statusMessage": "워크플로우 순서 강제 검증..."
+          },
+          {
+            "type": "command",
+            "command": "node .claude/hooks/confirm-gate.js",
+            "timeout": 5,
+            "statusMessage": "유저 컨펌 + harness 체크..."
+          },
+          {
+            "type": "command",
+            "command": "node .claude/hooks/plan-format-gate.js",
+            "timeout": 5,
+            "statusMessage": "plan.json 형식 사전 확인..."
+          },
+          {
+            "type": "command",
+            "command": "node .claude/hooks/plan-gate.js",
+            "timeout": 10,
+            "statusMessage": "플랜 사전 검증 (plan-gate)..."
+          },
+          {
+            "type": "command",
+            "command": "node .claude/hooks/css-check.js",
+            "timeout": 10,
+            "statusMessage": "CSS 금지규칙 검증 중..."
+          }
+        ]
+      }
+    ]
+  }
+}

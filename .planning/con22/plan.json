@@ -1,0 +1,332 @@
+{
+  "generatedBy": "spec-to-plan v3 + AI structure correction",
+  "strictStructure": true,
+  "section": "con22",
+  "sectionClass": "contact_service",
+  "page": "main",
+  "specFile": ".planning/con22/spec_main_con22.json",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 22331,
+    "bottom": 22453,
+    "height": 122
+  },
+  "bg": "#f8f4e6",
+  "prevSectionBottom": 22331,
+  "firstRltvY": 22331,
+  "pt": "0.000000vw",
+  "pb": "0.000000vw",
+  "heightChain": [
+    "pt",
+    "q_food",
+    "pb"
+  ],
+  "availableImages": [
+    {
+      "file": "q_btn.png",
+      "width": 202,
+      "height": 51,
+      "sourceType": "완성형 가능성"
+    },
+    {
+      "file": "q_call.png",
+      "width": 222,
+      "height": 29,
+      "sourceType": "완성형 가능성"
+    },
+    {
+      "file": "q_img.png",
+      "width": 167,
+      "height": 112,
+      "sourceType": "완성형 가능성"
+    },
+    {
+      "file": "q_tt.png",
+      "width": 51,
+      "height": 51,
+      "composite": true,
+      "sourceType": "완성형"
+    }
+  ],
+  "ignoredTexts": [
+    {
+      "name": "q_call",
+      "reason": "Implemented as composite image /images/q_call.png containing icon and telephone number."
+    },
+    {
+      "name": "문의하기",
+      "reason": "Implemented as composite image /images/q_btn.png."
+    },
+    {
+      "name": "TOP",
+      "reason": "Implemented as composite image /images/q_tt.png."
+    }
+  ],
+  "ignoredShapes": [
+    {
+      "name": "사각형 585 복사",
+      "reason": "Button background is baked into /images/q_btn.png."
+    },
+    {
+      "name": "사각형 9 복사 3",
+      "reason": "Top button background is baked into /images/q_tt.png."
+    },
+    {
+      "name": "사각형 586 복사",
+      "reason": "Same as quick bar background #f8f4e6."
+    }
+  ],
+  "doNot": [
+    "Do not use px for layout values except border/shadow.",
+    "Do not use object-fit or max-width:100% on images.",
+    "Do not replace composite h_/f_/q_ assets with CSS effects.",
+    "Do not use child margin-left to fake centered footer alignment.",
+    "Do not hide or reinterpret PSD text line breaks."
+  ],
+  "elements": [
+    {
+      "name": "q_food",
+      "type": "image",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0.000000vw",
+      "marginLeft": "7.874016%",
+      "width": "8.766404%",
+      "src": "/images/q_img.png",
+      "naturalWidth": 167,
+      "naturalHeight": 112,
+      "sourceType": "완성형 가능성",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 22331
+    },
+    {
+      "name": "q_call_img",
+      "type": "image",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "2.467192vw",
+      "left": "17.795276%",
+      "width": "11.653543%",
+      "src": "/images/q_call.png",
+      "naturalWidth": 222,
+      "naturalHeight": 29,
+      "sourceType": "완성형 가능성",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 22378
+    },
+    {
+      "name": "q_inputs",
+      "type": "group",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "1.837270vw",
+      "left": "30.708661%",
+      "width": "34.855643%",
+      "display": "flex-row",
+      "gap": "-0.209974vw",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 22366,
+      "children": [
+        {
+          "name": "q_name_input",
+          "type": "cssShape",
+          "position": "absol",
+          "parent": "q_inputs",
+          "parentWidth": 664,
+          "top": "0.000000vw",
+          "left": "0.000000%",
+          "width": "33.734940%",
+          "background": "#ffffff",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 22366,
+          "children": [
+            {
+              "name": "q_name_placeholder",
+              "type": "text",
+              "position": "absol",
+              "parent": "q_name_input",
+              "parentWidth": 224,
+              "top": "0.944882vw",
+              "left": "42.410714%",
+              "width": "14.732143%",
+              "whiteSpace": "nowrap",
+              "effects": null,
+              "segments": [
+                {
+                  "text": "성함",
+                  "fontWeight": 300,
+                  "color": "#999999",
+                  "fontSize": "0.839895vw (16px)",
+                  "letterSpacing": "-0.05em",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Pretendard-Light"
+                }
+              ],
+              "psdY": 22384
+            }
+          ]
+        },
+        {
+          "name": "q_tel_input",
+          "type": "cssShape",
+          "position": "absol",
+          "parent": "q_inputs",
+          "parentWidth": 664,
+          "top": "0.000000vw",
+          "left": "33.132530%",
+          "width": "33.734940%",
+          "background": "#ffffff",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 22366,
+          "children": [
+            {
+              "name": "q_tel_placeholder",
+              "type": "text",
+              "position": "absol",
+              "parent": "q_tel_input",
+              "parentWidth": 224,
+              "top": "0.944882vw",
+              "left": "38.839286%",
+              "width": "21.428571%",
+              "whiteSpace": "nowrap",
+              "effects": null,
+              "segments": [
+                {
+                  "text": "연락처",
+                  "fontWeight": 300,
+                  "color": "#999999",
+                  "fontSize": "0.839895vw (16px)",
+                  "letterSpacing": "-0.05em",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Pretendard-Light"
+                }
+              ],
+              "psdY": 22384
+            }
+          ]
+        },
+        {
+          "name": "q_area_input",
+          "type": "cssShape",
+          "position": "absol",
+          "parent": "q_inputs",
+          "parentWidth": 664,
+          "top": "0.000000vw",
+          "left": "66.265060%",
+          "width": "33.734940%",
+          "background": "#ffffff",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 22366,
+          "children": [
+            {
+              "name": "q_area_placeholder",
+              "type": "text",
+              "position": "absol",
+              "parent": "q_area_input",
+              "parentWidth": 224,
+              "top": "0.944882vw",
+              "left": "35.267857%",
+              "width": "29.017857%",
+              "whiteSpace": "nowrap",
+              "effects": null,
+              "segments": [
+                {
+                  "text": "희망지역",
+                  "fontWeight": 300,
+                  "color": "#999999",
+                  "fontSize": "0.839895vw (16px)",
+                  "letterSpacing": "-0.05em",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Pretendard-Light"
+                }
+              ],
+              "psdY": 22384
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q_agree_box",
+      "type": "cssShape",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "2.782152vw",
+      "left": "66.089239%",
+      "width": "0.944882%",
+      "background": "#ffffff",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 22384
+    },
+    {
+      "name": "q_agree_text",
+      "type": "text",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "2.834646vw",
+      "left": "67.349081%",
+      "width": "8.083990%",
+      "whiteSpace": "nowrap",
+      "effects": null,
+      "segments": [
+        {
+          "text": "개인정보 수집 및 이용 동의",
+          "fontWeight": 300,
+          "color": "#999999",
+          "fontSize": "0.839895vw (16px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.876,
+          "fontFamily": "Pretendard-Light"
+        }
+      ],
+      "psdY": 22385
+    },
+    {
+      "name": "q_submit_img",
+      "type": "image",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "1.837270vw",
+      "left": "79.055118%",
+      "width": "10.603675%",
+      "src": "/images/q_btn.png",
+      "naturalWidth": 202,
+      "naturalHeight": 51,
+      "sourceType": "완성형 가능성",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 22366
+    },
+    {
+      "name": "q_top_img",
+      "type": "image",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "1.837270vw",
+      "left": "90.131234%",
+      "width": "2.677165%",
+      "src": "/images/q_tt.png",
+      "naturalWidth": 51,
+      "naturalHeight": 51,
+      "sourceType": "완성형",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 22366
+    }
+  ],
+  "ascii": "QUICK con22 / contact_service fixed bar (bg:#f8f4e6)\npt 0.000000vw\n┌─ q_food rltv parent=section mt=0 left=7.874016% width=8.766404% src=/images/q_img.png (167x112 complete-ish)\n├─ q_call_img absol top=2.467192vw left=17.795276% width=11.653543% src=/images/q_call.png (222x29 composite)\n├─ q_inputs absol top=1.837270vw left=30.708661% width=34.855643%\n│  ├─ name/tel/area cssShape inputs, each 224px wide, placeholder Pretendard 300 #999 0.839895vw\n├─ q_agree_box absol top=2.782152vw left=66.089239% width=0.944882%\n├─ q_agree_text absol top=2.834646vw left=67.349081% width=8.083990%, Pretendard 300 #999 0.839895vw\n├─ q_submit_img absol top=1.837270vw left=79.055118% width=10.603675% src=/images/q_btn.png (202x51 composite)\n└─ q_top_img absol top=1.837270vw left=90.131234% width=2.677165% src=/images/q_tt.png (51x51 complete)\npb 0.000000vw\ndoNot: q_call/q_btn/q_tt text is baked image; no duplicate CSS text over it."
+}

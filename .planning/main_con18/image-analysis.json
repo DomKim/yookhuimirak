@@ -1,0 +1,101 @@
+{
+  "timestamp": "2026-05-03T08:21:32.044Z",
+  "images": [
+    {
+      "file": "con18_01.png",
+      "width": 527,
+      "height": 177,
+      "hasAlpha": true,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": true,
+        "padding": 30
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 11
+      },
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con18_02.png",
+      "width": 28,
+      "height": 28,
+      "hasAlpha": true,
+      "border": {
+        "detected": true,
+        "color": "#ffffff",
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 3
+      },
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con18_03.png",
+      "width": 34,
+      "height": 34,
+      "hasAlpha": true,
+      "border": {
+        "detected": true,
+        "color": "#231916",
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 5
+      },
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con18_04.png",
+      "width": 82,
+      "height": 82,
+      "hasAlpha": true,
+      "border": {
+        "detected": true,
+        "color": "#231916",
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 11
+      },
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    }
+  ]
+}

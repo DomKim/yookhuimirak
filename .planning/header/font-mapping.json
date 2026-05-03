@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "mapping": {
+    "Pretendard-Light": "Pretendard Variable",
+    "Pretendard-Bold": "Pretendard Variable",
+    "Eulyoo1945-SemiBold": "Eulyoo1945",
+    "TTOmniGothicM": "Pretendard Variable",
+    "TTOmniGothicR": "Pretendard Variable",
+    "TTOmniGothicH": "Pretendard Variable"
+  },
+  "notes": {
+    "TTOmniGothic": "No local/web font-face found; not used for the live header controls in this task."
+  }
+}

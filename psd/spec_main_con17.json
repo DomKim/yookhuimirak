@@ -1,0 +1,1687 @@
+{
+  "section": "con17",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 19420,
+    "bottom": 20413
+  },
+  "background": {
+    "type": "color",
+    "fill": "#fefbf2",
+    "src": null
+  },
+  "groups": [
+    {
+      "name": "con17_01",
+      "parentGroup": "con17",
+      "childCount": 6,
+      "children": [
+        {
+          "name": "사각형 588 복사 4",
+          "type": "layer",
+          "x": 225,
+          "y": 19692,
+          "w": 314,
+          "h": 224
+        },
+        {
+          "name": "사각형 588 복사 8",
+          "type": "layer",
+          "x": 225,
+          "y": 19692,
+          "w": 314,
+          "h": 15
+        },
+        {
+          "name": "개설문의",
+          "type": "text",
+          "x": 261,
+          "y": 19748,
+          "w": 96,
+          "h": 24
+        },
+        {
+          "name": "전화 및 방문 상담 창업문의 032-433-7049",
+          "type": "text",
+          "x": 260,
+          "y": 19842,
+          "w": 183,
+          "h": 43
+        },
+        {
+          "name": "사각형 590 복사 4",
+          "type": "layer",
+          "x": 453,
+          "y": 19692,
+          "w": 55,
+          "h": 47
+        },
+        {
+          "name": "01",
+          "type": "text",
+          "x": 470,
+          "y": 19705,
+          "w": 21,
+          "h": 21
+        }
+      ],
+      "bbox": {
+        "x": 225,
+        "y": 19692,
+        "w": 314,
+        "h": 224
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con17_02",
+      "parentGroup": "con17",
+      "childCount": 6,
+      "children": [
+        {
+          "name": "사각형 588 복사 5",
+          "type": "layer",
+          "x": 609,
+          "y": 19692,
+          "w": 314,
+          "h": 224
+        },
+        {
+          "name": "사각형 588 복사 9",
+          "type": "layer",
+          "x": 610,
+          "y": 19692,
+          "w": 313,
+          "h": 15
+        },
+        {
+          "name": "가맹상담",
+          "type": "text",
+          "x": 645,
+          "y": 19748,
+          "w": 98,
+          "h": 24
+        },
+        {
+          "name": "상업 목적과 투자 비용 입점 위치에 대한 상담 정보공개서 제공",
+          "type": "text",
+          "x": 644,
+          "y": 19814,
+          "w": 151,
+          "h": 69
+        },
+        {
+          "name": "사각형 590 복사 5",
+          "type": "layer",
+          "x": 837,
+          "y": 19692,
+          "w": 55,
+          "h": 47
+        },
+        {
+          "name": "02",
+          "type": "text",
+          "x": 852,
+          "y": 19705,
+          "w": 27,
+          "h": 21
+        }
+      ],
+      "bbox": {
+        "x": 609,
+        "y": 19692,
+        "w": 314,
+        "h": 224
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con17_03",
+      "parentGroup": "con17",
+      "childCount": 6,
+      "children": [
+        {
+          "name": "사각형 588 복사 6",
+          "type": "layer",
+          "x": 992,
+          "y": 19692,
+          "w": 314,
+          "h": 224
+        },
+        {
+          "name": "사각형 588 복사 10",
+          "type": "layer",
+          "x": 993,
+          "y": 19692,
+          "w": 313,
+          "h": 15
+        },
+        {
+          "name": "상권분석",
+          "type": "text",
+          "x": 1028,
+          "y": 19748,
+          "w": 96,
+          "h": 25
+        },
+        {
+          "name": "주병 경쟁업체 분석 유동인구 / 거주인구 파악 수익성에 대한 분석",
+          "type": "text",
+          "x": 1027,
+          "y": 19814,
+          "w": 172,
+          "h": 69
+        },
+        {
+          "name": "사각형 590 복사 6",
+          "type": "layer",
+          "x": 1220,
+          "y": 19692,
+          "w": 55,
+          "h": 47
+        },
+        {
+          "name": "03",
+          "type": "text",
+          "x": 1235,
+          "y": 19705,
+          "w": 27,
+          "h": 21
+        }
+      ],
+      "bbox": {
+        "x": 992,
+        "y": 19692,
+        "w": 314,
+        "h": 224
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con17_04",
+      "parentGroup": "con17",
+      "childCount": 6,
+      "children": [
+        {
+          "name": "사각형 588 복사 7",
+          "type": "layer",
+          "x": 1377,
+          "y": 19692,
+          "w": 314,
+          "h": 224
+        },
+        {
+          "name": "사각형 588 복사 11",
+          "type": "layer",
+          "x": 1378,
+          "y": 19692,
+          "w": 313,
+          "h": 15
+        },
+        {
+          "name": "가맹계약",
+          "type": "text",
+          "x": 1413,
+          "y": 19748,
+          "w": 98,
+          "h": 25
+        },
+        {
+          "name": "계약체결 개설비용 정리 전달 가맹 계약서 제공",
+          "type": "text",
+          "x": 1412,
+          "y": 19814,
+          "w": 132,
+          "h": 69
+        },
+        {
+          "name": "사각형 590 복사 7",
+          "type": "layer",
+          "x": 1604,
+          "y": 19692,
+          "w": 56,
+          "h": 47
+        },
+        {
+          "name": "04",
+          "type": "text",
+          "x": 1620,
+          "y": 19705,
+          "w": 27,
+          "h": 21
+        }
+      ],
+      "bbox": {
+        "x": 1377,
+        "y": 19692,
+        "w": 314,
+        "h": 224
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con17_05",
+      "parentGroup": "con17",
+      "childCount": 6,
+      "children": [
+        {
+          "name": "사각형 588 복사 12",
+          "type": "layer",
+          "x": 225,
+          "y": 19942,
+          "w": 314,
+          "h": 224
+        },
+        {
+          "name": "사각형 588 복사 12",
+          "type": "layer",
+          "x": 225,
+          "y": 19942,
+          "w": 314,
+          "h": 15
+        },
+        {
+          "name": "인테리어 공사",
+          "type": "text",
+          "x": 262,
+          "y": 19998,
+          "w": 152,
+          "h": 24
+        },
+        {
+          "name": "인테리어 공사 영업 인허가 / 사업자등록, 기타 설비 계약 ",
+          "type": "text",
+          "x": 264,
+          "y": 20064,
+          "w": 175,
+          "h": 69
+        },
+        {
+          "name": "사각형 590 복사 8",
+          "type": "layer",
+          "x": 453,
+          "y": 19942,
+          "w": 55,
+          "h": 47
+        },
+        {
+          "name": "05",
+          "type": "text",
+          "x": 468,
+          "y": 19955,
+          "w": 27,
+          "h": 21
+        }
+      ],
+      "bbox": {
+        "x": 225,
+        "y": 19942,
+        "w": 314,
+        "h": 224
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con17_06",
+      "parentGroup": "con17",
+      "childCount": 6,
+      "children": [
+        {
+          "name": "사각형 588 복사 12",
+          "type": "layer",
+          "x": 609,
+          "y": 19942,
+          "w": 314,
+          "h": 224
+        },
+        {
+          "name": "사각형 588 복사 12",
+          "type": "layer",
+          "x": 610,
+          "y": 19942,
+          "w": 313,
+          "h": 15
+        },
+        {
+          "name": "본사교육",
+          "type": "text",
+          "x": 645,
+          "y": 19998,
+          "w": 97,
+          "h": 25
+        },
+        {
+          "name": "조리 서비스 / 교육 각종 Know how 전수 매장 운영 교육",
+          "type": "text",
+          "x": 644,
+          "y": 20064,
+          "w": 149,
+          "h": 69
+        },
+        {
+          "name": "사각형 590 복사 8",
+          "type": "layer",
+          "x": 837,
+          "y": 19942,
+          "w": 55,
+          "h": 47
+        },
+        {
+          "name": "06",
+          "type": "text",
+          "x": 852,
+          "y": 19955,
+          "w": 27,
+          "h": 21
+        }
+      ],
+      "bbox": {
+        "x": 609,
+        "y": 19942,
+        "w": 314,
+        "h": 224
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con17_07",
+      "parentGroup": "con17",
+      "childCount": 6,
+      "children": [
+        {
+          "name": "사각형 588 복사 12",
+          "type": "layer",
+          "x": 992,
+          "y": 19942,
+          "w": 314,
+          "h": 224
+        },
+        {
+          "name": "사각형 588 복사 12",
+          "type": "layer",
+          "x": 993,
+          "y": 19942,
+          "w": 313,
+          "h": 15
+        },
+        {
+          "name": "오픈전 최종점검",
+          "type": "text",
+          "x": 1028,
+          "y": 19998,
+          "w": 175,
+          "h": 24
+        },
+        {
+          "name": "인테리어 / 설비 완료 점검 직원 교육 상태 점검 사전 판매 / 운영 실습",
+          "type": "text",
+          "x": 1027,
+          "y": 20064,
+          "w": 174,
+          "h": 70
+        },
+        {
+          "name": "사각형 590 복사 8",
+          "type": "layer",
+          "x": 1220,
+          "y": 19942,
+          "w": 55,
+          "h": 47
+        },
+        {
+          "name": "07",
+          "type": "text",
+          "x": 1235,
+          "y": 19955,
+          "w": 27,
+          "h": 21
+        }
+      ],
+      "bbox": {
+        "x": 992,
+        "y": 19942,
+        "w": 314,
+        "h": 224
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con17_09",
+      "parentGroup": "con17",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 14 복사 5",
+          "type": "layer",
+          "x": 1321,
+          "y": 20038,
+          "w": 43,
+          "h": 32
+        },
+        {
+          "name": "벡터 스마트 오브젝트 복사 8",
+          "type": "layer",
+          "x": 1335,
+          "y": 20047,
+          "w": 16,
+          "h": 15
+        }
+      ],
+      "bbox": {
+        "x": 1321,
+        "y": 20038,
+        "w": 43,
+        "h": 32
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con17_08",
+      "parentGroup": "con17",
+      "childCount": 6,
+      "children": [
+        {
+          "name": "사각형 588 복사 12",
+          "type": "layer",
+          "x": 1377,
+          "y": 19942,
+          "w": 314,
+          "h": 224
+        },
+        {
+          "name": "사각형 588 복사 12",
+          "type": "layer",
+          "x": 1378,
+          "y": 19942,
+          "w": 313,
+          "h": 15
+        },
+        {
+          "name": "그랜드 오픈",
+          "type": "text",
+          "x": 1413,
+          "y": 19998,
+          "w": 128,
+          "h": 24
+        },
+        {
+          "name": "본사 OV 지원 그랜드 오픈",
+          "type": "text",
+          "x": 1412,
+          "y": 20093,
+          "w": 92,
+          "h": 43
+        },
+        {
+          "name": "사각형 590 복사 8",
+          "type": "layer",
+          "x": 1604,
+          "y": 19942,
+          "w": 56,
+          "h": 47
+        },
+        {
+          "name": "08",
+          "type": "text",
+          "x": 1620,
+          "y": 19955,
+          "w": 27,
+          "h": 21
+        }
+      ],
+      "bbox": {
+        "x": 1377,
+        "y": 19942,
+        "w": 314,
+        "h": 224
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    }
+  ],
+  "texts": [
+    {
+      "name": "창업절차 안내",
+      "content": "창업절차 안내",
+      "lineBreaks": 0,
+      "x": 793,
+      "y": 19573,
+      "w": 333,
+      "h": 59,
+      "segments": [
+        {
+          "text": "창업절차",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#5d2b0d",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": " 안내",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#070707",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "개설문의",
+      "content": "개설문의",
+      "lineBreaks": 0,
+      "x": 261,
+      "y": 19748,
+      "w": 96,
+      "h": 24,
+      "segments": [
+        {
+          "text": "개설문의",
+          "fontSize_px": 26,
+          "fontSize_vw": "1.3648",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#050505",
+          "lineHeight": 0.923,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "전화 및 방문 상담 창업문의 032-433-7049",
+      "content": "전화 및 방문 상담\n창업문의 032-433-7049",
+      "lineBreaks": 1,
+      "x": 260,
+      "y": 19842,
+      "w": 183,
+      "h": 43,
+      "segments": [
+        {
+          "text": "전화 및 방문 상담\n창업문의 032-433-7049",
+          "fontSize_px": 19,
+          "fontSize_vw": "0.9974",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#050505",
+          "lineHeight": 1.368,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "01",
+      "content": "01",
+      "lineBreaks": 0,
+      "x": 470,
+      "y": 19705,
+      "w": 21,
+      "h": 21,
+      "segments": [
+        {
+          "text": "01",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#ffffff",
+          "lineHeight": 0.955,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "가맹상담",
+      "content": "가맹상담",
+      "lineBreaks": 0,
+      "x": 645,
+      "y": 19748,
+      "w": 98,
+      "h": 24,
+      "segments": [
+        {
+          "text": "가맹상담",
+          "fontSize_px": 26,
+          "fontSize_vw": "1.3648",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#050505",
+          "lineHeight": 0.923,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "상업 목적과 투자 비용 입점 위치에 대한 상담 정보공개서 제공",
+      "content": "상업 목적과 투자 비용\n입점 위치에 대한 상담\n정보공개서 제공",
+      "lineBreaks": 2,
+      "x": 644,
+      "y": 19814,
+      "w": 151,
+      "h": 69,
+      "segments": [
+        {
+          "text": "상업 목적과 투자 비용\n입점 위치에 대한 상담\n정보공개서 제공",
+          "fontSize_px": 19,
+          "fontSize_vw": "0.9974",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#050505",
+          "lineHeight": 1.368,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "02",
+      "content": "02",
+      "lineBreaks": 0,
+      "x": 852,
+      "y": 19705,
+      "w": 27,
+      "h": 21,
+      "segments": [
+        {
+          "text": "02",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#ffffff",
+          "lineHeight": 0.955,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "상권분석",
+      "content": "상권분석",
+      "lineBreaks": 0,
+      "x": 1028,
+      "y": 19748,
+      "w": 96,
+      "h": 25,
+      "segments": [
+        {
+          "text": "상권분석",
+          "fontSize_px": 26,
+          "fontSize_vw": "1.3648",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#050505",
+          "lineHeight": 0.962,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "주병 경쟁업체 분석 유동인구 / 거주인구 파악 수익성에 대한 분석",
+      "content": "주병 경쟁업체 분석\n유동인구 / 거주인구 파악\n수익성에 대한 분석",
+      "lineBreaks": 2,
+      "x": 1027,
+      "y": 19814,
+      "w": 172,
+      "h": 69,
+      "segments": [
+        {
+          "text": "주병 경쟁업체 분석\n유동인구 / 거주인구 파악\n수익성에 대한 분석",
+          "fontSize_px": 19,
+          "fontSize_vw": "0.9974",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#050505",
+          "lineHeight": 1.368,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "03",
+      "content": "03",
+      "lineBreaks": 0,
+      "x": 1235,
+      "y": 19705,
+      "w": 27,
+      "h": 21,
+      "segments": [
+        {
+          "text": "03",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#ffffff",
+          "lineHeight": 0.955,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "가맹계약",
+      "content": "가맹계약",
+      "lineBreaks": 0,
+      "x": 1413,
+      "y": 19748,
+      "w": 98,
+      "h": 25,
+      "segments": [
+        {
+          "text": "가맹계약",
+          "fontSize_px": 26,
+          "fontSize_vw": "1.3648",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#050505",
+          "lineHeight": 0.962,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "계약체결 개설비용 정리 전달 가맹 계약서 제공",
+      "content": "계약체결\n개설비용 정리 전달\n가맹 계약서 제공",
+      "lineBreaks": 2,
+      "x": 1412,
+      "y": 19814,
+      "w": 132,
+      "h": 69,
+      "segments": [
+        {
+          "text": "계약체결\n개설비용 정리 전달\n가맹 계약서 제공",
+          "fontSize_px": 19,
+          "fontSize_vw": "0.9974",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#050505",
+          "lineHeight": 1.368,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "04",
+      "content": "04",
+      "lineBreaks": 0,
+      "x": 1620,
+      "y": 19705,
+      "w": 27,
+      "h": 21,
+      "segments": [
+        {
+          "text": "04",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#ffffff",
+          "lineHeight": 0.955,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "인테리어 공사",
+      "content": "인테리어 공사",
+      "lineBreaks": 0,
+      "x": 262,
+      "y": 19998,
+      "w": 152,
+      "h": 24,
+      "segments": [
+        {
+          "text": "인테리어 공사",
+          "fontSize_px": 26,
+          "fontSize_vw": "1.3648",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#050505",
+          "lineHeight": 0.923,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "인테리어 공사 영업 인허가 / 사업자등록, 기타 설비 계약 ",
+      "content": "인테리어 공사\n영업 인허가 / 사업자등록,\n기타 설비 계약 ",
+      "lineBreaks": 2,
+      "x": 264,
+      "y": 20064,
+      "w": 175,
+      "h": 69,
+      "segments": [
+        {
+          "text": "인테리어 공사\n영업 인허가 / 사업자등록,\n기타 설비 계약 ",
+          "fontSize_px": 19,
+          "fontSize_vw": "0.9974",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#050505",
+          "lineHeight": 1.368,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "05",
+      "content": "05",
+      "lineBreaks": 0,
+      "x": 468,
+      "y": 19955,
+      "w": 27,
+      "h": 21,
+      "segments": [
+        {
+          "text": "05",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#ffffff",
+          "lineHeight": 0.955,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "본사교육",
+      "content": "본사교육",
+      "lineBreaks": 0,
+      "x": 645,
+      "y": 19998,
+      "w": 97,
+      "h": 25,
+      "segments": [
+        {
+          "text": "본사교육",
+          "fontSize_px": 26,
+          "fontSize_vw": "1.3648",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#050505",
+          "lineHeight": 0.962,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "조리 서비스 / 교육 각종 Know how 전수 매장 운영 교육",
+      "content": "조리 서비스 / 교육\n각종 Know how 전수\n매장 운영 교육",
+      "lineBreaks": 2,
+      "x": 644,
+      "y": 20064,
+      "w": 149,
+      "h": 69,
+      "segments": [
+        {
+          "text": "조리 서비스 / 교육\n각종 Know how 전수\n매장 운영 교육",
+          "fontSize_px": 19,
+          "fontSize_vw": "0.9974",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#050505",
+          "lineHeight": 1.368,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "06",
+      "content": "06",
+      "lineBreaks": 0,
+      "x": 852,
+      "y": 19955,
+      "w": 27,
+      "h": 21,
+      "segments": [
+        {
+          "text": "06",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#ffffff",
+          "lineHeight": 0.955,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "오픈전 최종점검",
+      "content": "오픈전 최종점검",
+      "lineBreaks": 0,
+      "x": 1028,
+      "y": 19998,
+      "w": 175,
+      "h": 24,
+      "segments": [
+        {
+          "text": "오픈전 최종점검",
+          "fontSize_px": 26,
+          "fontSize_vw": "1.3648",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#050505",
+          "lineHeight": 0.923,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "인테리어 / 설비 완료 점검 직원 교육 상태 점검 사전 판매 / 운영 실습",
+      "content": "인테리어 / 설비 완료 점검\n직원 교육 상태 점검\n사전 판매 / 운영 실습",
+      "lineBreaks": 2,
+      "x": 1027,
+      "y": 20064,
+      "w": 174,
+      "h": 70,
+      "segments": [
+        {
+          "text": "인테리어 / 설비 완료 점검\n직원 교육 상태 점검\n사전 판매 / 운영 실습",
+          "fontSize_px": 19,
+          "fontSize_vw": "0.9974",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#050505",
+          "lineHeight": 1.368,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "07",
+      "content": "07",
+      "lineBreaks": 0,
+      "x": 1235,
+      "y": 19955,
+      "w": 27,
+      "h": 21,
+      "segments": [
+        {
+          "text": "07",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#ffffff",
+          "lineHeight": 0.955,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "그랜드 오픈",
+      "content": "그랜드 오픈",
+      "lineBreaks": 0,
+      "x": 1413,
+      "y": 19998,
+      "w": 128,
+      "h": 24,
+      "segments": [
+        {
+          "text": "그랜드 오픈",
+          "fontSize_px": 26,
+          "fontSize_vw": "1.3648",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#050505",
+          "lineHeight": 0.923,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "본사 OV 지원 그랜드 오픈",
+      "content": "본사 OV 지원\n그랜드 오픈",
+      "lineBreaks": 1,
+      "x": 1412,
+      "y": 20093,
+      "w": 92,
+      "h": 43,
+      "segments": [
+        {
+          "text": "본사 OV 지원\n그랜드 오픈",
+          "fontSize_px": 19,
+          "fontSize_vw": "0.9974",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#050505",
+          "lineHeight": 1.368,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "08",
+      "content": "08",
+      "lineBreaks": 0,
+      "x": 1620,
+      "y": 19955,
+      "w": 27,
+      "h": 21,
+      "segments": [
+        {
+          "text": "08",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicEB",
+          "color": "#ffffff",
+          "lineHeight": 0.955,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 1014 복사 2",
+      "x": 0,
+      "y": 19420,
+      "w": 1923,
+      "h": 879,
+      "fill": "#fefbf2",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 14 복사",
+      "x": 553,
+      "y": 19788,
+      "w": 43,
+      "h": 32,
+      "fill": "#bfa78a",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 4",
+      "x": 225,
+      "y": 19692,
+      "w": 314,
+      "h": 224,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 8",
+      "x": 225,
+      "y": 19692,
+      "w": 314,
+      "h": 15,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 590 복사 4",
+      "x": 453,
+      "y": 19692,
+      "w": 55,
+      "h": 47,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 5",
+      "x": 609,
+      "y": 19692,
+      "w": 314,
+      "h": 224,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 9",
+      "x": 610,
+      "y": 19692,
+      "w": 313,
+      "h": 15,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 590 복사 5",
+      "x": 837,
+      "y": 19692,
+      "w": 55,
+      "h": 47,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 14 복사 2",
+      "x": 936,
+      "y": 19788,
+      "w": 43,
+      "h": 32,
+      "fill": "#bfa78a",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 6",
+      "x": 992,
+      "y": 19692,
+      "w": 314,
+      "h": 224,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 10",
+      "x": 993,
+      "y": 19692,
+      "w": 313,
+      "h": 15,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 590 복사 6",
+      "x": 1220,
+      "y": 19692,
+      "w": 55,
+      "h": 47,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 14 복사 4",
+      "x": 1321,
+      "y": 19788,
+      "w": 43,
+      "h": 32,
+      "fill": "#bfa78a",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 7",
+      "x": 1377,
+      "y": 19692,
+      "w": 314,
+      "h": 224,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 11",
+      "x": 1378,
+      "y": 19692,
+      "w": 313,
+      "h": 15,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 590 복사 7",
+      "x": 1604,
+      "y": 19692,
+      "w": 56,
+      "h": 47,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 12",
+      "x": 225,
+      "y": 19942,
+      "w": 314,
+      "h": 224,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 12",
+      "x": 225,
+      "y": 19942,
+      "w": 314,
+      "h": 15,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 590 복사 8",
+      "x": 453,
+      "y": 19942,
+      "w": 55,
+      "h": 47,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 14 복사 5",
+      "x": 553,
+      "y": 20038,
+      "w": 43,
+      "h": 32,
+      "fill": "#bfa78a",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 12",
+      "x": 609,
+      "y": 19942,
+      "w": 314,
+      "h": 224,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 12",
+      "x": 610,
+      "y": 19942,
+      "w": 313,
+      "h": 15,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 590 복사 8",
+      "x": 837,
+      "y": 19942,
+      "w": 55,
+      "h": 47,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 14 복사 5",
+      "x": 936,
+      "y": 20038,
+      "w": 43,
+      "h": 32,
+      "fill": "#bfa78a",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 12",
+      "x": 992,
+      "y": 19942,
+      "w": 314,
+      "h": 224,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 12",
+      "x": 993,
+      "y": 19942,
+      "w": 313,
+      "h": 15,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 590 복사 8",
+      "x": 1220,
+      "y": 19942,
+      "w": 55,
+      "h": 47,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 14 복사 5",
+      "x": 1321,
+      "y": 20038,
+      "w": 43,
+      "h": 32,
+      "fill": "#bfa78a",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 12",
+      "x": 1377,
+      "y": 19942,
+      "w": 314,
+      "h": 224,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 12",
+      "x": 1378,
+      "y": 19942,
+      "w": 313,
+      "h": 15,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#1b150e"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 590 복사 8",
+      "x": 1604,
+      "y": 19942,
+      "w": 56,
+      "h": 47,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "벡터 스마트 오브젝트 복사",
+      "x": -14,
+      "y": 20055,
+      "w": 1944,
+      "h": 358,
+      "clippingRect": {
+        "x": 553,
+        "y": 19788,
+        "w": 43,
+        "h": 32,
+        "borderRadius": 0
+      },
+      "possibleFile": "con17_09.png",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#bfa78a",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    },
+    {
+      "name": "벡터 스마트 오브젝트 복사 5",
+      "x": 567,
+      "y": 19797,
+      "w": 16,
+      "h": 15,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#ffffff",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    },
+    {
+      "name": "벡터 스마트 오브젝트 복사 6",
+      "x": 950,
+      "y": 19797,
+      "w": 16,
+      "h": 15,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#ffffff",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    },
+    {
+      "name": "벡터 스마트 오브젝트 복사 7",
+      "x": 1335,
+      "y": 19797,
+      "w": 16,
+      "h": 15,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#ffffff",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    },
+    {
+      "name": "벡터 스마트 오브젝트 복사 8",
+      "x": 567,
+      "y": 20047,
+      "w": 16,
+      "h": 15,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#ffffff",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    },
+    {
+      "name": "벡터 스마트 오브젝트 복사 8",
+      "x": 950,
+      "y": 20047,
+      "w": 16,
+      "h": 15,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#ffffff",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    },
+    {
+      "name": "벡터 스마트 오브젝트 복사 8",
+      "x": 1335,
+      "y": 20047,
+      "w": 16,
+      "h": 15,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#ffffff",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    }
+  ],
+  "comments": [],
+  "bgRect": {
+    "y": 19420,
+    "h": 879,
+    "bottom": 20299,
+    "name": "사각형 1014 복사 2"
+  }
+}

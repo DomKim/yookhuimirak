@@ -1,0 +1,1605 @@
+<?php
+add_stylesheet("<link rel='stylesheet' href='".G5_THEME_URL."/template/main/style.css?v=20260503_c13fix'>", 0);
+
+/* ===== CON02 main_sales 게시판 데이터 fetch =====
+   게시판 wr 매핑 (write.skin.php 기준):
+     wr_subject = 매장명
+     wr_1       = 출력순서 (큰 숫자 먼저)
+     wr_2       = 기준월 (1~12)
+     wr_4       = 매출액 (raw 숫자) */
+$_main_sales_table = $g5['write_prefix'] . 'main_sales';
+$_main_sales_cards = [];
+$_check = sql_query("SHOW TABLES LIKE '" . sql_real_escape_string($_main_sales_table) . "'", false);
+if ($_check && sql_num_rows($_check) > 0) {
+    $_res = sql_query(
+        "SELECT wr_subject, wr_1, wr_2, wr_4 FROM `" . sql_real_escape_string($_main_sales_table) . "` "
+        . "WHERE wr_is_comment=0 ORDER BY CAST(wr_1 AS UNSIGNED) DESC, wr_id DESC LIMIT 30",
+        false
+    );
+    if ($_res) {
+        while ($_row = sql_fetch_array($_res)) {
+            $_amount_raw = preg_replace('/[^0-9]/', '', (string)$_row['wr_4']);
+            $_amount_fmt = $_amount_raw === '' ? '' : number_format((float)$_amount_raw);
+            $_month_raw  = preg_replace('/[^0-9]/', '', (string)$_row['wr_2']);
+            $_period_fmt = $_month_raw === '' ? '' : '[' . $_month_raw . '월 월매출]';
+            $_main_sales_cards[] = [
+                'subject' => $_row['wr_subject'],
+                'amount'  => $_amount_fmt,
+                'period'  => $_period_fmt,
+            ];
+        }
+    }
+}
+if (empty($_main_sales_cards)) {
+    for ($_i = 0; $_i < 6; $_i++) {
+        $_main_sales_cards[] = [
+            'subject' => '미락육회막국수 본점',
+            'amount'  => '35,260,000',
+            'period'  => '[1월 월매출]',
+        ];
+    }
+}
+
+/* ===== CON18 main_shop 게시판 데이터 fetch =====
+   wr 매핑 (jailkal main_shop과 동일):
+     wr_subject = 매장명
+     wr_2       = 전화번호
+     wr_4       = 주소
+     wr_5       = 네이버지도 URL
+     wr_7       = 위도(lat)
+     wr_8       = 경도(lng)
+     ca_name    = 카테고리 ('new' = 신규매장 → 마르퀴) */
+$_c18_list_stores = [];
+$_c18_new_stores  = [];
+$_c18_table       = $g5['write_prefix'] . 'main_shop';
+$_c18_check       = sql_query("SHOW TABLES LIKE '" . sql_real_escape_string($_c18_table) . "'", false);
+if ($_c18_check && sql_num_rows($_c18_check) > 0) {
+    $_c18_res = sql_query(
+        "SELECT wr_id, ca_name, wr_subject, wr_2, wr_4, wr_5, wr_7, wr_8 "
+        . "FROM `" . sql_real_escape_string($_c18_table) . "` "
+        . "WHERE wr_is_comment=0 ORDER BY wr_id ASC",
+        false
+    );
+    if ($_c18_res) {
+        while ($_c18_row = sql_fetch_array($_c18_res)) {
+            $_c18_file = sql_fetch(
+                "SELECT bf_file FROM `" . $g5['board_file_table'] . "` "
+                . "WHERE bo_table='main_shop' AND wr_id='" . (int)$_c18_row['wr_id'] . "' AND bf_no=0"
+            );
+            $_c18_row['img'] = ($_c18_file && $_c18_file['bf_file'])
+                ? G5_DATA_URL . '/file/main_shop/' . $_c18_file['bf_file']
+                : '';
+            if (strtolower(trim((string)$_c18_row['ca_name'])) === 'new') {
+                $_c18_new_stores[] = $_c18_row;
+            } else {
+                $_c18_list_stores[] = $_c18_row;
+            }
+        }
+    }
+}
+if (empty($_c18_list_stores)) {
+    $_c18_list_stores = [
+        ['wr_subject'=>'미락육회막국수 본점','wr_2'=>'02-000-0000','wr_4'=>'서울특별시 강남구 테헤란로 0','wr_5'=>'','wr_7'=>'37.498095','wr_8'=>'127.027610','img'=>''],
+        ['wr_subject'=>'미락육회막국수 강남점','wr_2'=>'02-111-1111','wr_4'=>'서울특별시 강남구 강남대로 0','wr_5'=>'','wr_7'=>'37.501274','wr_8'=>'127.039585','img'=>''],
+    ];
+}
+if (empty($_c18_new_stores)) {
+    $_c18_new_stores = [
+        ['wr_subject'=>'미락육회막국수 신촌점'],
+        ['wr_subject'=>'미락육회막국수 홍대점'],
+        ['wr_subject'=>'미락육회막국수 종로점'],
+    ];
+}
+
+/* ===== CON09 main_menu 게시판 데이터 fetch =====
+   카테고리별 분기 (ca_name = 메인 메뉴 / 사이드 메뉴 / 추가 메뉴)
+   썸네일 = 첨부파일 1번 (get_list_thumbnail), wr_subject = 메뉴명 */
+if (!function_exists('get_list_thumbnail')) {
+    @include_once(G5_LIB_PATH . '/thumbnail.lib.php');
+}
+$_c9_cats = [
+    ['key' => 'main',  'ca_name' => '메인 메뉴'],
+    ['key' => 'side',  'ca_name' => '사이드 메뉴'],
+    ['key' => 'extra', 'ca_name' => '추가 메뉴'],
+];
+$_c9_bo_table    = 'main_menu';
+$_c9_write_table = $g5['write_prefix'] . $_c9_bo_table;
+$_c9_data        = ['main' => [], 'side' => [], 'extra' => []];
+$_c9_check = sql_query("SHOW TABLES LIKE '" . sql_real_escape_string($_c9_write_table) . "'", false);
+if ($_c9_check && sql_num_rows($_c9_check) > 0) {
+    foreach ($_c9_cats as $_c9_cat) {
+        $_c9_res = sql_query(
+            "SELECT wr_id, wr_subject FROM `" . sql_real_escape_string($_c9_write_table) . "` "
+            . "WHERE wr_is_comment=0 AND ca_name='" . sql_real_escape_string($_c9_cat['ca_name']) . "' "
+            . "ORDER BY wr_num, wr_reply LIMIT 30",
+            false
+        );
+        if ($_c9_res) {
+            while ($_c9_row = sql_fetch_array($_c9_res)) {
+                $_c9_thumb_url = '';
+                if (function_exists('get_list_thumbnail')) {
+                    $_c9_thumb = get_list_thumbnail($_c9_bo_table, $_c9_row['wr_id'], 313, 284, false, true);
+                    if (!empty($_c9_thumb['src'])) $_c9_thumb_url = $_c9_thumb['src'];
+                }
+                $_c9_data[$_c9_cat['key']][] = [
+                    'subject' => $_c9_row['wr_subject'],
+                    'thumb'   => $_c9_thumb_url,
+                ];
+            }
+        }
+    }
+}
+/* 카테고리에 게시물 0개일 때만 placeholder 1개 (swiper 초기화 안전) */
+foreach (['main', 'side', 'extra'] as $_c9_k) {
+    if (empty($_c9_data[$_c9_k])) {
+        $_c9_data[$_c9_k][] = ['subject' => '메뉴 준비 중', 'thumb' => ''];
+    }
+}
+
+/* ===== CON10 리뷰 이미지 — /images/con10_03_01~10.jpg 10장 단순 슬라이드 ===== */
+$_c10_thumbs = [
+    '/images/con10_03_01.jpg', '/images/con10_03_02.jpg', '/images/con10_03_03.jpg',
+    '/images/con10_03_04.jpg', '/images/con10_03_05.jpg', '/images/con10_03_06.jpg',
+    '/images/con10_03_07.jpg', '/images/con10_03_08.jpg', '/images/con10_03_09.jpg',
+    '/images/con10_03_10.jpg',
+];
+?>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/js/swiper/swiper.min.css">
+<script src="/js/swiper/swiper.min.js"></script>
+
+<!-- Adobe Fonts (typekit) — 210 OmniGothic kit (JS 방식: 도메인 검증 우회) -->
+<script>
+  (function(d) {
+    var config = { kitId: 'wkl2ctu', scriptTimeout: 3000, async: true },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+<section class="main">
+
+    <!-- ===== 메인 비주얼 ===== -->
+    <section class="mv rltv" id="move_01">
+
+        <div class="mv_curve absol">
+            <img src="/images/main_bg_2.png" alt="">
+        </div>
+
+        <p class="mv_label rltv">
+            <span class="mv_label_t1">맛으로 증명하는 브랜드</span>
+            <span class="mv_label_t2"> </span>
+            <span class="mv_label_t3">미락육회막국수</span>
+        </p>
+
+        <p class="mv_title rltv">
+            <span class="mv_title_t1">유행이 아닌, </span>
+            <span class="mv_title_t2">오래 남는 맛</span>
+        </p>
+
+        <p class="mv_desc rltv">
+            <span class="mv_desc_t1">미락육회막국수는 </span>
+            <b class="mv_desc_t2">광고가 아닌 맛</b>
+            <span class="mv_desc_t3">으로 고객을 만들고 </span>
+            <b class="mv_desc_t4">재방문으로 매출</b>
+            <span class="mv_desc_t5">을 완성합니다</span>
+        </p>
+
+        <div class="mv_visual rltv">
+
+            <p class="mv_since absol">SINCE1988</p>
+
+            <div class="mv_slider rltv">
+                <div class="swiper mv_slider_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide mv_slide">
+                            <img src="/images/main_01_1.png" alt="">
+                        </div>
+                        <div class="swiper-slide mv_slide">
+                            <img src="/images/main_01_2.png" alt="">
+                        </div>
+                        <div class="swiper-slide mv_slide">
+                            <img src="/images/main_01_3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mv_years absol">38YEARS</p>
+
+        </div>
+
+        <div class="mv_line mv_line_1 absol"></div>
+        <div class="mv_line mv_line_2 absol"></div>
+
+    </section>
+
+    <!-- ===== CON01 ===== -->
+    <section class="con1 rltv" id="move_02">
+
+        <div class="con1_bg_texture absol"></div>
+        <div class="con1_food_foreground absol">
+            <img src="/images/con01_bg_2.png" alt="">
+        </div>
+
+        <div class="con1_title rltv">
+            <p class="con1_kicker rltv">왜 미락육회막국수인가요?</p>
+            <p class="con1_headline rltv">
+                <span>결과로 </span><span class="con1_headline_point">증명</span><span>했습니다</span>
+            </p>
+            <p class="con1_desc rltv">
+                <b>맛, 매출, 운영</b><span>까지 창업에서 가장 중요한 기준을 모두 갖춘 브랜드입니다</span>
+            </p>
+        </div>
+
+        <div class="con1_cards rltv" data-con1-cards>
+            <article class="con1_card con1_card_taste rltv is-active" data-con1-card tabindex="0">
+                <div class="con1_card_media con1_taste_media absol">
+                    <img src="/images/con01_01.png" alt="">
+                </div>
+                <span class="con1_marker con1_marker_taste_1 absol"></span>
+                <div class="con1_card_text con1_taste_text absol">
+                    <p class="con1_card_label con1_taste_label rltv">차별화된 맛</p>
+                    <p class="con1_card_title con1_taste_title rltv">다시 찾게 되는 이유</p>
+                    <p class="con1_card_body con1_taste_body rltv">과일 베이스 특제 양념과<br>1주일 숙성으로 완성된 깊은 맛<br>한 번 방문으로 끝나지 않습니다</p>
+                </div>
+            </article>
+
+            <article class="con1_card con1_card_sales rltv" data-con1-card tabindex="0">
+                <div class="con1_card_media con1_sales_media absol">
+                    <img src="/images/con01_02.png" alt="">
+                </div>
+                <span class="con1_marker con1_marker_sales_1 absol"></span>
+                <span class="con1_marker con1_marker_sales_2 absol"></span>
+                <div class="con1_card_text con1_sales_text absol">
+                    <p class="con1_card_label con1_sales_label rltv">검증된 수익 구조</p>
+                    <p class="con1_card_title con1_sales_title rltv">3가지 매출 구조</p>
+                    <p class="con1_card_body con1_sales_body rltv">홀 · 포장 · 배달<br>3WAY 운영으로 매출을 극대화<br>불황에도 흔들리지 않는 구조</p>
+                </div>
+            </article>
+
+            <article class="con1_card con1_card_easy rltv" data-con1-card tabindex="0">
+                <div class="con1_card_media con1_easy_media absol">
+                    <img src="/images/con01_03.png" alt="">
+                </div>
+                <span class="con1_marker con1_marker_easy_1 absol"></span>
+                <span class="con1_marker con1_marker_easy_2 absol"></span>
+                <span class="con1_marker con1_marker_easy_3 absol"></span>
+                <div class="con1_card_text con1_easy_text absol">
+                    <p class="con1_card_label con1_easy_label rltv">쉬운 운영 시스템</p>
+                    <p class="con1_card_title con1_easy_title rltv">누구나 가능한 창업</p>
+                    <p class="con1_card_body con1_easy_body rltv">전문 주방장 없이도 운영 가능<br>완제품 물류 시스템으로<br>인건비 부담을 최소화합니다</p>
+                </div>
+            </article>
+        </div>
+
+    </section>
+
+    <!-- ===== CON02: 매출 안내 (main_sales 게시판 연동) ===== -->
+    <section class="con2 rltv" id="move_03">
+
+        <div class="c2_food absol">
+            <img src="/images/con02_02.png" alt="육회막국수">
+        </div>
+
+        <div class="c2_top_line absol"></div>
+
+        <p class="c2_title rltv">
+            <span class="c2_title_t1">한 번이 아닌, </span>
+            <span class="c2_title_t2">계속되는 매출</span>
+        </p>
+
+        <p class="c2_desc rltv">
+            <b>재방문을 만드는 맛과 흔들리지 않는 운영 구조</b><span>로</span>
+            <br>
+            <span>일회성이 아닌 매출을 만듭니다</span>
+        </p>
+
+        <div class="c2_badge rltv">
+            <img src="/images/con02_01.png" alt="월 최고 매출 본점 기준">
+        </div>
+
+        <div class="c2_amount rltv">
+            <p class="c2_amount_num">67,000,000</p>
+            <p class="c2_amount_won">원</p>
+        </div>
+
+        <div class="c2_swiper rltv">
+            <div class="swiper c2_sales_swiper">
+                <div class="swiper-wrapper">
+                    <?php foreach ($_main_sales_cards as $_card) : ?>
+                    <div class="swiper-slide c2_card">
+                        <p class="c2_card_title">
+                            <?php echo htmlspecialchars($_card['subject'], ENT_QUOTES, 'UTF-8'); ?>
+                        </p>
+                        <div class="c2_card_line"></div>
+                        <p class="c2_card_amount">
+                            <?php echo htmlspecialchars($_card['amount'], ENT_QUOTES, 'UTF-8'); ?>
+                        </p>
+                        <p class="c2_card_period">
+                            <?php echo htmlspecialchars($_card['period'], ENT_QUOTES, 'UTF-8'); ?>
+                        </p>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===== CON03: 남는 구조 ===== -->
+    <section class="con3 rltv" id="move_04">
+
+        <div class="c3_bg_texture absol">
+            <img src="/images/con03_bg.jpg" alt="">
+        </div>
+
+        <div class="c3_title_group rltv">
+            <p class="c3_kicker rltv">매출보다 중요한 것</p>
+            <p class="c3_headline rltv">
+                <span class="c3_headline_point">남는 구조</span><span>가 다릅니다</span>
+            </p>
+            <p class="c3_desc rltv">
+                <span>불필요한 비용을 줄이고 효율적으로 남기는 구조로</span><br>
+                <b>안정적인 수익</b><span>을 만들어갑니다</span>
+            </p>
+        </div>
+
+        <div class="c3_profit_scene rltv">
+
+            <div class="c3_pie rltv">
+                <div class="c3_pie_photo rltv">
+                    <img src="/images/con03_01.png" alt="">
+                </div>
+                <div class="c3_pie_overlay absol">
+                    <img src="/images/con03_02.png" alt="">
+                </div>
+                <div class="c3_pie_badge absol">
+                    <img src="/images/con03_03.png" alt="">
+                </div>
+                <div class="c3_pie_number absol">
+                    <img src="/images/con03_04.png" alt="">
+                </div>
+            </div>
+
+            <div class="c3_left_divider absol"></div>
+
+            <div class="c3_left_metrics absol">
+                <p class="c3_metric_label c3_sales_label rltv">월매출</p>
+                <div class="c3_sales_value rltv">
+                    <img src="/images/con03_07.png" alt="6,000만 원">
+                </div>
+                <p class="c3_metric_label c3_profit_label rltv">순수익</p>
+                <div class="c3_profit_value rltv">
+                    <img src="/images/con03_08.png" alt="1,400만 원">
+                </div>
+            </div>
+
+            <div class="c3_table absol">
+                <div class="c3_table_panel rltv">
+                    <img src="/images/con03_05.jpg" alt="">
+                </div>
+                <p class="c3_table_ref absol">[본점 기준]</p>
+                <div class="c3_table_rate absol">
+                    <img src="/images/con03_06.png" alt="23.6%">
+                </div>
+                <p class="c3_table_note absol">※ 가맹점 매출 및 수익은 상권, 운영, 시장 상황 등에 따라 달라질 수 있습니다</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== CON04 ===== -->
+    <section class="con4 rltv" id="move_04">
+
+        <div class="c4_media_layer absol">
+            <div class="c4_left_bg absol">
+                <img src="/images/con04_bg_1.jpg" alt="">
+            </div>
+            <div class="c4_right_bg absol">
+                <img src="/images/con04_bg_2.jpg" alt="">
+            </div>
+            <div class="c4_noodle_hand absol">
+                <img src="/images/con04_01.png" alt="">
+            </div>
+            <div class="c4_bowl absol">
+                <img src="/images/con04_02.png" alt="">
+            </div>
+            <div class="c4_review_01 absol">
+                <img src="/images/con04_03.png" alt="">
+            </div>
+            <div class="c4_review_02 absol">
+                <img src="/images/con04_04.png" alt="">
+            </div>
+            <div class="c4_review_03 absol">
+                <img src="/images/con04_05.png" alt="">
+            </div>
+        </div>
+
+        <p class="c4_kicker rltv">익숙하지만 새로운 메뉴</p>
+
+        <p class="c4_title rltv">
+            <span>흔하지 않아서</span>
+            <br>
+            <span class="c4_title_point">더 강합니다</span>
+        </p>
+
+        <p class="c4_desc rltv">
+            <span>누구나 좋아하는 육회와 막국수</span>
+            <br>
+            <span>하지만 쉽게 볼 수 없는 조합</span>
+            <br>
+            <br>
+            <span>익숙한 메뉴에 새로운 경험을 더해</span>
+            <br>
+            <b>상권 내 확실한 차별화</b><span>를 만듭니다</span>
+        </p>
+
+    </section>
+
+    <!-- ===== CON05: 한 그릇에 담은 정성 ===== -->
+    <section class="con5 rltv" id="move_05">
+
+        <div class="c5_panel absol"></div>
+
+        <p class="c5_kicker rltv">흔들림 없이 이어온 맛</p>
+
+        <p class="c5_title rltv">
+            <span>한 그릇에 담은 </span><span class="c5_title_point">정성</span>
+        </p>
+
+        <p class="c5_desc rltv">
+            <span>좋은 재료를 고르고, 불필요한 것을 덜어내고, 시간을 들여 완성하는 과정까지</span>
+            <br>
+            <b>우리는 그 기본을 지키는 데 집중</b><span>합니다</span>
+        </p>
+
+        <div class="c5_cards rltv">
+
+            <!-- Card 01: 시간으로 완성한 한 그릇 -->
+            <div class="c5_card1 rltv">
+                <div class="c5_c1_img absol">
+                    <img src="/images/con05_01_2.png" alt="">
+                </div>
+                <div class="c5_c1_badge absol">
+                    <img src="/images/con05_01_1.png" alt="">
+                </div>
+                <p class="c5_c1_title absol">
+                    <span class="c5_em_brown">시간으로 완성</span><span>한 한 그릇</span>
+                </p>
+                <p class="c5_c1_desc absol">
+                    <span>미락육회막국수는 당일 도축한 우둔살과 홍두께살로 만든 신선한 육회,</span>
+                    <br>
+                    <span>국내산 메밀을 사용한 자가제면, 과일 베이스의</span>
+                    <br>
+                    <span>특제 양념까지 </span><b>재료와 방식 모두에서 차별화</b><span>를 만들어냅니다.</span>
+                    <br>
+                    <br>
+                    <span>조미료 사용을 최소화하고 일주일 숙성 과정을 거쳐</span>
+                    <br>
+                    <span>달지도 짜지도 않은 깊은 맛의 균형을 완성하며</span>
+                    <br>
+                    <span>이러한 차이는 결국 재방문으로 이어집니다.</span>
+                </p>
+            </div>
+
+            <!-- Card 02: 지속되는 이유를 고민합니다 -->
+            <div class="c5_card2 rltv">
+                <div class="c5_c2_badge absol">
+                    <img src="/images/con05_02_1.png" alt="">
+                </div>
+                <p class="c5_c2_title absol">
+                    <span class="c5_em_cream">지속되는 이유</span><span>를 고민합니다</span>
+                </p>
+                <p class="c5_c2_desc absol">
+                    <span>미락육회막국수는 단순히 메뉴를 늘리는 방식이 아니라</span>
+                    <br>
+                    <b>트렌드와 계절, 고객 반응을 반영한 메뉴 개발을 진행</b><span>합니다.</span>
+                    <br>
+                    <br>
+                    <span>모든 메뉴는 본사 개발 후 직영점에서 충분한 테스트를 거쳐</span>
+                    <br>
+                    <span>검증된 메뉴만 출시되며, 지속적인 신메뉴와</span>
+                    <br>
+                    <span>프로모션을 통해 매장의 활력을 유지합니다.</span>
+                </p>
+                <div class="c5_c2_img1 absol">
+                    <img src="/images/con05_02_2.png" alt="">
+                </div>
+                <div class="c5_c2_img2 absol">
+                    <img src="/images/con05_02_3.png" alt="">
+                </div>
+                <div class="c5_c2_img3 absol">
+                    <img src="/images/con05_02_4.png" alt="">
+                </div>
+            </div>
+
+            <!-- Card 03: 운영은 더 단순하게 -->
+            <div class="c5_card3 rltv">
+                <div class="c5_c3_bg absol">
+                    <img src="/images/con05_03_2.jpg" alt="">
+                </div>
+                <div class="c5_c3_badge absol">
+                    <img src="/images/con05_03_1.png" alt="">
+                </div>
+                <p class="c5_c3_title absol">
+                    <span>운영은 더 </span><span class="c5_em_cream">단순</span><span>하게</span>
+                </p>
+                <p class="c5_c3_desc absol">
+                    <span>불필요한 식자재를 최소화하고 대량 물류 시스템을 통해</span>
+                    <br>
+                    <span>원가를 효율적으로 관리합니다.</span>
+                    <br>
+                    <br>
+                    <b>완제품 및 반제품 공급으로 조리 과정을 단순화</b><span>하여</span>
+                    <br>
+                    <span>전문 주방장 없이도 안정적인 운영이 가능하며,</span>
+                    <br>
+                    <span>상권과 입지에 맞춰 점주가 직접 가격을 설정할 수 있는</span>
+                    <br>
+                    <span>유연한 운영 구조를 갖추고 있습니다.</span>
+                </p>
+            </div>
+
+            <!-- Card 04: 결과는 자연스럽게 따라옵니다 -->
+            <div class="c5_card4 rltv">
+                <div class="c5_c4_bg absol">
+                    <img src="/images/con05_04_2.jpg" alt="">
+                </div>
+                <div class="c5_c4_badge absol">
+                    <img src="/images/con05_04_1.png" alt="">
+                </div>
+                <p class="c5_c4_title absol">
+                    <span class="c5_em_cream">결과</span><span>는 자연스럽게 따라옵니다</span>
+                </p>
+                <p class="c5_c4_desc absol">
+                    <span>미락육회막국수는 </span><b>홀, 포장, 배달이 가능한 3WAY</b>
+                    <br>
+                    <b>운영 구조</b><span>를 통해 매출을 다각화하고 있습니다.</span>
+                    <br>
+                    <br>
+                    <span>원가와 인건비 비율을 효율적으로 관리하여</span>
+                    <br>
+                    <span>평균 순수익 약 23% 수준의 안정적인 수익 구조를 유지하며,</span>
+                    <br>
+                    <span>단기적인 매출이 아닌 지속 가능한 수익을 만들어가는 데 집중합니다.</span>
+                </p>
+
+                <div class="c5_c4_3way absol">
+                    <div class="c5_c4_circle1 absol">
+                        <img src="/images/con05_04_3.png" alt="">
+                    </div>
+                    <div class="c5_c4_circle2 absol">
+                        <img src="/images/con05_04_4.png" alt="">
+                    </div>
+                    <div class="c5_c4_circle3 absol">
+                        <img src="/images/con05_04_5.png" alt="">
+                    </div>
+                    <span class="c5_c4_plus1 absol">+</span>
+                    <span class="c5_c4_plus2 absol">+</span>
+                    <div class="c5_c4_red_top absol">
+                        <img src="/images/con05_04_7.png" alt="">
+                    </div>
+                    <div class="c5_c4_red_bot absol">
+                        <img src="/images/con05_04_6.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== CON06: 흔들리지 않는 데에는 / 카드 hover ===== -->
+    <section class="con06 rltv" id="move_06">
+
+        <p class="c6_subtitle rltv">
+            <span>흔들리지 않는 데에는</span>
+            <br>
+            <b>이유가 있습니다</b>
+        </p>
+
+        <div class="c6_watermark absol">
+            <img src="/images/con06_01.png" alt="善美樂">
+        </div>
+
+        <div class="c6_card1 rltv">
+            <div class="c6_card1_img absol">
+                <img src="/images/con06_02.png" alt="">
+            </div>
+            <p class="c6_card1_text rltv">
+                <span>육회막국수라는 </span>
+                <b>새로운 선택지</b>
+            </p>
+        </div>
+
+        <div class="c6_card2 rltv">
+            <div class="c6_card2_img absol">
+                <img src="/images/con06_03.png" alt="">
+            </div>
+            <p class="c6_card2_text rltv">
+                <span>다시 찾게 되는 </span>
+                <b>맛의 힘</b>
+            </p>
+        </div>
+
+        <div class="c6_card3 rltv">
+            <div class="c6_card3_img absol">
+                <img src="/images/con06_04.png" alt="">
+            </div>
+            <p class="c6_card3_text rltv">
+                <b>재방문</b>
+                <span>으로 이어지는 매출</span>
+            </p>
+        </div>
+
+    </section>
+
+    <!-- ===== CON07: 미디어 영상 Swiper ===== -->
+    <section class="con7 rltv" id="move_07">
+
+        <div class="con7_bg absol">
+            <img src="/images/con07_bg.jpg" alt="">
+        </div>
+
+        <div class="con7_title rltv">
+            <p class="con7_top rltv">이미 주목받고 있습니다</p>
+            <p class="con7_headline rltv">
+                <span class="con7_headline_point">미디어</span><span>가 먼저 알아본 맛</span>
+            </p>
+            <p class="con7_desc rltv">
+                <span>SBS '생방송 투데이' 등 다양한 방송과 매체를 통해 소개된 미락육회막국수</span>
+                <br>
+                <span>광고가 아닌 </span><b>실제 경험</b><span>을 통해 자연스럽게 알려진 브랜드입니다</span>
+            </p>
+        </div>
+
+        <div class="con7_video_wrap rltv">
+
+            <div class="con7_swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <iframe src="https://www.youtube.com/embed/Bol_HGdUN2g" title="SBS 생방송 투데이" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide">
+                        <iframe src="https://www.youtube.com/embed/dzo8c-cdQ0A" title="윤곤치의 맛만 볼까?" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide">
+                        <iframe src="https://www.youtube.com/embed/Af-0E-Y8SdU" title="먹킹" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="con7_prev absol" aria-label="prev">
+                <svg viewBox="0 0 38 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M7.293 0.293L0.586 7l6.707 6.707 1.414-1.414L4.414 8H38V6H4.414l4.293-4.293z"/>
+                </svg>
+            </div>
+
+            <div class="con7_next absol" aria-label="next">
+                <svg viewBox="0 0 38 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M30.707 0.293l-1.414 1.414L33.586 6H0v2h33.586l-4.293 4.293 1.414 1.414L37.414 7z"/>
+                </svg>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== CON08: 시그니처 메뉴 탭 ===== -->
+    <section class="con8 rltv" id="move_08">
+
+        <div class="c8_left_bg absol">
+            <img src="/images/con08_bg_2.jpg" alt="">
+        </div>
+        <div class="c8_right_bg absol">
+            <img src="/images/con08_bg_3.jpg" alt="">
+        </div>
+        <div class="c8_wave absol">
+            <img src="/images/con08_bg.png" alt="">
+        </div>
+
+        <div class="c8_left_inner rltv">
+
+            <p class="c8_title rltv">
+                <span>시그니처부터</span>
+                <br>
+                <span class="c8_title_point">다양한 한 끼</span><span>까지</span>
+            </p>
+
+            <p class="c8_desc rltv">
+                <span>육회막국수를 중심으로 다양한 식사와 사이드 메뉴를 구성하여</span>
+                <br>
+                <b>남녀노소 만족할 수 있는 메뉴 라인업</b><span>을 완성했습니다</span>
+            </p>
+
+            <div class="c8_buttons rltv" data-c8-tabs>
+                <div class="c8_btn rltv is-active" data-c8-state="01">
+                    <span class="c8_btn_text rltv">육회막국수</span>
+                </div>
+                <div class="c8_btn rltv" data-c8-state="02">
+                    <span class="c8_btn_text rltv">육회비빔밥</span>
+                </div>
+                <div class="c8_btn rltv" data-c8-state="03">
+                    <span class="c8_btn_text rltv">육전</span>
+                </div>
+                <div class="c8_btn rltv" data-c8-state="04">
+                    <span class="c8_btn_text rltv">수육국수</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="c8_right absol">
+            <div class="c8_label absol" data-c8-state="01">
+                <img src="/images/con08_01_1.png" alt="" data-c8-label>
+            </div>
+            <div class="c8_bowl absol" data-c8-state="01">
+                <img src="/images/con08_01_2.png" alt="" data-c8-bowl>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===== CON09: 차림표 (main_menu 게시판 연동, 3 카테고리 × 3 Swiper) ===== -->
+    <section class="con9 rltv" id="move_09">
+
+        <div class="c9_bg_left absol">
+            <img src="/images/con09_bg_1.jpg" alt="">
+        </div>
+        <div class="c9_bg_right absol">
+            <img src="/images/con09_bg_2.jpg" alt="">
+        </div>
+
+        <div class="c9_panel rltv">
+
+            <div class="c9_badge rltv">
+                <img src="/images/con09_01.png" alt="MENU">
+            </div>
+
+            <p class="c9_title rltv">
+                <span>미락육회막국수</span><span class="c9_title_right"> 차림표</span>
+            </p>
+
+            <div class="c9_tabs rltv" data-c9-tabs>
+                <div class="c9_tab c9_tab_main rltv is-active" data-c9-cat="main">
+                    <span class="c9_tab_text rltv">메인 메뉴</span>
+                </div>
+                <div class="c9_tab c9_tab_side rltv" data-c9-cat="side">
+                    <span class="c9_tab_text rltv">사이드 메뉴</span>
+                </div>
+                <div class="c9_tab c9_tab_extra rltv" data-c9-cat="extra">
+                    <span class="c9_tab_text rltv">추가 메뉴</span>
+                </div>
+            </div>
+
+            <div class="c9_swipers rltv">
+                <?php foreach (['main', 'side', 'extra'] as $_c9_k) : ?>
+                <div class="swiper c9_swiper c9_swiper_<?php echo $_c9_k; ?> <?php echo $_c9_k === 'main' ? 'is-active' : ''; ?>" data-c9-cat="<?php echo $_c9_k; ?>">
+                    <div class="swiper-wrapper">
+                        <?php foreach ($_c9_data[$_c9_k] as $_c9_item) : ?>
+                        <div class="swiper-slide c9_slide rltv">
+                            <div class="c9_slide_thumb rltv">
+                                <?php if (!empty($_c9_item['thumb'])) : ?>
+                                <img src="<?php echo $_c9_item['thumb']; ?>" alt="<?php echo htmlspecialchars($_c9_item['subject'], ENT_QUOTES, 'UTF-8'); ?>">
+                                <?php endif; ?>
+                            </div>
+                            <p class="c9_slide_name rltv">
+                                <?php echo htmlspecialchars($_c9_item['subject'], ENT_QUOTES, 'UTF-8'); ?>
+                            </p>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+
+            <div class="c9_nav rltv">
+                <div class="c9_prev rltv">
+                    <img src="/images/con09_02.png" alt="이전">
+                </div>
+                <div class="c9_next rltv">
+                    <img src="/images/con09_03.png" alt="다음">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== CON10: 리뷰 슬라이드 + 마퀴 ===== -->
+    <section class="con10 rltv" id="move_10">
+
+        <div class="c10_deco absol">
+            <div class="c10_bg absol">
+                <img src="/images/con10_bg.jpg" alt="">
+            </div>
+            <div class="c10_food2 absol">
+                <img src="/images/con10_02.png" alt="">
+            </div>
+            <div class="c10_food1 absol">
+                <img src="/images/con10_01.png" alt="">
+            </div>
+        </div>
+
+        <p class="c10_kicker rltv">한 그릇의 기억,</p>
+
+        <p class="c10_title rltv">
+            <span class="c10_title_t1">리뷰</span><span class="c10_title_t2">로 남습니다</span>
+        </p>
+
+        <p class="c10_desc rltv">
+            <span class="c10_desc_t1">광고가 아닌 </span><b class="c10_desc_t2">실제 방문 고객들의 후기</b><span class="c10_desc_t3">,</span>
+            <br>
+            <span class="c10_desc_t4">직접 경험한 이야기들이 브랜드의 신뢰를 만들어갑니다</span>
+        </p>
+
+        <div class="c10_reviews rltv">
+            <div class="swiper c10_reviews_swiper">
+                <div class="swiper-wrapper">
+                    <?php foreach ($_c10_thumbs as $_c10_t) : ?>
+                    <div class="swiper-slide c10_review_card">
+                        <img src="<?php echo $_c10_t; ?>" alt="">
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="c10_marquee rltv">
+            <div class="c10_marquee_track rltv">
+                <span class="c10_marquee_item">
+                    <span>먹어본 사람의 60%가 다시 찾는 ㅡ </span><b>미락육회막국수</b>
+                </span>
+                <span class="c10_marquee_item">
+                    <span>막국수도, 육회도 한 그릇에 먹는 ㅡ </span><b>미락육회막국수</b>
+                </span>
+                <span class="c10_marquee_item">
+                    <span>먹어본 사람의 60%가 다시 찾는 ㅡ </span><b>미락육회막국수</b>
+                </span>
+                <span class="c10_marquee_item">
+                    <span>막국수도, 육회도 한 그릇에 먹는 ㅡ </span><b>미락육회막국수</b>
+                </span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===== CON11: 38년의 역사 (위/아래 무한 롤링) ===== -->
+    <section class="con11 rltv" id="move_11">
+
+        <div class="c11_top_row absol">
+            <div class="c11_top_track rltv">
+                <div class="c11_top_photo c11_top_photo_1 rltv">
+                    <img src="/images/con11_04.png" alt="">
+                </div>
+                <div class="c11_top_photo c11_top_photo_2 rltv">
+                    <img src="/images/con11_05.png" alt="">
+                </div>
+                <div class="c11_top_photo c11_top_photo_3 rltv">
+                    <img src="/images/con11_06.png" alt="">
+                </div>
+                <div class="c11_top_photo c11_top_photo_1 rltv" aria-hidden="true">
+                    <img src="/images/con11_04.png" alt="">
+                </div>
+                <div class="c11_top_photo c11_top_photo_2 rltv" aria-hidden="true">
+                    <img src="/images/con11_05.png" alt="">
+                </div>
+                <div class="c11_top_photo c11_top_photo_3 rltv" aria-hidden="true">
+                    <img src="/images/con11_06.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="c11_paper rltv">
+            <p class="c11_kicker rltv">시간이 만든 맛</p>
+            <p class="c11_title rltv">
+                <span class="c11_title_t1">38년</span><span class="c11_title_t2">을</span>
+                <br>
+                <span class="c11_title_t3">이어왔습니다</span>
+            </p>
+            <p class="c11_desc rltv">
+                <span>미락육회막국수는 1988년 따스한 봄날,</span>
+                <br>
+                <span>작은 정육식당에서 시작되어 2대에 걸쳐 이어져 왔습니다.</span>
+                <br>
+                <br>
+                <span>지금은 육회막국수 전문점으로 자리 잡아 현재의 본사 위치에서</span>
+                <br>
+                <span>많은 고객분들께 꾸준한 사랑을 받고 있습니다.</span>
+                <br>
+                <br>
+                <b>육회와 막국수가 어우러진 자연스러운 맛을 찾기까지</b>
+                <br>
+                <b>10년 이상의 시간을 쌓아왔습니다.</b>
+                <br>
+                <span>그 시간이 모여 지금의 미락육회막국수가 되었습니다.</span>
+            </p>
+        </div>
+
+        <div class="c11_bot_row absol">
+            <div class="c11_bot_track rltv">
+                <div class="c11_bot_photo c11_bot_photo_1 rltv">
+                    <img src="/images/con11_01.png" alt="">
+                </div>
+                <div class="c11_bot_photo c11_bot_photo_2 rltv">
+                    <img src="/images/con11_02.png" alt="">
+                </div>
+                <div class="c11_bot_photo c11_bot_photo_3 rltv">
+                    <img src="/images/con11_03.png" alt="">
+                </div>
+                <div class="c11_bot_photo c11_bot_photo_1 rltv" aria-hidden="true">
+                    <img src="/images/con11_01.png" alt="">
+                </div>
+                <div class="c11_bot_photo c11_bot_photo_2 rltv" aria-hidden="true">
+                    <img src="/images/con11_02.png" alt="">
+                </div>
+                <div class="c11_bot_photo c11_bot_photo_3 rltv" aria-hidden="true">
+                    <img src="/images/con11_03.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===== CON16: 창업비용 안내 ===== -->
+    <section class="con16 rltv" id="move_16">
+
+        <div class="c16_media_layer absol">
+            <div class="c16_bg absol">
+                <img src="/images/con16_bg.jpg" alt="">
+            </div>
+            <div class="c16_food absol">
+                <img src="/images/con16_02.png" alt="">
+            </div>
+        </div>
+
+        <p class="c16_title rltv">
+            <span class="c16_title_t1">창업비용</span><span class="c16_title_t2"> 안내</span>
+        </p>
+
+        <p class="c16_desc rltv">
+            <span>창업자금은 고객님의 소중한 자산입니다.</span>
+            <br>
+            <span>꼭 필요한곳에 투자되도록 </span><b>매장별 맞춤 설계</b><span>를 도와드립니다.</span>
+        </p>
+
+        <p class="c16_standard rltv">[20평 기준]</p>
+
+        <div class="c16_table rltv">
+            <div class="c16_table_outer absol"></div>
+            <div class="c16_table_header_bg absol"></div>
+            <div class="c16_table_footer_bg absol"></div>
+
+            <div class="c16_row_line c16_row_line_01 absol"></div>
+            <div class="c16_row_line c16_row_line_02 absol"></div>
+            <div class="c16_row_line c16_row_line_03 absol"></div>
+            <div class="c16_row_line c16_row_line_04 absol"></div>
+            <div class="c16_row_line c16_row_line_05 absol"></div>
+            <div class="c16_row_line c16_row_line_06 absol"></div>
+            <div class="c16_row_line c16_row_line_07 absol"></div>
+            <div class="c16_row_line c16_row_line_08 absol"></div>
+
+            <p class="category_label absol">구분</p>
+            <p class="content_label absol">내용</p>
+            <p class="amount_label absol">금액</p>
+
+            <div class="c16_row c16_row_01 absol">
+                <p class="c16_cell c16_cell_category absol">가맹비(소멸성)</p>
+                <p class="c16_cell c16_cell_content absol">미락육회막국수 가입비, 매뉴얼 사용, 사후관리 등</p>
+                <p class="c16_cell c16_cell_amount absol">500만 원</p>
+            </div>
+            <div class="c16_row c16_row_02 absol">
+                <p class="c16_cell c16_cell_category absol">교육비</p>
+                <p class="c16_cell c16_cell_content absol">개점 교육비, 서비스 교육, 조리 교육 등</p>
+                <p class="c16_cell c16_cell_amount absol">300만 원</p>
+            </div>
+            <div class="c16_row c16_row_03 absol">
+                <p class="c16_cell c16_cell_category absol">인쇄 및 기타 소모품</p>
+                <p class="c16_cell c16_cell_content absol">전단지, 유니폼, 모자, 앞치마, 기타 POP등</p>
+                <p class="c16_cell c16_cell_amount absol">300만 원</p>
+            </div>
+            <div class="c16_row c16_row_04 absol">
+                <p class="c16_cell c16_cell_category absol">주방기기 및 설비</p>
+                <p class="c16_cell c16_cell_content absol">냉동냉장고, 찬냉장고, 간택기, 작업대, 선반, 밥솥 등</p>
+                <p class="c16_cell c16_cell_amount absol">3,090만 원</p>
+            </div>
+            <div class="c16_row c16_row_05 absol">
+                <p class="c16_cell c16_cell_category absol">주방집기</p>
+                <p class="c16_cell c16_cell_content absol">홀그릇, 주방집기/용품일체</p>
+                <p class="c16_cell c16_cell_amount absol">1,210만 원</p>
+            </div>
+            <div class="c16_row c16_row_06 absol">
+                <p class="c16_cell c16_cell_category absol">간판 및 실사(전면 4m기준)</p>
+                <p class="c16_cell c16_cell_content absol">전면간판, 메뉴판 및 전면 내외부실사</p>
+                <p class="c16_cell c16_cell_amount absol">500/250만 원</p>
+            </div>
+            <div class="c16_row c16_row_07 absol">
+                <p class="c16_cell c16_cell_category absol">인테리어(평당 180만)</p>
+                <p class="c16_cell c16_cell_content absol">목공, 전기, 도장, 조명, 타일, 미장, 설계 및 시설감리일체</p>
+                <p class="c16_cell c16_cell_amount absol">3,600만 원</p>
+            </div>
+            <div class="c16_row c16_row_08 absol">
+                <p class="c16_cell c16_cell_category absol">로열티</p>
+                <p class="c16_cell c16_cell_content absol"></p>
+                <p class="c16_cell c16_cell_amount absol">월 30만 원</p>
+            </div>
+
+            <div class="c16_cta_img absol">
+                <img src="/images/con16_01.png" alt="창업 문의하기">
+            </div>
+        </div>
+
+        <p class="c16_note rltv">
+            <span>※ 별도공사 : 전기증설, 배전판, 가스설치공사, 상하수도유입공사, 화장실공사, 소방방염공사, 냉난방기, 철거, 덕트</span>
+            <br>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;배기공사, 포스, 외부닥트입상공사, 집진기, 식기세척기, 정수기,TV 및 음향기기, 기타 등등 기본외 공사</span>
+        </p>
+
+    </section>
+
+    <!-- ===== CON14: 공간이 매출을 만듭니다 (인테리어 슬라이드) ===== -->
+    <section class="con14 rltv" id="move_14">
+
+        <div class="c14_bottom_strip absol"></div>
+
+        <div class="c14_divider1 rltv"></div>
+        <div class="c14_divider2 rltv"></div>
+
+        <div class="c14_title_group rltv">
+            <p class="c14_kicker rltv">보이는 것부터 다르게</p>
+            <p class="c14_title rltv">
+                <span class="c14_title_point">공간</span><span>이 매출을 만듭니다</span>
+            </p>
+            <p class="c14_desc rltv">
+                <b>세련된 외부 디자인과 편안한 내부 공간 구성</b><span>으로</span>
+                <br>
+                <span>고객의 시선과 발걸음을 자연스럽게 이끌어냅니다.</span>
+            </p>
+        </div>
+
+        <div class="c14_slider rltv">
+            <div class="swiper c14_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide c14_slide rltv">
+                        <img src="/images/con14_01.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide c14_slide rltv">
+                        <img src="/images/con14_02.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide c14_slide rltv">
+                        <img src="/images/con14_03.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide c14_slide rltv">
+                        <img src="/images/con14_04.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide c14_slide rltv">
+                        <img src="/images/con14_05.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide c14_slide rltv">
+                        <img src="/images/con14_06.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide c14_slide rltv">
+                        <img src="/images/con14_07.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide c14_slide rltv">
+                        <img src="/images/con14_08.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide c14_slide rltv">
+                        <img src="/images/con14_09.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===== CON15: 한 그릇에서 시작된 이야기 ===== -->
+    <section class="con15 rltv" id="move_15">
+
+        <div class="c15_stage absol">
+            <img src="/images/con15_bg.jpg" alt="">
+            <div class="c15_line_h absol"></div>
+            <div class="c15_img1 absol">
+                <img src="/images/con15_01.png" alt="">
+            </div>
+            <div class="c15_img2 absol">
+                <img src="/images/con15_02.png" alt="">
+            </div>
+            <div class="c15_line_v absol"></div>
+            <div class="c15_vtitle absol">
+                <img src="/images/con15_05.png" alt="그리고 함께할 시작">
+            </div>
+        </div>
+
+        <div class="c15_title rltv">
+            <div class="c15_title_t1 rltv">
+                <img src="/images/con15_03.png" alt="한 그릇에서">
+            </div>
+            <div class="c15_title_t2 rltv">
+                <img src="/images/con15_04.png" alt="시작된 이야기">
+            </div>
+        </div>
+
+        <p class="c15_desc rltv">
+            <span>안녕하세요. 미락육회막국수 대표 윤정은입니다.</span>
+            <br>
+            <br>
+            <span>미락육회막국수는 작은 정육식당에서 시작되어</span>
+            <br>
+            <span>고기를 다루는 경험과 노하우를 바탕으로 자연스럽게</span>
+            <br>
+            <span>육회와 막국수를 함께 선보이게 되었습니다.</span>
+            <br>
+            <span>화려한 변화보다는 기본에 충실한 한 그릇을 만들고 싶다는 마음으로</span>
+            <br>
+            <span>재료 하나, 과정 하나를 소중히 해왔습니다.</span>
+            <br>
+            <br>
+            <span>그렇게 쌓인 시간과 경험이 지금의 미락육회막국수를 만들었습니다.</span>
+            <br>
+            <br>
+            <span>가맹사업 또한 철저하게 준비된 상태에서 시작하고 있습니다.</span>
+            <br>
+            <span>준비만 해주시면 나머지는 저희가 함께 하겠습니다.</span>
+            <br>
+            <b>새로운 시작을 고민하고 계시다면 진심으로 함께하실 분들을 기다리고 있습니다.</b>
+        </p>
+
+    </section>
+
+    <!-- ===== CON12: 맛을 만드는 세 가지 고집 ===== -->
+    <section class="con12 rltv" id="move_12">
+
+        <div class="con12_bg absol"></div>
+
+        <div class="con12_title rltv">
+            <p class="con12_kicker rltv">오랜 시간의 결과</p>
+            <p class="con12_headline rltv">
+                <span>맛을 만드는 </span><span class="con12_headline_point">세 가지 </span><span>고집</span>
+            </p>
+        </div>
+
+        <div class="con12_accordion rltv" data-con12-accordion data-active="1">
+
+            <article class="con12_card con12_card_noodle absol is-active" data-con12-card="1" role="button" tabindex="0" aria-expanded="true">
+                <span class="con12_badge absol">
+                    <span class="con12_badge_text absol">01</span>
+                </span>
+                <div class="con12_card_img con12_card_img_noodle absol">
+                    <img src="/images/con12_01.png" alt="">
+                </div>
+                <div class="con12_card_text con12_text_noodle absol">
+                    <p class="con12_card_title rltv"><span class="con12_accent">자가제면</span><span> 메밀면</span></p>
+                    <span class="con12_card_rule con12_rule_noodle rltv"></span>
+                    <p class="con12_card_sub rltv">면까지 직접 만듭니다</p>
+                    <p class="con12_card_body rltv">국내산 메밀가루만을 사용해 매장에서 직접 반죽하고 면을 뽑아냅니다.<br>자가제면 방식을 고집해 쫄깃하면서도 살아있는 식감을 완성하며<br>한 그릇의 완성도를 높입니다.</p>
+                </div>
+                <span class="con12_vertical con12_vertical_noodle absol">자가제면 메밀면</span>
+            </article>
+
+            <article class="con12_card con12_card_beef absol" data-con12-card="2" role="button" tabindex="0" aria-expanded="false">
+                <span class="con12_badge absol">
+                    <span class="con12_badge_text absol">02</span>
+                </span>
+                <div class="con12_card_img con12_card_img_beef absol">
+                    <img src="/images/con12_02.png" alt="">
+                </div>
+                <div class="con12_card_text con12_text_beef absol">
+                    <p class="con12_card_title rltv"><span class="con12_accent">최고급</span><span> 육회</span></p>
+                    <span class="con12_card_rule con12_rule_beef rltv"></span>
+                    <p class="con12_card_sub rltv">고기를 아는 기준</p>
+                    <p class="con12_card_body rltv">정육식당에서 시작된 경험을 바탕으로 좋은 고기를 고르는 기준부터 다릅니다.<br>당일 도축한 우둔살과 홍두께살만을 사용해 신선도와 식감을<br>최우선으로 생각하며 육회 본연의 맛을 가장 잘 살려냅니다.</p>
+                </div>
+                <span class="con12_vertical con12_vertical_beef absol">최고급 육회</span>
+            </article>
+
+            <article class="con12_card con12_card_sauce absol" data-con12-card="3" role="button" tabindex="0" aria-expanded="false">
+                <span class="con12_badge absol">
+                    <span class="con12_badge_text absol">03</span>
+                </span>
+                <div class="con12_card_img con12_card_img_sauce absol">
+                    <img src="/images/con12_03.png" alt="">
+                </div>
+                <div class="con12_card_text con12_text_sauce absol">
+                    <p class="con12_card_title rltv"><span class="con12_accent">특제</span><span> 양념</span></p>
+                    <span class="con12_card_rule con12_rule_sauce rltv"></span>
+                    <p class="con12_card_sub rltv">시간이 만든 깊은 맛</p>
+                    <p class="con12_card_body rltv">과일을 베이스로 한 특제 양념은 다른 첨가물 없이 깊은 단맛을 만들어냅니다.<br>조미료 사용을 최소화하고 과일과 채소, 고품질 고춧가루를 사용해 최상의 맛을 유지하고,<br>일주일간의 숙성을 거쳐 달지도 짜지도 않은 깊은 어우러짐을 만들어냅니다.</p>
+                </div>
+                <span class="con12_vertical con12_vertical_sauce absol">특제 양념</span>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- ===== CON13: 본사 지원 시스템 ===== -->
+    <section class="con13 rltv" id="move_13" data-c13-scroll>
+
+        <div class="c13_scroll_stage rltv">
+
+            <div class="c13_left_stack rltv">
+                <div class="c13_left_copy rltv">
+                    <p class="c13_kicker rltv">더 중요한 것에 집중할 수 있도록</p>
+                    <p class="c13_headline rltv">
+                        <span>본사가 </span><span class="c13_headline_point">함께</span><span>합니다</span>
+                    </p>
+                    <p class="c13_desc rltv">
+                        <b>창업 준비부터 오픈, 운영까지 각 단계에 맞는 체계적인 지원</b><span>으로</span>
+                        <br>
+                        <span>안정적인 매장 운영을 돕습니다.</span>
+                    </p>
+                </div>
+
+                <div class="c13_food_clip rltv">
+                    <div class="c13_food_img rltv">
+                        <img src="/images/con13_bg_2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="c13_right_viewport absol">
+                <div class="c13_card_track rltv">
+
+                    <article class="c13_card c13_card1 rltv">
+                        <div class="c13_card_tab c13_card1_tab rltv">
+                            <img src="/images/con13_01_1.png" alt="">
+                        </div>
+                        <div class="c13_card_photo c13_card1_photo rltv">
+                            <img src="/images/con13_01_2.png" alt="">
+                        </div>
+                        <p class="c13_card_title c13_card1_title rltv">
+                            <span>누구나 운영할 수 있도록</span>
+                            <br>
+                            <b>실전 중심으로 교육</b><span>합니다</span>
+                        </p>
+                        <p class="c13_card_body c13_card1_body rltv">
+                            <span>미락육회막국수는 매장 운영에 필요한 전 과정을 단계별로 교육합니다.</span>
+                            <br>
+                            <b>본점 교육과 오픈 매장 실습을 포함한 총 17일간의 체계적인 교육</b><span>을 통해</span>
+                            <br>
+                            <span>조리, 서비스, 매장 운영까지 실제 현장에서 바로 적용할 수 있도록 구성되어 있습니다.</span>
+                            <br>
+                            <span>초보 창업자도 부담 없이 시작할 수 있도록 실무 중심의 교육을 진행합니다.</span>
+                        </p>
+                    </article>
+
+                    <article class="c13_card c13_card2 rltv">
+                        <div class="c13_card_tab c13_card2_tab rltv">
+                            <img src="/images/con13_02_1.png" alt="">
+                        </div>
+                        <div class="c13_card_photo c13_card2_photo rltv">
+                            <img src="/images/con13_02_2.png" alt="">
+                        </div>
+                        <p class="c13_card_title c13_card2_title rltv">
+                            <span>혼자가 아닌 운영</span>
+                            <br>
+                            <b>밀착 지원 시스템</b>
+                        </p>
+                        <p class="c13_card_body c13_card2_body rltv">
+                            <span>매장 오픈 이후에도 전담 슈퍼바이저가 1:1로 배정되어 지속적인 운영 관리를 지원합니다.</span>
+                            <br>
+                            <b>매출 점검, 운영 개선, 서비스 관리 등 현장에서 필요한 부분을 함께 점검</b><span>하며</span>
+                            <br>
+                            <span>문제 발생 시 빠르게 대응할 수 있도록 돕습니다.</span>
+                            <br>
+                            <span>혼자 운영하는 것이 아닌 본사와 함께 운영하는 시스템입니다.</span>
+                        </p>
+                    </article>
+
+                    <article class="c13_card c13_card3 rltv">
+                        <div class="c13_card_tab c13_card3_tab rltv">
+                            <img src="/images/con13_03_1.png" alt="">
+                        </div>
+                        <div class="c13_card_photo c13_card3_photo rltv">
+                            <img src="/images/con13_03_2.png" alt="">
+                        </div>
+                        <p class="c13_card_title c13_card3_title rltv">
+                            <span>시작부터 다르게</span>
+                            <br>
+                            <b>데이터 기반 입지 선정</b>
+                        </p>
+                        <p class="c13_card_body c13_card3_body rltv">
+                            <span>상권 분석을 통해 매출 예측, 경쟁 매장 현황, 고객 특성 등</span>
+                            <br>
+                            <span>다양한 데이터를 기반으로 점포를 선정합니다. 단순한 위치 선정이 아닌</span>
+                            <br>
+                            <b>실제 운영 가능성과 수익성을 고려한 전략적인 입지 분석을 진행</b><span>하며,</span>
+                            <br>
+                            <span>초기 창업 리스크를 줄이고 안정적인 매장 운영이 가능하도록 지원합니다.</span>
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== CON17: 창업절차 안내 ===== -->
+    <section class="con17 rltv" id="move_17">
+
+        <div class="c17_bg absol">
+            <img src="/images/con17_bg.jpg" alt="">
+        </div>
+
+        <p class="c17_title rltv">
+            <span class="c17_title_point">창업절차</span><span> 안내</span>
+        </p>
+
+        <div class="c17_grid rltv">
+
+            <!-- Row 1: 개설문의 → 가맹상담 → 상권분석 → 가맹계약 -->
+            <div class="c17_row1 rltv">
+
+                <div class="c17_step c17_step_inquiry absol">
+                    <div class="c17_inquiry_card absol">
+                        <img src="/images/con17_01.png" alt="">
+                    </div>
+                    <div class="c17_inquiry_arrow absol">
+                        <img src="/images/con17_09.png" alt="">
+                    </div>
+                </div>
+
+                <div class="c17_step c17_step_consult absol">
+                    <div class="c17_consult_card absol">
+                        <img src="/images/con17_02.png" alt="">
+                    </div>
+                    <div class="c17_consult_arrow absol">
+                        <img src="/images/con17_09.png" alt="">
+                    </div>
+                </div>
+
+                <div class="c17_step c17_step_market absol">
+                    <div class="c17_market_card absol">
+                        <img src="/images/con17_03.png" alt="">
+                    </div>
+                    <div class="c17_market_arrow absol">
+                        <img src="/images/con17_09.png" alt="">
+                    </div>
+                </div>
+
+                <div class="c17_step c17_step_contract absol">
+                    <div class="c17_contract_card absol">
+                        <img src="/images/con17_04.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Row 2: 인테리어 공사 → 본사교육 → 오픈전 최종점검 → 그랜드 오픈 -->
+            <div class="c17_row2 rltv">
+
+                <div class="c17_step c17_step_interior absol">
+                    <div class="c17_interior_card absol">
+                        <img src="/images/con17_05.png" alt="">
+                    </div>
+                    <div class="c17_interior_arrow absol">
+                        <img src="/images/con17_09.png" alt="">
+                    </div>
+                </div>
+
+                <div class="c17_step c17_step_training absol">
+                    <div class="c17_training_card absol">
+                        <img src="/images/con17_06.png" alt="">
+                    </div>
+                    <div class="c17_training_arrow absol">
+                        <img src="/images/con17_09.png" alt="">
+                    </div>
+                </div>
+
+                <div class="c17_step c17_step_precheck absol">
+                    <div class="c17_precheck_card absol">
+                        <img src="/images/con17_07.png" alt="">
+                    </div>
+                    <div class="c17_precheck_arrow absol">
+                        <img src="/images/con17_09.png" alt="">
+                    </div>
+                </div>
+
+                <div class="c17_step c17_step_open absol">
+                    <div class="c17_open_card absol">
+                        <img src="/images/con17_08.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== CON18: 매장 안내 (main_shop 게시판 연동) ===== -->
+    <section class="con18 rltv" id="move_18">
+
+        <p class="c18_watermark absol">善美樂</p>
+
+        <p class="c18_title rltv">
+            <span class="c18_title_point">매장</span><span> 안내</span>
+        </p>
+
+        <div class="c18_panel rltv">
+
+            <div class="c18_search absol">
+                <input type="text" class="c18_input" id="c18Direct" placeholder="매장명을 검색해주세요">
+                <div class="c18_search_btn" id="c18SearchBtn">
+                    <img src="/images/con18_02.png" alt="검색">
+                </div>
+            </div>
+
+            <div class="c18_list absol" id="c18List">
+                <?php foreach ($_c18_list_stores as $_idx => $_row): ?>
+                <div class="c18_store rltv<?php echo $_idx === 0 ? ' is-active' : ''; ?>"
+                     data-idx="<?php echo (int)$_idx; ?>"
+                     data-name="<?php echo htmlspecialchars($_row['wr_subject']); ?>"
+                     data-addr="<?php echo htmlspecialchars($_row['wr_4']); ?>"
+                     data-tel="<?php echo htmlspecialchars($_row['wr_2']); ?>"
+                     data-naver="<?php echo htmlspecialchars($_row['wr_5']); ?>"
+                     data-lat="<?php echo htmlspecialchars($_row['wr_7']); ?>"
+                     data-lng="<?php echo htmlspecialchars($_row['wr_8']); ?>"
+                     data-img="<?php echo htmlspecialchars($_row['img']); ?>">
+                    <div class="c18_store_info rltv">
+                        <p class="c18_name rltv"><?php echo htmlspecialchars($_row['wr_subject']); ?></p>
+                        <p class="c18_addr rltv"><?php echo htmlspecialchars($_row['wr_4']); ?></p>
+                        <p class="c18_tel rltv"><?php echo htmlspecialchars($_row['wr_2']); ?></p>
+                    </div>
+                    <div class="c18_plus absol">+</div>
+                </div>
+                <?php if ($_idx < count($_c18_list_stores) - 1): ?>
+                <div class="c18_divider rltv"></div>
+                <?php endif; ?>
+                <?php endforeach; ?>
+                <p class="c18_noshop rltv hide">검색 결과가 없습니다</p>
+            </div>
+
+            <div class="c18_map absol" id="c18Map"></div>
+
+        </div>
+
+        <div class="c18_marquee rltv">
+            <div class="c18_marquee_track" id="c18MarqueeTrack">
+                <span class="c18_marquee_strip">
+                    <?php foreach ($_c18_new_stores as $_n): ?>
+                    미락육회막국수 <?php echo htmlspecialchars($_n['wr_subject']); ?> GRAND OPEN&nbsp;&nbsp;·&nbsp;&nbsp;
+                    <?php endforeach; ?>
+                </span>
+                <span class="c18_marquee_strip" aria-hidden="true">
+                    <?php foreach ($_c18_new_stores as $_n): ?>
+                    미락육회막국수 <?php echo htmlspecialchars($_n['wr_subject']); ?> GRAND OPEN&nbsp;&nbsp;·&nbsp;&nbsp;
+                    <?php endforeach; ?>
+                </span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CON18 매장 상세 팝업 -->
+    <div class="c18_popup_overlay hide" id="c18Popup">
+        <div class="c18_popup">
+            <div class="c18_popup_close" id="c18PopupClose">×</div>
+            <div class="c18_popup_photo">
+                <img id="c18PopupPhoto" src="" alt="매장사진">
+            </div>
+            <div class="c18_popup_info">
+                <p class="c18_popup_name" id="c18PopupName"></p>
+                <p class="c18_popup_addr" id="c18PopupAddr"></p>
+                <p class="c18_popup_tel" id="c18PopupTel"></p>
+                <a class="c18_popup_naver" id="c18PopupNaver" href="#" target="_blank" rel="noopener">네이버 지도 보기 →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CON19: 창업 문의 폼 (좌측 텍스트 + 우측 흰 폼 panel) ===== -->
+    <section class="con19 rltv" id="move_19">
+
+        <div class="c19_bg absol">
+            <img src="/images/con19_bg.jpg" alt="">
+        </div>
+
+        <div class="c19_left_inner rltv">
+
+            <p class="c19_title rltv">
+                <span class="c19_title_t1">미락육회막국수와</span><br>
+                <span class="c19_title_t2">함께 시작해보세요</span>
+            </p>
+
+            <p class="c19_desc rltv">
+                <b>오랜 시간 동안 쌓아온 경험을 그대로 전달드립니다.</b>
+                <br><br>
+                <span>처음 창업이시더라도 이미 검증된 방식으로</span>
+                <br>
+                <span>부담 없이 시작하실 수 있도록 도와드리겠습니다.</span>
+            </p>
+
+        </div>
+
+        <form class="c19_form absol" method="post" action="/bbs/mail.php" novalidate onsubmit="return c19FormSubmit(this)">
+            <input type="hidden" name="source" value="con19">
+
+            <div class="c19_field c19_field_text rltv">
+                <p class="c19_field_label rltv"><span class="c19_req">*</span>성함</p>
+                <input type="text" name="c19_name" class="c19_field_input">
+                <div class="c19_field_line rltv"></div>
+            </div>
+
+            <div class="c19_field c19_field_text rltv">
+                <p class="c19_field_label rltv"><span class="c19_req">*</span>연락처</p>
+                <input type="tel" name="c19_phone" class="c19_field_input">
+                <div class="c19_field_line rltv"></div>
+            </div>
+
+            <div class="c19_field c19_field_radio rltv">
+                <p class="c19_field_label rltv"><span class="c19_req">*</span>상가보유</p>
+                <div class="c19_field_radios rltv">
+                    <label class="c19_radio rltv">
+                        <input type="radio" name="c19_store" value="유" checked>
+                        <span class="c19_radio_dot"></span>
+                        <span class="c19_radio_text">유</span>
+                    </label>
+                    <label class="c19_radio rltv">
+                        <input type="radio" name="c19_store" value="무">
+                        <span class="c19_radio_dot"></span>
+                        <span class="c19_radio_text">무</span>
+                    </label>
+                </div>
+                <div class="c19_field_line rltv"></div>
+            </div>
+
+            <div class="c19_field c19_field_select rltv">
+                <p class="c19_field_label rltv">희망지역</p>
+                <select name="c19_area" class="c19_field_input">
+                    <option value="">선택해주세요</option>
+                    <option value="서울">서울</option>
+                    <option value="경기/인천">경기/인천</option>
+                    <option value="강원">강원</option>
+                    <option value="충청">충청</option>
+                    <option value="전라">전라</option>
+                    <option value="경상">경상</option>
+                    <option value="제주">제주</option>
+                </select>
+                <div class="c19_field_line rltv"></div>
+            </div>
+
+            <div class="c19_field c19_field_select rltv">
+                <p class="c19_field_label rltv">희망시기</p>
+                <select name="c19_when" class="c19_field_input">
+                    <option value="">선택해주세요</option>
+                    <option value="1개월 이내">1개월 이내</option>
+                    <option value="3개월 이내">3개월 이내</option>
+                    <option value="6개월 이내">6개월 이내</option>
+                    <option value="1년 이내">1년 이내</option>
+                    <option value="미정">미정</option>
+                </select>
+                <div class="c19_field_line rltv"></div>
+            </div>
+
+            <div class="c19_field c19_field_textarea rltv">
+                <p class="c19_field_label rltv">문의내용</p>
+                <textarea name="c19_msg" class="c19_field_input" rows="1"></textarea>
+                <div class="c19_field_line rltv"></div>
+            </div>
+
+            <label class="c19_consent rltv">
+                <input type="checkbox" name="c19_consent">
+                <span class="c19_consent_box"></span>
+                <span class="c19_consent_text">개인정보 수집 및 이용 동의</span>
+            </label>
+
+            <button type="submit" class="c19_submit rltv">
+                <span class="c19_submit_text">문의하기</span>
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- 필요한 섹션을 계속 추가 -->
+    <!-- GSAP 애니메이션은 js/script.js에 추가 -->
+
+</section>
+
+<script src="/js/script.js"></script>
+<script src="/theme/design/template/main/script.js?v=20260503_c13fix"></script>

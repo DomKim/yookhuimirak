@@ -1,0 +1,6 @@
+{"verified":true,"section":"con11","page":"main","mapping":{
+"Eulyoo1945-SemiBold":{"cssFontFamily":"\"Eulyoo1945\", serif","cssFontWeight":600,"fontFaceDeclared":true,"psdCount":2},
+"Pretendard-Bold":{"cssFontFamily":"\"Pretendard Variable\", \"Pretendard\", sans-serif","cssFontWeight":700,"fontFaceDeclared":true,"psdCount":1},
+"Pretendard-Light":{"cssFontFamily":"\"Pretendard Variable\", \"Pretendard\", sans-serif","cssFontWeight":300,"fontFaceDeclared":true,"psdCount":2},
+"TTOmniGothicM":{"cssFontFamily":"\"omnigothic\", \"ttomni-gothic\", \"Pretendard Variable\", sans-serif","cssFontWeight":400,"fontFaceDeclared":"Adobe Typekit kitId wkl2ctu (loaded in main/index.html head)","psdCount":1}
+},"notes":["Adobe Typekit (kitId=wkl2ctu) provides the omni gothic family — exact CSS family name resolved at runtime by Typekit; fallback Pretendard 400."]}

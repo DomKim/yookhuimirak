@@ -1,0 +1,441 @@
+{
+  "generatedBy": "spec-to-plan v3 + AI structure correction",
+  "strictStructure": true,
+  "section": "con11",
+  "sectionClass": "history",
+  "page": "main",
+  "specFile": ".planning/con11/spec_main_con11.json",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 11344,
+    "bottom": 12365,
+    "height": 1021
+  },
+  "bg": "#231916",
+  "bgRect": {
+    "top": 11396,
+    "bottom": 12339
+  },
+  "prevSectionBottom": 11399,
+  "firstRltvY": 11497,
+  "pt": "5.144357vw",
+  "pb": "6.614173vw",
+  "heightChain": [
+    "pt",
+    "c11_paper",
+    "pb"
+  ],
+  "availableImages": [
+    {
+      "file": "con11_01.png",
+      "width": 326,
+      "height": 326,
+      "sourceType": "완성형 가능성"
+    },
+    {
+      "file": "con11_02.png",
+      "width": 326,
+      "height": 326,
+      "sourceType": "완성형 가능성"
+    },
+    {
+      "file": "con11_03.png",
+      "width": 326,
+      "height": 326,
+      "sourceType": "완성형 가능성"
+    },
+    {
+      "file": "con11_04.png",
+      "width": 326,
+      "height": 326,
+      "sourceType": "완성형 가능성"
+    },
+    {
+      "file": "con11_05.png",
+      "width": 326,
+      "height": 326,
+      "sourceType": "완성형 가능성"
+    },
+    {
+      "file": "con11_06.png",
+      "width": 326,
+      "height": 326,
+      "sourceType": "완성형 가능성"
+    },
+    {
+      "file": "con11_bg.png",
+      "width": 629,
+      "height": 284,
+      "sourceType": "완성형 가능성"
+    },
+    {
+      "file": "con11_bg_2.png",
+      "width": 659,
+      "height": 757,
+      "sourceType": "완성형 가능성"
+    }
+  ],
+  "ignoredTexts": [],
+  "ignoredShapes": [
+    {
+      "name": "사각형 845",
+      "reason": "Section background color #231916 — applied to section element directly."
+    },
+    {
+      "name": "사각형 846",
+      "reason": "Paper inner #f8edd7 background — folded into c11_paper element (background-image con11_bg_2.png covers paper area, fills #f8edd7 visual)."
+    }
+  ],
+  "ignoredAssets": [
+    {
+      "name": "벡터 스마트 오브젝트 복사 4",
+      "file": "(reused) /images/con11_bg.png",
+      "reason": "PSD twin wave layer (TODO export) — implemented by reusing /images/con11_bg.png as repeat-x background for both top and bottom rolling rows."
+    },
+    {
+      "name": "con11_bg_2 (CSS background)",
+      "file": "/images/con11_bg_2.png",
+      "reason": "Used as CSS background-image of c11_paper (paper textured frame). Not rendered as <img> element so not in elements tree."
+    }
+  ],
+  "doNot": [
+    "Do not use px for layout values except border/shadow.",
+    "Do not use object-fit on photos.",
+    "Do not duplicate yellow designer comments (>>롤링 / <<롤링) in HTML — rolling direction handled by CSS animation only.",
+    "Do not let rolling rows leak outside their container — c11_top_row / c11_bot_row 각각 overflow:hidden 강제.",
+    "Do not break PSD line breaks — title 1 explicit <br>, desc 8 explicit <br>.",
+    "Do not bake aspect-ratio for the rolling-row wrappers — heights come from photo height (rltv photo element).",
+    "Do not use child margin-left to fake centered paper — alignSelf:center on c11_paper."
+  ],
+  "rollingConfig": {
+    "topRow": {
+      "selector": ".c11_top_row .c11_top_track",
+      "direction": "right",
+      "speedSec": 30,
+      "photos": [
+        "con11_04.png",
+        "con11_05.png",
+        "con11_06.png"
+      ],
+      "duplicateSets": 2
+    },
+    "botRow": {
+      "selector": ".c11_bot_row .c11_bot_track",
+      "direction": "left",
+      "speedSec": 30,
+      "photos": [
+        "con11_01.png",
+        "con11_02.png",
+        "con11_03.png"
+      ],
+      "duplicateSets": 2
+    }
+  },
+  "elements": [
+    {
+      "name": "c11_top_row",
+      "type": "group",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "7.506562vw",
+      "left": "0%",
+      "width": "100.000001%",
+      "height": "17.112861vw",
+      "heightSource": "photo natural height (326×326 single row)",
+      "heightSourceReason": "Row contains a single horizontal track of square photos (326×326 PSD). Track height equals photo height — no inner rltv stack to derive height from.",
+      "overflow": "hidden",
+      "rollingDirection": "right",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 11542,
+      "children": [
+        {
+          "name": "c11_top_track",
+          "type": "group",
+          "position": "rltv",
+          "parent": "c11_top_row",
+          "parentWidth": 1905,
+          "width": "113.176510%",
+          "_widthNote": "(3 photos × 17.112861vw + 2 gaps × 2.099738vw) × 2 sets + 1 inter-set gap = 113.176510% of canvas. max-content on the marquee track.",
+          "display": "flex-row",
+          "gap": "2.099738vw",
+          "rollingTrack": true,
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 11542,
+          "children": [
+            {
+              "name": "c11_top_photo_1",
+              "type": "image",
+              "position": "rltv",
+              "parent": "c11_top_track",
+              "parentWidth": 1905,
+              "width": "17.112861vw",
+              "_widthUnit": "vw because flex-track parent has dynamic max-content width",
+              "aspectRatio": "326 / 326",
+              "heightSource": "PSD photo 326×326 baked image",
+              "heightSourceReason": "Square photo asset con11_04.png (326×326 file) — aspect-ratio 1:1 from baked PSD layer.",
+              "src": "/images/con11_04.png",
+              "naturalWidth": 326,
+              "naturalHeight": 326,
+              "borderRadius": "1.574803vw",
+              "effects": null,
+              "psdY": 11542,
+              "sourceType": "완성형 가능성"
+            },
+            {
+              "name": "c11_top_photo_2",
+              "type": "image",
+              "position": "rltv",
+              "parent": "c11_top_track",
+              "parentWidth": 1905,
+              "width": "17.112861vw",
+              "aspectRatio": "326 / 326",
+              "heightSource": "PSD photo 326×326 baked image",
+              "heightSourceReason": "Square photo asset con11_05.png (326×326 file) — aspect-ratio 1:1.",
+              "src": "/images/con11_05.png",
+              "naturalWidth": 326,
+              "naturalHeight": 326,
+              "borderRadius": "1.574803vw",
+              "effects": null,
+              "psdY": 11542,
+              "sourceType": "완성형 가능성"
+            },
+            {
+              "name": "c11_top_photo_3",
+              "type": "image",
+              "position": "rltv",
+              "parent": "c11_top_track",
+              "parentWidth": 1905,
+              "width": "17.112861vw",
+              "aspectRatio": "326 / 326",
+              "heightSource": "PSD photo 326×326 baked image",
+              "heightSourceReason": "Square photo asset con11_06.png (326×326 file) — aspect-ratio 1:1.",
+              "src": "/images/con11_06.png",
+              "naturalWidth": 326,
+              "naturalHeight": 326,
+              "borderRadius": "1.574803vw",
+              "effects": null,
+              "psdY": 11542,
+              "sourceType": "완성형 가능성"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "c11_paper",
+      "type": "cssShape",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "5.144357vw",
+      "alignSelf": "center",
+      "width": "33.858268%",
+      "background": "#f8edd7 url('/images/con11_bg_2.png') center / 100% 100% no-repeat",
+      "_backgroundNote": "con11_bg_2.png provides paper texture+frame baked. Inner #f8edd7 fills behind in case texture is transparent. Image stretched to paper dims (645×742 = 33.86%×38.95vw).",
+      "paddingTop": "6.509186vw",
+      "paddingBottom": "6.404199vw",
+      "display": "flex-column",
+      "alignItems": "center",
+      "zIndex": 2,
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 11497,
+      "children": [
+        {
+          "name": "c11_kicker",
+          "type": "text",
+          "position": "rltv",
+          "parent": "c11_paper",
+          "parentWidth": 645,
+          "alignSelf": "center",
+          "whiteSpace": "nowrap",
+          "effects": null,
+          "borderRadius": null,
+          "segments": [
+            {
+              "text": "시간이 만든 맛",
+              "fontSize": "1.574803vw (30px)",
+              "fontWeight": 400,
+              "color": "#070707",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 2.167,
+              "fontFamily": "TTOmniGothicM"
+            }
+          ],
+          "psdY": 11621
+        },
+        {
+          "name": "c11_title",
+          "type": "text",
+          "position": "rltv",
+          "parent": "c11_paper",
+          "parentWidth": 645,
+          "marginTop": "1.154856vw",
+          "alignSelf": "center",
+          "textAlign": "center",
+          "lineBreaks": 1,
+          "effects": null,
+          "borderRadius": null,
+          "segments": [
+            {
+              "text": "38년",
+              "fontSize": "3.149606vw (60px)",
+              "fontWeight": 600,
+              "color": "#5d2b0d",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.25,
+              "fontFamily": "Eulyoo1945-SemiBold"
+            },
+            {
+              "text": "을\n이어왔습니다",
+              "fontSize": "3.149606vw (60px)",
+              "fontWeight": 600,
+              "color": "#070707",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.25,
+              "fontFamily": "Eulyoo1945-SemiBold"
+            }
+          ],
+          "psdY": 11671
+        },
+        {
+          "name": "c11_desc",
+          "type": "text",
+          "position": "rltv",
+          "parent": "c11_paper",
+          "parentWidth": 645,
+          "marginTop": "2.729659vw",
+          "alignSelf": "center",
+          "textAlign": "center",
+          "lineBreaks": 8,
+          "effects": null,
+          "borderRadius": null,
+          "segments": [
+            {
+              "text": "미락육회막국수는 1988년 따스한 봄날,\n작은 정육식당에서 시작되어 2대에 걸쳐 이어져 왔습니다.\n\n지금은 육회막국수 전문점으로 자리 잡아 현재의 본사 위치에서\n많은 고객분들께 꾸준한 사랑을 받고 있습니다.\n\n",
+              "fontSize": "1.154856vw (22px)",
+              "fontWeight": 300,
+              "color": "#000000",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.364,
+              "fontFamily": "Pretendard-Light"
+            },
+            {
+              "text": "육회와 막국수가 어우러진 자연스러운 맛을 찾기까지\n10년 이상의 시간을 쌓아왔습니다.\n",
+              "fontSize": "1.154856vw (22px)",
+              "fontWeight": 700,
+              "color": "#000000",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.364,
+              "fontFamily": "Pretendard-Bold"
+            },
+            {
+              "text": "그 시간이 모여 지금의 미락육회막국수가 되었습니다.",
+              "fontSize": "1.154856vw (22px)",
+              "fontWeight": 300,
+              "color": "#000000",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.364,
+              "fontFamily": "Pretendard-Light"
+            }
+          ],
+          "psdY": 11857
+        }
+      ]
+    },
+    {
+      "name": "c11_bot_row",
+      "type": "group",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "24.986877vw",
+      "left": "0%",
+      "width": "100.000001%",
+      "height": "17.112861vw",
+      "heightSource": "photo natural height (326×326 single row)",
+      "heightSourceReason": "Row contains a single horizontal track of square photos. Track height equals photo height.",
+      "overflow": "hidden",
+      "rollingDirection": "left",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 11875,
+      "children": [
+        {
+          "name": "c11_bot_track",
+          "type": "group",
+          "position": "rltv",
+          "parent": "c11_bot_row",
+          "parentWidth": 1905,
+          "width": "113.176510%",
+          "display": "flex-row",
+          "gap": "2.099738vw",
+          "rollingTrack": true,
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 11875,
+          "children": [
+            {
+              "name": "c11_bot_photo_1",
+              "type": "image",
+              "position": "rltv",
+              "parent": "c11_bot_track",
+              "parentWidth": 1905,
+              "width": "17.112861vw",
+              "aspectRatio": "326 / 326",
+              "heightSource": "PSD photo 326×326 baked image",
+              "heightSourceReason": "Square photo con11_01.png (326×326).",
+              "src": "/images/con11_01.png",
+              "naturalWidth": 326,
+              "naturalHeight": 326,
+              "borderRadius": "1.574803vw",
+              "effects": null,
+              "psdY": 11875,
+              "sourceType": "완성형 가능성"
+            },
+            {
+              "name": "c11_bot_photo_2",
+              "type": "image",
+              "position": "rltv",
+              "parent": "c11_bot_track",
+              "parentWidth": 1905,
+              "width": "17.112861vw",
+              "aspectRatio": "326 / 326",
+              "heightSource": "PSD photo 326×326 baked image",
+              "heightSourceReason": "Square photo con11_02.png (326×326).",
+              "src": "/images/con11_02.png",
+              "naturalWidth": 326,
+              "naturalHeight": 326,
+              "borderRadius": "1.574803vw",
+              "effects": null,
+              "psdY": 11875,
+              "sourceType": "완성형 가능성"
+            },
+            {
+              "name": "c11_bot_photo_3",
+              "type": "image",
+              "position": "rltv",
+              "parent": "c11_bot_track",
+              "parentWidth": 1905,
+              "width": "17.112861vw",
+              "aspectRatio": "326 / 326",
+              "heightSource": "PSD photo 326×326 baked image",
+              "heightSourceReason": "Square photo con11_03.png (326×326).",
+              "src": "/images/con11_03.png",
+              "naturalWidth": 326,
+              "naturalHeight": 326,
+              "borderRadius": "1.574803vw",
+              "effects": null,
+              "psdY": 11875,
+              "sourceType": "완성형 가능성"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ascii": "CON11 / history (bg:#231916, h:50.708vw / 966px)\n[absol] c11_top_row top:7.5066vw w:100% h:17.1129vw OVERFLOW:HIDDEN  → marquee 우측 (>>롤링)\n  └ c11_top_track flex-row gap:2.0997vw w:113.18% (max-content) + repeat-x bg con11_bg.png\n      [con11_04 17.1129vw 1:1 r:1.5748vw] [con11_05] [con11_06]   ← 1set, set 2번 cloning\n[rltv] pt 5.1444vw\n[rltv] c11_paper alignSelf:center w:33.8583% bg:#f8edd7+con11_bg_2.png z:2  pt 6.5092vw  pb 6.4042vw  flex-col center\n  ├ c11_kicker '시간이 만든 맛' TTOmniGothicM 30 #070707 lh:2.167\n  ├ c11_title mt:1.1549vw Eulyoo SB 60 lh:1.25  <38년 #5d2b0d>+<을\\n이어왔습니다 #070707>\n  └ c11_desc  mt:2.7297vw Pretendard 22 lh:1.364 center  Light/Bold/Light + 8 <br>\n[absol] c11_bot_row top:24.9869vw w:100% h:17.1129vw OVERFLOW:HIDDEN  → marquee 좌측 (<<롤링)\n  └ c11_bot_track flex-row gap:2.0997vw + repeat-x bg con11_bg.png\n      [con11_01] [con11_02] [con11_03]  ← 1set + cloned\n[rltv] pb 6.6142vw\n\n무한 롤링 = CSS @keyframes translateX 30s linear infinite, 같은 set 2번 cloning, ov:hidden 양끝 crop\n노란 코멘트 (>>롤링/<<롤링) = 방향 가이드, HTML 출력 X"
+}

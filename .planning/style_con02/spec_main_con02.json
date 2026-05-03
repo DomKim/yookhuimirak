@@ -1,0 +1,1235 @@
+{
+  "section": "con02",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 1791,
+    "bottom": 2776
+  },
+  "background": {
+    "type": "color",
+    "fill": "#231916",
+    "src": null
+  },
+  "groups": [
+    {
+      "name": "매출",
+      "parentGroup": "con02",
+      "childCount": 6,
+      "children": [
+        {
+          "name": "그룹 2",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "name": "그룹 2 복사",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "name": "그룹 2 복사 2",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "name": "그룹 2 복사 3",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "name": "그룹 2 복사 4",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        {
+          "name": "그룹 2 복사 5",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "bbox": {
+        "x": 223,
+        "y": 2458,
+        "w": 1856,
+        "h": 207
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "그룹 2",
+      "parentGroup": "매출",
+      "childCount": 5,
+      "children": [
+        {
+          "name": "사각형 5",
+          "type": "layer",
+          "x": -151,
+          "y": 2458,
+          "w": 360,
+          "h": 207
+        },
+        {
+          "name": "모양 5",
+          "type": "layer",
+          "x": -108,
+          "y": 2527,
+          "w": 276,
+          "h": 3
+        },
+        {
+          "name": "미락육회막국수 본점",
+          "type": "text",
+          "x": -45,
+          "y": 2487,
+          "w": 148,
+          "h": 18
+        },
+        {
+          "name": "[1월 월매출]",
+          "type": "text",
+          "x": -5,
+          "y": 2620,
+          "w": 68,
+          "h": 17
+        },
+        {
+          "name": "35,260,000",
+          "type": "text",
+          "x": -88,
+          "y": 2561,
+          "w": 235,
+          "h": 45
+        }
+      ],
+      "bbox": null,
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "그룹 2 복사",
+      "parentGroup": "매출",
+      "childCount": 5,
+      "children": [
+        {
+          "name": "사각형 5",
+          "type": "layer",
+          "x": 223,
+          "y": 2458,
+          "w": 360,
+          "h": 207
+        },
+        {
+          "name": "모양 5",
+          "type": "layer",
+          "x": 266,
+          "y": 2527,
+          "w": 276,
+          "h": 3
+        },
+        {
+          "name": "미락육회막국수 본점",
+          "type": "text",
+          "x": 328,
+          "y": 2487,
+          "w": 149,
+          "h": 18
+        },
+        {
+          "name": "[1월 월매출]",
+          "type": "text",
+          "x": 369,
+          "y": 2620,
+          "w": 68,
+          "h": 17
+        },
+        {
+          "name": "35,260,000",
+          "type": "text",
+          "x": 286,
+          "y": 2561,
+          "w": 235,
+          "h": 45
+        }
+      ],
+      "bbox": {
+        "x": 223,
+        "y": 2458,
+        "w": 360,
+        "h": 207
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "그룹 2 복사 2",
+      "parentGroup": "매출",
+      "childCount": 5,
+      "children": [
+        {
+          "name": "사각형 5",
+          "type": "layer",
+          "x": 597,
+          "y": 2458,
+          "w": 360,
+          "h": 207
+        },
+        {
+          "name": "모양 5",
+          "type": "layer",
+          "x": 640,
+          "y": 2527,
+          "w": 276,
+          "h": 3
+        },
+        {
+          "name": "미락육회막국수 본점",
+          "type": "text",
+          "x": 702,
+          "y": 2487,
+          "w": 149,
+          "h": 18
+        },
+        {
+          "name": "[1월 월매출]",
+          "type": "text",
+          "x": 743,
+          "y": 2620,
+          "w": 68,
+          "h": 17
+        },
+        {
+          "name": "35,260,000",
+          "type": "text",
+          "x": 660,
+          "y": 2561,
+          "w": 235,
+          "h": 45
+        }
+      ],
+      "bbox": {
+        "x": 597,
+        "y": 2458,
+        "w": 360,
+        "h": 207
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "그룹 2 복사 3",
+      "parentGroup": "매출",
+      "childCount": 5,
+      "children": [
+        {
+          "name": "사각형 5",
+          "type": "layer",
+          "x": 972,
+          "y": 2458,
+          "w": 360,
+          "h": 207
+        },
+        {
+          "name": "모양 5",
+          "type": "layer",
+          "x": 1014,
+          "y": 2527,
+          "w": 276,
+          "h": 3
+        },
+        {
+          "name": "미락육회막국수 본점",
+          "type": "text",
+          "x": 1077,
+          "y": 2487,
+          "w": 148,
+          "h": 18
+        },
+        {
+          "name": "[1월 월매출]",
+          "type": "text",
+          "x": 1117,
+          "y": 2620,
+          "w": 68,
+          "h": 17
+        },
+        {
+          "name": "35,260,000",
+          "type": "text",
+          "x": 1034,
+          "y": 2561,
+          "w": 235,
+          "h": 45
+        }
+      ],
+      "bbox": {
+        "x": 972,
+        "y": 2458,
+        "w": 360,
+        "h": 207
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "그룹 2 복사 4",
+      "parentGroup": "매출",
+      "childCount": 5,
+      "children": [
+        {
+          "name": "사각형 5",
+          "type": "layer",
+          "x": 1345,
+          "y": 2458,
+          "w": 360,
+          "h": 207
+        },
+        {
+          "name": "모양 5",
+          "type": "layer",
+          "x": 1388,
+          "y": 2527,
+          "w": 276,
+          "h": 3
+        },
+        {
+          "name": "미락육회막국수 본점",
+          "type": "text",
+          "x": 1450,
+          "y": 2487,
+          "w": 149,
+          "h": 18
+        },
+        {
+          "name": "[1월 월매출]",
+          "type": "text",
+          "x": 1491,
+          "y": 2620,
+          "w": 68,
+          "h": 17
+        },
+        {
+          "name": "35,260,000",
+          "type": "text",
+          "x": 1408,
+          "y": 2561,
+          "w": 234,
+          "h": 45
+        }
+      ],
+      "bbox": {
+        "x": 1345,
+        "y": 2458,
+        "w": 360,
+        "h": 207
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "그룹 2 복사 5",
+      "parentGroup": "매출",
+      "childCount": 5,
+      "children": [
+        {
+          "name": "사각형 5",
+          "type": "layer",
+          "x": 1720,
+          "y": 2458,
+          "w": 359,
+          "h": 207
+        },
+        {
+          "name": "모양 5",
+          "type": "layer",
+          "x": 1762,
+          "y": 2527,
+          "w": 276,
+          "h": 3
+        },
+        {
+          "name": "미락육회막국수 본점",
+          "type": "text",
+          "x": 1825,
+          "y": 2487,
+          "w": 148,
+          "h": 18
+        },
+        {
+          "name": "[1월 월매출]",
+          "type": "text",
+          "x": 1865,
+          "y": 2620,
+          "w": 68,
+          "h": 17
+        },
+        {
+          "name": "35,260,000",
+          "type": "text",
+          "x": 1782,
+          "y": 2561,
+          "w": 235,
+          "h": 45
+        }
+      ],
+      "bbox": {
+        "x": 1720,
+        "y": 2458,
+        "w": 359,
+        "h": 207
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con02_01",
+      "parentGroup": "con02",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 4",
+          "type": "layer",
+          "x": 239,
+          "y": 2190,
+          "w": 272,
+          "h": 56
+        },
+        {
+          "name": "월 최고 매출 | 본점 기준",
+          "type": "text",
+          "x": 266,
+          "y": 2207,
+          "w": 217,
+          "h": 23
+        }
+      ],
+      "bbox": {
+        "x": 239,
+        "y": 2190,
+        "w": 272,
+        "h": 56
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    }
+  ],
+  "texts": [
+    {
+      "name": "미락육회막국수 본점",
+      "content": "미락육회막국수 본점",
+      "lineBreaks": 0,
+      "x": -45,
+      "y": 2487,
+      "w": 148,
+      "h": 18,
+      "segments": [
+        {
+          "text": "미락육회막국수 본점",
+          "fontSize_px": 20,
+          "fontSize_vw": "1.0499",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 3.249,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "[1월 월매출]",
+      "content": "[1월 월매출]",
+      "lineBreaks": 0,
+      "x": -5,
+      "y": 2620,
+      "w": 68,
+      "h": 17,
+      "segments": [
+        {
+          "text": "[1월 월매출]",
+          "fontSize_px": 16,
+          "fontSize_vw": "0.8399",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 4.062,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "35,260,000",
+      "content": "35,260,000",
+      "lineBreaks": 0,
+      "x": -88,
+      "y": 2561,
+      "w": 235,
+      "h": 45,
+      "segments": [
+        {
+          "text": "35,260,000",
+          "fontSize_px": 49.99,
+          "fontSize_vw": "2.6241",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 1.3,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "미락육회막국수 본점",
+      "content": "미락육회막국수 본점",
+      "lineBreaks": 0,
+      "x": 328,
+      "y": 2487,
+      "w": 149,
+      "h": 18,
+      "segments": [
+        {
+          "text": "미락육회막국수 본점",
+          "fontSize_px": 20,
+          "fontSize_vw": "1.0499",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 3.249,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "[1월 월매출]",
+      "content": "[1월 월매출]",
+      "lineBreaks": 0,
+      "x": 369,
+      "y": 2620,
+      "w": 68,
+      "h": 17,
+      "segments": [
+        {
+          "text": "[1월 월매출]",
+          "fontSize_px": 16,
+          "fontSize_vw": "0.8399",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 4.062,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "35,260,000",
+      "content": "35,260,000",
+      "lineBreaks": 0,
+      "x": 286,
+      "y": 2561,
+      "w": 235,
+      "h": 45,
+      "segments": [
+        {
+          "text": "35,260,000",
+          "fontSize_px": 49.99,
+          "fontSize_vw": "2.6241",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 1.3,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "미락육회막국수 본점",
+      "content": "미락육회막국수 본점",
+      "lineBreaks": 0,
+      "x": 702,
+      "y": 2487,
+      "w": 149,
+      "h": 18,
+      "segments": [
+        {
+          "text": "미락육회막국수 본점",
+          "fontSize_px": 20,
+          "fontSize_vw": "1.0499",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 3.249,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "[1월 월매출]",
+      "content": "[1월 월매출]",
+      "lineBreaks": 0,
+      "x": 743,
+      "y": 2620,
+      "w": 68,
+      "h": 17,
+      "segments": [
+        {
+          "text": "[1월 월매출]",
+          "fontSize_px": 16,
+          "fontSize_vw": "0.8399",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 4.062,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "35,260,000",
+      "content": "35,260,000",
+      "lineBreaks": 0,
+      "x": 660,
+      "y": 2561,
+      "w": 235,
+      "h": 45,
+      "segments": [
+        {
+          "text": "35,260,000",
+          "fontSize_px": 49.99,
+          "fontSize_vw": "2.6241",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 1.3,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "미락육회막국수 본점",
+      "content": "미락육회막국수 본점",
+      "lineBreaks": 0,
+      "x": 1077,
+      "y": 2487,
+      "w": 148,
+      "h": 18,
+      "segments": [
+        {
+          "text": "미락육회막국수 본점",
+          "fontSize_px": 20,
+          "fontSize_vw": "1.0499",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 3.249,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "[1월 월매출]",
+      "content": "[1월 월매출]",
+      "lineBreaks": 0,
+      "x": 1117,
+      "y": 2620,
+      "w": 68,
+      "h": 17,
+      "segments": [
+        {
+          "text": "[1월 월매출]",
+          "fontSize_px": 16,
+          "fontSize_vw": "0.8399",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 4.062,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "35,260,000",
+      "content": "35,260,000",
+      "lineBreaks": 0,
+      "x": 1034,
+      "y": 2561,
+      "w": 235,
+      "h": 45,
+      "segments": [
+        {
+          "text": "35,260,000",
+          "fontSize_px": 49.99,
+          "fontSize_vw": "2.6241",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 1.3,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "미락육회막국수 본점",
+      "content": "미락육회막국수 본점",
+      "lineBreaks": 0,
+      "x": 1450,
+      "y": 2487,
+      "w": 149,
+      "h": 18,
+      "segments": [
+        {
+          "text": "미락육회막국수 본점",
+          "fontSize_px": 20,
+          "fontSize_vw": "1.0499",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 3.249,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "[1월 월매출]",
+      "content": "[1월 월매출]",
+      "lineBreaks": 0,
+      "x": 1491,
+      "y": 2620,
+      "w": 68,
+      "h": 17,
+      "segments": [
+        {
+          "text": "[1월 월매출]",
+          "fontSize_px": 16,
+          "fontSize_vw": "0.8399",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 4.062,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "35,260,000",
+      "content": "35,260,000",
+      "lineBreaks": 0,
+      "x": 1408,
+      "y": 2561,
+      "w": 234,
+      "h": 45,
+      "segments": [
+        {
+          "text": "35,260,000",
+          "fontSize_px": 49.99,
+          "fontSize_vw": "2.6241",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 1.3,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "미락육회막국수 본점",
+      "content": "미락육회막국수 본점",
+      "lineBreaks": 0,
+      "x": 1825,
+      "y": 2487,
+      "w": 148,
+      "h": 18,
+      "segments": [
+        {
+          "text": "미락육회막국수 본점",
+          "fontSize_px": 20,
+          "fontSize_vw": "1.0499",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 3.249,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "[1월 월매출]",
+      "content": "[1월 월매출]",
+      "lineBreaks": 0,
+      "x": 1865,
+      "y": 2620,
+      "w": 68,
+      "h": 17,
+      "segments": [
+        {
+          "text": "[1월 월매출]",
+          "fontSize_px": 16,
+          "fontSize_vw": "0.8399",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 4.062,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "35,260,000",
+      "content": "35,260,000",
+      "lineBreaks": 0,
+      "x": 1782,
+      "y": 2561,
+      "w": 235,
+      "h": 45,
+      "segments": [
+        {
+          "text": "35,260,000",
+          "fontSize_px": 49.99,
+          "fontSize_vw": "2.6241",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 1.3,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "67,000,000",
+      "content": "67,000,000",
+      "lineBreaks": 0,
+      "x": 241,
+      "y": 2283,
+      "w": 575,
+      "h": 106,
+      "segments": [
+        {
+          "text": "67,000,000",
+          "fontSize_px": 120,
+          "fontSize_vw": "6.2992",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#bfa78a",
+          "lineHeight": 0.883,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "한 번이 아닌, 계속되는 매출",
+      "content": "한 번이 아닌, 계속되는 매출",
+      "lineBreaks": 0,
+      "x": 631,
+      "y": 2023,
+      "w": 657,
+      "h": 60,
+      "segments": [
+        {
+          "text": "한 번이 아닌, ",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "계속되는 매출",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#e3cfaf",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "원",
+      "content": "원",
+      "lineBreaks": 0,
+      "x": 827,
+      "y": 2343,
+      "w": 30,
+      "h": 33,
+      "segments": [
+        {
+          "text": "원",
+          "fontSize_px": 35,
+          "fontSize_vw": "1.8373",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 1.857,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "재방문을 만드는 맛과 흔들리지 않는 운영 구조로 일회성이 아닌 매출을 만듭니다",
+      "content": "재방문을 만드는 맛과 흔들리지 않는 운영 구조로\n일회성이 아닌 매출을 만듭니다",
+      "lineBreaks": 1,
+      "x": 768,
+      "y": 2116,
+      "w": 383,
+      "h": 52,
+      "segments": [
+        {
+          "text": "재방문을 만드는 맛과 흔들리지 않는 운영 구조",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#ffffff",
+          "lineHeight": 1.455,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "로\n일회성이 아닌 매출을 만듭니다",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.455,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "월 최고 매출 | 본점 기준",
+      "content": "월 최고 매출 | 본점 기준",
+      "lineBreaks": 0,
+      "x": 266,
+      "y": 2207,
+      "w": 217,
+      "h": 23,
+      "segments": [
+        {
+          "text": "월 최고 매출 | 본점 기준",
+          "fontSize_px": 23,
+          "fontSize_vw": "1.2073",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 2.826,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 3",
+      "x": -1,
+      "y": 1848,
+      "w": 1922,
+      "h": 893,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 5",
+      "x": -151,
+      "y": 2458,
+      "w": 360,
+      "h": 207,
+      "fill": "#ffffff",
+      "borderRadius": 20,
+      "stroke": {
+        "enabled": true,
+        "width": 1,
+        "color": "#231916",
+        "strokeWidth": 1,
+        "strokeColor": "#231916",
+        "opacity": 1,
+        "source": "psd-stroke-guard:visual"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 5",
+      "x": -108,
+      "y": 2527,
+      "w": 276,
+      "h": 3,
+      "fill": "#f8edd7",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 5",
+      "x": 223,
+      "y": 2458,
+      "w": 360,
+      "h": 207,
+      "fill": "#ffffff",
+      "borderRadius": 20,
+      "stroke": {
+        "enabled": true,
+        "width": 1,
+        "color": "#231916",
+        "strokeWidth": 1,
+        "strokeColor": "#231916",
+        "opacity": 1,
+        "source": "psd-stroke-guard:visual"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 5",
+      "x": 266,
+      "y": 2527,
+      "w": 276,
+      "h": 3,
+      "fill": "#f8edd7",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 5",
+      "x": 597,
+      "y": 2458,
+      "w": 360,
+      "h": 207,
+      "fill": "#ffffff",
+      "borderRadius": 20,
+      "stroke": {
+        "enabled": true,
+        "width": 1,
+        "color": "#231916",
+        "strokeWidth": 1,
+        "strokeColor": "#231916",
+        "opacity": 1,
+        "source": "psd-stroke-guard:visual"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 5",
+      "x": 640,
+      "y": 2527,
+      "w": 276,
+      "h": 3,
+      "fill": "#f8edd7",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 5",
+      "x": 972,
+      "y": 2458,
+      "w": 360,
+      "h": 207,
+      "fill": "#ffffff",
+      "borderRadius": 20,
+      "stroke": {
+        "enabled": true,
+        "width": 1,
+        "color": "#231916",
+        "strokeWidth": 1,
+        "strokeColor": "#231916",
+        "opacity": 1,
+        "source": "psd-stroke-guard:visual"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 5",
+      "x": 1014,
+      "y": 2527,
+      "w": 276,
+      "h": 3,
+      "fill": "#f8edd7",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 5",
+      "x": 1345,
+      "y": 2458,
+      "w": 360,
+      "h": 207,
+      "fill": "#ffffff",
+      "borderRadius": 20,
+      "stroke": {
+        "enabled": true,
+        "width": 1,
+        "color": "#231916",
+        "strokeWidth": 1,
+        "strokeColor": "#231916",
+        "opacity": 1,
+        "source": "psd-stroke-guard:visual"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 5",
+      "x": 1388,
+      "y": 2527,
+      "w": 276,
+      "h": 3,
+      "fill": "#f8edd7",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 5",
+      "x": 1720,
+      "y": 2458,
+      "w": 359,
+      "h": 207,
+      "fill": "#ffffff",
+      "borderRadius": 20,
+      "stroke": {
+        "enabled": true,
+        "width": 1,
+        "color": "#231916",
+        "strokeWidth": 1,
+        "strokeColor": "#231916",
+        "opacity": 1,
+        "source": "psd-stroke-guard:visual"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 5",
+      "x": 1762,
+      "y": 2527,
+      "w": 276,
+      "h": 3,
+      "fill": "#f8edd7",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 4",
+      "x": 239,
+      "y": 2190,
+      "w": 272,
+      "h": 56,
+      "fill": "#a4202c",
+      "borderRadius": 26.5,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 4",
+      "x": 958,
+      "y": 1847,
+      "w": 4,
+      "h": 128,
+      "fill": "#bfa78a",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 0.2,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "con02_02",
+      "x": 986,
+      "y": 1791,
+      "w": 1487,
+      "h": 985,
+      "clippingRect": {
+        "x": 958,
+        "y": 1847,
+        "w": 4,
+        "h": 128,
+        "borderRadius": 0
+      },
+      "possibleFile": "con02_02.png",
+      "effects": null
+    }
+  ],
+  "comments": [],
+  "bgRect": {
+    "y": 1848,
+    "h": 893,
+    "bottom": 2741,
+    "name": "사각형 3"
+  }
+}

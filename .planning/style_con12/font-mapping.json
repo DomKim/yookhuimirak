@@ -1,0 +1,28 @@
+{
+  "verified": true,
+  "section": "con12",
+  "mapping": {
+    "Eulyoo1945-SemiBold": {
+      "cssFontFamily": "var(--sf)",
+      "resolvedFontFamily": "'Eulyoo1945', serif",
+      "fontWeight": 600,
+      "reason": "font/font.css defines Eulyoo1945 Semibold at weight 600; PSD heading/title uses Eulyoo1945-SemiBold"
+    },
+    "TTOmniGothicM": {
+      "cssFontFamily": "'omnigothic', sans-serif",
+      "fontWeight": 400,
+      "reason": "main template loads Typekit kit wkl2ctu; existing main CSS maps TTOmniGothicM to omnigothic 400"
+    },
+    "TTOmniGothicEB": {
+      "cssFontFamily": "'omnigothic', sans-serif",
+      "fontWeight": 600,
+      "reason": "Typekit kit wkl2ctu provides OmniGothic weights through 600; PSD family is EB for index/kicker labels"
+    },
+    "Pretendard-Light": {
+      "cssFontFamily": "var(--mf)",
+      "resolvedFontFamily": "'Pretendard Variable', sans-serif",
+      "fontWeight": 300,
+      "reason": "font/font.css defines Pretendard Variable; PSD body copy uses Pretendard-Light"
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "generatedBy": "spec-to-plan v3 (flat) + inline hints",
+  "aiCorrections": "con18 매장 안내 — main_shop 게시판 연동, 좌측 리스트(404)+우측 카카오맵(1161) 패널, 검색바 absol overlay (panel top -35), 하단 마르퀴 (ca_name='new' 신규매장만 무한 슬라이드). jailkal con16 패턴 참조.",
+  "strictStructure": true,
+  "section": "con18",
+  "sectionClass": "con18",
+  "page": "main",
+  "specFile": ".planning/main_con18/spec.json",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 20405,
+    "bottom": 21390,
+    "height": 985
+  },
+  "firstRltvY": 20439,
+  "prevSectionBottom": 20413,
+  "bg": "#ffffff",
+  "bgSourceReason": "PSD spec auto-detected #000000 from inner panel rect 사각형 579 복사 (1565x654 dark panel inside section), but the section's actual background — visible around the watermark, title, and outside the panel — is white per design reference. Section bg is white; only the panel block is dark.",
+  "pt": "1.784777vw",
+  "pb": "0.000000vw",
+  "heightChain": [
+    "pt",
+    "c18_title",
+    "c18_panel",
+    "c18_marquee",
+    "pb"
+  ],
+  "roundNumberOverride": [
+    "100.000000% is exact full parent width where the PSD element spans the entire parent (c18_marquee 1922 wraps full canvas, c18_list_inner fills c18_list, etc.)."
+  ],
+  "shopBoardConfig": {
+    "boTable": "main_shop",
+    "categoryColumn": "ca_name",
+    "newCategoryValue": "new",
+    "fields": {
+      "subject": "wr_subject (매장명)",
+      "tel": "wr_2",
+      "address": "wr_4",
+      "naverMapUrl": "wr_5",
+      "lat": "wr_7",
+      "lng": "wr_8"
+    },
+    "filePath": "G5_DATA_URL/file/main_shop/ (board_file bf_no=0)",
+    "split": {
+      "list": "ca_name <> 'new' OR ca_name = '' — 좌측 리스트 + 지도 마커",
+      "marquee": "ca_name = 'new' — 하단 마르퀴 무한 슬라이드"
+    }
+  },
+  "ignoredShapes": [
+    { "name": "사각형 579 복사", "reason": "Panel dark wrap rect (1565x654 #000) — implemented as c18_panel container background:#000." },
+    { "name": "타원 7", "reason": "Map marker pin head (86x75 #231916) — implemented in JS via Kakao map CustomOverlay." },
+    { "name": "삼각형 2", "reason": "Map marker pin tail (19x22 #231916) — part of CustomOverlay marker." },
+    { "name": "선 3", "reason": "Store divider line #1 (329x4 #fff) inside c18_list — rendered as .c18_divider between .c18_store cards in PHP foreach (1px white line)." },
+    { "name": "선 3 복사", "reason": "Store divider line #2 — same .c18_divider rendered in foreach loop." },
+    { "name": "선 3 복사 2", "reason": "Store divider line #3 — same .c18_divider rendered in foreach loop." },
+    { "name": "사각형 580", "reason": "Active store left indent bar (8x234 #5d2b0d br:2.5) — rendered as .c18_active_bar inside c18_list, positioned absol on the right edge of list, JS toggles position when active store changes." }
+  ],
+  "ignoredAssets": [
+    { "name": "레이어 33", "reason": "Static map raster (1627x702) — replaced by live Kakao map JS via /js/map.js." },
+    { "name": "벡터 스마트 오브젝트", "reason": "Map marker logo (42x45) — baked into c18_marker image (con18_04.png 82x82) used as Kakao CustomOverlay." }
+  ],
+  "ignoredTexts": [
+    { "name": "00점 / 000도 00시 00구 / 000-000-0000 (반복 4세트)", "reason": "Placeholder rows — replaced by main_shop board <?php foreach ?> rendering store rows." },
+    { "name": "+ (4개)", "reason": "Detail expand button label — implemented as static '+' text in c18_plus inside foreach loop." }
+  ],
+  "doNot": [
+    "Do not code before user approves ASCII after plan-checker passes.",
+    "Do not put height/aspect-ratio on section.con18; height = pt + title + panel + marquee + pb.",
+    "Do not hardcode 4 store cards in HTML; render via foreach from main_shop board.",
+    "Do not flatten c18_search into section-level rltv; it is an absol child of c18_panel with negative top so it overlaps panel top.",
+    "Do not include ca_name='new' rows in the left list; those rows feed only the bottom marquee.",
+    "Do not duplicate marquee text by hand; render TWO copies of the new-store strip via JS clone for seamless infinite scroll.",
+    "Do not break panel into rltv heightChain children for list/map; both are absol overlays inside the panel which owns 654 via aspect-ratio heightSource.",
+    "Do not use object-fit on map marker; CustomOverlay positions HTML element directly.",
+    "Do not flatten search input + button into separate siblings; they are co-positioned inside .c18_search wrapper as a single bar."
+  ],
+  "elements": [
+    {
+      "name": "c18_watermark",
+      "type": "text",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "0.000000vw",
+      "left": "-1.364829%",
+      "width": "27.559055%",
+      "aspectRatio": "525/175",
+      "heightSource": "PSD 善美樂 watermark text 525x175 baked",
+      "heightSourceReason": "Decorative oversized watermark; aspect frozen on visible bbox to keep deco overlay independent of section heightChain.",
+      "effects": null,
+      "borderRadius": null,
+      "content": "善美樂",
+      "segments": [
+        {
+          "text": "善美樂",
+          "fontWeight": 400,
+          "color": "#231916",
+          "fontSize": "9.700787vw (184.8px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.167,
+          "fontFamily": "HanWangZonYi"
+        }
+      ],
+      "role": "absolute decorative watermark behind title — not in heightChain",
+      "psdY": 20405
+    },
+    {
+      "name": "c18_title",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0.000000vw",
+      "marginLeft": "0.000000%",
+      "alignSelf": "center",
+      "width": "11.758530%",
+      "whiteSpace": "nowrap",
+      "effects": null,
+      "borderRadius": null,
+      "content": "매장 안내",
+      "segments": [
+        {
+          "text": "매장",
+          "fontWeight": 600,
+          "color": "#5d2b0d",
+          "fontSize": "3.149606vw (60px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.083,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        },
+        {
+          "text": " 안내",
+          "fontWeight": 600,
+          "color": "#070707",
+          "fontSize": "3.149606vw (60px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.083,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        }
+      ],
+      "psdY": 20439
+    },
+    {
+      "name": "c18_panel",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "3.517060vw",
+      "marginLeft": "0.000000%",
+      "alignSelf": "center",
+      "width": "82.152231%",
+      "aspectRatio": "1565/654",
+      "heightSource": "PSD panel rect 1565x654 (사각형 579 복사 dark wrap)",
+      "heightSourceReason": "Panel is the visible figure containing search bar (overlay), left list, and right kakao map; panel height 654 is fixed by PSD design and the inner kakao map iframe needs a stable height anchor.",
+      "background": "#000000",
+      "display": "block",
+      "effects": null,
+      "borderRadius": null,
+      "allowSingleSceneOverlayReason": "Panel acts as a fixed-aspect figure containing search overlay (top -35), white list (left 25.81%), and live kakao map iframe (right 74.19%). All three children are absol overlays inside the panel because (1) the panel's visible height is the source map iframe height, not a content stack, and (2) the search bar overlaps the panel top edge per PSD. Splitting list/map into rltv heightChain would require either flat siblings (loses panel boundary) or duplicated wrappers (extra DOM with no semantic meaning).",
+      "allowLayered": true,
+      "allowSiblingOverlay": true,
+      "siblingOverlayReason": "Inside c18_panel three children intentionally co-exist as absol siblings: c18_search overlays top edge, c18_list fills left 25.81%, c18_map fills right 74.19%. They do not occupy the same space (search is on the top overlap row only; list and map split horizontally side-by-side at top:0).",
+      "psdY": 20564,
+      "children": [
+        {
+          "name": "c18_search",
+          "type": "group",
+          "position": "absol",
+          "parent": "c18_panel",
+          "parentWidth": 1565,
+          "top": "-1.837270vw",
+          "left": "24.345048%",
+          "width": "51.373802%",
+          "aspectRatio": "877/74",
+          "heightSource": "PSD search bar (사각형 3 복사 804x74) + 검색버튼(73x73) combined width 877",
+          "heightSourceReason": "Search bar visually combines white input rect (804x74) and dark search button (73x73) as one row with fixed height; absol overlay at -35px so it sits above panel top edge per PSD.",
+          "background": "#ffffff",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 20529,
+          "role": "input + 검색버튼 combined; .c18_search_btn (right dark square 73x73 #231916) hosts con18_02.png search icon (28x28)"
+        },
+        {
+          "name": "c18_list",
+          "type": "group",
+          "position": "absol",
+          "parent": "c18_panel",
+          "parentWidth": 1565,
+          "top": "0.000000vw",
+          "left": "0.000000%",
+          "width": "25.814696%",
+          "aspectRatio": "404/654",
+          "heightSource": "PSD left white list rect (사각형 579 404x654)",
+          "heightSourceReason": "Left store list is the white inner panel; height equals parent panel (654) and content scrolls inside it.",
+          "background": "#ffffff",
+          "overflow": "hidden",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 20564,
+          "role": "left white list scrollable container; stores rendered via PHP foreach. Active store gets a left indent marker (사각형 580 5d2b0d 8x234)."
+        },
+        {
+          "name": "c18_map",
+          "type": "group",
+          "position": "absol",
+          "parent": "c18_panel",
+          "parentWidth": 1565,
+          "top": "0.000000vw",
+          "left": "25.814696%",
+          "width": "74.185304%",
+          "aspectRatio": "1161/654",
+          "heightSource": "Kakao map container fills panel right area (1161x654)",
+          "heightSourceReason": "Live kakao.maps.Map iframe needs a sized container; right area = panel width − list width.",
+          "background": "#000000",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 20564,
+          "role": "kakao map div (id=c18Map). Markers use main_shop wr_7/wr_8 lat/lng via CustomOverlay; selecting a list card pans the map."
+        }
+      ]
+    },
+    {
+      "name": "c18_marquee",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "4.671916vw",
+      "marginLeft": "-0.052493%",
+      "alignSelf": "flex-start",
+      "width": "100.892388%",
+      "aspectRatio": "1922/83",
+      "heightSource": "PSD marquee strip (사각형 6 1922x83 fill:#85613e)",
+      "heightSourceReason": "Full-width brown strip with constant 83px height holds infinite-scroll text; aspect freezes strip height while text moves horizontally inside.",
+      "background": "#85613e",
+      "overflow": "hidden",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 21307,
+      "role": "infinite horizontal marquee — JS renders TWO consecutive copies of the new-store strip and translates -50% in a CSS keyframe loop. Source: main_shop rows where ca_name='new'. Text format: '미락육회막국수 {wr_subject} GRAND OPEN    ·    '.",
+      "marqueeFontSize": "1.154856vw (22px)",
+      "marqueeFontFamily": "Eulyoo1945-SemiBold",
+      "marqueeColor": "#ffffff"
+    }
+  ],
+  "ascii": "┌── section.con18 (rltv, bg:#000) ─────────────────────────────────────────────┐\n│  ◇ c18_watermark (absol \"善美樂\" 좌상단, w:27.56%, AR:525/175)               │\n│                                                                                │\n│  pt: 1.784777vw (=34px)                                                       │\n│                                                                                │\n│  ▣ c18_title (rltv, alignSelf:center, w:11.76%, mt:0)                         │\n│       \"매장 안내\" — Eulyoo1945-SB 60px / #fff                                  │\n│                                                                                │\n│  ▣ c18_panel (rltv group, alignSelf:center, mt:3.517vw, w:82.15%, AR:1565/654)│\n│      [bg:#000, panel height 654 baked]                                        │\n│      ├ c18_search (absol, top:-1.837vw=−35px, left:24.35%, w:51.37%, AR:877/74)│\n│      │   [overflows panel top by 35px so search sits above panel edge]        │\n│      │   input.c18_input (placeholder \"매장명을 검색해주세요\")                 │\n│      │   .c18_search_btn (73x73 dark #231916 + con18_02 28x28 white icon)     │\n│      │                                                                         │\n│      ├ c18_list (absol, top:0, left:0, w:25.81%, AR:404/654, bg:#fff, ov:HIDDEN)│\n│      │   <?php foreach $c18_stores as $row ?>                                 │\n│      │     .c18_store {data-name/-tel/-addr/-lat/-lng/-naver/-img}            │\n│      │       .c18_store_info > .c18_name + .c18_addr + .c18_tel               │\n│      │       .c18_plus (38x38 dark circle + '+')                              │\n│      │     .c18_divider (white line)                                          │\n│      │   .c18_active_bar (absol, w:8/404=1.98%, h:234, top:55, left:96.78%, bg:#5d2b0d, br) │\n│      │                                                                         │\n│      └ c18_map (absol, top:0, left:25.81%, w:74.19%, AR:1161/654, kakao iframe) │\n│           id=c18Map → kakao.maps.Map + CustomOverlay markers (con18_04.png 82×82)│\n│                                                                                │\n│  ▣ c18_marquee (rltv, alignSelf:flex-start, mt:4.672vw, w:100.89%, AR:1922/83)│\n│      [bg:#85613e, ov:HIDDEN]                                                  │\n│      .c18_marquee_track (flex)                                                │\n│        <span> 미락육회막국수 OO점 GRAND OPEN · OO점 GRAND OPEN · …</span>     │\n│        <span>(동일 복사본)</span>  ← seamless infinite scroll                  │\n│      Source: main_shop where ca_name='new', 22px Eulyoo SB #fff               │\n│                                                                                │\n│  pb: 0vw                                                                      │\n└────────────────────────────────────────────────────────────────────────────────┘\n\n[heightChain] pt(34) + title(58) + mt(67) + panel(654) + mt(89) + marquee(83) + pb(0) = 985px ✅\n[overflow]    .c18_panel = visible (so c18_search overflows top), .c18_list = hidden, .c18_marquee = hidden\n[data]        ca_name<>'new' → list+map, ca_name='new' → marquee only\n[popup]       click .c18_store / map marker → open .c18_popup_overlay (jailkal c16 popup pattern)"
+}

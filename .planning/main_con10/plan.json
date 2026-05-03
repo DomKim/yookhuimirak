@@ -1,0 +1,320 @@
+{
+  "generatedBy": "spec-to-plan v3 + AI structure correction (con10 review slider + marquee)",
+  "strictStructure": true,
+  "section": "con10",
+  "sectionClass": "con10",
+  "page": "main",
+  "specFile": ".planning/mirak/con10/spec.json",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 10433,
+    "bottom": 11399,
+    "height": 966
+  },
+  "sectionBottomReason": "Section bottom = PSD '사각형 847' marquee strip bottom (Y:11399); '타원 4' (Y:11085) is the white ellipse stage that overflows into the section but not the section terminator. The marquee strip is the visible footer of con10.",
+  "bg": "#ffffff",
+  "prevSectionBottom": 10433,
+  "firstRltvY": 10610,
+  "pt": "9.291339vw",
+  "pb": "0.000000vw",
+  "heightChain": [
+    "pt",
+    "c10_kicker",
+    "c10_title",
+    "c10_desc",
+    "c10_reviews",
+    "c10_marquee",
+    "pb"
+  ],
+  "roundNumberOverride": ["100.000000%"],
+  "availableImages": [
+    {"file": "con10_bg.jpg", "width": 1920, "height": 255, "sourceType": "소스"},
+    {"file": "con10_01.png", "width": 521, "height": 556, "sourceType": "완성형"},
+    {"file": "con10_02.png", "width": 512, "height": 362, "sourceType": "완성형"},
+    {"file": "con10_03_01.jpg", "width": 280, "height": 380, "sourceType": "완성형"},
+    {"file": "con10_03_02.jpg", "width": 280, "height": 380, "sourceType": "완성형"},
+    {"file": "con10_03_03.jpg", "width": 280, "height": 380, "sourceType": "완성형"},
+    {"file": "con10_03_04.jpg", "width": 280, "height": 380, "sourceType": "완성형"},
+    {"file": "con10_03_05.jpg", "width": 280, "height": 380, "sourceType": "완성형"},
+    {"file": "con10_03_06.jpg", "width": 280, "height": 380, "sourceType": "완성형"},
+    {"file": "con10_03_07.jpg", "width": 280, "height": 380, "sourceType": "완성형"},
+    {"file": "con10_03_08.jpg", "width": 280, "height": 380, "sourceType": "완성형"},
+    {"file": "con10_03_09.jpg", "width": 280, "height": 380, "sourceType": "완성형"},
+    {"file": "con10_03_10.jpg", "width": 280, "height": 380, "sourceType": "완성형"},
+    {"file": "con10_04.png", "width": 2248, "height": 23, "sourceType": "완성형"}
+  ],
+  "ignoredAssets": [
+    {"name": "con10_04", "file": "con10_04.png", "reason": "Pre-rendered marquee text image — replaced with live HTML/CSS marquee animation for responsive scaling and infinite loop control."},
+    {"name": "KakaoTalk_20260127_130318620_01", "file": "con10_03_01.jpg", "reason": "Review card photo — emitted via PHP loop inside .swiper-wrapper as one of the live review thumbnails (not bound to a fixed PSD coordinate; matched by index in the dummy/board data set)."},
+    {"name": "KakaoTalk_20260127_130318620_02", "file": "con10_03_02.jpg", "reason": "Review card photo — same loop reason."},
+    {"name": "KakaoTalk_20260127_130318620_03", "file": "con10_03_03.jpg", "reason": "Review card photo — same loop reason."},
+    {"name": "KakaoTalk_20260127_130318620_04", "file": "con10_03_04.jpg", "reason": "Review card photo — same loop reason."},
+    {"name": "KakaoTalk_20260127_130318620_05", "file": "con10_03_05.jpg", "reason": "Review card photo — same loop reason. PSD spec marked TODO; reused next available export con10_03_05."},
+    {"name": "KakaoTalk_20260305_130557127", "file": "con10_03_06.jpg", "reason": "Review card photo — same loop reason."},
+    {"name": "KakaoTalk_20260305_130557127_01", "file": "con10_03_07.jpg", "reason": "Review card photo — same loop reason."},
+    {"name": "(reserve)", "file": "con10_03_08.jpg", "reason": "Reserve review thumbnail — used as 8th slide in PHP loop when board has more than 7 entries (PSD only laid 7 cards; export has 10 photos for content team to swap)."},
+    {"name": "(reserve)", "file": "con10_03_09.jpg", "reason": "Reserve review thumbnail — same as above."},
+    {"name": "(reserve)", "file": "con10_03_10.jpg", "reason": "Reserve review thumbnail — same as above."}
+  ],
+  "ignoredShapes": [
+    {"name": "사각형 844", "reason": "Top brown band — represented by con10_bg.jpg image (the asset bakes the brown band + white arch into one PNG/JPG)."},
+    {"name": "타원 4", "reason": "Large white ellipse stage — visible top edge is baked into con10_bg.jpg arch; remaining white area is the section background-color #ffffff."},
+    {"name": "사각형 843", "reason": "Card 1 white background — implemented as .c10_review_card wrapper background."},
+    {"name": "사각형 843 복사", "reason": "Card 2 background — same wrapper class (loop)."},
+    {"name": "사각형 843 복사 2", "reason": "Card 3 background — same wrapper class (loop)."},
+    {"name": "사각형 843 복사 3", "reason": "Card 4 background — same wrapper class (loop)."},
+    {"name": "사각형 843 복사 4", "reason": "Card 5 background — same wrapper class (loop)."},
+    {"name": "사각형 843 복사 5", "reason": "Card 6 background — same wrapper class (loop)."},
+    {"name": "사각형 843 복사 6", "reason": "Card 7 background — same wrapper class (loop)."},
+    {"name": "사각형 847", "reason": "Marquee strip background — implemented as .c10_marquee background-color #231916 + aspect-ratio panel."}
+  ],
+  "ignoredTexts": [
+    {"name": "먹어본 사람의 60%가 다시 찾는 ㅡ 미락육회막국수 복사", "reason": "PSD repeated marquee text (duplicate 3) — actual marquee uses CSS @keyframes marqueeX (translateX 0 → -100%) on a track with the 2 unique sentences duplicated as 2 sets, achieving seamless infinite loop. Visible PSD repeats are designer's preview only."},
+    {"name": "막국수도, 육회도 한 그릇에 먹는 ㅡ 미락육회막국수 복사", "reason": "PSD repeated marquee text (duplicate 4) — same as above."}
+  ],
+  "ascii": "section.con10 (rltv, bg:#ffffff, Y:10433~11399 height 966px=50.7vw)\n  c10_deco (absol top:0 w:100%) [allowSiblingOverlay]\n    c10_bg (absol con10_bg.jpg 1920x255 panel) - 갈색띠+흰곡선\n    c10_food2 (absol con10_02.png 512x362 우측 육회 deco) top:vw(2.26) left:73.91% w:26.88%\n    c10_food1 (absol con10_01.png 521x556 좌측 면 deco) top:vw(5.77) left:-2.68% w:27.35%\n  pt: vw(9.291339)\n  c10_kicker (rltv center) '한 그릇의 기억,' omnigothic 030/30px lh:2.167\n  c10_title (rltv center mt:vw(0.735)) '리뷰[#5d2b0d]로 남습니다[#070707]' Eulyoo SemiBold 60px\n  c10_desc (rltv center mt:vw(1.732)) Pretendard L/B 22px lh:1.364\n  c10_reviews (rltv wrapper mt:vw(0.945) w:100%)\n    c10_review_card (figure panel w:14.96% aspect 285/384) — Swiper-slide loop dummy 7 cards\n  c10_marquee (rltv panel mt:vw(6.089) w:100% aspect 1905/83 bg:#231916) — track animation marqueeX 무한 롤링\n  pb: 0",
+  "doNot": [
+    "Do not put height/aspect-ratio on stage/scene/wrap/wrapper/inner/holder/box/container/field wrappers; only c10_bg (image panel), c10_review_card (figure panel), and c10_marquee (panel band) carry aspect-ratio with heightSource note.",
+    "Do not implement the yellow '리뷰 슬라이드' callout — it is a designer comment, not UI.",
+    "Do not use object-fit on review card images; preserve naturalWidth aspect by aspect-ratio panel.",
+    "Do not center c10_kicker/title/desc with margin-left; use alignSelf:center on each rltv text element.",
+    "Do not break the marquee into separate static lines; the visible PSD repeats (4 texts) are pure CSS animation duplication driven by a single track of 2 unique sentences.",
+    "Do not use raw px or raw vw — only px()/vw() helpers (border/shadow exception only).",
+    "Do not hide or auto-wrap leaf text — keep white-space:nowrap and PSD line breaks (<br>).",
+    "Do not collapse food1/food2 deco images into the heightChain — they are absol decorative photos that overflow the white stage; only kicker/title/desc/reviews/marquee form the rltv heightChain."
+  ],
+  "elements": [
+    {
+      "name": "c10_deco",
+      "type": "wrapper",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "0.000000vw",
+      "left": "0.000000%",
+      "width": "100.000000%",
+      "allowLayered": true,
+      "allowSiblingOverlay": true,
+      "siblingOverlayReason": "Decorative deco layer holds the bg arch + two food photos; bg image and food images intentionally overlap (food sit on top of arch).",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 10433,
+      "children": [
+        {
+          "name": "c10_bg",
+          "type": "image",
+          "position": "absol",
+          "parent": "c10_deco",
+          "parentWidth": 1905,
+          "top": "0.000000vw",
+          "left": "-0.393701%",
+          "width": "100.787402%",
+          "aspectRatio": "1920/255",
+          "heightSource": "con10_bg.jpg 1920x255 baked",
+          "heightSourceReason": "Top brown band + white arch top edge are baked into a single image asset; aspect-ratio defines the figure height for the panel image.",
+          "src": "/images/con10_bg.jpg",
+          "naturalWidth": 1920,
+          "naturalHeight": 255,
+          "sourceType": "소스",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 10433
+        },
+        {
+          "name": "c10_food2",
+          "type": "image",
+          "position": "absol",
+          "parent": "c10_deco",
+          "parentWidth": 1905,
+          "top": "2.257218vw",
+          "left": "73.910761%",
+          "width": "26.876640%",
+          "src": "/images/con10_02.png",
+          "naturalWidth": 512,
+          "naturalHeight": 362,
+          "sourceType": "완성형",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 10476
+        },
+        {
+          "name": "c10_food1",
+          "type": "image",
+          "position": "absol",
+          "parent": "c10_deco",
+          "parentWidth": 1905,
+          "top": "5.774278vw",
+          "left": "-2.677165%",
+          "width": "27.349081%",
+          "src": "/images/con10_01.png",
+          "naturalWidth": 521,
+          "naturalHeight": 556,
+          "sourceType": "완성형",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 10543
+        }
+      ]
+    },
+    {
+      "name": "c10_kicker",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "9.291339vw",
+      "alignSelf": "center",
+      "width": "9.816273%",
+      "whiteSpace": "nowrap",
+      "textAlign": "center",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 10610,
+      "segments": [
+        {
+          "text": "한 그릇의 기억,",
+          "fontWeight": 400,
+          "color": "#070707",
+          "fontSize": "1.574803vw (30px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 2.167,
+          "fontFamily": "TTOmniGothicM"
+        }
+      ]
+    },
+    {
+      "name": "c10_title",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0.734908vw",
+      "alignSelf": "center",
+      "width": "20.524934%",
+      "whiteSpace": "nowrap",
+      "textAlign": "center",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 10656,
+      "segments": [
+        {
+          "text": "리뷰",
+          "fontWeight": 600,
+          "color": "#5d2b0d",
+          "fontSize": "3.149606vw (60px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.083,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        },
+        {
+          "text": "로 남습니다",
+          "fontWeight": 600,
+          "color": "#070707",
+          "fontSize": "3.149606vw (60px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.083,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        }
+      ]
+    },
+    {
+      "name": "c10_desc",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "1.732283vw",
+      "alignSelf": "center",
+      "width": "22.729659%",
+      "whiteSpace": "nowrap",
+      "textAlign": "center",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 10748,
+      "segments": [
+        {
+          "text": "광고가 아닌 ",
+          "fontWeight": 300,
+          "color": "#000000",
+          "fontSize": "1.154856vw (22px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.364,
+          "fontFamily": "Pretendard-Light"
+        },
+        {
+          "text": "실제 방문 고객들의 후기",
+          "fontWeight": 700,
+          "color": "#000000",
+          "fontSize": "1.154856vw (22px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.364,
+          "fontFamily": "Pretendard-Bold"
+        },
+        {
+          "text": ",\n직접 경험한 이야기들이 브랜드의 신뢰를 만들어갑니다",
+          "fontWeight": 300,
+          "color": "#000000",
+          "fontSize": "1.154856vw (22px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.364,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    },
+    {
+      "name": "c10_reviews",
+      "type": "wrapper",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0.944882vw",
+      "alignSelf": "center",
+      "width": "100.000000%",
+      "display": "block",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 10852,
+      "children": [
+        {
+          "name": "c10_review_card",
+          "type": "figure",
+          "position": "rltv",
+          "parent": "c10_reviews",
+          "parentWidth": 1905,
+          "marginTop": "0.000000vw",
+          "alignSelf": "center",
+          "width": "14.960630%",
+          "aspectRatio": "285/384",
+          "heightSource": "PSD card rectangle 사각형 843 285x384",
+          "heightSourceReason": "Card visual box has a fixed PSD rectangle 285x384 (white card panel) and is treated as a figure panel; the aspect-ratio anchors all swiper slides to the same card height regardless of inner photo aspect.",
+          "background": "#ffffff",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 10852
+        }
+      ]
+    },
+    {
+      "name": "c10_marquee",
+      "type": "wrapper",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "6.089239vw",
+      "alignSelf": "center",
+      "width": "100.000000%",
+      "aspectRatio": "1905/83",
+      "heightSource": "PSD 사각형 847 1905x83 marquee strip",
+      "heightSourceReason": "Marquee strip is a fixed visual band (PSD 사각형 847 height 83px); aspect-ratio anchors the band height. Inner track is animated horizontally via CSS keyframe marqueeX (defined in style.css line 85).",
+      "allowSingleSceneOverlayReason": "Marquee inner track is absolutely placed and animated with translateX(-100%); only the visible viewport of the strip is the panel.",
+      "background": "#231916",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 11316
+    }
+  ],
+  "_componentNotes": {
+    "c10_review_card": "Swiper slide. Inside: card photo (top, naturalWidth 280x380, aspect-ratio 280/380) + placeholder review text (bottom). Card body text is not in PSD — implemented as PHP-driven dummy data (game pattern for future board integration like CON02 main_sales).",
+    "c10_marquee": "Inner track holds 2 unique sentences (PSD 텍스트 3, 4) duplicated as 2 sets so CSS @keyframes marqueeX (translateX 0 → -100%) yields seamless infinite loop. Sentences: '먹어본 사람의 60%가 다시 찾는 ㅡ 미락육회막국수' / '막국수도, 육회도 한 그릇에 먹는 ㅡ 미락육회막국수'. Bold word '미락육회막국수' uses TTOmniGothicEB → omnigothic 050 (kit max)."
+  }
+}

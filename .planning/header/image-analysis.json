@@ -1,0 +1,101 @@
+{
+  "timestamp": "2026-05-03T04:16:11.833Z",
+  "images": [
+    {
+      "file": "h_call.png",
+      "width": 173,
+      "height": 22,
+      "hasAlpha": true,
+      "border": {
+        "detected": true,
+        "color": "#ffffff",
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": true,
+        "padding": 6
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 3
+      },
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "h_logo.png",
+      "width": 180,
+      "height": 26,
+      "hasAlpha": true,
+      "border": {
+        "detected": true,
+        "color": "#ffffff",
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 7
+      },
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "h_logo_b.png",
+      "width": 78,
+      "height": 37,
+      "hasAlpha": true,
+      "border": {
+        "detected": true,
+        "color": "#2c2d30",
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": true,
+        "padding": 1
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 5
+      },
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "h_logo_w.png",
+      "width": 78,
+      "height": 37,
+      "hasAlpha": true,
+      "border": {
+        "detected": true,
+        "color": "#ffffff",
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": true,
+        "padding": 1
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 5
+      },
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    }
+  ]
+}

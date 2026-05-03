@@ -1,0 +1,326 @@
+{
+  "section": "con15",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 17180,
+    "bottom": 18511
+  },
+  "background": {
+    "type": "color",
+    "fill": "#000000",
+    "src": null
+  },
+  "groups": [
+    {
+      "name": "con15_01",
+      "parentGroup": "con15",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 857",
+          "type": "layer",
+          "x": 1095,
+          "y": 17494,
+          "w": 292,
+          "h": 397
+        },
+        {
+          "name": "front-view-brown-buckwheat-inside-plate-with-spoons-dark-background",
+          "type": "layer",
+          "x": 1074,
+          "y": 17455,
+          "w": 324,
+          "h": 487
+        }
+      ],
+      "bbox": {
+        "x": 1074,
+        "y": 17455,
+        "w": 324,
+        "h": 487
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con15_02",
+      "parentGroup": "con15",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 857 복사",
+          "type": "layer",
+          "x": 1260,
+          "y": 17938,
+          "w": 335,
+          "h": 397
+        },
+        {
+          "name": "23123938",
+          "type": "layer",
+          "x": 1130,
+          "y": 17747,
+          "w": 489,
+          "h": 733
+        }
+      ],
+      "bbox": {
+        "x": 1130,
+        "y": 17747,
+        "w": 489,
+        "h": 733
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    }
+  ],
+  "texts": [
+    {
+      "name": "안녕하세요. 미락육회막국수 대표 윤정은입니다.  미락육회막국수는 작은 정육식당에서 시작되어 고기를 다루는 경험과 ",
+      "content": "안녕하세요. 미락육회막국수 대표 윤정은입니다.\n\n미락육회막국수는 작은 정육식당에서 시작되어\n고기를 다루는 경험과 노하우를 바탕으로 자연스럽게\n육회와 막국수를 함께 선보이게 되었습니다.\n화려한 변화보다는 기본에 충실한 한 그릇을 만들고 싶다는 마음으로\n재료 하나, 과정 하나를 소중히 해왔습니다.\n\n그렇게 쌓인 시간과 경험이 지금의 미락육회막국수를 만들었습니다.\n\n가맹사업 또한 철저하게 준비된 상태에서 시작하고 있습니다.\n준비만 해주시면  나머지는 저희가 함께 하겠습니다.\n새로운 시작을 고민하고 계시다면 진심으로 함께하실 분들을 기다리고 있습니다.",
+      "lineBreaks": 12,
+      "x": 424,
+      "y": 17855,
+      "w": 619,
+      "h": 404,
+      "segments": [
+        {
+          "text": "안녕하세요. 미락육회막국수 대표 윤정은입니다.\n\n미락육회막국수는 작은 정육식당에서 시작되어\n고기를 다루는 경험과 노하우를 바탕으로 자연스럽게\n육회와 막국수를 함께 선보이게 되었습니다.\n화려한 변화보다는 기본에 충실한 한 그릇을 만들고 싶다는 마음으로\n재료 하나, 과정 하나를 소중히 해왔습니다.\n\n그렇게 쌓인 시간과 경험이 지금의 미락육회막국수를 만들었습니다.\n\n가맹사업 또한 철저하게 준비된 상태에서 시작하고 있습니다.\n준비만 해주시면  나머지는 저희가 함께 하겠습니다.\n",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#ffffff",
+          "lineHeight": 1.455,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.06em"
+        },
+        {
+          "text": "새로운 시작을 고민하고 계시다면 진심으로 함께하실 분들을 기다리고 있습니다.",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#ffffff",
+          "lineHeight": 1.455,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.06em"
+        }
+      ]
+    },
+    {
+      "name": "con15_03",
+      "content": "한 그릇에서",
+      "lineBreaks": 0,
+      "x": 220,
+      "y": 17648,
+      "w": 277,
+      "h": 58,
+      "segments": [
+        {
+          "text": "한 그릇",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#f8edd7",
+          "lineHeight": 1.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "에서",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 1.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ],
+      "possibleFile": "con15_03.png"
+    },
+    {
+      "name": "con15_04",
+      "content": "시작된 이야기",
+      "lineBreaks": 0,
+      "x": 300,
+      "y": 17734,
+      "w": 333,
+      "h": 58,
+      "segments": [
+        {
+          "text": "시작된 이야기",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 1.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ],
+      "possibleFile": "con15_04.png"
+    },
+    {
+      "name": "con15_05",
+      "content": "그리고 함께할 시작",
+      "lineBreaks": 0,
+      "x": 1669,
+      "y": 17716,
+      "w": 59,
+      "h": 534,
+      "segments": [
+        {
+          "text": "그리고 ",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#ffffff",
+          "lineHeight": 1.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0.1em"
+        },
+        {
+          "text": "함께할 시작",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#f8edd7",
+          "lineHeight": 1.25,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "0.1em"
+        }
+      ],
+      "possibleFile": "con15_05.png"
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 856",
+      "x": -1,
+      "y": 17444,
+      "w": 1922,
+      "h": 963,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 6",
+      "x": 661,
+      "y": 17760,
+      "w": 440,
+      "h": 4,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 857",
+      "x": 1095,
+      "y": 17494,
+      "w": 292,
+      "h": 397,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 857 복사",
+      "x": 1260,
+      "y": 17938,
+      "w": 335,
+      "h": 397,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "모양 21",
+      "x": 1696,
+      "y": 17446,
+      "w": 4,
+      "h": 241,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "close-up-baker-s-hand-kneading-dough-bread",
+      "x": -38,
+      "y": 17180,
+      "w": 1996,
+      "h": 1331,
+      "clippingRect": {
+        "x": -1,
+        "y": 17444,
+        "w": 1922,
+        "h": 963,
+        "borderRadius": 0
+      },
+      "possibleFile": "con15_bg.jpg",
+      "effects": null
+    },
+    {
+      "name": "front-view-brown-buckwheat-inside-plate-with-spoons-dark-background",
+      "x": 1074,
+      "y": 17455,
+      "w": 324,
+      "h": 487,
+      "clippingRect": {
+        "x": 1095,
+        "y": 17494,
+        "w": 292,
+        "h": 397,
+        "borderRadius": 0
+      },
+      "possibleFile": "con15_01.png",
+      "effects": null
+    },
+    {
+      "name": "23123938",
+      "x": 1130,
+      "y": 17747,
+      "w": 489,
+      "h": 733,
+      "clippingRect": {
+        "x": 1260,
+        "y": 17938,
+        "w": 335,
+        "h": 397,
+        "borderRadius": 0
+      },
+      "possibleFile": "con15_02.png",
+      "effects": null
+    }
+  ],
+  "comments": [],
+  "bgRect": {
+    "y": 17180,
+    "h": 1331,
+    "bottom": 18511,
+    "name": "close-up-baker-s-hand-kneading-dough-bread"
+  }
+}

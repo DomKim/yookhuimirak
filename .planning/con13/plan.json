@@ -1,0 +1,984 @@
+{
+  "generatedBy": "spec-to-plan v3 (flat) + AI structure correction for con13 scroll stage",
+  "strictStructure": true,
+  "section": "con13",
+  "sectionClass": "con13",
+  "page": "main",
+  "specFile": ".planning/con13/spec_main_con13.json",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 14266,
+    "bottom": 16425,
+    "height": 2159
+  },
+  "bg": "#f8f4e6",
+  "bgRect": {
+    "top": 14266,
+    "bottom": 15594
+  },
+  "effectiveEnd": 16425,
+  "prevSectionBottom": 14371,
+  "firstRltvY": 14588,
+  "sectionBottomReason": "The full-width same-color rect ends at 15401, but con13 intentionally continues to 16425 to provide the right-card scroll travel after the left-height stage. The extra distance is pb/right track travel, not a decorative overhang.",
+  "ptSuggestions": {
+    "bgRect": "6.771654vw",
+    "bgRectTop": 14459,
+    "shape": "11.496063vw",
+    "prevBottom": 14371
+  },
+  "pbSuggestions": {
+    "fromLastContent": "0.000000vw",
+    "fromLastContentToEffectiveEnd": "0.000000vw",
+    "lastContent": {
+      "name": "사각형 849 복사 4",
+      "bottom": 16425
+    },
+    "secBottom": 16425,
+    "effectiveEnd": 16425
+  },
+  "pt": "11.391076vw",
+  "pb": "43.622047vw",
+  "pbReason": "Scroll travel distance for the right card stack while c13_scroll_stage is sticky; equals 831px.",
+  "heightChain": [
+    "pt",
+    "c13_scroll_stage",
+    "pb"
+  ],
+  "roundNumberOverride": [
+    "100.000000% is exact full parent width where the PSD element spans the wrapper/card.",
+    "0.000000vw and 0.000000% are exact flow/edge origins, not guessed spacing.",
+    "0.000000vw pb is not used; pb is explicit right-scroll travel."
+  ],
+  "layoutMetrics": {
+    "stageTopPx": 14588,
+    "stageHeightPx": 1006,
+    "cardHeightPx": 603,
+    "cardGapPx": 14,
+    "rightStackHeightPx": 1837,
+    "rightScrollTravelPx": 831,
+    "leftFoodCropHeightPx": 608,
+    "scrollTravelFormula": "rightStackHeightPx - stageHeightPx = sectionBottom - stageBottom"
+  },
+  "scrollBehavior": {
+    "mode": "sticky-left-basis-right-transform",
+    "basis": "c13_scroll_stage natural height from c13_left_stack (1006px)",
+    "rightTrack": "c13_card_track",
+    "rightViewport": "c13_right_viewport",
+    "travel": "43.622047vw",
+    "note": "During the pb range the stage stays sticky and only the right card track translates upward. After the track reaches -831px, the sticky range ends and both columns scroll upward together."
+  },
+  "availableImages": [
+    {
+      "file": "con13_01_1.png",
+      "width": 203,
+      "height": 55,
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con13_01_2.png",
+      "width": 541,
+      "height": 210,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con13_02_1.png",
+      "width": 253,
+      "height": 55,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con13_02_2.png",
+      "width": 541,
+      "height": 210,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con13_03_1.png",
+      "width": 245,
+      "height": 55,
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con13_03_2.png",
+      "width": 541,
+      "height": 210,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con13_bg_2.png",
+      "width": 844,
+      "height": 619,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con13_bg.jpg",
+      "width": 1920,
+      "height": 940,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    }
+  ],
+  "requiredTextHints": [
+    {
+      "name": "본사가 함께합니다",
+      "content": "본사가 함께합니다",
+      "x": 241,
+      "y": 14750,
+      "w": 450,
+      "h": 59,
+      "fontSizePx": 60,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "더 중요한 것에 집중할 수 있도록",
+      "content": "더 중요한 것에 집중할 수 있도록",
+      "x": 241,
+      "y": 14704,
+      "w": 399,
+      "h": 29,
+      "fontSizePx": 30,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "창업 준비부터 오픈, 운영까지 각 단계에 맞는 체계적인 지원으로 안정적인 매장 운영을 돕습니다.",
+      "content": "창업 준비부터 오픈, 운영까지 각 단계에 맞는 체계적인 지원으로\n안정적인 매장 운영을 돕습니다.",
+      "x": 240,
+      "y": 14842,
+      "w": 503,
+      "h": 50,
+      "fontSizePx": 22,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "미락육회막국수는 매장 운영에 필요한 전 과정을 단계별로 교육합니다. 본점 교육과 오픈 매장 실습을 포함한 총 17",
+      "content": "미락육회막국수는 매장 운영에 필요한 전 과정을 단계별로 교육합니다.\n본점 교육과 오픈 매장 실습을 포함한 총 17일간의 체계적인 교육을 통해\n조리, 서비스, 매장 운영까지 실제 현장에서 바로 적용할 수 있도록 구성되어 있습니다.\n초보 창업자도 부담 없이 시작할 수 있도록 실무 중심의 교육을 진행합니다.",
+      "x": 1146,
+      "y": 15028,
+      "w": 547,
+      "h": 101,
+      "fontSizePx": 18,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "누구나 운영할 수 있도록 실전 중심으로 교육합니다",
+      "content": "누구나 운영할 수 있도록\n실전 중심으로 교육합니다",
+      "x": 1268,
+      "y": 14934,
+      "w": 302,
+      "h": 65,
+      "fontSizePx": 28,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "02. 운영 지원 시스템",
+      "content": "02. 운영 지원 시스템",
+      "x": 1324,
+      "y": 15224,
+      "w": 192,
+      "h": 21,
+      "fontSizePx": 22,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "매장 오픈 이후에도 전담 슈퍼바이저가 1:1로 배정되어 지속적인 운영 관리를 지원합니다. 매출 점검, 운영 개선,",
+      "content": "매장 오픈 이후에도 전담 슈퍼바이저가 1:1로 배정되어 지속적인 운영 관리를 지원합니다.\n매출 점검, 운영 개선, 서비스 관리 등 현장에서 필요한 부분을 함께 점검하며\n문제 발생 시 빠르게 대응할 수 있도록 돕습니다.\n혼자 운영하는 것이 아닌 본사와 함께 운영하는 시스템입니다.",
+      "x": 1136,
+      "y": 15645,
+      "w": 568,
+      "h": 101,
+      "fontSizePx": 18,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "혼자가 아닌 운영 밀착 지원 시스템",
+      "content": "혼자가 아닌 운영\n밀착 지원 시스템",
+      "x": 1321,
+      "y": 15551,
+      "w": 195,
+      "h": 65,
+      "fontSizePx": 28,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "상권 분석을 통해 매출 예측, 경쟁 매장 현황, 고객 특성 등 다양한 데이터를 기반으로 점포를 선정합니다. 단순한",
+      "content": "상권 분석을 통해 매출 예측, 경쟁 매장 현황, 고객 특성 등\n다양한 데이터를 기반으로 점포를 선정합니다. 단순한 위치 선정이 아닌\n실제 운영 가능성과 수익성을 고려한 전략적인 입지 분석을 진행하며,\n초기 창업 리스크를 줄이고 안정적인 매장 운영이 가능하도록 지원합니다.",
+      "x": 1184,
+      "y": 16262,
+      "w": 471,
+      "h": 101,
+      "fontSizePx": 18,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "시작부터 다르게 데이터 기반 입지 선정",
+      "content": "시작부터 다르게\n데이터 기반 입지 선정",
+      "x": 1292,
+      "y": 16168,
+      "w": 254,
+      "h": 65,
+      "fontSizePx": 28,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    }
+  ],
+  "ignoredShapes": [
+    {
+      "name": "사각형 848",
+      "reason": "Same fill as section background; implemented by section bg color and con13_bg.jpg pattern layer."
+    },
+    {
+      "name": "사각형 849",
+      "reason": "Implemented as c13_card1 CSS panel with #fff fill and 1px #bfa78a border."
+    },
+    {
+      "name": "사각형 849 복사 3",
+      "reason": "Implemented as c13_card2 CSS panel with #fff fill and 1px #bfa78a border."
+    },
+    {
+      "name": "사각형 849 복사 4",
+      "reason": "Implemented as c13_card3 CSS panel with #fff fill and 1px #bfa78a border."
+    },
+    {
+      "name": "사각형 10",
+      "reason": "Implemented by complete exported tab image con13_01_1.png."
+    },
+    {
+      "name": "사각형 10 복사 6",
+      "reason": "Implemented by complete/exported tab image con13_02_1.png."
+    },
+    {
+      "name": "사각형 10 복사 7",
+      "reason": "Implemented by complete exported tab image con13_03_1.png."
+    }
+  ],
+  "ignoredTexts": [
+    {
+      "name": "01. 교육 시스템",
+      "reason": "Tab label text is baked into the required exported tab image, which is used to avoid duplicate rendering."
+    },
+    {
+      "name": "02. 운영 지원 시스템",
+      "reason": "Tab label text is baked into the required exported tab image, which is used to avoid duplicate rendering."
+    },
+    {
+      "name": "03. 상권 분석 시스템",
+      "reason": "Tab label text is baked into the required exported tab image, which is used to avoid duplicate rendering."
+    }
+  ],
+  "doNot": [
+    "Do not implement yellow comments from the user screenshot; they are designer comments only and there are no con13 PSD comments to render.",
+    "Do not flatten the three cards as section-level siblings; keep them under c13_right_viewport > c13_card_track.",
+    "Do not let the large food image determine the section height; it is cropped inside c13_food_clip with overflow hidden.",
+    "Do not animate top/left for scroll; use transform translate3d on c13_card_track for smoothness."
+  ],
+  "ascii": "section.con13 (rltv bg:#f8f4e6 + /images/con13_bg.jpg pattern, overflow:hidden)\npt 11.391076vw (= 217px from prevBottom 14371 to stage 14588)\n  c13_scroll_stage rltv width 100% height source = left stack 1006px; sticky during right scroll\n    c13_left_stack rltv mt 6.089239vw ml -2.467192% width 44.304462% (food/copy group)\n      c13_left_copy rltv ml 34.004739% width 59.597156%\n        c13_kicker mt 0 nowrap\n        c13_headline mt 0.892388vw nowrap (Eulyoo, brown split on 함께)\n        c13_desc mt 1.732283vw br line, Pretendard bold/light split\n      c13_food_clip rltv mt 4.934383vw width 100% height 31.916010vw overflow:hidden\n        c13_food_img rltv mt 0 width 100% src=/images/con13_bg_2.png (844x619, bottom cropped 11px)\n    c13_right_viewport absol top 0 left 54.488189% width 40.104987% height 52.808399vw overflow:hidden\n      c13_card_track rltv transformY 0 → -43.622047vw during pb scroll\n        c13_card1 rltv mt 0 height 31.653543vw (tab/photo/title/body grouped)\n        c13_card2 rltv mt 0.734908vw height 31.653543vw\n        c13_card3 rltv mt 0.734908vw height 31.653543vw\npb 43.622047vw (= right stack 1837px - stage 1006px; sticky scroll travel)",
+  "elements": [
+    {
+      "name": "c13_bg_pattern",
+      "type": "image",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "4.619423vw",
+      "left": "-0.052493%",
+      "width": "100.787402%",
+      "src": "/images/con13_bg.jpg",
+      "background": "/images/con13_bg.jpg",
+      "naturalWidth": 1920,
+      "naturalHeight": 940,
+      "sourceType": "소스",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 14459,
+      "role": "decorative background, not heightChain",
+      "clippingRectBased": true
+    },
+    {
+      "name": "c13_scroll_stage",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0.000000vw",
+      "marginLeft": "0.000000%",
+      "alignSelf": "center",
+      "width": "100.000000%",
+      "display": "flex-column",
+      "alignItems": "flex-start",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 14588,
+      "heightSourceReason": "Natural height comes from c13_left_stack: 116px top offset + 890px left content/crop = 1006px.",
+      "children": [
+        {
+          "name": "c13_left_stack",
+          "type": "group",
+          "position": "rltv",
+          "parent": "c13_scroll_stage",
+          "parentWidth": 1905,
+          "marginTop": "6.089239vw",
+          "marginLeft": "-2.467192%",
+          "alignSelf": "flex-start",
+          "width": "44.304462%",
+          "display": "flex-column",
+          "alignItems": "flex-start",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 14704,
+          "children": [
+            {
+              "name": "c13_left_copy",
+              "type": "group",
+              "position": "rltv",
+              "parent": "c13_left_stack",
+              "parentWidth": 844,
+              "marginTop": "0.000000vw",
+              "marginLeft": "34.004739%",
+              "width": "59.597156%",
+              "display": "flex-column",
+              "alignItems": "flex-start",
+              "effects": null,
+              "borderRadius": null,
+              "psdY": 14704,
+              "children": [
+                {
+                  "name": "c13_kicker",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "c13_left_copy",
+                  "parentWidth": 503,
+                  "marginTop": "0.000000vw",
+                  "marginLeft": "0.198807%",
+                  "width": "79.324056%",
+                  "whiteSpace": "nowrap",
+                  "textAlign": "left",
+                  "effects": null,
+                  "borderRadius": null,
+                  "content": "더 중요한 것에 집중할 수 있도록",
+                  "segments": [
+                    {
+                      "text": "더 중요한 것에 집중할 수 있도록",
+                      "fontWeight": 400,
+                      "color": "#070707",
+                      "fontSize": "1.574803vw (30px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 2.167,
+                      "fontFamily": "TTOmniGothicM"
+                    }
+                  ],
+                  "psdY": 14704
+                },
+                {
+                  "name": "c13_headline",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "c13_left_copy",
+                  "parentWidth": 503,
+                  "marginTop": "0.892388vw",
+                  "marginLeft": "0.198807%",
+                  "width": "89.463221%",
+                  "whiteSpace": "nowrap",
+                  "textAlign": "left",
+                  "effects": null,
+                  "borderRadius": null,
+                  "content": "본사가 함께합니다",
+                  "segments": [
+                    {
+                      "text": "본사가 ",
+                      "fontWeight": 600,
+                      "color": "#070707",
+                      "fontSize": "3.149606vw (60px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 1.083,
+                      "fontFamily": "Eulyoo1945-SemiBold"
+                    },
+                    {
+                      "text": "함께",
+                      "fontWeight": 600,
+                      "color": "#5d2b0d",
+                      "fontSize": "3.149606vw (60px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 1.083,
+                      "fontFamily": "Eulyoo1945-SemiBold"
+                    },
+                    {
+                      "text": "합니다",
+                      "fontWeight": 600,
+                      "color": "#070707",
+                      "fontSize": "3.149606vw (60px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 1.083,
+                      "fontFamily": "Eulyoo1945-SemiBold"
+                    }
+                  ],
+                  "psdY": 14750
+                },
+                {
+                  "name": "c13_desc",
+                  "type": "text",
+                  "position": "rltv",
+                  "parent": "c13_left_copy",
+                  "parentWidth": 503,
+                  "marginTop": "1.732283vw",
+                  "marginLeft": "0.000000%",
+                  "width": "100.000000%",
+                  "whiteSpace": "pre-line-with-br",
+                  "textAlign": "left",
+                  "effects": null,
+                  "borderRadius": null,
+                  "content": "창업 준비부터 오픈, 운영까지 각 단계에 맞는 체계적인 지원으로\n안정적인 매장 운영을 돕습니다.",
+                  "segments": [
+                    {
+                      "text": "창업 준비부터 오픈, 운영까지 각 단계에 맞는 체계적인 지원",
+                      "fontWeight": 700,
+                      "color": "#000000",
+                      "fontSize": "1.154856vw (22px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 1.364,
+                      "fontFamily": "Pretendard-Bold"
+                    },
+                    {
+                      "text": "으로\n안정적인 매장 운영을 돕습니다.",
+                      "fontWeight": 300,
+                      "color": "#000000",
+                      "fontSize": "1.154856vw (22px)",
+                      "letterSpacing": "-0.05em",
+                      "lineHeight": 1.364,
+                      "fontFamily": "Pretendard-Light"
+                    }
+                  ],
+                  "psdY": 14842
+                }
+              ]
+            },
+            {
+              "name": "c13_food_clip",
+              "type": "group",
+              "position": "rltv",
+              "parent": "c13_left_stack",
+              "parentWidth": 844,
+              "marginTop": "4.934383vw",
+              "marginLeft": "0.000000%",
+              "width": "100.000000%",
+              "height": "31.916010vw",
+              "overflow": "hidden",
+              "effects": null,
+              "borderRadius": 0,
+              "psdY": 14986,
+              "heightSourceReason": "Visible crop from y14986 to section bg bottom y15594; con13_bg_2.png natural height 619px so 11px is clipped.",
+              "children": [
+                {
+                  "name": "c13_food_img",
+                  "type": "image",
+                  "position": "rltv",
+                  "parent": "c13_food_clip",
+                  "parentWidth": 844,
+                  "marginTop": "0.000000vw",
+                  "marginLeft": "0.000000%",
+                  "width": "100.000000%",
+                  "src": "/images/con13_bg_2.png",
+                  "naturalWidth": 844,
+                  "naturalHeight": 619,
+                  "sourceType": "완성형 가능성",
+                  "effects": null,
+                  "borderRadius": 0,
+                  "psdY": 14986
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "c13_right_viewport",
+          "type": "group",
+          "position": "absol",
+          "parent": "c13_scroll_stage",
+          "parentWidth": 1905,
+          "top": "0.000000vw",
+          "left": "54.488189%",
+          "width": "40.104987%",
+          "height": "52.808399vw",
+          "overflow": "hidden",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 14588,
+          "children": [
+            {
+              "name": "c13_card_track",
+              "type": "group",
+              "position": "rltv",
+              "parent": "c13_right_viewport",
+              "parentWidth": 764,
+              "marginTop": "0.000000vw",
+              "marginLeft": "0.000000%",
+              "width": "100.000000%",
+              "display": "flex-column",
+              "transformPlan": "translate3d(0, calc(var(--c13-scroll-progress) * -43.622047vw), 0)",
+              "effects": null,
+              "borderRadius": null,
+              "psdY": 14588,
+              "children": [
+                {
+                  "name": "c13_card1",
+                  "type": "group",
+                  "position": "rltv",
+                  "parent": "c13_card_track",
+                  "parentWidth": 764,
+                  "marginTop": "0.000000vw",
+                  "marginLeft": "0.000000%",
+                  "width": "100.000000%",
+                  "height": "31.653543vw",
+                  "display": "flex-column",
+                  "alignItems": "center",
+                  "background": "#ffffff",
+                  "border": "1px solid #bfa78a",
+                  "overflow": "hidden",
+                  "effects": null,
+                  "borderRadius": 0,
+                  "psdShape": "사각형 849",
+                  "heightSourceReason": "603px PSD card panel; content is grouped inside with rltv mt values and bottom whitespace preserved.",
+                  "children": [
+                    {
+                      "name": "c13_card1_tab",
+                      "type": "image",
+                      "position": "rltv",
+                      "parent": "c13_card1",
+                      "parentWidth": 764,
+                      "marginTop": "0.000000vw",
+                      "marginLeft": "0.000000%",
+                      "alignSelf": "center",
+                      "width": "26.570681%",
+                      "src": "/images/con13_01_1.png",
+                      "naturalWidth": 203,
+                      "naturalHeight": 55,
+                      "sourceType": "완성형",
+                      "effects": null,
+                      "borderRadius": null,
+                      "psdY": 14588
+                    },
+                    {
+                      "name": "c13_card1_photo",
+                      "type": "image",
+                      "position": "rltv",
+                      "parent": "c13_card1",
+                      "parentWidth": 764,
+                      "marginTop": "0.104987vw",
+                      "marginLeft": "0.000000%",
+                      "alignSelf": "center",
+                      "width": "70.811518%",
+                      "src": "/images/con13_01_2.png",
+                      "naturalWidth": 541,
+                      "naturalHeight": 210,
+                      "sourceType": "소스",
+                      "effects": null,
+                      "borderRadius": null,
+                      "psdY": 14645
+                    },
+                    {
+                      "name": "c13_card1_title",
+                      "type": "text",
+                      "position": "rltv",
+                      "parent": "c13_card1",
+                      "parentWidth": 764,
+                      "marginTop": "4.146982vw",
+                      "marginLeft": "0.000000%",
+                      "alignSelf": "center",
+                      "width": "39.528796%",
+                      "whiteSpace": "pre-line-with-br",
+                      "textAlign": "center",
+                      "effects": null,
+                      "borderRadius": null,
+                      "content": "누구나 운영할 수 있도록\n실전 중심으로 교육합니다",
+                      "segments": [
+                        {
+                          "text": "누구나 운영할 수 있도록\n",
+                          "fontWeight": 400,
+                          "color": "#000000",
+                          "fontSize": "1.469816vw (28px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.357,
+                          "fontFamily": "TTOmniGothicM"
+                        },
+                        {
+                          "text": "실전 중심으로 교육",
+                          "fontWeight": 400,
+                          "color": "#000000",
+                          "fontSize": "1.469816vw (28px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.357,
+                          "fontFamily": "TTOmniGothicH"
+                        },
+                        {
+                          "text": "합니다",
+                          "fontWeight": 400,
+                          "color": "#000000",
+                          "fontSize": "1.469816vw (28px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.357,
+                          "fontFamily": "TTOmniGothicM"
+                        }
+                      ],
+                      "psdY": 14934
+                    },
+                    {
+                      "name": "c13_card1_body",
+                      "type": "text",
+                      "position": "rltv",
+                      "parent": "c13_card1",
+                      "parentWidth": 764,
+                      "marginTop": "1.522310vw",
+                      "marginLeft": "0.000000%",
+                      "alignSelf": "center",
+                      "width": "71.596859%",
+                      "whiteSpace": "pre-line-with-br",
+                      "textAlign": "center",
+                      "effects": null,
+                      "borderRadius": null,
+                      "content": "미락육회막국수는 매장 운영에 필요한 전 과정을 단계별로 교육합니다.\n본점 교육과 오픈 매장 실습을 포함한 총 17일간의 체계적인 교육을 통해\n조리, 서비스, 매장 운영까지 실제 현장에서 바로 적용할 수 있도록 구성되어 있습니다.\n초보 창업자도 부담 없이 시작할 수 있도록 실무 중심의 교육을 진행합니다.",
+                      "segments": [
+                        {
+                          "text": "미락육회막국수는 매장 운영에 필요한 전 과정을 단계별로 교육합니다.\n",
+                          "fontWeight": 300,
+                          "color": "#000000",
+                          "fontSize": "0.944882vw (18px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.556,
+                          "fontFamily": "Pretendard-Light"
+                        },
+                        {
+                          "text": "본점 교육과 오픈 매장 실습을 포함한 총 17일간의 체계적인 교육",
+                          "fontWeight": 700,
+                          "color": "#000000",
+                          "fontSize": "0.944882vw (18px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.556,
+                          "fontFamily": "Pretendard-Bold"
+                        },
+                        {
+                          "text": "을 통해\n조리, 서비스, 매장 운영까지 실제 현장에서 바로 적용할 수 있도록 구성되어 있습니다.\n초보 창업자도 부담 없이 시작할 수 있도록 실무 중심의 교육을 진행합니다.",
+                          "fontWeight": 300,
+                          "color": "#000000",
+                          "fontSize": "0.944882vw (18px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.556,
+                          "fontFamily": "Pretendard-Light"
+                        }
+                      ],
+                      "psdY": 15028
+                    }
+                  ]
+                },
+                {
+                  "name": "c13_card2",
+                  "type": "group",
+                  "position": "rltv",
+                  "parent": "c13_card_track",
+                  "parentWidth": 764,
+                  "marginTop": "0.734908vw",
+                  "marginLeft": "0.000000%",
+                  "width": "100.000000%",
+                  "height": "31.653543vw",
+                  "display": "flex-column",
+                  "alignItems": "center",
+                  "background": "#ffffff",
+                  "border": "1px solid #bfa78a",
+                  "overflow": "hidden",
+                  "effects": null,
+                  "borderRadius": 0,
+                  "psdShape": "사각형 849 복사 3",
+                  "heightSourceReason": "603px PSD card panel; content is grouped inside with rltv mt values and bottom whitespace preserved.",
+                  "children": [
+                    {
+                      "name": "c13_card2_tab",
+                      "type": "image",
+                      "position": "rltv",
+                      "parent": "c13_card2",
+                      "parentWidth": 764,
+                      "marginTop": "0.000000vw",
+                      "marginLeft": "0.000000%",
+                      "alignSelf": "center",
+                      "width": "33.115183%",
+                      "src": "/images/con13_02_1.png",
+                      "naturalWidth": 253,
+                      "naturalHeight": 55,
+                      "sourceType": "완성형 가능성",
+                      "effects": null,
+                      "borderRadius": null,
+                      "psdY": 14588
+                    },
+                    {
+                      "name": "c13_card2_photo",
+                      "type": "image",
+                      "position": "rltv",
+                      "parent": "c13_card2",
+                      "parentWidth": 764,
+                      "marginTop": "0.104987vw",
+                      "marginLeft": "0.000000%",
+                      "alignSelf": "center",
+                      "width": "70.811518%",
+                      "src": "/images/con13_02_2.png",
+                      "naturalWidth": 541,
+                      "naturalHeight": 210,
+                      "sourceType": "소스",
+                      "effects": null,
+                      "borderRadius": null,
+                      "psdY": 14645
+                    },
+                    {
+                      "name": "c13_card2_title",
+                      "type": "text",
+                      "position": "rltv",
+                      "parent": "c13_card2",
+                      "parentWidth": 764,
+                      "marginTop": "4.146982vw",
+                      "marginLeft": "0.000000%",
+                      "alignSelf": "center",
+                      "width": "25.523560%",
+                      "whiteSpace": "pre-line-with-br",
+                      "textAlign": "center",
+                      "effects": null,
+                      "borderRadius": null,
+                      "content": "혼자가 아닌 운영\n밀착 지원 시스템",
+                      "segments": [
+                        {
+                          "text": "혼자가 아닌 운영\n",
+                          "fontWeight": 400,
+                          "color": "#000000",
+                          "fontSize": "1.469816vw (28px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.357,
+                          "fontFamily": "TTOmniGothicM"
+                        },
+                        {
+                          "text": "밀착 지원 시스템",
+                          "fontWeight": 400,
+                          "color": "#000000",
+                          "fontSize": "1.469816vw (28px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.357,
+                          "fontFamily": "TTOmniGothicH"
+                        }
+                      ],
+                      "psdY": 15551
+                    },
+                    {
+                      "name": "c13_card2_body",
+                      "type": "text",
+                      "position": "rltv",
+                      "parent": "c13_card2",
+                      "parentWidth": 764,
+                      "marginTop": "1.522310vw",
+                      "marginLeft": "0.000000%",
+                      "alignSelf": "center",
+                      "width": "74.345550%",
+                      "whiteSpace": "pre-line-with-br",
+                      "textAlign": "center",
+                      "effects": null,
+                      "borderRadius": null,
+                      "content": "매장 오픈 이후에도 전담 슈퍼바이저가 1:1로 배정되어 지속적인 운영 관리를 지원합니다.\n매출 점검, 운영 개선, 서비스 관리 등 현장에서 필요한 부분을 함께 점검하며\n문제 발생 시 빠르게 대응할 수 있도록 돕습니다.\n혼자 운영하는 것이 아닌 본사와 함께 운영하는 시스템입니다.",
+                      "segments": [
+                        {
+                          "text": "매장 오픈 이후에도 전담 슈퍼바이저가 1:1로 배정되어 지속적인 운영 관리를 지원합니다.\n",
+                          "fontWeight": 300,
+                          "color": "#000000",
+                          "fontSize": "0.944882vw (18px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.556,
+                          "fontFamily": "Pretendard-Light"
+                        },
+                        {
+                          "text": "매출 점검, 운영 개선, 서비스 관리 등 현장에서 필요한 부분을 함께 점검",
+                          "fontWeight": 700,
+                          "color": "#000000",
+                          "fontSize": "0.944882vw (18px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.556,
+                          "fontFamily": "Pretendard-Bold"
+                        },
+                        {
+                          "text": "하며\n문제 발생 시 빠르게 대응할 수 있도록 돕습니다.\n혼자 운영하는 것이 아닌 본사와 함께 운영하는 시스템입니다.",
+                          "fontWeight": 300,
+                          "color": "#000000",
+                          "fontSize": "0.944882vw (18px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.556,
+                          "fontFamily": "Pretendard-Light"
+                        }
+                      ],
+                      "psdY": 15645
+                    }
+                  ]
+                },
+                {
+                  "name": "c13_card3",
+                  "type": "group",
+                  "position": "rltv",
+                  "parent": "c13_card_track",
+                  "parentWidth": 764,
+                  "marginTop": "0.734908vw",
+                  "marginLeft": "0.000000%",
+                  "width": "100.000000%",
+                  "height": "31.653543vw",
+                  "display": "flex-column",
+                  "alignItems": "center",
+                  "background": "#ffffff",
+                  "border": "1px solid #bfa78a",
+                  "overflow": "hidden",
+                  "effects": null,
+                  "borderRadius": 0,
+                  "psdShape": "사각형 849 복사 4",
+                  "heightSourceReason": "603px PSD card panel; content is grouped inside with rltv mt values and bottom whitespace preserved.",
+                  "children": [
+                    {
+                      "name": "c13_card3_tab",
+                      "type": "image",
+                      "position": "rltv",
+                      "parent": "c13_card3",
+                      "parentWidth": 764,
+                      "marginTop": "0.000000vw",
+                      "marginLeft": "0.000000%",
+                      "alignSelf": "center",
+                      "width": "32.068063%",
+                      "src": "/images/con13_03_1.png",
+                      "naturalWidth": 245,
+                      "naturalHeight": 55,
+                      "sourceType": "완성형",
+                      "effects": null,
+                      "borderRadius": null,
+                      "psdY": 14588
+                    },
+                    {
+                      "name": "c13_card3_photo",
+                      "type": "image",
+                      "position": "rltv",
+                      "parent": "c13_card3",
+                      "parentWidth": 764,
+                      "marginTop": "0.104987vw",
+                      "marginLeft": "0.000000%",
+                      "alignSelf": "center",
+                      "width": "70.811518%",
+                      "src": "/images/con13_03_2.png",
+                      "naturalWidth": 541,
+                      "naturalHeight": 210,
+                      "sourceType": "소스",
+                      "effects": null,
+                      "borderRadius": null,
+                      "psdY": 14645
+                    },
+                    {
+                      "name": "c13_card3_title",
+                      "type": "text",
+                      "position": "rltv",
+                      "parent": "c13_card3",
+                      "parentWidth": 764,
+                      "marginTop": "4.146982vw",
+                      "marginLeft": "0.000000%",
+                      "alignSelf": "center",
+                      "width": "33.246073%",
+                      "whiteSpace": "pre-line-with-br",
+                      "textAlign": "center",
+                      "effects": null,
+                      "borderRadius": null,
+                      "content": "시작부터 다르게\n데이터 기반 입지 선정",
+                      "segments": [
+                        {
+                          "text": "시작부터 다르게\n",
+                          "fontWeight": 400,
+                          "color": "#000000",
+                          "fontSize": "1.469816vw (28px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.357,
+                          "fontFamily": "TTOmniGothicM"
+                        },
+                        {
+                          "text": "데이터 기반 입지 선정",
+                          "fontWeight": 400,
+                          "color": "#000000",
+                          "fontSize": "1.469816vw (28px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.357,
+                          "fontFamily": "TTOmniGothicH"
+                        }
+                      ],
+                      "psdY": 16168
+                    },
+                    {
+                      "name": "c13_card3_body",
+                      "type": "text",
+                      "position": "rltv",
+                      "parent": "c13_card3",
+                      "parentWidth": 764,
+                      "marginTop": "1.522310vw",
+                      "marginLeft": "0.000000%",
+                      "alignSelf": "center",
+                      "width": "61.649215%",
+                      "whiteSpace": "pre-line-with-br",
+                      "textAlign": "center",
+                      "effects": null,
+                      "borderRadius": null,
+                      "content": "상권 분석을 통해 매출 예측, 경쟁 매장 현황, 고객 특성 등\n다양한 데이터를 기반으로 점포를 선정합니다. 단순한 위치 선정이 아닌\n실제 운영 가능성과 수익성을 고려한 전략적인 입지 분석을 진행하며,\n초기 창업 리스크를 줄이고 안정적인 매장 운영이 가능하도록 지원합니다.",
+                      "segments": [
+                        {
+                          "text": "상권 분석을 통해 매출 예측, 경쟁 매장 현황, 고객 특성 등\n다양한 데이터를 기반으로 점포를 선정합니다. 단순한 위치 선정이 아닌\n",
+                          "fontWeight": 300,
+                          "color": "#000000",
+                          "fontSize": "0.944882vw (18px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.556,
+                          "fontFamily": "Pretendard-Light"
+                        },
+                        {
+                          "text": "실제 운영 가능성과 수익성을 고려한 전략적인 입지 분석을 진행",
+                          "fontWeight": 700,
+                          "color": "#000000",
+                          "fontSize": "0.944882vw (18px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.556,
+                          "fontFamily": "Pretendard-Bold"
+                        },
+                        {
+                          "text": "하며,\n초기 창업 리스크를 줄이고 안정적인 매장 운영이 가능하도록 지원합니다.",
+                          "fontWeight": 300,
+                          "color": "#000000",
+                          "fontSize": "0.944882vw (18px)",
+                          "letterSpacing": "-0.05em",
+                          "lineHeight": 1.556,
+                          "fontFamily": "Pretendard-Light"
+                        }
+                      ],
+                      "psdY": 16262
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

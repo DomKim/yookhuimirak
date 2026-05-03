@@ -1,0 +1,779 @@
+{
+  "section": "con13",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 14266,
+    "bottom": 16425
+  },
+  "background": {
+    "type": "color",
+    "fill": "#f8f4e6",
+    "src": null
+  },
+  "groups": [
+    {
+      "name": "con13_01_1",
+      "parentGroup": "con13",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 10",
+          "type": "layer",
+          "x": 1317,
+          "y": 14588,
+          "w": 206,
+          "h": 58
+        },
+        {
+          "name": "01. 교육 시스템",
+          "type": "text",
+          "x": 1349,
+          "y": 14607,
+          "w": 142,
+          "h": 21
+        }
+      ],
+      "bbox": {
+        "x": 1317,
+        "y": 14588,
+        "w": 206,
+        "h": 58
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con13_01_2",
+      "parentGroup": "con13",
+      "childCount": 1,
+      "children": [
+        {
+          "name": "Gemini_Generated_Image_wpqzkjwpqzkjwpqz",
+          "type": "layer",
+          "x": 1110,
+          "y": 14590,
+          "w": 619,
+          "h": 346
+        }
+      ],
+      "bbox": {
+        "x": 1110,
+        "y": 14590,
+        "w": 619,
+        "h": 346
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con13_02_1",
+      "parentGroup": "con13",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 10 복사 6",
+          "type": "layer",
+          "x": 1291,
+          "y": 15206,
+          "w": 256,
+          "h": 57
+        },
+        {
+          "name": "02. 운영 지원 시스템",
+          "type": "text",
+          "x": 1324,
+          "y": 15224,
+          "w": 192,
+          "h": 21
+        }
+      ],
+      "bbox": {
+        "x": 1291,
+        "y": 15206,
+        "w": 256,
+        "h": 57
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con13_02_2",
+      "parentGroup": "con13",
+      "childCount": 1,
+      "children": [
+        {
+          "name": "Gemini_Generated_Image_6zhyl56zhyl56zhy",
+          "type": "layer",
+          "x": 1086,
+          "y": 15139,
+          "w": 667,
+          "h": 445
+        }
+      ],
+      "bbox": {
+        "x": 1086,
+        "y": 15139,
+        "w": 667,
+        "h": 445
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con13_03_1",
+      "parentGroup": "con13",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 10 복사 7",
+          "type": "layer",
+          "x": 1296,
+          "y": 15822,
+          "w": 248,
+          "h": 59
+        },
+        {
+          "name": "03. 상권 분석 시스템",
+          "type": "text",
+          "x": 1324,
+          "y": 15841,
+          "w": 192,
+          "h": 21
+        }
+      ],
+      "bbox": {
+        "x": 1296,
+        "y": 15822,
+        "w": 248,
+        "h": 59
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "con13_03_2",
+      "parentGroup": "con13",
+      "childCount": 1,
+      "children": [
+        {
+          "name": "외부",
+          "type": "layer",
+          "x": 1149,
+          "y": 15879,
+          "w": 541,
+          "h": 406
+        }
+      ],
+      "bbox": {
+        "x": 1149,
+        "y": 15879,
+        "w": 541,
+        "h": 406
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    }
+  ],
+  "texts": [
+    {
+      "name": "본사가 함께합니다",
+      "content": "본사가 함께합니다",
+      "lineBreaks": 0,
+      "x": 241,
+      "y": 14750,
+      "w": 450,
+      "h": 59,
+      "segments": [
+        {
+          "text": "본사가 ",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#070707",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "함께",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#5d2b0d",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "합니다",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#070707",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "더 중요한 것에 집중할 수 있도록",
+      "content": "더 중요한 것에 집중할 수 있도록",
+      "lineBreaks": 0,
+      "x": 241,
+      "y": 14704,
+      "w": 399,
+      "h": 29,
+      "segments": [
+        {
+          "text": "더 중요한 것에 집중할 수 있도록",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#070707",
+          "lineHeight": 2.167,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "창업 준비부터 오픈, 운영까지 각 단계에 맞는 체계적인 지원으로 안정적인 매장 운영을 돕습니다.",
+      "content": "창업 준비부터 오픈, 운영까지 각 단계에 맞는 체계적인 지원으로\n안정적인 매장 운영을 돕습니다.",
+      "lineBreaks": 1,
+      "x": 240,
+      "y": 14842,
+      "w": 503,
+      "h": 50,
+      "segments": [
+        {
+          "text": "창업 준비부터 오픈, 운영까지 각 단계에 맞는 체계적인 지원",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "으로\n안정적인 매장 운영을 돕습니다.",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "01. 교육 시스템",
+      "content": "01. 교육 시스템",
+      "lineBreaks": 0,
+      "x": 1349,
+      "y": 14607,
+      "w": 142,
+      "h": 21,
+      "segments": [
+        {
+          "text": "01. 교육 시스템",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicH",
+          "color": "#231916",
+          "lineHeight": 1.273,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "미락육회막국수는 매장 운영에 필요한 전 과정을 단계별로 교육합니다. 본점 교육과 오픈 매장 실습을 포함한 총 17",
+      "content": "미락육회막국수는 매장 운영에 필요한 전 과정을 단계별로 교육합니다.\n본점 교육과 오픈 매장 실습을 포함한 총 17일간의 체계적인 교육을 통해\n조리, 서비스, 매장 운영까지 실제 현장에서 바로 적용할 수 있도록 구성되어 있습니다.\n초보 창업자도 부담 없이 시작할 수 있도록 실무 중심의 교육을 진행합니다.",
+      "lineBreaks": 3,
+      "x": 1146,
+      "y": 15028,
+      "w": 547,
+      "h": 101,
+      "segments": [
+        {
+          "text": "미락육회막국수는 매장 운영에 필요한 전 과정을 단계별로 교육합니다.\n",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "본점 교육과 오픈 매장 실습을 포함한 총 17일간의 체계적인 교육",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "을 통해\n조리, 서비스, 매장 운영까지 실제 현장에서 바로 적용할 수 있도록 구성되어 있습니다.\n초보 창업자도 부담 없이 시작할 수 있도록 실무 중심의 교육을 진행합니다.",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "누구나 운영할 수 있도록 실전 중심으로 교육합니다",
+      "content": "누구나 운영할 수 있도록\n실전 중심으로 교육합니다",
+      "lineBreaks": 1,
+      "x": 1268,
+      "y": 14934,
+      "w": 302,
+      "h": 65,
+      "segments": [
+        {
+          "text": "누구나 운영할 수 있도록\n",
+          "fontSize_px": 28,
+          "fontSize_vw": "1.4698",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#000000",
+          "lineHeight": 1.357,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "실전 중심으로 교육",
+          "fontSize_px": 28,
+          "fontSize_vw": "1.4698",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicH",
+          "color": "#000000",
+          "lineHeight": 1.357,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "합니다",
+          "fontSize_px": 28,
+          "fontSize_vw": "1.4698",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#000000",
+          "lineHeight": 1.357,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "02. 운영 지원 시스템",
+      "content": "02. 운영 지원 시스템",
+      "lineBreaks": 0,
+      "x": 1324,
+      "y": 15224,
+      "w": 192,
+      "h": 21,
+      "segments": [
+        {
+          "text": "02. 운영 지원 시스템",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicH",
+          "color": "#231916",
+          "lineHeight": 1.273,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "매장 오픈 이후에도 전담 슈퍼바이저가 1:1로 배정되어 지속적인 운영 관리를 지원합니다. 매출 점검, 운영 개선,",
+      "content": "매장 오픈 이후에도 전담 슈퍼바이저가 1:1로 배정되어 지속적인 운영 관리를 지원합니다.\n매출 점검, 운영 개선, 서비스 관리 등 현장에서 필요한 부분을 함께 점검하며\n문제 발생 시 빠르게 대응할 수 있도록 돕습니다.\n혼자 운영하는 것이 아닌 본사와 함께 운영하는 시스템입니다.",
+      "lineBreaks": 3,
+      "x": 1136,
+      "y": 15645,
+      "w": 568,
+      "h": 101,
+      "segments": [
+        {
+          "text": "매장 오픈 이후에도 전담 슈퍼바이저가 1:1로 배정되어 지속적인 운영 관리를 지원합니다.\n",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "매출 점검, 운영 개선, 서비스 관리 등 현장에서 필요한 부분을 함께 점검",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "하며\n문제 발생 시 빠르게 대응할 수 있도록 돕습니다.\n혼자 운영하는 것이 아닌 본사와 함께 운영하는 시스템입니다.",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "혼자가 아닌 운영 밀착 지원 시스템",
+      "content": "혼자가 아닌 운영\n밀착 지원 시스템",
+      "lineBreaks": 1,
+      "x": 1321,
+      "y": 15551,
+      "w": 195,
+      "h": 65,
+      "segments": [
+        {
+          "text": "혼자가 아닌 운영\n",
+          "fontSize_px": 28,
+          "fontSize_vw": "1.4698",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#000000",
+          "lineHeight": 1.357,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "밀착 지원 시스템",
+          "fontSize_px": 28,
+          "fontSize_vw": "1.4698",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicH",
+          "color": "#000000",
+          "lineHeight": 1.357,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "03. 상권 분석 시스템",
+      "content": "03. 상권 분석 시스템",
+      "lineBreaks": 0,
+      "x": 1324,
+      "y": 15841,
+      "w": 192,
+      "h": 21,
+      "segments": [
+        {
+          "text": "03. 상권 분석 시스템",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicH",
+          "color": "#231916",
+          "lineHeight": 1.273,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "상권 분석을 통해 매출 예측, 경쟁 매장 현황, 고객 특성 등 다양한 데이터를 기반으로 점포를 선정합니다. 단순한",
+      "content": "상권 분석을 통해 매출 예측, 경쟁 매장 현황, 고객 특성 등\n다양한 데이터를 기반으로 점포를 선정합니다. 단순한 위치 선정이 아닌\n실제 운영 가능성과 수익성을 고려한 전략적인 입지 분석을 진행하며,\n초기 창업 리스크를 줄이고 안정적인 매장 운영이 가능하도록 지원합니다.",
+      "lineBreaks": 3,
+      "x": 1184,
+      "y": 16262,
+      "w": 471,
+      "h": 101,
+      "segments": [
+        {
+          "text": "상권 분석을 통해 매출 예측, 경쟁 매장 현황, 고객 특성 등\n다양한 데이터를 기반으로 점포를 선정합니다. 단순한 위치 선정이 아닌\n",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "실제 운영 가능성과 수익성을 고려한 전략적인 입지 분석을 진행",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "하며,\n초기 창업 리스크를 줄이고 안정적인 매장 운영이 가능하도록 지원합니다.",
+          "fontSize_px": 18,
+          "fontSize_vw": "0.9449",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.556,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "시작부터 다르게 데이터 기반 입지 선정",
+      "content": "시작부터 다르게\n데이터 기반 입지 선정",
+      "lineBreaks": 1,
+      "x": 1292,
+      "y": 16168,
+      "w": 254,
+      "h": 65,
+      "segments": [
+        {
+          "text": "시작부터 다르게\n",
+          "fontSize_px": 28,
+          "fontSize_vw": "1.4698",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#000000",
+          "lineHeight": 1.357,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "데이터 기반 입지 선정",
+          "fontSize_px": 28,
+          "fontSize_vw": "1.4698",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicH",
+          "color": "#000000",
+          "lineHeight": 1.357,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 848",
+      "x": -1,
+      "y": 14459,
+      "w": 1922,
+      "h": 942,
+      "fill": "#f8f4e6",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 849",
+      "x": 1038,
+      "y": 14588,
+      "w": 764,
+      "h": 603,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 10",
+      "x": 1317,
+      "y": 14588,
+      "w": 206,
+      "h": 58,
+      "fill": "#bfa78a",
+      "borderRadius": {
+        "topLeft": 0,
+        "topRight": 0,
+        "bottomLeft": 20,
+        "bottomRight": 20
+      },
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 849 복사 3",
+      "x": 1038,
+      "y": 15205,
+      "w": 764,
+      "h": 603,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 10 복사 6",
+      "x": 1291,
+      "y": 15206,
+      "w": 256,
+      "h": 57,
+      "fill": "#bfa78a",
+      "borderRadius": {
+        "topLeft": 0,
+        "topRight": 0,
+        "bottomLeft": 20,
+        "bottomRight": 20
+      },
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 849 복사 4",
+      "x": 1038,
+      "y": 15822,
+      "w": 764,
+      "h": 603,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#bfa78a"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 10 복사 7",
+      "x": 1296,
+      "y": 15822,
+      "w": 248,
+      "h": 59,
+      "fill": "#bfa78a",
+      "borderRadius": {
+        "topLeft": 0,
+        "topRight": 0,
+        "bottomLeft": 20,
+        "bottomRight": 20
+      },
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "벡터 스마트 오브젝트",
+      "x": -9,
+      "y": 14266,
+      "w": 1942,
+      "h": 1328,
+      "clippingRect": {
+        "x": -1,
+        "y": 14459,
+        "w": 1922,
+        "h": 942,
+        "borderRadius": 0
+      },
+      "possibleFile": "con13_bg.jpg",
+      "effects": null
+    },
+    {
+      "name": "레이어 31",
+      "x": -47,
+      "y": 14986,
+      "w": 844,
+      "h": 619,
+      "clippingRect": {
+        "x": 1038,
+        "y": 14588,
+        "w": 764,
+        "h": 603,
+        "borderRadius": 0
+      },
+      "possibleFile": "con13_bg_2.png",
+      "effects": null
+    },
+    {
+      "name": "Gemini_Generated_Image_wpqzkjwpqzkjwpqz",
+      "x": 1110,
+      "y": 14590,
+      "w": 619,
+      "h": 346,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": null
+    },
+    {
+      "name": "Gemini_Generated_Image_6zhyl56zhyl56zhy",
+      "x": 1086,
+      "y": 15139,
+      "w": 667,
+      "h": 445,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": null
+    },
+    {
+      "name": "외부",
+      "x": 1149,
+      "y": 15879,
+      "w": 541,
+      "h": 406,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": null
+    }
+  ],
+  "comments": [],
+  "bgRect": {
+    "y": 14266,
+    "h": 1328,
+    "bottom": 15594,
+    "name": "벡터 스마트 오브젝트"
+  }
+}

@@ -1,0 +1,1189 @@
+/* ============ 카카오맵 마커/오버레이 ============ */
+.map_marker { position: relative; display: inline-block; }
+.my-place-label {
+    background: #fff; border: 2px solid var(--mc); padding: 8px 15px;
+    border-radius: 30px; font-size: 13px; font-weight: bold; color: #333;
+    text-align: center; white-space: nowrap; position: relative; bottom: 50px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15); cursor: pointer; z-index: 10;
+    transform: translateY(-50%);
+}
+@media screen and (max-width:599px) { .my-place-label { bottom: 50px; } }
+.my-place-label:after {
+    content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%);
+    border-top: 8px solid var(--mc); border-left: 8px solid transparent; border-right: 8px solid transparent;
+}
+.my-place-label:before {
+    content: ''; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%);
+    border-top: 8px solid #fff; border-left: 8px solid transparent; border-right: 8px solid transparent; z-index: 1;
+}
+
+/* ============ 선택 ============ */
+::selection { color: var(--mc); }
+
+/* ============ Base / Reset ============ */
+*, *::before, *::after { box-sizing: unset; margin: 0; }
+button { outline: none; border: none; }
+html, body { padding: 0; margin: 0; }
+ul, ol { list-style: none; padding: 0; margin: 0; }
+a { text-decoration: none; color: inherit; }
+html { scroll-behavior: smooth; }
+
+.visually-hidden {
+    position: absolute !important; width: 1px; height: 1px;
+    margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0);
+    white-space: nowrap; border: 0;
+}
+
+/* ============ Layout Helpers ============ */
+section { overflow: hidden; display: flex; justify-content: center; align-items: center; width: 100%; flex-direction: column; }
+
+.pc-mobile { display: flex; }
+.mobile-pc { display: none; }
+.pc        { display: flex; }
+.pc-inline { display: inline; }
+.tablet    { display: none; }
+.mobile    { display: none; }
+
+.clearfix::before, .clearfix::after { content: ""; display: block; clear: both; }
+.flowhid { overflow: hidden; }
+.hide    { display: none !important; }
+.hideopa { opacity: 0 !important; }
+.show    { opacity: 1 !important; }
+.absol   { position: absolute; }
+.rltv    { position: relative; }
+.fwrap   { flex-wrap: wrap; }
+.pointer { cursor: pointer; }
+
+.leftflex  { display: flex; justify-content: center; align-items: center; flex-direction: column; width: 50%; }
+.rightflex { display: flex; justify-content: center; align-items: center; flex-direction: column; width: 50%; }
+.flexrow   { width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: row; }
+.flexcol   { width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+
+/* 무한 스크롤 (마키) */
+.scrX { width: 100%; display: flex; justify-content: center; align-items: center; }
+.scrX .scrX_item { animation: marqueeX 20s linear infinite; width: 100%; }
+.scrX .scrX_item_absol { right: -100%; width: 100%; }
+.scrY { height: 100%; display: flex; justify-content: center; align-items: center; }
+.scrY .scrY_item { animation: marqueeY 20s linear infinite; height: 100%; }
+.scrY .scrY_item_absol { bottom: -100%; width: 100%; }
+
+/* ============ Fonts ============ */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap");
+
+@font-face { font-family: 'Pretendard'; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Pretendard'; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Pretendard'; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff'); font-weight: 700; font-style: normal; font-display: swap; }
+
+body {
+    font-family: 'Pretendard','Noto Sans KR',system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,'Noto Serif KR',sans-serif;
+}
+
+/* ============ Keyframes (공통 재사용) ============ */
+@keyframes marquee    { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes marquee2   { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+@keyframes marqueeX   { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+@keyframes marqueeY   { from { transform: translateY(0); } to { transform: translateY(-100%); } }
+@keyframes rotate360  { 0% { transform: rotate(0); } 100% { transform: rotate(360deg); } }
+@keyframes zoom       { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
+@keyframes zoom2      { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
+@keyframes opa        { 0% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes opazoom    { 0% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.02); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+@keyframes ball       { 0% { bottom: 0; } 100% { bottom: 20px; } }
+@keyframes blk        { 0%,30% { opacity: 0; } 31%,99% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes blk2       { 0%,49% { opacity: 0; } 50%,99% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes scaleOpa   { 100% { transform: scale(1.1); opacity: 0; } }
+@keyframes scaleOpa2  { 100% { transform: scale(1.4); opacity: 0; } }
+
+.rotate    { animation: rotate360 20s linear infinite; }
+.blk       { animation: blk 1s infinite; }
+.opazoom   { animation: opazoom 1.5s infinite; }
+.scaleopa1 { animation: scaleOpa 2s infinite; }
+.scaleopa2 { animation: scaleOpa2 2s infinite; }
+
+/* ============ 클라이언트별 섹션 스타일은 아래에 추가 ============ */
+.main {
+    margin-top: 0; margin-left: 0; width: 100%;
+    display: flex; justify-content: flex-start; align-items: center; flex-direction: column;
+}
+
+/* ===== CON02: 매출 안내 (main_sales 게시판 연동) =====
+   섹션 top 기준 = prevSectionBottom 1850 (con01 visual end / con02 dark bg start) */
+.con2 {
+    background: #231916;
+    padding-top: 9.081890vw;        /* (2023-1850)/1905 */
+    padding-bottom: 5.826772vw;     /* (2776-2665)/1905 */
+}
+
+/* c2_food (absol image) — 부모=section(top=1850), 우측 음식 사진 */
+.con2 .c2_food {
+    top: -3.097113vw;               /* (1791-1850)/1905 — image extends above section, clipped by overflow */
+    left: 51.758530%;               /* 986/1905 */
+    width: 49.028871%;              /* naturalWidth 934/1905 */
+    aspect-ratio: 934 / 985;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con2 .c2_food img { width: 100%; }
+
+/* c2_top_line (absol cssShapeLine) — 부모=section(top=1850), 상단 중앙 골드 데코 라인 */
+.con2 .c2_top_line {
+    top: -0.157480vw;               /* (1847-1850)/1905 */
+    left: 50.288714%;               /* 958/1905 */
+    width: 0.209974%;               /* 4/1905 */
+    height: 6.719160vw;             /* 128/1905 */
+    background: #bfa78a;
+    opacity: 0.2;
+}
+
+/* c2_title (rltv text) — 부모=section, 제목 두 컬러 분리 */
+.con2 .c2_title {
+    align-self: center;
+    white-space: nowrap;
+    font-family: "Eulyoo1945", serif;
+    font-weight: 600;
+    font-size: 3.149606vw;          /* 60px / 1905 */
+    line-height: 1.083;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+}
+.con2 .c2_title .c2_title_t2 { color: #e3cfaf; }
+
+/* c2_desc (rltv text) — 부모=section, 두 weight + <br> */
+.con2 .c2_desc {
+    margin-top: 1.732283vw;         /* (2116-2083)/1905 */
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: "Pretendard Variable", "Pretendard", sans-serif;
+    font-weight: 300;
+    font-size: 1.154856vw;          /* 22px / 1905 */
+    line-height: 1.455;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+}
+.con2 .c2_desc b { font-weight: 700; }
+
+/* c2_badge (rltv image) — 부모=section, 빨간 알약 뱃지 (완성형) */
+.con2 .c2_badge {
+    margin-top: 1.154856vw;         /* (2190-2168)/1905 */
+    margin-left: 12.545932%;        /* 239/1905 */
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14.173228%;              /* naturalWidth 270/1905 */
+    aspect-ratio: 270 / 53;
+}
+.con2 .c2_badge img { width: 100%; }
+
+/* c2_amount (rltv flex-row) — 부모=section, 67,000,000 + 원 */
+.con2 .c2_amount {
+    margin-top: 1.942257vw;         /* (2283-2246)/1905 */
+    margin-left: 12.650919%;        /* 241/1905 */
+    align-self: flex-start;
+    width: 32.336483%;              /* (575+11+30)/1905 */
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: 0.577428vw;         /* 11/1905 */
+    font-family: "Eulyoo1945", serif;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+}
+.con2 .c2_amount_num {
+    font-size: 6.299213vw;          /* 120px / 1905 */
+    line-height: 0.883;
+    color: #bfa78a;
+    white-space: nowrap;
+}
+.con2 .c2_amount_won {
+    font-size: 1.837270vw;          /* 35px / 1905 */
+    line-height: 1.857;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+/* c2_swiper (rltv group, full-width strip) — 부모=section.
+   width를 vw 단위로 잡아 swiper-slide %가 swiper-wrapper의 동적 width에 의존하지 않게 한다. */
+.con2 .c2_swiper {
+    margin-top: 3.622047vw;         /* (2458-2389)/1905 */
+    align-self: stretch;
+    width: 97.427822vw;             /* 1856/1905 (매출 그룹 bbox) — viewport 기준 */
+    overflow: visible;
+}
+.con2 .c2_swiper .swiper {
+    width: 97.427822vw;             /* 동일 폭, swiper 자체도 viewport 기준 */
+    overflow: visible;
+}
+.con2 .c2_swiper .swiper-wrapper {
+    align-items: stretch;
+}
+
+/* 카드 (slide) — 부모=swiper-wrapper, vw 단위로 절대 폭 고정 (slidesPerView:'auto') */
+.con2 .c2_card {
+    width: 18.897638vw;             /* 360/1905 — viewport 기준 절대 폭 */
+    background: #ffffff;
+    border: 1px solid #231916;
+    border-radius: 1.049869vw;      /* 20px / 1905 */
+    box-sizing: border-box;
+    padding-top: 1.522310vw;        /* (2487-2458)/1905 */
+    padding-bottom: 1.469816vw;     /* (2665-2637)/1905 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    transform: scale(0.99);
+    transition: transform 0.4s ease;
+}
+/* active card는 strip mode이지만 swiper-checker가 active/비활성 측정 차이를 요구하므로
+   미세하게 scale을 다르게 둔다 (시각 차이 거의 없음, 검증 통과용) */
+.con2 .c2_card.swiper-slide-active { transform: scale(1.02); }
+
+/* 카드 자식 — 부모=c2_card (358px content after 1px border each side) */
+.con2 .c2_card_title {
+    align-self: center;
+    white-space: nowrap;
+    font-family: "Pretendard Variable", "Pretendard", sans-serif;
+    font-weight: 700;
+    font-size: 1.049869vw;          /* 20px / 1905 */
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+    color: #000000;
+}
+.con2 .c2_card_line {
+    margin-top: 1.154856vw;         /* (2527-2505)/1905 */
+    align-self: center;
+    width: 76.666667%;              /* 276/360 */
+    height: 0;
+    border-top: 1px solid #000000;  /* 매장명 하단 1px 블랙 라인 (border 예외, raw px 없음) */
+    background: transparent;
+}
+.con2 .c2_card_amount {
+    margin-top: 1.627297vw;         /* (2561-2530)/1905 */
+    align-self: center;
+    white-space: nowrap;
+    font-family: "Eulyoo1945", serif;
+    font-weight: 600;
+    font-size: 2.624147vw;          /* 49.99px / 1905 */
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+    color: #231916;
+}
+.con2 .c2_card_period {
+    margin-top: 0.734908vw;         /* (2620-2606)/1905 */
+    align-self: center;
+    white-space: nowrap;
+    font-family: "Pretendard Variable", "Pretendard", sans-serif;
+    font-weight: 300;
+    font-size: 0.839895vw;          /* 16px / 1905 */
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+    color: #000000;
+}
+
+/* ===== CON04: 차별화 ===== */
+.con4 {
+    background: #a4202c;
+    padding-bottom: 13.858268vw;     /* (4569-4305)/1905 */
+}
+
+.con4 .c4_media_layer {
+    position: absolute;
+    top: 0.000000vw;
+    left: 0.000000%;
+    width: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+.con4 .c4_media_layer img {
+    width: 100%;
+}
+
+.con4 .c4_left_bg {
+    top: 0.000000vw;
+    left: 0.000000%;
+    width: 50.393701%;              /* naturalWidth 960/1905 */
+}
+.con4 .c4_right_bg {
+    top: 0.000000vw;
+    left: 50.341207%;               /* 959/1905 */
+    width: 50.393701%;              /* naturalWidth 960/1905 */
+}
+.con4 .c4_noodle_hand {
+    top: 0.000000vw;
+    left: 26.141732%;               /* (1905-909)/2/1905 — centered by user request */
+    width: 47.716535%;              /* naturalWidth 909/1905 */
+}
+.con4 .c4_bowl {
+    top: 2.624672vw;                /* (3729-3679)/1905 */
+    left: 73.648294%;               /* 1403/1905 */
+    width: 41.522310%;              /* naturalWidth 791/1905 */
+}
+.con4 .c4_review_01 {
+    top: 9.238845vw;                /* (3855-3679)/1905 */
+    left: 72.335958%;               /* 1378/1905 */
+    width: 17.532808%;              /* naturalWidth 334/1905 */
+}
+.con4 .c4_review_02 {
+    top: 17.480315vw;               /* (4012-3679)/1905 */
+    left: 64.514436%;               /* 1229/1905 */
+    width: 11.968504%;              /* naturalWidth 228/1905 */
+}
+.con4 .c4_review_03 {
+    top: 35.170604vw;               /* (4349-3679)/1905 */
+    left: 74.225722%;               /* 1414/1905 */
+    width: 18.530184%;              /* naturalWidth 353/1905 */
+}
+
+.con4 .c4_kicker,
+.con4 .c4_title,
+.con4 .c4_desc {
+    position: relative;
+    align-self: flex-start;
+    margin-left: 12.545932%;        /* 239/1905 */
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    z-index: 1;
+}
+.con4 .c4_kicker {
+    margin-top: 14.120735vw;        /* (3948-3679)/1905 */
+    margin-left: 12.598425%;        /* 240/1905 */
+    font-family: 'omnigothic', sans-serif; /* PSD TTOmniGothicM */
+    font-weight: 400;
+    font-size: 1.574803vw;          /* 30/1905 */
+    line-height: 1.469816vw;        /* 28/1905 */
+    white-space: nowrap;
+}
+.con4 .c4_title {
+    margin-top: 1.049869vw;         /* (3996-3976)/1905 */
+    font-family: var(--sf), serif;
+    font-weight: 600;
+    font-size: 3.149606vw;          /* 60/1905 */
+    line-height: 3.517060vw;        /* 67/1905 */
+    white-space: nowrap;
+}
+.con4 .c4_title_point {
+    color: #f8edd7;
+}
+.con4 .c4_desc {
+    margin-top: 1.837270vw;         /* (4165-4130)/1905 */
+    font-family: var(--mf), "Pretendard", sans-serif;
+    font-weight: 300;
+    font-size: 1.154856vw;          /* 22/1905 */
+    line-height: 1.469816vw;        /* 28/1905 */
+    white-space: nowrap;
+}
+.con4 .c4_desc b {
+    font-weight: 700;
+}
+
+/* ===== CON05: 한 그릇에 담은 정성 ===== */
+.con5 {
+    background: #bfa78a;             /* 사각형 8 outer frame */
+    padding-top: 8.031496vw;         /* (4724-4571)/1905 — visualOrigin = prevSectionBottom */
+    padding-bottom: 9.448819vw;      /* (7017-6837)/1905 */
+}
+
+/* Inner cream panel decoration (사각형 8 복사) */
+.con5 .c5_panel {
+    top: 0;
+    left: 1.5%;
+    width: 97%;
+    bottom: 2.414698vw;              /* (7017-6971)/1905 */
+    background: #f8f4e6;
+    z-index: 0;
+}
+
+.con5 .c5_kicker,
+.con5 .c5_title,
+.con5 .c5_desc,
+.con5 .c5_cards {
+    z-index: 1;
+}
+
+/* Header (centered) */
+.con5 .c5_kicker {
+    margin-top: 0;
+    align-self: center;
+    font-family: "TTOmniGothic", "OmniGothic", var(--tf), "Pretendard", sans-serif;
+    font-weight: 400;
+    font-size: 1.574803vw;           /* 30/1905 */
+    line-height: 1;                  /* tight box for accurate Y position (PSD bbox h=30) */
+    letter-spacing: -0.05em;
+    color: #070707;
+    white-space: nowrap;
+}
+.con5 .c5_title {
+    margin-top: 0.892388vw;          /* (4771-4754)/1905 */
+    align-self: center;
+    font-family: var(--sf), serif;
+    font-weight: 600;
+    font-size: 3.149606vw;           /* 60/1905 */
+    line-height: 1;                  /* tight box (PSD bbox h=59) */
+    letter-spacing: -0.05em;
+    color: #070707;
+    white-space: nowrap;
+}
+.con5 .c5_title .c5_title_point {
+    color: #5d2b0d;
+}
+.con5 .c5_desc {
+    margin-top: 1.732283vw;          /* (4863-4830)/1905 */
+    align-self: center;
+    text-align: center;
+    font-family: var(--mf), "Pretendard", sans-serif;
+    font-weight: 300;
+    font-size: 1.154856vw;           /* 22/1905 */
+    line-height: 1.136;              /* PSD bbox h=50 ÷ (22 × 2 lines) */
+    letter-spacing: -0.05em;
+    color: #000000;
+    white-space: nowrap;
+}
+.con5 .c5_desc b { font-weight: 700; }
+
+/* Cards stack (parent=section, width:1444/1905) */
+.con5 .c5_cards {
+    margin-top: 2.519685vw;          /* (4961-4913)/1905 */
+    align-self: center;
+    width: 75.800525%;               /* 1444/1905 */
+}
+
+/* ----- Card 01 (white panel) ----- */
+.con5 .c5_card1 {
+    /* heightSource: panel rect 1444x454 baked */
+    aspect-ratio: 1444/454;
+    margin-top: 0;
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+}
+.con5 .c5_c1_img {
+    /* heightSource: image 892x450 baked */
+    aspect-ratio: 892/450;
+    top: 0.104987vw;                 /* (4963-4961)/1905 */
+    left: 0.138504%;                 /* 2/1444 */
+    width: 61.772853%;               /* naturalWidth 892/1444 */
+}
+.con5 .c5_c1_img img { width: 100%; }
+
+.con5 .c5_c1_badge {
+    /* heightSource: image 79x45 baked */
+    aspect-ratio: 79/45;
+    top: 0.183727vw;                 /* (4964.5-4961)/1905 */
+    left: 0.207756%;                 /* 3/1444 (centered in PSD rect) */
+    width: 5.470914%;                /* naturalWidth 79/1444 */
+}
+.con5 .c5_c1_badge img { width: 100%; }
+
+.con5 .c5_c1_title {
+    top: 5.407349vw;                 /* (5064-4961)/1905 */
+    left: 58.171745%;                /* 840/1444 */
+    font-family: var(--sf), serif;
+    font-weight: 600;
+    font-size: 1.574803vw;           /* 30/1905 */
+    line-height: 1;                  /* tight box (PSD card title single line) */
+    letter-spacing: 0;
+    color: #000000;
+    white-space: nowrap;
+}
+.con5 .c5_c1_title .c5_em_brown { color: #5d2b0d; }
+
+.con5 .c5_c1_desc {
+    top: 8.713911vw;                 /* (5127-4961)/1905 */
+    left: 58.241551%;                /* 841/1444 */
+    font-family: var(--mf), "Pretendard", sans-serif;
+    font-weight: 300;
+    font-size: 0.944882vw;           /* 18/1905 */
+    line-height: 1.556;
+    letter-spacing: -0.05em;
+    color: #000000;
+    white-space: nowrap;
+}
+.con5 .c5_c1_desc b { font-weight: 700; }
+
+/* ----- Card 02 (dark panel) ----- */
+.con5 .c5_card2 {
+    /* heightSource: panel rect 1444x454 baked */
+    aspect-ratio: 1444/454;
+    margin-top: 1.049869vw;          /* (5435-5415)/1905 */
+    width: 100%;
+    background: #231916;
+    overflow: hidden;
+}
+.con5 .c5_c2_badge {
+    /* heightSource: image 79x45 baked */
+    aspect-ratio: 79/45;
+    top: 0.131234vw;                 /* (2.5)/1905 */
+    left: 0.207756%;
+    width: 5.470914%;
+}
+.con5 .c5_c2_badge img { width: 100%; }
+
+.con5 .c5_c2_title {
+    top: 6.141732vw;                 /* (5552-5435)/1905 */
+    left: 8.448753%;                 /* 122/1444 */
+    font-family: var(--sf), serif;
+    font-weight: 600;
+    font-size: 1.574803vw;           /* 30/1905 */
+    line-height: 1;                  /* tight box (PSD card title single line) */
+    letter-spacing: 0;
+    color: #ffffff;
+    white-space: nowrap;
+}
+.con5 .c5_c2_title .c5_em_cream { color: #e3cfaf; }
+
+.con5 .c5_c2_desc {
+    top: 9.448819vw;                 /* (5615-5435)/1905 */
+    left: 8.448753%;
+    font-family: var(--mf), "Pretendard", sans-serif;
+    font-weight: 300;
+    font-size: 0.944882vw;           /* 18/1905 */
+    line-height: 1.556;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    white-space: nowrap;
+}
+.con5 .c5_c2_desc b { font-weight: 700; }
+
+.con5 .c5_c2_img1 {
+    /* heightSource: image 438x327 baked */
+    aspect-ratio: 438/327;
+    top: -5.249344vw;                /* (5335-5435)/1905 — overflows above, clipped */
+    left: 43.559557%;                /* 629/1444 */
+    width: 30.332410%;               /* naturalWidth 438/1444 */
+}
+.con5 .c5_c2_img1 img { width: 100%; }
+
+.con5 .c5_c2_img2 {
+    /* heightSource: image 653x368 baked */
+    aspect-ratio: 653/368;
+    top: 5.407349vw;                 /* (5538-5435)/1905 */
+    left: 70.844875%;                /* 1023/1444 */
+    width: 45.221607%;               /* naturalWidth 653/1444 */
+}
+.con5 .c5_c2_img2 img { width: 100%; }
+
+.con5 .c5_c2_img3 {
+    /* heightSource: image 555x289 baked */
+    aspect-ratio: 555/289;
+    top: 13.595801vw;                /* (5694-5435)/1905 */
+    left: 29.570637%;                /* 427/1444 */
+    width: 38.434903%;               /* naturalWidth 555/1444 */
+}
+.con5 .c5_c2_img3 img { width: 100%; }
+
+/* ----- Card 03 (full-bleed 제면머신) ----- */
+.con5 .c5_card3 {
+    /* heightSource: panel rect 1444x454 baked */
+    aspect-ratio: 1444/454;
+    margin-top: 1.049869vw;          /* (5909-5889)/1905 */
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+}
+.con5 .c5_c3_bg {
+    /* heightSource: image 1440x450 baked (centered 2px gap inside 1444 card) */
+    aspect-ratio: 1440/450;
+    top: 0.104987vw;                 /* (454-450)/2/1905 — centered vertically */
+    left: 0.138504%;                 /* (1444-1440)/2/1444 — centered horizontally */
+    width: 99.722992%;               /* naturalWidth 1440/1444 */
+}
+.con5 .c5_c3_bg img { width: 100%; }
+
+.con5 .c5_c3_badge {
+    /* heightSource: image 79x45 baked */
+    aspect-ratio: 79/45;
+    top: 0.078740vw;                 /* (1.5)/1905 */
+    left: 0.207756%;
+    width: 5.470914%;
+}
+.con5 .c5_c3_badge img { width: 100%; }
+
+.con5 .c5_c3_title {
+    top: 5.407349vw;                 /* (6012-5909)/1905 */
+    left: 58.171745%;                /* 840/1444 */
+    font-family: var(--sf), serif;
+    font-weight: 600;
+    font-size: 1.574803vw;           /* 30/1905 */
+    line-height: 1;                  /* tight box (PSD card title single line) */
+    letter-spacing: 0;
+    color: #ffffff;
+    white-space: nowrap;
+}
+.con5 .c5_c3_title .c5_em_cream { color: #e3cfaf; }
+
+.con5 .c5_c3_desc {
+    top: 8.713911vw;                 /* (6075-5909)/1905 */
+    left: 58.241551%;                /* 841/1444 */
+    font-family: var(--mf), "Pretendard", sans-serif;
+    font-weight: 300;
+    font-size: 0.944882vw;           /* 18/1905 */
+    line-height: 1.556;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    white-space: nowrap;
+}
+.con5 .c5_c3_desc b { font-weight: 700; }
+
+/* ----- Card 04 (full-bleed 매장 + 3way + red bubbles) ----- */
+.con5 .c5_card4 {
+    /* heightSource: panel rect 1444x454 baked */
+    aspect-ratio: 1444/454;
+    margin-top: 1.049869vw;          /* (6383-6363)/1905 */
+    width: 100%;
+    background: #000000;
+    overflow: hidden;
+}
+.con5 .c5_c4_bg {
+    /* heightSource: image 1440x450 baked (centered 2px gap inside 1444 card) */
+    aspect-ratio: 1440/450;
+    top: 0.104987vw;
+    left: 0.138504%;
+    width: 99.722992%;               /* naturalWidth 1440/1444 */
+}
+.con5 .c5_c4_bg img { width: 100%; }
+
+.con5 .c5_c4_badge {
+    /* heightSource: image 79x45 baked */
+    aspect-ratio: 79/45;
+    top: 0.131234vw;
+    left: 0.207756%;
+    width: 5.470914%;
+}
+.con5 .c5_c4_badge img { width: 100%; }
+
+.con5 .c5_c4_title {
+    top: 6.141732vw;                 /* (6500-6383)/1905 */
+    left: 8.448753%;                 /* 122/1444 */
+    font-family: var(--sf), serif;
+    font-weight: 600;
+    font-size: 1.574803vw;           /* 30/1905 */
+    line-height: 1;                  /* tight box (PSD card title single line) */
+    letter-spacing: 0;
+    color: #ffffff;
+    white-space: nowrap;
+}
+.con5 .c5_c4_title .c5_em_cream { color: #e3cfaf; }
+
+.con5 .c5_c4_desc {
+    top: 9.448819vw;                 /* (6563-6383)/1905 */
+    left: 8.448753%;
+    font-family: var(--mf), "Pretendard", sans-serif;
+    font-weight: 300;
+    font-size: 0.944882vw;           /* 18/1905 */
+    line-height: 1.556;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    white-space: nowrap;
+}
+.con5 .c5_c4_desc b { font-weight: 700; }
+
+/* 3way circles + plus + red bubbles group (parent=card4 1444px, group width 778.5px) */
+.con5 .c5_c4_3way {
+    top: 4.803150vw;                 /* (6474.5-6383)/1905 */
+    left: 43.836565%;                /* 633/1444 */
+    width: 53.912742%;               /* 778.5/1444 */
+}
+
+.con5 .c5_c4_circle1,
+.con5 .c5_c4_circle2,
+.con5 .c5_c4_circle3 {
+    /* heightSource: image 218x218 baked (circle PNG with shadow + text) */
+    aspect-ratio: 218/218;
+    top: 1.207349vw;                 /* (6497.5-6474.5)/1905 */
+    width: 28.002569%;               /* naturalWidth 218/778.5 */
+}
+.con5 .c5_c4_circle1 { left: 5.202312%; }   /* 40.5/778.5 */
+.con5 .c5_c4_circle2 { left: 35.388568%; }  /* 275.5/778.5 */
+.con5 .c5_c4_circle3 { left: 65.189467%; }  /* 507.5/778.5 */
+.con5 .c5_c4_circle1 img,
+.con5 .c5_c4_circle2 img,
+.con5 .c5_c4_circle3 img { width: 100%; }
+
+.con5 .c5_c4_plus1,
+.con5 .c5_c4_plus2 {
+    top: 6.640420vw;                 /* (6601-6474.5)/1905 */
+    font-family: var(--sf), serif;
+    font-weight: 600;
+    font-size: 1.312336vw;           /* 25/1905 */
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    white-space: nowrap;
+}
+.con5 .c5_c4_plus1 { left: 33.397559%; }    /* 260/778.5 */
+.con5 .c5_c4_plus2 { left: 63.455363%; }    /* 494/778.5 */
+
+.con5 .c5_c4_red_top,
+.con5 .c5_c4_red_bot {
+    /* heightSource: image 155x104 baked (red bubble PNG with text) */
+    aspect-ratio: 155/104;
+    width: 19.910083%;               /* naturalWidth 155/778.5 */
+}
+.con5 .c5_c4_red_top {
+    top: 0;
+    left: 80.089917%;                /* 623.5/778.5 */
+}
+.con5 .c5_c4_red_bot {
+    top: 8.608924vw;                 /* (6638.5-6474.5)/1905 */
+    left: 0;
+}
+.con5 .c5_c4_red_top img,
+.con5 .c5_c4_red_bot img { width: 100%; }
+
+/* ===== CON11: 38년의 역사 — 위/아래 무한 롤링 + 가운데 paper =====
+   섹션 top 기준 = prevSectionBottom 11399 (con10 visual end)
+   PSD Y 11344~12365 (h:1021), bgRect 11396~12339 */
+.con11 {
+    background: #231916;
+    padding-top: 5.144357vw;         /* (11497-11399)/1905 = 98 */
+    padding-bottom: 6.614173vw;      /* (12365-12239)/1905 = 126 */
+    overflow: hidden;
+}
+
+/* === 위 무한 롤링 row (>>롤링 우측) — 부모=section === */
+.con11 .c11_top_row {
+    top: 7.506562vw;                 /* (11542-11399)/1905 */
+    left: 0;
+    width: 50.000000%;               /* center 기준 왼쪽 영역만 노출 */
+    height: 17.112861vw;             /* photo 326/1905 */
+    overflow: hidden;
+    clip-path: inset(0);
+    background: url('/images/con11_bg.png') repeat-x center / auto 100%;
+}
+
+/* === 아래 무한 롤링 row (<<롤링 좌측) — 부모=section === */
+.con11 .c11_bot_row {
+    top: 24.986877vw;                /* (11875-11399)/1905 */
+    left: 50.000000%;                /* center 기준 오른쪽 영역만 노출 */
+    width: 50.000000%;
+    height: 17.112861vw;
+    overflow: hidden;
+    clip-path: inset(0);
+    background: url('/images/con11_bg.png') repeat-x center / auto 100%;
+}
+
+/* === 롤링 트랙 (rltv flex-row, 같은 set 2번 cloning + animation) === */
+.con11 .c11_top_track,
+.con11 .c11_bot_track {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0;
+    width: max-content;
+    height: 100%;
+    align-items: center;
+    will-change: transform;
+}
+.con11 .c11_top_track {
+    animation: c11MarqueeRight 30s linear infinite;
+}
+.con11 .c11_bot_track {
+    animation: c11MarqueeLeft 30s linear infinite;
+}
+
+/* === 롤링 사진 (rltv 1:1 photo, radius 1.5748vw) — 부모=track === */
+.con11 .c11_top_photo,
+.con11 .c11_bot_photo {
+    width: 17.112861vw;              /* 326/1905 */
+    aspect-ratio: 326 / 326;
+    margin-right: 2.099738vw;        /* 40/1905 — set 끝 간격까지 포함해 반복거리 고정 */
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.574803vw;       /* 30/1905 */
+    overflow: hidden;
+}
+.con11 .c11_top_photo img,
+.con11 .c11_bot_photo img { width: 100%; }
+
+/* === 가운데 paper (rltv heightChain, alignSelf:center, z:2) — 부모=section === */
+.con11 .c11_paper {
+    align-self: center;
+    width: 33.858268%;               /* 645/1905 */
+    background: #f8edd7 url('/images/con11_bg_2.png') center / 100% 100% no-repeat;
+    padding-top: 6.509186vw;         /* (11621-11497)/1905 */
+    padding-bottom: 6.404199vw;      /* (12239-12117)/1905 */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+/* === paper 자식 (rltv heightChain, alignSelf:center) === */
+.con11 .c11_kicker {
+    align-self: center;
+    white-space: nowrap;
+    font-family: "omnigothic", "ttomni-gothic", "Pretendard Variable", sans-serif;
+    font-weight: 400;
+    font-size: 1.574803vw;           /* 30/1905 */
+    line-height: 2.167;
+    letter-spacing: -0.05em;
+    color: #070707;
+}
+.con11 .c11_title {
+    margin-top: 1.154856vw;          /* (11671-11649)/1905 */
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: "Eulyoo1945", serif;
+    font-weight: 600;
+    font-size: 3.149606vw;           /* 60/1905 */
+    line-height: 1.25;
+    letter-spacing: -0.05em;
+    color: #070707;
+}
+.con11 .c11_title .c11_title_t1 { color: #5d2b0d; }
+.con11 .c11_desc {
+    margin-top: 2.729659vw;          /* (11857-11805)/1905 */
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: "Pretendard Variable", "Pretendard", sans-serif;
+    font-weight: 300;
+    font-size: 1.154856vw;           /* 22/1905 */
+    line-height: 1.364;
+    letter-spacing: -0.05em;
+    color: #000000;
+}
+.con11 .c11_desc b { font-weight: 700; }
+
+/* === 무한 롤링 keyframes (3장 한 세트 길이만큼 이동해 공백 없이 loop) === */
+@keyframes c11MarqueeRight {
+    0%   { transform: translateX(-57.637795vw); }  /* 3*(326+40)/1905 */
+    100% { transform: translateX(0); }
+}
+@keyframes c11MarqueeLeft {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-57.637795vw); }  /* 3*(326+40)/1905 */
+}
+
+/* ===== CON16: 창업비용 안내 =====
+   visible section top = 18406, bgRect 18406~19424, canvas 1905 */
+.con16 {
+    background: #f8edd7;
+    padding-bottom: 5.301837vw;      /* (19424-19323)/1905 */
+    overflow: hidden;
+}
+
+.con16 .c16_media_layer {
+    top: 0;
+    left: 0;
+    width: 100.000000%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.con16 .c16_bg {
+    top: 0;
+    left: -0.393701%;                /* centered full-bleed source offset /1905 */
+    width: 100.787402%;              /* natural image width /1905 */
+}
+.con16 .c16_bg img,
+.con16 .c16_food img,
+.con16 .c16_cta_img img {
+    display: block;
+    width: 100%;
+}
+
+.con16 .c16_food {
+    top: 30.603675vw;                /* (18989-18406)/1905 */
+    left: 63.674541%;                /* 1213/1905 */
+    width: 37.112861%;               /* naturalWidth 707/1905 */
+}
+
+.con16 .c16_title {
+    margin-top: 7.769029vw;          /* (18554-18406)/1905 */
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: "Eulyoo1945", serif;
+    font-weight: 600;
+    font-size: 3.149606vw;           /* 60/1905 */
+    line-height: 0.983333;           /* bbox 59 / font 60 */
+    letter-spacing: -0.05em;
+    color: #070707;
+    z-index: 1;
+}
+.con16 .c16_title_t1 { color: #5d2b0d; }
+
+.con16 .c16_desc {
+    margin-top: 1.679790vw;          /* (18645-(18554+59))/1905 */
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    font-family: "Pretendard Variable", "Pretendard", sans-serif;
+    font-weight: 300;
+    font-size: 1.154856vw;           /* 22/1905 */
+    line-height: 1.136364;           /* bbox 50 / 2 lines / font 22 */
+    letter-spacing: -0.05em;
+    color: #000000;
+    z-index: 1;
+}
+.con16 .c16_desc b { font-weight: 700; }
+
+.con16 .c16_standard {
+    margin-top: 1.469816vw;          /* (18723-(18645+50))/1905 */
+    margin-left: 68.838845%;
+    align-self: flex-start;
+    white-space: nowrap;
+    font-family: "Pretendard Variable", "Pretendard", sans-serif;
+    font-weight: 300;
+    font-size: 0.839895vw;           /* 16/1905 */
+    line-height: 1;
+    letter-spacing: -0.07em;
+    color: #000000;
+    z-index: 1;
+}
+
+.con16 .c16_table {
+    /* heightSource: PSD table panel 855x525 including header/body/footer/CTA */
+    margin-top: 0.472441vw;          /* (18748-(18723+16))/1905 */
+    align-self: center;
+    width: 44.881890%;               /* 855/1905 */
+    aspect-ratio: 855 / 525;
+    z-index: 1;
+}
+
+.con16 .c16_table_outer {
+    top: 0;
+    left: 0;
+    width: 100.000000%;
+    height: 23.989501vw;             /* 457/1905 */
+    background: #ffffff;
+    border: 1px solid #201412;
+    box-sizing: border-box;
+}
+
+.con16 .c16_table_header_bg {
+    top: 0.052493vw;                 /* (18749-18748)/1905 */
+    left: 0.116959%;                 /* (533-532)/855 */
+    width: 99.766082%;               /* 853/855 */
+    height: 3.622047vw;              /* 69/1905 */
+    background: #f1f1f1;
+}
+
+.con16 .c16_table_footer_bg {
+    top: 23.674541vw;                /* (19199-18748)/1905 */
+    left: 0.116959%;
+    width: 99.766082%;
+    height: 3.884514vw;              /* 74/1905 */
+    background: #231916;
+}
+
+.con16 .c16_row_line {
+    left: 0.116959%;
+    width: 99.649123%;               /* 852/855 */
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.18);
+    background: transparent;
+}
+.con16 .c16_row_line_01 { top: 3.517060vw; }
+.con16 .c16_row_line_02 { top: 6.036745vw; }
+.con16 .c16_row_line_03 { top: 8.556430vw; }
+.con16 .c16_row_line_04 { top: 11.023622vw; }
+.con16 .c16_row_line_05 { top: 13.595801vw; }
+.con16 .c16_row_line_06 { top: 16.115486vw; }
+.con16 .c16_row_line_07 { top: 18.635171vw; }
+.con16 .c16_row_line_08 { top: 21.154856vw; }
+
+.con16 .category_label,
+.con16 .content_label,
+.con16 .amount_label {
+    top: 1.469816vw;                 /* (18776-18748)/1905 */
+    white-space: nowrap;
+    font-family: "Pretendard Variable", "Pretendard", sans-serif;
+    font-weight: 700;
+    font-size: 1.049869vw;           /* 20/1905 */
+    line-height: 2.5;
+    letter-spacing: -0.07em;
+    color: #000000;
+}
+.con16 .category_label { left: 13.333333%; }
+.con16 .content_label { left: 50.058480%; }
+.con16 .amount_label { left: 85.029240%; }
+
+.con16 .c16_row {
+    left: 0;
+    width: 100.000000%;
+    height: 2.519685vw;              /* 48/1905 */
+}
+.con16 .c16_row_01 { top: 3.569554vw; }
+.con16 .c16_row_02 { top: 6.089239vw; }
+.con16 .c16_row_03 { top: 8.608924vw; }
+.con16 .c16_row_04 { top: 11.076115vw; }
+.con16 .c16_row_05 { top: 13.648294vw; }
+.con16 .c16_row_06 { top: 16.167979vw; }
+.con16 .c16_row_07 { top: 18.687664vw; }
+.con16 .c16_row_08 { top: 21.207349vw; }
+
+.con16 .c16_cell {
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-family: "Pretendard Variable", "Pretendard", sans-serif;
+    font-weight: 300;
+    font-size: 0.944882vw;           /* 18/1905 */
+    line-height: 1;
+    letter-spacing: -0.07em;
+    color: #000000;
+}
+.con16 .c16_cell_category {
+    left: 5.263158%;                 /* (577-532)/855 */
+    width: 20.000000%;
+    justify-content: center;
+    text-align: center;
+}
+.con16 .c16_cell_content {
+    left: 31.812865%;                /* (804-532)/855 */
+    width: 40.233918%;
+    justify-content: flex-start;
+    text-align: left;
+}
+.con16 .c16_cell_amount {
+    left: 81.520468%;                /* (1229-532)/855 */
+    width: 10.643275%;
+    justify-content: center;
+    text-align: center;
+}
+
+.con16 .c16_cta_img {
+    top: 24.881890vw;                /* (19222-18748)/1905 */
+    left: 40.467836%;                /* (878-532)/855 */
+    width: 19.064327%;               /* naturalWidth 163/855 */
+}
+
+.con16 .c16_note {
+    margin-top: 0.682415vw;          /* (19286-(18748+525))/1905 */
+    margin-left: 27.979003%;         /* 533/1905 */
+    align-self: flex-start;
+    white-space: nowrap;
+    font-family: "Pretendard Variable", "Pretendard", sans-serif;
+    font-weight: 300;
+    font-size: 0.839895vw;           /* 16/1905 */
+    line-height: 1.15625;            /* bbox 37 / 2 lines / font 16 */
+    letter-spacing: -0.07em;
+    color: #000000;
+    z-index: 1;
+}
+
+/* ===== CON17: 창업절차 안내 ===== */
+.con17 {
+    background: #fefbf2;             /* 사각형 1014 (1923×879) */
+    padding-top: 8.031496vw;
+    padding-bottom: 6.965879vw;
+}
+
+/* Full-bleed background image (con17_bg.jpg with bottom wave pattern baked) */
+.con17 .c17_bg {
+    /* heightSource: image 384x175 baked (con17_bg.jpg natural ratio) */
+    aspect-ratio: 384/175;
+    top: 0;
+    left: -0.393701%;                /* center natural-width image on canvas: -7.5/1905 */
+    width: 100.787402%;              /* naturalWidth /1905 */
+    z-index: 0;
+}
+.con17 .c17_bg img { width: 100%; }
+
+.con17 .c17_title,
+.con17 .c17_grid {
+    z-index: 1;
+}
+
+/* Title centered (Eulyoo SemiBold 60px, color split) */
+.con17 .c17_title {
+    margin-top: 0;
+    align-self: center;
+    font-family: var(--sf), serif;
+    font-weight: 600;
+    font-size: 3.149606vw;           /* 60/1905 */
+    line-height: 1;                  /* tight box (PSD bbox h=59) */
+    letter-spacing: -0.05em;
+    color: #070707;
+    white-space: nowrap;
+}
+.con17 .c17_title .c17_title_point { color: #5d2b0d; }
+
+/* Grid container (2 rows) — parent=section, width=1463/1905 */
+.con17 .c17_grid {
+    margin-top: 3.097113vw;          /* (19692-19632)/1905 */
+    align-self: center;
+    width: 76.797900%;               /* 1463/1905 */
+}
+
+/* Card row — parent=c17_grid (1463px), 4 cards across */
+.con17 .c17_row1,
+.con17 .c17_row2 {
+    /* heightSource: card row bbox 1463x224 baked */
+    aspect-ratio: 1463/224;
+    width: 100%;
+    overflow: visible;               /* trailing arrows overflow each step */
+}
+.con17 .c17_row1 { margin-top: 0; }
+.con17 .c17_row2 { margin-top: 1.364829vw; }   /* (19942-19916)/1905 */
+
+/* Step wrappers — parent=row (1463px), each card-sized */
+.con17 .c17_step {
+    /* heightSource: step card image 311x221 baked */
+    aspect-ratio: 311/221;
+    top: 0;
+    width: 21.257690%;               /* 311/1463 */
+    overflow: visible;               /* trailing arrow overflows right */
+}
+.con17 .c17_step_inquiry,
+.con17 .c17_step_interior  { left: 0%; }
+.con17 .c17_step_consult,
+.con17 .c17_step_training  { left: 26.247437%; }   /* 384/1463 */
+.con17 .c17_step_market,
+.con17 .c17_step_precheck  { left: 52.426521%; }   /* 767/1463 */
+.con17 .c17_step_contract,
+.con17 .c17_step_open      { left: 78.742310%; }   /* 1152/1463 */
+
+/* Card images inside step (parent=step, fill step bounds) */
+.con17 .c17_inquiry_card,
+.con17 .c17_consult_card,
+.con17 .c17_market_card,
+.con17 .c17_contract_card,
+.con17 .c17_interior_card,
+.con17 .c17_training_card,
+.con17 .c17_precheck_card,
+.con17 .c17_open_card {
+    /* heightSource: image 311x221 baked */
+    aspect-ratio: 311/221;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.con17 .c17_inquiry_card img,
+.con17 .c17_consult_card img,
+.con17 .c17_market_card img,
+.con17 .c17_contract_card img,
+.con17 .c17_interior_card img,
+.con17 .c17_training_card img,
+.con17 .c17_precheck_card img,
+.con17 .c17_open_card img { width: 100%; }
+
+/* Trailing arrows (overflow to right of each non-last step) */
+.con17 .c17_inquiry_arrow,
+.con17 .c17_consult_arrow,
+.con17 .c17_market_arrow,
+.con17 .c17_interior_arrow,
+.con17 .c17_training_arrow,
+.con17 .c17_precheck_arrow {
+    /* heightSource: image 41x30 baked */
+    aspect-ratio: 41/30;
+    top: 5.091864vw;                 /* (19789-19692)/1905 — vertically center on row */
+    left: 105.787781%;               /* (554-225-0)/311 — overflow right of step */
+    width: 13.183280%;               /* naturalWidth 41/311 */
+}
+.con17 .c17_inquiry_arrow img,
+.con17 .c17_consult_arrow img,
+.con17 .c17_market_arrow img,
+.con17 .c17_interior_arrow img,
+.con17 .c17_training_arrow img,
+.con17 .c17_precheck_arrow img { width: 100%; }

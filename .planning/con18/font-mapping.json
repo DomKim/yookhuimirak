@@ -1,0 +1,44 @@
+{
+  "verified": true,
+  "section": "con18",
+  "spec": ".planning/main_con18/spec.json",
+  "mapping": {
+    "SUIT-Bold": {
+      "token": "var(--tf)",
+      "fontFamilyCss": "'SUIT', sans-serif",
+      "weight": 700,
+      "usedBy": ["c18_name (매장명 OO점)"]
+    },
+    "SUIT-Regular": {
+      "token": "var(--tf)",
+      "fontFamilyCss": "'SUIT', sans-serif",
+      "weight": 400,
+      "usedBy": ["c18_addr (주소)"]
+    },
+    "SUIT-Thin": {
+      "token": "var(--tf)",
+      "fontFamilyCss": "'SUIT', sans-serif",
+      "weight": 200,
+      "usedBy": ["c18_tel (전화번호 — PSD Thin 톤)"]
+    },
+    "Eulyoo1945-SemiBold": {
+      "token": "var(--sf)",
+      "fontFamilyCss": "'Eulyoo1945', serif",
+      "weight": 600,
+      "usedBy": ["c18_title (매장 안내 60px)", "c18_marquee (GRAND OPEN 22px)"]
+    },
+    "Eulyoo1945-Regular": {
+      "token": "var(--sf)",
+      "fontFamilyCss": "'Eulyoo1945', serif",
+      "weight": 400,
+      "usedBy": ["c18_input placeholder (매장명을 검색해주세요)"]
+    },
+    "HanWangZonYi": {
+      "token": "var(--ff)",
+      "fontFamilyCss": "'Noto Serif KR', 'HanWangZonYi', serif",
+      "weight": 400,
+      "usedBy": ["c18_watermark (善美樂 184.8px)"],
+      "note": "PSD HanWangZonYi 漢儀篆書 폰트는 typekit/웹 미등록 — 'Noto Serif KR'로 한자 fallback. 시각적 톤 유지."
+    }
+  }
+}

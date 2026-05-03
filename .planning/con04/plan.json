@@ -1,0 +1,378 @@
+{
+  "generatedBy": "spec-to-plan v3 + AI visual-origin correction",
+  "strictStructure": true,
+  "section": "con04",
+  "sectionClass": "con4",
+  "page": "main",
+  "specFile": ".planning/con04/spec_main_con04.json",
+  "canvas": 1905,
+  "rawSectionY": {
+    "top": 3428,
+    "bottom": 4828,
+    "height": 1400
+  },
+  "sectionY": {
+    "top": 3679,
+    "bottom": 4569,
+    "height": 890
+  },
+  "visualOriginReason": "PSD raw group includes overhanging source/mask layers. Visible con04 is the 890px split background and noodle-hand asset starting at PSD y=3679.",
+  "bg": "#a4202c",
+  "effectiveEnd": 4569,
+  "prevSectionBottom": 3679,
+  "firstRltvY": 3948,
+  "pt": "14.120735vw",
+  "pb": "13.858268vw",
+  "heightChain": [
+    "pt",
+    "c4_kicker",
+    "c4_title",
+    "c4_desc",
+    "pb"
+  ],
+  "availableImages": [
+    {
+      "file": "con04_01.png",
+      "width": 909,
+      "height": 890,
+      "sourceType": "완성형 가능성"
+    },
+    {
+      "file": "con04_02.png",
+      "width": 791,
+      "height": 791,
+      "sourceType": "완성형 가능성"
+    },
+    {
+      "file": "con04_03.png",
+      "width": 334,
+      "height": 89,
+      "sourceType": "완성형"
+    },
+    {
+      "file": "con04_04.png",
+      "width": 228,
+      "height": 89,
+      "sourceType": "완성형"
+    },
+    {
+      "file": "con04_05.png",
+      "width": 353,
+      "height": 89,
+      "sourceType": "완성형"
+    },
+    {
+      "file": "con04_bg_1.jpg",
+      "width": 960,
+      "height": 890,
+      "sourceType": "소스"
+    },
+    {
+      "file": "con04_bg_2.jpg",
+      "width": 960,
+      "height": 890,
+      "sourceType": "소스"
+    }
+  ],
+  "ignoredTexts": [
+    {
+      "name": "육회랑 막국수를 같이 먹을 수 있어서 너무 좋아요",
+      "reason": "Baked into complete image /images/con04_03.png."
+    },
+    {
+      "name": "여러 사이드도 다양해서 좋네요",
+      "reason": "Baked into complete image /images/con04_04.png."
+    },
+    {
+      "name": "면이 쫄깃하고 새콤달콤한 양념이 입맛을 살려줘 육회와 잘 어울려요",
+      "reason": "Baked into complete image /images/con04_05.png."
+    }
+  ],
+  "ignoredShapes": [
+    {
+      "name": "사각형 6",
+      "reason": "Visible left split panel is implemented with /images/con04_bg_1.jpg."
+    },
+    {
+      "name": "사각형 6 복사",
+      "reason": "Visible right split panel is implemented with /images/con04_bg_2.jpg."
+    },
+    {
+      "name": "사각형 7",
+      "reason": "Bubble background is baked into /images/con04_03.png."
+    },
+    {
+      "name": "사각형 7 복사 2",
+      "reason": "Bubble background is baked into /images/con04_04.png."
+    },
+    {
+      "name": "사각형 7 복사",
+      "reason": "Bubble background is baked into /images/con04_05.png."
+    }
+  ],
+  "roundNumberOverride": [
+    "0.000000vw/0.000000% positions are visual-origin edges.",
+    "100.000000%",
+    "c4_media_layer.width:100% — absolute visual layer intentionally spans the full 1905px canvas.",
+    "c4_noodle_hand left uses exact center calculation: (1905 - 909) / 2 = 498px, not the raw PSD x=505px, per user request to center the hand."
+  ],
+  "doNot": [
+    "Do not code before ASCII approval.",
+    "Do not use section height or aspect-ratio; visible height comes from left rltv heightChain plus pb.",
+    "Do not put background, bowl, hand, or review bubbles into the rltv heightChain.",
+    "Do not rebuild con04_03/con04_04/con04_05 text in HTML because those review bubbles are complete images.",
+    "Do not use object-fit on images.",
+    "Do not use child margin-left to fake centering for the noodle-hand image; it uses exact center-left from naturalWidth.",
+    "Do not hide or reinterpret the <br> structure in the left copy.",
+    "Do not add CSS shadow/radius over the complete review bubble PNGs."
+  ],
+  "ascii": "section.con4 (bg:#a4202c, visual 1905x890)\\npt 14.120735vw\\n  c4_left_bg absol parent=section top 0.000000vw left 0.000000% width 50.393701% image con04_bg_1.jpg 960x890\\n  c4_right_bg absol parent=section top 0.000000vw left 50.341207% width 50.393701% image con04_bg_2.jpg 960x890\\n  c4_noodle_hand absol parent=section top 0.000000vw left 26.141732% width 47.716535% image con04_01.png 909x890 center-aligned\\n  c4_bowl absol parent=section top 2.624672vw left 73.648294% width 41.522310% image con04_02.png 791x791\\n  c4_review_01 absol parent=section top 9.238845vw left 72.335958% width 17.532808% image con04_03.png 334x89\\n  c4_review_02 absol parent=section top 17.480315vw left 64.514436% width 11.968504% image con04_04.png 228x89\\n  c4_review_03 absol parent=section top 35.170604vw left 74.225722% width 18.530184% image con04_05.png 353x89\\n  c4_kicker rltv mt 14.120735vw ml 12.598425% width 15.380577% font 30px/28px #fff\\n  c4_title rltv mt 1.049869vw ml 12.545932% width 17.480315% font 60px/67px #fff + #f8edd7\\n  c4_desc rltv mt 1.837270vw ml 12.545932% width 14.068241% font 22px/28px #fff\\npb 13.858268vw",
+  "elements": [
+    {
+      "name": "c4_media_layer",
+      "type": "group",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "0.000000vw",
+      "left": "0.000000%",
+      "width": "100.000000%",
+      "allowLayered": true,
+      "allowSiblingOverlay": true,
+      "siblingOverlayReason": "Split backgrounds, centered noodle-hand, bowl, and review bubble images intentionally overlap as an absolute visual layer while left copy owns the rltv heightChain.",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 3679,
+      "children": [
+        {
+          "name": "c4_left_bg",
+          "type": "image",
+          "position": "absol",
+          "parent": "c4_media_layer",
+          "parentWidth": 1905,
+          "top": "0.000000vw",
+          "left": "0.000000%",
+          "width": "50.393701%",
+          "src": "/images/con04_bg_1.jpg",
+          "naturalWidth": 960,
+          "naturalHeight": 890,
+          "sourceType": "소스",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 3679
+        },
+        {
+          "name": "c4_right_bg",
+          "type": "image",
+          "position": "absol",
+          "parent": "c4_media_layer",
+          "parentWidth": 1905,
+          "top": "0.000000vw",
+          "left": "50.341207%",
+          "width": "50.393701%",
+          "src": "/images/con04_bg_2.jpg",
+          "naturalWidth": 960,
+          "naturalHeight": 890,
+          "sourceType": "소스",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 3679
+        },
+        {
+          "name": "c4_noodle_hand",
+          "type": "image",
+          "position": "absol",
+          "parent": "c4_media_layer",
+          "parentWidth": 1905,
+          "top": "0.000000vw",
+          "left": "26.141732%",
+          "width": "47.716535%",
+          "src": "/images/con04_01.png",
+          "naturalWidth": 909,
+          "naturalHeight": 890,
+          "sourceType": "완성형 가능성",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 3679,
+          "psdExactReason": "Centered per user request; raw PSD visible x is 505px, exact center-left is 498px."
+        },
+        {
+          "name": "c4_bowl",
+          "type": "image",
+          "position": "absol",
+          "parent": "c4_media_layer",
+          "parentWidth": 1905,
+          "top": "2.624672vw",
+          "left": "73.648294%",
+          "width": "41.522310%",
+          "src": "/images/con04_02.png",
+          "naturalWidth": 791,
+          "naturalHeight": 791,
+          "sourceType": "완성형 가능성",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 3729
+        },
+        {
+          "name": "c4_review_01",
+          "type": "image",
+          "position": "absol",
+          "parent": "c4_media_layer",
+          "parentWidth": 1905,
+          "top": "9.238845vw",
+          "left": "72.335958%",
+          "width": "17.532808%",
+          "src": "/images/con04_03.png",
+          "naturalWidth": 334,
+          "naturalHeight": 89,
+          "sourceType": "완성형",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 3855
+        },
+        {
+          "name": "c4_review_02",
+          "type": "image",
+          "position": "absol",
+          "parent": "c4_media_layer",
+          "parentWidth": 1905,
+          "top": "17.480315vw",
+          "left": "64.514436%",
+          "width": "11.968504%",
+          "src": "/images/con04_04.png",
+          "naturalWidth": 228,
+          "naturalHeight": 89,
+          "sourceType": "완성형",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 4012
+        },
+        {
+          "name": "c4_review_03",
+          "type": "image",
+          "position": "absol",
+          "parent": "c4_media_layer",
+          "parentWidth": 1905,
+          "top": "35.170604vw",
+          "left": "74.225722%",
+          "width": "18.530184%",
+          "src": "/images/con04_05.png",
+          "naturalWidth": 353,
+          "naturalHeight": 89,
+          "sourceType": "완성형",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 4349
+        }
+      ]
+    },
+    {
+      "name": "c4_kicker",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "14.120735vw",
+      "marginLeft": "12.598425%",
+      "alignSelf": "flex-start",
+      "width": "15.380577%",
+      "whiteSpace": "nowrap",
+      "content": "익숙하지만 새로운 메뉴",
+      "segments": [
+        {
+          "text": "익숙하지만 새로운 메뉴",
+          "fontFamily": "TTOmniGothicM",
+          "cssFontFamily": "omnigothic",
+          "fontWeight": 400,
+          "fontSize": "1.574803vw (30px)",
+          "lineHeight": 2.167,
+          "letterSpacing": "-0.05em",
+          "color": "#ffffff"
+        }
+      ],
+      "effects": null
+    },
+    {
+      "name": "c4_title",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "1.049869vw",
+      "marginLeft": "12.545932%",
+      "alignSelf": "flex-start",
+      "width": "17.480315%",
+      "whiteSpace": "nowrap",
+      "content": "흔하지 않아서\n더 강합니다",
+      "segments": [
+        {
+          "text": "흔하지 않아서\n",
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "cssFontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "fontSize": "3.149606vw (60px)",
+          "lineHeight": 1.25,
+          "letterSpacing": "-0.05em",
+          "color": "#ffffff"
+        },
+        {
+          "text": "더 강합니다",
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "cssFontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "fontSize": "3.149606vw (60px)",
+          "lineHeight": 1.25,
+          "letterSpacing": "-0.05em",
+          "color": "#f8edd7"
+        }
+      ],
+      "effects": null
+    },
+    {
+      "name": "c4_desc",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "1.837270vw",
+      "marginLeft": "12.545932%",
+      "alignSelf": "flex-start",
+      "width": "14.068241%",
+      "whiteSpace": "nowrap",
+      "content": "누구나 좋아하는 육회와 막국수\n하지만 쉽게 볼 수 없는 조합\n\n익숙한 메뉴에 새로운 경험을 더해\n상권 내 확실한 차별화를 만듭니다",
+      "segments": [
+        {
+          "text": "누구나 좋아하는 육회와 막국수\n하지만 쉽게 볼 수 없는 조합\n\n익숙한 메뉴에 새로운 경험을 더해\n",
+          "fontFamily": "Pretendard-Light",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 300,
+          "fontSize": "1.154856vw (22px)",
+          "lineHeight": 1.364,
+          "letterSpacing": "-0.05em",
+          "color": "#ffffff"
+        },
+        {
+          "text": "상권 내 확실한 차별화",
+          "fontFamily": "Pretendard-Bold",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 700,
+          "fontSize": "1.154856vw (22px)",
+          "lineHeight": 1.364,
+          "letterSpacing": "-0.05em",
+          "color": "#ffffff"
+        },
+        {
+          "text": "를 만듭니다",
+          "fontFamily": "Pretendard-Light",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 300,
+          "fontSize": "1.154856vw (22px)",
+          "lineHeight": 1.364,
+          "letterSpacing": "-0.05em",
+          "color": "#ffffff"
+        }
+      ],
+      "effects": null
+    }
+  ]
+}

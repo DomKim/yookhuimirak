@@ -1,0 +1,400 @@
+{
+  "generatedBy": "spec-to-plan v3 + AI structure correction (mv main visual)",
+  "strictStructure": true,
+  "section": "main",
+  "sectionClass": "mv",
+  "page": "main",
+  "specFile": ".planning/mirak/main/spec.json",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 0,
+    "bottom": 1135,
+    "height": 1135
+  },
+  "sectionBottomReason": "User preference (short MV): section ends at last dish slide bottom (Y:1085) + 50px breathing room = 1135 instead of PSD effectiveEnd 1542 — beige stage area below 969 belongs to next section.",
+  "bg": "#e3cfaf url('/images/main_bg.jpg') top center / 100% auto no-repeat",
+  "prevSectionBottom": 0,
+  "firstRltvY": 233,
+  "pt": "12.230971vw",
+  "pb": "2.624672vw",
+  "heightChain": [
+    "pt",
+    "mv_label",
+    "mv_title",
+    "mv_desc",
+    "mv_visual",
+    "pb"
+  ],
+  "availableImages": [
+    {"file": "main_bg.jpg", "width": 1920, "height": 960, "sourceType": "소스"},
+    {"file": "main_bg_2.png", "width": 1484, "height": 234, "sourceType": "완성형"},
+    {"file": "main_01_1.png", "width": 780, "height": 515, "sourceType": "완성형"},
+    {"file": "main_01_2.png", "width": 780, "height": 580, "sourceType": "완성형"},
+    {"file": "main_01_3.png", "width": 780, "height": 572, "sourceType": "완성형"}
+  ],
+  "ignoredTexts": [
+    {"name": "경쟁력", "reason": "Header navigation menu — handled in separate header template, not main visual scope."},
+    {"name": "매출안내", "reason": "Header navigation menu — handled in separate header template."},
+    {"name": "차별화", "reason": "Header navigation menu — handled in separate header template."},
+    {"name": "메뉴안내", "reason": "Header navigation menu — handled in separate header template."},
+    {"name": "본사 시스템", "reason": "Header navigation menu — handled in separate header template."},
+    {"name": "창업안내", "reason": "Header navigation menu — handled in separate header template."},
+    {"name": "매장안내", "reason": "Header navigation menu — handled in separate header template."},
+    {"name": "창업문의", "reason": "Header navigation menu — handled in separate header template."},
+    {"name": "h_call", "reason": "Header phone number — handled in separate header template."}
+  ],
+  "ignoredAssets": [
+    {"name": "h_logo", "file": "h_logo.png", "reason": "Header logo — handled in separate header template, not main visual scope."},
+    {"name": "그룹 1", "file": "main_bg.jpg", "reason": "Top dark photo backdrop is rendered as section CSS background-image (background-color #e3cfaf + background-image url(main_bg.jpg) top center / 100% auto no-repeat); not a DOM <img> so it cannot be expressed as a positioned element with PSD coordinates (PSD spec clippingRect was mis-matched to a deco shape)."}
+  ],
+  "ignoredShapes": [
+    {"name": "타원 1", "reason": "Beige stage area path (1628x807) — visible top edge is exported as main_bg_2.png and rendered as absol curve image; the rest of the beige fill is provided by the section background-color #e3cfaf."}
+  ],
+  "roundNumberOverride": ["100.000000%"],
+  "doNot": [
+    "Do not put height/aspect-ratio on stage/scene/wrap/wrapper/inner/holder/box/container/field wrappers; only mv_slider (figure panel) carries aspect-ratio with heightSource note.",
+    "Do not implement the yellow '메뉴 2~3개 롤링' callout — it is a designer comment, not UI.",
+    "Do not break the 3-image fade slider (main_01_1~3) into separate sections; they share Y:505 origin and cycle as fade transitions.",
+    "Do not use object-fit on slide images; preserve naturalWidth aspect by aspect-ratio panel.",
+    "Do not center mv_label/mv_title/mv_desc with margin-left; use alignSelf:center on each rltv text element.",
+    "Do not use raw px or raw vw — only px()/vw() helpers (border/shadow exception only).",
+    "Do not include header menu texts (경쟁력/매출안내/...) inside the main visual section — they live in the separate header template.",
+    "Do not hide or auto-wrap leaf text — keep white-space:nowrap and PSD line breaks."
+  ],
+  "elements": [
+    {
+      "name": "mv_line_1",
+      "type": "cssShapeLine",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "41.154856vw",
+      "left": "-1.784777%",
+      "width": "105.406824%",
+      "height": "0",
+      "borderTop": "1px solid #e3cfaf",
+      "background": "transparent",
+      "opacity": 1,
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 784
+    },
+    {
+      "name": "mv_line_2",
+      "type": "cssShapeLine",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "41.679790vw",
+      "left": "-1.784777%",
+      "width": "105.406824%",
+      "height": "0",
+      "borderTop": "1px solid #e3cfaf",
+      "background": "transparent",
+      "opacity": 1,
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 794
+    },
+    {
+      "name": "mv_curve",
+      "type": "image",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "38.582677vw",
+      "left": "11.049869%",
+      "width": "77.900262%",
+      "aspectRatio": "1484/234",
+      "heightSource": "main_bg_2.png 1484x234 baked",
+      "heightSourceReason": "Beige curve top edge is a complete PNG asset; aspect-ratio is required because the slim curve image is the panel itself.",
+      "src": "/images/main_bg_2.png",
+      "naturalWidth": 1484,
+      "naturalHeight": 234,
+      "sourceType": "완성형",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 735
+    },
+    {
+      "name": "mv_label",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "12.230971vw",
+      "alignSelf": "center",
+      "width": "27.769029%",
+      "whiteSpace": "nowrap",
+      "textAlign": "center",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 233,
+      "segments": [
+        {
+          "text": "맛으로 증명하는 브랜드",
+          "fontWeight": 400,
+          "color": "#ffffff",
+          "fontSize": "1.679790vw (32px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 0.969,
+          "fontFamily": "TTOmniGothicM"
+        },
+        {
+          "text": " ",
+          "fontWeight": 400,
+          "color": "#ffffff",
+          "fontSize": "1.679790vw (32px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 0.969,
+          "fontFamily": "TTOmniGothicR"
+        },
+        {
+          "text": "미락육회막국수",
+          "fontWeight": 400,
+          "color": "#ffffff",
+          "fontSize": "1.679790vw (32px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 0.969,
+          "fontFamily": "TTOmniGothicH"
+        }
+      ]
+    },
+    {
+      "name": "mv_title",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "1.469816vw",
+      "alignSelf": "center",
+      "width": "39.685039%",
+      "whiteSpace": "nowrap",
+      "textAlign": "center",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 292,
+      "segments": [
+        {
+          "text": "유행이 아닌, ",
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "fontSize": "3.937008vw (75px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        },
+        {
+          "text": "오래 남는 맛",
+          "fontWeight": 600,
+          "color": "#e3cfaf",
+          "fontSize": "3.937008vw (75px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        }
+      ]
+    },
+    {
+      "name": "mv_desc",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "1.994751vw",
+      "alignSelf": "center",
+      "width": "34.645669%",
+      "whiteSpace": "nowrap",
+      "textAlign": "center",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 405,
+      "segments": [
+        {
+          "text": "미락육회막국수는 ",
+          "fontWeight": 300,
+          "color": "#ffffff",
+          "fontSize": "1.154856vw (22px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.364,
+          "fontFamily": "Pretendard-Light"
+        },
+        {
+          "text": "광고가 아닌 맛",
+          "fontWeight": 700,
+          "color": "#ffffff",
+          "fontSize": "1.154856vw (22px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.364,
+          "fontFamily": "Pretendard-Bold"
+        },
+        {
+          "text": "으로 고객을 만들고 ",
+          "fontWeight": 300,
+          "color": "#ffffff",
+          "fontSize": "1.154856vw (22px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.364,
+          "fontFamily": "Pretendard-Light"
+        },
+        {
+          "text": "재방문으로 매출",
+          "fontWeight": 700,
+          "color": "#ffffff",
+          "fontSize": "1.154856vw (22px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.364,
+          "fontFamily": "Pretendard-Bold"
+        },
+        {
+          "text": "을 완성합니다",
+          "fontWeight": 300,
+          "color": "#ffffff",
+          "fontSize": "1.154856vw (22px)",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.364,
+          "fontFamily": "Pretendard-Light"
+        }
+      ]
+    },
+    {
+      "name": "mv_visual",
+      "type": "wrapper",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "4.199475vw",
+      "alignSelf": "center",
+      "width": "100.000000%",
+      "display": "block",
+      "effects": null,
+      "borderRadius": null,
+      "psdY": 505,
+      "children": [
+        {
+          "name": "mv_slider",
+          "type": "figure",
+          "position": "rltv",
+          "parent": "mv_visual",
+          "parentWidth": 1905,
+          "marginTop": "0.000000vw",
+          "alignSelf": "center",
+          "width": "40.944882%",
+          "aspectRatio": "780/580",
+          "heightSource": "main_01_2.png 780x580 baked",
+          "heightSourceReason": "Three dish photos share PSD origin (570,505) and cycle as fade slides; the tallest natural image (main_01_2.png 780x580) defines the figure height anchor so all slides occupy the same stage.",
+          "allowSingleSceneOverlayReason": "Slider is a fade carousel — all three slides are absolutely stacked at top:0,left:0 and only one is visible at a time via Swiper effect:fade.",
+          "allowLayered": true,
+          "allowSiblingOverlay": true,
+          "siblingOverlayReason": "Fade slider — three slide images intentionally share top:0/left:0/width:100% so Swiper can fade-cross between them.",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 505,
+          "children": [
+            {
+              "name": "mv_slide_1",
+              "type": "image",
+              "position": "absol",
+              "parent": "mv_slider",
+              "parentWidth": 780,
+              "top": "0.000000vw",
+              "left": "0.000000%",
+              "width": "100.000000%",
+              "src": "/images/main_01_1.png",
+              "naturalWidth": 780,
+              "naturalHeight": 515,
+              "sourceType": "완성형",
+              "effects": null,
+              "borderRadius": null,
+              "psdY": 505
+            },
+            {
+              "name": "mv_slide_2",
+              "type": "image",
+              "position": "absol",
+              "parent": "mv_slider",
+              "parentWidth": 780,
+              "top": "0.000000vw",
+              "left": "0.000000%",
+              "width": "100.000000%",
+              "src": "/images/main_01_2.png",
+              "naturalWidth": 780,
+              "naturalHeight": 580,
+              "sourceType": "완성형",
+              "effects": null,
+              "borderRadius": null,
+              "psdY": 505
+            },
+            {
+              "name": "mv_slide_3",
+              "type": "image",
+              "position": "absol",
+              "parent": "mv_slider",
+              "parentWidth": 780,
+              "top": "0.000000vw",
+              "left": "0.000000%",
+              "width": "100.000000%",
+              "src": "/images/main_01_3.png",
+              "naturalWidth": 780,
+              "naturalHeight": 572,
+              "sourceType": "완성형",
+              "effects": null,
+              "borderRadius": null,
+              "psdY": 505
+            }
+          ]
+        },
+        {
+          "name": "mv_since",
+          "type": "text",
+          "position": "absol",
+          "parent": "mv_visual",
+          "parentWidth": 1905,
+      "top": "12.518373vw",
+          "left": "6.351706%",
+          "width": "7.874016%",
+          "whiteSpace": "nowrap",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 753,
+          "segments": [
+            {
+              "text": "SINCE1988",
+              "fontWeight": 600,
+              "color": "#e3cfaf",
+              "fontSize": "1.049869vw (20px)",
+              "letterSpacing": "0.3em",
+              "lineHeight": 0.8,
+              "fontFamily": "Eulyoo1945-SemiBold"
+            }
+          ]
+        },
+        {
+          "name": "mv_years",
+          "type": "text",
+          "position": "absol",
+          "parent": "mv_visual",
+          "parentWidth": 1905,
+      "top": "12.518373vw",
+          "left": "87.926509%",
+          "width": "6.509186%",
+          "whiteSpace": "nowrap",
+          "effects": null,
+          "borderRadius": null,
+          "psdY": 753,
+          "segments": [
+            {
+              "text": "38YEARS",
+              "fontWeight": 600,
+              "color": "#e3cfaf",
+              "fontSize": "1.049869vw (20px)",
+              "letterSpacing": "0.3em",
+              "lineHeight": 0.8,
+              "fontFamily": "Eulyoo1945-SemiBold"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

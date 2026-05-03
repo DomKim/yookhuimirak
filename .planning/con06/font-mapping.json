@@ -1,0 +1,31 @@
+{
+  "verified": true,
+  "mapping": {
+    "TTOmniGothicM": {
+      "cssFamily": "var(--tf), sans-serif",
+      "cssWeight": 500,
+      "fallback": "SUIT Medium",
+      "note": "TTOmniGothicM (PSD) → SUIT(--tf) Medium 500. font.css에 TTOmniGothic @font-face 없음, 가장 가까운 산세리프 고딕 SUIT 사용 (con01_kicker 등 기존 섹션과 동일 매핑)"
+    },
+    "TTOmniGothicH": {
+      "cssFamily": "var(--tf), sans-serif",
+      "cssWeight": 800,
+      "fallback": "SUIT ExtraBold",
+      "note": "TTOmniGothicH (PSD Heavy) → SUIT(--tf) 800 ExtraBold (mv_label_t3는 900으로 쓴 사례 있으나 con06은 일반 강조이므로 800 사용)"
+    },
+    "Eulyoo1945-SemiBold": {
+      "cssFamily": "var(--sf), serif",
+      "cssWeight": 600,
+      "fallback": "Eulyoo1945 SemiBold",
+      "note": "var(--sf) = 'Eulyoo1945'. font.css의 @font-face Eulyoo1945 weight 600 등록됨"
+    },
+    "HanWangZonYi": {
+      "cssFamily": null,
+      "cssWeight": null,
+      "fallback": "이미지(con06_01.png)로 대체",
+      "note": "한자 전용 폰트 — font.css에 @font-face 없음. plan.ignoredTexts에 사유 명시. 善美樂 워터마크는 PSD layer bbox와 동일한 525×175 PNG로 export되어 이미지로 구현"
+    }
+  },
+  "spec": ".planning/con06/spec.json",
+  "verifiedAt": "2026-05-03"
+}

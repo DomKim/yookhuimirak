@@ -1,0 +1,69 @@
+<?php
+add_stylesheet("<link rel='stylesheet' href='".G5_THEME_URL."/template/header/style.css'>", 0);
+?>
+
+<!-- 내용시작 -->
+<link rel="stylesheet" href="/font/font.css" />
+<link rel="stylesheet" href="/css/header.css" />
+<script>
+window.loadKakaoMapsSdk = window.loadKakaoMapsSdk || function (callback) {
+    if (window.kakao && window.kakao.maps && window.kakao.maps.services) {
+        if (callback) callback();
+        return;
+    }
+    var existing = document.getElementById('kakaoMapsSdk');
+    if (existing) {
+        if (callback) existing.addEventListener('load', callback, { once: true });
+        return;
+    }
+    var script = document.createElement('script');
+    script.id = 'kakaoMapsSdk';
+    script.src = 'https://dapi.kakao.com/v2/maps/sdk.js?appkey=f2bc263b2b18abb21e30950381fc0155&libraries=services&autoload=false';
+    script.async = true;
+    if (callback) script.addEventListener('load', callback, { once: true });
+    document.head.appendChild(script);
+};
+document.addEventListener('DOMContentLoaded', function () {
+    if (document.getElementById('map') || document.getElementById('wr_4') || document.getElementById('c18Map')) {
+        window.loadKakaoMapsSdk();
+    }
+});
+</script>
+
+<header class="header header_psd">
+    <div class="header_deco absol flexrow scbg"></div>
+    <div class="header_logo">
+        <a class="header_logo_href flexcol" href="/">
+            <img class="header_logo_1" src="/images/h_logo.png" alt="미락육회막국수">
+        </a>
+    </div>
+
+    <div class="header_menu">
+        <a class="header_menu_1 rltv" href="#move_02"><p>경쟁력</p></a>
+        <a class="header_menu_1 rltv" href="#move_03"><p>매출안내</p></a>
+        <a class="header_menu_1" href="#move_04"><p>차별화</p></a>
+        <a class="header_menu_1" href="#move_05"><p>메뉴안내</p></a>
+        <a class="header_menu_1 rltv" href="#move_06"><p>본사 시스템</p></a>
+        <a class="header_menu_1 rltv" href="#move_07"><p>창업안내</p></a>
+        <a class="header_menu_1 rltv" href="#move_08"><p>매장안내</p></a>
+        <a class="header_menu_1 rltv" href="#contact_service"><p>창업문의</p></a>
+    </div>
+
+    <a class="header_tel absol" href="tel:032-433-7049">
+        <img src="/images/h_call.png" alt="전화걸기">
+    </a>
+
+    <div class="hamburger mobile-pc">
+        <div class="hamburger-menu">
+            <div id="line-top" class="line top-reverse init"></div>
+            <div id="line-mid" class="line mid-reverse init"></div>
+            <div id="line-bot" class="line bot-reverse init"></div>
+        </div>
+    </div>
+
+</header>
+
+<script src="/js/header.js"></script>
+<!-- 내용끝 -->
+
+<script src="<?=G5_THEME_URL?>/template/header/script.js"></script>

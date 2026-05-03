@@ -1,0 +1,268 @@
+{
+  "section": "con16",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 0,
+    "bottom": 1018,
+    "height": 1018
+  },
+  "background": {
+    "type": "color",
+    "fill": "#f8edd7",
+    "src": null
+  },
+  "groups": [],
+  "texts": [
+    {
+      "name": "c16_title",
+      "content": "창업비용 안내",
+      "x": 793,
+      "y": 148,
+      "w": 333,
+      "h": 59,
+      "segments": [
+        {
+          "text": "창업비용",
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "cssFontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "fontSize": "3.149606vw (60px)",
+          "lineHeight": 1.083,
+          "letterSpacing": "-0.05em",
+          "color": "#5d2b0d"
+        },
+        {
+          "text": " 안내",
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "cssFontFamily": "var(--sf)",
+          "fontWeight": 600,
+          "fontSize": "3.149606vw (60px)",
+          "lineHeight": 1.083,
+          "letterSpacing": "-0.05em",
+          "color": "#070707"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "c16_desc",
+      "content": "창업자금은 고객님의 소중한 자산입니다.\n꼭 필요한곳에 투자되도록 매장별 맞춤 설계를 도와드립니다.",
+      "x": 720,
+      "y": 239,
+      "w": 477,
+      "h": 50,
+      "segments": [
+        {
+          "text": "창업자금은 고객님의 소중한 자산입니다.\n꼭 필요한곳에 투자되도록 ",
+          "fontFamily": "Pretendard-Light",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 300,
+          "fontSize": "1.154856vw (22px)",
+          "lineHeight": 1.364,
+          "letterSpacing": "-0.05em",
+          "color": "#000000"
+        },
+        {
+          "text": "매장별 맞춤 설계",
+          "fontFamily": "Pretendard-Bold",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 700,
+          "fontSize": "1.154856vw (22px)",
+          "lineHeight": 1.364,
+          "letterSpacing": "-0.05em",
+          "color": "#000000"
+        },
+        {
+          "text": "를 도와드립니다.",
+          "fontFamily": "Pretendard-Light",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 300,
+          "fontSize": "1.154856vw (22px)",
+          "lineHeight": 1.364,
+          "letterSpacing": "-0.05em",
+          "color": "#000000"
+        }
+      ],
+      "lineBreaks": 1
+    },
+    {
+      "name": "c16_standard",
+      "content": "[20평 기준]",
+      "x": 1319,
+      "y": 317,
+      "w": 64,
+      "h": 16,
+      "segments": [
+        {
+          "text": "[20평 기준]",
+          "fontFamily": "Pretendard-Light",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 300,
+          "fontSize": "0.839895vw (16px)",
+          "lineHeight": 3.125,
+          "letterSpacing": "-0.07em",
+          "color": "#000000"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "category_label",
+      "content": "구분",
+      "x": 646,
+      "y": 370,
+      "w": 33,
+      "h": 18,
+      "segments": [
+        {
+          "text": "구분",
+          "fontFamily": "Pretendard-Bold",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 700,
+          "fontSize": "1.049869vw (20px)",
+          "lineHeight": 2.5,
+          "letterSpacing": "-0.07em",
+          "color": "#000000"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "content_label",
+      "content": "내용",
+      "x": 960,
+      "y": 370,
+      "w": 32,
+      "h": 18,
+      "segments": [
+        {
+          "text": "내용",
+          "fontFamily": "Pretendard-Bold",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 700,
+          "fontSize": "1.049869vw (20px)",
+          "lineHeight": 2.5,
+          "letterSpacing": "-0.07em",
+          "color": "#000000"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "amount_label",
+      "content": "금액",
+      "x": 1259,
+      "y": 370,
+      "w": 32,
+      "h": 18,
+      "segments": [
+        {
+          "text": "금액",
+          "fontFamily": "Pretendard-Bold",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 700,
+          "fontSize": "1.049869vw (20px)",
+          "lineHeight": 2.5,
+          "letterSpacing": "-0.07em",
+          "color": "#000000"
+        }
+      ],
+      "lineBreaks": 0
+    },
+    {
+      "name": "c16_note",
+      "content": "※ 별도공사 : 전기증설, 배전판, 가스설치공사, 상하수도유입공사, 화장실공사, 소방방염공사, 냉난방기, 철거, 덕트\n    배기공사, 포스, 외부닥트입상공사, 집진기, 식기세척기, 정수기,TV 및 음향기기, 기타 등등 기본외 공사",
+      "x": 533,
+      "y": 880,
+      "w": 624,
+      "h": 37,
+      "segments": [
+        {
+          "text": "※ 별도공사 : 전기증설, 배전판, 가스설치공사, 상하수도유입공사, 화장실공사, 소방방염공사, 냉난방기, 철거, 덕트\n    배기공사, 포스, 외부닥트입상공사, 집진기, 식기세척기, 정수기,TV 및 음향기기, 기타 등등 기본외 공사",
+          "fontFamily": "Pretendard-Light",
+          "cssFontFamily": "var(--mf)",
+          "fontWeight": 300,
+          "fontSize": "0.839895vw (16px)",
+          "lineHeight": 1.25,
+          "letterSpacing": "-0.07em",
+          "color": "#000000"
+        }
+      ],
+      "lineBreaks": 1
+    }
+  ],
+  "rects": [
+    {
+      "name": "c16_table_outer",
+      "x": 525,
+      "y": 342,
+      "w": 855,
+      "h": 525,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "c16_table_header_bg",
+      "x": 526,
+      "y": 343,
+      "w": 853,
+      "h": 69,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "c16_table_footer_bg",
+      "x": 526,
+      "y": 793,
+      "w": 853,
+      "h": 74,
+      "fill": "#000000",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "c16_bg",
+      "x": -7.5,
+      "y": 0,
+      "w": 1920,
+      "h": 1015,
+      "clippingRect": null,
+      "possibleFile": "con16_bg.jpg",
+      "effects": null
+    },
+    {
+      "name": "c16_food",
+      "x": 1213,
+      "y": 583,
+      "w": 707,
+      "h": 504,
+      "clippingRect": null,
+      "possibleFile": "con16_02.png",
+      "effects": null
+    },
+    {
+      "name": "c16_cta_img",
+      "x": 871,
+      "y": 816,
+      "w": 163,
+      "h": 28,
+      "clippingRect": null,
+      "possibleFile": "con16_01.png",
+      "effects": null
+    }
+  ],
+  "comments": [
+    "generated from plan.json for replay validation",
+    "raw PSD origin shifted to visual section origin"
+  ]
+}

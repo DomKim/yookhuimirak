@@ -1,0 +1,43 @@
+# DB 설정 (setup.sh가 자동 생성)
+data/dbconfig.php
+
+# 런타임 생성 (캐시/세션/로그)
+data/cache/*
+data/session/*
+data/tmp/*
+data/log/*
+!data/*/.gitkeep
+
+# 첨부파일/에셋은 추적 (팀 동기화)
+# data/file/ — 게시판 첨부파일
+# data/common/ — 사이트 로고 등
+# data/editor/ — 에디터 업로드
+# data/member/ — 회원 아이콘
+# data/member_image/ — 회원 이미지
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node
+node_modules/
+
+# Docker
+db_data/
+
+.env
+
+# PSD (대용량 — GitHub 100MB 제한 초과)
+*.psd
+psd/*.psd
+
+# 작업 중 임시 파일
+_con19_test.js
+_beacon_test.js
+findings.md

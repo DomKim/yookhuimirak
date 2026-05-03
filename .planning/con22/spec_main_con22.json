@@ -1,0 +1,451 @@
+{
+  "section": "quick",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 22331,
+    "bottom": 22453
+  },
+  "background": {
+    "type": "color",
+    "fill": "#f8f4e6",
+    "src": null
+  },
+  "groups": [
+    {
+      "name": "q_btn",
+      "parentGroup": "quick",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 585 복사",
+          "type": "layer",
+          "x": 1506,
+          "y": 22366,
+          "w": 205,
+          "h": 54
+        },
+        {
+          "name": "문의하기",
+          "type": "text",
+          "x": 1573,
+          "y": 22382,
+          "w": 72,
+          "h": 21
+        }
+      ],
+      "bbox": {
+        "x": 1506,
+        "y": 22366,
+        "w": 205,
+        "h": 54
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "q_tt",
+      "parentGroup": "quick",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "사각형 9 복사 3",
+          "type": "layer",
+          "x": 1717,
+          "y": 22366,
+          "w": 54,
+          "h": 54
+        },
+        {
+          "name": "TOP",
+          "type": "text",
+          "x": 1727,
+          "y": 22387,
+          "w": 35,
+          "h": 13
+        }
+      ],
+      "bbox": {
+        "x": 1717,
+        "y": 22366,
+        "w": 54,
+        "h": 54
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "q_call",
+      "parentGroup": "quick",
+      "childCount": 2,
+      "children": [
+        {
+          "name": "q_call",
+          "type": "text",
+          "x": 380,
+          "y": 22381,
+          "w": 181,
+          "h": 24
+        },
+        {
+          "name": "벡터 고급 개체 복사 14",
+          "type": "layer",
+          "x": 339,
+          "y": 22378,
+          "w": 29,
+          "h": 29
+        }
+      ],
+      "bbox": {
+        "x": 339,
+        "y": 22378,
+        "w": 222,
+        "h": 29
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    }
+  ],
+  "texts": [
+    {
+      "name": "성함",
+      "content": "성함",
+      "lineBreaks": 0,
+      "x": 680,
+      "y": 22384,
+      "w": 33,
+      "h": 18,
+      "segments": [
+        {
+          "text": "성함",
+          "fontSize_px": 20.01,
+          "fontSize_vw": "1.0504",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#999999",
+          "lineHeight": 1.5,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "연락처",
+      "content": "연락처",
+      "lineBreaks": 0,
+      "x": 892,
+      "y": 22384,
+      "w": 48,
+      "h": 18,
+      "segments": [
+        {
+          "text": "연락처",
+          "fontSize_px": 20.01,
+          "fontSize_vw": "1.0504",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#999999",
+          "lineHeight": 1.5,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "희망지역",
+      "content": "희망지역",
+      "lineBreaks": 0,
+      "x": 1104,
+      "y": 22384,
+      "w": 65,
+      "h": 18,
+      "segments": [
+        {
+          "text": "희망지역",
+          "fontSize_px": 20.01,
+          "fontSize_vw": "1.0504",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#999999",
+          "lineHeight": 1.5,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "개인정보 수집 및 이용 동의",
+      "content": "개인정보 수집 및 이용 동의",
+      "lineBreaks": 0,
+      "x": 1283,
+      "y": 22385,
+      "w": 154,
+      "h": 15,
+      "segments": [
+        {
+          "text": "개인정보 수집 및 이용 동의",
+          "fontSize_px": 16,
+          "fontSize_vw": "0.8399",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#999999",
+          "lineHeight": 1.876,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "문의하기",
+      "content": "문의하기",
+      "lineBreaks": 0,
+      "x": 1573,
+      "y": 22382,
+      "w": 72,
+      "h": 21,
+      "segments": [
+        {
+          "text": "문의하기",
+          "fontSize_px": 20.01,
+          "fontSize_vw": "1.0504",
+          "fontWeight": 700,
+          "fontFamily": "NotoSerifCJKkr-Bold",
+          "color": "#ffffff",
+          "lineHeight": 1.5,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "TOP",
+      "content": "TOP",
+      "lineBreaks": 0,
+      "x": 1727,
+      "y": 22387,
+      "w": 35,
+      "h": 13,
+      "segments": [
+        {
+          "text": "TOP",
+          "fontSize_px": 16,
+          "fontSize_vw": "0.8399",
+          "fontWeight": 600,
+          "fontFamily": "Hahmlet-SemiBold",
+          "color": "#231916",
+          "lineHeight": 0.813,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        }
+      ]
+    },
+    {
+      "name": "q_call",
+      "content": "032.433.7049",
+      "lineBreaks": 0,
+      "x": 380,
+      "y": 22381,
+      "w": 181,
+      "h": 24,
+      "segments": [
+        {
+          "text": "032",
+          "fontSize_px": 33.01,
+          "fontSize_vw": "1.7328",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 0.727,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        },
+        {
+          "text": ".",
+          "fontSize_px": 33.01,
+          "fontSize_vw": "1.7328",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#a4202c",
+          "lineHeight": 0.727,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        },
+        {
+          "text": "433",
+          "fontSize_px": 33.01,
+          "fontSize_vw": "1.7328",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 0.727,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        },
+        {
+          "text": ".",
+          "fontSize_px": 33.01,
+          "fontSize_vw": "1.7328",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#a4202c",
+          "lineHeight": 0.727,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        },
+        {
+          "text": "7049",
+          "fontSize_px": 33.01,
+          "fontSize_vw": "1.7328",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#231916",
+          "lineHeight": 0.727,
+          "lineHeight_source": "auto (h÷lines÷fontSize)",
+          "letterSpacing": "-0.06em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 586 복사",
+      "x": -1,
+      "y": 22347,
+      "w": 1922,
+      "h": 96,
+      "fill": "#f8f4e6",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588",
+      "x": 585,
+      "y": 22366,
+      "w": 224,
+      "h": 54,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#dddddd"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사",
+      "x": 805,
+      "y": 22366,
+      "w": 224,
+      "h": 54,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#dddddd"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 588 복사 2",
+      "x": 1025,
+      "y": 22366,
+      "w": 224,
+      "h": 54,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#dddddd"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 584 복사",
+      "x": 1259,
+      "y": 22384,
+      "w": 18,
+      "h": 18,
+      "fill": "#ffffff",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#dddddd"
+      },
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 585 복사",
+      "x": 1506,
+      "y": 22366,
+      "w": 205,
+      "h": 54,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 9 복사 3",
+      "x": 1717,
+      "y": 22366,
+      "w": 54,
+      "h": 54,
+      "fill": "#981b1f",
+      "borderRadius": 0,
+      "stroke": {
+        "width": 1,
+        "color": "#231916"
+      },
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "q_img",
+      "x": 150,
+      "y": 22331,
+      "w": 167,
+      "h": 122,
+      "clippingRect": {
+        "x": 1259,
+        "y": 22384,
+        "w": 18,
+        "h": 18,
+        "borderRadius": 0
+      },
+      "possibleFile": "quick_1.png",
+      "effects": null
+    },
+    {
+      "name": "벡터 고급 개체 복사 14",
+      "x": 339,
+      "y": 22378,
+      "w": 29,
+      "h": 29,
+      "clippingRect": null,
+      "possibleFile": "quick_2.png",
+      "effects": [
+        {
+          "type": "colorOverlay",
+          "color": "#231916",
+          "opacity": 1,
+          "blendMode": "normal"
+        }
+      ]
+    }
+  ],
+  "comments": []
+}

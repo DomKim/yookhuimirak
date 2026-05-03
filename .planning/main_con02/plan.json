@@ -1,0 +1,428 @@
+{
+  "generatedBy": "spec-to-plan v3 + AI structure correction",
+  "strictStructure": true,
+  "section": "con02",
+  "sectionClass": "main_sales",
+  "page": "main",
+  "specFile": ".planning/con02/spec_main_con02.json",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 1791,
+    "bottom": 2776,
+    "height": 985
+  },
+  "bg": "#231916",
+  "bgRect": {
+    "top": 1848,
+    "bottom": 2741
+  },
+  "prevSectionBottom": 1850,
+  "firstRltvY": 2023,
+  "pt": "12.178478vw",
+  "pb": "5.826772vw",
+  "heightChain": [
+    "pt",
+    "c2_title",
+    "c2_desc",
+    "c2_badge",
+    "c2_amount",
+    "c2_swiper",
+    "pb"
+  ],
+  "availableImages": [
+    {
+      "file": "con02_01.png",
+      "width": 270,
+      "height": 53,
+      "composite": true,
+      "sourceType": "완성형"
+    },
+    {
+      "file": "con02_02.png",
+      "width": 934,
+      "height": 985,
+      "sourceType": "완성형 가능성"
+    }
+  ],
+  "ignoredTexts": [
+    {
+      "name": "월 최고 매출 | 본점 기준",
+      "reason": "Implemented as composite image /images/con02_01.png (red pill badge with text baked in)."
+    },
+    {
+      "name": "미락육회막국수 본점",
+      "reason": "Repeated 6× in PSD as duplicated card placeholder. Card content rendered dynamically from main_sales board (PHP loop, wr_subject)."
+    },
+    {
+      "name": "35,260,000",
+      "reason": "Repeated 6× in PSD as duplicated card placeholder. Card content rendered dynamically from main_sales board (wr_1 / 매출 금액)."
+    },
+    {
+      "name": "[1월 월매출]",
+      "reason": "Repeated 6× in PSD as duplicated card placeholder. Card content rendered dynamically from main_sales board (wr_2 / 기간)."
+    }
+  ],
+  "ignoredShapes": [
+    {
+      "name": "사각형 3",
+      "reason": "Section background color #231916 — applied to section element directly."
+    },
+    {
+      "name": "사각형 5",
+      "reason": "Card background ×6 instances — implemented as single CSS template .c2_card (border:1px #231916, radius:20px, fill:#fff) repeated by Swiper PHP loop."
+    },
+    {
+      "name": "모양 5",
+      "reason": "Decorative gold line ×6 instances — implemented as single cssShapeLine .c2_card_line inside card template, repeated per card."
+    },
+    {
+      "name": "사각형 4",
+      "reason": "Badge red pill background — baked into composite image /images/con02_01.png."
+    },
+    {
+      "name": "모양 4",
+      "reason": "Vertical gold deco line at top center — implemented as c2_top_line cssShapeLine element."
+    }
+  ],
+  "roundNumberOverride": [
+    "c2_swiper.width:100% — Swiper container fills section full width (= 1905/1905 = 100% by definition)."
+  ],
+  "doNot": [
+    "Do not use px for layout values except border/shadow.",
+    "Do not use object-fit on images.",
+    "Do not use child margin-left to fake centered title/desc — parent flex centerChildren or alignSelf:center only.",
+    "Do not duplicate badge text over con02_01.png composite image.",
+    "Do not hide or reinterpret PSD text line breaks — c2_desc has 1 explicit <br>.",
+    "Do not add CSS effects (shadow, radius) on top of the composite badge image.",
+    "Do not bake card heights with aspect-ratio — cards use heightChain because content is dynamic from main_sales board.",
+    "Do not enforce centeredSlides on the card swiper — strip mode (slides flowing across viewport, edge-clipped).",
+    "Do not reinterpret yellow designer comments (직접 등록 가능한 게시판, 숫자 CT) — those are PSD memos, not implementation targets."
+  ],
+  "swiperConfig": {
+    "selector": ".c2_swiper .swiper",
+    "mode": "strip",
+    "slidesPerView": "auto",
+    "spaceBetween": 14,
+    "loop": true,
+    "centeredSlides": false,
+    "speed": 600,
+    "autoplay": {
+      "delay": 3000,
+      "disableOnInteraction": false
+    },
+    "boardSource": "main_sales",
+    "boardFields": {
+      "title": "wr_subject",
+      "amount": "wr_1",
+      "period": "wr_2"
+    }
+  },
+  "elements": [
+    {
+      "name": "c2_food",
+      "type": "image",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "0.000000vw",
+      "left": "51.758530%",
+      "width": "49.028871%",
+      "src": "/images/con02_02.png",
+      "naturalWidth": 934,
+      "naturalHeight": 985,
+      "sourceType": "완성형 가능성",
+      "psdY": 1791,
+      "effects": null,
+      "borderRadius": null
+    },
+    {
+      "name": "c2_top_line",
+      "type": "cssShapeLine",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "2.939633vw",
+      "left": "50.288714%",
+      "width": "0.209974%",
+      "height": "6.719160vw",
+      "background": "#bfa78a",
+      "opacity": 0.2,
+      "psdY": 1847,
+      "effects": null,
+      "borderRadius": null
+    },
+    {
+      "name": "c2_title",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "12.178478vw",
+      "alignSelf": "center",
+      "whiteSpace": "nowrap",
+      "segments": [
+        {
+          "text": "한 번이 아닌, ",
+          "fontSize": "3.149606vw (60px)",
+          "fontWeight": 600,
+          "color": "#ffffff",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.083,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        },
+        {
+          "text": "계속되는 매출",
+          "fontSize": "3.149606vw (60px)",
+          "fontWeight": 600,
+          "color": "#e3cfaf",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.083,
+          "fontFamily": "Eulyoo1945-SemiBold"
+        }
+      ],
+      "psdY": 2023,
+      "effects": null
+    },
+    {
+      "name": "c2_desc",
+      "type": "text",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "1.732283vw",
+      "alignSelf": "center",
+      "textAlign": "center",
+      "lineBreaks": 1,
+      "segments": [
+        {
+          "text": "재방문을 만드는 맛과 흔들리지 않는 운영 구조",
+          "fontSize": "1.154856vw (22px)",
+          "fontWeight": 700,
+          "color": "#ffffff",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.455,
+          "fontFamily": "Pretendard-Bold"
+        },
+        {
+          "text": "로\n일회성이 아닌 매출을 만듭니다",
+          "fontSize": "1.154856vw (22px)",
+          "fontWeight": 300,
+          "color": "#ffffff",
+          "letterSpacing": "-0.05em",
+          "lineHeight": 1.455,
+          "fontFamily": "Pretendard-Light"
+        }
+      ],
+      "psdY": 2116,
+      "effects": null
+    },
+    {
+      "name": "c2_badge",
+      "type": "image",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "1.154856vw",
+      "marginLeft": "12.545932%",
+      "alignSelf": "flex-start",
+      "width": "14.173228%",
+      "src": "/images/con02_01.png",
+      "naturalWidth": 270,
+      "naturalHeight": 53,
+      "sourceType": "완성형",
+      "psdY": 2190,
+      "effects": null,
+      "borderRadius": null
+    },
+    {
+      "name": "c2_amount",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "width": "32.336483%",
+      "marginTop": "1.942257vw",
+      "marginLeft": "12.650919%",
+      "alignSelf": "flex-start",
+      "display": "flex-row",
+      "alignItems": "baseline",
+      "gap": "0.577428vw",
+      "psdY": 2283,
+      "children": [
+        {
+          "name": "c2_amount_num",
+          "type": "text",
+          "position": "rltv",
+          "parent": "c2_amount",
+          "parentWidth": 616,
+          "whiteSpace": "nowrap",
+          "segments": [
+            {
+              "text": "67,000,000",
+              "fontSize": "6.299213vw (120px)",
+              "fontWeight": 600,
+              "color": "#bfa78a",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 0.883,
+              "fontFamily": "Eulyoo1945-SemiBold"
+            }
+          ],
+          "psdY": 2283,
+          "effects": null
+        },
+        {
+          "name": "c2_amount_won",
+          "type": "text",
+          "position": "rltv",
+          "parent": "c2_amount",
+          "parentWidth": 616,
+          "whiteSpace": "nowrap",
+          "segments": [
+            {
+              "text": "원",
+              "fontSize": "1.837270vw (35px)",
+              "fontWeight": 600,
+              "color": "#ffffff",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.857,
+              "fontFamily": "Eulyoo1945-SemiBold"
+            }
+          ],
+          "psdY": 2343,
+          "effects": null
+        }
+      ],
+      "effects": null
+    },
+    {
+      "name": "c2_swiper",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "3.622047vw",
+      "alignSelf": "stretch",
+      "width": "97.427822%",
+      "_widthNote": "97.427822% = PSD 매출 group bbox 1856/1905. Swiper container fits the cards row bbox; outer slides extend past viewport via swiper overflow.",
+      "swiperConfig": {
+        "selector": ".c2_swiper .swiper",
+        "mode": "strip",
+        "slidesPerView": "auto",
+        "spaceBetween": 14,
+        "loop": true,
+        "centeredSlides": false,
+        "speed": 600,
+        "autoplay": {
+          "delay": 3000,
+          "disableOnInteraction": false
+        }
+      },
+      "psdY": 2458,
+      "children": [
+        {
+          "name": "c2_card",
+          "type": "cssShape",
+          "position": "rltv",
+          "parent": "c2_swiper",
+          "parentWidth": 1905,
+          "width": "18.897638%",
+          "background": "#ffffff",
+          "borderRadius": "1.049869vw",
+          "border": "1px solid #231916",
+          "heightSource": "rltv-heightChain",
+          "heightSourceReason": "Card content (title + line + amount + period) is dynamic from main_sales board. Height built from internal heightChain (pt 1.522310vw + title 1.0499vw + mt 1.154856vw + line 0.157480vw + mt 1.627297vw + amount 2.624147vw + mt 0.734908vw + period 0.892388vw + pb 1.469816vw ≈ 10.866vw matches PSD card 207px).",
+          "psdY": 2458,
+          "children": [
+            {
+              "name": "c2_card_title",
+              "type": "text",
+              "position": "rltv",
+              "parent": "c2_card",
+              "parentWidth": 360,
+              "marginTop": "1.522310vw",
+              "alignSelf": "center",
+              "whiteSpace": "nowrap",
+              "segments": [
+                {
+                  "text": "{{wr_subject}}",
+                  "fontSize": "1.049869vw (20px)",
+                  "fontWeight": 700,
+                  "color": "#000000",
+                  "letterSpacing": "-0.05em",
+                  "lineHeight": 3.249,
+                  "fontFamily": "Pretendard-Bold"
+                }
+              ],
+              "psdY": 2487,
+              "effects": null
+            },
+            {
+              "name": "c2_card_line",
+              "type": "cssShapeLine",
+              "position": "rltv",
+              "parent": "c2_card",
+              "parentWidth": 360,
+              "marginTop": "1.154856vw",
+              "alignSelf": "center",
+              "width": "76.666667%",
+              "height": "0.157480vw",
+              "background": "#f8edd7",
+              "psdY": 2527,
+              "effects": null,
+              "borderRadius": null
+            },
+            {
+              "name": "c2_card_amount",
+              "type": "text",
+              "position": "rltv",
+              "parent": "c2_card",
+              "parentWidth": 360,
+              "marginTop": "1.627297vw",
+              "alignSelf": "center",
+              "whiteSpace": "nowrap",
+              "segments": [
+                {
+                  "text": "{{wr_1}}",
+                  "fontSize": "2.624147vw (49.99px)",
+                  "fontWeight": 600,
+                  "color": "#231916",
+                  "letterSpacing": "-0.05em",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Eulyoo1945-SemiBold"
+                }
+              ],
+              "psdY": 2561,
+              "effects": null
+            },
+            {
+              "name": "c2_card_period",
+              "type": "text",
+              "position": "rltv",
+              "parent": "c2_card",
+              "parentWidth": 360,
+              "marginTop": "0.734908vw",
+              "alignSelf": "center",
+              "whiteSpace": "nowrap",
+              "segments": [
+                {
+                  "text": "{{wr_2}}",
+                  "fontSize": "0.839895vw (16px)",
+                  "fontWeight": 300,
+                  "color": "#000000",
+                  "letterSpacing": "-0.05em",
+                  "lineHeight": 4.062,
+                  "fontFamily": "Pretendard-Light"
+                }
+              ],
+              "psdY": 2620,
+              "effects": null
+            }
+          ],
+          "effects": null
+        }
+      ],
+      "effects": null
+    }
+  ],
+  "ascii": "CON02 / main_sales (bg:#231916, h:985px=51.706vw)\npt 12.178478vw (1791→2023)\n┌── section.con2 rltv ─────────────────────────────────────────────┐\n│ [absol] c2_food   top:0vw left:51.7585% w:49.0289% (con02_02.png 934×985 right edge)\n│ [absol] c2_top_line  top:2.9396vw left:50.2887% w:0.2099% h:6.7191vw bg:#bfa78a opacity:0.2\n│                                                                  │\n│ c2_title    rltv mt:12.1785vw alignSelf:center whiteSpace:nowrap │\n│   <Eulyoo SB 60 #fff>한 번이 아닌, </> + <Eulyoo SB 60 #e3cfaf>계속되는 매출</> │\n│                                                                  │\n│ c2_desc     rltv mt:1.7323vw alignSelf:center text-align:center  │\n│   <Pretendard B 22 #fff>재방문을 만드는 맛과 흔들리지 않는 운영 구조</> │\n│   <Pretendard L 22 #fff>로</> <br> <Pretendard L 22 #fff>일회성이 아닌 매출을 만듭니다</> │\n│                                                                  │\n│ c2_badge    rltv mt:1.1549vw ml:12.5459% w:14.1732% (con02_01.png 270×53) 완성형 │\n│                                                                  │\n│ c2_amount   rltv mt:1.9423vw ml:12.6509% flex-row baseline gap:0.5774vw │\n│   ├─ 67,000,000  Eulyoo SB 120 #bfa78a ls:-0.05em                │\n│   └─ 원         Eulyoo SB 35 #fff ls:-0.05em                     │\n│                                                                  │\n│ c2_swiper   rltv mt:3.6220vw width:100% (Swiper strip mode auto, sb:14, autoplay 3s, loop) │\n│   .swiper-slide .c2_card  w:18.8976% (=360/1905) bg:#fff border:1px #231916 radius:1.0499vw (=20px) │\n│     pt 1.5223vw                                                  │\n│     ├─ title  '미락육회막국수 본점' Pretendard B 20 #000 (alignSelf:center)\n│     ├─ line   mt:1.1549vw w:76.6667% (=276/360) h:0.1575vw bg:#f8edd7 (alignSelf:center)\n│     ├─ amount '35,260,000' Eulyoo SB 49.99 #231916 (alignSelf:center) mt:1.6273vw\n│     └─ period '[1월 월매출]' Pretendard L 16 #000 (alignSelf:center) mt:0.7349vw\n│     pb 1.4698vw  → card height = 10.866vw (= PSD 207px)         │\n│                                                                  │\n└── pb 5.8268vw (2665→2776) ─────────────────────────────────────┘\n\n💡 main_sales 게시판 PHP 연동\n  - 카드 데이터: wr_subject(상점명), wr_1(매출액), wr_2(기간)\n  - 카드 슬라이드는 PHP loop로 게시글 반복 출력 → Swiper auto 강제 cloning\n  - 게시판 비어있을 시 fallback static cards (PSD 6개)\n\n💡 모바일 (599 이하): align-self:center 통일, 폰트 vw 보정 필요. 본 STEP에선 PC만 작업."
+}

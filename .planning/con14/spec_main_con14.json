@@ -1,0 +1,252 @@
+{
+  "section": "con14",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 16504,
+    "bottom": 17598
+  },
+  "background": {
+    "type": "color",
+    "fill": "#e2d4c4",
+    "src": null
+  },
+  "groups": [
+    {
+      "name": "내부 프레임",
+      "parentGroup": "con14",
+      "childCount": 1,
+      "children": [
+        {
+          "name": "내부",
+          "type": "layer",
+          "x": -185,
+          "y": 16830,
+          "w": 738,
+          "h": 553
+        }
+      ],
+      "bbox": null,
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "KakaoTalk_20260306_104453973_02 프레임",
+      "parentGroup": "con14",
+      "childCount": 1,
+      "children": [
+        {
+          "name": "KakaoTalk_20260306_104453973_02",
+          "type": "layer",
+          "x": 591,
+          "y": 16614,
+          "w": 738,
+          "h": 984
+        }
+      ],
+      "bbox": {
+        "x": 591,
+        "y": 16614,
+        "w": 738,
+        "h": 984
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    {
+      "name": "KakaoTalk_20260305_140459644_02 프레임",
+      "parentGroup": "con14",
+      "childCount": 1,
+      "children": [
+        {
+          "name": "KakaoTalk_20260305_140459644_02",
+          "type": "layer",
+          "x": 1367,
+          "y": 16614,
+          "w": 738,
+          "h": 984
+        }
+      ],
+      "bbox": {
+        "x": 1367,
+        "y": 16614,
+        "w": 738,
+        "h": 984
+      },
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    }
+  ],
+  "texts": [
+    {
+      "name": "공간이 매출을 만듭니다",
+      "content": "공간이 매출을 만듭니다",
+      "lineBreaks": 0,
+      "x": 674,
+      "y": 16682,
+      "w": 570,
+      "h": 59,
+      "segments": [
+        {
+          "text": "공간",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#5d2b0d",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "이 매출을 만듭니다",
+          "fontSize_px": 60,
+          "fontSize_vw": "3.1496",
+          "fontWeight": 600,
+          "fontFamily": "Eulyoo1945-SemiBold",
+          "color": "#070707",
+          "lineHeight": 1.083,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "보이는 것부터 다르게",
+      "content": "보이는 것부터 다르게",
+      "lineBreaks": 0,
+      "x": 826,
+      "y": 16636,
+      "w": 265,
+      "h": 28,
+      "segments": [
+        {
+          "text": "보이는 것부터 다르게",
+          "fontSize_px": 30,
+          "fontSize_vw": "1.5748",
+          "fontWeight": 400,
+          "fontFamily": "TTOmniGothicM",
+          "color": "#070707",
+          "lineHeight": 2.167,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    },
+    {
+      "name": "세련된 외부 디자인과 편안한 내부 공간 구성으로 고객의 시선과 발걸음을 자연스럽게 이끌어냅니다.",
+      "content": "세련된 외부 디자인과 편안한 내부 공간 구성으로\n고객의 시선과 발걸음을 자연스럽게 이끌어냅니다.",
+      "lineBreaks": 1,
+      "x": 760,
+      "y": 16774,
+      "w": 397,
+      "h": 50,
+      "segments": [
+        {
+          "text": "세련된 외부 디자인과 편안한 내부 공간 구성",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 700,
+          "fontFamily": "Pretendard-Bold",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        },
+        {
+          "text": "으로\n고객의 시선과 발걸음을 자연스럽게 이끌어냅니다.",
+          "fontSize_px": 22,
+          "fontSize_vw": "1.1549",
+          "fontWeight": 300,
+          "fontFamily": "Pretendard-Light",
+          "color": "#000000",
+          "lineHeight": 1.364,
+          "lineHeight_source": "fixed (lineHeightPx÷fontSize)",
+          "letterSpacing": "-0.05em"
+        }
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "name": "사각형 850 복사 2",
+      "x": -1,
+      "y": 17113,
+      "w": 1922,
+      "h": 334,
+      "fill": "#e2d4c4",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 850",
+      "x": -1,
+      "y": 16504,
+      "w": 1922,
+      "h": 12,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    },
+    {
+      "name": "사각형 850 복사",
+      "x": -1,
+      "y": 16519,
+      "w": 1922,
+      "h": 4,
+      "fill": "#231916",
+      "borderRadius": 0,
+      "stroke": null,
+      "opacity": 1,
+      "effects": null
+    }
+  ],
+  "images": [
+    {
+      "name": "내부",
+      "x": -185,
+      "y": 16830,
+      "w": 738,
+      "h": 553,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": null
+    },
+    {
+      "name": "KakaoTalk_20260306_104453973_02",
+      "x": 591,
+      "y": 16614,
+      "w": 738,
+      "h": 984,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": null
+    },
+    {
+      "name": "KakaoTalk_20260305_140459644_02",
+      "x": 1367,
+      "y": 16614,
+      "w": 738,
+      "h": 984,
+      "clippingRect": null,
+      "possibleFile": "TODO",
+      "effects": null
+    }
+  ],
+  "comments": [],
+  "bgRect": {
+    "y": 17113,
+    "h": 334,
+    "bottom": 17447,
+    "name": "사각형 850 복사 2"
+  }
+}

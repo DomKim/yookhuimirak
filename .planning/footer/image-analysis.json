@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-05-03T04:16:11.829Z",
+  "images": [
+    {
+      "file": "f_logo.png",
+      "width": 328,
+      "height": 47,
+      "hasAlpha": true,
+      "border": {
+        "detected": true,
+        "color": "#ffffff",
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": true,
+        "estimated": 12
+      },
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "verified": true,
+  "section": "con07",
+  "spec": ".planning/con07/spec.json",
+  "mapping": {
+    "Eulyoo1945-SemiBold": {
+      "token": "var(--sf)",
+      "fontFamilyCss": "'Eulyoo1945', serif",
+      "weight": 600,
+      "usedBy": ["con7_headline"]
+    },
+    "Pretendard-Light": {
+      "token": "var(--mf)",
+      "fontFamilyCss": "'Pretendard Variable', sans-serif",
+      "weight": 300,
+      "usedBy": ["con7_desc (default)"]
+    },
+    "Pretendard-Bold": {
+      "token": "var(--mf)",
+      "fontFamilyCss": "'Pretendard Variable', sans-serif",
+      "weight": 700,
+      "usedBy": ["con7_desc <b>"]
+    },
+    "TTOmniGothicM": {
+      "token": "var(--tf)",
+      "fontFamilyCss": "'SUIT', sans-serif",
+      "weight": 400,
+      "usedBy": ["con7_top"],
+      "note": "Project-wide convention: PSD TTOmniGothicM is mapped to --tf (SUIT) in this project (same mapping used in con1/con3 plan/CSS)."
+    }
+  }
+}

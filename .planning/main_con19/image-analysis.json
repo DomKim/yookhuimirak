@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-05-03T08:39:49.663Z",
+  "images": [
+    {
+      "file": "con19_bg.jpg",
+      "width": 1920,
+      "height": 960,
+      "hasAlpha": false,
+      "border": {
+        "detected": false,
+        "color": null,
+        "thickness": 0
+      },
+      "shadow": {
+        "detected": false,
+        "padding": 0
+      },
+      "radius": {
+        "detected": false,
+        "estimated": 0
+      },
+      "composite": false,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    }
+  ]
+}

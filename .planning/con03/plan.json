@@ -1,0 +1,1885 @@
+{
+  "generatedBy": "spec-to-plan v3 (flat) + inline hints",
+  "_advisorySummary": {
+    "⚠️ 무시하지 말 것": "element 안 _hint를 element별로 확인하고 plan 작성",
+    "검사 항목": [
+      "1) elements 중 _hint.psdGroup이 있는 것들 → wrapper 만들기 검토 (그룹화)",
+      "2) elements 중 _hint.centerSuspect:true → marginLeft 대신 alignSelf:center",
+      "3) elements 중 _hint.heightChainCandidate:true → heightChain에 포함",
+      "4) elements 중 _hint.containmentParent → 형제 배치 금지, 자식으로 중첩",
+      "5) elements 중 _hint.suggestedParentWidth → parentWidth:1905 대신 그룹 너비 사용",
+      "6) elements 중 _hint.aspectRatioSuggest → wrapper에 aspectRatio 적용"
+    ],
+    "flatAntiPattern": {
+      "sectionDirectChildren": 29,
+      "note": "AI 결정 후 parent != \"section\"인 element가 0개면 flat 안티패턴 의심"
+    },
+    "groupCandidates": [
+      {
+        "name": "그룹 3",
+        "bbox": "534×451",
+        "parentWidth": 534,
+        "aspectRatio": "534/451",
+        "members": [
+          "사각형 1046 복사 4",
+          "구분",
+          "금액",
+          "비율",
+          "23.6%",
+          "총매출 식자재 인건비 임대료 기타 ",
+          "60,000,000원 20,000,000원 15,000,000원 5,800,000원 5,600,000원 ",
+          "100% 33.4% 24.4% 9.5% 9.1%",
+          "순수익",
+          "사각형 1046 복사 4",
+          "사각형 1046 복사 5",
+          "순수익",
+          "14,000,000원",
+          "23.6%"
+        ]
+      }
+    ],
+    "centerAxisCount": 7,
+    "verticalStackCount": 4
+  },
+  "strictStructure": true,
+  "section": "con03",
+  "sectionClass": "con2",
+  "page": "main",
+  "specFile": ".planning/con03/spec_main_con03.json",
+  "canvas": 1905,
+  "sectionY": {
+    "top": 2580,
+    "bottom": 3880,
+    "height": 1300
+  },
+  "bg": "#f8edd7",
+  "bgRect": {
+    "top": 2738,
+    "bottom": 3681
+  },
+  "effectiveEnd": 3681,
+  "prevSectionBottom": 2741,
+  "ptSuggestions": {
+    "bgRect": "6.929134vw",
+    "bgRectTop": 2738,
+    "shape": "6.771654vw",
+    "prevBottom": 2741
+  },
+  "pbSuggestions": {
+    "fromLastContent": "10.236220vw",
+    "fromLastContentToEffectiveEnd": "-0.209974vw",
+    "lastContent": {
+      "name": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "bottom": 3685
+    },
+    "secBottom": 3880,
+    "effectiveEnd": 3681
+  },
+  "pt": "6.771654vw",
+  "pb": "3.044619vw",
+  "heightChain": [
+    "pt",
+    "c3_title_group",
+    "c3_profit_scene",
+    "pb"
+  ],
+  "availableImages": [
+    {
+      "file": "con03_01.png",
+      "width": 507,
+      "height": 509,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con03_02.png",
+      "width": 507,
+      "height": 509,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con03_03.png",
+      "width": 207,
+      "height": 207,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con03_04.png",
+      "width": 207,
+      "height": 207,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con03_05.jpg",
+      "width": 531,
+      "height": 447,
+      "sourceType": "완성형 가능성",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con03_06.png",
+      "width": 65,
+      "height": 20,
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con03_07.png",
+      "width": 203,
+      "height": 45,
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con03_08.png",
+      "width": 195,
+      "height": 45,
+      "composite": true,
+      "sourceType": "완성형",
+      "hints": {
+        "panelLike": false
+      }
+    },
+    {
+      "file": "con03_bg.jpg",
+      "width": 1920,
+      "height": 940,
+      "sourceType": "소스",
+      "hints": {
+        "panelLike": false
+      }
+    }
+  ],
+  "requiredTextHints": [
+    {
+      "name": "남는 구조가 다릅니다",
+      "content": "남는 구조가 다릅니다",
+      "x": 704,
+      "y": 2918,
+      "w": 512,
+      "h": 60,
+      "fontSizePx": 60,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "매출보다 중요한 것",
+      "content": "매출보다 중요한 것",
+      "x": 842,
+      "y": 2870,
+      "w": 237,
+      "h": 29,
+      "fontSizePx": 30,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "불필요한 비용을 줄이고 효율적으로 남기는 구조로 안정적인 수익을 만들어갑니다",
+      "content": "불필요한 비용을 줄이고 효율적으로 남기는 구조로\n안정적인 수익을 만들어갑니다",
+      "x": 760,
+      "y": 3009,
+      "w": 399,
+      "h": 50,
+      "fontSizePx": 22,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "※ 가맹점 매출 및 수익은 상권, 운영, 시장 상황 등에 따라 달라질 수 있습니다 ",
+      "content": "※ 가맹점 매출 및 수익은 상권, 운영, 시장 상황 등에 따라 달라질 수 있습니다 ",
+      "x": 1148,
+      "y": 3594,
+      "w": 433,
+      "h": 17,
+      "fontSizePx": 15.99,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "총매출 식자재 인건비 임대료 기타 ",
+      "content": "총매출\n식자재\n인건비\n임대료\n기타",
+      "x": 1222,
+      "y": 3243,
+      "w": 50,
+      "h": 218,
+      "fontSizePx": 19.99,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "60,000,000원 20,000,000원 15,000,000원 5,800,000원 5,600,000원 ",
+      "content": "60,000,000원\n20,000,000원\n15,000,000원\n5,800,000원\n5,600,000원",
+      "x": 1369,
+      "y": 3243,
+      "w": 107,
+      "h": 220,
+      "fontSizePx": 19.99,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "100% 33.4% 24.4% 9.5% 9.1%",
+      "content": "100%\n33.4%\n24.4%\n9.5%\n9.1%",
+      "x": 1558,
+      "y": 3244,
+      "w": 52,
+      "h": 216,
+      "fontSizePx": 19.99,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "14,000,000원",
+      "content": "14,000,000원",
+      "x": 1329,
+      "y": 3517,
+      "w": 146,
+      "h": 27,
+      "fontSizePx": 25.98,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "con03_07",
+      "content": "6,000만 원",
+      "x": 358,
+      "y": 3274,
+      "w": 203,
+      "h": 45,
+      "fontSizePx": 49.98,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "con03_08",
+      "content": "1,400만 원",
+      "x": 359,
+      "y": 3464,
+      "w": 195,
+      "h": 45,
+      "fontSizePx": 49.98,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    },
+    {
+      "name": "23.6%",
+      "content": "23.6%",
+      "x": 661,
+      "y": 3216,
+      "w": 135,
+      "h": 37,
+      "fontSizePx": 49.98,
+      "recommendation": "완성형 이미지 내부가 아닌 유의미한 PSD 텍스트 — plan text element로 구현하거나 ignoredTexts에 reason 명시"
+    }
+  ],
+  "requiredShapeHints": [
+    {
+      "name": "모양 3 복사 3",
+      "type": "cssShapeLine",
+      "x": 1190,
+      "y": 3212,
+      "w": 449,
+      "h": 4,
+      "fill": "#d33418",
+      "opacity": 1,
+      "topFromPrevBottom": "24.724409vw",
+      "leftPct": "62.467192%",
+      "widthPct": "23.569554%",
+      "heightVw": "0.209974vw",
+      "recommendation": "CSS shape line/deco 후보 — plan element로 구현하거나 ignoredShapes에 근거 명시"
+    },
+    {
+      "name": "모양 5",
+      "type": "cssShapeLine",
+      "x": -4,
+      "y": 3363,
+      "w": 643,
+      "h": 4,
+      "fill": "#d33418",
+      "opacity": 1,
+      "topFromPrevBottom": "32.650919vw",
+      "leftPct": "-0.209974%",
+      "widthPct": "33.753281%",
+      "heightVw": "0.209974vw",
+      "recommendation": "CSS shape line/deco 후보 — plan element로 구현하거나 ignoredShapes에 근거 명시"
+    }
+  ],
+  "ignoredShapes": [
+    {
+      "name": "모양 3 복사 3",
+      "reason": "Table header/divider line is baked into complete table image con03_05.jpg; the strict stroke ambiguity is preserved by using the table asset."
+    },
+    {
+      "name": "사각형 1046 복사 4",
+      "reason": "White table panel and dark profit bar are baked into con03_05.jpg."
+    },
+    {
+      "name": "사각형 1046 복사 5",
+      "reason": "Beige table percent cell is baked into con03_05.jpg; con03_06.png overlays the rate text."
+    },
+    {
+      "name": "타원 4 복사",
+      "reason": "Central circular mask/background is baked into con03_01.png."
+    },
+    {
+      "name": "타원 4 복사 5",
+      "reason": "Black overlay shape is implemented with con03_02.png."
+    },
+    {
+      "name": "타원 3",
+      "reason": "Red rate badge is implemented with con03_03.png."
+    }
+  ],
+  "ignoredTexts": [
+    {
+      "name": "총매출 식자재 인건비 임대료 기타 ",
+      "reason": "Baked into complete table image con03_05.jpg; DOM would duplicate the exported table."
+    },
+    {
+      "name": "60,000,000원 20,000,000원 15,000,000원 5,800,000원 5,600,000원 ",
+      "reason": "Baked into complete table image con03_05.jpg."
+    },
+    {
+      "name": "100% 33.4% 24.4% 9.5% 9.1%",
+      "reason": "Baked into complete table image con03_05.jpg."
+    },
+    {
+      "name": "구분",
+      "reason": "Baked into complete table image con03_05.jpg."
+    },
+    {
+      "name": "금액",
+      "reason": "Baked into complete table image con03_05.jpg."
+    },
+    {
+      "name": "비율",
+      "reason": "Baked into complete table image con03_05.jpg."
+    },
+    {
+      "name": "순수익",
+      "reason": "Table bottom label is baked into complete table image con03_05.jpg."
+    },
+    {
+      "name": "14,000,000원",
+      "reason": "Baked into complete table image con03_05.jpg."
+    },
+    {
+      "name": "23.6%",
+      "reason": "Large center rate is implemented by con03_04.png; small table rate is implemented by con03_06.png."
+    },
+    {
+      "name": "con03_07",
+      "reason": "Implemented by baked number image con03_07.png to use the exported asset exactly."
+    },
+    {
+      "name": "con03_08",
+      "reason": "Implemented by baked number image con03_08.png to use the exported asset exactly."
+    }
+  ],
+  "psdGroups": [
+    {
+      "name": "그룹 3",
+      "role": "absol-content",
+      "bbox": {
+        "x": 1147,
+        "y": 3137,
+        "w": 534,
+        "h": 451
+      }
+    }
+  ],
+  "centeredFlow": [
+    "매출보다 중요한 것",
+    "남는 구조가 다릅니다",
+    "불필요한 비용을 줄이고 효율적으로 남기는 구조로 안정적인 수익을 만들어갑니다",
+    "Gemini_Generated_Image_snwv9fsnwv9fsnwv"
+  ],
+  "centerAxisHints": [
+    {
+      "axisX": 383,
+      "axisPct": "20.104987%",
+      "elements": [
+        "월매출",
+        "순수익"
+      ],
+      "bbox": {
+        "x": 356,
+        "y": 3231,
+        "w": 55,
+        "h": 210
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 5",
+          "centerDelta": -577,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 458,
+      "axisPct": "24.041995%",
+      "elements": [
+        "con03_07",
+        "con03_08"
+      ],
+      "bbox": {
+        "x": 358,
+        "y": 3274,
+        "w": 203,
+        "h": 235
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 5",
+          "centerDelta": -502,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 735.5,
+      "axisPct": "38.608924%",
+      "elements": [
+        "벡터 스마트 오브젝트",
+        "수익률",
+        "23.6%"
+      ],
+      "bbox": {
+        "x": 621,
+        "y": 3106,
+        "w": 258,
+        "h": 258
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "타원 4 복사",
+          "centerDelta": -142.5,
+          "contains": 3
+        },
+        {
+          "type": "rect",
+          "name": "사각형 5",
+          "centerDelta": -224.5,
+          "contains": 3
+        },
+        {
+          "type": "rect",
+          "name": "타원 3",
+          "centerDelta": 7,
+          "contains": 2
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 960,
+      "axisPct": "50.393701%",
+      "elements": [
+        "매출보다 중요한 것",
+        "남는 구조가 다릅니다",
+        "불필요한 비용을 줄이고 효율적으로 남기는 구조로 안정적인 수익을 만들어갑니다"
+      ],
+      "bbox": {
+        "x": 704,
+        "y": 2870,
+        "w": 512,
+        "h": 189
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 5",
+          "centerDelta": 0,
+          "contains": 3
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 1246.7,
+      "axisPct": "65.441820%",
+      "elements": [
+        "구분",
+        "총매출 식자재 인건비 임대료 기타 ",
+        "순수익"
+      ],
+      "bbox": {
+        "x": 1212,
+        "y": 3171,
+        "w": 69,
+        "h": 372
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 1046 복사 4",
+          "centerDelta": -167.3,
+          "contains": 3
+        },
+        {
+          "type": "group",
+          "name": "그룹 3",
+          "centerDelta": -167.3,
+          "contains": 3
+        },
+        {
+          "type": "rect",
+          "name": "사각형 5",
+          "centerDelta": 286.7,
+          "contains": 3
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 1415.5,
+      "axisPct": "74.304462%",
+      "elements": [
+        "금액",
+        "60,000,000원 20,000,000원 15,000,000원 5,800,000원 5,600,000원 ",
+        "14,000,000원"
+      ],
+      "bbox": {
+        "x": 1329,
+        "y": 3171,
+        "w": 147,
+        "h": 373
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 1046 복사 4",
+          "centerDelta": 1.5,
+          "contains": 3
+        },
+        {
+          "type": "group",
+          "name": "그룹 3",
+          "centerDelta": 1.5,
+          "contains": 3
+        },
+        {
+          "type": "rect",
+          "name": "사각형 5",
+          "centerDelta": 455.5,
+          "contains": 3
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    },
+    {
+      "axisX": 1583.5,
+      "axisPct": "83.123360%",
+      "elements": [
+        "비율",
+        "100% 33.4% 24.4% 9.5% 9.1%",
+        "23.6%"
+      ],
+      "bbox": {
+        "x": 1551,
+        "y": 3171,
+        "w": 65,
+        "h": 369
+      },
+      "parentCandidates": [
+        {
+          "type": "rect",
+          "name": "사각형 1046 복사 4",
+          "centerDelta": 169.5,
+          "contains": 3
+        },
+        {
+          "type": "group",
+          "name": "그룹 3",
+          "centerDelta": 169.5,
+          "contains": 3
+        },
+        {
+          "type": "rect",
+          "name": "사각형 5",
+          "centerDelta": 623.5,
+          "contains": 3
+        }
+      ],
+      "recommendation": "부모 wrapper에 flex-direction:column + align-items:center. 자식별 중앙정렬 margin-left 금지"
+    }
+  ],
+  "yGaps": [
+    {
+      "from": "매출보다 중요한 것",
+      "to": "남는 구조가 다릅니다",
+      "gap": 19,
+      "gapVw": "0.997375vw"
+    },
+    {
+      "from": "남는 구조가 다릅니다",
+      "to": "불필요한 비용을 줄이고 효율적으로 남기는 구조로 안정적인 수익을 만들어갑니다",
+      "gap": 31,
+      "gapVw": "1.627297vw"
+    },
+    {
+      "from": "불필요한 비용을 줄이고 효율적으로 남기는 구조로 안정적인 수익을 만들어갑니다",
+      "to": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "gap": 11,
+      "gapVw": "0.577428vw"
+    },
+    {
+      "from": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "to": "벡터 스마트 오브젝트",
+      "gap": -579,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "벡터 스마트 오브젝트",
+      "to": "[본점 기준]",
+      "gap": -249,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "[본점 기준]",
+      "to": "구분",
+      "gap": 39,
+      "gapVw": "2.047244vw"
+    },
+    {
+      "from": "구분",
+      "to": "금액",
+      "gap": -18,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "금액",
+      "to": "비율",
+      "gap": -18,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "비율",
+      "to": "수익률",
+      "gap": -8,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "수익률",
+      "to": "23.6%",
+      "gap": 17,
+      "gapVw": "0.892388vw"
+    },
+    {
+      "from": "23.6%",
+      "to": "월매출",
+      "gap": -22,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "월매출",
+      "to": "총매출 식자재 인건비 임대료 기타 ",
+      "gap": -8,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "총매출 식자재 인건비 임대료 기타 ",
+      "to": "60,000,000원 20,000,000원 15,000,000원 5,800,000원 5,600,000원 ",
+      "gap": -218,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "60,000,000원 20,000,000원 15,000,000원 5,800,000원 5,600,000원 ",
+      "to": "100% 33.4% 24.4% 9.5% 9.1%",
+      "gap": -219,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "100% 33.4% 24.4% 9.5% 9.1%",
+      "to": "con03_07",
+      "gap": -186,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "con03_07",
+      "to": "순수익",
+      "gap": 102,
+      "gapVw": "5.354331vw"
+    },
+    {
+      "from": "순수익",
+      "to": "con03_08",
+      "gap": 23,
+      "gapVw": "1.207349vw"
+    },
+    {
+      "from": "con03_08",
+      "to": "순수익",
+      "gap": 8,
+      "gapVw": "0.419948vw"
+    },
+    {
+      "from": "순수익",
+      "to": "14,000,000원",
+      "gap": -26,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "14,000,000원",
+      "to": "23.6%",
+      "gap": -24,
+      "gapVw": "0.000000vw"
+    },
+    {
+      "from": "23.6%",
+      "to": "※ 가맹점 매출 및 수익은 상권, 운영, 시장 상황 등에 따라 달라질 수 있습니다 ",
+      "gap": 54,
+      "gapVw": "2.834646vw"
+    }
+  ],
+  "overlaps": [
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "매출보다 중요한 것",
+      "bType": "text",
+      "bSize": "237×29",
+      "overlapArea": 6873
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "남는 구조가 다릅니다",
+      "bType": "text",
+      "bSize": "512×60",
+      "overlapArea": 30720
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "불필요한 비용을 줄이고 효율적으로 남기는 구조로 안정적인 수익을 만들어갑니다",
+      "bType": "text",
+      "bSize": "399×50",
+      "overlapArea": 19950
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "bType": "image",
+      "bSize": "923×615",
+      "overlapArea": 567645
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "벡터 스마트 오브젝트",
+      "bType": "image",
+      "bSize": "258×258",
+      "overlapArea": 66564
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "타원 4 복사",
+      "bType": "rect",
+      "bSize": "502×502",
+      "overlapArea": 252004
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "[본점 기준]",
+      "bType": "text",
+      "bSize": "63×17",
+      "overlapArea": 1071
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "타원 4 복사 5",
+      "bType": "rect",
+      "bSize": "483×483",
+      "overlapArea": 233289
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "타원 3",
+      "bType": "rect",
+      "bSize": "195×193",
+      "overlapArea": 37635
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "사각형 1046 복사 4",
+      "bType": "rect",
+      "bSize": "534×451",
+      "overlapArea": 240834
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "구분",
+      "bType": "text",
+      "bSize": "33×18",
+      "overlapArea": 594
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "금액",
+      "bType": "text",
+      "bSize": "32×18",
+      "overlapArea": 576
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "비율",
+      "bType": "text",
+      "bSize": "32×18",
+      "overlapArea": 576
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "수익률",
+      "bType": "text",
+      "bSize": "50×18",
+      "overlapArea": 900
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "23.6%",
+      "bType": "text",
+      "bSize": "135×37",
+      "overlapArea": 4995
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "월매출",
+      "bType": "text",
+      "bSize": "55×20",
+      "overlapArea": 1100
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "총매출 식자재 인건비 임대료 기타 ",
+      "bType": "text",
+      "bSize": "50×218",
+      "overlapArea": 10900
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "60,000,000원 20,000,000원 15,000,000원 5,800,000원 5,600,000원 ",
+      "bType": "text",
+      "bSize": "107×220",
+      "overlapArea": 23540
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "100% 33.4% 24.4% 9.5% 9.1%",
+      "bType": "text",
+      "bSize": "52×216",
+      "overlapArea": 11232
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "con03_07",
+      "bType": "text",
+      "bSize": "203×45",
+      "overlapArea": 9135
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "순수익",
+      "bType": "text",
+      "bSize": "53×20",
+      "overlapArea": 1060
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "con03_08",
+      "bType": "text",
+      "bSize": "195×45",
+      "overlapArea": 8775
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "사각형 1046 복사 4",
+      "bType": "rect",
+      "bSize": "534×451",
+      "overlapArea": 38922
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "사각형 1046 복사 5",
+      "bType": "rect",
+      "bSize": "162×78",
+      "overlapArea": 12636
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "순수익",
+      "bType": "text",
+      "bSize": "53×20",
+      "overlapArea": 1794
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "14,000,000원",
+      "bType": "text",
+      "bSize": "146×27",
+      "overlapArea": 3942
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "23.6%",
+      "bType": "text",
+      "bSize": "135×37",
+      "overlapArea": 1300
+    },
+    {
+      "a": "bin-gong-ye-jong-i-tegseucheo-baegyeong-sujig",
+      "aType": "image",
+      "aSize": "1951×1300",
+      "b": "※ 가맹점 매출 및 수익은 상권, 운영, 시장 상황 등에 따라 달라질 수 있습니다 ",
+      "bType": "text",
+      "bSize": "433×17",
+      "overlapArea": 7361
+    },
+    {
+      "a": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "aType": "image",
+      "aSize": "923×615",
+      "b": "벡터 스마트 오브젝트",
+      "bType": "image",
+      "bSize": "258×258",
+      "overlapArea": 66564
+    },
+    {
+      "a": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "aType": "image",
+      "aSize": "923×615",
+      "b": "타원 4 복사",
+      "bType": "rect",
+      "bSize": "502×502",
+      "overlapArea": 252004
+    },
+    {
+      "a": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "aType": "image",
+      "aSize": "923×615",
+      "b": "타원 4 복사 5",
+      "bType": "rect",
+      "bSize": "483×483",
+      "overlapArea": 233289
+    },
+    {
+      "a": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "aType": "image",
+      "aSize": "923×615",
+      "b": "타원 3",
+      "bType": "rect",
+      "bSize": "195×193",
+      "overlapArea": 37635
+    },
+    {
+      "a": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "aType": "image",
+      "aSize": "923×615",
+      "b": "사각형 1046 복사 4",
+      "bType": "rect",
+      "bSize": "534×451",
+      "overlapArea": 92455
+    },
+    {
+      "a": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "aType": "image",
+      "aSize": "923×615",
+      "b": "구분",
+      "bType": "text",
+      "bSize": "33×18",
+      "overlapArea": 594
+    },
+    {
+      "a": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "aType": "image",
+      "aSize": "923×615",
+      "b": "수익률",
+      "bType": "text",
+      "bSize": "50×18",
+      "overlapArea": 900
+    },
+    {
+      "a": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "aType": "image",
+      "aSize": "923×615",
+      "b": "23.6%",
+      "bType": "text",
+      "bSize": "135×37",
+      "overlapArea": 4995
+    },
+    {
+      "a": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "aType": "image",
+      "aSize": "923×615",
+      "b": "총매출 식자재 인건비 임대료 기타 ",
+      "bType": "text",
+      "bSize": "50×218",
+      "overlapArea": 10900
+    },
+    {
+      "a": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "aType": "image",
+      "aSize": "923×615",
+      "b": "con03_07",
+      "bType": "text",
+      "bSize": "203×45",
+      "overlapArea": 5940
+    },
+    {
+      "a": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "aType": "image",
+      "aSize": "923×615",
+      "b": "con03_08",
+      "bType": "text",
+      "bSize": "195×45",
+      "overlapArea": 5625
+    },
+    {
+      "a": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "aType": "image",
+      "aSize": "923×615",
+      "b": "사각형 1046 복사 4",
+      "bType": "rect",
+      "bSize": "534×451",
+      "overlapArea": 14508
+    },
+    {
+      "a": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "aType": "image",
+      "aSize": "923×615",
+      "b": "순수익",
+      "bType": "text",
+      "bSize": "53×20",
+      "overlapArea": 1794
+    },
+    {
+      "a": "Gemini_Generated_Image_snwv9fsnwv9fsnwv",
+      "aType": "image",
+      "aSize": "923×615",
+      "b": "※ 가맹점 매출 및 수익은 상권, 운영, 시장 상황 등에 따라 달라질 수 있습니다 ",
+      "bType": "text",
+      "bSize": "433×17",
+      "overlapArea": 3468
+    },
+    {
+      "a": "벡터 스마트 오브젝트",
+      "aType": "image",
+      "aSize": "258×258",
+      "b": "타원 4 복사",
+      "bType": "rect",
+      "bSize": "502×502",
+      "overlapArea": 63000
+    },
+    {
+      "a": "벡터 스마트 오브젝트",
+      "aType": "image",
+      "aSize": "258×258",
+      "b": "타원 4 복사 5",
+      "bType": "rect",
+      "bSize": "483×483",
+      "overlapArea": 58563
+    },
+    {
+      "a": "벡터 스마트 오브젝트",
+      "aType": "image",
+      "aSize": "258×258",
+      "b": "타원 3",
+      "bType": "rect",
+      "bSize": "195×193",
+      "overlapArea": 37635
+    },
+    {
+      "a": "벡터 스마트 오브젝트",
+      "aType": "image",
+      "aSize": "258×258",
+      "b": "수익률",
+      "bType": "text",
+      "bSize": "50×18",
+      "overlapArea": 900
+    },
+    {
+      "a": "벡터 스마트 오브젝트",
+      "aType": "image",
+      "aSize": "258×258",
+      "b": "23.6%",
+      "bType": "text",
+      "bSize": "135×37",
+      "overlapArea": 4995
+    },
+    {
+      "a": "타원 4 복사",
+      "aType": "rect",
+      "aSize": "502×502",
+      "b": "타원 4 복사 5",
+      "bType": "rect",
+      "bSize": "483×483",
+      "overlapArea": 233289
+    },
+    {
+      "a": "타원 4 복사",
+      "aType": "rect",
+      "aSize": "502×502",
+      "b": "타원 3",
+      "bType": "rect",
+      "bSize": "195×193",
+      "overlapArea": 37635
+    },
+    {
+      "a": "타원 4 복사",
+      "aType": "rect",
+      "aSize": "502×502",
+      "b": "수익률",
+      "bType": "text",
+      "bSize": "50×18",
+      "overlapArea": 900
+    },
+    {
+      "a": "타원 4 복사",
+      "aType": "rect",
+      "aSize": "502×502",
+      "b": "23.6%",
+      "bType": "text",
+      "bSize": "135×37",
+      "overlapArea": 4995
+    },
+    {
+      "a": "타원 4 복사 5",
+      "aType": "rect",
+      "aSize": "483×483",
+      "b": "타원 3",
+      "bType": "rect",
+      "bSize": "195×193",
+      "overlapArea": 36670
+    },
+    {
+      "a": "타원 4 복사 5",
+      "aType": "rect",
+      "aSize": "483×483",
+      "b": "수익률",
+      "bType": "text",
+      "bSize": "50×18",
+      "overlapArea": 900
+    },
+    {
+      "a": "타원 4 복사 5",
+      "aType": "rect",
+      "aSize": "483×483",
+      "b": "23.6%",
+      "bType": "text",
+      "bSize": "135×37",
+      "overlapArea": 4995
+    },
+    {
+      "a": "타원 3",
+      "aType": "rect",
+      "aSize": "195×193",
+      "b": "수익률",
+      "bType": "text",
+      "bSize": "50×18",
+      "overlapArea": 900
+    },
+    {
+      "a": "타원 3",
+      "aType": "rect",
+      "aSize": "195×193",
+      "b": "23.6%",
+      "bType": "text",
+      "bSize": "135×37",
+      "overlapArea": 4995
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "구분",
+      "bType": "text",
+      "bSize": "33×18",
+      "overlapArea": 594
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "금액",
+      "bType": "text",
+      "bSize": "32×18",
+      "overlapArea": 576
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "비율",
+      "bType": "text",
+      "bSize": "32×18",
+      "overlapArea": 576
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "총매출 식자재 인건비 임대료 기타 ",
+      "bType": "text",
+      "bSize": "50×218",
+      "overlapArea": 10900
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "60,000,000원 20,000,000원 15,000,000원 5,800,000원 5,600,000원 ",
+      "bType": "text",
+      "bSize": "107×220",
+      "overlapArea": 23540
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "100% 33.4% 24.4% 9.5% 9.1%",
+      "bType": "text",
+      "bSize": "52×216",
+      "overlapArea": 11232
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "사각형 1046 복사 4",
+      "bType": "rect",
+      "bSize": "534×451",
+      "overlapArea": 38922
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "사각형 1046 복사 5",
+      "bType": "rect",
+      "bSize": "162×78",
+      "overlapArea": 12636
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "순수익",
+      "bType": "text",
+      "bSize": "53×20",
+      "overlapArea": 1794
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "14,000,000원",
+      "bType": "text",
+      "bSize": "146×27",
+      "overlapArea": 3942
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "23.6%",
+      "bType": "text",
+      "bSize": "135×37",
+      "overlapArea": 1300
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "사각형 1046 복사 5",
+      "bType": "rect",
+      "bSize": "162×78",
+      "overlapArea": 12558
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "순수익",
+      "bType": "text",
+      "bSize": "53×20",
+      "overlapArea": 1794
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "14,000,000원",
+      "bType": "text",
+      "bSize": "146×27",
+      "overlapArea": 3942
+    },
+    {
+      "a": "사각형 1046 복사 4",
+      "aType": "rect",
+      "aSize": "534×451",
+      "b": "23.6%",
+      "bType": "text",
+      "bSize": "135×37",
+      "overlapArea": 1300
+    },
+    {
+      "a": "사각형 1046 복사 5",
+      "aType": "rect",
+      "aSize": "162×78",
+      "b": "23.6%",
+      "bType": "text",
+      "bSize": "135×37",
+      "overlapArea": 1300
+    }
+  ],
+  "elements": [
+    {
+      "name": "c3_bg_texture",
+      "type": "image",
+      "position": "absol",
+      "parent": "section",
+      "parentWidth": 1905,
+      "top": "-0.157480vw",
+      "left": "-0.787402%",
+      "width": "100.787402%",
+      "background": "/images/con03_bg.jpg",
+      "naturalWidth": 1920,
+      "naturalHeight": 940,
+      "sourceType": "source texture background",
+      "isBackground": true,
+      "effects": null,
+      "borderRadius": null,
+      "psdX": -15,
+      "psdY": 2738,
+      "role": "absolute background, not heightChain",
+      "src": "/images/con03_bg.jpg"
+    },
+    {
+      "name": "c3_title_group",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "0.000000vw",
+      "marginLeft": "0.000000%",
+      "alignSelf": "center",
+      "centerChildren": true,
+      "width": "26.876640%",
+      "display": "flex-column",
+      "effects": null,
+      "borderRadius": null,
+      "psdX": 704,
+      "psdY": 2870,
+      "children": [
+        {
+          "type": "text",
+          "position": "rltv",
+          "parent": "c3_title_group",
+          "parentWidth": 512,
+          "marginTop": "0.000000vw",
+          "marginLeft": "0.000000%",
+          "alignSelf": "center",
+          "width": "46.289063%",
+          "whiteSpace": "nowrap",
+          "effects": null,
+          "borderRadius": null,
+          "content": "매출보다 중요한 것",
+          "segments": [
+            {
+              "text": "매출보다 중요한 것",
+              "fontWeight": 400,
+              "color": "#070707",
+              "fontSize": "1.574803vw (30px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 2.167,
+              "fontFamily": "TTOmniGothicM"
+            }
+          ],
+          "psdY": 2870,
+          "name": "c3_kicker"
+        },
+        {
+          "type": "text",
+          "position": "rltv",
+          "parent": "c3_title_group",
+          "parentWidth": 512,
+          "marginTop": "0.997375vw",
+          "marginLeft": "0.000000%",
+          "alignSelf": "center",
+          "width": "100.000000%",
+          "whiteSpace": "nowrap",
+          "effects": null,
+          "borderRadius": null,
+          "content": "남는 구조가 다릅니다",
+          "segments": [
+            {
+              "text": "남는 구조",
+              "fontWeight": 600,
+              "color": "#5d2b0d",
+              "fontSize": "3.149606vw (60px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.083,
+              "fontFamily": "Eulyoo1945-SemiBold"
+            },
+            {
+              "text": "가 다릅니다",
+              "fontWeight": 600,
+              "color": "#070707",
+              "fontSize": "3.149606vw (60px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.083,
+              "fontFamily": "Eulyoo1945-SemiBold"
+            }
+          ],
+          "psdY": 2918,
+          "name": "c3_headline"
+        },
+        {
+          "type": "text",
+          "position": "rltv",
+          "parent": "c3_title_group",
+          "parentWidth": 512,
+          "marginTop": "1.627297vw",
+          "marginLeft": "0.000000%",
+          "alignSelf": "center",
+          "width": "77.929688%",
+          "whiteSpace": "nowrap",
+          "effects": null,
+          "borderRadius": null,
+          "content": "불필요한 비용을 줄이고 효율적으로 남기는 구조로\n안정적인 수익을 만들어갑니다",
+          "segments": [
+            {
+              "text": "불필요한 비용을 줄이고 효율적으로 남기는 구조로\n",
+              "fontWeight": 300,
+              "color": "#000000",
+              "fontSize": "1.154856vw (22px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.364,
+              "fontFamily": "Pretendard-Light"
+            },
+            {
+              "text": "안정적인 수익",
+              "fontWeight": 700,
+              "color": "#000000",
+              "fontSize": "1.154856vw (22px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.364,
+              "fontFamily": "Pretendard-Bold"
+            },
+            {
+              "text": "을 만들어갑니다",
+              "fontWeight": 300,
+              "color": "#000000",
+              "fontSize": "1.154856vw (22px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 1.364,
+              "fontFamily": "Pretendard-Light"
+            }
+          ],
+          "psdY": 3009,
+          "name": "c3_desc"
+        }
+      ]
+    },
+    {
+      "name": "c3_profit_scene",
+      "type": "group",
+      "position": "rltv",
+      "parent": "section",
+      "parentWidth": 1905,
+      "marginTop": "2.467192vw",
+      "marginLeft": "0.000000%",
+      "alignSelf": "flex-start",
+      "width": "100.000000%",
+      "display": "block",
+      "effects": null,
+      "borderRadius": null,
+      "psdX": 0,
+      "psdY": 3106,
+      "role": "rltv scene; height is produced by c3_food_photo, overlays are absol children",
+      "children": [
+        {
+          "name": "c3_food_photo",
+          "type": "image",
+          "position": "rltv",
+          "parent": "c3_profit_scene",
+          "parentWidth": 1905,
+          "marginTop": "0.419948vw",
+          "marginLeft": "32.913386%",
+          "alignSelf": "flex-start",
+          "width": "26.614173%",
+          "naturalWidth": 507,
+          "naturalHeight": 509,
+          "sourceType": "source/complete central food circle used at visual clipping origin",
+          "effects": null,
+          "borderRadius": null,
+          "psdX": 627,
+          "psdY": 3114,
+          "role": "heightChain source image for c3_profit_scene",
+          "psdExactReason": "Use visible clippingRect/natural asset origin x=627,y=3114 because raw PSD smart object bbox x=429 includes hidden masked source area; this matches the exported 507x509 asset.",
+          "background": "/images/con03_01.png"
+        },
+        {
+          "name": "c3_food_overlay",
+          "type": "image",
+          "position": "absol",
+          "parent": "c3_profit_scene",
+          "parentWidth": 1905,
+          "top": "0.419948vw",
+          "left": "32.913386%",
+          "width": "26.614173%",
+          "src": "/images/con03_02.png",
+          "naturalWidth": 507,
+          "naturalHeight": 509,
+          "sourceType": "black circular overlay asset",
+          "effects": null,
+          "borderRadius": null,
+          "psdX": 627,
+          "psdY": 3114
+        },
+        {
+          "name": "c3_rate_badge",
+          "type": "image",
+          "position": "absol",
+          "parent": "c3_profit_scene",
+          "parentWidth": 1905,
+          "top": "0.000000vw",
+          "left": "32.598425%",
+          "width": "10.866142%",
+          "src": "/images/con03_03.png",
+          "naturalWidth": 207,
+          "naturalHeight": 207,
+          "sourceType": "complete red rate badge base",
+          "effects": null,
+          "borderRadius": null,
+          "psdX": 621,
+          "psdY": 3106
+        },
+        {
+          "name": "c3_rate_number",
+          "type": "image",
+          "position": "absol",
+          "parent": "c3_profit_scene",
+          "parentWidth": 1905,
+          "top": "0.000000vw",
+          "left": "32.598425%",
+          "width": "10.866142%",
+          "src": "/images/con03_04.png",
+          "naturalWidth": 207,
+          "naturalHeight": 207,
+          "sourceType": "complete large 23.6 percent overlay",
+          "effects": null,
+          "borderRadius": null,
+          "psdX": 621,
+          "psdY": 3106
+        },
+        {
+          "name": "모양 5",
+          "type": "cssShapeLine",
+          "position": "absol",
+          "parent": "c3_profit_scene",
+          "parentWidth": 1905,
+          "top": "13.490814vw",
+          "left": "-0.209974%",
+          "width": "33.753281%",
+          "aspectRatio": "643/4",
+          "heightSource": "PSD horizontal divider line 643x4",
+          "heightSourceReason": "Required visible left divider line from PSD requiredShapeHints.",
+          "background": "#d33418",
+          "fill": "#d33418",
+          "border": null,
+          "effects": null,
+          "borderRadius": null,
+          "psdX": -4,
+          "psdY": 3363
+        },
+        {
+          "name": "c3_left_metrics",
+          "type": "group",
+          "position": "absol",
+          "parent": "c3_profit_scene",
+          "parentWidth": 1905,
+          "top": "6.561680vw",
+          "left": "18.687664%",
+          "width": "10.708661%",
+          "display": "flex-column",
+          "effects": null,
+          "borderRadius": null,
+          "psdX": 356,
+          "psdY": 3231,
+          "children": [
+            {
+              "type": "text",
+              "position": "rltv",
+              "parent": "c3_left_metrics",
+              "parentWidth": 204,
+              "marginTop": "0.000000vw",
+              "marginLeft": "0.000000%",
+              "alignSelf": "flex-start",
+              "width": "26.960784%",
+              "whiteSpace": "nowrap",
+              "effects": null,
+              "borderRadius": null,
+              "content": "월매출",
+              "segments": [
+                {
+                  "text": "월매출",
+                  "fontWeight": 700,
+                  "color": "#000000",
+                  "fontSize": "1.154331vw (21.99px)",
+                  "letterSpacing": "-0.05em",
+                  "lineHeight": 3.642,
+                  "fontFamily": "Pretendard-Bold"
+                }
+              ],
+              "psdY": 3231,
+              "name": "c3_sales_label"
+            },
+            {
+              "name": "c3_sales_value",
+              "type": "image",
+              "position": "rltv",
+              "parent": "c3_left_metrics",
+              "parentWidth": 204,
+              "marginTop": "1.207349vw",
+              "marginLeft": "0.000000%",
+              "alignSelf": "flex-start",
+              "width": "99.509804%",
+              "src": "/images/con03_07.png",
+              "naturalWidth": 203,
+              "naturalHeight": 45,
+              "sourceType": "complete number asset",
+              "effects": null,
+              "borderRadius": null,
+              "psdX": 358,
+              "psdY": 3274
+            },
+            {
+              "type": "text",
+              "position": "rltv",
+              "parent": "c3_left_metrics",
+              "parentWidth": 204,
+              "marginTop": "5.354331vw",
+              "marginLeft": "0.000000%",
+              "alignSelf": "flex-start",
+              "width": "25.980392%",
+              "whiteSpace": "nowrap",
+              "effects": null,
+              "borderRadius": null,
+              "content": "순수익",
+              "segments": [
+                {
+                  "text": "순수익",
+                  "fontWeight": 700,
+                  "color": "#000000",
+                  "fontSize": "1.154331vw (21.99px)",
+                  "letterSpacing": "-0.05em",
+                  "lineHeight": 3.642,
+                  "fontFamily": "Pretendard-Bold"
+                }
+              ],
+              "psdY": 3421,
+              "name": "c3_profit_label"
+            },
+            {
+              "name": "c3_profit_value",
+              "type": "image",
+              "position": "rltv",
+              "parent": "c3_left_metrics",
+              "parentWidth": 204,
+              "marginTop": "1.207349vw",
+              "marginLeft": "0.000000%",
+              "alignSelf": "flex-start",
+              "width": "95.588235%",
+              "src": "/images/con03_08.png",
+              "naturalWidth": 195,
+              "naturalHeight": 45,
+              "sourceType": "complete number asset",
+              "effects": null,
+              "borderRadius": null,
+              "psdX": 359,
+              "psdY": 3464
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "position": "absol",
+          "parent": "c3_profit_scene",
+          "parentWidth": 1905,
+          "top": "0.472441vw",
+          "left": "84.881890%",
+          "width": "3.307087%",
+          "whiteSpace": "nowrap",
+          "effects": null,
+          "borderRadius": null,
+          "content": "[본점 기준]",
+          "segments": [
+            {
+              "text": "[본점 기준]",
+              "fontWeight": 300,
+              "color": "#000000",
+              "fontSize": "0.839370vw (15.99px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 3.462,
+              "fontFamily": "Pretendard-Light"
+            }
+          ],
+          "psdY": 3115,
+          "name": "c3_table_ref"
+        },
+        {
+          "name": "c3_table_panel",
+          "type": "image",
+          "position": "absol",
+          "parent": "c3_profit_scene",
+          "parentWidth": 1905,
+          "top": "1.627297vw",
+          "left": "60.209974%",
+          "width": "27.874016%",
+          "src": "/images/con03_05.jpg",
+          "naturalWidth": 531,
+          "naturalHeight": 447,
+          "sourceType": "complete table panel image",
+          "effects": null,
+          "borderRadius": null,
+          "psdX": 1147,
+          "psdY": 3137
+        },
+        {
+          "name": "c3_table_rate",
+          "type": "image",
+          "position": "absol",
+          "parent": "c3_profit_scene",
+          "parentWidth": 1905,
+          "top": "21.732283vw",
+          "left": "81.417323%",
+          "width": "3.412073%",
+          "src": "/images/con03_06.png",
+          "naturalWidth": 65,
+          "naturalHeight": 20,
+          "sourceType": "complete small table rate asset",
+          "effects": null,
+          "borderRadius": null,
+          "psdX": 1551,
+          "psdY": 3520
+        },
+        {
+          "type": "text",
+          "position": "absol",
+          "parent": "c3_profit_scene",
+          "parentWidth": 1905,
+          "top": "25.616798vw",
+          "left": "60.262467%",
+          "width": "22.729659%",
+          "whiteSpace": "nowrap",
+          "effects": null,
+          "borderRadius": null,
+          "content": "※ 가맹점 매출 및 수익은 상권, 운영, 시장 상황 등에 따라 달라질 수 있습니다 ",
+          "segments": [
+            {
+              "text": "※ 가맹점 매출 및 수익은 상권, 운영, 시장 상황 등에 따라 달라질 수 있습니다 ",
+              "fontWeight": 300,
+              "color": "#000000",
+              "fontSize": "0.839370vw (15.99px)",
+              "letterSpacing": "-0.05em",
+              "lineHeight": 3.462,
+              "fontFamily": "Pretendard-Light"
+            }
+          ],
+          "psdY": 3594,
+          "name": "c3_table_note"
+        }
+      ],
+      "allowLayered": true,
+      "allowSiblingOverlay": true,
+      "siblingOverlayReason": "Left divider, centered food/photo overlays, left metrics, and table panel intentionally overlap inside one profit structure scene while c3_food_photo provides the rltv height source."
+    }
+  ],
+  "firstRltvY": 2870,
+  "sectionBottomReason": "Effective section flow starts from previous section bottom Y 2741; pt reaches first title text at Y 2870, c3_profit_scene height is produced by the rltv c3_food_photo image, and pb reaches effectiveEnd Y 3681.",
+  "ignoredAssets": [
+    {
+      "file": "con03_01.png",
+      "reason": "Used by c3_food_photo at the visible clippingRect/natural asset origin x=627,y=3114. Raw PSD smart object bbox x=429 includes hidden masked source area, so spec image coordinate comparison is intentionally bypassed while still using the asset."
+    }
+  ],
+  "doNot": [
+    "Do not code before user approves ASCII after plan-checker passes.",
+    "Do not implement yellow designer comment notes; they are reference only.",
+    "Do not put section height or aspect-ratio on .con2; height comes from pt + c3_title_group + c3_profit_scene + pb.",
+    "Do not flatten the metric/table/badge overlays into unrelated section siblings; keep them owned by c3_profit_scene or its child groups.",
+    "Do not recreate baked number/table images as live text when the exported image asset exists.",
+    "Do not use object-fit, max-width, px layout units, or rounded guessed values."
+  ],
+  "ascii": "section.con2 (rltv bg:#f8edd7)\npt 6.771654vw\n  c3_title_group rltv center width 26.876640%\n    c3_kicker mt 0\n    c3_headline mt 0.997375vw\n    c3_desc mt 1.627297vw\n  c3_profit_scene rltv mt 2.467192vw width 100%\n    c3_food_photo rltv mt 0.419948vw ml 32.913386% width 26.614173% height source\n    absol overlays: food_overlay, rate_badge, rate_number, left_metrics, table_ref, table_panel, table_rate, table_note, left divider\npb 3.044619vw",
+  "roundNumberOverride": [
+    "100.000000% is exact full parent width where the PSD element spans the full parent wrapper.",
+    "0.000000vw and 0.000000% are exact flow/edge origins, not guesses."
+  ]
+}
